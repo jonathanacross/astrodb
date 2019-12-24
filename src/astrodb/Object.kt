@@ -37,7 +37,10 @@ data class Object(
     val ra: Double,
     val dec: Double,
     val magnitude: Magnitude,
-    val size: Size
+    val size: Size,
+    val objectClass: String,
+    val distance: Distance,
+    val notes: String
 ) {
     val surfaceBrightness: Double? = computeSurfaceBrightness()
 
@@ -63,6 +66,9 @@ data class Object(
                 formatRa(ra) + "\t" +
                 formatDec(dec) + "\t" +
                 magnitude + "\t" +
-                size
+                size + "\t" +
+                objectClass + "\t" +
+                distance + "\t" +
+                notes
     }
 }
