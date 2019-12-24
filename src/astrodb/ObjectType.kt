@@ -1,21 +1,24 @@
 package astrodb
 
-enum class ObjectType(val canonicalName: String, val otherNames: List<String>) {
-    ASTERISM("Asterism", listOf("asterism", "ast")),
-    CARBON_STAR("Carbon Star", listOf("carbon star", "carbon")),
-    DOUBLE_STAR("Double Star", listOf("double star", "ds", "dbl")),
-    GALAXY("Galaxy", listOf("galaxy", "gal", "gx")),
-    GLOBULAR_CLUSTER("Globular Cluster", listOf("globular cl.", "gcl", "gc")),
-    OPEN_CLUSTER("Open Cluster", listOf("opcl", "open cl.", "ocl", "oc")),
+enum class ObjectType(val canonicalName: String, val shortName: String, val otherNames: List<String>) {
+    ASTERISM("Asterism", "Ast", listOf("asterism", "Ast")),
+    CARBON_STAR("Carbon Star", "Carbon", listOf("carbon star", "carbon")),
+    DOUBLE_STAR("Double Star", "Double", listOf("double star", "ds", "dbl")),
+    GALAXY("Galaxy", "Gal", listOf("galaxy", "gal", "gx")),
+    GLOBULAR_CLUSTER("Globular Cluster", "GCl", listOf("globular cl.", "gcl", "gc")),
+    OPEN_CLUSTER("Open Cluster", "OCl", listOf("opcl", "open cl.", "ocl", "oc")),
+    DARK_NEBULA("Dark Nebula", "DN", listOf("dark nebula", "dn")),
+    EMISSION_NEBULA("Emission Nebula", "EN", listOf("emission nebula", "en")),
+    PLANETARY_NEBULA("Planetary Nebula", "PN", listOf("planetary neb.", "planetary", "pln", "pn")),
+    REFLECTION_NEBULA("Reflection Nebula", "RN", listOf("reflection nebula", "rn")),
+    SUPERNOVA_REMNANT("Supernova Remnant", "SNR", listOf("supernova remnant", "snr", "sr")),
 
-    DARK_NEBULA("Dark Nebula", listOf("dark nebula", "dn")),
-    EMISSION_NEBULA("Emission Nebula", listOf("emission nebula", "en")),
-    PLANETARY_NEBULA("Planetary Nebula", listOf("planetary neb.", "planetary", "pln", "pn")),
-    REFLECTION_NEBULA("Reflection Nebula", listOf("reflection nebula", "rn")),
-    SUPERNOVA_REMNANT("Supernova Remnant", listOf("supernova remnant", "snr", "sr")),
+    STAR_CLOUD("Star Cloud", "StarCloud", listOf("star cloud", "*'s")),
+    VARIABLE_STAR("Variable Star", "Variable", listOf("variable star"));
 
-    STAR_CLOUD("Star Cloud", listOf("star cloud", "*'s")),
-    VARIABLE_STAR("Variable Star", listOf("variable star"));
+    override fun toString(): String {
+        return shortName
+    }
 
     companion object {
         private val map: MutableMap<String, ObjectType> = HashMap()

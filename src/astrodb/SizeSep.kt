@@ -28,8 +28,16 @@ enum class SizeUnits(private val toSec: Double) {
 // dimensions for sizes are in arc minutes
 sealed class Size {
     object None : Size()
-    data class Diameter(val size: Double) : Size()
-    data class MajorMinor(val major: Double, val minor: Double) : Size()
+    data class Diameter(val size: Double) : Size() {
+        override fun toString(): String {
+            return String.format("%f'", size)
+        }
+    }
+    data class MajorMinor(val major: Double, val minor: Double) : Size() {
+        override fun toString(): String {
+            return String.format("%f' x %f'", major, minor)
+        }
+    }
 
     companion object {
         fun parse(sizeField: String): Size {

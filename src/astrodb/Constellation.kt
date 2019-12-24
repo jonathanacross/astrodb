@@ -1,6 +1,6 @@
 package astrodb
 
-enum class Constellation(val abbrev: String, val: name: String) {
+enum class Constellation(val abbrev: String, val fullName: String) {
     AND("And", "Andromeda"),
     ANT("Ant", "Antlia"),
     APS("Aps", "Apus"),
@@ -89,6 +89,10 @@ enum class Constellation(val abbrev: String, val: name: String) {
     VIR("Vir", "Virgo"),
     VOL("Vol", "Volans"),
     VUL("Vul", "Vulpecula");
+
+    override fun toString(): String {
+        return abbrev
+    }
 
     companion object {
         fun parse(conField: String): Constellation {

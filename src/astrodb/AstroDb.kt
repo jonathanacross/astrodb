@@ -95,9 +95,13 @@ fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>
 
 fun main(args: Array<String>) {
     val objectsOrError = readFile("/Users/jonathan/tmp/objects.tsv")
-    val objects: List<Object>
     when (objectsOrError) {
-        is Either.Error -> print(objectsOrError.error)
-        is Either.Value -> print("success; read " + objectsOrError.value.size)
+        is Either.Error -> println(objectsOrError.error)
+        is Either.Value -> {
+            println("success; read " + objectsOrError.value.size)
+            for (o in objectsOrError.value) {
+                println(o.obj)
+            }
+        }
     }
 }

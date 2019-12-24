@@ -1,18 +1,35 @@
 package astrodb
 
 sealed class Magnitude {
-    object None : Magnitude()
-    data class MagValue(val mag: Double) : Magnitude()
-    data class MagList(val magList: List<Double>) : Magnitude()
-    data class MagRange(val min: Double, val max: Double) : Magnitude()
+    object None : Magnitude() {
+        override fun toString() = ""
+    }
+    data class MagValue(val mag: Double) : Magnitude() {
+        override fun toString(): String {
+            return String.format("%.1f", mag)
+        }
+    }
+    data class MagList(val magList: List<Double>) : Magnitude() {
+        override fun toString(): String {
+            return magList.map{x -> String.format("%.1f", x)}.joinToString(", ")
+        }
+    }
+    data class MagRange(val min: Double, val max: Double) : Magnitude() {
+        override fun toString(): String {
+            return String.format("%.1f - $.1f", min, max)
+        }
+    }
 
     companion object {
         fun parse(magField: String): Magnitude {
             try {
+                if (magField.trim().equals("?")) {
+                    return None
+                }
                 val fields = magField.split(",")
                 if (fields.size > 1) {
                     val mags = fields.map { x -> x.trim().toDouble() }
-                    return Magnitude.MagList(mags)
+                    return MagList(mags)
                 } else {
                     val lohi = "[0-9.]+".toRegex().findAll(magField).map{ it.value }.toList()
                     return when {
