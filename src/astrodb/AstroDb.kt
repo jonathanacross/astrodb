@@ -14,6 +14,13 @@ import kotlin.math.round
 
 class ParseException(message: String) : Exception(message)
 
+fun formatNumber(d: Double): String {
+    if (d == Math.floor(d))
+        return String.format("%s", d.toInt())
+    else
+        return String.format("%.0f", d)
+}
+
 // reads base-60-style strings and changes to a double value.
 // examples: "24h 32.52m", "24 32 31" "24:32:31" "24:32.52" all go to 24.542
 // "-55 20' 15", "-55:20:15", "-55° 20.25'" all map to -55.3375

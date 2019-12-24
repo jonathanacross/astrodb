@@ -1,10 +1,10 @@
 package astrodb
 
 
-enum class SizeUnits(private val toSec: Double) {
-    DEGREES(3600.0),
-    ARC_MINUTES(60.0),
-    ARC_SECONDS(1.0);
+enum class SizeUnits(private val toSec: Double, val defaultNotation: String) {
+    DEGREES(3600.0, "°"),
+    ARC_MINUTES(60.0, "'"),
+    ARC_SECONDS(1.0, "\"");
 
     fun toSeconds(): Double = toSec
     fun fromSeconds(): Double = 1.0 / toSec
@@ -32,12 +32,27 @@ sealed class Size {
     }
     data class Diameter(val size: Double) : Size() {
         override fun toString(): String {
-            return String.format("%f'", size)
+            val units = getBestUnits(size)
+            val amount = size * SizeUnits.ARC_MINUTES.toSeconds() *units.fromSeconds()
+            return formatNumber(amount) + units.defaultNotation
         }
     }
     data class MajorMinor(val major: Double, val minor: Double) : Size() {
         override fun toString(): String {
-            return String.format("%f' x %f'", major, minor)
+            val units = getBestUnits(Math.sqrt(major * minor))
+            val scale = SizeUnits.ARC_MINUTES.toSeconds() * units.fromSeconds()
+            val majorAmt = major * scale
+            val minorAmt = minor * scale
+            return formatNumber(majorAmt) + units.defaultNotation +
+                    " x " + formatNumber(minorAmt) + units.defaultNotation
+        }
+    }
+
+    fun getBestUnits(sizeArcMin: Double):SizeUnits {
+        return when {
+            sizeArcMin >= 2 * 60 -> SizeUnits.DEGREES
+            sizeArcMin < 1 -> SizeUnits.ARC_SECONDS
+            else -> SizeUnits.ARC_MINUTES
         }
     }
 
