@@ -16,7 +16,7 @@ sealed class Magnitude {
     }
     data class MagRange(val min: Double, val max: Double) : Magnitude() {
         override fun toString(): String {
-            return String.format("%.1f - $.1f", min, max)
+            return String.format("%.1f - %.1f", min, max)
         }
     }
 
