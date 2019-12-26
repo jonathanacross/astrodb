@@ -55,11 +55,13 @@ fun parseLine(line: String): Object {
     val dec = parseBase60(fields[5])
     val mag = Magnitude.parse(fields[6])
     val size = Size.parse(fields[7])
-    val objectClass = fields[9]
-    val distance = Distance.parse(fields[10])
-    val notes = fields[11]
+    val seps = Separation.parse(fields[8])
+    val pas = fields[9]
+    val objectClass = fields[10]
+    val distance = Distance.parse(fields[11])
+    val notes = fields[12]
 
-    return Object(id, names, types, con, ra, dec, mag, size, objectClass, distance, notes)
+    return Object(id, names, types, con, ra, dec, mag, size, seps, pas, objectClass, distance, notes)
 }
 
 data class ObjectWithLine(val obj: Object, val line: Int)
@@ -75,7 +77,7 @@ fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
             try {
                 val observingObject = parseLine(line)
                 objects.add(ObjectWithLine(observingObject, lineNumber))
-            } catch (e: ParseException) {
+            } catch (e: Exception) {
                 return error(e.message + " on line " + lineNumber)
             }
         }
@@ -91,15 +93,15 @@ fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
         return error(sb.toString())
     }
 
-//    val likelyDuplicates = findLikelyDuplicates(objects)
-//    if (likelyDuplicates.size > 0) {
-//        val sb = StringBuilder()
-//        for ((id, objs) in likelyDuplicates.entries) {
-//            val lines = objs.map{ o -> o.line }
-//            sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map{x -> x.obj.id} + "' on lines " + lines + "\n")
-//        }
-//        return error(sb.toString())
-//    }
+    val likelyDuplicates = findLikelyDuplicates(objects)
+    if (likelyDuplicates.size > 0) {
+        val sb = StringBuilder()
+        for ((id, objs) in likelyDuplicates.entries) {
+            val lines = objs.map{ o -> o.line }
+            sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map{x -> x.obj.id} + "' on lines " + lines + "\n")
+        }
+        return error(sb.toString())
+    }
 
     return value(objects)
 }
@@ -116,8 +118,8 @@ fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>
 
 fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>>  {
     fun hashDist(obj: Object): Int {
-        val intRa = round(obj.ra * 3600).toInt()
-        val intDec = round(obj.dec * 3600).toInt()
+        val intRa = round(obj.ra * 60).toInt()
+        val intDec = round(obj.dec * 60).toInt()
         return intRa * 1000000 + intDec
     }
     val duplicates = objs.groupBy({ hashDist(it.obj).toString()}, { it })

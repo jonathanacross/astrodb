@@ -30,13 +30,15 @@ sealed class Size {
     object None : Size() {
         override fun toString() = ""
     }
+
     data class Diameter(val size: Double) : Size() {
         override fun toString(): String {
             val units = getBestUnits(size)
-            val amount = size * SizeUnits.ARC_MINUTES.toSeconds() *units.fromSeconds()
+            val amount = size * SizeUnits.ARC_MINUTES.toSeconds() * units.fromSeconds()
             return formatNumber(amount) + units.defaultNotation
         }
     }
+
     data class MajorMinor(val major: Double, val minor: Double) : Size() {
         override fun toString(): String {
             val units = getBestUnits(Math.sqrt(major * minor))
@@ -48,7 +50,7 @@ sealed class Size {
         }
     }
 
-    fun getBestUnits(sizeArcMin: Double):SizeUnits {
+    fun getBestUnits(sizeArcMin: Double): SizeUnits {
         return when {
             sizeArcMin >= 2 * 60 -> SizeUnits.DEGREES
             sizeArcMin < 1 -> SizeUnits.ARC_SECONDS
@@ -64,7 +66,7 @@ sealed class Size {
 
             val givenUnits = SizeUnits.parse(sizeField, SizeUnits.ARC_MINUTES)
             val scale: Double = givenUnits.toSeconds() * SizeUnits.ARC_MINUTES.fromSeconds()
-            val sizes = "[0-9.]+".toRegex().findAll(sizeField).map{ it.value.toDouble() * scale }.toList()
+            val sizes = "[0-9.]+".toRegex().findAll(sizeField).map { it.value.toDouble() * scale }.toList()
             if (sizes.size == 1) {
                 return Diameter(sizes[0])
             } else if (sizes.size == 2) {
@@ -76,12 +78,46 @@ sealed class Size {
     }
 }
 
-data class IndexPair(val first: Int, val second: Int)
-
 // dimensions for separations are in arc seconds
 sealed class Separation {
-    object None : Separation()
-    data class SingleSep(val seps: Map<IndexPair, Double>) : Separation()
-    data class Separations(val seps: Map<IndexPair, Double>) : Separation()
-}
+    object None : Separation() {
+        override fun toString() = ""
+    }
+    data class Single(val sep: Double) : Separation()
+    data class Named(val seps: List<Pair<String, Double>>) : Separation()
 
+    companion object {
+        private fun extractDouble(field: String): Double {
+            return "[0-9.]+".toRegex().find(field)!!.value.toDouble()
+        }
+
+        private fun parseKv(kvField: String, scale: Double): Pair<String, Double> {
+            val parts = kvField.split("=")
+            if (parts.size != 2) {
+                throw ParseException("couldn't read Separation; expected = in key/value for '" + kvField + "'")
+            }
+            val key = parts[0]
+            val valueField = parts[1]
+            return Pair(key, extractDouble(valueField) * scale)
+        }
+
+        fun parse(sepField: String): Separation {
+            if (sepField.isBlank()) {
+                return None
+            }
+
+            try {
+                val givenUnits = SizeUnits.parse(sepField, SizeUnits.ARC_SECONDS)
+                val scale: Double = givenUnits.toSeconds()
+                val sepFields = sepField.split(", ")
+                if (sepFields.size == 1) {
+                    return Single(extractDouble(sepFields[0]) * scale)
+                } else {
+                    return Named(sepFields.map { f -> parseKv(f, scale) }.toList())
+                }
+            } catch (e: NumberFormatException) {
+                throw ParseException("Couldn't parse separation '" + sepField + "'")
+            }
+        }
+    }
+}

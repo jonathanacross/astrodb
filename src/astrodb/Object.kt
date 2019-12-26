@@ -38,6 +38,8 @@ data class Object(
     val dec: Double,
     val magnitude: Magnitude,
     val size: Size,
+    val separations: Separation,
+    val positionAngles: String,
     val objectClass: String,
     val distance: Distance,
     val notes: String
@@ -67,6 +69,8 @@ data class Object(
                 formatDec(dec) + "\t" +
                 magnitude + "\t" +
                 size + "\t" +
+                separations + "\t" +
+                positionAngles + "\t" +
                 objectClass + "\t" +
                 distance + "\t" +
                 notes

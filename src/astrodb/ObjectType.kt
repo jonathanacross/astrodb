@@ -3,7 +3,7 @@ package astrodb
 enum class ObjectType(val canonicalName: String, val shortName: String, val otherNames: List<String>) {
     ASTERISM("Asterism", "Ast", listOf("asterism", "Ast")),
     CARBON_STAR("Carbon Star", "Carbon", listOf("carbon star", "carbon")),
-    DOUBLE_STAR("Double Star", "Double", listOf("double star", "ds", "dbl")),
+    DOUBLE_STAR("Double Star", "Double", listOf("double star", "ds", "dbl", "double")),
     GALAXY("Galaxy", "Gal", listOf("galaxy", "gal", "gx")),
     GLOBULAR_CLUSTER("Globular Cluster", "GCl", listOf("globular cl.", "gcl", "gc")),
     OPEN_CLUSTER("Open Cluster", "OCl", listOf("opcl", "open cl.", "ocl", "oc")),
