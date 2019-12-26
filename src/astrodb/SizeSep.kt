@@ -11,12 +11,12 @@ enum class SizeUnits(private val toSec: Double, val defaultNotation: String) {
 
     companion object {
         fun parse(text: String, default: SizeUnits): SizeUnits {
-            val tLower = text.toLowerCase()
-            if (tLower.contains("\"") || tLower.contains("''") || tLower.contains("s")) {
+            val tLower = text.toLowerCase().trim()
+            if (tLower.endsWith("\"") || tLower.endsWith("''") || tLower.endsWith("s")) {
                 return ARC_SECONDS
-            } else if (tLower.contains("\'") || tLower.contains("m")) {
+            } else if (tLower.endsWith("\'") || tLower.endsWith("m")) {
                 return ARC_MINUTES
-            } else if (tLower.contains("d") || tLower.contains("°")) {
+            } else if (tLower.endsWith("d") || tLower.endsWith("deg") || tLower.endsWith("°")) {
                 return DEGREES
             } else {
                 return default
@@ -78,27 +78,41 @@ sealed class Size {
     }
 }
 
+data class NamedSeparation(val key: String, val sep: Double) {
+    override fun toString(): String {
+        return key + "=" + formatNumber(sep)
+    }
+}
+
 // dimensions for separations are in arc seconds
 sealed class Separation {
     object None : Separation() {
         override fun toString() = ""
     }
-    data class Single(val sep: Double) : Separation()
-    data class Named(val seps: List<Pair<String, Double>>) : Separation()
+    data class Single(val sep: Double) : Separation() {
+        override fun toString(): String {
+            return formatNumber(sep)
+        }
+    }
+    data class Named(val seps: List<NamedSeparation>) : Separation() {
+        override fun toString(): String {
+            return seps.map { x -> x.toString() }.joinToString(", ")
+        }
+    }
 
     companion object {
         private fun extractDouble(field: String): Double {
             return "[0-9.]+".toRegex().find(field)!!.value.toDouble()
         }
 
-        private fun parseKv(kvField: String, scale: Double): Pair<String, Double> {
+        private fun parseKv(kvField: String, scale: Double): NamedSeparation {
             val parts = kvField.split("=")
             if (parts.size != 2) {
                 throw ParseException("couldn't read Separation; expected = in key/value for '" + kvField + "'")
             }
             val key = parts[0]
             val valueField = parts[1]
-            return Pair(key, extractDouble(valueField) * scale)
+            return NamedSeparation(key, extractDouble(valueField) * scale)
         }
 
         fun parse(sepField: String): Separation {

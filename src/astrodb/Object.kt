@@ -39,7 +39,7 @@ data class Object(
     val magnitude: Magnitude,
     val size: Size,
     val separations: Separation,
-    val positionAngles: String,
+    val positionAngles: PositionAngle,
     val objectClass: String,
     val distance: Distance,
     val notes: String

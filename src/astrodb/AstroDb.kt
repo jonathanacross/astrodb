@@ -56,7 +56,7 @@ fun parseLine(line: String): Object {
     val mag = Magnitude.parse(fields[6])
     val size = Size.parse(fields[7])
     val seps = Separation.parse(fields[8])
-    val pas = fields[9]
+    val pas = PositionAngle.parse(fields[9])
     val objectClass = fields[10]
     val distance = Distance.parse(fields[11])
     val notes = fields[12]
@@ -93,15 +93,15 @@ fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
         return error(sb.toString())
     }
 
-    val likelyDuplicates = findLikelyDuplicates(objects)
-    if (likelyDuplicates.size > 0) {
-        val sb = StringBuilder()
-        for ((id, objs) in likelyDuplicates.entries) {
-            val lines = objs.map{ o -> o.line }
-            sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map{x -> x.obj.id} + "' on lines " + lines + "\n")
-        }
-        return error(sb.toString())
-    }
+//    val likelyDuplicates = findLikelyDuplicates(objects)
+//    if (likelyDuplicates.size > 0) {
+//        val sb = StringBuilder()
+//        for ((id, objs) in likelyDuplicates.entries) {
+//            val lines = objs.map{ o -> o.line }
+//            sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map{x -> x.obj.id} + "' on lines " + lines + "\n")
+//        }
+//        return error(sb.toString())
+//    }
 
     return value(objects)
 }
