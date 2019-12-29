@@ -43,10 +43,14 @@ fun parseBase60(formattedValue: String): Double {
     }
 }
 
+fun parseNames(nameField: String): List<String> {
+    return nameField.split("/").toList()
+}
+
 fun parseObjectLine(line: String): Object {
     val fields = line.split("\t")
     val id = fields[0]
-    val names = listOf(fields[1])
+    val names = parseNames(fields[1])
     val types = ObjectType.parse(fields[2])
     val con = Constellation.parse(fields[3])
     val ra = parseBase60(fields[4])
@@ -176,17 +180,32 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>): List<JoinedObjec
     val joinedObjects = objs.map { o ->
         JoinedObject(o, programById.getOrDefault(o.id, emptyList()))
     }
+
     return joinedObjects
 }
-
 
 fun main(args: Array<String>) {
     try {
         val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv")
         val programData = readProgramFile("/Users/jonathan/tmp/programs.txt")
         val joinedObjects = joinData(objects, programData)
-        for (jo in joinedObjects) {
-            println(jo)
+
+        //val filter = ObjectFilter(objectTypesIn = listOf(ObjectType.OPEN_CLUSTER))
+        //val filter = ObjectFilter(conIn = listOf(Constellation.AND, Constellation.LYR))
+        //val filter = ObjectFilter(nameIs="M 45")
+        //val filter = ObjectFilter(nameLike="M 10")
+        //val filter = ObjectFilter(decGreaterThan = 80.0)
+        //val filter = ObjectFilter(decLessThan = -30.0)
+        //val filter = ObjectFilter(raInRange = RaRange(20.2, 20.5))
+        //val filter = ObjectFilter(raInRange = RaRange(23.50, 0.50))
+        //val filter = ObjectFilter(sizeGreaterThan = 2.0 * 60 )
+        //val filter = ObjectFilter(brighterThanMagnitude = 2.0)
+        val filter = ObjectFilter(inProgram = "Wimmer's List")
+        val filteredObjs = joinedObjects.filter{o -> filter.filter(o)}
+
+        println("found " + filteredObjs.size + " objects:")
+        for (fo in filteredObjs) {
+            println(fo)
         }
     } catch (e: Exception) {
         println(e)

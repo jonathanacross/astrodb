@@ -7,32 +7,39 @@ data class KeyValue(val key: String, val value: Double) {
 }
 
 sealed class Magnitude {
+    abstract fun asNumber(): Double?
+
     object None : Magnitude() {
         override fun toString() = ""
+        override fun asNumber(): Double? = null
     }
 
     data class MagValue(val mag: Double) : Magnitude() {
         override fun toString(): String {
             return String.format("%.1f", mag)
         }
+        override fun asNumber(): Double? = mag
     }
 
     data class MagList(val magList: List<Double>) : Magnitude() {
         override fun toString(): String {
             return magList.map { x -> String.format("%.1f", x) }.joinToString(", ")
         }
+        override fun asNumber(): Double? = magList.min()
     }
 
     data class MagRange(val min: Double, val max: Double) : Magnitude() {
         override fun toString(): String {
             return String.format("%.1f - %.1f", min, max)
         }
+        override fun asNumber(): Double? = min
     }
 
     data class Named(val mags: List<KeyValue>) : Magnitude() {
         override fun toString(): String {
             return mags.map { x -> x.toString() }.joinToString(", ")
         }
+        override fun asNumber(): Double? = mags.map{m -> m.value}.min()
     }
 
     companion object {
