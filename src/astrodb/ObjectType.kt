@@ -5,8 +5,8 @@ enum class ObjectType(val canonicalName: String, val shortName: String, val othe
     CARBON_STAR("Carbon Star", "Carbon", listOf("carbon star", "carbon")),
     DOUBLE_STAR("Double Star", "Double", listOf("double star", "ds", "dbl", "double")),
     GALAXY("Galaxy", "Gal", listOf("galaxy", "gal", "gx")),
-    GLOBULAR_CLUSTER("Globular Cluster", "GCl", listOf("globular cl.", "gcl", "gc")),
-    OPEN_CLUSTER("Open Cluster", "OCl", listOf("opcl", "open cl.", "ocl", "oc")),
+    GLOBULAR_CLUSTER("Globular Cluster", "GCl", listOf("globular cl.", "gcl", "gc", "globular", "globular cluster")),
+    OPEN_CLUSTER("Open Cluster", "OCl", listOf("opcl", "open cl.", "ocl", "oc", "open cluster")),
     DARK_NEBULA("Dark Nebula", "DN", listOf("dark nebula", "dn")),
     EMISSION_NEBULA("Emission Nebula", "EN", listOf("emission nebula", "en")),
     PLANETARY_NEBULA("Planetary Nebula", "PN", listOf("planetary neb.", "planetary", "pln", "pn")),
@@ -14,7 +14,7 @@ enum class ObjectType(val canonicalName: String, val shortName: String, val othe
     SUPERNOVA_REMNANT("Supernova Remnant", "SNR", listOf("supernova remnant", "snr", "sr")),
 
     STAR_CLOUD("Star Cloud", "StarCloud", listOf("star cloud", "*'s")),
-    VARIABLE_STAR("Variable Star", "Variable", listOf("variable star"));
+    VARIABLE_STAR("Variable Star", "Variable", listOf("variable star", "variable"));
 
     override fun toString(): String {
         return shortName

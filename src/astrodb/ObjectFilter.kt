@@ -23,7 +23,8 @@ data class ObjectFilter(
     val brighterThanMagnitude: Double? = null,
     val sizeGreaterThan: Double? = null,
     val sizeLessThan: Double? = null,
-    val inProgram: String? = null) {
+    val inProgram: String? = null,
+    val seen: Boolean? = null) {
 
     private fun listContainsStringMatch(list: List<String>, str: String): Boolean {
         return list.any{ li -> li.contains(str) }
@@ -68,6 +69,9 @@ data class ObjectFilter(
             return false
         }
         if (inProgram != null && !listContainsProgram(obj.programs, inProgram)) {
+            return false
+        }
+        if (seen != null && ((obj.observations.size == 0) == seen)) {
             return false
         }
 

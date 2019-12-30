@@ -74,6 +74,14 @@ fun parseProgramLine(line: String): ProgramEntry {
     return ProgramEntry(programName, itemNumber, itemId)
 }
 
+fun parseObservationLine(line: String): Observation {
+    val fields = line.split("\t")
+    val date = fields[0]
+    val itemId = fields[1]
+    return Observation(date, itemId)
+}
+
+
 data class ObjectWithLine(val obj: Object, val line: Int)
 
 fun readObjectFile(fileName: String): List<Object> {
@@ -136,6 +144,27 @@ fun readProgramFile(fileName: String): List<ProgramEntry> {
     return programData
 }
 
+fun readObservationFile(fileName: String): List<Observation> {
+    val fileLines = mutableListOf<String>()
+    File(fileName).useLines { filelines -> fileLines.addAll(filelines) }
+
+    val observations = mutableListOf<Observation>()
+    fileLines.forEachIndexed { index, line ->
+        if (!line.startsWith("#")) {
+            val lineNumber = index + 1
+            try {
+                val entry = parseObservationLine(line)
+                observations.add(entry)
+            } catch (e: Exception) {
+                throw ParseException(e.message + " on line " + lineNumber)
+            }
+        }
+    }
+
+    return observations
+}
+
+
 fun normalizeId(id: String): String {
     return id.toLowerCase().replace(" ", "")
 }
@@ -158,9 +187,11 @@ fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWit
     return duplicates
 }
 
-data class JoinedObject(val obj: Object, val programs: List<ProgramEntry>)
+data class JoinedObject(val obj: Object,
+                        val programs: List<ProgramEntry>,
+                        val observations: List<Observation>)
 
-fun joinData(objs: List<Object>, programs: List<ProgramEntry>): List<JoinedObject> {
+fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: List<Observation>): List<JoinedObject> {
 
     // check for items in programs that don't have corresponding objects
     val expectedItems = programs.map { p -> p.itemId }.toSet()
@@ -173,12 +204,26 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>): List<JoinedObjec
                     missingObjects.joinToString("\n")
         )
     }
-
     // convert ProgramEntry to a map based on the object ids.
     val programById = programs.groupBy(keySelector = { p -> p.itemId })
 
+    // check for items in observations that don't have objects
+    val expectedItemsFromObservations = observations.map { p -> p.itemId }.toSet()
+    val missingObjectsFromObservations = expectedItemsFromObservations.filter { e -> !knownObjects.contains(e) }
+    if (missingObjectsFromObservations.size > 0) {
+        throw ParseException(
+            "Found " + missingObjectsFromObservations.size +
+                    " objects in observation data that had no object data. Item ids = \n" +
+                    missingObjectsFromObservations.joinToString("\n")
+        )
+    }
+    // convert ProgramEntry to a map based on the object ids.
+    val observationById = observations.groupBy(keySelector = { p -> p.itemId })
+
     val joinedObjects = objs.map { o ->
-        JoinedObject(o, programById.getOrDefault(o.id, emptyList()))
+        JoinedObject(o,
+            programById.getOrDefault(o.id, emptyList()),
+            observationById.getOrDefault(o.id, emptyList()))
     }
 
     return joinedObjects
@@ -188,7 +233,8 @@ fun main(args: Array<String>) {
     try {
         val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv")
         val programData = readProgramFile("/Users/jonathan/tmp/programs.txt")
-        val joinedObjects = joinData(objects, programData)
+        val observations = readObservationFile("/Users/jonathan/tmp/observations.txt")
+        val joinedObjects = joinData(objects, programData, observations)
 
         //val filter = ObjectFilter(objectTypesIn = listOf(ObjectType.OPEN_CLUSTER))
         //val filter = ObjectFilter(conIn = listOf(Constellation.AND, Constellation.LYR))
@@ -200,7 +246,8 @@ fun main(args: Array<String>) {
         //val filter = ObjectFilter(raInRange = RaRange(23.50, 0.50))
         //val filter = ObjectFilter(sizeGreaterThan = 2.0 * 60 )
         //val filter = ObjectFilter(brighterThanMagnitude = 2.0)
-        val filter = ObjectFilter(inProgram = "Wimmer's List")
+        //val filter = ObjectFilter(inProgram = "Wimmer's List")
+        val filter = ObjectFilter(seen = false)
         val filteredObjs = joinedObjects.filter{o -> filter.filter(o)}
 
         println("found " + filteredObjs.size + " objects:")
