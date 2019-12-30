@@ -27,8 +27,11 @@ enum class SizeUnits(private val toSec: Double, val defaultNotation: String) {
 
 // dimensions for sizes are in arc minutes
 sealed class Size {
+    abstract fun asNumber(): Double
+
     object None : Size() {
         override fun toString() = ""
+        override fun asNumber(): Double = 0.0
     }
 
     data class Diameter(val size: Double) : Size() {
@@ -37,6 +40,8 @@ sealed class Size {
             val amount = size * SizeUnits.ARC_MINUTES.toSeconds() * units.fromSeconds()
             return formatNumber(amount) + units.defaultNotation
         }
+
+        override fun asNumber(): Double = size
     }
 
     data class MajorMinor(val major: Double, val minor: Double) : Size() {
@@ -48,6 +53,8 @@ sealed class Size {
             return formatNumber(majorAmt) + units.defaultNotation +
                     " x " + formatNumber(minorAmt) + units.defaultNotation
         }
+
+        override fun asNumber(): Double = Math.sqrt(major * minor)
     }
 
     fun getBestUnits(sizeArcMin: Double): SizeUnits {

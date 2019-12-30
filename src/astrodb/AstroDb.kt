@@ -1,7 +1,6 @@
 package astrodb
 
 import java.io.File
-import java.lang.StringBuilder
 import kotlin.math.abs
 import kotlin.math.round
 
@@ -9,7 +8,6 @@ import kotlin.math.round
 // has a fairly comprehensive dataset for magnitude, distance, type, size
 // https://github.com/Stellarium/stellarium/blob/master/nebulae/default/names.dat
 // has names
-
 
 
 class ParseException(message: String) : Exception(message)
@@ -45,10 +43,14 @@ fun parseBase60(formattedValue: String): Double {
     }
 }
 
-fun parseLine(line: String): Object {
+fun parseNames(nameField: String): List<String> {
+    return nameField.split("/").toList()
+}
+
+fun parseObjectLine(line: String): Object {
     val fields = line.split("\t")
     val id = fields[0]
-    val names = listOf(fields[1])
+    val names = parseNames(fields[1])
     val types = ObjectType.parse(fields[2])
     val con = Constellation.parse(fields[3])
     val ra = parseBase60(fields[4])
@@ -64,9 +66,25 @@ fun parseLine(line: String): Object {
     return Object(id, names, types, con, ra, dec, mag, size, seps, pas, objectClass, distance, notes)
 }
 
+fun parseProgramLine(line: String): ProgramEntry {
+    val fields = line.split("\t")
+    val programName = fields[0]
+    val itemNumber = fields[1]
+    val itemId = fields[2]
+    return ProgramEntry(programName, itemNumber, itemId)
+}
+
+fun parseObservationLine(line: String): Observation {
+    val fields = line.split("\t")
+    val date = fields[0]
+    val itemId = fields[1]
+    return Observation(date, itemId)
+}
+
+
 data class ObjectWithLine(val obj: Object, val line: Int)
 
-fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
+fun readObjectFile(fileName: String): List<Object> {
     val fileLines = mutableListOf<String>()
     File(fileName).useLines { filelines -> fileLines.addAll(filelines) }
 
@@ -75,10 +93,10 @@ fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
         if (!line.startsWith("#")) {
             val lineNumber = index + 1
             try {
-                val observingObject = parseLine(line)
+                val observingObject = parseObjectLine(line)
                 objects.add(ObjectWithLine(observingObject, lineNumber))
             } catch (e: Exception) {
-                return error(e.message + " on line " + lineNumber)
+                throw ParseException(e.message + " on line " + lineNumber)
             }
         }
     }
@@ -87,10 +105,10 @@ fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
     if (duplicates.size > 0) {
         val sb = StringBuilder()
         for ((id, objs) in duplicates.entries) {
-            val lines = objs.map{ o -> o.line }
+            val lines = objs.map { o -> o.line }
             sb.append("Duplicate entries for '" + id + "' on lines " + lines + "\n")
         }
-        return error(sb.toString())
+        throw ParseException(sb.toString())
     }
 
 //    val likelyDuplicates = findLikelyDuplicates(objects)
@@ -100,43 +118,143 @@ fun readFile(fileName: String): Either<String, List<ObjectWithLine>> {
 //            val lines = objs.map{ o -> o.line }
 //            sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map{x -> x.obj.id} + "' on lines " + lines + "\n")
 //        }
-//        return error(sb.toString())
+//        throw ParseException(sb.toString())
 //    }
 
-    return value(objects)
+    return objects.map { objectWithLine -> objectWithLine.obj }
 }
+
+fun readProgramFile(fileName: String): List<ProgramEntry> {
+    val fileLines = mutableListOf<String>()
+    File(fileName).useLines { filelines -> fileLines.addAll(filelines) }
+
+    val programData = mutableListOf<ProgramEntry>()
+    fileLines.forEachIndexed { index, line ->
+        if (!line.startsWith("#")) {
+            val lineNumber = index + 1
+            try {
+                val entry = parseProgramLine(line)
+                programData.add(entry)
+            } catch (e: Exception) {
+                throw ParseException(e.message + " on line " + lineNumber)
+            }
+        }
+    }
+
+    return programData
+}
+
+fun readObservationFile(fileName: String): List<Observation> {
+    val fileLines = mutableListOf<String>()
+    File(fileName).useLines { filelines -> fileLines.addAll(filelines) }
+
+    val observations = mutableListOf<Observation>()
+    fileLines.forEachIndexed { index, line ->
+        if (!line.startsWith("#")) {
+            val lineNumber = index + 1
+            try {
+                val entry = parseObservationLine(line)
+                observations.add(entry)
+            } catch (e: Exception) {
+                throw ParseException(e.message + " on line " + lineNumber)
+            }
+        }
+    }
+
+    return observations
+}
+
 
 fun normalizeId(id: String): String {
     return id.toLowerCase().replace(" ", "")
 }
 
-fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>>  {
+fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>> {
     val duplicates = objs.groupBy({ normalizeId(it.obj.id) }, { it })
         .filterValues { list -> list.size > 1 }
-   return duplicates
+    return duplicates
 }
 
-fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>>  {
+fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>> {
     fun hashDist(obj: Object): Int {
         val intRa = round(obj.ra * 60).toInt()
         val intDec = round(obj.dec * 60).toInt()
         return intRa * 1000000 + intDec
     }
-    val duplicates = objs.groupBy({ hashDist(it.obj).toString()}, { it })
+
+    val duplicates = objs.groupBy({ hashDist(it.obj).toString() }, { it })
         .filterValues { list -> list.size > 1 }
     return duplicates
 }
 
+data class JoinedObject(val obj: Object,
+                        val programs: List<ProgramEntry>,
+                        val observations: List<Observation>)
+
+fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: List<Observation>): List<JoinedObject> {
+
+    // check for items in programs that don't have corresponding objects
+    val expectedItems = programs.map { p -> p.itemId }.toSet()
+    val knownObjects = objs.map { o -> o.id }.toSet()
+    val missingObjects = expectedItems.filter { e -> !knownObjects.contains(e) }
+    if (missingObjects.size > 0) {
+        throw ParseException(
+            "Found " + missingObjects.size +
+                    " objects in observing lists that had no object data. Item ids = \n" +
+                    missingObjects.joinToString("\n")
+        )
+    }
+    // convert ProgramEntry to a map based on the object ids.
+    val programById = programs.groupBy(keySelector = { p -> p.itemId })
+
+    // check for items in observations that don't have objects
+    val expectedItemsFromObservations = observations.map { p -> p.itemId }.toSet()
+    val missingObjectsFromObservations = expectedItemsFromObservations.filter { e -> !knownObjects.contains(e) }
+    if (missingObjectsFromObservations.size > 0) {
+        throw ParseException(
+            "Found " + missingObjectsFromObservations.size +
+                    " objects in observation data that had no object data. Item ids = \n" +
+                    missingObjectsFromObservations.joinToString("\n")
+        )
+    }
+    // convert ProgramEntry to a map based on the object ids.
+    val observationById = observations.groupBy(keySelector = { p -> p.itemId })
+
+    val joinedObjects = objs.map { o ->
+        JoinedObject(o,
+            programById.getOrDefault(o.id, emptyList()),
+            observationById.getOrDefault(o.id, emptyList()))
+    }
+
+    return joinedObjects
+}
 
 fun main(args: Array<String>) {
-    val objectsOrError = readFile("/Users/jonathan/tmp/objects.tsv")
-    when (objectsOrError) {
-        is Either.Error -> println(objectsOrError.error)
-        is Either.Value -> {
-            println("success; read " + objectsOrError.value.size)
-            for (o in objectsOrError.value) {
-                println(o.obj)
-            }
+    try {
+        val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv")
+        val programData = readProgramFile("/Users/jonathan/tmp/programs.txt")
+        val observations = readObservationFile("/Users/jonathan/tmp/observations.txt")
+        val joinedObjects = joinData(objects, programData, observations)
+
+        //val filter = ObjectFilter(objectTypesIn = listOf(ObjectType.OPEN_CLUSTER))
+        //val filter = ObjectFilter(conIn = listOf(Constellation.AND, Constellation.LYR))
+        //val filter = ObjectFilter(nameIs="M 45")
+        //val filter = ObjectFilter(nameLike="M 10")
+        //val filter = ObjectFilter(decGreaterThan = 80.0)
+        //val filter = ObjectFilter(decLessThan = -30.0)
+        //val filter = ObjectFilter(raInRange = RaRange(20.2, 20.5))
+        //val filter = ObjectFilter(raInRange = RaRange(23.50, 0.50))
+        //val filter = ObjectFilter(sizeGreaterThan = 2.0 * 60 )
+        //val filter = ObjectFilter(brighterThanMagnitude = 2.0)
+        //val filter = ObjectFilter(inProgram = "Wimmer's List")
+        val filter = ObjectFilter(seen = false)
+        val filteredObjs = joinedObjects.filter{o -> filter.filter(o)}
+
+        println("found " + filteredObjs.size + " objects:")
+        for (fo in filteredObjs) {
+            println(fo)
         }
+    } catch (e: Exception) {
+        println(e)
     }
 }
