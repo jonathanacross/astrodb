@@ -47,44 +47,9 @@ fun parseNames(nameField: String): List<String> {
     return nameField.split("/").toList()
 }
 
-fun parseObjectLine(line: String): Object {
-    val fields = line.split("\t")
-    val id = fields[0]
-    val names = parseNames(fields[1])
-    val types = ObjectType.parse(fields[2])
-    val con = Constellation.parse(fields[3])
-    val ra = parseBase60(fields[4])
-    val dec = parseBase60(fields[5])
-    val mag = Magnitude.parse(fields[6])
-    val size = Size.parse(fields[7])
-    val seps = Separation.parse(fields[8])
-    val pas = PositionAngle.parse(fields[9])
-    val objectClass = fields[10]
-    val distance = Distance.parse(fields[11])
-    val notes = fields[12]
-
-    return Object(id, names, types, con, ra, dec, mag, size, seps, pas, objectClass, distance, notes)
-}
-
-fun parseProgramLine(line: String): ProgramEntry {
-    val fields = line.split("\t")
-    val programName = fields[0]
-    val itemNumber = fields[1]
-    val itemId = fields[2]
-    return ProgramEntry(programName, itemNumber, itemId)
-}
-
-fun parseObservationLine(line: String): Observation {
-    val fields = line.split("\t")
-    val date = fields[0]
-    val itemId = fields[1]
-    return Observation(date, itemId)
-}
-
-
 data class ObjectWithLine(val obj: Object, val line: Int)
 
-fun readObjectFile(fileName: String): List<Object> {
+fun readObjectFile(fileName: String, checkLikelyDuplicates: Boolean): List<Object> {
     val fileLines = mutableListOf<String>()
     File(fileName).useLines { filelines -> fileLines.addAll(filelines) }
 
@@ -93,7 +58,7 @@ fun readObjectFile(fileName: String): List<Object> {
         if (!line.startsWith("#")) {
             val lineNumber = index + 1
             try {
-                val observingObject = parseObjectLine(line)
+                val observingObject = Object.parse(line)
                 objects.add(ObjectWithLine(observingObject, lineNumber))
             } catch (e: Exception) {
                 throw ParseException(e.message + " on line " + lineNumber)
@@ -111,15 +76,17 @@ fun readObjectFile(fileName: String): List<Object> {
         throw ParseException(sb.toString())
     }
 
-//    val likelyDuplicates = findLikelyDuplicates(objects)
-//    if (likelyDuplicates.size > 0) {
-//        val sb = StringBuilder()
-//        for ((id, objs) in likelyDuplicates.entries) {
-//            val lines = objs.map{ o -> o.line }
-//            sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map{x -> x.obj.id} + "' on lines " + lines + "\n")
-//        }
-//        throw ParseException(sb.toString())
-//    }
+    if (checkLikelyDuplicates) {
+        val likelyDuplicates = findLikelyDuplicates(objects)
+        if (likelyDuplicates.size > 0) {
+            val sb = StringBuilder()
+            for ((id, objs) in likelyDuplicates.entries) {
+                val lines = objs.map { o -> o.line }
+                sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map { x -> x.obj.id } + "' on lines " + lines + "\n")
+            }
+            throw ParseException(sb.toString())
+        }
+    }
 
     return objects.map { objectWithLine -> objectWithLine.obj }
 }
@@ -133,7 +100,7 @@ fun readProgramFile(fileName: String): List<ProgramEntry> {
         if (!line.startsWith("#")) {
             val lineNumber = index + 1
             try {
-                val entry = parseProgramLine(line)
+                val entry = ProgramEntry.parse(line)
                 programData.add(entry)
             } catch (e: Exception) {
                 throw ParseException(e.message + " on line " + lineNumber)
@@ -153,7 +120,7 @@ fun readObservationFile(fileName: String): List<Observation> {
         if (!line.startsWith("#")) {
             val lineNumber = index + 1
             try {
-                val entry = parseObservationLine(line)
+                val entry = Observation.parse(line)
                 observations.add(entry)
             } catch (e: Exception) {
                 throw ParseException(e.message + " on line " + lineNumber)
@@ -231,8 +198,8 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
 
 fun main(args: Array<String>) {
     try {
-        //val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv")
-        val objects = readObjectFile("/Users/jonathan/tmp/objs2.txt")
+        //val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv", false)
+        val objects = readObjectFile("/Users/jonathan/tmp/objs2.txt", false)
         val programData = readProgramFile("/Users/jonathan/tmp/programs.txt")
         val observations = readObservationFile("/Users/jonathan/tmp/observations.txt")
         val joinedObjects = joinData(objects, programData, observations)

@@ -76,4 +76,25 @@ data class Object(
                 distance + "\t" +
                 notes
     }
+
+    companion object {
+        fun parse(line: String): Object {
+            val fields = line.split("\t")
+            val id = fields[0]
+            val names = parseNames(fields[1])
+            val types = ObjectType.parse(fields[2])
+            val con = Constellation.parse(fields[3])
+            val ra = parseBase60(fields[4])
+            val dec = parseBase60(fields[5])
+            val mag = Magnitude.parse(fields[6])
+            val size = Size.parse(fields[7])
+            val seps = Separation.parse(fields[8])
+            val pas = PositionAngle.parse(fields[9])
+            val objectClass = fields[10]
+            val distance = Distance.parse(fields[11])
+            val notes = fields[12]
+
+            return Object(id, names, types, con, ra, dec, mag, size, seps, pas, objectClass, distance, notes)
+        }
+    }
 }
