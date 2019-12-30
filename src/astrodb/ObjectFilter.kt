@@ -2,12 +2,12 @@ package astrodb
 
 data class RaRange(val min: Double, val max: Double) {
     fun inRange(ra: Double): Boolean {
-        if (min <= max) {
-            return min <= ra && ra <= max
+        return if (min <= max) {
+            ra in min..max
         } else {
             // This happens when the range crosses over from 23.99 hours to 0.00 hours.
             // In this case, the inclusion is reversed.
-            return ra <= max || ra >= min
+            ra <= max || ra >= min
         }
     }
 }
@@ -24,14 +24,15 @@ data class ObjectFilter(
     val sizeGreaterThan: Double? = null,
     val sizeLessThan: Double? = null,
     val inProgram: String? = null,
-    val seen: Boolean? = null) {
+    val seen: Boolean? = null
+) {
 
     private fun listContainsStringMatch(list: List<String>, str: String): Boolean {
-        return list.any{ li -> li.contains(str) }
+        return list.any { li -> li.contains(str) }
     }
 
     private fun listContainsProgram(list: List<ProgramEntry>, str: String): Boolean {
-        return list.any{ li -> li.programName == str }
+        return list.any { li -> li.programName == str }
     }
 
     fun filter(obj: JoinedObject): Boolean {
@@ -71,7 +72,7 @@ data class ObjectFilter(
         if (inProgram != null && !listContainsProgram(obj.programs, inProgram)) {
             return false
         }
-        if (seen != null && ((obj.observations.size == 0) == seen)) {
+        if (seen != null && ((obj.observations.isEmpty()) == seen)) {
             return false
         }
 

@@ -1,7 +1,7 @@
 package astrodb
 
-enum class ObjectType(val canonicalName: String, val shortName: String, val otherNames: List<String>) {
-    ASTERISM("Asterism", "Ast", listOf("asterism", "Ast")),
+enum class ObjectType(val canonicalName: String, private val shortName: String, val otherNames: List<String>) {
+    ASTERISM("Asterism", "Ast", listOf("asterism", "ast")),
     CARBON_STAR("Carbon Star", "Carbon", listOf("carbon star", "carbon")),
     DOUBLE_STAR("Double Star", "Double", listOf("double star", "ds", "dbl", "double")),
     GALAXY("Galaxy", "Gal", listOf("galaxy", "gal", "gx")),
@@ -13,7 +13,7 @@ enum class ObjectType(val canonicalName: String, val shortName: String, val othe
     REFLECTION_NEBULA("Reflection Nebula", "RN", listOf("reflection nebula", "rn")),
     SUPERNOVA_REMNANT("Supernova Remnant", "SNR", listOf("supernova remnant", "snr", "sr")),
 
-    STAR_CLOUD("Star Cloud", "StarCloud", listOf("star cloud", "*'s")),
+    STAR_CLOUD("Star Cloud", "Star Cloud", listOf("star cloud", "*'s")),
     VARIABLE_STAR("Variable Star", "Variable", listOf("variable star", "variable"));
 
     override fun toString(): String {
@@ -39,7 +39,7 @@ enum class ObjectType(val canonicalName: String, val shortName: String, val othe
                 if (ot != null) {
                     types.add(ot)
                 } else {
-                    throw ParseException("couldn't parse object type(s) '" + typesField + "'")
+                    throw ParseException("couldn't parse object type(s) '$typesField'")
                 }
             }
             return types

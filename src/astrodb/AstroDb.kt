@@ -1,6 +1,7 @@
 package astrodb
 
 import java.io.File
+import java.text.DecimalFormat
 import kotlin.math.abs
 import kotlin.math.round
 
@@ -13,10 +14,9 @@ import kotlin.math.round
 class ParseException(message: String) : Exception(message)
 
 fun formatNumber(d: Double): String {
-    if (d == Math.floor(d))
-        return String.format("%s", d.toInt())
-    else
-        return String.format("%.0f", d)
+    val df = DecimalFormat("0")
+    df.maximumFractionDigits = 3
+    return df.format(d)
 }
 
 // reads base-60-style strings and changes to a double value.
@@ -39,7 +39,7 @@ fun parseBase60(formattedValue: String): Double {
 
         return value * sign
     } catch (e: NumberFormatException) {
-        throw ParseException("Couldn't parse entry '" + formattedValue + "'")
+        throw ParseException("Couldn't parse entry '$formattedValue'")
     }
 }
 
@@ -102,11 +102,11 @@ fun readObjectFile(fileName: String): List<Object> {
     }
 
     val duplicates = findDuplicates(objects)
-    if (duplicates.size > 0) {
+    if (duplicates.isNotEmpty()) {
         val sb = StringBuilder()
         for ((id, objs) in duplicates.entries) {
             val lines = objs.map { o -> o.line }
-            sb.append("Duplicate entries for '" + id + "' on lines " + lines + "\n")
+            sb.append("Duplicate entries for '$id' on lines $lines\n")
         }
         throw ParseException(sb.toString())
     }
@@ -170,9 +170,8 @@ fun normalizeId(id: String): String {
 }
 
 fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>> {
-    val duplicates = objs.groupBy({ normalizeId(it.obj.id) }, { it })
+    return objs.groupBy({ normalizeId(it.obj.id) }, { it })
         .filterValues { list -> list.size > 1 }
-    return duplicates
 }
 
 fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>> {
@@ -182,14 +181,15 @@ fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWit
         return intRa * 1000000 + intDec
     }
 
-    val duplicates = objs.groupBy({ hashDist(it.obj).toString() }, { it })
+    return objs.groupBy({ hashDist(it.obj).toString() }, { it })
         .filterValues { list -> list.size > 1 }
-    return duplicates
 }
 
-data class JoinedObject(val obj: Object,
-                        val programs: List<ProgramEntry>,
-                        val observations: List<Observation>)
+data class JoinedObject(
+    val obj: Object,
+    val programs: List<ProgramEntry>,
+    val observations: List<Observation>
+)
 
 fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: List<Observation>): List<JoinedObject> {
 
@@ -197,7 +197,7 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
     val expectedItems = programs.map { p -> p.itemId }.toSet()
     val knownObjects = objs.map { o -> o.id }.toSet()
     val missingObjects = expectedItems.filter { e -> !knownObjects.contains(e) }
-    if (missingObjects.size > 0) {
+    if (missingObjects.isNotEmpty()) {
         throw ParseException(
             "Found " + missingObjects.size +
                     " objects in observing lists that had no object data. Item ids = \n" +
@@ -210,7 +210,7 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
     // check for items in observations that don't have objects
     val expectedItemsFromObservations = observations.map { p -> p.itemId }.toSet()
     val missingObjectsFromObservations = expectedItemsFromObservations.filter { e -> !knownObjects.contains(e) }
-    if (missingObjectsFromObservations.size > 0) {
+    if (missingObjectsFromObservations.isNotEmpty()) {
         throw ParseException(
             "Found " + missingObjectsFromObservations.size +
                     " objects in observation data that had no object data. Item ids = \n" +
@@ -220,18 +220,19 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
     // convert ProgramEntry to a map based on the object ids.
     val observationById = observations.groupBy(keySelector = { p -> p.itemId })
 
-    val joinedObjects = objs.map { o ->
-        JoinedObject(o,
+    return objs.map { o ->
+        JoinedObject(
+            o,
             programById.getOrDefault(o.id, emptyList()),
-            observationById.getOrDefault(o.id, emptyList()))
+            observationById.getOrDefault(o.id, emptyList())
+        )
     }
-
-    return joinedObjects
 }
 
 fun main(args: Array<String>) {
     try {
-        val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv")
+        //val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv")
+        val objects = readObjectFile("/Users/jonathan/tmp/objs2.txt")
         val programData = readProgramFile("/Users/jonathan/tmp/programs.txt")
         val observations = readObservationFile("/Users/jonathan/tmp/observations.txt")
         val joinedObjects = joinData(objects, programData, observations)
@@ -247,12 +248,13 @@ fun main(args: Array<String>) {
         //val filter = ObjectFilter(sizeGreaterThan = 2.0 * 60 )
         //val filter = ObjectFilter(brighterThanMagnitude = 2.0)
         //val filter = ObjectFilter(inProgram = "Wimmer's List")
-        val filter = ObjectFilter(seen = false)
-        val filteredObjs = joinedObjects.filter{o -> filter.filter(o)}
+        //val filter = ObjectFilter(seen = false)
+        val filter = ObjectFilter()
+        val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
 
         println("found " + filteredObjs.size + " objects:")
         for (fo in filteredObjs) {
-            println(fo)
+            println(fo.obj)
         }
     } catch (e: Exception) {
         println(e)

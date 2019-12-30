@@ -3,7 +3,7 @@ package astrodb
 
 data class NamedPositionAngle(val key: String, val pa: Int) {
     override fun toString(): String {
-        return key + "=" + pa.toString()
+        return "$key=$pa"
     }
 }
 
@@ -12,14 +12,16 @@ sealed class PositionAngle {
     object None : PositionAngle() {
         override fun toString() = ""
     }
+
     data class Single(val pa: Int) : PositionAngle() {
         override fun toString(): String {
             return pa.toString()
         }
     }
+
     data class Named(val pas: List<NamedPositionAngle>) : PositionAngle() {
         override fun toString(): String {
-            return pas.map { x -> x.toString() }.joinToString(", ")
+            return pas.joinToString(", ") { x -> x.toString() }
         }
     }
 
@@ -31,7 +33,7 @@ sealed class PositionAngle {
         private fun parseKv(kvField: String): NamedPositionAngle {
             val parts = kvField.split("=")
             if (parts.size != 2) {
-                throw ParseException("couldn't read PositionAngle; expected = in key/value for '" + kvField + "'")
+                throw ParseException("couldn't read PositionAngle; expected = in key/value for '$kvField'")
             }
             val key = parts[0]
             val valueField = parts[1]
@@ -43,15 +45,15 @@ sealed class PositionAngle {
                 return None
             }
 
-            try {
+            return try {
                 val sepFields = sepField.split(", ")
                 if (sepFields.size == 1) {
-                    return Single(extractInt(sepFields[0]))
+                    Single(extractInt(sepFields[0]))
                 } else {
-                    return Named(sepFields.map { f -> parseKv(f) }.toList())
+                    Named(sepFields.map { f -> parseKv(f) }.toList())
                 }
             } catch (e: NumberFormatException) {
-                throw ParseException("Couldn't parse separation '" + sepField + "'")
+                throw ParseException("Couldn't parse separation '$sepField'")
             }
         }
     }
