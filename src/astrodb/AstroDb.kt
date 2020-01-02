@@ -78,7 +78,7 @@ fun readObjectFile(fileName: String, checkLikelyDuplicates: Boolean): List<Objec
 
     if (checkLikelyDuplicates) {
         val likelyDuplicates = findLikelyDuplicates(objects)
-        if (likelyDuplicates.size > 0) {
+        if (likelyDuplicates.isNotEmpty()) {
             val sb = StringBuilder()
             for ((id, objs) in likelyDuplicates.entries) {
                 val lines = objs.map { o -> o.line }
@@ -214,15 +214,17 @@ fun main(args: Array<String>) {
         //val filter = ObjectFilter(raInRange = RaRange(23.50, 0.50))
         //val filter = ObjectFilter(sizeGreaterThan = 2.0 * 60 )
         //val filter = ObjectFilter(brighterThanMagnitude = 2.0)
-        //val filter = ObjectFilter(inProgram = "Wimmer's List")
+        val filter = ObjectFilter(inProgram = "Wimmer's List")
         //val filter = ObjectFilter(seen = false)
-        val filter = ObjectFilter()
+        //val filter = ObjectFilter()
         val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
 
         println("found " + filteredObjs.size + " objects:")
-        for (fo in filteredObjs) {
-            println(fo.obj)
-        }
+        //writeObservingList(filteredObjs)
+        writeProgramList(filteredObjs, "Wimmer's List")
+//        for (fo in filteredObjs) {
+//            println(fo.obj)
+//        }
     } catch (e: Exception) {
         println(e)
     }
