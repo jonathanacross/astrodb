@@ -32,7 +32,7 @@ enum class ObjectType(val canonicalName: String, private val shortName: String, 
         }
 
         fun parse(typesField: String): List<ObjectType> {
-            val fields = typesField.split("+")
+            val fields = typesField.split(",", "+")
             val types = mutableListOf<ObjectType>()
             for (f in fields) {
                 val ot = map[f.toLowerCase()]
