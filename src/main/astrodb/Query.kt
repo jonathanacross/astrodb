@@ -101,25 +101,25 @@ fun parseQuery(query: String): ObjectFilter {
     )
 }
 
-enum class Keyword(val token1: String, val token2: String) {
-    NAME_IS("name", "="),  // name like x, name = x
-    NAME_LIKE("name", "like"),  // name like x, name = x
-    CON_IN("con", "in"),   // con in and,per
-    CON_NOTIN("con", "notin"),   // con notin and,per
-    TYPE_IN("type", "in"),  // type in ast,double
-    TYPE_NOTIN("type", "notin"),  // type notin ast,double
-    RA_RANGE("ra", "range"), // ra range 23:00 to 2:00
-    DEC_LESS("dec", "<="),  // dec >= 30, dec <= 20
-    DEC_GREATER("dec", ">="),  // dec >= 30, dec <= 20
-    MAGNITUDE_LESS("mag", "<="),  // magnitude <= 12
-    SB_LESS("sb", "<="),  // sb <= 12
-    SIZE_LESS("size", "<="),  // size <= 1deg
-    SIZE_GREATER("size", ">="),  // size >= 1deg
-    PROGRAM_IS("program", "="), // program = "RASC.."
-    PROGRAM_IN("program", "in"), // program in "RASC..,500 Best.."
-    PROGRAM_LIKE("program", "like"), // program like "RASC"
-    SEEN_IS("seen", "="),  // seen = true, seen = false
-    NOTSEEN_SINCE("notseen", "since");  // notseen since 2019-01-01
+enum class Keyword(val token1: String, val token2: String, val example: String) {
+    NAME_IS("name", "=", "name = \"M 13\""),
+    NAME_LIKE("name", "like", "name like \"M \""),
+    CON_IN("con", "in", "con in and,per"),
+    CON_NOTIN("con", "notin", "con notin and,per"),
+    TYPE_IN("type", "in", "type in ast,gal"),
+    TYPE_NOTIN("type", "notin", "type notin oc,double"),
+    RA_RANGE("ra", "range", "ra range 23:00 to 2:00"),
+    DEC_LESS("dec", "<=", "dec <= 80"),
+    DEC_GREATER("dec", ">=", "dex >= -20"),
+    MAGNITUDE_LESS("mag", "<=", "mag <= 10"),
+    SB_LESS("sb", "<=", "sb <= 12"),
+    SIZE_LESS("size", "<=", "size <= 10   (measured in arcminutes if no units given)"),
+    SIZE_GREATER("size", ">=", "size >= 1deg"),
+    PROGRAM_IS("program", "=", "program = \"Messier OP\""),
+    PROGRAM_IN("program", "in", "program in \"Messier OP\",\"Urban OP\""),
+    PROGRAM_LIKE("program", "like", "program like RASC"),
+    SEEN_IS("seen", "=", "seen = false"),
+    NOTSEEN_SINCE("notseen", "since", "notseen since 2018-01-15");
 
     companion object {
         fun getKeyword(token1: String, token2: String): Keyword {

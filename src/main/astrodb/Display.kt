@@ -29,14 +29,17 @@ fun writeObservingList(objects: List<JoinedObject>, givenRaRange: RaRange?) {
                 "Notes"
     println(header)
 
-    val objectsWithRaSort = objects.map{o -> ObjectWithRaSort.create(o.obj, raRange)}
-        .sortedWith(compareBy({it.obj.constellation}, { it.raSort }))
+    val objectsWithRaSort = objects.map { o -> ObjectWithRaSort.create(o.obj, raRange) }
+        .sortedWith(compareBy({ it.obj.constellation }, { it.raSort }))
 
     for (o in objectsWithRaSort) {
-        val sizesep = if (o.obj.separations.toString().isNotEmpty())
-            o.obj.separations.toString()
-        else
-            o.obj.size.toString()
+        val sizesep =
+            if (o.obj.separations.toString().isNotEmpty()) o.obj.separations.toString()
+            else o.obj.size.toString()
+
+        val sb =
+            if (o.obj.surfaceBrightness == null) ""
+            else String.format("%.1f", o.obj.surfaceBrightness)
 
         val line =
             o.obj.id + "\t" +
@@ -47,7 +50,7 @@ fun writeObservingList(objects: List<JoinedObject>, givenRaRange: RaRange?) {
                     o.obj.magnitude + "\t" +
                     sizesep + "\t" +
                     o.obj.positionAngles + "\t" +
-                    String.format("%.1f", o.obj.surfaceBrightness) + "\t" +
+                    sb + "\t" +
                     o.obj.names.joinToString("/") + ". " + o.obj.notes
 
         println(line)
@@ -72,7 +75,7 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
                 "Names"
     println(header)
 
-    val observedObjs = objects.map{ o ->
+    val observedObjs = objects.map { o ->
         val dates = o.observations.joinToString(", ") { obs -> obs.date }
         val matchingProgram =
             o.programs.filter { p -> p.programName == programName }
@@ -80,7 +83,7 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
         ObservedProgramObject(itemNumber, dates, o.obj)
     }
 
-    val sortedObjs = observedObjs.sortedWith(compareBy({it.itemNumber.itemNumber}, {it.itemNumber.subNumber}))
+    val sortedObjs = observedObjs.sortedWith(compareBy({ it.itemNumber.itemNumber }, { it.itemNumber.subNumber }))
 
     for (o in sortedObjs) {
         val line =
