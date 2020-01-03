@@ -12,7 +12,6 @@ import kotlin.math.round
 // https://github.com/Stellarium/stellarium/blob/master/nebulae/default/names.dat
 // has names
 
-
 class ParseException(message: String) : Exception(message)
 
 fun formatNumber(d: Double): String {
@@ -206,7 +205,7 @@ fun main(args: Array<String>) {
         val programData = readProgramFile(options.programsFileName)
         val observations = readObservationFile(options.observationsFileName)
         val joinedObjects = joinData(objects, programData, observations)
-        var filter = parseQuery(options.filterString)
+        val filter = parseQuery(options.filterString)
         val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
 
         when (options.mode) {

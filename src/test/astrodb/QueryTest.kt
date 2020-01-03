@@ -2,7 +2,7 @@ import astrodb.*
 import org.junit.Test as test
 import kotlin.test.assertEquals
 
-class QueryTest() {
+class QueryTest {
     @test
     fun tokenizeCheck() {
         assertEquals(tokenize("foo bar baz"), listOf("foo", "bar", "baz"))

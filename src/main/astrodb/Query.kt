@@ -2,8 +2,8 @@ package astrodb
 
 fun tokenize(query: String): List<String> {
     var inQuote = false
-    var tokens = mutableListOf<String>()
-    var currentToken = StringBuilder()
+    val tokens = mutableListOf<String>()
+    val currentToken = StringBuilder()
     query.forEach { c ->
         if (c == '"') {
             inQuote = !inQuote
@@ -49,10 +49,9 @@ fun parseQuery(query: String): ObjectFilter {
     var inProgram: String? = null
     var seen: Boolean? = null
 
-    var idx: Int = 0
+    var idx = 0
     while (idx < tokens.size) {
-        val k = Keyword.getKeyword(tokens[idx], tokens[idx + 1])
-        when (k) {
+        when (Keyword.getKeyword(tokens[idx], tokens[idx + 1])) {
             Keyword.NAME_IS -> { nameIs = tokens[idx + 2]; idx += 3 }
             Keyword.NAME_LIKE -> { nameLike = tokens[idx + 2]; idx += 3 }
             Keyword.CON_IN -> { conIn = parseCons(tokens[idx + 2]); idx += 3}
@@ -102,7 +101,7 @@ enum class Keyword(val token1: String, val token2: String) {
 
     companion object {
         fun getKeyword(token1: String, token2: String): Keyword {
-            for (k in Keyword.values()) {
+            for (k in values()) {
                 if (k.token1 == token1.toLowerCase() && k.token2 == token2.toLowerCase()) {
                     return k
                 }

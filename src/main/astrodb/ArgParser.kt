@@ -32,7 +32,7 @@ fun usage(): String {
 
 // Small hack to expand ~ to user directory to allow user to specify files as ~/....
 private fun expandPath(path: String): String {
-    return path.replaceFirst(Regex("^~"), System.getProperty("user.home"));
+    return path.replaceFirst(Regex("^~"), System.getProperty("user.home"))
 }
 
 fun parseArgs(args: Array<String>): Options {
