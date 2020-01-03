@@ -36,7 +36,10 @@ fun writeObservingList(objects: List<JoinedObject>) {
     }
 }
 
-fun writeProgramList(objects: List<JoinedObject>, programName: String) {
+fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
+    if (programName == null) {
+        throw ParseException("program name not specified")
+    }
     // critical columns
     // id, names, con, ra dec program number (for a program), dates seen
     val header =
@@ -65,5 +68,11 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String) {
                     o.obj.names.joinToString("/")
 
         println(line)
+    }
+}
+
+fun writeObjectList(objects: List<JoinedObject>) {
+    for (o in objects) {
+        println(o.obj)
     }
 }

@@ -60,7 +60,7 @@ fun parseQuery(query: String): ObjectFilter {
             Keyword.RA_RANGE -> { raInRange = RaRange(parseBase60(tokens[idx + 2]), parseBase60(tokens[idx + 4])); idx += 5 }
             Keyword.DEC_GREATER -> { decGreaterThan = parseBase60(tokens[idx + 2]); idx += 3 }
             Keyword.DEC_LESS -> { decLessThan = parseBase60(tokens[idx + 2]); idx += 3 }
-            Keyword.MAGNITUDE_GREATER -> { brighterThanMagnitude = tokens[idx + 2].toDouble(); idx += 3 }
+            Keyword.MAGNITUDE_LESS -> { brighterThanMagnitude = tokens[idx + 2].toDouble(); idx += 3 }
             Keyword.SIZE_GREATER -> { sizeGreaterThan = Size.parse(tokens[idx + 2]).asNumber(); idx += 3 }
             Keyword.SIZE_LESS -> { sizeLessThan = Size.parse(tokens[idx + 2]).asNumber(); idx += 3 }
             Keyword.PROGRAM_IS -> { inProgram = tokens[idx + 2]; idx += 3 }
@@ -93,7 +93,7 @@ enum class Keyword(val token1: String, val token2: String) {
     RA_RANGE("ra", "range"), // ra range 23:00 to 2:00
     DEC_LESS("dec", "<="),  // dec >= 30, dec <= 20
     DEC_GREATER("dec", ">="),  // dec >= 30, dec <= 20
-    MAGNITUDE_GREATER("mag", ">="),  // magnitude >= -12
+    MAGNITUDE_LESS("mag", "<="),  // magnitude <= 12
     SIZE_LESS("size", "<="),  // size <= 1deg
     SIZE_GREATER("size", ">="),  // size >= 1deg
     PROGRAM_IS("program", "="), // program = "RASC.."

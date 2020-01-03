@@ -1,5 +1,7 @@
 package astrodb
 
+import main.astrodb.Mode
+import main.astrodb.parseArgs
 import java.io.File
 import java.text.DecimalFormat
 import kotlin.math.abs
@@ -198,33 +200,21 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
 
 fun main(args: Array<String>) {
     try {
+        val options = parseArgs(args)
         //val objects = readObjectFile("/Users/jonathan/tmp/objects.tsv", false)
-        val objects = readObjectFile("/Users/jonathan/tmp/objs2.txt", false)
-        val programData = readProgramFile("/Users/jonathan/tmp/programs.txt")
-        val observations = readObservationFile("/Users/jonathan/tmp/observations.txt")
+        val objects = readObjectFile(options.objectsFileName, options.checkLikelyDuplicates)
+        val programData = readProgramFile(options.programsFileName)
+        val observations = readObservationFile(options.observationsFileName)
         val joinedObjects = joinData(objects, programData, observations)
-
-        //val filter = ObjectFilter(objectTypesIn = listOf(ObjectType.OPEN_CLUSTER))
-        //val filter = ObjectFilter(conIn = listOf(Constellation.AND, Constellation.LYR))
-        //val filter = ObjectFilter(nameIs="M 45")
-        //val filter = ObjectFilter(nameLike="M 10")
-        //val filter = ObjectFilter(decGreaterThan = 80.0)
-        //val filter = ObjectFilter(decLessThan = -30.0)
-        //val filter = ObjectFilter(raInRange = RaRange(20.2, 20.5))
-        //val filter = ObjectFilter(raInRange = RaRange(23.50, 0.50))
-        //val filter = ObjectFilter(sizeGreaterThan = 2.0 * 60 )
-        //val filter = ObjectFilter(brighterThanMagnitude = 2.0)
-        val filter = ObjectFilter(inProgram = "Wimmer's List")
-        //val filter = ObjectFilter(seen = false)
-        //val filter = ObjectFilter()
+        var filter = parseQuery(options.filterString)
         val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
 
         println("found " + filteredObjs.size + " objects:")
-        //writeObservingList(filteredObjs)
-        writeProgramList(filteredObjs, "Wimmer's List")
-//        for (fo in filteredObjs) {
-//            println(fo.obj)
-//        }
+        when (options.mode) {
+            Mode.OBSERVING_LIST -> writeObservingList(filteredObjs)
+            Mode.PROGRAM_LIST -> writeProgramList(filteredObjs, filter.getProgramName())
+            Mode.OBJECT_LIST -> writeObjectList(filteredObjs)
+        }
     } catch (e: Exception) {
         println(e)
     }

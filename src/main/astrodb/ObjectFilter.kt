@@ -26,6 +26,7 @@ data class ObjectFilter(
     val inProgram: String? = null,
     val seen: Boolean? = null
 ) {
+    fun getProgramName(): String? = inProgram
 
     private fun listContainsStringMatch(list: List<String>, str: String): Boolean {
         return list.any { li -> li.contains(str) }
@@ -59,7 +60,7 @@ data class ObjectFilter(
         }
         if (brighterThanMagnitude != null) {
             val objMag = obj.obj.magnitude.asNumber()
-            if (objMag != null && objMag > brighterThanMagnitude) {
+            if (objMag != null && objMag <= brighterThanMagnitude) {
                 return false
             }
         }
