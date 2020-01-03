@@ -1,5 +1,6 @@
 package main.astrodb
 
+import astrodb.Keyword
 import astrodb.ParseException
 
 enum class Mode {
@@ -18,7 +19,8 @@ data class Options(
 )
 
 fun usage(): String {
-    return listOf(
+    val filterDesc = Keyword.values().map{ k -> k.example.prependIndent("    ") }
+    val argDescription = listOf(
         "",
         "Usage: java -jar astrodb.jar [options]",
         "    --objects={objects file}",
@@ -26,8 +28,12 @@ fun usage(): String {
         "    --programs={programs file}",
         "    --mode=[observing_list | program_list | object_list]",
         "    --filter='{filter}'",
-        "    --checkLikelyDuplicates=[true|false]"
-    ).joinToString("\n")
+        "    --checkLikelyDuplicates=[true|false]",
+        "",
+        "Filter consists of clauses in the form:"
+    )
+
+    return (argDescription + filterDesc).joinToString("\n")
 }
 
 // Small hack to expand ~ to user directory to allow user to specify files as ~/....

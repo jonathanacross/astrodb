@@ -81,7 +81,7 @@ fun readObjectFile(fileName: String, checkLikelyDuplicates: Boolean): List<Objec
         val likelyDuplicates = findLikelyDuplicates(objects)
         if (likelyDuplicates.isNotEmpty()) {
             val sb = StringBuilder()
-            for ((id, objs) in likelyDuplicates.entries) {
+            for ((_, objs) in likelyDuplicates.entries) {
                 val lines = objs.map { o -> o.line }
                 sb.append("Possible duplicate entries (by RA/DEC)'" + objs.map { x -> x.obj.id } + "' on lines " + lines + "\n")
             }
