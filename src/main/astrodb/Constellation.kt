@@ -1,6 +1,6 @@
 package astrodb
 
-enum class Constellation(val abbrev: String, val fullName: String) {
+enum class Constellation(private val abbrev: String, val fullName: String) {
     AND("And", "Andromeda"),
     ANT("Ant", "Antlia"),
     APS("Aps", "Apus"),
@@ -99,7 +99,7 @@ enum class Constellation(val abbrev: String, val fullName: String) {
             try {
                 return valueOf(conField.toUpperCase())
             } catch (e: Exception) {
-                throw ParseException("unknown constellation '" + conField + "'")
+                throw ParseException("unknown constellation '$conField'")
             }
         }
     }
