@@ -100,6 +100,22 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
 }
 
 fun writeObjectList(objects: List<JoinedObject>) {
+    val header =
+        "#Id" + "\t" +
+                "Names" + "\t" +
+                "Type" + "\t" +
+                "Con" + "\t" +
+                "RA" + "\t" +
+                "Dec" + "\t" +
+                "Mag" + "\t" +
+                "Size" + "\t" +
+                "Sep" + "\t" +
+                "PA" + "\t" +
+                "Class" + "\t" +
+                "Distance" + "\t" +
+                "Notes"
+    println(header)
+
     for (o in objects) {
         println(o.obj)
     }
