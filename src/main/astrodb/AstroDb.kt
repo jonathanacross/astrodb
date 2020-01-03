@@ -209,12 +209,12 @@ fun main(args: Array<String>) {
         var filter = parseQuery(options.filterString)
         val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
 
-        println("found " + filteredObjs.size + " objects:")
         when (options.mode) {
             Mode.OBSERVING_LIST -> writeObservingList(filteredObjs)
             Mode.PROGRAM_LIST -> writeProgramList(filteredObjs, filter.getProgramName())
             Mode.OBJECT_LIST -> writeObjectList(filteredObjs)
         }
+        println("found " + filteredObjs.size + " objects.")
     } catch (e: Exception) {
         println(e)
     }

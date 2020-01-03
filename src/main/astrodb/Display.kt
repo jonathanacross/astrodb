@@ -36,6 +36,9 @@ fun writeObservingList(objects: List<JoinedObject>) {
     }
 }
 
+data class ObservedProgramObject(val itemNumber: ItemNumber, val dates: String, val obj: Object)
+
+
 fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
     if (programName == null) {
         throw ParseException("program name not specified")
@@ -52,16 +55,21 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
                 "Names"
     println(header)
 
-    for (o in objects) {
+    val observedObjs = objects.map{ o ->
         val dates = o.observations.joinToString(", ") { obs -> obs.date }
         val matchingProgram =
             o.programs.filter { p -> p.programName == programName }
-        val itemNumber = if (matchingProgram.isNotEmpty()) matchingProgram[0].itemNumber else 0
+        val itemNumber = if (matchingProgram.isNotEmpty()) matchingProgram[0].itemNumber else ItemNumber(0, "")
+        ObservedProgramObject(itemNumber, dates, o.obj)
+    }
 
+    val sortedObjs = observedObjs.sortedWith(compareBy({it.itemNumber.itemNumber}, {it.itemNumber.subNumber}))
+
+    for (o in sortedObjs) {
         val line =
-            itemNumber.toString() + "\t" +
+            o.itemNumber.toString() + "\t" +
                     o.obj.id + "\t" +
-                    dates + "\t" +
+                    o.dates + "\t" +
                     o.obj.constellation + "\t" +
                     formatRa(o.obj.ra) + "\t" +
                     formatDec(o.obj.dec) + "\t" +
