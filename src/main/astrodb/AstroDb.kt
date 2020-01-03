@@ -210,7 +210,7 @@ fun main(args: Array<String>) {
         val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
 
         when (options.mode) {
-            Mode.OBSERVING_LIST -> writeObservingList(filteredObjs)
+            Mode.OBSERVING_LIST -> writeObservingList(filteredObjs, filter.getRaRange())
             Mode.PROGRAM_LIST -> writeProgramList(filteredObjs, filter.getProgramName())
             Mode.OBJECT_LIST -> writeObjectList(filteredObjs)
         }

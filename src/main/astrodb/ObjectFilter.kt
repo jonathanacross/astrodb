@@ -27,6 +27,7 @@ data class ObjectFilter(
     val seen: Boolean? = null
 ) {
     fun getProgramName(): String? = inProgram
+    fun getRaRange(): RaRange? = raInRange
 
     private fun listContainsStringMatch(list: List<String>, str: String): Boolean {
         return list.any { li -> li.contains(str) }

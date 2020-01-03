@@ -1,6 +1,21 @@
 package astrodb
 
-fun writeObservingList(objects: List<JoinedObject>) {
+data class ObjectWithRaSort(val obj: Object, val raSort: Double) {
+    companion object {
+        fun create(obj: Object, raRange: RaRange): ObjectWithRaSort {
+            val raSort =
+                if (raRange.min <= raRange.max) {
+                    obj.ra
+                } else {
+                    if (obj.ra < raRange.min) obj.ra + 24 else obj.ra
+                }
+            return ObjectWithRaSort(obj, raSort)
+        }
+    }
+}
+
+fun writeObservingList(objects: List<JoinedObject>, givenRaRange: RaRange?) {
+    val raRange = givenRaRange ?: RaRange(0.0, 24.0)
     val header =
         "#Id" + "\t" +
                 "Type" + "\t" +
@@ -14,7 +29,10 @@ fun writeObservingList(objects: List<JoinedObject>) {
                 "Notes"
     println(header)
 
-    for (o in objects) {
+    val objectsWithRaSort = objects.map{o -> ObjectWithRaSort.create(o.obj, raRange)}
+        .sortedWith(compareBy({it.obj.constellation}, { it.raSort }))
+
+    for (o in objectsWithRaSort) {
         val sizesep = if (o.obj.separations.toString().isNotEmpty())
             o.obj.separations.toString()
         else
@@ -37,7 +55,6 @@ fun writeObservingList(objects: List<JoinedObject>) {
 }
 
 data class ObservedProgramObject(val itemNumber: ItemNumber, val dates: String, val obj: Object)
-
 
 fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
     if (programName == null) {
