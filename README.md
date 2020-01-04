@@ -25,7 +25,7 @@ and queried.  So why not do that?
   This is useful as one observing program may list an object as M31 
   while another might list it as NGC224.
 
-## Building the project
+## Building and Running
 
 To build, run the following from the project directory.
 ```
@@ -33,57 +33,51 @@ To build, run the following from the project directory.
 ```
 
 This builds binaries at build/install/astrodb/bin which you can
-directly call on the command line, e.g.,
-```
-build/install/astrodb/bin/astrodb [options]
-```
- 
-### Example usages
+directly call on the command line.  Here are some examples:
 
 ```
 # show the usage
-astrodb help 
+build/install/astrodb/bin/astrodb help 
 ```
 
 ```
-# Make an observing list of fairly bright (magnitude <= 10, surface 
-# brightess <= 12) open clusters and galaxies in a part of the sky 
-# that you've never observed before.  Results will be sorted by
-# Con and then RA.
-astrodb \
+# Make an observing list of clusters and galaxies that are somewhat bright 
+# (magnitude <= 10, surface brightess <= 12), that lie in a particular part 
+# of the sky and that you've never observed. Results for observing lists are
+# always sorted by Con and then RA.
+build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
 --mode=observing_list \
---filter=' \
-ra inrange 22h to 2h \
-dec >= -20 \
-seen = false \
-type in OCl,Gal \
-mag <= 10.0 \
-sb <= 12.0 \
+--filter='
+    ra range 22h to 2h
+    dec >= -20
+    seen = false
+    type in OCl,Gal
+    mag <= 10.0
+    sb <= 12.0
 '
 ```
 
 ```
-# make an observing list of objects in a particular program that
-# you haven't seen for a while.  Results will be sorted by Con 
-# and then RA.
-astrodb \
+# Make an observing list of objects in a particular program that
+# you haven't seen for a while.
+build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
 --mode=observing_list \
---filter=' \
-program = "Messier OP" \
-notseen since 2018-01-22 \
+--filter='
+    program = "Messier OP"
+    notseen since 2018-01-22
 '
 ```
 
 ```
 # Track the progress for a particular observing program.  Results
-# are sorted by the order in the program.
-astrodb \
+# for program lists are always are sorted by the order in the program.
+build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
@@ -96,7 +90,7 @@ astrodb \
 # Check if there are likely duplicates, and output all the object data 
 # in a consistent format. (Can be used as a future objects.tsv file.)  
 # Order is unchanged.  
-astrodb \
+build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
@@ -106,7 +100,7 @@ astrodb \
 
 ```
 #Get information about a particular object
-astrodb \
+build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
