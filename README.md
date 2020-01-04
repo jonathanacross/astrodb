@@ -24,8 +24,21 @@ and queried.  So why not do that?
   based on having the same (or nearly same) position in the sky.
   This is useful as one observing program may list an object as M31 
   while another might list it as NGC224.
+
+## Building the project
+
+To build, run the following from the project directory.
+```
+./gradlew installDist
+```
+
+This builds binaries at build/install/astrodb/bin which you can
+directly call on the command line, e.g.,
+```
+build/install/astrodb/bin/astrodb [options]
+```
  
-## Example usages
+### Example usages
 
 ```
 # show the usage
@@ -89,6 +102,16 @@ astrodb \
 --observations="data/observations.tsv" \
 --mode=object_list \
 --checkLikelyDuplicates=true
+```
+
+```
+#Get information about a particular object
+astrodb \
+--objects="data/objects.tsv" \
+--programs="data/programs.tsv" \
+--observations="data/observations.tsv" \
+--mode=observing_list \
+--filter='name like Dumbbell'
 ```
 
 ## Data files
