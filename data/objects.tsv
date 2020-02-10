@@ -10,7 +10,7 @@ M 31	NGC 224/M 31/Andromeda Galaxy	Gal	And	00h 42m 42s	41° 16' 00"	3.5	210' x 4
 NGC 2362	NGC 2362/Mexican Jumping Star Cluster/Pirate's Jewels/Northern Jewel Box/Arkenstone	OCl	CMa	07h 18m 42s	-24° 57' 00"	3.8	6'			I 3 p n	4.8kly	60 stars
 DNA	DNA	Ast	Aqr	23h 24m 38s	-21° 58' 48"	4.0	4° x 1°					Its brighter stars appear to be entwined in a spiral. The beginning of "spiral" are the stars 98 and 99 of Aquarius.
 M 42	NGC 1976/M 42/Orion Nebula	EN+RN	Ori	05h 35m 18s	-05° 23' 00"	4.0	47' x 60'			E+R	1.35kly	
-NGC 2264	NGC 2264/Christmas Tree Cluster/Cone Nebula	OCl	Mon	06h 41m 00s	09° 54' 00"	4.1	40'			III 3 m n:	2.18kly	40 stars
+NGC 2264	NGC 2264/Christmas Tree Cluster/Cone Nebula	OCl+Ast	Mon	06h 41m 00s	09° 54' 00"	4.1	40'			III 3 m n:	2.18kly	40 stars. Upside down triangle of stars.
 IC 4665	IC 4665/Poseidon's Trident	OCl	Oph	17h 46m 12s	05° 43' 00"	4.2	70'			III 2 m	1.15kly	57 stars
 M 6	NGC 6405/M 6/Butterfly Cluster	OCl+Ast	Sco	17h 40m 18s	-32° 15' 00"	4.2	33'			III 2 p	1.59kly	331 stars. Looks like a butterfly viewed from the top.
 NGC 1981	NGC 1981/Coal Car Cluster	OCl	Ori	05h 35m 12s	-04° 26' 00"	4.2	28'			III 2 p n	1.3kly	20 stars. Just N. of NGC 1973/5/7
@@ -520,7 +520,7 @@ NGC 2425	NGC 2425	OCl	Pup	07h 38m 18s	-14° 53' 00"		3.3'			II 1 m	11kly	30 star
 NGC 6444	NGC 6444	OCl	Sco	17h 49m 36s	-34° 49' 00"		12'			IV 1 p	1.83kly	50 stars
 NGC 6726	NGC 6726	RN	CrA	19h 01m 42s	-36° 53' 00"		2'			E	425ly	
 Beta Ori	Beta Ori/Rigel	Double	Ori	05h 14m 30s	-08° 12' 00"	0.3, 6.8		9.3	204			
-S' in Orion's Belt	S in Orion's Belt	Ast	Ori	05h 30m 00s	-01° 00' 00"	1.0 - 1.0	90' x 90'					S' shaped asterism between Epsilon and Delta Orionis.
+S in Orion's Belt	S in Orion's Belt	Ast	Ori	05h 30m 00s	-01° 00' 00"	1.0 - 1.0	90' x 90'					S' shaped asterism between Epsilon and Delta Orionis.
 M 45	M 45/NGC 1432/Dipper Bowl	OCl+Ast	Tau	03h 46m 54s	24° 07' 00"	1.2	110'					4 stars create a bowl, 1 star for the handle.
 Mel 20	Mel 20	OCl	Per	03h 22m 00s	49° 00' 00"	1.2	3.083°					
 Alpha Leo	Alpha Leo	Double	Leo	10h 08m 24s	11° 58' 00"	1.4, 8.2		175.2	307			
@@ -710,7 +710,7 @@ Small Keystone	Small Keystone	Ast	Cet	00h 23m 00s	-23° 30' 00"	7.0 - 7.0	105'		
 Backwards 5	Backwards 5	Ast	Her	16h 37m 00s	30° 45' 00"	7.0 - 7.0	20'					Find this asterism 1 degree southwest of Zeta Herculis. Shape of number '5'.
 Nagler 1	Nagler 1	Ast	CMa	06h 22m 00s	-26° 28' 00"	7.0 - 7.0	16' x 48'					In the shape of a chevron. Located just above galaxy NGC 2217 in Canis Major.
 Delphinius Minor	Delphinius Minor	Ast	Peg	23h 03m 00s	23° 12' 00"	7.0 - 7.0	60'					Mini Delphinus located on the western (right) edge of the Square of Pegasus.
-Dolidze 17 - Metronome	Dolidze 17 - Metronome/Stratton 2	Ast	Ori	05h 22m 00s	07° 05' 00"	7.0 - 7.0	12' x 17'					Consists of 6 stars. 5 of which has the appearance of a capitol Sigma. The 6th star provides the top of the metronome.
+Metronome	Metronome/Dolidze 17/Stratton 2	Ast	Ori	05h 22m 00s	07° 05' 00"	7.0 - 7.0	12' x 17'					Consists of 6 stars. 5 of which has the appearance of a capitol Sigma. The 6th star provides the top of the metronome.
 Eddie's Coaster	Eddie's Coaster	Ast	Cas	01h 04m 00s	63° 40' 00"	7.0 - 7.0	3°					Wave of stars "reminiscent of a roller coaster"
 Mini-Cassiopeia	Mini-Cas/Kemble 2	Ast	Dra	18h 35m 00s	72° 18' 00"	7.0 - 7.0	30'					Looks like a mini-Cassiopeia.
 Tennis Racket	Tennis Racket	Ast	Aql	19h 50m 00s	-04° 35' 00"	7.0 - 7.0	45'					Located 3 degrees east of star 42 Aquilae. 2 stars form handle. 6 stars make up oval. Bright blue star is the ball.
@@ -817,7 +817,6 @@ Toadstool	Toadstool/French 1	Ast	Del	21h 07m 00s	16° 20' 00"	9.0 - 9.0	15'					
 TPK 1	TPK 1	Ast	And	23h 39m 00s	47° 31' 00"	9.0 - 9.0	23' x 11'					Rough shape of a trapezium
 A	A/Weisman 1	Ast	Sex	10h 20m 00s	03° 07' 00"	9.0 - 9.0	11'					5 stars in the shape of a Chevron
 Meerschaum Pipe	Meerschaum Pipe	Ast	Cyg	19h 51m 00s	30° 07' 00"	9.0 - 9.0	22'					3/4° northwest of NGC 6834. 5 stars in line make the stem. 3 stars make up the bowl.
-Christmas Tree	Christmas Tree/NGC 2264	Ast	Mon	06h 41m 00s	09° 40' 00"	9.5	30'					Upside down triangle of stars.
 Curved Arrow	Curved Arrow	Ast	Com	12h 53m 00s	19° 30' 00"	9.5	45'					5 stars show curve stem. 5 stars make arrow.  1.5 degrees south of star 35 Comae Berenices.
 Letter "D"	Letter "D"	Ast	Eri	03h 39m 00s	-01° 45' 00"	9.5	30'					Composed of 8 stars, 6 degrees north of "Letter F" asterism.  Top of asterism faces west.
 Airplane	Airplane/Party Balloon	Ast	Cas	23h 21m 00s	62° 20' 00"	9.5	75'					6 stars outlining double-convex lens, create wings. 5 stars that curve northward create fuselage and tail
