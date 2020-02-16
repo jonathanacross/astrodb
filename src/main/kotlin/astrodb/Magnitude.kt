@@ -89,8 +89,12 @@ sealed class Magnitude {
                         }
                         lohi.size == 2 -> {
                             val lo = lohi[0].toDouble()
-                            val hi = lohi[0].toDouble()
-                            MagRange(lo, hi)
+                            val hi = lohi[1].toDouble()
+                            return if (lo == hi) {
+                                MagValue(lo)
+                            } else {
+                                MagRange(lo, hi)
+                            }
                         }
                         else -> throw ParseException("Couldn't parse magnitude entry '$magField'; too many fields for a range")
                     }
