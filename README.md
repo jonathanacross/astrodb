@@ -85,6 +85,16 @@ build/install/astrodb/bin/astrodb \
 --filter='program = "Messier OP"'
 ```
 
+Note that if the observing program has a single quote in it,
+e.g., "Wimmer's List", then writing the program in the filter can be
+done as described 
+[here](https://unix.stackexchange.com/questions/169508/single-quote-within-double-quotes-and-the-bash-reference-manual):
+
+```
+program = "Wimmer'"'"'s List"
+```
+
+
 ```
 # When adding new objects to the objects table:
 # Check if there are likely duplicates, and output all the object data 

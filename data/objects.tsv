@@ -553,7 +553,8 @@ NGC 4027	NGC 4027	Gal	Crv	11h 59m 30s	-19° 16' 00"	11.1	3.3' x 2.4'			SBd	90mly
 NGC 4038	NGC 4038/Antennae/Ringtail Galaxies/Mosquito Larvae/Comma Galaxies	Gal	Crv	12h 01m 54s	-18° 52' 00"	10.3	3.4' x 2'			Sp	89mly	`Antennae' or `Rattail' interacting galaxies
 NGC 4039	NGC 4039/Antennae/Ringtail Galaxies/Mosquito Larvae/Comma Galaxies	Gal	Crv	12h 01m 54s	-18° 53' 00"	10.6	3.3' x 1.7'			SB	89mly	`Antennae' or `Rattail' interacting galaxies
 NGC 404	NGC 404/Mirach's Ghost	Gal	And	01h 09m 24s	35° 43' 00"	10.3	4.3' x 3.9'			E0	11mly	
-NGC 4088	NGC 4088	Gal	UMa	12h 05m 36s	50° 33' 00"	10.5	5.8' x 2.5'					nearly edge-on; NGC 4085 in same field
+NGC 4085	NGC 4085	Gal	UMa	12h 05m 23s	50° 21' 10"	12.8	2.5' x 0.5'			Sc	78mly	NGC 4088 in same field of view
+NGC 4088	NGC 4088	Gal	UMa	12h 05m 36s	50° 33' 00"	10.5	5.8' x 2.5'			SAB(rs)bc	61mly	nearly edge-on; NGC 4085 in same field
 NGC 4111	NGC 4111	Gal	CVn	12h 07m 00s	43° 04' 00"	10.7	4.6' x 1'			Sa	46mly	bright lens-shaped edge-on spiral
 NGC 4147	NGC 4147	GCl	Com	12h 10m 06s	18° 33' 00"	10.4	4.4'			VI	63kly	a thin sliver; NGC 4026 & 4088 nearby
 NGC 4157	NGC 4157	Gal	UMa	12h 11m 06s	50° 29' 00"	11.9	6.9' x 1.7'			G-Sb	73ly	a thin sliver; NGC 4026 & 4088 nearby
@@ -799,14 +800,14 @@ RU Cam	RU Cam/HIP 35681	Carbon	Cam	07h 21m 44s	69° 40' 14"	8.1 - 9.8				C0-C3(K
 RU Pup	RU Pup/HIP 39751	Carbon	Pup	08h 07m 29s	-22° 54' 45"	8.1 - 11.1				C5(N3)		
 RV Cyg	RV Cyg/HIP 107242	Carbon	Cyg	21h 43m 16s	38° 01' 02"	7.1 - 9.3				C6 (N5)		
 RV Mon	RV Mon/HIP 33550	Carbon	Mon	06h 58m 21s	06° 10' 01"	7.0 - 8.9				C4-C6(Nb/R9)		
-RX Peg	RX Peg/	Carbon	Peg	21h 56m 22s	22° 51' 39"	7.7 - 9.5				C4 (N3)		
-RY Cyg	RY Cyg/	Carbon	Cyg	20h 10m 23s	35° 56' 50"	8.5 - 10.3				C4 – C6 (N)		
+RX Peg	RX Peg	Carbon	Peg	21h 56m 22s	22° 51' 39"	7.7 - 9.5				C4 (N3)		
+RY Cyg	RY Cyg	Carbon	Cyg	20h 10m 23s	35° 56' 50"	8.5 - 10.3				C4 – C6 (N)		
 RY Dra	RY Dra/HIP 63152	Carbon	Dra	12h 56m 25s	65° 59' 39"	6.0 - 8.0				C4(N4p)		
 RY Mon	RY Mon/HIP 34326	Carbon	Mon	07h 06m 56s	-07° 33' 26"	7.5 - 9.2				C5-C7(N5/R)		
 RZ Peg	RZ Peg/HIP 109189	Carbon	Peg	22h 05m 52s	33° 30' 24"	7.6 - 13.6				C9 (Ne)		
 S 516	S 516	Double	CMa	06h 19m 15s	-24° 58' 30"	A=7.3, B=8.3, C=7.0		AB=59.6, AC=300.4	AB=8, AC=243			
 S 571	S 571	Double	Cnc	08h 39m 56s	19° 33' 11"	AB=7.3, D=6.7, C=7.5, E=11.7		AC=45.4, DE=92.3	AB=157, AC=242			
-S Aur	S Aur/	Carbon	Aur	05h 27m 07s	34° 08' 59"	8.2 - 13.3				C4/5(N3)		
+S Aur	S Aur	Carbon	Aur	05h 27m 07s	34° 08' 59"	8.2 - 13.3				C4/5(N3)		
 S Cam	S Cam/HIP 26753	Carbon	Cam	05h 41m 02s	68° 47' 55"	7.7 - 11.6				C7(R8)		
 S Cep	S Cep/HIP 106583	Carbon	Cep	21h 35m 12s	78° 37' 28"	7.4 - 12.9				C7 (N8e)		
 S Sct	S Sct/HIP 92442	Carbon	Sct	18h 58m 20s	-07° 54' 27"	6.3 - 9.0				C6(N3)		
@@ -973,7 +974,7 @@ Trumpler 1	Trumpler 1/Collinder 15	OCl	Cas	01h 35m 42s	61° 17' 00"	8.1	3'			I 3
 Trumpler 32	Trumpler 32	OCl	Ser	18h 17m 12s	-13° 21' 00"	12.2	12'			I 2m :b	5.6kly	50 stars
 TT Cyg	TT Cyg/HIP 96836	Carbon	Cyg	19h 40m 57s	32° 37' 05"	7.0 - 9.1				C5 (N3e)		
 TT Tau	TT Tau/HIP 22578	Carbon	Tau	04h 51m 31s	28° 31' 36"	7.7 - 10.0				C4-C7(N3)		
-TU Gem	TU Gem/	Carbon	Gem	06h 10m 53s	26° 00' 53"	7.4 - 8.4				C6(N3)		
+TU Gem	TU Gem	Carbon	Gem	06h 10m 53s	26° 00' 53"	7.4 - 8.4				C6(N3)		
 TU Tau	TU Tau/HIP 27135	Carbon	Tau	05h 45m 13s	24° 25' 12"	5.9 - 9.2				c5(N3)		
 TW Oph	TW Oph/HIP 85617	Carbon	Oph	17h 29m 43s	-19° 28' 22"	7.0 - 9.0				C5(Nb)		
 TX Aur	TX Aur/HIP 23965	Carbon	Aur	05h 09m 05s	39° 00' 08"	8.5 - 9.2				C5(N3)		
@@ -981,7 +982,7 @@ TX Psc	TX Psc/HIP 117245	Carbon	Psc	23h 46m 23s	03° 29' 12"	4.8 - 5.2				C7 (N0
 U Cam	U Cam/HIP 17257	Carbon	Cam	03h 41m 48s	62° 38' 54"	6.9 - 7.6				C3-C6(N5)		
 U Cyg	U Cyg/HIP 100219	Carbon	Cyg	20h 19m 36s	47° 53' 39"	5.9 - 12.1				C7 – C9 (Npe)		
 U Hya	U Hya/HIP 52009	Carbon	Hya	10h 37m 33s	-13° 23' 04"	4.5 - 6.2				C6.5(N2)		
-U Lyr	U Lyr/	Carbon	Lyr	19h 20m 09s	37° 52' 36"	8.3 - 13.5				C4 (N0e)		
+U Lyr	U Lyr	Carbon	Lyr	19h 20m 09s	37° 52' 36"	8.3 - 13.5				C4 (N0e)		
 Umbrella	Umbrella	Ast	Hya	08h 40m 00s	-12° 30' 00"	8.0 - 9.0	90'					7 stars form the canopy, 6 stars for the handle that curves at the end. brightest star in handle is star 6 Hydrae.
 UU Aur	UU Aur/HIP 31579	Carbon	Aur	06h 36m 32s	38° 26' 43"	5.1 - 7.0				C5 – C7(N3)		
 UV Aql	UV Aql/HIP 93158	Carbon	Aql	18h 58m 32s	14° 21' 49"	8.0 - 9.6				C5(N4)		
