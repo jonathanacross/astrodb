@@ -1,7 +1,6 @@
-package main.astrodb
+package astrodb
 
 import astrodb.Keyword
-import astrodb.ParseException
 
 enum class Mode {
     OBSERVING_LIST,

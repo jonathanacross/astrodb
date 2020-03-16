@@ -1,6 +1,8 @@
+package astrodb
+
 import astrodb.*
-import org.junit.Test as test
 import kotlin.test.assertEquals
+import org.junit.Test as test
 
 class QueryTest {
     @test
