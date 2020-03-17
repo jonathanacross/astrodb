@@ -44,7 +44,7 @@ build/install/astrodb/bin/astrodb help
 # Make an observing list of clusters and galaxies that are somewhat bright 
 # (magnitude <= 10, surface brightess <= 12), that lie in a particular part 
 # of the sky and that you've never observed. Results for observing lists are
-# always sorted by Con and then RA.
+# always sorted by Con (which are also sorted by RA), and then RA.
 build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \

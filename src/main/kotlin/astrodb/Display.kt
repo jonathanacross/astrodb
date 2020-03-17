@@ -1,15 +1,20 @@
 package astrodb
 
-data class ObjectWithRaSort(val obj: Object, val raSort: Double) {
+data class ObjectWithRaSort(val obj: Object, val conSort: Double, val raSort: Double) {
+
     companion object {
         fun create(obj: Object, raRange: RaRange): ObjectWithRaSort {
-            val raSort =
-                if (raRange.min <= raRange.max) {
-                    obj.ra
-                } else {
-                    if (obj.ra < raRange.min) obj.ra + 24 else obj.ra
-                }
-            return ObjectWithRaSort(obj, raSort)
+            val conSort = getRaSortValue(obj.constellation.ra, raRange)
+            val raSort = getRaSortValue(obj.ra, raRange)
+            return ObjectWithRaSort(obj, conSort, raSort)
+        }
+
+        private fun getRaSortValue(ra: Double, raRange: RaRange): Double {
+            return if (raRange.min <= raRange.max) {
+                ra
+            } else {
+                if (ra < raRange.min) ra + 24 else ra
+            }
         }
     }
 }
@@ -30,7 +35,7 @@ fun writeObservingList(objects: List<JoinedObject>, givenRaRange: RaRange?) {
     println(header)
 
     val objectsWithRaSort = objects.map { o -> ObjectWithRaSort.create(o.obj, raRange) }
-        .sortedWith(compareBy({ it.obj.constellation }, { it.raSort }))
+        .sortedWith(compareBy({ it.conSort }, { it.raSort }))
 
     for (o in objectsWithRaSort) {
         val sizesep =
