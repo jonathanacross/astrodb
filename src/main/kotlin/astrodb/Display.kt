@@ -134,7 +134,7 @@ fun writeMetaList(objects: List<JoinedObject>) {
                     "Con" + "\t" +
                     "RA" + "\t" +
                     "Dec" + "\t" +
-                    "Dist" + "\t" +
+                    "Dist(ly)" + "\t" +
                     "NumObs" + "\t" +
                     "NumPrograms" + "\t" +
                     "Dates" + "\t" +
@@ -149,7 +149,7 @@ fun writeMetaList(objects: List<JoinedObject>) {
                         o.obj.constellation + "\t" +
                         formatRa(o.obj.ra) + "\t" +
                         formatDec(o.obj.dec) + "\t" +
-                        o.obj.distance + "\t" +
+                        o.obj.distance.toSortableString() + "\t" +
                         o.observations.size + "\t" +
                         o.programs.size + "\t" +
                         o.observations.joinToString(", ") { obs -> obs.date } + "\t" +

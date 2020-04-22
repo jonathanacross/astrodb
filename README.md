@@ -9,7 +9,7 @@ one for observation data.
 Technically, these TSV files could be imported into SQL, joined,
 and queried.  So why not do that?
 - TSV files are easy to update and no SQL instance has to be running.
-- I've found I actually only do two types of queries, one to create
+- I've found I actually only do a few types of queries, one to create
   an observing list, or tracking how far I am to completing
   a program.  Full SQL generality is not required.
 - Object data is more complex than can be easily represented in SQL 
@@ -109,13 +109,27 @@ build/install/astrodb/bin/astrodb \
 ```
 
 ```
-#Get information about a particular object
+# Get information about a particular object
 build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
 --mode=observing_list \
 --filter='name like Dumbbell'
+```
+
+```
+# Print meta-information about objects, including the number of programs
+# items are in, how many observations have been made, and the distance
+# to objects.  This makes it easy to answer questions like "What are
+# the most popular objects?" and "what's the most distant object I
+# have ever seen?".
+build/install/astrodb/bin/astrodb \
+--objects="data/objects.tsv" \
+--programs="data/programs.tsv" \
+--observations="data/observations.tsv" \
+--mode=meta_list \
+--filter='seen = true'
 ```
 
 ## Data files
