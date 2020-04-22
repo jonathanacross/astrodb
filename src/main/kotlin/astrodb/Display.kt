@@ -125,3 +125,36 @@ fun writeObjectList(objects: List<JoinedObject>) {
         println(o.obj)
     }
 }
+
+fun writeMetaList(objects: List<JoinedObject>) {
+    val header =
+            "#Id" + "\t" +
+                    "Names" + "\t" +
+                    "Type" + "\t" +
+                    "Con" + "\t" +
+                    "RA" + "\t" +
+                    "Dec" + "\t" +
+                    "Dist" + "\t" +
+                    "NumObs" + "\t" +
+                    "NumPrograms" + "\t" +
+                    "Dates" + "\t" +
+                    "Programs"
+    println(header)
+
+    for (o in objects) {
+        val line =
+                o.obj.id + "\t" +
+                        o.obj.names.joinToString("/") + "\t" +
+                        o.obj.objectTypes.joinToString("+") + "\t" +
+                        o.obj.constellation + "\t" +
+                        formatRa(o.obj.ra) + "\t" +
+                        formatDec(o.obj.dec) + "\t" +
+                        o.obj.distance + "\t" +
+                        o.observations.size + "\t" +
+                        o.programs.size + "\t" +
+                        o.observations.joinToString(", ") { obs -> obs.date } + "\t" +
+                        o.programs.joinToString(", ") { obs -> obs.programName }
+
+        println(line)
+    }
+}
