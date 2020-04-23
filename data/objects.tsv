@@ -7,7 +7,7 @@
 11-12 Cam	11-12 Cam	Double	Cam	05h 06m 08s	58° 58' 20"	5.2, 6.2		177	10			
 118 Tau	118 Tau	Double	Tau	05h 29m 18s	25° 09' 00"	5.8, 6.7		4.7	209			
 12 Com	12 Com/SHJ 143	Double	Com	12h 22m 30s	25° 50' 46"	A=4.8, B=11.8, C=8.9, D=10.0		AB=36.7, AC=59, AD=213	AB=57, AC=168, AD=132			
-12 Lyn	12 Lyn/Struve 948	Double	Lyn	06h 46m 12s	59° 27' 00"	A=5.4, B=6.0, C=7.1		AB=1.9, AC=8.9	AB=65, AC=310			
+12 Lyn	12 Lyn/Struve 948	Double	Lyn	06h 46m 12s	59° 27' 00"	A=5.4, B=6.0, C=7.1		AB=1.9, AC=8.9	AB=65, AC=310			!
 14 Aur	14 Aur	Double	Aur	05h 15m 24s	32° 41' 00"	A=5.0, B=7.3, C=9.0		AB=10, AC=14.2				
 145 CMa	145 CMa	Double	CMa	07h 16m 37s	-23° 18' 56"	5.0, 5.8		26.8	50		6.272kly	
 16,17 Dra	16,17 Dra	Double	Dra	16h 36m 12s	52° 55' 00"	A=5.4, B=6.4, C=5.5		AB=3.1, AC=90.1	AB=104, AC=193			
@@ -392,7 +392,6 @@ NGC 1087	NGC 1087	Gal	Cet	02h 46m 24s	00° 30' 00"	10.9	3.9' x 2.3'			SBc Ring	5
 NGC 1097	NGC 1097	Gal	For	02h 46m 00s	-30° 17' 00"	9.3	9.3'			SBb		
 NGC 1160	NGC 1160	Gal	Per	03h 01m 12s	44° 57' 00"	12.8	1.9' x 0.9'			SBc Ring	105mly	
 NGC 1187	NGC 1187	Gal	Eri	03h 02m 36s	-22° 52' 00"	10.8	5.6' x 3.8'			SBc	55mly	multiple arm spiral, bar?, slightly tilted
-NGC 12	NGC 12	Double	Lyn	06h 46m 12s	59° 26' 00"	5.4	1.7"					! B-m6.0, C-m7.4, 8"
 NGC 1232	NGC 1232/Eye of God Galaxy	Gal	Eri	03h 09m 48s	-20° 35' 00"	9.9	7.1' x 6.3'			Sc	65mly	! face-on spiral; look for NGC 1300 nearby
 NGC 1245	NGC 1245/Patrick Starfish	OCl	Per	03h 14m 42s	47° 14' 00"	8.4	10'			III 1 r	9.38kly	Dim, rich scatter of pinpoint stars. 200 stars
 NGC 1275	NGC 1275	Gal	Per	03h 19m 48s	41° 34' 00"	11.6	2.6' x 1.9'					! Perseus A - brightest member of Perseus I Cluster (A426)
@@ -680,7 +679,7 @@ NGC 4143	NGC 4143	Gal	CVn	12h 09m 36s	42° 32' 00"	11.0	1.4' x 0.9'					el round
 NGC 4147	NGC 4147	GCl	Com	12h 10m 06s	18° 33' 00"	10.4	4.4'			VI	63kly	a thin sliver; NGC 4026 & 4088 nearby
 NGC 4150	NGC 4150	Gal	Com	12h 10m 36s	30° 24' 00"	11.6	1.2' x 0.9'					el round starlike nucl a brt sta
 NGC 4151	NGC 4151	Gal	CVn	12h 10m 30s	39° 24' 00"	11.6	2.5' x 1.6'					pec uniform round ovalish elus
-NGC 4157	NGC 4157	Gal	UMa	12h 11m 06s	50° 29' 00"	11.9	6.9' x 1.7'			G-Sb	73ly	a thin sliver; NGC 4026 & 4088 nearby
+NGC 4157	NGC 4157	Gal	UMa	12h 11m 06s	50° 29' 00"	11.9	6.9' x 1.7'			G-Sb	73mly	a thin sliver; NGC 4026 & 4088 nearby
 NGC 4169	NGC 4169	Gal	Com	12h 12m 12s	29° 10' 00"	13.0	2.1'					The Box, Hickson 61
 NGC 4179	NGC 4179	Gal	Vir	12h 12m 54s	01° 18' 00"	11.6	2.7' x 0.6'					el edge-on well distinct arms
 NGC 4203	NGC 4203	Gal	Com	12h 15m 06s	33° 12' 00"	11.0	1.8' x 1.5'					el sl oval faint brt nucleus av
@@ -746,7 +745,7 @@ NGC 4625	NGC 4625/IC 3675	Gal	CVn	12h 41m 54s	41° 16' 00"	12.4	2.3' x 1.9'			SB
 NGC 4627	NGC 4627/The Club with 4631/The Pup	Gal	CVn	12h 42m 00s	32° 34' 00"	12.4	2.2' x 1.7'			Elliptical	31mly	
 NGC 4631	NGC 4631/The Whale Galaxy	Gal	CVn	12h 42m 06s	32° 32' 00"	9.2	15.2' x 2.8'			SBcd	25mly	!! large edge-on; look for companion 4627
 NGC 4636	NGC 4636	Gal	Vir	12h 42m 48s	02° 41' 00"	10.4	1.4' x 1.3'					el round brt nucleus
-NGC 4638	NGC 4638	Gal	Vir	07h 42m 48s	11° 26' 33"	11.2	1.583' x 0.917'				70ly	
+NGC 4638	NGC 4638	Gal	Vir	07h 42m 48s	11° 26' 33"	11.2	1.583' x 0.917'				70mly	
 NGC 4643	NGC 4643	Gal	Vir	12h 43m 18s	01° 59' 00"	10.6	1.65' x 0.9'					Bsp round starlike brt nucleus
 NGC 4654	NGC 4654	Gal	Vir	12h 44m 00s	13° 08' 00"	11.0	4.2' x 2.2'					sp lg elong stands out well
 NGC 4656,4657	NGC 4656,4657/Hockey Stick Galaxy/Fishhook Galaxy	Gal	CVn	12h 44m 00s	32° 10' 00"	10.5	15.3' x 2.4'			SB	25mly	!! in field with 4631; NE end curves up
@@ -1010,7 +1009,6 @@ NGC 936	NGC 936	Gal	Cet	02h 27m 36s	-01° 09' 00"	10.1	5.2' x 4.4'					near M77;
 NGC 949	NGC 949	Gal	Tri	02h 30m 48s	37° 08' 00"	11.8	2.7' x 1.7'			Sb	17mly	
 NGC 955	NGC 955	Gal	Cet	02h 30m 36s	-01° 07' 00"	12.0	2.9' x 0.9'			Sab	56mly	
 NGC 972	NGC 972	Gal	Ari	02h 34m 12s	29° 19' 00"	11.4	3.3' x 1.6'			Sab	59mly	
-NGC R	NGC R	Carbon	Lep	04h 57m 18s	-14° 53' 00"	6.0 - 11.0						! N6 Carbon Star, Hind's Crimson Star, 432 days
 Northern Cross	Northern Cross	Ast	Cyg	20h 20m 00s	40° 00' 00"	3.0 - 4.0	7° x 12°					Formed by the stars Alpha, Beta, Gamma, Delta, and Epsilon Cygni.
 Northern Fly	Northern Fly	Ast	Ari	02h 48m 00s	28° 00' 00"	4.0	2°					Stars 35,39 and 41 Aretis.
 NQ Gem	NQ Gem/HIP 36623	Carbon	Gem	07h 31m 54s	24° 30' 12"	7.4 - 8.0				C6(R9)		
@@ -1041,7 +1039,7 @@ Psi Dra	Psi Dra	Double	Dra	17h 41m 54s	72° 09' 00"	4.6, 5.6		30	16
 Queen's Kite	Queen's Kite	Ast	Cas	01h 38m 00s	58° 30' 00"	6.0 - 7.0	120' x 90'					The stars in Queen’s Kite, including Chi Cas, forms a rough pentagon shape
 Question Mark	Question Mark	Ast	Cet	02h 36m 00s	06° 42' 00"	5.0 - 7.0	60' x 120'					6 stars make a question mark, last star is is Nu Ceti.
 R CMi	R CMi/HIP 34474	Carbon	CMi	07h 08m 42s	10° 01' 26"	7.3 - 11.6				C7(Csep)		
-R Lep	R Lep/HIP 23203	Carbon	Lep	04h 59m 36s	-14° 48' 22"	5.5 - 11.7				C7(N6)		
+R Lep	R Lep/HIP 23203/Hind's Crimson Star	Carbon	Lep	04h 59m 36s	-14° 48' 22"	5.5 - 11.7				C7(N6)		! Hind's Crimson Star, 432 days
 Ray's Shrimp	Ray's Shrimp/Howard 1	Ast	Pup	08h 11m 00s	-14° 22' 00"	7.6 - 10.9	15' x 6'					1.5 degrees south of 19 Pup.  Nose of shrimp is brightest star, tip of tail is the westernmost star.
 Red Necked Emu	Red Necked Emu/Bent Fan	Ast	Cyg	20h 14m 00s	36° 35' 00"	5.5 - 10.5	30'					About 12 stars total. Side view of emu with an 'S' shape for head and body and 4 stars at a 90 degree angle make a foot. Bright star in the tail is 29 Cygni.
 Renou 18	Renou 18	Ast	Psc	01h 14m 00s	30° 00' 00"	9.0	18'					Looks like the letter 'S' from Superman
