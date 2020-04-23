@@ -3,6 +3,7 @@ package astrodb
 sealed class Distance {
     object None : Distance() {
         override fun toString() = ""
+        override fun toSortableString() = ""
     }
 
     data class DistWithValue(val distLightYears: Double) : Distance() {
@@ -19,7 +20,11 @@ sealed class Distance {
                 }
             }
         }
+        override fun toSortableString() = distLightYears.toString()
     }
+
+    // string without units, easier for sorting in a spreadsheet
+    abstract fun toSortableString(): String
 
     companion object {
         fun parse(distField: String): Distance {

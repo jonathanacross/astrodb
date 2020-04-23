@@ -54,6 +54,7 @@ fun parseQuery(query: String): ObjectFilter {
     var programLike: String? = null
     var seen: Boolean? = null
     var notSeenSince: String? = null
+    var numProgramsGreaterThan: Int? = null
 
     var idx = 0
     while (idx < tokens.size) {
@@ -76,6 +77,7 @@ fun parseQuery(query: String): ObjectFilter {
             Keyword.PROGRAM_LIKE -> { programLike = tokens[idx + 2]; idx += 3 }
             Keyword.SEEN_IS -> { seen = tokens[idx + 2].toBoolean(); idx += 3 }
             Keyword.NOTSEEN_SINCE -> { notSeenSince = tokens[idx + 2]; idx += 3}
+            Keyword.NUM_PROGRAMS_GREATER -> { numProgramsGreaterThan = tokens[idx + 2].toInt(); idx += 3}
         }
     }
 
@@ -97,7 +99,8 @@ fun parseQuery(query: String): ObjectFilter {
         programIn = programIn,
         programLike = programLike,
         seen = seen,
-        notSeenSince = notSeenSince
+        notSeenSince = notSeenSince,
+        numProgramsGreaterThan = numProgramsGreaterThan
     )
 }
 
@@ -110,7 +113,7 @@ enum class Keyword(val token1: String, val token2: String, val example: String) 
     TYPE_NOTIN("type", "notin", "type notin oc,double"),
     RA_RANGE("ra", "range", "ra range 23:00 to 2:00"),
     DEC_LESS("dec", "<=", "dec <= 80"),
-    DEC_GREATER("dec", ">=", "dex >= -20"),
+    DEC_GREATER("dec", ">=", "dec >= -20"),
     MAGNITUDE_LESS("mag", "<=", "mag <= 10"),
     SB_LESS("sb", "<=", "sb <= 12"),
     SIZE_LESS("size", "<=", "size <= 10   (measured in arcminutes if no units given)"),
@@ -119,7 +122,8 @@ enum class Keyword(val token1: String, val token2: String, val example: String) 
     PROGRAM_IN("program", "in", "program in \"Messier OP\",\"Urban OP\""),
     PROGRAM_LIKE("program", "like", "program like RASC"),
     SEEN_IS("seen", "=", "seen = false"),
-    NOTSEEN_SINCE("notseen", "since", "notseen since 2018-01-15");
+    NOTSEEN_SINCE("notseen", "since", "notseen since 2018-01-15"),
+    NUM_PROGRAMS_GREATER("numprograms", ">=", "numprograms >= 3");
 
     companion object {
         fun getKeyword(token1: String, token2: String): Keyword {

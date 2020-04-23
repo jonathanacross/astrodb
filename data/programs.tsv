@@ -305,7 +305,7 @@ Wimmer's List	93	Backwards 5
 Wimmer's List	94	Lucky 7
 Wimmer's List	95	Kemble's Kite
 Wimmer's List	96	Stargate
-Wimmer's List	97	Coathanger
+Wimmer's List	97	Cr 399
 Wimmer's List	98	Engagement Ring
 Wimmer's List	99	Mini Coathanger
 Wimmer's List	100	Sailboat
@@ -433,7 +433,7 @@ Asterism OP	95	Fly and Fly Swatter
 Asterism OP	96	Sea Horse
 Asterism OP	97	Baby Scorpion
 Asterism OP	98	Taurus Poniatovii
-Asterism OP	99	Coathanger
+Asterism OP	99	Cr 399
 Asterism OP	100	Herman's Cross
 Asterism OP	101	Lucky 7
 Asterism OP	102	Frederick's Glory
@@ -942,15 +942,14 @@ Asterism OP	112	Great Square of Pegasus
 500 Best DSOs	491	IC 418
 500 Best DSOs	492	IC 4593
 500 Best DSOs	493	IC 4665
-500 Best DSOs	494	M 16
-500 Best DSOs	495	M 25
-500 Best DSOs	496	IC 4756
-500 Best DSOs	497	IC 4776
-500 Best DSOs	498	IC 5271
-500 Best DSOs	499	King 10
-500 Best DSOs	500	Mel 71
-500 Best DSOs	501	Trumpler 1
-500 Best DSOs	502	Trumpler 32
+500 Best DSOs	494	M 25
+500 Best DSOs	495	IC 4756
+500 Best DSOs	496	IC 4776
+500 Best DSOs	497	IC 5271
+500 Best DSOs	498	King 10
+500 Best DSOs	499	Mel 71
+500 Best DSOs	500	Trumpler 1
+500 Best DSOs	501	Trumpler 32
 RASC Best of NGC	1	NGC 7009
 RASC Best of NGC	2	NGC 7293
 RASC Best of NGC	3	NGC 7331
@@ -1458,403 +1457,875 @@ Carbon Star OP	97	RU Aqu
 Carbon Star OP	98	ST And
 Carbon Star OP	99	TX Psc
 Carbon Star OP	100	SAO 128396
-Hershel 400	1	NGC 40
-Hershel 400	2	NGC 129
-Hershel 400	3	NGC 136
-Hershel 400	4	NGC 157
-Hershel 400	5	NGC 185
-Hershel 400	6	M 110
-Hershel 400	7	NGC 225
-Hershel 400	8	NGC 246
-Hershel 400	9	NGC 247
-Hershel 400	10	NGC 253
-Hershel 400	11	NGC 278
-Hershel 400	12	NGC 288
-Hershel 400	13	NGC 381
-Hershel 400	14	NGC 404
-Hershel 400	15	NGC 436
-Hershel 400	16	NGC 457
-Hershel 400	17	NGC 488
-Hershel 400	18	NGC 524
-Hershel 400	19	NGC 559
-Hershel 400	20	NGC 584
-Hershel 400	21	NGC 596
-Hershel 400	22	M 33
-Hershel 400	23	NGC 613
-Hershel 400	24	NGC 615
-Hershel 400	25	NGC 637
-Hershel 400	26	M 76
-Hershel 400	27	NGC 654
-Hershel 400	28	NGC 659
-Hershel 400	29	NGC 663
-Hershel 400	30	NGC 720
-Hershel 400	31	NGC 752
-Hershel 400	32	NGC 772
-Hershel 400	33	NGC 779
-Hershel 400	34	NGC 869
-Hershel 400	35	NGC 884
-Hershel 400	36	NGC 891
-Hershel 400	37	NGC 908
-Hershel 400	38	NGC 936
-Hershel 400	39	NGC 1022
-Hershel 400	40	NGC 1023
-Hershel 400	41	NGC 1027
-Hershel 400	42	NGC 1052
-Hershel 400	43	NGC 1055
-Hershel 400	44	NGC 1084
-Hershel 400	45	NGC 1245
-Hershel 400	46	NGC 1342
-Hershel 400	47	NGC 1407
-Hershel 400	48	NGC 1444
-Hershel 400	49	NGC 1501
-Hershel 400	50	NGC 1502
-Hershel 400	51	NGC 1513
-Hershel 400	52	NGC 1528
-Hershel 400	53	NGC 1535
-Hershel 400	54	NGC 1545
-Hershel 400	55	NGC 1647
-Hershel 400	56	NGC 1664
-Hershel 400	57	NGC 1750
-Hershel 400	58	NGC 1788
-Hershel 400	59	NGC 1817
-Hershel 400	60	NGC 1857
-Hershel 400	61	NGC 1907
-Hershel 400	62	NGC 1931
-Hershel 400	63	NGC 1961
-Hershel 400	64	NGC 1964
-Hershel 400	65	NGC 1980
-Hershel 400	66	NGC 1999
-Hershel 400	67	NGC 2022
-Hershel 400	68	NGC 2024
-Hershel 400	69	NGC 2126
-Hershel 400	70	NGC 2129
-Hershel 400	71	NGC 2158
-Hershel 400	72	NGC 2169
-Hershel 400	73	NGC 2185
-Hershel 400	74	NGC 2186
-Hershel 400	75	NGC 2194
-Hershel 400	76	NGC 2204
-Hershel 400	77	NGC 2215
-Hershel 400	78	NGC 2232
-Hershel 400	79	NGC 2244
-Hershel 400	80	NGC 2251
-Hershel 400	81	NGC 2264
-Hershel 400	82	NGC 2266
-Hershel 400	83	NGC 2281
-Hershel 400	84	NGC 2286
-Hershel 400	85	NGC 2301
-Hershel 400	86	NGC 2304
-Hershel 400	87	NGC 2311
-Hershel 400	88	NGC 2324
-Hershel 400	89	NGC 2335
-Hershel 400	90	NGC 2343
-Hershel 400	91	NGC 2353
-Hershel 400	92	NGC 2354
-Hershel 400	93	NGC 2355
-Hershel 400	94	NGC 2360
-Hershel 400	95	NGC 2362
-Hershel 400	96	NGC 2371
-Hershel 400	97	NGC 2372
-Hershel 400	98	NGC 2392
-Hershel 400	99	NGC 2395
-Hershel 400	100	NGC 2403
-Hershel 400	101	NGC 2419
-Hershel 400	102	NGC 2420
-Hershel 400	103	NGC 2421
-Hershel 400	104	M 47
-Hershel 400	105	NGC 2423
-Hershel 400	106	NGC 2438
-Hershel 400	107	NGC 2440
-Hershel 400	108	NGC 2479
-Hershel 400	109	NGC 2482
-Hershel 400	110	NGC 2489
-Hershel 400	111	NGC 2506
-Hershel 400	112	NGC 2509
-Hershel 400	113	NGC 2527
-Hershel 400	114	NGC 2539
-Hershel 400	115	M 48
-Hershel 400	116	NGC 2567
-Hershel 400	117	NGC 2571
-Hershel 400	118	NGC 2613
-Hershel 400	119	NGC 2627
-Hershel 400	120	NGC 2655
-Hershel 400	121	NGC 2681
-Hershel 400	122	NGC 2683
-Hershel 400	123	NGC 2742
-Hershel 400	124	NGC 2768
-Hershel 400	125	NGC 2775
-Hershel 400	126	NGC 2782
-Hershel 400	127	NGC 2787
-Hershel 400	128	NGC 2811
-Hershel 400	129	NGC 2841
-Hershel 400	130	NGC 2859
-Hershel 400	131	NGC 2903
-Hershel 400	132	NGC 2950
-Hershel 400	133	NGC 2964
-Hershel 400	134	NGC 2974
-Hershel 400	135	NGC 2976
-Hershel 400	136	NGC 2985
-Hershel 400	137	M 82
-Hershel 400	138	NGC 3077
-Hershel 400	139	NGC 3079
-Hershel 400	140	NGC 3115
-Hershel 400	141	NGC 3147
-Hershel 400	142	NGC 3166
-Hershel 400	143	NGC 3169
-Hershel 400	144	NGC 3184
-Hershel 400	145	NGC 3190
-Hershel 400	146	NGC 3193
-Hershel 400	147	NGC 3198
-Hershel 400	148	NGC 3226
-Hershel 400	149	NGC 3227
-Hershel 400	150	NGC 3242
-Hershel 400	151	NGC 3245
-Hershel 400	152	NGC 3277
-Hershel 400	153	NGC 3294
-Hershel 400	154	NGC 3310
-Hershel 400	155	NGC 3344
-Hershel 400	156	NGC 3377
-Hershel 400	157	M 105
-Hershel 400	158	NGC 3384
-Hershel 400	159	NGC 3395
-Hershel 400	160	NGC 3412
-Hershel 400	161	NGC 3414
-Hershel 400	162	NGC 3432
-Hershel 400	163	NGC 3486
-Hershel 400	164	NGC 3489
-Hershel 400	165	NGC 3504
-Hershel 400	166	NGC 3521
-Hershel 400	167	M 108
-Hershel 400	168	NGC 3593
-Hershel 400	169	NGC 3607
-Hershel 400	170	NGC 3608
-Hershel 400	171	NGC 3610
-Hershel 400	172	NGC 3613
-Hershel 400	173	NGC 3619
-Hershel 400	174	NGC 3621
-Hershel 400	175	NGC 3626
-Hershel 400	176	NGC 3628
-Hershel 400	177	NGC 3631
-Hershel 400	178	NGC 3640
-Hershel 400	179	NGC 3655
-Hershel 400	180	NGC 3665
-Hershel 400	181	NGC 3675
-Hershel 400	182	NGC 3686
-Hershel 400	183	NGC 3726
-Hershel 400	184	NGC 3729
-Hershel 400	185	NGC 3810
-Hershel 400	186	NGC 3813
-Hershel 400	187	NGC 3877
-Hershel 400	188	NGC 3893
-Hershel 400	189	NGC 3898
-Hershel 400	190	NGC 3900
-Hershel 400	191	NGC 3912
-Hershel 400	192	NGC 3938
-Hershel 400	193	NGC 3941
-Hershel 400	194	NGC 3945
-Hershel 400	195	NGC 3949
-Hershel 400	196	NGC 3953
-Hershel 400	197	NGC 3962
-Hershel 400	198	NGC 3982
-Hershel 400	199	M 109
-Hershel 400	200	NGC 3998
-Hershel 400	201	NGC 4026
-Hershel 400	202	NGC 4027
-Hershel 400	203	NGC 4030
-Hershel 400	204	NGC 4036
-Hershel 400	205	NGC 4038
-Hershel 400	206	NGC 4041
-Hershel 400	207	NGC 4051
-Hershel 400	208	NGC 4085
-Hershel 400	209	NGC 4088
-Hershel 400	210	NGC 4102
-Hershel 400	211	NGC 4111
-Hershel 400	212	NGC 4143
-Hershel 400	213	NGC 4147
-Hershel 400	214	NGC 4150
-Hershel 400	215	NGC 4151
-Hershel 400	216	NGC 4179
-Hershel 400	217	NGC 4203
-Hershel 400	218	NGC 4214
-Hershel 400	219	NGC 4216
-Hershel 400	220	NGC 4245
-Hershel 400	221	NGC 4251
-Hershel 400	222	M 106
-Hershel 400	223	NGC 4261
-Hershel 400	224	NGC 4273
-Hershel 400	225	NGC 4274
-Hershel 400	226	NGC 4278
-Hershel 400	227	NGC 4281
-Hershel 400	228	NGC 4293
-Hershel 400	229	M 61
-Hershel 400	230	NGC 4314
-Hershel 400	231	NGC 4346
-Hershel 400	232	NGC 4350
-Hershel 400	233	NGC 4361
-Hershel 400	234	NGC 4365
-Hershel 400	235	NGC 4371
-Hershel 400	236	NGC 4394
-Hershel 400	237	NGC 4414
-Hershel 400	238	NGC 4419
-Hershel 400	239	NGC 4429
-Hershel 400	240	NGC 4435
-Hershel 400	241	NGC 4438
-Hershel 400	242	NGC 4442
-Hershel 400	243	NGC 4448
-Hershel 400	244	NGC 4449
-Hershel 400	245	NGC 4450
-Hershel 400	246	NGC 4459
-Hershel 400	247	NGC 4473
-Hershel 400	248	NGC 4477
-Hershel 400	249	NGC 4478
-Hershel 400	250	NGC 4485
-Hershel 400	251	NGC 4490
-Hershel 400	252	NGC 4494
-Hershel 400	253	NGC 4526
-Hershel 400	254	NGC 4527
-Hershel 400	255	NGC 4535
-Hershel 400	256	NGC 4536
-Hershel 400	257	NGC 4546
-Hershel 400	258	M 91
-Hershel 400	259	NGC 4550
-Hershel 400	260	NGC 4559
-Hershel 400	261	NGC 4565
-Hershel 400	262	NGC 4570
-Hershel 400	263	M 104
-Hershel 400	264	NGC 4596
-Hershel 400	265	NGC 4618
-Hershel 400	266	NGC 4631
-Hershel 400	267	NGC 4636
-Hershel 400	268	NGC 4643
-Hershel 400	269	NGC 4654
-Hershel 400	270	NGC 4656,4657
-Hershel 400	271	NGC 4660
-Hershel 400	272	NGC 4665
-Hershel 400	273	NGC 4666
-Hershel 400	274	NGC 4689
-Hershel 400	275	NGC 4697
-Hershel 400	276	NGC 4698
-Hershel 400	277	NGC 4699
-Hershel 400	278	NGC 4725
-Hershel 400	279	NGC 4753
-Hershel 400	280	NGC 4754
-Hershel 400	281	NGC 4762
-Hershel 400	282	NGC 4781
-Hershel 400	283	NGC 4800
-Hershel 400	284	NGC 4845
-Hershel 400	285	NGC 4856
-Hershel 400	286	NGC 4866
-Hershel 400	287	NGC 4900
-Hershel 400	288	NGC 4958
-Hershel 400	289	NGC 4995
-Hershel 400	290	NGC 5005
-Hershel 400	291	NGC 5033
-Hershel 400	292	NGC 5054
-Hershel 400	293	NGC 5195
-Hershel 400	294	NGC 5248
-Hershel 400	295	NGC 5273
-Hershel 400	296	NGC 5322
-Hershel 400	297	NGC 5363
-Hershel 400	298	NGC 5364
-Hershel 400	299	NGC 5466
-Hershel 400	300	NGC 5473
-Hershel 400	301	NGC 5474
-Hershel 400	302	NGC 5557
-Hershel 400	303	NGC 5566
-Hershel 400	304	NGC 5576
-Hershel 400	305	NGC 5631
-Hershel 400	306	NGC 5634
-Hershel 400	307	NGC 5676
-Hershel 400	308	NGC 5689
-Hershel 400	309	NGC 5694
-Hershel 400	310	NGC 5746
-Hershel 400	311	NGC 5846
-Hershel 400	312	M 102
-Hershel 400	313	NGC 5897
-Hershel 400	314	NGC 5907
-Hershel 400	315	NGC 5982
-Hershel 400	316	NGC 6118
-Hershel 400	317	NGC 6144
-Hershel 400	318	M 107
-Hershel 400	319	NGC 6207
-Hershel 400	320	NGC 6217
-Hershel 400	321	NGC 6229
-Hershel 400	322	NGC 6235
-Hershel 400	323	NGC 6284
-Hershel 400	324	NGC 6287
-Hershel 400	325	NGC 6293
-Hershel 400	326	NGC 6304
-Hershel 400	327	NGC 6316
-Hershel 400	328	NGC 6342
-Hershel 400	329	NGC 6355
-Hershel 400	330	NGC 6356
-Hershel 400	331	NGC 6369
-Hershel 400	332	NGC 6401
-Hershel 400	333	NGC 6426
-Hershel 400	334	NGC 6440
-Hershel 400	335	NGC 6445
-Hershel 400	336	NGC 6451
-Hershel 400	337	M 20
-Hershel 400	338	NGC 6517
-Hershel 400	339	NGC 6520
-Hershel 400	340	NGC 6522
-Hershel 400	341	NGC 6528
-Hershel 400	342	NGC 6540
-Hershel 400	343	NGC 6543
-Hershel 400	344	NGC 6544
-Hershel 400	345	NGC 6553
-Hershel 400	346	NGC 6568
-Hershel 400	347	NGC 6569
-Hershel 400	348	NGC 6583
-Hershel 400	349	NGC 6624
-Hershel 400	350	NGC 6629
-Hershel 400	351	NGC 6633
-Hershel 400	352	NGC 6638
-Hershel 400	353	NGC 6642
-Hershel 400	354	NGC 6645
-Hershel 400	355	NGC 6664
-Hershel 400	356	NGC 6712
-Hershel 400	357	NGC 6755
-Hershel 400	358	NGC 6756
-Hershel 400	359	NGC 6781
-Hershel 400	360	NGC 6802
-Hershel 400	361	NGC 6818
-Hershel 400	362	NGC 6823
-Hershel 400	363	NGC 6826
-Hershel 400	364	NGC 6830
-Hershel 400	365	NGC 6834
-Hershel 400	366	NGC 6866
-Hershel 400	367	NGC 6882
-Hershel 400	368	NGC 6885
-Hershel 400	369	NGC 6905
-Hershel 400	370	NGC 6910
-Hershel 400	371	NGC 6934
-Hershel 400	372	NGC 6939
-Hershel 400	373	NGC 6940
-Hershel 400	374	NGC 6946
-Hershel 400	375	NGC 7000
-Hershel 400	376	NGC 7006
-Hershel 400	377	NGC 7008
-Hershel 400	378	NGC 7009
-Hershel 400	379	NGC 7044
-Hershel 400	380	NGC 7062
-Hershel 400	381	NGC 7086
-Hershel 400	382	NGC 7128
-Hershel 400	383	NGC 7142
-Hershel 400	384	NGC 7160
-Hershel 400	385	NGC 7209
-Hershel 400	386	NGC 7217
-Hershel 400	387	NGC 7243
-Hershel 400	388	NGC 7296
-Hershel 400	389	NGC 7331
-Hershel 400	390	NGC 7380
-Hershel 400	391	NGC 7448
-Hershel 400	392	NGC 7479
-Hershel 400	393	NGC 7510
-Hershel 400	394	NGC 7606
-Hershel 400	395	NGC 7662
-Hershel 400	396	NGC 7686
-Hershel 400	397	NGC 7723
-Hershel 400	398	NGC 7727
-Hershel 400	399	NGC 7789
-Hershel 400	400	NGC 7790
+Herschel 400	1	NGC 40
+Herschel 400	2	NGC 129
+Herschel 400	3	NGC 136
+Herschel 400	4	NGC 157
+Herschel 400	5	NGC 185
+Herschel 400	6	M 110
+Herschel 400	7	NGC 225
+Herschel 400	8	NGC 246
+Herschel 400	9	NGC 247
+Herschel 400	10	NGC 253
+Herschel 400	11	NGC 278
+Herschel 400	12	NGC 288
+Herschel 400	13	NGC 381
+Herschel 400	14	NGC 404
+Herschel 400	15	NGC 436
+Herschel 400	16	NGC 457
+Herschel 400	17	NGC 488
+Herschel 400	18	NGC 524
+Herschel 400	19	NGC 559
+Herschel 400	20	NGC 584
+Herschel 400	21	NGC 596
+Herschel 400	22	M 33
+Herschel 400	23	NGC 613
+Herschel 400	24	NGC 615
+Herschel 400	25	NGC 637
+Herschel 400	26	M 76
+Herschel 400	27	NGC 654
+Herschel 400	28	NGC 659
+Herschel 400	29	NGC 663
+Herschel 400	30	NGC 720
+Herschel 400	31	NGC 752
+Herschel 400	32	NGC 772
+Herschel 400	33	NGC 779
+Herschel 400	34	NGC 869
+Herschel 400	35	NGC 884
+Herschel 400	36	NGC 891
+Herschel 400	37	NGC 908
+Herschel 400	38	NGC 936
+Herschel 400	39	NGC 1022
+Herschel 400	40	NGC 1023
+Herschel 400	41	NGC 1027
+Herschel 400	42	NGC 1052
+Herschel 400	43	NGC 1055
+Herschel 400	44	NGC 1084
+Herschel 400	45	NGC 1245
+Herschel 400	46	NGC 1342
+Herschel 400	47	NGC 1407
+Herschel 400	48	NGC 1444
+Herschel 400	49	NGC 1501
+Herschel 400	50	NGC 1502
+Herschel 400	51	NGC 1513
+Herschel 400	52	NGC 1528
+Herschel 400	53	NGC 1535
+Herschel 400	54	NGC 1545
+Herschel 400	55	NGC 1647
+Herschel 400	56	NGC 1664
+Herschel 400	57	NGC 1750
+Herschel 400	58	NGC 1788
+Herschel 400	59	NGC 1817
+Herschel 400	60	NGC 1857
+Herschel 400	61	NGC 1907
+Herschel 400	62	NGC 1931
+Herschel 400	63	NGC 1961
+Herschel 400	64	NGC 1964
+Herschel 400	65	NGC 1980
+Herschel 400	66	NGC 1999
+Herschel 400	67	NGC 2022
+Herschel 400	68	NGC 2024
+Herschel 400	69	NGC 2126
+Herschel 400	70	NGC 2129
+Herschel 400	71	NGC 2158
+Herschel 400	72	NGC 2169
+Herschel 400	73	NGC 2185
+Herschel 400	74	NGC 2186
+Herschel 400	75	NGC 2194
+Herschel 400	76	NGC 2204
+Herschel 400	77	NGC 2215
+Herschel 400	78	NGC 2232
+Herschel 400	79	NGC 2244
+Herschel 400	80	NGC 2251
+Herschel 400	81	NGC 2264
+Herschel 400	82	NGC 2266
+Herschel 400	83	NGC 2281
+Herschel 400	84	NGC 2286
+Herschel 400	85	NGC 2301
+Herschel 400	86	NGC 2304
+Herschel 400	87	NGC 2311
+Herschel 400	88	NGC 2324
+Herschel 400	89	NGC 2335
+Herschel 400	90	NGC 2343
+Herschel 400	91	NGC 2353
+Herschel 400	92	NGC 2354
+Herschel 400	93	NGC 2355
+Herschel 400	94	NGC 2360
+Herschel 400	95	NGC 2362
+Herschel 400	96	NGC 2371
+Herschel 400	97	NGC 2372
+Herschel 400	98	NGC 2392
+Herschel 400	99	NGC 2395
+Herschel 400	100	NGC 2403
+Herschel 400	101	NGC 2419
+Herschel 400	102	NGC 2420
+Herschel 400	103	NGC 2421
+Herschel 400	104	M 47
+Herschel 400	105	NGC 2423
+Herschel 400	106	NGC 2438
+Herschel 400	107	NGC 2440
+Herschel 400	108	NGC 2479
+Herschel 400	109	NGC 2482
+Herschel 400	110	NGC 2489
+Herschel 400	111	NGC 2506
+Herschel 400	112	NGC 2509
+Herschel 400	113	NGC 2527
+Herschel 400	114	NGC 2539
+Herschel 400	115	M 48
+Herschel 400	116	NGC 2567
+Herschel 400	117	NGC 2571
+Herschel 400	118	NGC 2613
+Herschel 400	119	NGC 2627
+Herschel 400	120	NGC 2655
+Herschel 400	121	NGC 2681
+Herschel 400	122	NGC 2683
+Herschel 400	123	NGC 2742
+Herschel 400	124	NGC 2768
+Herschel 400	125	NGC 2775
+Herschel 400	126	NGC 2782
+Herschel 400	127	NGC 2787
+Herschel 400	128	NGC 2811
+Herschel 400	129	NGC 2841
+Herschel 400	130	NGC 2859
+Herschel 400	131	NGC 2903
+Herschel 400	132	NGC 2950
+Herschel 400	133	NGC 2964
+Herschel 400	134	NGC 2974
+Herschel 400	135	NGC 2976
+Herschel 400	136	NGC 2985
+Herschel 400	137	M 82
+Herschel 400	138	NGC 3077
+Herschel 400	139	NGC 3079
+Herschel 400	140	NGC 3115
+Herschel 400	141	NGC 3147
+Herschel 400	142	NGC 3166
+Herschel 400	143	NGC 3169
+Herschel 400	144	NGC 3184
+Herschel 400	145	NGC 3190
+Herschel 400	146	NGC 3193
+Herschel 400	147	NGC 3198
+Herschel 400	148	NGC 3226
+Herschel 400	149	NGC 3227
+Herschel 400	150	NGC 3242
+Herschel 400	151	NGC 3245
+Herschel 400	152	NGC 3277
+Herschel 400	153	NGC 3294
+Herschel 400	154	NGC 3310
+Herschel 400	155	NGC 3344
+Herschel 400	156	NGC 3377
+Herschel 400	157	M 105
+Herschel 400	158	NGC 3384
+Herschel 400	159	NGC 3395
+Herschel 400	160	NGC 3412
+Herschel 400	161	NGC 3414
+Herschel 400	162	NGC 3432
+Herschel 400	163	NGC 3486
+Herschel 400	164	NGC 3489
+Herschel 400	165	NGC 3504
+Herschel 400	166	NGC 3521
+Herschel 400	167	M 108
+Herschel 400	168	NGC 3593
+Herschel 400	169	NGC 3607
+Herschel 400	170	NGC 3608
+Herschel 400	171	NGC 3610
+Herschel 400	172	NGC 3613
+Herschel 400	173	NGC 3619
+Herschel 400	174	NGC 3621
+Herschel 400	175	NGC 3626
+Herschel 400	176	NGC 3628
+Herschel 400	177	NGC 3631
+Herschel 400	178	NGC 3640
+Herschel 400	179	NGC 3655
+Herschel 400	180	NGC 3665
+Herschel 400	181	NGC 3675
+Herschel 400	182	NGC 3686
+Herschel 400	183	NGC 3726
+Herschel 400	184	NGC 3729
+Herschel 400	185	NGC 3810
+Herschel 400	186	NGC 3813
+Herschel 400	187	NGC 3877
+Herschel 400	188	NGC 3893
+Herschel 400	189	NGC 3898
+Herschel 400	190	NGC 3900
+Herschel 400	191	NGC 3912
+Herschel 400	192	NGC 3938
+Herschel 400	193	NGC 3941
+Herschel 400	194	NGC 3945
+Herschel 400	195	NGC 3949
+Herschel 400	196	NGC 3953
+Herschel 400	197	NGC 3962
+Herschel 400	198	NGC 3982
+Herschel 400	199	M 109
+Herschel 400	200	NGC 3998
+Herschel 400	201	NGC 4026
+Herschel 400	202	NGC 4027
+Herschel 400	203	NGC 4030
+Herschel 400	204	NGC 4036
+Herschel 400	205	NGC 4038
+Herschel 400	206	NGC 4041
+Herschel 400	207	NGC 4051
+Herschel 400	208	NGC 4085
+Herschel 400	209	NGC 4088
+Herschel 400	210	NGC 4102
+Herschel 400	211	NGC 4111
+Herschel 400	212	NGC 4143
+Herschel 400	213	NGC 4147
+Herschel 400	214	NGC 4150
+Herschel 400	215	NGC 4151
+Herschel 400	216	NGC 4179
+Herschel 400	217	NGC 4203
+Herschel 400	218	NGC 4214
+Herschel 400	219	NGC 4216
+Herschel 400	220	NGC 4245
+Herschel 400	221	NGC 4251
+Herschel 400	222	M 106
+Herschel 400	223	NGC 4261
+Herschel 400	224	NGC 4273
+Herschel 400	225	NGC 4274
+Herschel 400	226	NGC 4278
+Herschel 400	227	NGC 4281
+Herschel 400	228	NGC 4293
+Herschel 400	229	M 61
+Herschel 400	230	NGC 4314
+Herschel 400	231	NGC 4346
+Herschel 400	232	NGC 4350
+Herschel 400	233	NGC 4361
+Herschel 400	234	NGC 4365
+Herschel 400	235	NGC 4371
+Herschel 400	236	NGC 4394
+Herschel 400	237	NGC 4414
+Herschel 400	238	NGC 4419
+Herschel 400	239	NGC 4429
+Herschel 400	240	NGC 4435
+Herschel 400	241	NGC 4438
+Herschel 400	242	NGC 4442
+Herschel 400	243	NGC 4448
+Herschel 400	244	NGC 4449
+Herschel 400	245	NGC 4450
+Herschel 400	246	NGC 4459
+Herschel 400	247	NGC 4473
+Herschel 400	248	NGC 4477
+Herschel 400	249	NGC 4478
+Herschel 400	250	NGC 4485
+Herschel 400	251	NGC 4490
+Herschel 400	252	NGC 4494
+Herschel 400	253	NGC 4526
+Herschel 400	254	NGC 4527
+Herschel 400	255	NGC 4535
+Herschel 400	256	NGC 4536
+Herschel 400	257	NGC 4546
+Herschel 400	258	M 91
+Herschel 400	259	NGC 4550
+Herschel 400	260	NGC 4559
+Herschel 400	261	NGC 4565
+Herschel 400	262	NGC 4570
+Herschel 400	263	M 104
+Herschel 400	264	NGC 4596
+Herschel 400	265	NGC 4618
+Herschel 400	266	NGC 4631
+Herschel 400	267	NGC 4636
+Herschel 400	268	NGC 4643
+Herschel 400	269	NGC 4654
+Herschel 400	270	NGC 4656,4657
+Herschel 400	271	NGC 4660
+Herschel 400	272	NGC 4665
+Herschel 400	273	NGC 4666
+Herschel 400	274	NGC 4689
+Herschel 400	275	NGC 4697
+Herschel 400	276	NGC 4698
+Herschel 400	277	NGC 4699
+Herschel 400	278	NGC 4725
+Herschel 400	279	NGC 4753
+Herschel 400	280	NGC 4754
+Herschel 400	281	NGC 4762
+Herschel 400	282	NGC 4781
+Herschel 400	283	NGC 4800
+Herschel 400	284	NGC 4845
+Herschel 400	285	NGC 4856
+Herschel 400	286	NGC 4866
+Herschel 400	287	NGC 4900
+Herschel 400	288	NGC 4958
+Herschel 400	289	NGC 4995
+Herschel 400	290	NGC 5005
+Herschel 400	291	NGC 5033
+Herschel 400	292	NGC 5054
+Herschel 400	293	NGC 5195
+Herschel 400	294	NGC 5248
+Herschel 400	295	NGC 5273
+Herschel 400	296	NGC 5322
+Herschel 400	297	NGC 5363
+Herschel 400	298	NGC 5364
+Herschel 400	299	NGC 5466
+Herschel 400	300	NGC 5473
+Herschel 400	301	NGC 5474
+Herschel 400	302	NGC 5557
+Herschel 400	303	NGC 5566
+Herschel 400	304	NGC 5576
+Herschel 400	305	NGC 5631
+Herschel 400	306	NGC 5634
+Herschel 400	307	NGC 5676
+Herschel 400	308	NGC 5689
+Herschel 400	309	NGC 5694
+Herschel 400	310	NGC 5746
+Herschel 400	311	NGC 5846
+Herschel 400	312	M 102
+Herschel 400	313	NGC 5897
+Herschel 400	314	NGC 5907
+Herschel 400	315	NGC 5982
+Herschel 400	316	NGC 6118
+Herschel 400	317	NGC 6144
+Herschel 400	318	M 107
+Herschel 400	319	NGC 6207
+Herschel 400	320	NGC 6217
+Herschel 400	321	NGC 6229
+Herschel 400	322	NGC 6235
+Herschel 400	323	NGC 6284
+Herschel 400	324	NGC 6287
+Herschel 400	325	NGC 6293
+Herschel 400	326	NGC 6304
+Herschel 400	327	NGC 6316
+Herschel 400	328	NGC 6342
+Herschel 400	329	NGC 6355
+Herschel 400	330	NGC 6356
+Herschel 400	331	NGC 6369
+Herschel 400	332	NGC 6401
+Herschel 400	333	NGC 6426
+Herschel 400	334	NGC 6440
+Herschel 400	335	NGC 6445
+Herschel 400	336	NGC 6451
+Herschel 400	337	M 20
+Herschel 400	338	NGC 6517
+Herschel 400	339	NGC 6520
+Herschel 400	340	NGC 6522
+Herschel 400	341	NGC 6528
+Herschel 400	342	NGC 6540
+Herschel 400	343	NGC 6543
+Herschel 400	344	NGC 6544
+Herschel 400	345	NGC 6553
+Herschel 400	346	NGC 6568
+Herschel 400	347	NGC 6569
+Herschel 400	348	NGC 6583
+Herschel 400	349	NGC 6624
+Herschel 400	350	NGC 6629
+Herschel 400	351	NGC 6633
+Herschel 400	352	NGC 6638
+Herschel 400	353	NGC 6642
+Herschel 400	354	NGC 6645
+Herschel 400	355	NGC 6664
+Herschel 400	356	NGC 6712
+Herschel 400	357	NGC 6755
+Herschel 400	358	NGC 6756
+Herschel 400	359	NGC 6781
+Herschel 400	360	NGC 6802
+Herschel 400	361	NGC 6818
+Herschel 400	362	NGC 6823
+Herschel 400	363	NGC 6826
+Herschel 400	364	NGC 6830
+Herschel 400	365	NGC 6834
+Herschel 400	366	NGC 6866
+Herschel 400	367	NGC 6882
+Herschel 400	368	NGC 6885
+Herschel 400	369	NGC 6905
+Herschel 400	370	NGC 6910
+Herschel 400	371	NGC 6934
+Herschel 400	372	NGC 6939
+Herschel 400	373	NGC 6940
+Herschel 400	374	NGC 6946
+Herschel 400	375	NGC 7000
+Herschel 400	376	NGC 7006
+Herschel 400	377	NGC 7008
+Herschel 400	378	NGC 7009
+Herschel 400	379	NGC 7044
+Herschel 400	380	NGC 7062
+Herschel 400	381	NGC 7086
+Herschel 400	382	NGC 7128
+Herschel 400	383	NGC 7142
+Herschel 400	384	NGC 7160
+Herschel 400	385	NGC 7209
+Herschel 400	386	NGC 7217
+Herschel 400	387	NGC 7243
+Herschel 400	388	NGC 7296
+Herschel 400	389	NGC 7331
+Herschel 400	390	NGC 7380
+Herschel 400	391	NGC 7448
+Herschel 400	392	NGC 7479
+Herschel 400	393	NGC 7510
+Herschel 400	394	NGC 7606
+Herschel 400	395	NGC 7662
+Herschel 400	396	NGC 7686
+Herschel 400	397	NGC 7723
+Herschel 400	398	NGC 7727
+Herschel 400	399	NGC 7789
+Herschel 400	400	NGC 7790
+Globular OP	33	NGC 288
+Globular OP	44	Pal 1
+Globular OP	47	Pal 2
+Globular OP	49	M 79
+Globular OP	51	NGC 2419
+Globular OP	59	NGC 4147
+Globular OP	62	NGC 4590
+Globular OP	64	M 53
+Globular OP	65	NGC 5053
+Globular OP	67	M 3
+Globular OP	70	NGC 5466
+Globular OP	71	NGC 5634
+Globular OP	72	NGC 5694
+Globular OP	76	NGC 5897
+Globular OP	77	NGC 5904
+Globular OP	84	NGC 6093
+Globular OP	85	M 4
+Globular OP	87	NGC 6144
+Globular OP	90	M 107
+Globular OP	92	M 13
+Globular OP	93	NGC 6229
+Globular OP	94	M 12
+Globular OP	95	NGC 6235
+Globular OP	96	NGC 6254
+Globular OP	100	M 19
+Globular OP	101	NGC 6284
+Globular OP	102	NGC 6287
+Globular OP	103	NGC 6293
+Globular OP	104	NGC 6304
+Globular OP	105	NGC 6316
+Globular OP	106	M 92
+Globular OP	108	M 9
+Globular OP	109	NGC 6342
+Globular OP	110	NGC 6355
+Globular OP	111	NGC 6356
+Globular OP	114	NGC 6366
+Globular OP	124	NGC 6401
+Globular OP	125	M 14
+Globular OP	128	NGC 6246
+Globular OP	131	NGC 6440
+Globular OP	138	NGC 6517
+Globular OP	139	Djorg 2
+Globular OP	142	NGC 6535
+Globular OP	143	NGC 6539
+Globular OP	145	NGC 6540
+Globular OP	147	NGC 6544
+Globular OP	149	NGC 6553
+Globular OP	153	IC 1276
+Globular OP	158	NGC 6626
+Globular OP	160	NGC 6638
+Globular OP	161	NGC 6642
+Globular OP	163	M 22
+Globular OP	164	Pal 8
+Globular OP	166	NGC 6712
+Globular OP	168	NGC 6717
+Globular OP	170	NGC 6749
+Globular OP	172	NGC 6760
+Globular OP	173	M 56
+Globular OP	175	Pal 10
+Globular OP	179	Pal 11
+Globular OP	180	M 71
+Globular OP	181	M 75
+Globular OP	182	NGC 6934
+Globular OP	183	NGC 6891
+Globular OP	184	NGC 7006
+Globular OP	185	M 15
+Globular OP	186	NGC 7089
+Globular OP	187	M 30
+Globular OP	188	Pal 12
+Globular OP	190	NGC 7492
+Vic Menard List	1	NGC 7793
+Vic Menard List	2	NGC 24
+Vic Menard List	3	NGC 55
+Vic Menard List	4	NGC 134
+Vic Menard List	5	NGC 253
+Vic Menard List	6	NGC 288
+Vic Menard List	7	NGC 613
+Vic Menard List	8	NGC 7789
+Vic Menard List	9	H 3053
+Vic Menard List	10	Eta Cas
+Vic Menard List	11	NGC 278
+Vic Menard List	12	NGC 281
+Vic Menard List	13	NGC 457
+Vic Menard List	14	NGC 663
+Vic Menard List	15	NGC 896
+Vic Menard List	16	Iota Cas
+Vic Menard List	17	IC 289
+Vic Menard List	18	NGC 7640
+Vic Menard List	19	NGC 7662
+Vic Menard List	20	VX And
+Vic Menard List	21	M 31
+Vic Menard List	22	Gamma And
+Vic Menard List	23	NGC 891
+Vic Menard List	24	M 33
+Vic Menard List	25	Iota Tri
+Vic Menard List	26	M 74
+Vic Menard List	27	Alpha Psc
+Vic Menard List	28	NGC 246
+Vic Menard List	29	Gamma Cet
+Vic Menard List	30	M 77
+Vic Menard List	31	Gamma Ari
+Vic Menard List	32	NGC 772
+Vic Menard List	33	M 76
+Vic Menard List	34a	NGC 869
+Vic Menard List	34b	NGC 884
+Vic Menard List	35	NGC 1023
+Vic Menard List	36	Eta Per
+Vic Menard List	37	NGC 1245
+Vic Menard List	38	NGC 1275
+Vic Menard List	39	NGC 1491
+Vic Menard List	40	NGC 1513
+Vic Menard List	41	NGC 1528
+Vic Menard List	42	NGC 1579
+Vic Menard List	43	NGC 1049
+Vic Menard List	44	NGC 1097
+Vic Menard List	45	NGC 1316
+Vic Menard List	46	NGC 1360
+Vic Menard List	47	NGC 1365
+Vic Menard List	48	NGC 1380
+Vic Menard List	49	NGC 1398
+Vic Menard List	50	NGC 1084
+Vic Menard List	51	Theta Eri
+Vic Menard List	52	NGC 1187
+Vic Menard List	53	NGC 1232
+Vic Menard List	54	NGC 1291
+Vic Menard List	55	NGC 1421
+Vic Menard List	56	32 Eri
+Vic Menard List	57	NGC 1532
+Vic Menard List	58	NGC 1535
+Vic Menard List	59	Omicron 2 Eri
+Vic Menard List	60	NGC 1433
+Vic Menard List	61	M 45
+Vic Menard List	62	NGC 1514
+Vic Menard List	63	M 1
+Vic Menard List	64	R Lep
+Vic Menard List	65	M 79
+Vic Menard List	66	IC 418
+Vic Menard List	67	NGC 1964
+Vic Menard List	68	NGC 1792
+Vic Menard List	69	NGC 1808
+Vic Menard List	70	NGC 1851
+Vic Menard List	71	W Ori
+Vic Menard List	72	Beta Ori
+Vic Menard List	73	Eta Ori
+Vic Menard List	74	Lambda Ori
+Vic Menard List	75	M 42
+Vic Menard List	76	Sigma Ori
+Vic Menard List	77	IC 434
+Vic Menard List	78	NGC 2024
+Vic Menard List	79	NGC 2022
+Vic Menard List	80	M 78
+Vic Menard List	81	NGC 2169
+Vic Menard List	82	NGC 2194
+Vic Menard List	83	NGC 1907
+Vic Menard List	84	M 37
+Vic Menard List	85	IC 2149
+Vic Menard List	86	Theta Aur
+Vic Menard List	87	M 35
+Vic Menard List	88	NGC 2266
+Vic Menard List	89	NGC 2304
+Vic Menard List	90	NGC 2355
+Vic Menard List	91	Delta Gem
+Vic Menard List	92a	NGC 2371
+Vic Menard List	92b	NGC 2372
+Vic Menard List	93	PK205+14.1
+Vic Menard List	94	NGC 2392
+Vic Menard List	95	Alpha Gem
+Vic Menard List	96	NGC 2420
+Vic Menard List	97	Epsilon Mon
+Vic Menard List	98	Beta Mon
+Vic Menard List	99	NGC 2244
+Vic Menard List	100	NGC 2261
+Vic Menard List	101	M 50
+Vic Menard List	102	NGC 2346
+Vic Menard List	103	NGC 2506
+Vic Menard List	104	NGC 2207
+Vic Menard List	105	Alpha CMa
+Vic Menard List	106	Epsilon CMa
+Vic Menard List	107	H 3945
+Vic Menard List	108	NGC 2360
+Vic Menard List	109	NGC 2359
+Vic Menard List	110	NGC 2362
+Vic Menard List	111	NGC 1501
+Vic Menard List	112	NGC 1502
+Vic Menard List	113	ST Cam
+Vic Menard List	114	U Cam
+Vic Menard List	115	NGC 2403
+Vic Menard List	116	NGC 2655
+Vic Menard List	117	IC 3568
+Vic Menard List	118	NGC 2421
+Vic Menard List	119	NGC 2423
+Vic Menard List	120	Kappa Pup
+Vic Menard List	121	M 46
+Vic Menard List	122	NGC 2440
+Vic Menard List	123	NGC 2452
+Vic Menard List	124	NGC 2477
+Vic Menard List	125	NGC 2467
+Vic Menard List	126	NGC 2539
+Vic Menard List	127	NGC 2567
+Vic Menard List	128	Zeta Cnc
+Vic Menard List	129	Iota Cnc
+Vic Menard List	130	X Cnc
+Vic Menard List	131	12 Lyn
+Vic Menard List	132	NGC 2419
+Vic Menard List	133	JE1
+Vic Menard List	134	NGC 2537
+Vic Menard List	135	NGC 2683
+Vic Menard List	136	NGC 2613
+Vic Menard List	137	NGC 2818
+Vic Menard List	138	Gamma Vel
+Vic Menard List	139	NGC 3132
+Vic Menard List	140	NGC 2997
+Vic Menard List	141	NGC 3044
+Vic Menard List	142	NGC 3115
+Vic Menard List	143	NGC 3166
+Vic Menard List	144	NGC 3003
+Vic Menard List	145	NGC 3344
+Vic Menard List	146	NGC 3395
+Vic Menard List	147	NGC 3432
+Vic Menard List	148	NGC 2903
+Vic Menard List	149	NGC 3190
+Vic Menard List	150	Gamma Leo
+Vic Menard List	151	NGC 3227
+Vic Menard List	152	M 95
+Vic Menard List	153	M 96
+Vic Menard List	154	NGC 3384
+Vic Menard List	155	NGC 3521
+Vic Menard List	156	NGC 3607
+Vic Menard List	157	M 65
+Vic Menard List	158	M 66
+Vic Menard List	159	NGC 3628
+Vic Menard List	160	NGC 3753
+Vic Menard List	161	NGC 3842
+Vic Menard List	162	NGC 3372
+Vic Menard List	163	NGC 2768
+Vic Menard List	164	NGC 2841
+Vic Menard List	165	NGC 2976
+Vic Menard List	166	NGC 2985
+Vic Menard List	167	M 81
+Vic Menard List	168	M 82
+Vic Menard List	169	Twin Quasar Mirage
+Vic Menard List	170	NGC 3079
+Vic Menard List	171	NGC 3184
+Vic Menard List	172	NGC 3198
+Vic Menard List	173	NGC 3359
+Vic Menard List	174	M 108
+Vic Menard List	175	M 97
+Vic Menard List	176	Xi UMa
+Vic Menard List	177	NGC 3631
+Vic Menard List	178	NGC 3675
+Vic Menard List	179	NGC 3718
+Vic Menard List	180	NGC 3726
+Vic Menard List	181	NGC 3877
+Vic Menard List	182	NGC 3893
+Vic Menard List	183	NGC 3938
+Vic Menard List	184	NGC 3945
+Vic Menard List	185	NGC 3953
+Vic Menard List	186	M 109
+Vic Menard List	187	NGC 4051
+Vic Menard List	188	NGC 4088
+Vic Menard List	189	NGC 4096
+Vic Menard List	190	NGC 4605
+Vic Menard List	191	Zeta UMa
+Vic Menard List	192	M 101
+Vic Menard List	193	NGC 2610
+Vic Menard List	194	NGC 3242
+Vic Menard List	195	NGC 3311
+Vic Menard List	196	V Hya
+Vic Menard List	197	NGC 3621
+Vic Menard List	198	M 83
+Vic Menard List	199	NGC 4027
+Vic Menard List	200	NGC 4038
+Vic Menard List	201	NGC 4361
+Vic Menard List	202	NGC 4169
+Vic Menard List	203	M 98
+Vic Menard List	204	M 99
+Vic Menard List	205	NGC 4274
+Vic Menard List	206	NGC 4293
+Vic Menard List	207	NGC 4298
+Vic Menard List	208	M 100
+Vic Menard List	209	NGC 4350
+Vic Menard List	210	NGC 4414
+Vic Menard List	211	NGC 4419
+Vic Menard List	212	NGC 4450
+Vic Menard List	213	NGC 4494
+Vic Menard List	214	M 88
+Vic Menard List	215	24 Com
+Vic Menard List	216	M 91
+Vic Menard List	217	NGC 4559
+Vic Menard List	218	NGC 4565
+Vic Menard List	219	NGC 4725
+Vic Menard List	220	M 64
+Vic Menard List	221	NGC 4874
+Vic Menard List	222	M 53
+Vic Menard List	223	NGC 3918
+Vic Menard List	224	NGC 4945
+Vic Menard List	225	NGC 5102
+Vic Menard List	226	NGC 5128
+Vic Menard List	227	NGC 5139
+Vic Menard List	228	IC 4329
+Vic Menard List	229	Alpha Cen
+Vic Menard List	230	NGC 4111
+Vic Menard List	231	NGC 4214
+Vic Menard List	232	2 CVn
+Vic Menard List	233	NGC 4244
+Vic Menard List	234	M 106
+Vic Menard List	235	NGC 4449
+Vic Menard List	236	NGC 4490
+Vic Menard List	237	NGC 4618
+Vic Menard List	238	NGC 4631
+Vic Menard List	239	NGC 4656,4657
+Vic Menard List	240	Y CVn
+Vic Menard List	241	M 94
+Vic Menard List	242	Alpha CVn
+Vic Menard List	243	NGC 5005
+Vic Menard List	244	NGC 5033
+Vic Menard List	245	M 63
+Vic Menard List	246	M 51
+Vic Menard List	247	M 3
+Vic Menard List	248	NGC 5353
+Vic Menard List	249	NGC 4179
+Vic Menard List	250	NGC 4216
+Vic Menard List	251	M 61
+Vic Menard List	252	M 84
+Vic Menard List	253	M 85
+Vic Menard List	254	NGC 4429
+Vic Menard List	255	NGC 4435
+Vic Menard List	256	M 49
+Vic Menard List	257	M 87
+Vic Menard List	258	NGC 4517
+Vic Menard List	259	NGC 4526
+Vic Menard List	260	NGC 4535
+Vic Menard List	261	NGC 4536
+Vic Menard List	262	NGC 4567
+Vic Menard List	263	M 90
+Vic Menard List	264	M 58
+Vic Menard List	265	M 104
+Vic Menard List	266	Gamma Vir
+Vic Menard List	267	M 60
+Vic Menard List	268	NGC 4654
+Vic Menard List	269	NGC 4666
+Vic Menard List	270	NGC 4698
+Vic Menard List	271	NGC 4697
+Vic Menard List	272	NGC 4699
+Vic Menard List	273	NGC 4753
+Vic Menard List	274	NGC 4762
+Vic Menard List	275	NGC 4866
+Vic Menard List	276	NGC 5054
+Vic Menard List	277	NGC 5247
+Vic Menard List	278	NGC 5364
+Vic Menard List	279	NGC 5566
+Vic Menard List	280	NGC 5746
+Vic Menard List	281	NGC 5846
+Vic Menard List	282	NGC 5248
+Vic Menard List	283	NGC 5676
+Vic Menard List	284	Pi Boo
+Vic Menard List	285	Epsilon Boo
+Vic Menard List	286	Xi Boo
+Vic Menard List	287	IC 4406
+Vic Menard List	288	NGC 6026
+Vic Menard List	289	M 5
+Vic Menard List	290	NGC 5921
+Vic Menard List	291	Delta Ser
+Vic Menard List	292	NGC 6027
+Vic Menard List	293	M 16
+Vic Menard List	294	NGC 3735
+Vic Menard List	295	M 102
+Vic Menard List	296	NGC 5907
+Vic Menard List	297	NGC 6503
+Vic Menard List	298	NGC 6543
+Vic Menard List	299	Epsilon Dra
+Vic Menard List	300	Xi Sco
+Vic Menard List	301	Beta Sco
+Vic Menard List	302	Nu Sco
+Vic Menard List	303	M 80
+Vic Menard List	304	M 4
+Vic Menard List	305	Alpha Sco
+Vic Menard List	306	NGC 6153
+Vic Menard List	307	NGC 6231
+Vic Menard List	308	NGC 6302
+Vic Menard List	309	NGC 6337
+Vic Menard List	310	NGC 6451
+Vic Menard List	311	M 13
+Vic Menard List	312	NGC 6207
+Vic Menard List	313	NGC 6210
+Vic Menard List	314	NGC 6229
+Vic Menard List	315	Alpha Her
+Vic Menard List	316	M 92
+Vic Menard List	317	Rho Her
+Vic Menard List	318	95 Her
+Vic Menard List	319	M 12
+Vic Menard List	320	M 10
+Vic Menard List	321	M 62
+Vic Menard List	322	M 19
+Vic Menard List	323	NGC 6309
+Vic Menard List	324	36 Oph
+Vic Menard List	325	Omicron Oph
+Vic Menard List	326	M 9
+Vic Menard List	327	NGC 6369
+Vic Menard List	328	NGC 6384
+Vic Menard List	329	70 Oph
+Vic Menard List	330	NGC 6572
+Vic Menard List	331	NGC 6541
+Vic Menard List	332	NGC 6440
+Vic Menard List	333	NGC 6445
+Vic Menard List	334	M 20
+Vic Menard List	335	NGC 6520
+Vic Menard List	336	M 8
+Vic Menard List	337	NGC 6563
+Vic Menard List	338	M 17
+Vic Menard List	339	M 28
+Vic Menard List	340	M 22
+Vic Menard List	341	M 55
+Vic Menard List	342	NGC 6818
+Vic Menard List	343	M 11
+Vic Menard List	344	NGC 6712
+Vic Menard List	345	IC 1295
+Vic Menard List	346	T Lyr
+Vic Menard List	347	Epsilon Lyr
+Vic Menard List	348	M 57
+Vic Menard List	349	NGC 6791
+Vic Menard List	350	V Aql
+Vic Menard List	351	Sh2-071
+Vic Menard List	352	NGC 6772
+Vic Menard List	353	NGC 6781
+Vic Menard List	354	NGC 6804
+Vic Menard List	355	NGC 6802
+Vic Menard List	356	NGC 6842
+Vic Menard List	357	M 27
+Vic Menard List	358	NGC 6940
+Vic Menard List	359	M 71
+Vic Menard List	360	NGC 6905
+Vic Menard List	361	Gamma Del
+Vic Menard List	362	Beta Cyg
+Vic Menard List	363	NGC 6819
+Vic Menard List	364	NGC 6826
+Vic Menard List	365	NGC 6888
+Vic Menard List	366	NGC 6894
+Vic Menard List	367	NGC 6960,6979
+Vic Menard List	368	NGC 6992,6995
+Vic Menard List	369	NGC 7000
+Vic Menard List	370	NGC 7008
+Vic Menard List	371	NGC 7026
+Vic Menard List	372	61 Cyg
+Vic Menard List	373	NGC 7027
+Vic Menard List	374	NGC 7048
+Vic Menard List	375	RV Cyg
+Vic Menard List	376	M 30
+Vic Menard List	377	NGC 7009
+Vic Menard List	378	M 2
+Vic Menard List	379	Zeta Aqr
+Vic Menard List	380	NGC 7293
+Vic Menard List	381	NGC 7606
+Vic Menard List	382	M 15
+Vic Menard List	383	NGC 7320
+Vic Menard List	384	NGC 7331
+Vic Menard List	385	Einstein's Cross
+Vic Menard List	386	NGC 7448
+Vic Menard List	387	NGC 7479
+Vic Menard List	388	Jones1
+Vic Menard List	389	NGC 7814
+Vic Menard List	390	NGC 7172
+Vic Menard List	391	NGC 6939
+Vic Menard List	392	NGC 6946
+Vic Menard List	393	NGC 7023
+Vic Menard List	394	S Cep
+Vic Menard List	395	NGC 7354
+Vic Menard List	396	NGC 7538
+Vic Menard List	397	NGC 40
+Vic Menard List	398	IC 5148
+Vic Menard List	399	NGC 7410
+Vic Menard List	400	NGC 7582

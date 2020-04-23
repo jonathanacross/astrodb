@@ -5,7 +5,8 @@ import astrodb.Keyword
 enum class Mode {
     OBSERVING_LIST,
     PROGRAM_LIST,
-    OBJECT_LIST
+    OBJECT_LIST,
+    META_LIST
 }
 
 data class Options(

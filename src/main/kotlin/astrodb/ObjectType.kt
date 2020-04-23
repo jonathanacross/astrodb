@@ -12,7 +12,7 @@ enum class ObjectType(val canonicalName: String, private val shortName: String, 
     PLANETARY_NEBULA("Planetary Nebula", "PN", listOf("planetary neb.", "planetary", "pln", "pn")),
     REFLECTION_NEBULA("Reflection Nebula", "RN", listOf("reflection nebula", "rn")),
     SUPERNOVA_REMNANT("Supernova Remnant", "SNR", listOf("supernova remnant", "snr", "sr")),
-
+    QUASAR("Quasar", "Q", listOf("quasar", "q")),
     STAR_CLOUD("Star Cloud", "Star Cloud", listOf("star cloud", "*'s")),
     VARIABLE_STAR("Variable Star", "Variable", listOf("variable star", "variable"));
 

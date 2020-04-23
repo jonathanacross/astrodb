@@ -30,7 +30,8 @@ data class ObjectFilter(
     val programIn: List<String> = emptyList(),
     val programLike: String? = null,
     val seen: Boolean? = null,
-    val notSeenSince: String? = null
+    val notSeenSince: String? = null,
+    val numProgramsGreaterThan: Int? = null
 ) {
     fun getProgramName(): String? = programIs
     fun getRaRange(): RaRange? = raInRange
@@ -115,6 +116,9 @@ data class ObjectFilter(
             return false
         }
         if (notSeenSince != null && observedAfter(obj.observations, notSeenSince)) {
+            return false
+        }
+        if (numProgramsGreaterThan != null && obj.programs.size < numProgramsGreaterThan) {
             return false
         }
 

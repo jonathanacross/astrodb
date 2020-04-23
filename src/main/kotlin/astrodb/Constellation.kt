@@ -77,7 +77,7 @@ enum class Constellation(private val abbrev: String, val fullName: String, val r
     SCL("Scl", "Sculptor", 0.4, -32.1),
     SCO("Sco", "Scorpius", 16.9, -27.0),
     SCT("Sct", "Scutum", 18.7, -9.9),
-    SER("Ser", "Serpens [5]", 17.0, 6.1),
+    SER("Ser", "Serpens", 17.0, 6.1),
     SEX("Sex", "Sextans", 10.3, -2.6),
     SGE("Sge", "Sagitta", 19.7, 18.9),
     SGR("Sgr", "Sagittarius", 19.1, -28.5),
