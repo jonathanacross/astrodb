@@ -126,7 +126,7 @@ Do Dz 8	Do Dz 8	Ast	Her	17h 26m 00s	24° 12' 00"	7.0	15'					Total of 7 stars wi
 Double Triangle	Double Triangle	Ast	Tau	04h 32m 00s	17° 00' 00"	3.0 - 6.0	60' x 60'					6 stars form an equailateral triangle. 2 stars at each point. Part of Hyades star cluster.
 DUN 116 ABC	DUN 116 ABC	Double	Hya	11h 56m 42s	-32° 16' 05"	A=7.6, B=7.8, C=11.6		AB=18.7, AC=28.9	AB=82, AC=32			
 Eddie's Coaster	Eddie's Coaster	Ast	Cas	01h 04m 00s	63° 40' 00"	7.0 - 8.0	3°					Wave of stars "reminiscent of a roller coaster"
-Einstein's Cross	Einstein's Cross	Q	Peg	22h 40m 30s	03° 21' 00"	17.4						? Einstein's Cross, 2 mag17.4 components, 2 mag18.4
+Einstein's Cross	Einstein's Cross/Q2237+030	Q	Peg	22h 40m 30s	03° 21' 00"	17.4					8154mly	? Einstein's Cross, 2 mag17.4 components, 2 mag18.4
 EL Aur	EL Aur/HIP 23520	Carbon	Aur	05h 03m 23s	50° 37' 58"	8.5 - 8.7				C5(N3)		
 Elosser 1	Elosser 1	Ast	Ori	04h 50m 00s	07° 51' 00"	7.0	21'					Sits halfway between Pi² and Pi³ Orionis. 13 stars hooked around a golden 9th magnitude star.
 ENG 37	ENG 37	Double	Cnc	08h 40m 06s	20° 00' 08"	A=6.5, B=6.6, C=9.0		AB=151.8, AC=134.2, AD=135	AB=150, AC=309			
@@ -1238,7 +1238,7 @@ TT Tau	TT Tau/HIP 22578	Carbon	Tau	04h 51m 31s	28° 31' 36"	7.7 - 10.0				C4-C7(
 TU Gem	TU Gem	Carbon	Gem	06h 10m 53s	26° 00' 53"	7.4 - 8.4				C6(N3)		
 TU Tau	TU Tau/HIP 27135	Carbon	Tau	05h 45m 13s	24° 25' 12"	5.9 - 9.2				c5(N3)		
 TW Oph	TW Oph/HIP 85617	Carbon	Oph	17h 29m 43s	-19° 28' 22"	7.0 - 9.0				C5(Nb)		
-Twin Quasar Mirage	Twin Quasar Mirage	Q	UMa	10h 01m 18s	55° 54' 00"	16.5	6"					!? Twin Quasar Mirage
+Twin Quasar Mirage	Twin Quasar Mirage/Q0957+561	Q	UMa	10h 01m 18s	55° 54' 00"	16.5	6"				8700mly	!? Twin Quasar Mirage
 TX Aur	TX Aur/HIP 23965	Carbon	Aur	05h 09m 05s	39° 00' 08"	8.5 - 9.2				C5(N3)		
 TX Psc	TX Psc/HIP 117245	Carbon	Psc	23h 46m 23s	03° 29' 12"	4.8 - 5.2				C7 (N0)		
 U Cam	U Cam/HIP 17257	Carbon	Cam	03h 41m 48s	62° 38' 54"	6.9 - 7.6				C3-C6(N5)		
@@ -1297,3 +1297,6 @@ Zeta Ori	Zeta Ori/Alnitak/STF 774	Double	Ori	05h 40m 48s	-01° 57' 00"	A=1.9, B=
 Zeta Per, STF 464	Zeta Per, STF 464	Double	Per	03h 54m 08s	31° 53' 01"	A=2.8, B=9.1, C=11.2, D=10.4		AB=12.9, AC=33.3, AD=98.6, AE=120	AB=209, AC=286, AD=195, AE=186			
 Zeta Psc	Zeta Psc	Double	Psc	01h 13m 42s	07° 35' 00"	5.2, 6.3		22.8	63			
 Zeta UMa	Zeta UMa/Mizar & Alcor	Double	UMa	13h 23m 54s	54° 56' 00"	A=2.2, B=3.9, C=4.0		AB=14.4, AC=709				!
+3C 273	3C 273	Q	Vir	12h 29m 07s	02° 03' 07"	12.9					2006mly	easiest quasar to see
+MK 421	MK 421/UGC 6132	Q	UMa	11h 04m 27s	38° 12' 32"	13.5					407mly	
+MK 501	MK 501/UGC 10599	Q	Her	16h 53m 52s	39° 45' 37"	13.9					456mly	
