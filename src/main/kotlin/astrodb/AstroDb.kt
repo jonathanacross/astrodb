@@ -219,15 +219,22 @@ fun main(args: Array<String>) {
         val programData = readProgramFile(options.programsFileName)
         val observations = readObservationFile(options.observationsFileName)
         val joinedObjects = joinData(objects, programData, observations)
-        val filter = parseQuery(options.filterString)
-        val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
+        val gFilter = GFilter.And(listOf(
+                GFilter.ListPredicate(ListColumn.Name, Aggregator.Any, FilterOp.ContainsString("M ") ),
+                GFilter.Predicate(Column.Mag, FilterOp.GtDouble(8.0)))
+        )
 
-        when (options.mode) {
-            Mode.OBSERVING_LIST -> writeObservingList(filteredObjs, filter.getRaRange())
-            Mode.PROGRAM_LIST -> writeProgramList(filteredObjs, filter.getProgramName())
-            Mode.OBJECT_LIST -> writeObjectList(filteredObjs)
-            Mode.META_LIST -> writeMetaList(filteredObjs)
-        }
+        val filteredObjs = joinedObjects.filter{ o -> gFilter.matches(o) }
+        writeObjectList(filteredObjs)
+//        val filter = parseQuery(options.filterString)
+//        val filteredObjs = joinedObjects.filter { o -> filter.filter(o) }
+//
+//        when (options.mode) {
+//            Mode.OBSERVING_LIST -> writeObservingList(filteredObjs, filter.getRaRange())
+//            Mode.PROGRAM_LIST -> writeProgramList(filteredObjs, filter.getProgramName())
+//            Mode.OBJECT_LIST -> writeObjectList(filteredObjs)
+//            Mode.META_LIST -> writeMetaList(filteredObjs)
+//        }
         println("found " + filteredObjs.size + " objects.")
     } catch (e: Exception) {
         println(e)
