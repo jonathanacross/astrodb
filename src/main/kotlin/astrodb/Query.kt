@@ -53,7 +53,10 @@ fun parseQuery(query: String): ObjectFilter {
     var programIn: List<String> = emptyList()
     var programLike: String? = null
     var seen: Boolean? = null
-    var notSeenSince: String? = null
+    var seenBefore: String? = null
+    var seenAfter: String? = null
+    var notSeenBefore: String? = null
+    var notSeenAfter: String? = null
     var numProgramsGreaterThan: Int? = null
 
     var idx = 0
@@ -76,7 +79,10 @@ fun parseQuery(query: String): ObjectFilter {
             Keyword.PROGRAM_IN -> { programIn = tokens[idx + 2].split(","); idx += 3 }
             Keyword.PROGRAM_LIKE -> { programLike = tokens[idx + 2]; idx += 3 }
             Keyword.SEEN_IS -> { seen = tokens[idx + 2].toBoolean(); idx += 3 }
-            Keyword.NOTSEEN_SINCE -> { notSeenSince = tokens[idx + 2]; idx += 3}
+            Keyword.SEEN_BEFORE -> { seenBefore = tokens[idx + 2]; idx += 3 }
+            Keyword.SEEN_AFTER -> { seenAfter = tokens[idx + 2]; idx += 3 }
+            Keyword.NOT_SEEN_BEFORE -> { notSeenBefore = tokens[idx + 2]; idx += 3 }
+            Keyword.NOT_SEEN_AFTER -> { notSeenAfter = tokens[idx + 2]; idx += 3 }
             Keyword.NUM_PROGRAMS_GREATER -> { numProgramsGreaterThan = tokens[idx + 2].toInt(); idx += 3}
         }
     }
@@ -99,7 +105,10 @@ fun parseQuery(query: String): ObjectFilter {
         programIn = programIn,
         programLike = programLike,
         seen = seen,
-        notSeenSince = notSeenSince,
+        seenBefore = seenBefore,
+        seenAfter = seenAfter,
+        notSeenBefore = notSeenBefore,
+        notSeenAfter = notSeenAfter,
         numProgramsGreaterThan = numProgramsGreaterThan
     )
 }
@@ -122,7 +131,10 @@ enum class Keyword(val token1: String, val token2: String, val example: String) 
     PROGRAM_IN("program", "in", "program in \"Messier OP\",\"Urban OP\""),
     PROGRAM_LIKE("program", "like", "program like RASC"),
     SEEN_IS("seen", "=", "seen = false"),
-    NOTSEEN_SINCE("notseen", "since", "notseen since 2018-01-15"),
+    SEEN_BEFORE("seen", "before", "seen before 2018-01-15  (exists an observation before the date)"),
+    SEEN_AFTER("seen", "after", "seen after 2018-01-15  (exists an observation after the date)"),
+    NOT_SEEN_BEFORE("notseen", "before", "notseen before 2018-01-15  (all observations are on/after the date)"),
+    NOT_SEEN_AFTER("notseen", "after", "notseen after 2018-01-15  (all observations are on/before the date)"),
     NUM_PROGRAMS_GREATER("numprograms", ">=", "numprograms >= 3");
 
     companion object {

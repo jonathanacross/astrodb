@@ -30,7 +30,10 @@ data class ObjectFilter(
     val programIn: List<String> = emptyList(),
     val programLike: String? = null,
     val seen: Boolean? = null,
-    val notSeenSince: String? = null,
+    val seenBefore: String? = null,
+    val seenAfter: String? = null,
+    val notSeenBefore: String? = null,
+    val notSeenAfter: String? = null,
     val numProgramsGreaterThan: Int? = null
 ) {
     fun getProgramName(): String? = programIs
@@ -52,9 +55,24 @@ data class ObjectFilter(
         return list.any { li -> li.programName.contains(str) }
     }
 
+    private fun observedBefore(obs: List<Observation>, date: String): Boolean {
+        // lexicographic comparison works because dates are in the format yyyy-mm-dd.
+        return obs.any { o -> o.date < date }
+    }
+
     private fun observedAfter(obs: List<Observation>, date: String): Boolean {
         // lexicographic comparison works because dates are in the format yyyy-mm-dd.
         return obs.any { o -> o.date > date }
+    }
+
+    private fun notObservedBefore(obs: List<Observation>, date: String): Boolean {
+        // lexicographic comparison works because dates are in the format yyyy-mm-dd.
+        return obs.all { o -> o.date >= date }
+    }
+
+    private fun notObservedAfter(obs: List<Observation>, date: String): Boolean {
+        // lexicographic comparison works because dates are in the format yyyy-mm-dd.
+        return obs.all { o -> o.date <= date }
     }
 
     fun filter(obj: JoinedObject): Boolean {
@@ -115,7 +133,16 @@ data class ObjectFilter(
         if (seen != null && ((obj.observations.isEmpty()) == seen)) {
             return false
         }
-        if (notSeenSince != null && observedAfter(obj.observations, notSeenSince)) {
+        if (seenBefore != null && !observedBefore(obj.observations, seenBefore)) {
+            return false
+        }
+        if (seenAfter != null && !observedAfter(obj.observations, seenAfter)) {
+            return false
+        }
+        if (notSeenBefore != null && !notObservedBefore(obj.observations, notSeenBefore)) {
+            return false
+        }
+        if (notSeenAfter != null && !notObservedAfter(obj.observations, notSeenAfter)) {
             return false
         }
         if (numProgramsGreaterThan != null && obj.programs.size < numProgramsGreaterThan) {

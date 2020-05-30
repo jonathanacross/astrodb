@@ -69,8 +69,8 @@ build/install/astrodb/bin/astrodb \
 --observations="data/observations.tsv" \
 --mode=observing_list \
 --filter='
-    program = "Messier OP"
-    notseen since 2018-01-22
+    program = "Globular OP"
+    notseen after 2018-07-20
 '
 ```
 
