@@ -93,7 +93,7 @@ BU 31	BU 31	Double	Boo	14h 52m 30s	18° 44' 19"	A=8.5, B=10.3, D=11.6		AB=2, AC=
 BU 324	BU 324	Double	CMa	06h 49m 42s	-24° 05' 00"	A=6.6, B=7.9, C=8.3		AB=1.7, AC=30.1				
 BU 328	BU 328	Double	CMa	07h 06m 42s	-11° 18' 00"	A=5.7, B=6.9, C=9.0		AB=0.6, AC=19.5				
 BU 575	BU 575	Double	CMa	07h 14m 48s	-15° 29' 00"	A=7.9, B=8.3, C=9.9		AB=0.5, AC=15.8				
-BU 987	S 752/BU 987	Double	Del	20h 30m 14s	19° 25' 15"	A=6.8, B=11.1, C=7.3		AB=26, AC=106	AB=126, AC=288			
+S 752, BU 987	S 752, BU 987	Double	Del	20h 30m 14s	19° 25' 15"	A=6.8, B=11.1, C=7.3		AB=2.6, AC=106	AB=126, AC=288			
 Camel	Camel/French 2	Ast	Hya	10h 07m 00s	-24° 55' 00"	7.0 - 11.0	39'					11 stars in the shape of a camel facing west. Brightest star marks the top of it's head.
 Castor ABCD, STF 1110	Castor ABCD, STF 1110	Double	Gem	07h 34m 36s	31° 53' 18"	A=1.9, B=2.9, C=9.8, D=10.7		AB=5.3, AC=69.8, AD=179.8	AB=52, AC=163, AD=179			
 Chi 1, 2, 3	Chi 1, 2, 3	Ast	For	03h 30m 00s	-35° 00' 00"	6.0	30' x 30'					3 stars in a triangle.
@@ -152,6 +152,8 @@ Frederick's Glory	Frederick's Glory	Ast	And	23h 30m 00s	44° 00' 00"	4.0	3.5°		
 FU Aur	FU Aur/HIP 27398	Carbon	Aur	05h 48m 08s	30° 37' 51"	8.3 - 8.5				C7(N0)		
 FU Mon	FU Mon/HIP 30301	Carbon	Mon	06h 22m 23s	03° 25' 27"	8.5 - 9.8				C8 (CSe)		
 Funnel	Funnel	Ast	Lep	05h 46m 00s	-15° 40' 00"	9.5 - 10.5	30'					1 degree south of star 14 Leporis. 7 stars comprise this asterism.
+G1	G1/Mayall II	GCl	And	00h 33m 52s	39° 41' 23"	13.7	36"				2500kly	brightest glob in Andromeda galaxy. in SW apex of triangle of stars.
+G76	G76	GCl	And	00h 41m 06s	40° 36' 00"	14.2	6"				2500kly	glob in Andromeda galaxy
 Gamma And	Gamma And/Almach	Double	And	02h 03m 54s	42° 20' 00"	2.3, 5.0		9.4	63			!! yellow, blue
 Gamma Ari	Gamma Ari/Mesarthim	Double	Ari	01h 53m 30s	19° 17' 00"	4.6		7.8				!
 Gamma Cet	Gamma Cet	Double	Cet	02h 43m 18s	03° 14' 00"	3.5, 6.2		2.1	298			!
@@ -862,7 +864,7 @@ NGC 6520	NGC 6520/Dead Man's Chest Cluster	OCl	Sgr	18h 03m 24s	-27° 53' 00"	7.6
 NGC 6522	NGC 6522	GCl	Sgr	18h 03m 36s	-30° 02' 00"	9.9	9.4'			VI	20kly	
 NGC 6528	NGC 6528	GCl	Sgr	18h 04m 48s	-30° 03' 00"	9.6	5'			V	25.8kly	
 NGC 6530	NGC 6530	OCl	Sgr	18h 04m 30s	-24° 21' 00"	4.6	15'			II 2 m n	4.34kly	113 stars. OCL in Lagoon Nebula
-NGC 6535	NGC 6535	GCl	Ser	18h 03m 51s	00° 17' 49"	10.5	3.6'			b		
+NGC 6535	NGC 6535	GCl	Ser	18h 03m 51s	-00° 17' 49"	10.5	3.6'			b		
 NGC 6539	NGC 6539	GCl	Ser	18h 04m 48s	-07° 35' 00"	8.9	7.9'			X	27kly	
 NGC 654	NGC 654/Fuzzy Butterfly	OCl	Cas	01h 44m 00s	61° 53' 00"	6.5	6'			II 3 m	9.4kly	83 stars
 NGC 6540	NGC 6540	GCl	Sgr	18h 06m 06s	-27° 46' 00"	14.6	1.5'			XI	17.3kly	
@@ -880,7 +882,6 @@ NGC 659	NGC 659	OCl	Cas	01h 44m 24s	60° 40' 00"	7.9	6'			III 1 p	7.43kly	186 st
 NGC 6603	NGC 6603	OCl	Sgr	18h 18m 30s	-18° 24' 00"	11.1	4'			I 1 r n	9.4kly	100 stars. In M 24
 NGC 6604	NGC 6604/Cr 373	OCl	Ser	18h 18m 03s	-12° 14' 31"	6.5	4'					
 NGC 6624	NGC 6624	GCl	Sgr	18h 23m 42s	-30° 22' 00"	7.6	8.8'			VI	16.3kly	
-NGC 6626	NGC 6626	GCl	Sgr	18h 24m 33s	-24° 52' 12"	7.4	11.2'			b		
 NGC 6629	NGC 6629	PN	Sgr	18h 25m 42s	-23° 12' 00"	10.5	16.2" x 13.8"			2a	5.9kly	
 NGC 663	NGC 663/Lawnmower Cluster	OCl	Cas	01h 46m 18s	61° 13' 00"	7.1	15'			III 2 m	2.6kly	!! Rich scatter of stars at 120x. look for NGCs 654 and 659 nearby
 NGC 6633	NGC 6633	OCl	Oph	18h 27m 12s	06° 30' 00"	4.6	20'			III 2 m	1.23kly	159 stars. sparse wide field cluster; IC 4756 nearby
@@ -932,7 +933,7 @@ NGC 6939	NGC 6939/Ghost Bush Cluster/Flying Geese Cluster	OCl	Cep	20h 31m 30s	60
 NGC 6940	NGC 6940/Mothra Cluster	OCl	Vul	20h 34m 30s	28° 17' 00"	6.3	25'			III 2 m	2.7kly	170 stars. fairly rich cluster.  Look for red star FG Vul
 NGC 6946	NGC 6946	Gal	Cep	20h 34m 54s	60° 09' 00"	8.8	11.2' x 9.8'			SBc	20mly	! faint, diffuse face-on spiral near 6939
 NGC 6960,6979	NGC 6960,6979/West Veil Nebula/The Witch Broom/Bridal Veil	SNR	Cyg	20h 45m 42s	30° 43' 00"	7.0	70' x 6'			R	1.47kly	!! Veil Nebula: west half; use filter !
-NGC 6992,6995	NGC 6992,6995/East Veil Nebula/The Witch Broom/Bridal Veil	SNR	Cyg	20h 56m 24s	31° 43' 00"	7.0	78' x 8'			R	1.47kly	!! Veil Nebula: east half; use filter !
+NGC 6992,6995	NGC 6992,6995/East Veil Nebula	SNR	Cyg	20h 56m 24s	31° 43' 00"	7.0	78' x 8'			R	1.47kly	!! Veil Nebula: east half; use filter !
 NGC 7000	NGC 7000	EN	Cyg	20h 58m 48s	44° 20' 00"	4.0	120' x 100'					North American Nebula, best with UHC - wide field, Pelican visible also
 NGC 7006	NGC 7006	GCl	Del	21h 01m 30s	16° 11' 00"	10.6	3.6'			I	160kly	
 NGC 7008	NGC 7008/Coat Button Nebula/Fetus Nebula	PN	Cyg	21h 00m 30s	54° 33' 00"	12.0	1.43' x 1.15'			3	2.8kly	! Oval nebula with embedded stars, detail - the Fetus
@@ -946,7 +947,6 @@ NGC 7048	NGC 7048	PN	Cyg	21h 14m 12s	46° 16' 00"	12.0	1'					annular, owl eyes
 NGC 7062	NGC 7062	OCl	Cyg	21h 23m 12s	46° 23' 00"	8.3	5'					30 stars inter. rich
 NGC 7063	NGC 7063	OCl	Cyg	21h 24m 30s	36° 30' 00"	7.0	9'			III 2 p	2.25kly	66 stars
 NGC 7086	NGC 7086	OCl	Cyg	21h 30m 30s	51° 36' 00"	8.4	12'			II 2 m	4.24kly	80 stars
-NGC 7089	NGC 7089	GCl	Aqr	21h 33m 29s	00° 49' 23"	6.5	12.9'			o		
 NGC 7128	NGC 7128	OCl	Cyg	21h 44m 00s	53° 29' 00"	9.7	2'					20 stars loose poor
 NGC 7129	NGC 7129	RN	Cep	21h 44m 24s	66° 10' 00"	11.5	8' x 7'					faint reflection neb. around sparse cluster
 NGC 7142	NGC 7142	OCl	Cep	21h 45m 54s	65° 48' 00"	9.3	11'					35 stars rectangular
@@ -1075,7 +1075,7 @@ SAO 157721	SAO 157721/HIP 63955	Carbon	Vir	13h 06m 24s	-20° 03' 31"	8.5				C2(K
 SAO 46574	SAO 46574/HIP 84266	Carbon	Her	17h 13m 31s	42° 06' 22"	7.3 - 7.7				C3(RU)		
 Sea Horse	Sea Horse	Ast	Hya	13h 10m 00s	-23° 30' 00"	9.0 - 10.0	105'					Psi Hydrae is the eye with a bright star above and below for the head. Bright star on the east side is nose. Chain of 7 brighter stars going south is the front with 4 bright stars that curve on the west side for back fin.
 Seedling	Seedling	Ast	Peg	21h 43m 00s	10° 20' 00"	10.0	45'					1 half degree from star 8 Pegasi. Chevron of stars create root ball. Stars southeast create branches.
-Sh2-071	Sh2-071	PN	Aql	19h 02m 00s	02° 09' 00"							faint, large, elongated, w/detail - use filter
+Sh2-071	Sh2-071	PN	Aql	19h 02m 00s	02° 09' 00"	14.0	2' x 1'					faint, large, elongated, w/detail - use filter
 Shark	Shark	Ast	UMi	16h 45m 00s	77° 50' 00"	9.0	90'					2 degrees from the star 21 Ursae Minoris. 4 stars are the tail, chevron of 5 stars is the nose. 1 bright star, the fin.
 SHJ 223	SHJ 223	Double	CrB	16h 16m 44s	29° 09' 01"	A=5.8, B=13.9, C=10.4, D=10.4		AB=53.8, AC=87.5, AD=123.3, AE=76.6	AB=23, AC=21, AD=50			
 SHJ 49	SHJ 49	Double	Ori	04h 58m 59s	14° 32' 36"	A=6.0, B=7.4, C=9.6, D=13.2		AB=39.2, AC=54	AB=306, AC=89, AD=292			
