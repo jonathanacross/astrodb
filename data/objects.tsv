@@ -58,7 +58,7 @@ Alpha Sco	Alpha Sco/Antares	Double	Sco	16h 29m 30s	-26° 25' 00"	0.9		2.6				red
 Alpha UMi	Alpha UMi/Polaris	Double	UMi	02h 31m 48s	89° 16' 00"	2.1, 9.1		18.1	233			
 AQ And	AQ And/HIP 2180	Carbon	And	00h 27m 31s	35° 35' 14"	6.9 - 8.6				C5 (Nb)		
 AQ Sgr	AQ Sgr/HIP 96255	Carbon	Sgr	19h 34m 18s	-16° 22' 27"	6.6 - 8.5				C7 (N3)		
-AR Cas, STT 496	AR Cas, STT 496	Double	Cas	23h 30m 02s	58° 32' 56"	A=4.8, B=9.3, C=7.2, D=10.6		AB=0.8, AC=75.7, AF=67.2	AB=356, AC=269, BC=17			
+AR Cas, STT 496	AR Cas, STT 496	Double	Cas	23h 30m 02s	58° 32' 56"	A=4.8, B=9.3, C=7.2, D=10.6, E=11.2, F=10.5		AB=0.8, AC=75.7, AE=117, AF=67.2, CD=1.3	AB=356, AC=269, AE=117, AF=338, BC=17			
 Arrowchain	Arrowchain	Ast	Sge	19h 55m 00s	17° 18' 00"	9.0	36'					A chevron of 9 stars.
 Arrowhead	Arrowhead/Unicorn's Horn	Ast	Mon	06h 40m 00s	-09° 00' 00"	8.0	15'					Six blue/white stars in the shape of a triangle.
 AW Cyg	AW Cyg/HIP 95777	Carbon	Cyg	19h 28m 47s	46° 02' 38"	7.1 - 8.5				C4 (N3)		
@@ -85,7 +85,7 @@ BL Ori	BL Ori/HIP 30564	Carbon	Ori	06h 25m 28s	14° 43' 19"	6.0 - 7.0				C6 (Nb,
 BM Gem	BM Gem/HIP 35617	Carbon	Gem	07h 20m 59s	24° 59' 58"	8.3 - 9.2				C5(Nb)		
 Boomerang	Boomerang	Ast	CMa	07h 05m 00s	-26° 00' 00"	4.0 - 6.0	2°					Semi-circle of 8 to 10 stars centered around Delta Canis Majoris.
 Broken Engagement Ring	Broken Engagement Ring	Ast	UMa	10h 51m 00s	56° 09' 00"	7.0	20'					About 10 stars visible. West of Beta Ursa Majoris.Stars form an incomplete circle.
-BU 1	BU 1	Double	Cas	00h 52m 49s	56° 37' 40"	A=8.5, B=9.3, C=8.8, D=9.6		AB=1.5, AC=3.9, AD=9, AE=15.8	AB=83, AC=134, AD=194, AB,D=42			
+BU 1	BU 1	Double	Cas	00h 52m 49s	56° 37' 40"	A=8.5, B=9.3, C=8.8, D=9.6		AB=1.5, AC=3.9, AD=9, AE=15.8	AB=83, AC=134, AD=194, AB,E=42			In the Pacman Nebula, NGC 281
 BU 126	BU 126	Double	Oph	17h 19m 54s	-17° 45' 00"	A=6.3, B=7.6, C=11.2		AB=2.3, AC=12				
 BU 193	BU 193	Double	Ori	06h 15m 30s	03° 57' 30"	A=6.9, B=12.0, C=10.0		AB=19.5, AC=57.8	AB=97, AC=232			
 BU 225	BU 225	Double	Lib	14h 25m 30s	-19° 58' 00"	A=6.6, B=7.2, C=8.4		AB=1.2, AC=34.8				
@@ -101,7 +101,7 @@ Chi Tau	Chi Tau	Double	Tau	04h 22m 36s	25° 38' 00"	5.4, 8.5		20.4	24
 Chinese Kite	Chinese Kite	Ast	Her	17h 58m 00s	45° 50' 00"	8.5 - 11.0	90'					9 stars make up a circular kite. 4 stars make up 2 strings.  3 degrees east of star 85 Herculis.
 Circlet	Circlet	Ast	Psc	23h 30m 00s	04° 00' 00"	4.0 - 5.0	6°					Formed by the stars Theta, 7, Gamma, Kappa, Lambda, TX, and Iota Piscium.
 Cr 399	Coathanger/Cr.399	OCl+Ast	Vul	19h 25m 24s	20° 11' 00"	7.5	90'					6 straight stars as the bar and 4 as the hook.
-Cr 463	Cr 463	OCl	Cas	01h 48m 24s	71° 57' 00"	5.7	36'					
+Cr 463	Cr 463	OCl	Cas	01h 45m 45s	71° 48' 36"	5.7	57'					
 Crossbow	Crossbow	Ast	Cep	22h 10m 09s	58° 12' 00"	3.0	4° x 3°					main star is zeta cep. Use binoculars
 Curved Arrow	Curved Arrow	Ast	Com	12h 53m 00s	19° 30' 00"	9.5	45'					5 stars show curve stem. 5 stars make arrow.  1.5 degrees south of star 35 Comae Berenices.
 CY Cyg	CY Cyg	Carbon	Cyg	20h 46m 50s	46° 03' 06"	7.9 - 8.4				CS (M2p)		
@@ -152,8 +152,8 @@ Frederick's Glory	Frederick's Glory	Ast	And	23h 30m 00s	44° 00' 00"	4.0	3.5°		
 FU Aur	FU Aur/HIP 27398	Carbon	Aur	05h 48m 08s	30° 37' 51"	8.3 - 8.5				C7(N0)		
 FU Mon	FU Mon/HIP 30301	Carbon	Mon	06h 22m 23s	03° 25' 27"	8.5 - 9.8				C8 (CSe)		
 Funnel	Funnel	Ast	Lep	05h 46m 00s	-15° 40' 00"	9.5 - 10.5	30'					1 degree south of star 14 Leporis. 7 stars comprise this asterism.
-G1	G1/Mayall II	GCl	And	00h 33m 52s	39° 41' 23"	13.7	36"				2500kly	brightest glob in Andromeda galaxy. in SW apex of triangle of stars.
-G76	G76	GCl	And	00h 41m 06s	40° 36' 00"	14.2	6"				2500kly	glob in Andromeda galaxy
+G1	G1/Mayall II	GCl	And	00h 33m 52s	39° 41' 23"	13.7	36"				2.5mly	brightest glob in Andromeda galaxy. in SW apex of triangle of stars.
+G76	G76	GCl	And	00h 41m 06s	40° 36' 00"	14.2	6"				2.5mly	glob in Andromeda galaxy
 Gamma And	Gamma And/Almach	Double	And	02h 03m 54s	42° 20' 00"	2.3, 5.0		9.4	63			!! yellow, blue
 Gamma Ari	Gamma Ari/Mesarthim	Double	Ari	01h 53m 30s	19° 17' 00"	4.6		7.8				!
 Gamma Cet	Gamma Cet	Double	Cet	02h 43m 18s	03° 14' 00"	3.5, 6.2		2.1	298			!
@@ -182,7 +182,7 @@ HD 196944	HD 196944	Ast	Aqr	20h 41m 00s	-06° 49' 00"	6.6	23'					Christmas Tree
 HDO 198	HDO 198	Double	CMa	06h 58m 42s	-31° 00' 00"	A=6.4, B=10.2, C=11.4		AB=40.1, AC=70				
 HDO 204	HDO 204	Double	Pyx	08h 45m 57s	-32° 09' 50"	A=7.0, B=11.9, C=11.8		AB=15.8, AC=20.3	AB=326, AC=277			
 Herman's Cross	Herman's Cross/Terebellum	Ast	Sgr	20h 00m 00s	-27° 00' 00"	4.0	2°					Stars create a cross. Omega, 59, 62, and 60 Sagittarii.
-HJ 1054	HJ 1054	Double	Cas	00h 49m 39s	60° 45' 32"	A=8.1, B=11.8, C=9.6, D=12.0		AB=9, AC=92.3, CD=26.8	AB=183, AC=61, AE=569			
+HJ 1054	HJ 1054	Double	Cas	00h 49m 39s	60° 45' 32"	A=8.1, B=11.8, C=9.6, D=12.0		AB=9, AC=92.3, CD=26.8	AB=183, AC=61, CD=239			
 HJ 1823	HJ 1823	Double	Lac	22h 51m 49s	41° 18' 46"	A=7.1, B=11.5, C=8.1, D=11.3, E=8.9		AB=18.7, AC=81.9, AE=119, CD=5	AB=264, AC=337, AD=338			
 HJ 2200 ABC	HJ 2200 ABC	Double	Cam	03h 47m 21s	71° 19' 56"	A=4.6, B=12.4, C=9.0		AB=56.3, AC=107.3	AB=247, AC=86			
 HJ 2617+BKO 114	HJ 2617+BKO 114	Double	CVn	12h 40m 37s	40° 17' 16"	A=8.4, B=9.6, C=11.0, D=13.8		AB=5.8, AC=172.1, AD=43.5	AB=3, AC=176, AD=344			
@@ -204,8 +204,8 @@ IC 10	IC 10	Gal	Cas	00h 20m 24s	59° 18' 00"	13.3	6.4' x 5.3'			Ir+	2.8mly
 IC 1276	IC 1276	GCl	Ser	18h 10m 46s	-07° 12' 42"	10.3	7.1'			b		
 IC 1295	IC 1295	PN	Sct	18h 54m 36s	-08° 50' 00"	12.7	1.5'					annular, owl eyes
 IC 1310	IC 1310	OCl	Cyg	20h 10m 00s	34° 58' 00"		4'			II 1 p n	6.85kly	12 stars
-IC 1434	IC 1434/Collinder 445	OCl	Lac	22h 10m 30s	52° 50' 00"	9.0	7'			II 1 p?	9.895kly	40 stars
-IC 1805	IC 1805/The Heart Nebula/The Running Dog Nebula/Valentine Nebula	EN+OCl	Cas	02h 32m 42s	61° 27' 00"	6.5	20'			III 3 p n	6.15kly	62 stars
+IC 1434	IC 1434/Cr 445	OCl	Lac	22h 10m 30s	52° 50' 00"	9.0	7'			II 1 p?	9.895kly	40 stars
+IC 1805	IC 1805/Cr 26/The Heart Nebula/The Running Dog Nebula/Valentine Nebula	EN+OCl	Cas	02h 32m 42s	61° 27' 00"	6.5	20'			III 3 p n	6.15kly	62 stars
 IC 2149	IC 2149	PN	Aur	05h 56m 24s	46° 06' 00"	10.0	12" x 6"			3b(2)	3.6kly	mag 11.6 central star, very small
 IC 2163	IC 2163	Gal	CMa	06h 16m 30s	-21° 23' 00"	11.6	3' x 1.2'			Sbc pec.	81mly	colliding with 2207
 IC 289	IC 289	PN	Cas	03h 10m 18s	61° 19' 00"	12.3	34"					dim oval smudge; use nebula filter!
@@ -371,7 +371,7 @@ Meerschaum Pipe	Meerschaum Pipe	Ast	Cyg	19h 51m 00s	30° 07' 00"	9.0 - 12.0	22'	
 Mel 111	Mel 111	OCl	Com	12h 25m 00s	26° 00' 00"	1.8	4.583°					
 Mel 20	Mel 20	OCl	Per	03h 22m 00s	49° 00' 00"	1.2	3.083°					
 Mel 25	Mel 25/Cr 50/Hyades	OCl	Tau	04h 27m 00s	15° 52' 00"	0.5	5.5°					
-Mel 71	Mel 71/Collinder 155	OCl	Pup	07h 37m 30s	-12° 03' 00"	7.1	8'			II 1 m	10.3kly	216 stars
+Mel 71	Mel 71/Cr 155	OCl	Pup	07h 37m 30s	-12° 03' 00"	7.1	8'			II 1 m	10.3kly	216 stars
 Metronome	Metronome/Dolidze 17/Stratton 2	Ast	Ori	05h 22m 00s	07° 05' 00"	7.0 - 8.0	12' x 17'					Consists of 6 stars. 5 of which has the appearance of a capitol Sigma. The 6th star provides the top of the metronome.
 Mini Cassiopeia	Mini Cassiopeia/Kemble 2	Ast	Dra	18h 35m 00s	72° 25' 00"	7.0 - 8.0	20' x 10'					Looks just like constellation Cas. Best seen through large binoculars or small telescopes with a low magnification
 Mini Coathanger	Mini Coathanger	Ast	UMi	16h 29m 00s	80° 13' 00"	10.0	15'					Straight line of 8 stars for the bar, 3 blue/white stars form, the hook.  Just above galaxy NGC 6217.
@@ -407,6 +407,8 @@ NGC 1332	NGC 1332	Gal	Eri	03h 26m 18s	-21° 20' 00"	10.3	4' x 1.5'			E7	62mly
 NGC 1333	NGC 1333/Embryo Nebula	RN	Per	03h 29m 18s	31° 25' 00"	5.7	6' x 3'				720ly	
 NGC 134	NGC 134/Giant Squid Galaxy	Gal	Scl	00h 30m 24s	-33° 15' 00"	10.0	8.5' x 1.9'			SB	60mly	nearly edge-on, in field of Eta SCL
 NGC 1342	NGC 1342/Stingray Cluster	OCl	Per	03h 31m 42s	37° 22' 00"	6.7	17'			III 3 p	2.17kly	99 stars
+NGC 133	NGC 133	OCl	Cas	00h 31m 12s	63° 22' 01"	9.4	7'					
+NGC 146	NGC 133	OCl	Cas	00h 31m 07s	63° 18' 01"	9.1	6'					
 NGC 136	NGC 136	OCl	Cas	00h 31m 30s	61° 32' 00"	11.3	1'					10 stars rich resolvable elongat
 NGC 1360	NGC 1360/Comet Planetary	PN	For	03h 33m 12s	-25° 52' 00"	9.4	6' x 4.5'			3	1.7kly	egg-shaped, irregular - m8 central star
 NGC 1365	NGC 1365	Gal	For	03h 33m 36s	-36° 08' 00"	9.6	11' x 6.2'			SBb	59mly	!! big, easy bar and spiral structure
@@ -1048,7 +1050,7 @@ RS Cyg	RS Cyg/HIP 99653	Carbon	Cyg	20h 13m 23s	38° 43' 44"	6.5 - 9.5				C8 (N0p
 RS Sgr	RS Sgr	Double	Sgr	18h 17m 36s	-34° 06' 00"	A=6.0, B=8.7, C=9.5		AB=38.8, AC=94.1				
 RT Cap	RT Cap/HIP 99990	Carbon	Cap	20h 17m 06s	-21° 19' 04"	7.0 - 8.1				C6 (N3)		
 RT Ori	RT Ori/HIP 26032	Carbon	Ori	05h 33m 13s	07° 09' 12"	8.0 - 8.9				C6(Nb)		
-RU Aqu	RU Aqr/HIP 115553	Carbon	Aqr	23h 24m 24s	-17° 19' 08"	8.5 - 10.1				C6 (M5e)		
+RU Aqr	RU Aqr/HIP 115553	Carbon	Aqr	23h 24m 24s	-17° 19' 08"	8.5 - 10.1				C6 (M5e)		
 RU Cam	RU Cam/HIP 35681	Carbon	Cam	07h 21m 44s	69° 40' 14"	8.1 - 9.8				C0-C3(K0-R0)		
 RU Pup	RU Pup/HIP 39751	Carbon	Pup	08h 07m 29s	-22° 54' 45"	8.1 - 11.1				C5(N3)		
 RV Cyg	RV Cyg/HIP 107242	Carbon	Cyg	21h 43m 16s	38° 01' 02"	7.1 - 9.3				C6 (N5)		
@@ -1181,7 +1183,7 @@ STFA 7 and STF 401	STFA 7 and STF 401	Double	Tau	03h 31m 21s	27° 34' 18"	A=6.5,
 STFA 8 Alcyone	STFA 8 Alcyone	Double	Tau	03h 47m 29s	24° 06' 18"	A=2.8, B=6.2, C=8.2, D=8.7		AB=117, AC=313, AD=191	AB=291, AC=313, AD=297			
 Stock 1	Stock 1	OCl	Vul	19h 35m 00s	25° 06' 00"	5.3	60'					
 Stock 2	Stock 2	OCl	Cas	02h 15m 00s	59° 16' 00"	4.4	60'					
-Stock 23	Stock 23	OCl	Cam	03h 16m 00s	60° 02' 00"	6.2	15'					
+Stock 23	Stock 23/Pazmino's Cluster	OCl	Cam	03h 16m 00s	60° 02' 00"	6.2	29'					
 Struve 1999	Struve 1999	Double	Sco	16h 04m 24s	-11° 27' 00"	7.5, 8.1		11.9	98			
 Struve 2404	Struve 2404	Double	Aql	18h 50m 48s	10° 59' 00"	6.9, 7.8		3.4	181			
 Struve 331	Struve 331	Double	Per	03h 00m 54s	52° 21' 00"	5.2, 6.2		11.9	85			
@@ -1223,10 +1225,10 @@ Thompson 1	Thompson 1	Ast	Del	20h 38m 00s	11° 20' 00"	9.0	6'					About 13 stars
 Toadstool	Toadstool/French 1	Ast	Del	21h 07m 00s	16° 20' 00"	9.0 - 12.0	15'					13 stars total. Looks like a mushroom with 6 stars as the stem, (northeast) and 7 stars as the cap (southwest)
 Tobacco Pipe	Tobacco Pipe	Ast	Cep	22h 30m 00s	70° 30' 00"	8.0 - 9.0	90'					Stem of 8 stars, pointed north. Bowl of 5 stars on south end.
 TPK 1	TPK 1	Ast	And	23h 39m 00s	47° 31' 00"	9.0 - 12.0	23' x 11'					Rough shape of a trapezium
-Tr 2	Tr 2	OCl	Per	02h 37m 18s	55° 59' 00"	5.9	20'					
-Tr 3	Tr 3	OCl	Cas	03h 11m 48s	63° 15' 00"	7.0	23'					
-Trumpler 1	Trumpler 1/Collinder 15	OCl	Cas	01h 35m 42s	61° 17' 00"	8.1	3'			I 3 p	8.35kly	112 stars
-Trumpler 32	Trumpler 32	OCl	Ser	18h 17m 12s	-13° 21' 00"	12.2	12'			I 2m :b	5.6kly	50 stars
+Tr 2	Tr 2/Cr 29	OCl	Per	02h 37m 18s	55° 59' 00"	5.9	20'					
+Tr 3	Tr 3/Cr 36	OCl	Cas	03h 11m 48s	63° 15' 00"	7.0	23'					
+Tr 1	Tr 1/Cr 15	OCl	Cas	01h 35m 42s	61° 17' 00"	8.1	3'			I 3 p	8.35kly	112 stars
+Tr 32	Tr 32	OCl	Ser	18h 17m 12s	-13° 21' 00"	12.2	12'			I 2m :b	5.6kly	50 stars
 TT Cyg	TT Cyg/HIP 96836	Carbon	Cyg	19h 40m 57s	32° 37' 05"	7.0 - 9.1				C5 (N3e)		
 TT Tau	TT Tau/HIP 22578	Carbon	Tau	04h 51m 31s	28° 31' 36"	7.7 - 10.0				C4-C7(N3)		
 TU Gem	TU Gem	Carbon	Gem	06h 10m 53s	26° 00' 53"	7.4 - 8.4				C6(N3)		
@@ -1294,3 +1296,68 @@ Zeta UMa	Zeta UMa/Mizar & Alcor	Double	UMa	13h 23m 54s	54° 56' 00"	A=2.2, B=3.9
 3C 273	3C 273	Q	Vir	12h 29m 07s	02° 03' 07"	12.9					2006mly	easiest quasar to see
 MK 421	MK 421/UGC 6132	Q	UMa	11h 04m 27s	38° 12' 32"	13.5					407mly	
 MK 501	MK 501/UGC 10599	Q	Her	16h 53m 52s	39° 45' 37"	13.9					456mly	
+Berk 58	Berk 58	OCl	Cas	00h 00m 12s	60° 56' 30"	9.7	5'					
+Berk 59	Berk 59	OCl	Cep	00h 02m 10s	67° 25' 12"		10'					
+King 13	King 13	OCl	Cas	00h 10m 10s	61° 11' 00"		5'			II2m		brightest star mag 12
+Berk 2	Berk 2	OCl	Cas	00h 25m 15s	60° 23' 18"		2'					
+King 14	King 14	OCl	Cas	00h 31m 54s	63° 10' 00"	8.5	7'			III1p		
+King 16	King 16	OCl	Cas	00h 43m 42s	64° 11' 00"	10.3	5'			I2m		
+Stock 4	Stock 4	OCl	Per	01h 52m 42s	57° 04' 00"		12'					
+DODZ 1	DODZ 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					
+IC 1848	IC 1848	OCl	Cas	02h 51m 11s	60° 24' 06"	6.5	18'					
+Cr 34	Cr 34	OCl	Cas	02h 59m 23s	60° 34' 00"	6.8	24'					
+IC 348	IC 348	OCl	Per	03h 44m 34s	32° 09' 48"	7.3	8'					
+Tombaugh 5	Tombaugh 5	OCl	Cam	03h 47m 44s	59° 05' 24"	8.4	15'					
+King 7	King 7	OCl	Per	03h 59m 10s	51° 46' 48"		8'			I2r		brightest star mag 16
+NGC 1496	NGC 1496	OCl	Per	04h 04m 32s	52° 39' 42"	9.6	3'					
+DODZ 3	DODZ 3	OCl	Tau	05h 33m 30s	26° 31' 00"		10'					
+Cr 69	Cr 69/Lambda Ori Cluster	OCl	Ori	05h 35m 00s	09° 56' 00"	2.8	70'					
+DODZ 4	DODZ 4	OCl	Tau	05h 35m 54s	25° 57' 00"		25'					
+Ru 1	Ru 1	OCl	CMa	06h 36m 24s	-14° 09' 00"		6'					
+Ru 3	Ru 3	OCl	CMa	06h 42m 06s	-29° 27' 12"		3'					
+Biurakan 9	Biurakan 9/Berk 30	OCl	Mon	06h 57m 46s	03° 13' 42"		3'					
+Ru 7	Ru 7	OCl	CMa	06h 57m 50s	-13° 13' 12"		3'					
+Tr 6	Tr 6/Cr 145	OCl	CMa	07h 26m 23s	-24° 12' 42"	10.0	6'					
+Tr 7Cr 146	Tr 7Cr 146	OCl	Pup	07h 27m 21s	-23° 58' 00"	7.9	5'					
+Tr 9	Tr 9/Cr 168	OCl	Pup	07h 55m 40s	-25° 53' 12"	8.7	6'					
+Dolidze 27	Dolidze 27	OCl	Oph	16h 36m 30s	-08° 56' 00"		25'					
+Tr 26	Tr 26/Cr 331	OCl	Oph	17h 28m 30s	-29° 29' 50"	9.5	7'					
+Cr 333	Cr 333	OCl	Sco	17h 31m 31s	-34° 00' 37"	9.8	8'					
+Tr 27	Tr 27/Cr 336	OCl	Sco	17h 36m 13s	-33° 29' 19"	6.7	7'					
+Tr 28	Tr 28/Cr 337	OCl	Sco	17h 36m 59s	-32° 28' 24"	7.7	6'					
+NGC 6416	NGC 6416	OCl	Sco	17h 44m 18s	-32° 21' 00"	5.7	15'					
+Cr 347	Cr 347	OCl	Sgr	17h 46m 19s	-29° 20' 09"	8.8	10'					
+DODZ 9	DODZ 9	OCl	Her	18h 08m 48s	31° 32' 00"		28'					
+Tr 33	Tr 33/Cr 378	OCl	Sgr	18h 24m 39s	-19° 43' 57"	7.8	6'					
+Tr 35	Tr 35/Cr 388	OCl	Sct	18h 43m 00s	-04° 13' 31"	9.2	6'					
+Ru 146	Ru 146	OCl	Sgr	18h 52m 30s	-21° 04' 54"		4'					
+Berk 80	Berk 80	OCl	Aql	18h 54m 21s	-01° 13' 12"		3'					
+Steph 1	Steph 1	OCl	Lyr	18h 54m 31s	36° 53' 59"	3.8	40'					
+NGC 6716	NGC 6716	OCl	Sgr	18h 54m 34s	-19° 54' 30"	7.5	10'					
+Berk 82	Berk 82	OCl	Aql	19h 11m 20s	13° 06' 42"		2.5'					
+NGC 6774	NGC 6774	OCl	Sgr	19h 16m 18s	-16° 19' 30"		45'					
+NGC 6793	NGC 6793	OCl	Vul	19h 23m 13s	22° 09' 27"		7'					
+King 25	King 25	OCl	Aql	19h 24m 30s	13° 42' 00"		5'			III2m		
+NGC 6800	NGC 6800	OCl	Vul	19h 27m 00s	25° 05' 36"		5'					
+Berk 47	Berk 47	OCl	Sge	19h 28m 27s	17° 21' 57"		3'					
+Cr 401	Cr 401	OCl	Aql	19h 38m 22s	00° 20' 43"	7.0	1'					
+Biurakan 2	Biurakan 2	OCl	Cyg	20h 09m 14s	35° 29' 03"	6.3	20'					
+IC 4996	IC 4996	OCl	Cyg	20h 16m 32s	37° 38' 35"	7.3	7'					
+Berk 85	Berk 85	OCl	Cyg	20h 18m 47s	37° 45' 18"		6'					
+Berk 86	Berk 86	OCl	Cyg	20h 20m 21s	38° 42' 01"	7.9	7'					
+Berk 87	Berk 87	OCl	Cyg	20h 21m 35s	37° 23' 30"		10'					
+Cr 421	Cr 421	OCl	Cyg	20h 23m 18s	41° 42' 00"	10.1	8'					
+Dolidze 9	Dolidze 9	OCl	Cyg	20h 25m 33s	41° 54' 25"		3'					
+Berk 90	Berk 90	OCl	Cyg	20h 35m 16s	46° 50' 42"		3'					
+French 1	French 1	OCl	Del	21h 07m 22s	16° 17' 54"		13'					
+IC 1369	IC 1369	OCl	Cyg	21h 12m 07s	47° 46' 00"	8.8	5'					
+Berk 55	Berk 55	OCl	Cyg	21h 16m 57s	51° 45' 30"		5'					
+IC 1396	IC 1396	OCl	Cep	21h 39m 00s	57° 30' 00"	3.5	90'					
+NGC 7235	NGC 7235	OCl	Cep	22h 12m 24s	57° 16' 24"	7.7	6'					
+King 9	King 9	OCl	Lac	22h 15m 31s	54° 24' 36"		3'			I1m		brightest star mag 18
+Berk 94	Berk 94	OCl	Cep	22h 22m 53s	55° 52' 30"	8.7	3'					
+Berk 96	Berk 96	OCl	Lac	22h 29m 51s	55° 24' 22"		2'					
+King 18	King 18	OCl	Cep	22h 52m 08s	58° 18' 42"		5'			II2p		brightest star mag 12
+King 19	King 19	OCl	Cep	23h 08m 18s	60° 31' 00"	9.2	5'			III2p		
+King 21	King 21	OCl	Cas	23h 49m 54s	62° 42' 00"	9.6	4'			I2p		
+King 12	King 12	OCl	Cas	23h 53m 00s	61° 57' 00"	9.0	3'			II1p		
