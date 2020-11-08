@@ -119,10 +119,10 @@ Delta Scl	Delta Scl	Double	Scl	23h 48m 54s	-28° 08' 00"	A=4.6, B=9.4, C=11.6		A
 Delta Ser	Delta Ser	Double	Ser	15h 34m 48s	10° 32' 00"	4.2, 5.2		4	172			widening
 Djorg 2	Djorg 2/ESO 456-38	GCl	Sco	18h 01m 49s	-27° 49' 33"	9.9				b		
 DNA	DNA	Ast	Aqr	23h 24m 38s	-21° 58' 48"	4.0	4° x 1°					Its brighter stars appear to be entwined in a spiral. The beginning of "spiral" are the stars 98 and 99 of Aquarius.
-Do Dz 5	Do Dz 5	Ast	Her	16h 27m 00s	38° 04' 00"	8.0	27'					4 curved stars with 2 stars inside of the curve, looks like an anchor
-Do Dz 6	Do Dz 6	Ast	Her	16h 45m 00s	38° 21' 00"	8.0	3.5'					4 faint stars curved with 2 brighter ones on one end. Looks like a tiny Scorpius
-Do Dz 7	Do Dz 7	Ast	Her	17h 11m 00s	15° 29' 00"	10.0	10'					Looks like a sailboat. 6 curved stars make the hull, 1 star above for the mast, and 3 in a triangle for the sail.
-Do Dz 8	Do Dz 8	Ast	Her	17h 26m 00s	24° 12' 00"	7.0	15'					Total of 7 stars with the shape of a five pointed star.
+DoDz 5	DoDz 5	Ast	Her	16h 27m 00s	38° 04' 00"	8.0	27'					4 curved stars with 2 stars inside of the curve, looks like an anchor
+DoDz 6	DoDz 6	Ast	Her	16h 45m 00s	38° 21' 00"	8.0	3.5'					4 faint stars curved with 2 brighter ones on one end. Looks like a tiny Scorpius
+DoDz 7	DoDz 7	Ast	Her	17h 11m 00s	15° 29' 00"	10.0	10'					Looks like a sailboat. 6 curved stars make the hull, 1 star above for the mast, and 3 in a triangle for the sail.
+DoDz 8	DoDz 8	Ast	Her	17h 26m 00s	24° 12' 00"	7.0	15'					Total of 7 stars with the shape of a five pointed star.
 Double Triangle	Double Triangle	Ast	Tau	04h 32m 00s	17° 00' 00"	3.0 - 6.0	60' x 60'					6 stars form an equailateral triangle. 2 stars at each point. Part of Hyades star cluster.
 DUN 116 ABC	DUN 116 ABC	Double	Hya	11h 56m 42s	-32° 16' 05"	A=7.6, B=7.8, C=11.6		AB=18.7, AC=28.9	AB=82, AC=32			
 Eddie's Coaster	Eddie's Coaster	Ast	Cas	01h 04m 00s	63° 40' 00"	7.0 - 8.0	3°					Wave of stars "reminiscent of a roller coaster"
@@ -1303,16 +1303,16 @@ Berk 2	Berk 2	OCl	Cas	00h 25m 15s	60° 23' 18"		2'
 King 14	King 14	OCl	Cas	00h 31m 54s	63° 10' 00"	8.5	7'			III1p		
 King 16	King 16	OCl	Cas	00h 43m 42s	64° 11' 00"	10.3	5'			I2m		
 Stock 4	Stock 4	OCl	Per	01h 52m 42s	57° 04' 00"		12'					
-DODZ 1	DODZ 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					
+DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					
 IC 1848	IC 1848	OCl	Cas	02h 51m 11s	60° 24' 06"	6.5	18'					
 Cr 34	Cr 34	OCl	Cas	02h 59m 23s	60° 34' 00"	6.8	24'					
 IC 348	IC 348	OCl	Per	03h 44m 34s	32° 09' 48"	7.3	8'					
 Tombaugh 5	Tombaugh 5	OCl	Cam	03h 47m 44s	59° 05' 24"	8.4	15'					
 King 7	King 7	OCl	Per	03h 59m 10s	51° 46' 48"		8'			I2r		brightest star mag 16
 NGC 1496	NGC 1496	OCl	Per	04h 04m 32s	52° 39' 42"	9.6	3'					
-DODZ 3	DODZ 3	OCl	Tau	05h 33m 30s	26° 31' 00"		10'					
+DoDz 3	DoDz 3	OCl	Tau	05h 33m 30s	26° 31' 00"		10'					
 Cr 69	Cr 69/Lambda Ori Cluster	OCl	Ori	05h 35m 00s	09° 56' 00"	2.8	70'					
-DODZ 4	DODZ 4	OCl	Tau	05h 35m 54s	25° 57' 00"		25'					
+DoDz 4	DoDz 4	OCl	Tau	05h 35m 54s	25° 57' 00"		25'					
 Ru 1	Ru 1	OCl	CMa	06h 36m 24s	-14° 09' 00"		6'					
 Ru 3	Ru 3	OCl	CMa	06h 42m 06s	-29° 27' 12"		3'					
 Biurakan 9	Biurakan 9/Berk 30	OCl	Mon	06h 57m 46s	03° 13' 42"		3'					
@@ -1327,7 +1327,7 @@ Tr 27	Tr 27/Cr 336	OCl	Sco	17h 36m 13s	-33° 29' 19"	6.7	7'
 Tr 28	Tr 28/Cr 337	OCl	Sco	17h 36m 59s	-32° 28' 24"	7.7	6'					
 NGC 6416	NGC 6416	OCl	Sco	17h 44m 18s	-32° 21' 00"	5.7	15'					
 Cr 347	Cr 347	OCl	Sgr	17h 46m 19s	-29° 20' 09"	8.8	10'					
-DODZ 9	DODZ 9	OCl	Her	18h 08m 48s	31° 32' 00"		28'					
+DoDz 9	DoDz 9	OCl	Her	18h 08m 48s	31° 32' 00"		28'					
 Tr 33	Tr 33/Cr 378	OCl	Sgr	18h 24m 39s	-19° 43' 57"	7.8	6'					
 Tr 35	Tr 35/Cr 388	OCl	Sct	18h 43m 00s	-04° 13' 31"	9.2	6'					
 Ru 146	Ru 146	OCl	Sgr	18h 52m 30s	-21° 04' 54"		4'					
