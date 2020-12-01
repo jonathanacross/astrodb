@@ -7,7 +7,7 @@
 11-12 Cam	11-12 Cam	Double	Cam	05h 06m 08s	58° 58' 20"	5.2, 6.2		177	10			
 118 Tau	118 Tau	Double	Tau	05h 29m 18s	25° 09' 00"	5.8, 6.7		4.7	209			
 12 Com	12 Com/SHJ 143	Double	Com	12h 22m 30s	25° 50' 46"	A=4.8, B=11.8, C=8.9, D=10.0		AB=36.7, AC=59, AD=213	AB=57, AC=168, AD=132			
-12 Lyn	12 Lyn/Struve 948	Double	Lyn	06h 46m 12s	59° 27' 00"	A=5.4, B=6.0, C=7.1		AB=1.9, AC=8.9	AB=65, AC=310			!
+12 Lyn	12 Lyn	Double	Lyn	06h 46m 12s	59° 27' 00"	A=5.4, B=6.0, C=7.1		AB=1.9, AC=8.9	AB=65, AC=310			!
 14 Aur	14 Aur	Double	Aur	05h 15m 24s	32° 41' 00"	A=5.0, B=7.3, C=9.0		AB=10, AC=14.2				
 145 CMa	145 CMa	Double	CMa	07h 16m 37s	-23° 18' 56"	5.0, 5.8		26.8	50		6.272kly	
 16,17 Dra	16,17 Dra	Double	Dra	16h 36m 12s	52° 55' 00"	A=5.4, B=6.4, C=5.5		AB=3.1, AC=90.1	AB=104, AC=193			
@@ -175,7 +175,7 @@ H 3945	H 3945	Double	CMa	07h 16m 36s	-23° 18' 00"	4.8		26.6				! orange, white
 H 4926	H 4926	Double	Sco	17h 14m 30s	-39° 46' 00"	A=6.7, B=10.1, C=11.4		AB=14.2, AC=16.4				
 H 5082	H 5082	Double	Sgr	19h 03m 12s	-19° 15' 00"	A=6.2, B=9.0, C=10.8		AB=7.5, AC=19.9				
 H 5311	H 5311	Double	PsA	21h 59m 30s	-29° 03' 00"	A=7.1, B=10.6, C=10.9		AB=40.3, AC=44.8				
-H III 80	H III 80	Double	Cet	02h 26m 20s	-15° 20' 28"	A=5.9, B=9.1, C=10.5		AB=12.1, AC=109.6	AB=295, AC=31			
+H III 80	H III 80/AB Cet	Double	Cet	02h 26m 20s	-15° 20' 28"	A=5.9, B=9.1, C=10.5		AB=12.1, AC=109.6	AB=295, AC=31			
 H N 40	H N 40	Double	Sgr	18h 02m 24s	-23° 02' 00"	A=7.6, B=8.7, C=10.4		AB=6.1, AC=11				
 Harvard 20	Harvard 20	OCl	Sge	19h 53m 12s	18° 21' 00"	7.7	8'			III 2 p	5.02kly	28 stars
 HD 196944	HD 196944	Ast	Aqr	20h 41m 00s	-06° 49' 00"	6.6	23'					Christmas Tree shape, with tip pointed south. Total of 20 stars.
@@ -1303,7 +1303,7 @@ Berk 2	Berk 2	OCl	Cas	00h 25m 15s	60° 23' 18"		2'
 King 14	King 14	OCl	Cas	00h 31m 54s	63° 10' 00"	8.5	7'			III1p		
 King 16	King 16	OCl	Cas	00h 43m 42s	64° 11' 00"	10.3	5'			I2m		
 Stock 4	Stock 4	OCl	Per	01h 52m 42s	57° 04' 00"		12'					
-DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					
+DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					Near 42 Ari
 IC 1848	IC 1848	OCl	Cas	02h 51m 11s	60° 24' 06"	6.5	18'					
 Cr 34	Cr 34	OCl	Cas	02h 59m 23s	60° 34' 00"	6.8	24'					
 IC 348	IC 348	OCl	Per	03h 44m 34s	32° 09' 48"	7.3	8'					
