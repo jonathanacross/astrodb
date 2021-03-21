@@ -4,16 +4,20 @@ data class ObjectWithRaSort(val obj: Object, val conSort: Double, val raSort: Do
 
     companion object {
         fun create(obj: Object, raRange: RaRange): ObjectWithRaSort {
-            val conSort = getRaSortValue(obj.constellation.ra, raRange)
+            val conSort = getRaSortValue(obj.constellation.ra(), raRange)
             val raSort = getRaSortValue(obj.ra, raRange)
             return ObjectWithRaSort(obj, conSort, raSort)
         }
 
-        private fun getRaSortValue(ra: Double, raRange: RaRange): Double {
+        private fun getRaSortValue(ra: Ra, raRange: RaRange): Double {
+            val raNumber = ra.asNumber()
+            if (raNumber == null) {
+                return Double.MAX_VALUE
+            }
             return if (raRange.min <= raRange.max) {
-                ra
+                raNumber
             } else {
-                if (ra < raRange.min) ra + 24 else ra
+                if (raNumber < raRange.min) raNumber + 24 else raNumber
             }
         }
     }
@@ -50,8 +54,8 @@ fun writeObservingList(objects: List<JoinedObject>, givenRaRange: RaRange?) {
             o.obj.id + "\t" +
                     o.obj.objectTypes.joinToString("+") + "\t" +
                     o.obj.constellation + "\t" +
-                    formatRa(o.obj.ra) + "\t" +
-                    formatDec(o.obj.dec) + "\t" +
+                    o.obj.ra + "\t" +
+                    o.obj.dec + "\t" +
                     o.obj.magnitude + "\t" +
                     sizesep + "\t" +
                     o.obj.positionAngles + "\t" +
@@ -96,8 +100,8 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
                     o.obj.id + "\t" +
                     o.dates + "\t" +
                     o.obj.constellation + "\t" +
-                    formatRa(o.obj.ra) + "\t" +
-                    formatDec(o.obj.dec) + "\t" +
+                    o.obj.ra + "\t" +
+                    o.obj.dec + "\t" +
                     o.obj.names.joinToString("/")
 
         println(line)
@@ -147,8 +151,8 @@ fun writeMetaList(objects: List<JoinedObject>) {
                         o.obj.names.joinToString("/") + "\t" +
                         o.obj.objectTypes.joinToString("+") + "\t" +
                         o.obj.constellation + "\t" +
-                        formatRa(o.obj.ra) + "\t" +
-                        formatDec(o.obj.dec) + "\t" +
+                        o.obj.ra + "\t" +
+                        o.obj.dec + "\t" +
                         o.obj.distance.toSortableString() + "\t" +
                         o.observations.size + "\t" +
                         o.programs.size + "\t" +

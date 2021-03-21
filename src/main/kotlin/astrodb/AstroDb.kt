@@ -159,12 +159,19 @@ fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>
 
 fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>> {
     fun hashDist(obj: Object): Int {
-        val intRa = round(obj.ra * 60).toInt()
-        val intDec = round(obj.dec * 60).toInt()
+        val raNum = obj.ra.asNumber()
+        val decNum = obj.dec.asNumber()
+        if (raNum == null || decNum == null) {
+            return -999999;
+        }
+        val intRa = round(raNum * 60).toInt()
+        val intDec = round(decNum * 60).toInt()
         return intRa * 1000000 + intDec
     }
 
-    return objs.groupBy({ hashDist(it.obj).toString() }, { it })
+    return objs
+        .filter({o -> o.obj.ra.asNumber() != null && o.obj.dec.asNumber() != null})
+        .groupBy({ hashDist(it.obj).toString() }, { it })
             .filterValues { list -> list.size > 1 }
 }
 
