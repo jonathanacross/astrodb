@@ -53,6 +53,11 @@ data class Object(
     }
 
     companion object {
+
+        fun parseNames(nameField: String): List<String> {
+            return nameField.split("/").toList()
+        }
+
         fun parse(line: String): Object {
             val fields = line.split("\t")
             val id = fields[0]

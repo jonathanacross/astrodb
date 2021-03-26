@@ -42,10 +42,6 @@ fun parseBase60(formattedValue: String): Double {
     }
 }
 
-fun parseNames(nameField: String): List<String> {
-    return nameField.split("/").toList()
-}
-
 data class ObjectWithLine(val obj: Object, val line: Int)
 
 fun readObjectFile(fileName: String, checkLikelyDuplicates: Boolean): List<Object> {
@@ -185,7 +181,11 @@ fun getObservationsByItemId(observations: List<Observation>): Map<String, List<O
     val result = HashMap<String, ArrayList<Observation>>()
     for (observation in observations) {
         for (objectId in observation.objectIds) {
-            result.getOrDefault(objectId, arrayListOf()).add(observation)
+            if (!result.containsKey(objectId)) {
+                result[objectId] = arrayListOf()
+            }
+            result[objectId]!!.add(observation)
+            //result.set(objectId, result.getOrDefault(objectId, arrayListOf()).add(observation))
         }
     }
     return result

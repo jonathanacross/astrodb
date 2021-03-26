@@ -77,7 +77,7 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
     val header =
         "#ItemNumber" + "\t" +
                 "Id" + "\t" +
-                "Dates" + "\t" +
+                "Observations" + "\t" +
                 "Con" + "\t" +
                 "RA" + "\t" +
                 "Dec" + "\t" +
@@ -85,11 +85,12 @@ fun writeProgramList(objects: List<JoinedObject>, programName: String?) {
     println(header)
 
     val observedObjs = objects.map { o ->
-        val dates = o.observations.joinToString(", ") { obs -> obs.date }
+        val obsIds = o.observations.joinToString(", ") { obs -> obs.id }
+        //val dates = o.observations.joinToString(", ") { obs -> obs.date }
         val matchingProgram =
             o.programs.filter { p -> p.programName == programName }
         val itemNumber = if (matchingProgram.isNotEmpty()) matchingProgram[0].itemNumber else ItemNumber(0, "")
-        ObservedProgramObject(itemNumber, dates, o.obj)
+        ObservedProgramObject(itemNumber, obsIds, o.obj)
     }
 
     val sortedObjs = observedObjs.sortedWith(compareBy({ it.itemNumber.itemNumber }, { it.itemNumber.subNumber }))
@@ -141,7 +142,7 @@ fun writeMetaList(objects: List<JoinedObject>) {
                     "Dist(ly)" + "\t" +
                     "NumObs" + "\t" +
                     "NumPrograms" + "\t" +
-                    "Dates" + "\t" +
+                    "Observations" + "\t" +
                     "Programs"
     println(header)
 
@@ -156,7 +157,7 @@ fun writeMetaList(objects: List<JoinedObject>) {
                         o.obj.distance.toSortableString() + "\t" +
                         o.observations.size + "\t" +
                         o.programs.size + "\t" +
-                        o.observations.joinToString(", ") { obs -> obs.date } + "\t" +
+                        o.observations.joinToString(", ") { obs -> obs.id } + "\t" +
                         o.programs.joinToString(", ") { obs -> obs.programName }
 
         println(line)

@@ -52,8 +52,6 @@ enum class ObjectType(val canonicalName: String, private val shortName: String, 
             return types
         }
     }
-
-
 }
 
 
