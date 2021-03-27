@@ -52,16 +52,18 @@ function getObservationTitle(obs) {
 }
 
 function showObservations(observation_ids) {
-    var resultsArea = document.getElementById("results");
+    // set up count
+    var resultsHeader = document.getElementById("results_header");
+    var resultCount = document.createElement("p");
+    resultsHeader.textContent = "Found " + observation_ids.length + " entries.";
+    resultsHeader.appendChild(resultCount);
+
+    var resultsArea = document.getElementById("results_list");
 
     // clear old results
     while (resultsArea.hasChildNodes()) {
         resultsArea.removeChild(resultsArea.lastChild);
     }
-
-    var resultCount = document.createElement("p");
-    resultCount.textContent = "Found " + observation_ids.length + " entries.";
-    resultsArea.appendChild(resultCount);
 
     // add new results
     for (const observation_id of observation_ids) {
