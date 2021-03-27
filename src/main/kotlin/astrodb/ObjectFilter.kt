@@ -15,8 +15,8 @@ data class RaRange(val min: Double, val max: Double) {
 data class ObjectFilter(
     val nameIs: String? = null,
     val nameLike: String? = null,
-    val conIn: List<Constellation> = emptyList(),
-    val conNotIn: List<Constellation> = emptyList(),
+    val conIn: List<Constellations> = emptyList(),
+    val conNotIn: List<Constellations> = emptyList(),
     val objectTypesIn: List<ObjectType> = emptyList(),
     val objectTypesNotIn: List<ObjectType> = emptyList(),
     val raInRange: RaRange? = null,
@@ -82,11 +82,17 @@ data class ObjectFilter(
         if (nameLike != null && !listContainsStringMatch(obj.obj.names, nameLike)) {
             return false
         }
-        if (conIn.isNotEmpty() && !conIn.contains(obj.obj.constellation)) {
-            return false
+        if (conIn.isNotEmpty()) {
+            val con = obj.obj.constellation.asCon()
+            if (con == null || !conIn.contains(con)) {
+                return false
+            }
         }
-        if (conNotIn.isNotEmpty() && conNotIn.contains(obj.obj.constellation)) {
-            return false
+        if (conNotIn.isNotEmpty()) {
+            val con = obj.obj.constellation.asCon()
+            if (con == null || conNotIn.contains(con)) {
+                return false
+            }
         }
         if (objectTypesIn.isNotEmpty() && objectTypesIn.intersect(obj.obj.objectTypes).isEmpty()) {
             return false
@@ -94,14 +100,23 @@ data class ObjectFilter(
         if (objectTypesNotIn.isNotEmpty() && objectTypesNotIn.intersect(obj.obj.objectTypes).isNotEmpty()) {
             return false
         }
-        if (raInRange != null && !raInRange.inRange(obj.obj.ra)) {
-            return false
+        if (raInRange != null) {
+            val raNumber = obj.obj.ra.asNumber()
+            if (raNumber == null || !raInRange.inRange(raNumber)) {
+                return false
+            }
         }
-        if (decGreaterThan != null && obj.obj.dec < decGreaterThan) {
-            return false
+        if (decGreaterThan != null) {
+            val decNumber = obj.obj.dec.asNumber()
+            if (decNumber == null || decNumber < decGreaterThan) {
+                return false
+            }
         }
-        if (decLessThan != null && obj.obj.dec > decLessThan) {
-            return false
+        if (decLessThan != null) {
+            val decNumber = obj.obj.dec.asNumber()
+            if (decNumber == null || decNumber > decLessThan) {
+                return false
+            }
         }
         if (brighterThanMagnitude != null) {
             val objMag = obj.obj.magnitude.asNumber()

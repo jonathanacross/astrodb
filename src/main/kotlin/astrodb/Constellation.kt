@@ -1,6 +1,11 @@
 package astrodb
 
-enum class Constellation(private val abbrev: String, val fullName: String, val ra: Double, val dec: Double) {
+enum class Constellations(
+    private val abbrev: String,
+    val fullName: String,
+    val ra: Double,
+    val dec: Double
+) {
     // RA is the average of the most eastward and most westward RA.
     // Dec is the average of the most northern and most southern declination.
     // Adapted from https://en.wikipedia.org/wiki/IAU_designated_constellations_by_area
@@ -98,12 +103,41 @@ enum class Constellation(private val abbrev: String, val fullName: String, val r
     }
 
     companion object {
-        fun parse(conField: String): Constellation {
+        fun parse(conField: String): Constellations {
             try {
                 return valueOf(conField.toUpperCase())
             } catch (e: Exception) {
                 throw ParseException("unknown constellation '$conField'")
             }
+        }
+    }
+}
+
+sealed class Constellation {
+    abstract fun ra(): Ra
+    abstract fun dec(): Dec
+    abstract fun asCon(): Constellations?
+
+    object None : Constellation() {
+        override fun toString() = ""
+        override fun ra() = Ra.None
+        override fun dec() = Dec.None
+        override fun asCon() = null
+    }
+
+    data class ConstellationWithValue(val con: Constellations) : Constellation() {
+        override fun toString() = con.toString()
+        override fun ra() = Ra.RaWithValue(con.ra)
+        override fun dec() = Dec.DecWithValue(con.dec)
+        override fun asCon() = con
+    }
+
+    companion object {
+        fun parse(conField: String): Constellation {
+            if (conField.trim() == "") {
+                return None
+            }
+            return ConstellationWithValue(Constellations.parse(conField))
         }
     }
 }

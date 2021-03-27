@@ -29,8 +29,8 @@ fun tokenize(query: String): List<String> {
     return tokens.toList()
 }
 
-fun parseCons(cons: String): List<Constellation> {
-    return cons.split(",").map { c -> Constellation.parse(c) }
+fun parseCons(cons: String): List<Constellations> {
+    return cons.split(",").map { c -> Constellations.parse(c) }
 }
 
 fun parseQuery(query: String): ObjectFilter {
@@ -38,8 +38,8 @@ fun parseQuery(query: String): ObjectFilter {
 
     var nameIs: String? = null
     var nameLike: String? = null
-    var conIn: List<Constellation> = emptyList()
-    var conNotIn: List<Constellation> = emptyList()
+    var conIn: List<Constellations> = emptyList()
+    var conNotIn: List<Constellations> = emptyList()
     var objectTypesIn: List<ObjectType> = emptyList()
     var objectTypesNotIn: List<ObjectType> = emptyList()
     var raInRange: RaRange? = null

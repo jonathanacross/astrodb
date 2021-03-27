@@ -5,38 +5,13 @@ import kotlin.math.abs
 import kotlin.math.log10
 import kotlin.math.roundToInt
 
-fun formatBase60(value: Double, radixNames: Triple<String, String, String>): String {
-    val signStr = if (value < 0) "-" else ""
-    val totalSeconds = (abs(value) * 3600).roundToInt()
-    val seconds = totalSeconds % 60
-    val totalMinutes = (totalSeconds - seconds) / 60
-    val minutes = totalMinutes % 60
-    val degrees = (totalMinutes - minutes) / 60
-
-    val degreesStr = degrees.toString().padStart(2, '0')
-    val minutesStr = minutes.toString().padStart(2, '0')
-    val secondsStr = seconds.toString().padStart(2, '0')
-
-    return signStr + degreesStr + radixNames.first + " " +
-            minutesStr + radixNames.second + " " +
-            secondsStr + radixNames.third
-}
-
-fun formatDec(dec: Double): String {
-    return formatBase60(dec, Triple("°", "'", "\""))
-}
-
-fun formatRa(dec: Double): String {
-    return formatBase60(dec, Triple("h", "m", "s"))
-}
-
 data class Object(
     val id: String,
     val names: List<String>,
     val objectTypes: List<ObjectType>,
     val constellation: Constellation,
-    val ra: Double,
-    val dec: Double,
+    val ra: Ra,
+    val dec: Dec,
     val magnitude: Magnitude,
     val size: Size,
     val separations: Separation,
@@ -66,8 +41,8 @@ data class Object(
                 names.joinToString("/") + "\t" +
                 objectTypes.joinToString("+") + "\t" +
                 constellation + "\t" +
-                formatRa(ra) + "\t" +
-                formatDec(dec) + "\t" +
+                ra + "\t" +
+                dec + "\t" +
                 magnitude + "\t" +
                 size + "\t" +
                 separations + "\t" +
@@ -78,14 +53,19 @@ data class Object(
     }
 
     companion object {
+
+        fun parseNames(nameField: String): List<String> {
+            return nameField.split("/").toList()
+        }
+
         fun parse(line: String): Object {
             val fields = line.split("\t")
             val id = fields[0]
             val names = parseNames(fields[1])
             val types = ObjectType.parse(fields[2])
             val con = Constellation.parse(fields[3])
-            val ra = parseBase60(fields[4])
-            val dec = parseBase60(fields[5])
+            val ra = Ra.parse(fields[4])
+            val dec = Dec.parse(fields[5])
             val mag = Magnitude.parse(fields[6])
             val size = Size.parse(fields[7])
             val seps = Separation.parse(fields[8])
@@ -93,6 +73,18 @@ data class Object(
             val objectClass = fields[10]
             val distance = Distance.parse(fields[11])
             val notes = fields[12]
+
+            for (type in types) {
+                if (type.fixedLocation) {
+                    if (ra.asNumber() == null || dec.asNumber() == null || con.asCon() == null) {
+                        throw ParseException("object missing ra/dec/con but should have a fixed location");
+                    }
+                } else {
+                    if (ra.asNumber() != null || dec.asNumber() != null || con.asCon() != null) {
+                        throw ParseException("object has ra/dec/con but should not have a fixed location");
+                    }
+                }
+            }
 
             return Object(id, names, types, con, ra, dec, mag, size, seps, pas, objectClass, distance, notes)
         }

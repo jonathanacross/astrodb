@@ -42,10 +42,6 @@ fun parseBase60(formattedValue: String): Double {
     }
 }
 
-fun parseNames(nameField: String): List<String> {
-    return nameField.split("/").toList()
-}
-
 data class ObjectWithLine(val obj: Object, val line: Int)
 
 fun readObjectFile(fileName: String, checkLikelyDuplicates: Boolean): List<Object> {
@@ -159,12 +155,19 @@ fun findDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>
 
 fun findLikelyDuplicates(objs: List<ObjectWithLine>): Map<String, List<ObjectWithLine>> {
     fun hashDist(obj: Object): Int {
-        val intRa = round(obj.ra * 60).toInt()
-        val intDec = round(obj.dec * 60).toInt()
+        val raNum = obj.ra.asNumber()
+        val decNum = obj.dec.asNumber()
+        if (raNum == null || decNum == null) {
+            return -999999;
+        }
+        val intRa = round(raNum * 60).toInt()
+        val intDec = round(decNum * 60).toInt()
         return intRa * 1000000 + intDec
     }
 
-    return objs.groupBy({ hashDist(it.obj).toString() }, { it })
+    return objs
+        .filter({o -> o.obj.ra.asNumber() != null && o.obj.dec.asNumber() != null})
+        .groupBy({ hashDist(it.obj).toString() }, { it })
             .filterValues { list -> list.size > 1 }
 }
 
@@ -174,11 +177,25 @@ data class JoinedObject(
         val observations: List<Observation>
 )
 
-fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: List<Observation>): List<JoinedObject> {
+fun getObservationsByItemId(observations: List<Observation>): Map<String, List<Observation>>  {
+    val result = HashMap<String, ArrayList<Observation>>()
+    for (observation in observations) {
+        for (objectId in observation.objectIds) {
+            if (!result.containsKey(objectId)) {
+                result[objectId] = arrayListOf()
+            }
+            result[objectId]!!.add(observation)
+            //result.set(objectId, result.getOrDefault(objectId, arrayListOf()).add(observation))
+        }
+    }
+    return result
+}
+
+fun joinData(objects: List<Object>, programs: List<ProgramEntry>, observations: List<Observation>): List<JoinedObject> {
 
     // check for items in programs that don't have corresponding objects
     val expectedItems = programs.map { p -> p.itemId }.toSet()
-    val knownObjects = objs.map { o -> o.id }.toSet()
+    val knownObjects = objects.map { o -> o.id }.toSet()
     val missingObjects = expectedItems.filter { e -> !knownObjects.contains(e) }
     if (missingObjects.isNotEmpty()) {
         throw ParseException(
@@ -191,7 +208,10 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
     val programById = programs.groupBy(keySelector = { p -> p.itemId })
 
     // check for items in observations that don't have objects
-    val expectedItemsFromObservations = observations.map { p -> p.itemId }.toSet()
+    val expectedItemsFromObservations = observations
+        .map { p -> p.objectIds }
+        .flatten()
+        .toSet()
     val missingObjectsFromObservations = expectedItemsFromObservations.filter { e -> !knownObjects.contains(e) }
     if (missingObjectsFromObservations.isNotEmpty()) {
         throw ParseException(
@@ -201,9 +221,9 @@ fun joinData(objs: List<Object>, programs: List<ProgramEntry>, observations: Lis
         )
     }
     // convert ProgramEntry to a map based on the object ids.
-    val observationById = observations.groupBy(keySelector = { p -> p.itemId })
+    val observationById = getObservationsByItemId(observations)
 
-    return objs.map { o ->
+    return objects.map { o ->
         JoinedObject(
                 o,
                 programById.getOrDefault(o.id, emptyList()),
