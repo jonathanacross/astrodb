@@ -11,7 +11,6 @@ data class Observation(
     val seeing: String,
     val transparency: String,
     val objectIds: List<String>,
-    val altTitle: String,
     val time: String,
     val eyepiece: String,
     val magnification: String,
@@ -32,15 +31,14 @@ data class Observation(
             val seeing = fields[4]
             val transparency = fields[5]
             val objectIds = parseObjIds(fields[6])
-            val altTitle = fields[7]
-            val time = fields[8]
-            val eyepiece = fields[9]
-            val magnification = fields[10]
-            val lunarPhase = fields[11]
-            val notes = fields[12]
+            val time = fields[7]
+            val eyepiece = fields[8]
+            val magnification = fields[9]
+            val lunarPhase = fields[10]
+            val notes = fields[11]
             return Observation(
                 id, date, location, scope, seeing,
-                transparency, objectIds, altTitle, time,
+                transparency, objectIds, time,
                 eyepiece, magnification, lunarPhase, notes
             )
         }

@@ -38,24 +38,42 @@ function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
-function getObservationTitle(obs) {
-    custom_title = obs["CustomTitle"];
-    if (custom_title !== "") {
-        return custom_title;
-    }
+function setObjectInfo(obs, element) {
+    const obj_ids = obs["ObjIds"].split("|");
+    var nameInfo = document.createElement("ul");
+    for (obj_id of obj_ids) {
+        const obj = objects[obj_id];
+        var title = document.createElement("div");
+        title.className = "objname";
+        title.textContent = obj["Names"];
+        element.appendChild(title);
 
-    // infer a reasonable default title from the object(s) 
-    // observed
-    obj_ids = obs["ObjIds"].split("|");
-    const title = obj_ids.map( obj_id => objects[obj_id]["Names"] ).join(" and ");
-    return title;
+        // Only bother to show type, con etc. for
+        // objects that have a fixed position in the sky.
+        if (obj["Con"] !== "") {
+            var attrslist = document.createElement("ul");
+            var attributes = ["Type", "Con", "RA", "Dec"];
+            for (const attr of attributes) {
+                if (obj[attr] !== "") {
+                    var li = document.createElement('li');
+                    li.textContent = attr + ": " + obj[attr];
+                    attrslist.appendChild(li);
+                }
+            }
+            element.appendChild(attrslist);
+        }
+    }
 }
 
 function showObservations(observation_ids) {
-    // set up count
+    // count of observations
     var resultsHeader = document.getElementById("results_header");
+    // clear old header
+    while (resultsHeader.hasChildNodes()) {
+        resultsHeader.removeChild(resultsHeader.lastChild);
+    }
     var resultCount = document.createElement("p");
-    resultsHeader.textContent = "Found " + observation_ids.length + " entries.";
+    resultCount.textContent = "Found " + observation_ids.length + " observations.";
     resultsHeader.appendChild(resultCount);
 
     var resultsArea = document.getElementById("results_list");
@@ -85,9 +103,8 @@ function showObservations(observation_ids) {
 
             var notesDiv = document.createElement("div");
             notesDiv.className = "notes";
-            var objname = document.createElement("div");
-            objname.className = "objname";
-            objname.textContent = getObservationTitle(obs);
+            var objinfo = document.createElement("div");
+            setObjectInfo(obs, objinfo);
 
             var notesList = document.createElement("ul");
             var attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
@@ -98,7 +115,7 @@ function showObservations(observation_ids) {
                     notesList.appendChild(li);
                 }
             }
-            notesDiv.appendChild(objname);
+            notesDiv.appendChild(objinfo);
             notesDiv.appendChild(notesList);
             if (obs["Notes"] != null) {
                 var description = document.createElement("p");
