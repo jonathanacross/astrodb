@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script type="text/javascript" src="web/observationviewer.js"> </script>
+    <link rel="stylesheet" href="web/style.css">
+  </head>
+
+  <body>
+    <div class="query">
+
+      <div class="programquery">
+        <label for="program">Program:</label>
+        <select name="program" id="program">
+        </select>
+        <button id="programshow">Show</button>
+      </div>
+
+      <div class="datequery">
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month">
+        <button id="dateshow">Show</button>
+      </div>
+
+      <div class=objectquery">
+        <label for="name">Name</label>
+        <select name="namematch" id="namematch">
+          <option value="contains">contains</option>
+          <option value="is">is</option>
+        </select>
+        <input type="name" id="name" name="name">
+
+        <label for="type">Type:</label>
+        <input list="type_list" name="type" type="text" id="type" multiple>
+        <datalist id="type_list">
+          <option value="Ast">Asterism</option>
+          <option value="Asteroid">Asteroid</option>
+          <option value="Carbon">Carbon Star</option>
+          <option value="Comet">Comet</option>
+          <option value="Con">Constellation</option>
+          <option value="DN">Dark Nebula</option>
+          <option value="Double">Double/Multiple Star</option>
+          <option value="EN">Emission Nebula</option>
+          <option value="Gal">Galaxy</option>
+          <option value="GCl">Globular Cluster</option>
+          <option value="Moon">Moon / Lunar feature</option>
+          <option value="OCl">Open Cluster</option>
+          <option value="Planet">Planet</option>
+          <option value="PN">Planetary Nebula</option>
+          <option value="Q">Quasar</option>
+          <option value="RN">Reflection Nebula</option>
+          <option value="Star Cloud">Star Cloud</option>
+          <option value="Sun">Sun</option>
+          <option value="SNR">Supernova Remnant</option>
+          <option value="Variable">Variable Star</option>
+        </datalist>
+
+        <label for="constellation">Constellation:</label>
+        <input list="constellation_list" name="constellation" type="text" id="constellation" multiple>
+        <datalist id="constellation_list">
+        </datalist>
+        <button id="objshow">Show</button>
+      </div>
+
+      <div class=options>
+        <label for="invert">Invert:</label>
+        <input type="checkbox" name="invert" id="invert">
+      </div>
+
+    </div>
+
+    <div id="results">
+    </div>
+  </body>
+</html>
