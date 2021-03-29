@@ -65,7 +65,7 @@ function setObjectInfo(obs, element) {
     }
 }
 
-function showObservations(observation_ids) {
+function showObservations(observation_ids, object_ids) {
     // count of observations
     var resultsHeader = document.getElementById("results_header");
     // clear old header
@@ -73,7 +73,7 @@ function showObservations(observation_ids) {
         resultsHeader.removeChild(resultsHeader.lastChild);
     }
     var resultCount = document.createElement("p");
-    resultCount.textContent = "Found " + observation_ids.length + " observations.";
+    resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
     resultsHeader.appendChild(resultCount);
 
     var resultsArea = document.getElementById("results_list");
@@ -144,10 +144,16 @@ function showObjectsForSelectedProgram() {
     const program_name = programpicker.options[programpicker.selectedIndex].value;
     const entries = programs[program_name];
     const obs_ids = entries
+        .filter(o => o["observationId"] !== "")
         .map(o => o["observationId"])
-        .filter(onlyUnique)
-        .filter(name => name !== "");
-    showObservations(obs_ids);
+        .filter(onlyUnique);
+
+    // make a list of objects that appear in these observations
+    const obj_ids = entries
+        .filter(o => o["observationId"] !== "")
+        .map(o => o["objectId"])
+        .filter(onlyUnique);
+    showObservations(obs_ids, obj_ids);
 }
 
 function showObjectsForSelectedDate() {
@@ -159,7 +165,15 @@ function showObjectsForSelectedDate() {
             observation_ids.push(observation_id);
         }
     }
-    showObservations(observation_ids);
+
+    // make a list of objects that appear in these observations
+    const obj_ids = observation_ids
+        .map(o => observations[o]["ObjIds"])
+        .flat()
+        .map(o => o.split("|"))
+        .flat()
+        .filter(onlyUnique);
+    showObservations(observation_ids, obj_ids);
 }
 
 function ObjectNameIs(obj, name) {
@@ -209,9 +223,9 @@ function showObjectsForObjectQuery() {
     const do_con_match = constellation_element.value !== "";
 
     var observation_ids_and_matching_obj_id = [];
+    var all_matching_object_ids = [];
     for (const [observation_id, observation] of Object.entries(observations)) {
-        var observation_matches = false;
-        var matching_object = null;
+        var matching_objects = [];
         const obj_ids = observation["ObjIds"].split("|");
         const objs = obj_ids.map( obj_id => objects[obj_id])
         for (const obj of objs) {
@@ -231,14 +245,15 @@ function showObjectsForObjectQuery() {
                 object_matches = false;
             }
             if (object_matches) {
-                observation_matches = true;
-                matching_object = obj;
+                matching_objects.push(obj);
             }
         }
 
-        if (observation_matches) {
-            const obj_name = matching_object["Names"].split("/")[0];
+        if (matching_objects.length > 0) {
+            const obj_name = matching_objects[0]["Names"].split("/")[0];
             observation_ids_and_matching_obj_id.push([observation_id, obj_name]);
+            all_matching_object_ids = all_matching_object_ids.concat(
+                matching_objects.map(mo => mo["#id"]));
         }
     }
 
@@ -251,7 +266,8 @@ function showObjectsForObjectQuery() {
     // and strip down to just obs ids
     observation_ids = observation_ids_and_matching_obj_id.map(x => x[0]);
 
-    showObservations(observation_ids);
+    const deduped_matching_obj_ids = all_matching_object_ids.filter(onlyUnique);
+    showObservations(observation_ids, deduped_matching_obj_ids);
 }
 
 function invert() {
