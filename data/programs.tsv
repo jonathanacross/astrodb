@@ -1,2523 +1,2523 @@
-#program	number	Id
-Messier OP	1	M 31
-Messier OP	2	M 32
-Messier OP	3	M 110
-Messier OP	4	M 33
-Messier OP	5	M 52
-Messier OP	6	M 103
-Messier OP	7	M 34
-Messier OP	8	M 76
-Messier OP	9	M 1
-Messier OP	10	M 45
-Messier OP	11	M 36
-Messier OP	12	M 37
-Messier OP	13	M 38
-Messier OP	14	M 42
-Messier OP	15	M 43
-Messier OP	16	M 78
-Messier OP	17	M 79
-Messier OP	18	M 35
-Messier OP	19	M 50
-Messier OP	20	M 41
-Messier OP	21	M 46
-Messier OP	22	M 47
-Messier OP	23	M 93
-Messier OP	24	M 44
-Messier OP	25	M 67
-Messier OP	26	M 48
-Messier OP	27	M 81
-Messier OP	28	M 82
-Messier OP	29	M 97
-Messier OP	30	M 108
-Messier OP	31	M 109
-Messier OP	32	M 101
-Messier OP	33	M 40
-Messier OP	34	M 65
-Messier OP	35	M 66
-Messier OP	36	M 95
-Messier OP	37	M 96
-Messier OP	38	M 105
-Messier OP	39	M 3
-Messier OP	40	M 51
-Messier OP	41	M 63
-Messier OP	42	M 94
-Messier OP	43	M 106
-Messier OP	44	M 49
-Messier OP	45	M 58
-Messier OP	46	M 59
-Messier OP	47	M 60
-Messier OP	48	M 84
-Messier OP	49	M 86
-Messier OP	50	M 87
-Messier OP	51	M 89
-Messier OP	52	M 90
-Messier OP	53	M 61
-Messier OP	54	M 104
-Messier OP	55	M 53
-Messier OP	56	M 64
-Messier OP	57	M 85
-Messier OP	58	M 88
-Messier OP	59	M 98
-Messier OP	60	M 99
-Messier OP	61	M 100
-Messier OP	62	M 91
-Messier OP	63	M 68
-Messier OP	64	M 83
-Messier OP	65	M 5
-Messier OP	66	M 102
-Messier OP	67	M 13
-Messier OP	68	M 92
-Messier OP	69	M 9
-Messier OP	70	M 10
-Messier OP	71	M 12
-Messier OP	72	M 14
-Messier OP	73	M 19
-Messier OP	74	M 62
-Messier OP	75	M 107
-Messier OP	76	M 4
-Messier OP	77	M 80
-Messier OP	78	M 6
-Messier OP	79	M 7
-Messier OP	80	M 11
-Messier OP	81	M 26
-Messier OP	82	M 16
-Messier OP	83	M 17
-Messier OP	84	M 18
-Messier OP	85	M 24
-Messier OP	86	M 20
-Messier OP	87	M 21
-Messier OP	88	M 8
-Messier OP	89	M 22
-Messier OP	90	M 28
-Messier OP	91	M 23
-Messier OP	92	M 25
-Messier OP	93	M 54
-Messier OP	94	M 55
-Messier OP	95	M 69
-Messier OP	96	M 70
-Messier OP	97	M 75
-Messier OP	98	M 56
-Messier OP	99	M 57
-Messier OP	100	M 29
-Messier OP	101	M 39
-Messier OP	102	M 27
-Messier OP	103	M 71
-Messier OP	104	M 30
-Messier OP	105	M 2
-Messier OP	106	M 72
-Messier OP	107	M 73
-Messier OP	108	M 15
-Messier OP	109	M 74
-Messier OP	110	M 77
-Urban OP	1	NGC 129
-Urban OP	2	M 32
-Urban OP	3	M 31
-Urban OP	4	NGC 457
-Urban OP	5	NGC 663
-Urban OP	6	Cr 463
-Urban OP	7	NGC 752
-Urban OP	8	Stock 2
-Urban OP	9	NGC 869
-Urban OP	10	NGC 884
-Urban OP	11	Tr 2
-Urban OP	12	M 77
-Urban OP	13	Tr 3
-Urban OP	14	Stock 23
-Urban OP	15	Mel 20
-Urban OP	16	NGC 1342
-Urban OP	17	M 45
-Urban OP	18	Mel 25
-Urban OP	19	NGC 1647
-Urban OP	20	NGC 1807
-Urban OP	21	NGC 1817
-Urban OP	22	M 38
-Urban OP	23	M 36
-Urban OP	24	M 42
-Urban OP	25	NGC 1981
-Urban OP	26	M 37
-Urban OP	27	M 35
-Urban OP	28	NGC 2169
-Urban OP	29	NGC 2232
-Urban OP	30	NGC 2244
-Urban OP	31	NGC 2264
-Urban OP	32	NGC 2281
-Urban OP	33	M 41
-Urban OP	34	NGC 2301
-Urban OP	35	M 50
-Urban OP	36	NGC 2392
-Urban OP	37	NGC 2539
-Urban OP	38	M 48
-Urban OP	39	M 44
-Urban OP	40	M 67
-Urban OP	41	M 81
-Urban OP	42	M 82
-Urban OP	43	NGC 3242
-Urban OP	44	Mel 111
-Urban OP	45	M 84
-Urban OP	46	M 86
-Urban OP	47	M 87
-Urban OP	48	M 104
-Urban OP	49	M 94
-Urban OP	50	M 64
-Urban OP	51	M 3
-Urban OP	52	M 5
-Urban OP	53	M 4
-Urban OP	54	M 13
-Urban OP	55	NGC 6210
-Urban OP	56	M 12
-Urban OP	57	M 10
-Urban OP	58	M 62
-Urban OP	59	M 92
-Urban OP	60	M 6
-Urban OP	61	IC 4665
-Urban OP	62	M 7
-Urban OP	63	NGC 6520
-Urban OP	64	M 8
-Urban OP	65	M 17
-Urban OP	66	NGC 6633
-Urban OP	67	M 22
-Urban OP	68	IC 4756
-Urban OP	69	M 11
-Urban OP	70	NGC 6709
-Urban OP	71	M 57
-Urban OP	72	Cr 399
-Urban OP	73	NGC 6818
-Urban OP	74	NGC 6826
-Urban OP	75	M 27
-Urban OP	76	NGC 6910
-Urban OP	77	NGC 6934
-Urban OP	78	NGC 6940
-Urban OP	79	NGC 7009
-Urban OP	80	M 15
-Urban OP	81	M 2
-Urban OP	82	M 39
-Urban OP	83	NGC 7160
-Urban OP	84	NGC 7209
-Urban OP	85	NGC 7243
-Urban OP	86	NGC 7662
-Urban OP	87	NGC 7789
-Urban OP	88	Eta Cas
-Urban OP	89	Gamma Ari
-Urban OP	90	Gamma And
-Urban OP	91	Theta 1 Ori
-Urban OP	92	Beta Mon
-Urban OP	93	Gamma Leo
-Urban OP	94	Zeta UMa
-Urban OP	95	Beta Sco
-Urban OP	96	Epsilon Lyr
-Urban OP	97	Beta Cyg
-Urban OP	98	Gamma Del
-Urban OP	99	Delta Cep
-Urban OP	100	Beta Per
-Wimmer's List	1	M 31
-Wimmer's List	2	NGC 752
-Wimmer's List	3	NGC 7686
-Wimmer's List	4	NGC 2129
-Wimmer's List	5	M 35
-Wimmer's List	6	M 45
-Wimmer's List	7	NGC 1647
-Wimmer's List	8	NGC 1746
-Wimmer's List	9	Mel 25
-Wimmer's List	10	NGC 7160
-Wimmer's List	11	M 13
-Wimmer's List	12	M 92
-Wimmer's List	13	M 48
-Wimmer's List	14	NGC 7209
-Wimmer's List	15	NGC 7243
-Wimmer's List	16	NGC 2232
-Wimmer's List	17	NGC 2244
-Wimmer's List	18	NGC 2264
-Wimmer's List	19	NGC 2301
-Wimmer's List	20	M 50
-Wimmer's List	21	NGC 129
-Wimmer's List	22	NGC 457
-Wimmer's List	23	M 103
-Wimmer's List	24	NGC 654
-Wimmer's List	25	NGC 663
-Wimmer's List	26	NGC 1027
-Wimmer's List	27	M 52
-Wimmer's List	28	NGC 7789
-Wimmer's List	29	M 27
-Wimmer's List	30	NGC 6940
-Wimmer's List	31	M 57
-Wimmer's List	32	NGC 6811
-Wimmer's List	33	NGC 6871
-Wimmer's List	34	M 29
-Wimmer's List	35	M 39
-Wimmer's List	36	NGC 1662
-Wimmer's List	37	M 42
-Wimmer's List	38	NGC 1981
-Wimmer's List	39	M 43
-Wimmer's List	40	NGC 2169
-Wimmer's List	41	NGC 6709
-Wimmer's List	42	M 104
-Wimmer's List	43	M 15
-Wimmer's List	44	NGC 869
-Wimmer's List	45	NGC 884
-Wimmer's List	46	M 34
-Wimmer's List	47	NGC 1528
-Wimmer's List	48	NGC 1545
-Wimmer's List	49	M 51
-Wimmer's List	50	M 3
-Wimmer's List	51	M 44
-Wimmer's List	52	M 67
-Wimmer's List	53	M 47
-Wimmer's List	54	M 46
-Wimmer's List	55	M 93
-Wimmer's List	56	NGC 2539
-Wimmer's List	57	M 80
-Wimmer's List	58	M 4
-Wimmer's List	59	M 6
-Wimmer's List	60	M 7
-Wimmer's List	61	M 23
-Wimmer's List	62	M 20
-Wimmer's List	63	M 8
-Wimmer's List	64	M 21
-Wimmer's List	65	M 17
-Wimmer's List	66	M 22
-Wimmer's List	67	M 24
-Wimmer's List	68	M 25
-Wimmer's List	69	M 11
-Wimmer's List	70	M 5
-Wimmer's List	71	NGC 6604
-Wimmer's List	72	M 16
-Wimmer's List	73	M 12
-Wimmer's List	74	M 10
-Wimmer's List	75	NGC 6633
-Wimmer's List	76	M 81
-Wimmer's List	77	M 82
-Wimmer's List	78	M 40
-Wimmer's List	79	M 41
-Wimmer's List	80	NGC 2354
-Wimmer's List	81	NGC 2362
-Wimmer's List	82	M 2
-Wimmer's List	83	M 38
-Wimmer's List	84	M 36
-Wimmer's List	85	M 37
-Wimmer's List	86	NGC 2281
-Wimmer's List	87	NGC 1502
-Wimmer's List	88	Golf Putter
-Wimmer's List	89	Ally's Braid
-Wimmer's List	90	Spermatozoon
-Wimmer's List	91	Crossbow
-Wimmer's List	92	Toadstool
-Wimmer's List	93	Backwards 5
-Wimmer's List	94	Lucky 7
-Wimmer's List	95	Kemble's Kite
-Wimmer's List	96	Stargate
-Wimmer's List	97	Cr 399
-Wimmer's List	98	Engagement Ring
-Wimmer's List	99	Mini Coathanger
-Wimmer's List	100	Sailboat
-Wimmer's List	101	Orion's Belt
-Wimmer's List	102	Orion's Sword
-Wimmer's List	103	Lambda-Lambda
-Wimmer's List	104	Jaws
-Wimmer's List	105	DNA
-Wimmer's List	106	Napoleon's Hat
-Wimmer's List	107	Kemble's Cascade
-Wimmer's List	108	Gamma And
-Wimmer's List	109	Alpha Gem
-Wimmer's List	110	Delta Cep
-Wimmer's List	111	Gamma Del
-Wimmer's List	112	Alpha Her
-Wimmer's List	113	Eta Cas
-Wimmer's List	114	Epsilon Lyr
-Wimmer's List	115	Beta Lyr
-Wimmer's List	116	Beta Cyg
-Wimmer's List	117	Delta Ori
-Wimmer's List	118	Theta 2 Ori
-Wimmer's List	119	Theta 1 Ori
-Wimmer's List	120	Sigma Ori
-Wimmer's List	121	Alpha CVn
-Wimmer's List	122	12 Lyn
-Wimmer's List	123	16,17 Dra
-Wimmer's List	124	Delta Ser
-Wimmer's List	125	Zeta UMa
-Wimmer's List	126	Pi Boo
-Asterism OP	1	Small Keystone
-Asterism OP	2	Renou 18
-Asterism OP	3	NGC 457
-Asterism OP	4	Spatula
-Asterism OP	5	David's D
-Asterism OP	6	Pouring Cup
-Asterism OP	7	Engagement Ring
-Asterism OP	8	Kemble's Kite
-Asterism OP	9	Chi 1, 2, 3
-Asterism OP	10	Letter "F"
-Asterism OP	11	Letter "D"
-Asterism OP	12	Fish Hook
-Asterism OP	13	Double Triangle
-Asterism OP	14	Elosser 1
-Asterism OP	15	Leaping Minnow
-Asterism OP	16	Metronome
-Asterism OP	17	Smiley Face
-Asterism OP	18	Barbecue Fork
-Asterism OP	19	Funnel
-Asterism OP	20	NGC 2169
-Asterism OP	21	Nagler 1
-Asterism OP	22	Arrowhead
-Asterism OP	23	NGC 2264
-Asterism OP	24	Pakan's 3
-Asterism OP	25	Little Leo
-Asterism OP	26	Ray's Shrimp
-Asterism OP	27	Levy 384
-Asterism OP	28	Inchworm
-Asterism OP	29	Greg's 3
-Asterism OP	30	Spade
-Asterism OP	31	The Heart
-Asterism OP	32	Camel
-Asterism OP	33	Sailboat
-Asterism OP	34	A
-Asterism OP	35	Rinnan's Run
-Asterism OP	36	Broken Engagement Ring
-Asterism OP	37	Virgo Diamond
-Asterism OP	38	Stargate
-Asterism OP	39	Jaws
-Asterism OP	40	Curved Arrow
-Asterism OP	41	Ferrero 6
-Asterism OP	42	Sand Shovel
-Asterism OP	43	Gas Pump Handle
-Asterism OP	44	Napoleon's Hat
-Asterism OP	45	Kangaroo
-Asterism OP	46	DoDz 5
-Asterism OP	47	Mini Coathanger
-Asterism OP	48	Backwards 5
-Asterism OP	49	DoDz 6
-Asterism OP	50	Shark
-Asterism OP	51	Sudor Ophiuchi
-Asterism OP	52	DoDz 7
-Asterism OP	53	DoDz 8
-Asterism OP	54	M 6
-Asterism OP	55	Markov 1
-Asterism OP	56	Chinese Kite
-Asterism OP	57	Webb's Wreath
-Asterism OP	58	Mini Cassiopeia
-Asterism OP	59	Levy 157
-Asterism OP	60	Tennis Racket
-Asterism OP	61	Meerschaum Pipe
-Asterism OP	62	Vultus Irrisorie
-Asterism OP	63	Arrowchain
-Asterism OP	64	Leiter 4
-Asterism OP	65	Fairy Ring
-Asterism OP	66	Red Necked Emu
-Asterism OP	67	Patchik 56
-Asterism OP	68	Thompson 1
-Asterism OP	69	HD 196944
-Asterism OP	70	Poskus 1
-Asterism OP	71	M 73
-Asterism OP	72	Little Orion
-Asterism OP	73	10 Aquarii
-Asterism OP	74	Toadstool
-Asterism OP	75	Seedling
-Asterism OP	76	Tobacco Pipe
-Asterism OP	77	Delphinus Minor
-Asterism OP	78	Rocketship
-Asterism OP	79	Airplane
-Asterism OP	80	Yacht
-Asterism OP	81	TPK 1
-Asterism OP	82	Home Plate
-Asterism OP	83	Eddie's Coaster
-Asterism OP	84	Queen's Kite
-Asterism OP	85	Golf Putter
-Asterism OP	86	Question Mark
-Asterism OP	87	Northern Fly
-Asterism OP	88	M 45
-Asterism OP	89	Kemble's Cascade
-Asterism OP	90	Davis's Dog
-Asterism OP	91	S in Orion's Belt
-Asterism OP	92	Boomerang
-Asterism OP	93	Star Gun
-Asterism OP	94	Umbrella
-Asterism OP	95	Fly and Fly Swatter
-Asterism OP	96	Sea Horse
-Asterism OP	97	Baby Scorpion
-Asterism OP	98	Taurus Poniatovii
-Asterism OP	99	Cr 399
-Asterism OP	100	Herman's Cross
-Asterism OP	101	Lucky 7
-Asterism OP	102	Frederick's Glory
-Asterism OP	103	Sickle
-Asterism OP	104	Big Dipper
-Asterism OP	105	Keystone
-Asterism OP	106	Tea Pot
-Asterism OP	107	Teaspoon
-Asterism OP	108	Northern Cross
-Asterism OP	109	Job's Coffin
-Asterism OP	110	Water Jar
-Asterism OP	111	Circlet
-Asterism OP	112	Great Square of Pegasus
-500 Best DSOs	1	NGC 40
-500 Best DSOs	2	NGC 55
-500 Best DSOs	3	NGC 128
-500 Best DSOs	4	NGC 134
-500 Best DSOs	5	NGC 147
-500 Best DSOs	6	NGC 157
-500 Best DSOs	7	NGC 185
-500 Best DSOs	8	NGC 188
-500 Best DSOs	9	NGC 189
-500 Best DSOs	10	M 110
-500 Best DSOs	11	NGC 206
-500 Best DSOs	12	M 32
-500 Best DSOs	13	M 31
-500 Best DSOs	14	NGC 225
-500 Best DSOs	15	NGC 246
-500 Best DSOs	16	NGC 247
-500 Best DSOs	17	NGC 253
-500 Best DSOs	18	NGC 278
-500 Best DSOs	19	NGC 281
-500 Best DSOs	20	NGC 288
-500 Best DSOs	21	NGC 300
-500 Best DSOs	22	NGC 381
-500 Best DSOs	23	NGC 404
-500 Best DSOs	24	NGC 436
-500 Best DSOs	25	NGC 457
-500 Best DSOs	26	NGC 488
-500 Best DSOs	27	NGC 578
-500 Best DSOs	28	M 103
-500 Best DSOs	29	NGC 584
-500 Best DSOs	30	M 33
-500 Best DSOs	31	M 74
-500 Best DSOs	32	NGC 637
-500 Best DSOs	33	NGC 654
-500 Best DSOs	34	NGC 659
-500 Best DSOs	35	NGC 663
-500 Best DSOs	36	NGC 669
-500 Best DSOs	37	NGC 670
-500 Best DSOs	38	NGC 672
-500 Best DSOs	39	NGC 684
-500 Best DSOs	40	NGC 743
-500 Best DSOs	41	NGC 751
-500 Best DSOs	42	NGC 772
-500 Best DSOs	43	NGC 784
-500 Best DSOs	44	NGC 864
-500 Best DSOs	45	NGC 869
-500 Best DSOs	46	NGC 877
-500 Best DSOs	47	NGC 884
-500 Best DSOs	48	NGC 891
-500 Best DSOs	49	NGC 908
-500 Best DSOs	50	NGC 925
-500 Best DSOs	51	NGC 949
-500 Best DSOs	52	NGC 955
-500 Best DSOs	53	NGC 972
-500 Best DSOs	54	NGC 1003
-500 Best DSOs	55	NGC 1023
-500 Best DSOs	56	M 34
-500 Best DSOs	57	M 77
-500 Best DSOs	58	NGC 1087
-500 Best DSOs	59	NGC 1160
-500 Best DSOs	60	NGC 1187
-500 Best DSOs	61	NGC 1232
-500 Best DSOs	62	NGC 1245
-500 Best DSOs	63	NGC 1300
-500 Best DSOs	64	NGC 1316
-500 Best DSOs	65	NGC 1331
-500 Best DSOs	66	NGC 1332
-500 Best DSOs	67	NGC 1333
-500 Best DSOs	68	NGC 1342
-500 Best DSOs	69	NGC 1360
-500 Best DSOs	70	NGC 1365
-500 Best DSOs	71	NGC 1369
-500 Best DSOs	72	NGC 1395
-500 Best DSOs	73	NGC 1398
-500 Best DSOs	74	NGC 1399
-500 Best DSOs	75	NGC 1400
-500 Best DSOs	76	NGC 1404
-500 Best DSOs	77	NGC 1407
-500 Best DSOs	78	NGC 1421
-500 Best DSOs	79	NGC 1435
-500 Best DSOs	80	NGC 1444
-500 Best DSOs	81	NGC 1491
-500 Best DSOs	82	NGC 1501
-500 Best DSOs	83	NGC 1502
-500 Best DSOs	84	NGC 1507
-500 Best DSOs	85	NGC 1514
-500 Best DSOs	86	NGC 1528
-500 Best DSOs	87	NGC 1531
-500 Best DSOs	88	NGC 1532
-500 Best DSOs	89	NGC 1535
-500 Best DSOs	90	NGC 1545
-500 Best DSOs	91	NGC 1579
-500 Best DSOs	92	NGC 1647
-500 Best DSOs	93	NGC 1664
-500 Best DSOs	94	NGC 1746
-500 Best DSOs	95	NGC 1778
-500 Best DSOs	96	NGC 1798
-500 Best DSOs	97	NGC 1817
-500 Best DSOs	98	NGC 1857
-500 Best DSOs	99	NGC 1883
-500 Best DSOs	100	NGC 1893
-500 Best DSOs	101	M 79
-500 Best DSOs	102	NGC 1907
-500 Best DSOs	103	M 38
-500 Best DSOs	104	NGC 1931
-500 Best DSOs	105	M 1
-500 Best DSOs	106	M 36
-500 Best DSOs	107	NGC 1964
-500 Best DSOs	108	M 42
-500 Best DSOs	109	NGC 1980
-500 Best DSOs	110	NGC 1981
-500 Best DSOs	111	M 43
-500 Best DSOs	112	NGC 1999
-500 Best DSOs	113	NGC 2022
-500 Best DSOs	114	NGC 2024
-500 Best DSOs	115	M 78
-500 Best DSOs	116	M 37
-500 Best DSOs	117	NGC 2126
-500 Best DSOs	118	NGC 2129
-500 Best DSOs	119	NGC 2141
-500 Best DSOs	120	NGC 2146
-500 Best DSOs	121	NGC 2158
-500 Best DSOs	122	M 35
-500 Best DSOs	123	NGC 2169
-500 Best DSOs	124	NGC 2192
-500 Best DSOs	125	NGC 2194
-500 Best DSOs	126	NGC 2204
-500 Best DSOs	127	NGC 2207
-500 Best DSOs	128	NGC 2217
-500 Best DSOs	129	NGC 2225
-500 Best DSOs	130	NGC 2236
-500 Best DSOs	131	NGC 2251
-500 Best DSOs	132	NGC 2254
-500 Best DSOs	133	NGC 2259
-500 Best DSOs	134	NGC 2261
-500 Best DSOs	135	NGC 2264
-500 Best DSOs	136	NGC 2266
-500 Best DSOs	137	NGC 2268
-500 Best DSOs	138	NGC 2269
-500 Best DSOs	139	NGC 2281
-500 Best DSOs	140	NGC 2286
-500 Best DSOs	141	M 41
-500 Best DSOs	142	NGC 2301
-500 Best DSOs	143	NGC 2309
-500 Best DSOs	144	NGC 2316
-500 Best DSOs	145	M 50
-500 Best DSOs	146	NGC 2336
-500 Best DSOs	147	NGC 2345
-500 Best DSOs	148	NGC 2353
-500 Best DSOs	149	NGC 2354
-500 Best DSOs	150	NGC 2355
-500 Best DSOs	151	NGC 2359
-500 Best DSOs	152	NGC 2360
-500 Best DSOs	153	NGC 2362
-500 Best DSOs	154	NGC 2374
-500 Best DSOs	155	NGC 2392
-500 Best DSOs	156	NGC 2401
-500 Best DSOs	157	NGC 2403
-500 Best DSOs	158	NGC 2419
-500 Best DSOs	159	NGC 2420
-500 Best DSOs	160	NGC 2421
-500 Best DSOs	161	M 47
-500 Best DSOs	162	NGC 2425
-500 Best DSOs	163	M 46
-500 Best DSOs	164	NGC 2438
-500 Best DSOs	165	NGC 2439
-500 Best DSOs	166	NGC 2440
-500 Best DSOs	167	M 93
-500 Best DSOs	168	NGC 2451
-500 Best DSOs	169	NGC 2452
-500 Best DSOs	170	NGC 2453
-500 Best DSOs	171	NGC 2467
-500 Best DSOs	172	NGC 2477
-500 Best DSOs	173	NGC 2479
-500 Best DSOs	174	NGC 2489
-500 Best DSOs	175	NGC 2506
-500 Best DSOs	176	NGC 2509
-500 Best DSOs	177	NGC 2533
-500 Best DSOs	178	NGC 2537
-500 Best DSOs	179	NGC 2539
-500 Best DSOs	180	NGC 2546
-500 Best DSOs	181	M 48
-500 Best DSOs	182	NGC 2567
-500 Best DSOs	183	NGC 2588
-500 Best DSOs	184	NGC 2610
-500 Best DSOs	185	NGC 2655
-500 Best DSOs	186	NGC 2681
-500 Best DSOs	187	M 67
-500 Best DSOs	188	NGC 2683
-500 Best DSOs	189	NGC 2768
-500 Best DSOs	190	NGC 2815
-500 Best DSOs	191	NGC 2841
-500 Best DSOs	192	NGC 2903
-500 Best DSOs	193	NGC 3003
-500 Best DSOs	194	M 81
-500 Best DSOs	195	M 82
-500 Best DSOs	196	NGC 3077
-500 Best DSOs	197	NGC 3079
-500 Best DSOs	198	NGC 3091
-500 Best DSOs	199	NGC 3109
-500 Best DSOs	200	NGC 3115
-500 Best DSOs	201	NGC 3184
-500 Best DSOs	202	NGC 3226
-500 Best DSOs	203	NGC 3227
-500 Best DSOs	204	NGC 3242
-500 Best DSOs	205	NGC 3344
-500 Best DSOs	206	M 95
-500 Best DSOs	207	M 96
-500 Best DSOs	208	NGC 3373
-500 Best DSOs	209	M 105
-500 Best DSOs	210	NGC 3384
-500 Best DSOs	211	NGC 3432
-500 Best DSOs	212	NGC 3507
-500 Best DSOs	213	NGC 3511
-500 Best DSOs	214	NGC 3521
-500 Best DSOs	215	M 108
-500 Best DSOs	216	M 97
-500 Best DSOs	217	NGC 3621
-500 Best DSOs	218	M 65
-500 Best DSOs	219	M 66
-500 Best DSOs	220	NGC 3628
-500 Best DSOs	221	NGC 3631
-500 Best DSOs	222	NGC 3672
-500 Best DSOs	223	NGC 3675
-500 Best DSOs	224	NGC 3718
-500 Best DSOs	225	NGC 3726
-500 Best DSOs	226	NGC 3877
-500 Best DSOs	227	NGC 3887
-500 Best DSOs	228	NGC 3893
-500 Best DSOs	229	NGC 3896
-500 Best DSOs	230	NGC 3917
-500 Best DSOs	231	NGC 3938
-500 Best DSOs	232	NGC 3945
-500 Best DSOs	233	NGC 3953
-500 Best DSOs	234	NGC 3955
-500 Best DSOs	235	NGC 3962
-500 Best DSOs	236	M 109
-500 Best DSOs	237	NGC 4027
-500 Best DSOs	238	NGC 4038
-500 Best DSOs	239	NGC 4039
-500 Best DSOs	240	NGC 4111
-500 Best DSOs	241	NGC 4147
-500 Best DSOs	242	M 98
-500 Best DSOs	243	NGC 4214
-500 Best DSOs	244	NGC 4216
-500 Best DSOs	245	NGC 4244
-500 Best DSOs	246	M 99
-500 Best DSOs	247	M 106
-500 Best DSOs	248	NGC 4274
-500 Best DSOs	249	NGC 4278
-500 Best DSOs	250	M 61
-500 Best DSOs	251	NGC 4314
-500 Best DSOs	252	M 100
-500 Best DSOs	253	NGC 4346
-500 Best DSOs	254	NGC 4361
-500 Best DSOs	255	M 84
-500 Best DSOs	256	M 85
-500 Best DSOs	257	M 86
-500 Best DSOs	258	NGC 4414
-500 Best DSOs	259	NGC 4435
-500 Best DSOs	260	NGC 4438
-500 Best DSOs	261	NGC 4449
-500 Best DSOs	262	NGC 4450
-500 Best DSOs	263	M 49
-500 Best DSOs	264	NGC 4485
-500 Best DSOs	265	M 87
-500 Best DSOs	266	NGC 4490
-500 Best DSOs	267	NGC 4494
-500 Best DSOs	268	M 88
-500 Best DSOs	269	NGC 4517
-500 Best DSOs	270	NGC 4526
-500 Best DSOs	271	NGC 4535
-500 Best DSOs	272	NGC 4536
-500 Best DSOs	273	M 91
-500 Best DSOs	274	M 89
-500 Best DSOs	275	NGC 4559
-500 Best DSOs	276	NGC 4565
-500 Best DSOs	277	NGC 4567
-500 Best DSOs	278	NGC 4568
-500 Best DSOs	279	M 90
-500 Best DSOs	280	M 58
-500 Best DSOs	281	M 68
-500 Best DSOs	282	M 104
-500 Best DSOs	283	NGC 4605
-500 Best DSOs	284	NGC 4618
-500 Best DSOs	285	M 59
-500 Best DSOs	286	NGC 4625
-500 Best DSOs	287	NGC 4627
-500 Best DSOs	288	NGC 4631
-500 Best DSOs	289	M 60
-500 Best DSOs	290	NGC 4666
-500 Best DSOs	291	NGC 4699
-500 Best DSOs	292	NGC 4710
-500 Best DSOs	293	NGC 4725
-500 Best DSOs	294	M 94
-500 Best DSOs	295	NGC 4782
-500 Best DSOs	296	NGC 4783
-500 Best DSOs	297	M 64
-500 Best DSOs	298	NGC 5005
-500 Best DSOs	299	M 53
-500 Best DSOs	300	NGC 5053
-500 Best DSOs	301	NGC 5054
-500 Best DSOs	302	M 63
-500 Best DSOs	303	NGC 5102
-500 Best DSOs	304	M 51
-500 Best DSOs	305	NGC 5195
-500 Best DSOs	306	M 83
-500 Best DSOs	307	NGC 5248
-500 Best DSOs	308	M 3
-500 Best DSOs	309	NGC 5363
-500 Best DSOs	310	NGC 5364
-500 Best DSOs	311	M 101
-500 Best DSOs	312	NGC 5466
-500 Best DSOs	313	NGC 5634
-500 Best DSOs	314	NGC 5676
-500 Best DSOs	315	NGC 5689
-500 Best DSOs	316	NGC 5746
-500 Best DSOs	317	NGC 5846
-500 Best DSOs	318	M 102
-500 Best DSOs	319	NGC 5897
-500 Best DSOs	320	M 5
-500 Best DSOs	321	NGC 5907
-500 Best DSOs	322	NGC 5986
-500 Best DSOs	323	NGC 6015
-500 Best DSOs	324	M 80
-500 Best DSOs	325	M 4
-500 Best DSOs	326	NGC 6140
-500 Best DSOs	327	NGC 6144
-500 Best DSOs	328	M 107
-500 Best DSOs	329	M 13
-500 Best DSOs	330	NGC 6207
-500 Best DSOs	331	NGC 6210
-500 Best DSOs	332	M 12
-500 Best DSOs	333	NGC 6242
-500 Best DSOs	334	M 10
-500 Best DSOs	335	M 62
-500 Best DSOs	336	M 19
-500 Best DSOs	337	NGC 6281
-500 Best DSOs	338	NGC 6284
-500 Best DSOs	339	NGC 6302
-500 Best DSOs	340	NGC 6309
-500 Best DSOs	341	NGC 6316
-500 Best DSOs	342	M 9
-500 Best DSOs	343	M 92
-500 Best DSOs	344	NGC 6356
-500 Best DSOs	345	NGC 6369
-500 Best DSOs	346	NGC 6383
-500 Best DSOs	347	NGC 6400
-500 Best DSOs	348	M 14
-500 Best DSOs	349	NGC 6404
-500 Best DSOs	350	M 6
-500 Best DSOs	351	NGC 6440
-500 Best DSOs	352	NGC 6441
-500 Best DSOs	353	NGC 6444
-500 Best DSOs	354	NGC 6445
-500 Best DSOs	355	NGC 6451
-500 Best DSOs	356	M 23
-500 Best DSOs	357	NGC 6503
-500 Best DSOs	358	NGC 6507
-500 Best DSOs	359	M 20
-500 Best DSOs	360	NGC 6520
-500 Best DSOs	361	NGC 6522
-500 Best DSOs	362	M 8
-500 Best DSOs	363	NGC 6528
-500 Best DSOs	364	NGC 6530
-500 Best DSOs	365	M 21
-500 Best DSOs	366	NGC 6539
-500 Best DSOs	367	NGC 6540
-500 Best DSOs	368	NGC 6543
-500 Best DSOs	369	NGC 6544
-500 Best DSOs	370	NGC 6553
-500 Best DSOs	371	NGC 6558
-500 Best DSOs	372	NGC 6563
-500 Best DSOs	373	NGC 6572
-500 Best DSOs	374	NGC 6603
-500 Best DSOs	375	M 16
-500 Best DSOs	376	M 18
-500 Best DSOs	377	M 17
-500 Best DSOs	378	NGC 6624
-500 Best DSOs	379	M 28
-500 Best DSOs	380	NGC 6629
-500 Best DSOs	381	NGC 6633
-500 Best DSOs	382	M 69
-500 Best DSOs	383	NGC 6638
-500 Best DSOs	384	NGC 6642
-500 Best DSOs	385	NGC 6643
-500 Best DSOs	386	NGC 6645
-500 Best DSOs	387	NGC 6649
-500 Best DSOs	388	M 22
-500 Best DSOs	389	NGC 6664
-500 Best DSOs	390	M 70
-500 Best DSOs	391	M 26
-500 Best DSOs	392	M 11
-500 Best DSOs	393	NGC 6709
-500 Best DSOs	394	NGC 6712
-500 Best DSOs	395	M 54
-500 Best DSOs	396	NGC 6717
-500 Best DSOs	397	M 57
-500 Best DSOs	398	NGC 6723
-500 Best DSOs	399	NGC 6726
-500 Best DSOs	400	NGC 6755
-500 Best DSOs	401	NGC 6756
-500 Best DSOs	402	M 56
-500 Best DSOs	403	NGC 6781
-500 Best DSOs	404	NGC 6791
-500 Best DSOs	405	NGC 6802
-500 Best DSOs	406	NGC 6804
-500 Best DSOs	407	M 55
-500 Best DSOs	408	NGC 6811
-500 Best DSOs	409	NGC 6818
-500 Best DSOs	410	NGC 6819
-500 Best DSOs	411	NGC 6820
-500 Best DSOs	412	NGC 6822
-500 Best DSOs	413	NGC 6823
-500 Best DSOs	414	NGC 6826
-500 Best DSOs	415	NGC 6830
-500 Best DSOs	416	NGC 6834
-500 Best DSOs	417	M 71
-500 Best DSOs	418	M 27
-500 Best DSOs	419	M 75
-500 Best DSOs	420	NGC 6866
-500 Best DSOs	421	NGC 6888
-500 Best DSOs	422	NGC 6891
-500 Best DSOs	423	NGC 6905
-500 Best DSOs	424	NGC 6910
-500 Best DSOs	425	M 29
-500 Best DSOs	426	NGC 6934
-500 Best DSOs	427	NGC 6939
-500 Best DSOs	428	NGC 6940
-500 Best DSOs	429	NGC 6946
-500 Best DSOs	430	M 72
-500 Best DSOs	431	NGC 7006
-500 Best DSOs	432	NGC 7008
-500 Best DSOs	433	NGC 7009
-500 Best DSOs	434	NGC 7015
-500 Best DSOs	435	NGC 7026
-500 Best DSOs	436	NGC 7027
-500 Best DSOs	437	NGC 7044
-500 Best DSOs	438	NGC 7063
-500 Best DSOs	439	M 15
-500 Best DSOs	440	NGC 7086
-500 Best DSOs	441	M 2
-500 Best DSOs	442	M 39
-500 Best DSOs	443	M 30
-500 Best DSOs	444	NGC 7160
-500 Best DSOs	445	NGC 7174
-500 Best DSOs	446	NGC 7176
-500 Best DSOs	447	NGC 7209
-500 Best DSOs	448	NGC 7243
-500 Best DSOs	449	NGC 7245
-500 Best DSOs	450	NGC 7293
-500 Best DSOs	451	NGC 7314
-500 Best DSOs	452	NGC 7331
-500 Best DSOs	453	NGC 7380
-500 Best DSOs	454	NGC 7423
-500 Best DSOs	455	NGC 7479
-500 Best DSOs	456	NGC 7510
-500 Best DSOs	457	NGC 7541
-500 Best DSOs	458	NGC 7606
-500 Best DSOs	459	M 52
-500 Best DSOs	460	NGC 7662
-500 Best DSOs	461	NGC 7762
-500 Best DSOs	462	NGC 7789
-500 Best DSOs	463	NGC 7790
-500 Best DSOs	464	NGC 7793
-500 Best DSOs	465	NGC 7814
-500 Best DSOs	466	NGC 1554,1555
-500 Best DSOs	467	NGC 1973,1975
-500 Best DSOs	468	NGC 1977
-500 Best DSOs	469	NGC 2237,2238,2239,2246
-500 Best DSOs	470	NGC 2244
-500 Best DSOs	471a	NGC 2371
-500 Best DSOs	471b	NGC 2372
-500 Best DSOs	472	NGC 4656,4657
-500 Best DSOs	473	M 76
-500 Best DSOs	474	NGC 6885
-500 Best DSOs	475a	NGC 6960
-500 Best DSOs	475b	NGC 6992,6995
-500 Best DSOs	476	B 86
-500 Best DSOs	477	B 92
-500 Best DSOs	478	B 93
-500 Best DSOs	479	Berkeley 68
-500 Best DSOs	480	Berkeley 94
-500 Best DSOs	481	Harvard 20
-500 Best DSOs	482	IC 1310
-500 Best DSOs	483	IC 10
-500 Best DSOs	484	IC 1434
-500 Best DSOs	485	IC 1805
-500 Best DSOs	486	IC 2149
-500 Best DSOs	487	IC 2163
-500 Best DSOs	488	IC 349
-500 Best DSOs	489	IC 3568
-500 Best DSOs	490	IC 410
-500 Best DSOs	491	IC 418
-500 Best DSOs	492	IC 4593
-500 Best DSOs	493	IC 4665
-500 Best DSOs	494	M 25
-500 Best DSOs	495	IC 4756
-500 Best DSOs	496	IC 4776
-500 Best DSOs	497	IC 5271
-500 Best DSOs	498	King 10
-500 Best DSOs	499	Mel 71
-500 Best DSOs	500	Tr 1
-500 Best DSOs	501	Tr 32
-RASC Best of NGC	1	NGC 7009
-RASC Best of NGC	2	NGC 7293
-RASC Best of NGC	3	NGC 7331
-RASC Best of NGC	4	NGC 7635
-RASC Best of NGC	5	NGC 7789
-RASC Best of NGC	6	NGC 185
-RASC Best of NGC	7	NGC 281
-RASC Best of NGC	8	NGC 457
-RASC Best of NGC	9	NGC 663
-RASC Best of NGC	10	IC 289
-RASC Best of NGC	11	NGC 7662
-RASC Best of NGC	12	NGC 891
-RASC Best of NGC	13	NGC 253
-RASC Best of NGC	14	NGC 772
-RASC Best of NGC	15	NGC 246
-RASC Best of NGC	16	NGC 936
-RASC Best of NGC	17a	NGC 869
-RASC Best of NGC	17b	NGC 884
-RASC Best of NGC	18	NGC 1023
-RASC Best of NGC	19	NGC 1491
-RASC Best of NGC	20	NGC 1501
-RASC Best of NGC	21	NGC 1232
-RASC Best of NGC	22	NGC 1535
-RASC Best of NGC	23	NGC 1514
-RASC Best of NGC	24	NGC 1931
-RASC Best of NGC	25	NGC 1788
-RASC Best of NGC	26	NGC 1973,1975
-RASC Best of NGC	27	NGC 2022
-RASC Best of NGC	28	NGC 2024
-RASC Best of NGC	29	NGC 2194
-RASC Best of NGC	30a	NGC 2371
-RASC Best of NGC	30b	NGC 2372
-RASC Best of NGC	31	NGC 2392
-RASC Best of NGC	32	NGC 2237,2238,2239,2246
-RASC Best of NGC	33	NGC 2261
-RASC Best of NGC	34	NGC 2359
-RASC Best of NGC	35	NGC 2440
-RASC Best of NGC	36	NGC 2539
-RASC Best of NGC	37	NGC 2403
-RASC Best of NGC	38	NGC 2655
-RASC Best of NGC	39	NGC 2683
-RASC Best of NGC	40	NGC 2841
-RASC Best of NGC	41	NGC 3079
-RASC Best of NGC	42	NGC 3184
-RASC Best of NGC	43	NGC 3877
-RASC Best of NGC	44	NGC 3941
-RASC Best of NGC	45	NGC 4026
-RASC Best of NGC	46	NGC 4088
-RASC Best of NGC	47	NGC 4157
-RASC Best of NGC	48	NGC 4605
-RASC Best of NGC	49	NGC 3115
-RASC Best of NGC	50	NGC 3242
-RASC Best of NGC	51	NGC 3003
-RASC Best of NGC	52	NGC 3344
-RASC Best of NGC	53	NGC 3432
-RASC Best of NGC	54	NGC 2903
-RASC Best of NGC	55	NGC 3384
-RASC Best of NGC	56	NGC 3521
-RASC Best of NGC	57	NGC 3607
-RASC Best of NGC	58	NGC 3628
-RASC Best of NGC	59	NGC 4111
-RASC Best of NGC	60	NGC 4214
-RASC Best of NGC	61	NGC 4244
-RASC Best of NGC	62	NGC 4449
-RASC Best of NGC	63	NGC 4490
-RASC Best of NGC	64	NGC 4631
-RASC Best of NGC	65	NGC 4656,4657
-RASC Best of NGC	66	NGC 5005
-RASC Best of NGC	67	NGC 5033
-RASC Best of NGC	68	NGC 4274
-RASC Best of NGC	69	NGC 4414
-RASC Best of NGC	70	NGC 4494
-RASC Best of NGC	71	NGC 4559
-RASC Best of NGC	72	NGC 4565
-RASC Best of NGC	73	NGC 4725
-RASC Best of NGC	74a	NGC 4038
-RASC Best of NGC	74b	NGC 4039
-RASC Best of NGC	75	NGC 4361
-RASC Best of NGC	76	NGC 4216
-RASC Best of NGC	77	NGC 4388
-RASC Best of NGC	78	NGC 4438
-RASC Best of NGC	79	NGC 4517
-RASC Best of NGC	80	NGC 4526
-RASC Best of NGC	81	NGC 4535
-RASC Best of NGC	82a	NGC 4567
-RASC Best of NGC	82b	NGC 4568
-RASC Best of NGC	83	NGC 4699
-RASC Best of NGC	84	NGC 4762
-RASC Best of NGC	85	NGC 5746
-RASC Best of NGC	86	NGC 5466
-RASC Best of NGC	87	NGC 5907
-RASC Best of NGC	88	NGC 6503
-RASC Best of NGC	89	NGC 6543
-RASC Best of NGC	90	NGC 6210
-RASC Best of NGC	91	NGC 6369
-RASC Best of NGC	92	NGC 6572
-RASC Best of NGC	93	NGC 6633
-RASC Best of NGC	94	NGC 6712
-RASC Best of NGC	95	NGC 6781
-RASC Best of NGC	96	NGC 6819
-RASC Best of NGC	97	NGC 6826
-RASC Best of NGC	98	NGC 6888
-RASC Best of NGC	99a	NGC 6960
-RASC Best of NGC	99b	NGC 6992,6995
-RASC Best of NGC	100	NGC 7000
-RASC Best of NGC	101	NGC 7027
-RASC Best of NGC	102	NGC 6445
-RASC Best of NGC	103	NGC 6520
-RASC Best of NGC	104	NGC 6818
-RASC Best of NGC	105	NGC 6802
-RASC Best of NGC	106	NGC 6940
-RASC Best of NGC	107	NGC 6939
-RASC Best of NGC	108	NGC 6946
-RASC Best of NGC	109	NGC 7129
-RASC Best of NGC	110	NGC 40
-Multiple Star OP	1	STF 3056 AB,C,D
-Multiple Star OP	2	STF 28, FYM 12
-Multiple Star OP	3	STF 42
-Multiple Star OP	4	5 Aql
-Multiple Star OP	5	STF 2787
-Multiple Star OP	6	STF 2944
-Multiple Star OP	7	AG 38
-Multiple Star OP	8	STF 271
-Multiple Star OP	9	STF 291
-Multiple Star OP	10	STF 711 ABCD
-Multiple Star OP	11	STF 718 ABC
-Multiple Star OP	12	STF 796
-Multiple Star OP	13	STF 1808
-Multiple Star OP	14	STF 1843
-Multiple Star OP	15	STF 1854
-Multiple Star OP	16	BU 31
-Multiple Star OP	17	STF 1896
-Multiple Star OP	18	STF 373 AB, STTA 33 AC, STU1 AD
-Multiple Star OP	19	HJ 2200 ABC
-Multiple Star OP	20	STF 617 and STF 618
-Multiple Star OP	21	STF 866
-Multiple Star OP	22	STF 1075
-Multiple Star OP	23	STF 1169, PKO 21
-Multiple Star OP	24	STT 7
-Multiple Star OP	25	STT 9
-Multiple Star OP	26	HJ 1054
-Multiple Star OP	27	BU 1
-Multiple Star OP	28	Iota Cas
-Multiple Star OP	29	AR Cas, STT 496
-Multiple Star OP	30	STF 2816
-Multiple Star OP	31	H III 80
-Multiple Star OP	32	HJ 658
-Multiple Star OP	33	S 516
-Multiple Star OP	34	Tau CMa, HJ 3948
-Multiple Star OP	35	Zeta Cnc
-Multiple Star OP	36	STF 1245
-Multiple Star OP	37	S 571
-Multiple Star OP	38	ENG 37
-Multiple Star OP	39	STF 1300
-Multiple Star OP	40	HJ 3858
-Multiple Star OP	41	HJ 3875+BU 755
-Multiple Star OP	42	12 Com
-Multiple Star OP	43	STF 1685
-Multiple Star OP	44	STF 1964
-Multiple Star OP	45	STF 2011
-Multiple Star OP	46	SHJ 223
-Multiple Star OP	47	JC 16
-Multiple Star OP	48	STF 1604
-Multiple Star OP	49	Stargate
-Multiple Star OP	50	STF 1669
-Multiple Star OP	51	HJ 2617+BKO 114
-Multiple Star OP	52	STT 269+ARN 8
-Multiple Star OP	53	STF 1769
-Multiple Star OP	54	Delta Cyg
-Multiple Star OP	55	STF 2673, 2374
-Multiple Star OP	56	S 752, BU 987
-Multiple Star OP	57	STFA 25 ABC
-Multiple Star OP	58	STF 1996 ABC
-Multiple Star OP	59	STF 2302
-Multiple Star OP	60	STF 518 A, BC, D, E
-Multiple Star OP	61	HJ 3644 AB,C AB,D
-Multiple Star OP	62	51 Eri, BU 88, WAL 32
-Multiple Star OP	63	HJ 3677 AB, DAW 81 BC
-Multiple Star OP	64	62 Eri, SHJ 48, GMC 11
-Multiple Star OP	65	66 Eri, STF 642, HUB 5
-Multiple Star OP	66	HJ 3518
-Multiple Star OP	67	STF 982 ABC
-Multiple Star OP	68	STF 1007 AD
-Multiple Star OP	69	STF 1054
-Multiple Star OP	70	STF 1102 ABDE
-Multiple Star OP	71	Castor ABCD, STF 1110
-Multiple Star OP	72	STF 2052
-Multiple Star OP	73	STFA 31AB
-Multiple Star OP	74	STF 2083
-Multiple Star OP	75	100 Her, STF 2280
-Multiple Star OP	76	STF 1316
-Multiple Star OP	77	HU 227
-Multiple Star OP	78	DUN 116 ABC
-Multiple Star OP	79	HJ 1823
-Multiple Star OP	80	STF 1364, HJ 466
-Multiple Star OP	81	STT 204, WAL 56
-Multiple Star OP	82	HJ 3780
-Multiple Star OP	83	5 Lyn
-Multiple Star OP	84	STT 525
-Multiple Star OP	85	10 Mon
-Multiple Star OP	86	Rho Oph, H 2 19
-Multiple Star OP	87	STF 2050 ABCD
-Multiple Star OP	88	SHJ 49
-Multiple Star OP	89	STF 697
-Multiple Star OP	90	STF 761 & 762
-Multiple Star OP	91	STF 788
-Multiple Star OP	92	STF 815
-Multiple Star OP	93	BU 193
-Multiple Star OP	94	STF 3060 ABCDE
-Multiple Star OP	95	STF 2799
-Multiple Star OP	96	STF 162
-Multiple Star OP	97	STF 270
-Multiple Star OP	98	Zeta Per, STF 464
-Multiple Star OP	99	STF 533
-Multiple Star OP	100	HJ 4106+LDS 223
-Multiple Star OP	101	HDO 204
-Multiple Star OP	102	HJ 4199
-Multiple Star OP	103	HJ 4935, Gliese 667
-Multiple Star OP	104	STF 2007
-Multiple Star OP	105	STF 1464
-Multiple Star OP	106	STFA 7 and STF 401
-Multiple Star OP	107	STFA 8 Alcyone
-Multiple Star OP	108	STF 258 + BU 876AB
-Multiple Star OP	109	STF 1415
-Multiple Star OP	110	36 UMa, LDS 2863
-Multiple Star OP	111	STF 1608 ABC
-Multiple Star OP	112	STF 1691 ABC*
-Multiple Star OP	113	STF 1830 & 1831 ABCDEFG
-Multiple Star OP	114	STF 2521 ABCD
-Best Triples	73	1 Aqr
-Best Triples	43	10 Mon
-Best Triples	68	12 Com
-Best Triples	4	12 Lyn
-Best Triples	13	14 Aur
-Best Triples	12	16,17 Dra
-Best Triples	32	41 Aqr
-Best Triples	28	41 Lep
-Best Triples	38	5 Aql
-Best Triples	69	5 Lyn
-Best Triples	44	6 Cas
-Best Triples	76	7 LMi
-Best Triples	47	Alpha Cap
-Best Triples	1	Beta Mon
-Best Triples	36	BU 126
-Best Triples	7	BU 225
-Best Triples	8	BU 324
-Best Triples	11	BU 328
-Best Triples	15	BU 575
-Best Triples	67	S 752, BU 987
-Best Triples	70	Delta Scl
-Best Triples	3	Epsilon Equ
-Best Triples	58	Eta Sgr
-Best Triples	25	H 119
-Best Triples	54	H 1647
-Best Triples	23	H 2866
-Best Triples	56	H 4926
-Best Triples	41	H 5082
-Best Triples	60	H 5311
-Best Triples	24	H N 40
-Best Triples	72	HDO 198
-Best Triples	10	Iota Cas
-Best Triples	40	Iota Ori
-Best Triples	20	Iota2 Cnc
-Best Triples	78	Kappa And
-Best Triples	34	Lambda Ori
-Best Triples	65	Mu Per
-Best Triples	39	Pi Ari
-Best Triples	49	RS Sgr
-Best Triples	45	South 598
-Best Triples	31	STF 1090
-Best Triples	46	STF 1126
-Best Triples	14	STF 1127
-Best Triples	35	STF 1369
-Best Triples	61	STF 1473
-Best Triples	27	STF 157
-Best Triples	18	STF 1604
-Best Triples	59	STF 1619
-Best Triples	62	STF 1788
-Best Triples	75	STF 2087
-Best Triples	64	STF 2466
-Best Triples	77	STF 2532
-Best Triples	63	STF 270
-Best Triples	53	STF 2790
-Best Triples	6	STF 2816
-Best Triples	71	STF 3021
-Best Triples	26	STF 3041
-Best Triples	55	STF 3048
-Best Triples	66	STF 3053
-Best Triples	42	STF 430
-Best Triples	29	STF 479
-Best Triples	9	STF 734
-Best Triples	22	STF 780
-Best Triples	52	STF 915
-Best Triples	19	STF 939
-Best Triples	51	STF 941
-Best Triples	30	STT 371
-Best Triples	17	STT 388
-Best Triples	48	STT 390
-Best Triples	57	STT 485
-Best Triples	21	STT 525
-Best Triples	37	STT 64
-Best Triples	16	STT 410
-Best Triples	50	Tau4 Eri
-Best Triples	74	Theta Lyr
-Best Triples	33	Theta Sge
-Best Triples	5	Xi Sco
-Best Triples	2	Zeta Cnc
-Double Star OP	1	Eta Cas
-Double Star OP	2	65 Psc
-Double Star OP	3	Psi 1 Psc
-Double Star OP	4	Zeta Psc
-Double Star OP	5	Gamma Ari
-Double Star OP	6	Lambda Ari
-Double Star OP	7	Alpha Psc
-Double Star OP	8	Gamma And
-Double Star OP	9	Iota Tri
-Double Star OP	10	Alpha UMi
-Double Star OP	11	Gamma Cet
-Double Star OP	12	Eta Per
-Double Star OP	13	Struve 331
-Double Star OP	14	32 Eri
-Double Star OP	15	Chi Tau
-Double Star OP	16	1 Cam
-Double Star OP	17	55 Eri
-Double Star OP	18	Beta Ori
-Double Star OP	19	118 Tau
-Double Star OP	20	Delta Ori
-Double Star OP	21	Struve 747
-Double Star OP	22	Lambda Ori
-Double Star OP	23	Theta 1 Ori
-Double Star OP	24	Iota Ori
-Double Star OP	25	Theta 2 Ori
-Double Star OP	26	Sigma Ori
-Double Star OP	27	Zeta Ori
-Double Star OP	28	Gamma Lep
-Double Star OP	29	Theta Aur
-Double Star OP	30	Epsilon Mon
-Double Star OP	31	Beta Mon
-Double Star OP	32	12 Lyn
-Double Star OP	33	Epsilon CMa
-Double Star OP	34	Delta Gem
-Double Star OP	35	19 Lyn
-Double Star OP	36	Alpha Gem
-Double Star OP	37	k Pup
-Double Star OP	38	Zeta Cnc
-Double Star OP	39	Iota Cnc
-Double Star OP	40	38 Lyn
-Double Star OP	41	Alpha Leo
-Double Star OP	42	Gamma Leo
-Double Star OP	43	54 Leo
-Double Star OP	44	N Hya
-Double Star OP	45	Delta Crv
-Double Star OP	46	24 Com
-Double Star OP	47	Gamma Vir
-Double Star OP	48	32 Cam
-Double Star OP	49	Alpha CVn
-Double Star OP	50	Zeta UMa
-Double Star OP	51	Kappa Boo
-Double Star OP	52	Iota Boo
-Double Star OP	53	Pi Boo
-Double Star OP	54	Epsilon Boo
-Double Star OP	55	Alpha Lib
-Double Star OP	56	Xi Boo
-Double Star OP	57	Delta Boo
-Double Star OP	58	Mu Boo
-Double Star OP	59	Delta Ser
-Double Star OP	60	Zeta CrB
-Double Star OP	61	Xi Sco
-Double Star OP	62	Struve 1999
-Double Star OP	63	Beta Sco
-Double Star OP	64	Kappa Her
-Double Star OP	65	Nu Sco
-Double Star OP	66	Sigma CrB
-Double Star OP	67	16,17 Dra
-Double Star OP	68	Mu Dra
-Double Star OP	69	Alpha Her
-Double Star OP	70	Delta Her
-Double Star OP	71	36 Oph
-Double Star OP	72	Omicron Oph
-Double Star OP	73	Rho Her
-Double Star OP	74	Nu Dra
-Double Star OP	75	Psi Dra
-Double Star OP	76	40,41 Dra
-Double Star OP	77	95 Her
-Double Star OP	78	70 Oph
-Double Star OP	79	Epsilon Lyr
-Double Star OP	80	Zeta Lyr
-Double Star OP	81	Beta Lyr
-Double Star OP	82	Struve 2404
-Double Star OP	83	STT 525
-Double Star OP	84	Theta Ser
-Double Star OP	85	Beta Cyg
-Double Star OP	86	57 Aql
-Double Star OP	87	31 Cyg
-Double Star OP	88	Alpha Cap
-Double Star OP	89	Beta Cap
-Double Star OP	90	Gamma Del
-Double Star OP	91	61 Cyg
-Double Star OP	92	Beta Cep
-Double Star OP	93	STF 2816
-Double Star OP	94	Epsilon Peg
-Double Star OP	95	Xi Cep
-Double Star OP	96	Zeta Aqr
-Double Star OP	97	Delta Cep
-Double Star OP	98	8 Lac
-Double Star OP	99	94 Aqr
-Double Star OP	100	Sigma Cas
-Carbon Star OP	1	WZ Cas
-Carbon Star OP	2	SU And
-Carbon Star OP	3	SAO 109003
-Carbon Star OP	4	VX And
-Carbon Star OP	5	AQ And
-Carbon Star OP	6	NSV 15196
-Carbon Star OP	7	W Cas
-Carbon Star OP	8	Z Psc
-Carbon Star OP	9	V Ari
-Carbon Star OP	10	SAO 129989
-Carbon Star OP	11	UY And
-Carbon Star OP	12	V623 Cas
-Carbon Star OP	13	Y Per
-Carbon Star OP	14	V466 Per
-Carbon Star OP	15	U Cam
-Carbon Star OP	16	UV Cam
-Carbon Star OP	17	XX Cam
-Carbon Star OP	18	ST Cam
-Carbon Star OP	19	TT Tau
-Carbon Star OP	20	R Lep
-Carbon Star OP	21	EL Aur
-Carbon Star OP	22	W Ori
-Carbon Star OP	23	TX Aur
-Carbon Star OP	24	SY Eri
-Carbon Star OP	25	UV Aur
-Carbon Star OP	26	S Aur
-Carbon Star OP	27	RT Ori
-Carbon Star OP	28	S Cam
-Carbon Star OP	29	TU Tau
-Carbon Star OP	30	Y Tau
-Carbon Star OP	31	FU Aur
-Carbon Star OP	32	TU Gem
-Carbon Star OP	33	FU Mon
-Carbon Star OP	34	V Aur
-Carbon Star OP	35	BL Ori
-Carbon Star OP	36	UU Aur
-Carbon Star OP	37	VW Gem
-Carbon Star OP	38	GY Mon
-Carbon Star OP	39	RV Mon
-Carbon Star OP	40	V614 Mon
-Carbon Star OP	41	RY Mon
-Carbon Star OP	42	W CMa
-Carbon Star OP	43	R CMi
-Carbon Star OP	44	BM Gem
-Carbon Star OP	45	RU Cam
-Carbon Star OP	46	NQ Gem
-Carbon Star OP	47	RU Pup
-Carbon Star OP	48	X Cnc
-Carbon Star OP	49	T Cnc
-Carbon Star OP	50	Y Hya
-Carbon Star OP	51	U Hya
-Carbon Star OP	52	VY UMa
-Carbon Star OP	53	V Hya
-Carbon Star OP	54	SS Vir
-Carbon Star OP	55	Y CVn
-Carbon Star OP	56	RY Dra
-Carbon Star OP	57	SAO 157721
-Carbon Star OP	58	V CrB
-Carbon Star OP	59	RR Her
-Carbon Star OP	60	V Oph
-Carbon Star OP	61	SAO 46574
-Carbon Star OP	62	TW Oph
-Carbon Star OP	63	SZ Sgr
-Carbon Star OP	64	T Dra
-Carbon Star OP	65	FO Ser
-Carbon Star OP	66	AC Her
-Carbon Star OP	67	T Lyr
-Carbon Star OP	68	HK Lyr
-Carbon Star OP	69	S Sct
-Carbon Star OP	70	UV Aql
-Carbon Star OP	71	V Aql
-Carbon Star OP	72	V1942 Sgr
-Carbon Star OP	73	U Lyr
-Carbon Star OP	74	UX Dra
-Carbon Star OP	75	NSV 11960
-Carbon Star OP	76	AW Cyg
-Carbon Star OP	77	AQ Sgr
-Carbon Star OP	78	TT Cyg
-Carbon Star OP	79	AX Cyg
-Carbon Star OP	80	V1469 Aql
-Carbon Star OP	81	BF Sge
-Carbon Star OP	82	X Sge
-Carbon Star OP	83	SV Cyg
-Carbon Star OP	84	RY Cyg
-Carbon Star OP	85	RS Cyg
-Carbon Star OP	86	RT Cap
-Carbon Star OP	87	U Cyg
-Carbon Star OP	88	V Cyg
-Carbon Star OP	89	CY Cyg
-Carbon Star OP	90	SAO 106516
-Carbon Star OP	91	NSV 13571
-Carbon Star OP	92	S Cep
-Carbon Star OP	93	V460 Cyg
-Carbon Star OP	94	RV Cyg
-Carbon Star OP	95	RX Peg
-Carbon Star OP	96	RZ Peg
-Carbon Star OP	97	RU Aqr
-Carbon Star OP	98	ST And
-Carbon Star OP	99	TX Psc
-Carbon Star OP	100	SAO 128396
-Herschel 400	1	NGC 40
-Herschel 400	2	NGC 129
-Herschel 400	3	NGC 136
-Herschel 400	4	NGC 157
-Herschel 400	5	NGC 185
-Herschel 400	6	M 110
-Herschel 400	7	NGC 225
-Herschel 400	8	NGC 246
-Herschel 400	9	NGC 247
-Herschel 400	10	NGC 253
-Herschel 400	11	NGC 278
-Herschel 400	12	NGC 288
-Herschel 400	13	NGC 381
-Herschel 400	14	NGC 404
-Herschel 400	15	NGC 436
-Herschel 400	16	NGC 457
-Herschel 400	17	NGC 488
-Herschel 400	18	NGC 524
-Herschel 400	19	NGC 559
-Herschel 400	20	NGC 584
-Herschel 400	21	NGC 596
-Herschel 400	22	M 33
-Herschel 400	23	NGC 613
-Herschel 400	24	NGC 615
-Herschel 400	25	NGC 637
-Herschel 400	26	M 76
-Herschel 400	27	NGC 654
-Herschel 400	28	NGC 659
-Herschel 400	29	NGC 663
-Herschel 400	30	NGC 720
-Herschel 400	31	NGC 752
-Herschel 400	32	NGC 772
-Herschel 400	33	NGC 779
-Herschel 400	34	NGC 869
-Herschel 400	35	NGC 884
-Herschel 400	36	NGC 891
-Herschel 400	37	NGC 908
-Herschel 400	38	NGC 936
-Herschel 400	39	NGC 1022
-Herschel 400	40	NGC 1023
-Herschel 400	41	NGC 1027
-Herschel 400	42	NGC 1052
-Herschel 400	43	NGC 1055
-Herschel 400	44	NGC 1084
-Herschel 400	45	NGC 1245
-Herschel 400	46	NGC 1342
-Herschel 400	47	NGC 1407
-Herschel 400	48	NGC 1444
-Herschel 400	49	NGC 1501
-Herschel 400	50	NGC 1502
-Herschel 400	51	NGC 1513
-Herschel 400	52	NGC 1528
-Herschel 400	53	NGC 1535
-Herschel 400	54	NGC 1545
-Herschel 400	55	NGC 1647
-Herschel 400	56	NGC 1664
-Herschel 400	57	NGC 1750
-Herschel 400	58	NGC 1788
-Herschel 400	59	NGC 1817
-Herschel 400	60	NGC 1857
-Herschel 400	61	NGC 1907
-Herschel 400	62	NGC 1931
-Herschel 400	63	NGC 1961
-Herschel 400	64	NGC 1964
-Herschel 400	65	NGC 1980
-Herschel 400	66	NGC 1999
-Herschel 400	67	NGC 2022
-Herschel 400	68	NGC 2024
-Herschel 400	69	NGC 2126
-Herschel 400	70	NGC 2129
-Herschel 400	71	NGC 2158
-Herschel 400	72	NGC 2169
-Herschel 400	73	NGC 2185
-Herschel 400	74	NGC 2186
-Herschel 400	75	NGC 2194
-Herschel 400	76	NGC 2204
-Herschel 400	77	NGC 2215
-Herschel 400	78	NGC 2232
-Herschel 400	79	NGC 2244
-Herschel 400	80	NGC 2251
-Herschel 400	81	NGC 2264
-Herschel 400	82	NGC 2266
-Herschel 400	83	NGC 2281
-Herschel 400	84	NGC 2286
-Herschel 400	85	NGC 2301
-Herschel 400	86	NGC 2304
-Herschel 400	87	NGC 2311
-Herschel 400	88	NGC 2324
-Herschel 400	89	NGC 2335
-Herschel 400	90	NGC 2343
-Herschel 400	91	NGC 2353
-Herschel 400	92	NGC 2354
-Herschel 400	93	NGC 2355
-Herschel 400	94	NGC 2360
-Herschel 400	95	NGC 2362
-Herschel 400	96	NGC 2371
-Herschel 400	97	NGC 2372
-Herschel 400	98	NGC 2392
-Herschel 400	99	NGC 2395
-Herschel 400	100	NGC 2403
-Herschel 400	101	NGC 2419
-Herschel 400	102	NGC 2420
-Herschel 400	103	NGC 2421
-Herschel 400	104	M 47
-Herschel 400	105	NGC 2423
-Herschel 400	106	NGC 2438
-Herschel 400	107	NGC 2440
-Herschel 400	108	NGC 2479
-Herschel 400	109	NGC 2482
-Herschel 400	110	NGC 2489
-Herschel 400	111	NGC 2506
-Herschel 400	112	NGC 2509
-Herschel 400	113	NGC 2527
-Herschel 400	114	NGC 2539
-Herschel 400	115	M 48
-Herschel 400	116	NGC 2567
-Herschel 400	117	NGC 2571
-Herschel 400	118	NGC 2613
-Herschel 400	119	NGC 2627
-Herschel 400	120	NGC 2655
-Herschel 400	121	NGC 2681
-Herschel 400	122	NGC 2683
-Herschel 400	123	NGC 2742
-Herschel 400	124	NGC 2768
-Herschel 400	125	NGC 2775
-Herschel 400	126	NGC 2782
-Herschel 400	127	NGC 2787
-Herschel 400	128	NGC 2811
-Herschel 400	129	NGC 2841
-Herschel 400	130	NGC 2859
-Herschel 400	131	NGC 2903
-Herschel 400	132	NGC 2950
-Herschel 400	133	NGC 2964
-Herschel 400	134	NGC 2974
-Herschel 400	135	NGC 2976
-Herschel 400	136	NGC 2985
-Herschel 400	137	M 82
-Herschel 400	138	NGC 3077
-Herschel 400	139	NGC 3079
-Herschel 400	140	NGC 3115
-Herschel 400	141	NGC 3147
-Herschel 400	142	NGC 3166
-Herschel 400	143	NGC 3169
-Herschel 400	144	NGC 3184
-Herschel 400	145	NGC 3190
-Herschel 400	146	NGC 3193
-Herschel 400	147	NGC 3198
-Herschel 400	148	NGC 3226
-Herschel 400	149	NGC 3227
-Herschel 400	150	NGC 3242
-Herschel 400	151	NGC 3245
-Herschel 400	152	NGC 3277
-Herschel 400	153	NGC 3294
-Herschel 400	154	NGC 3310
-Herschel 400	155	NGC 3344
-Herschel 400	156	NGC 3377
-Herschel 400	157	M 105
-Herschel 400	158	NGC 3384
-Herschel 400	159	NGC 3395
-Herschel 400	160	NGC 3412
-Herschel 400	161	NGC 3414
-Herschel 400	162	NGC 3432
-Herschel 400	163	NGC 3486
-Herschel 400	164	NGC 3489
-Herschel 400	165	NGC 3504
-Herschel 400	166	NGC 3521
-Herschel 400	167	M 108
-Herschel 400	168	NGC 3593
-Herschel 400	169	NGC 3607
-Herschel 400	170	NGC 3608
-Herschel 400	171	NGC 3610
-Herschel 400	172	NGC 3613
-Herschel 400	173	NGC 3619
-Herschel 400	174	NGC 3621
-Herschel 400	175	NGC 3626
-Herschel 400	176	NGC 3628
-Herschel 400	177	NGC 3631
-Herschel 400	178	NGC 3640
-Herschel 400	179	NGC 3655
-Herschel 400	180	NGC 3665
-Herschel 400	181	NGC 3675
-Herschel 400	182	NGC 3686
-Herschel 400	183	NGC 3726
-Herschel 400	184	NGC 3729
-Herschel 400	185	NGC 3810
-Herschel 400	186	NGC 3813
-Herschel 400	187	NGC 3877
-Herschel 400	188	NGC 3893
-Herschel 400	189	NGC 3898
-Herschel 400	190	NGC 3900
-Herschel 400	191	NGC 3912
-Herschel 400	192	NGC 3938
-Herschel 400	193	NGC 3941
-Herschel 400	194	NGC 3945
-Herschel 400	195	NGC 3949
-Herschel 400	196	NGC 3953
-Herschel 400	197	NGC 3962
-Herschel 400	198	NGC 3982
-Herschel 400	199	M 109
-Herschel 400	200	NGC 3998
-Herschel 400	201	NGC 4026
-Herschel 400	202	NGC 4027
-Herschel 400	203	NGC 4030
-Herschel 400	204	NGC 4036
-Herschel 400	205	NGC 4038
-Herschel 400	206	NGC 4041
-Herschel 400	207	NGC 4051
-Herschel 400	208	NGC 4085
-Herschel 400	209	NGC 4088
-Herschel 400	210	NGC 4102
-Herschel 400	211	NGC 4111
-Herschel 400	212	NGC 4143
-Herschel 400	213	NGC 4147
-Herschel 400	214	NGC 4150
-Herschel 400	215	NGC 4151
-Herschel 400	216	NGC 4179
-Herschel 400	217	NGC 4203
-Herschel 400	218	NGC 4214
-Herschel 400	219	NGC 4216
-Herschel 400	220	NGC 4245
-Herschel 400	221	NGC 4251
-Herschel 400	222	M 106
-Herschel 400	223	NGC 4261
-Herschel 400	224	NGC 4273
-Herschel 400	225	NGC 4274
-Herschel 400	226	NGC 4278
-Herschel 400	227	NGC 4281
-Herschel 400	228	NGC 4293
-Herschel 400	229	M 61
-Herschel 400	230	NGC 4314
-Herschel 400	231	NGC 4346
-Herschel 400	232	NGC 4350
-Herschel 400	233	NGC 4361
-Herschel 400	234	NGC 4365
-Herschel 400	235	NGC 4371
-Herschel 400	236	NGC 4394
-Herschel 400	237	NGC 4414
-Herschel 400	238	NGC 4419
-Herschel 400	239	NGC 4429
-Herschel 400	240	NGC 4435
-Herschel 400	241	NGC 4438
-Herschel 400	242	NGC 4442
-Herschel 400	243	NGC 4448
-Herschel 400	244	NGC 4449
-Herschel 400	245	NGC 4450
-Herschel 400	246	NGC 4459
-Herschel 400	247	NGC 4473
-Herschel 400	248	NGC 4477
-Herschel 400	249	NGC 4478
-Herschel 400	250	NGC 4485
-Herschel 400	251	NGC 4490
-Herschel 400	252	NGC 4494
-Herschel 400	253	NGC 4526
-Herschel 400	254	NGC 4527
-Herschel 400	255	NGC 4535
-Herschel 400	256	NGC 4536
-Herschel 400	257	NGC 4546
-Herschel 400	258	M 91
-Herschel 400	259	NGC 4550
-Herschel 400	260	NGC 4559
-Herschel 400	261	NGC 4565
-Herschel 400	262	NGC 4570
-Herschel 400	263	M 104
-Herschel 400	264	NGC 4596
-Herschel 400	265	NGC 4618
-Herschel 400	266	NGC 4631
-Herschel 400	267	NGC 4636
-Herschel 400	268	NGC 4643
-Herschel 400	269	NGC 4654
-Herschel 400	270	NGC 4656,4657
-Herschel 400	271	NGC 4660
-Herschel 400	272	NGC 4665
-Herschel 400	273	NGC 4666
-Herschel 400	274	NGC 4689
-Herschel 400	275	NGC 4697
-Herschel 400	276	NGC 4698
-Herschel 400	277	NGC 4699
-Herschel 400	278	NGC 4725
-Herschel 400	279	NGC 4753
-Herschel 400	280	NGC 4754
-Herschel 400	281	NGC 4762
-Herschel 400	282	NGC 4781
-Herschel 400	283	NGC 4800
-Herschel 400	284	NGC 4845
-Herschel 400	285	NGC 4856
-Herschel 400	286	NGC 4866
-Herschel 400	287	NGC 4900
-Herschel 400	288	NGC 4958
-Herschel 400	289	NGC 4995
-Herschel 400	290	NGC 5005
-Herschel 400	291	NGC 5033
-Herschel 400	292	NGC 5054
-Herschel 400	293	NGC 5195
-Herschel 400	294	NGC 5248
-Herschel 400	295	NGC 5273
-Herschel 400	296	NGC 5322
-Herschel 400	297	NGC 5363
-Herschel 400	298	NGC 5364
-Herschel 400	299	NGC 5466
-Herschel 400	300	NGC 5473
-Herschel 400	301	NGC 5474
-Herschel 400	302	NGC 5557
-Herschel 400	303	NGC 5566
-Herschel 400	304	NGC 5576
-Herschel 400	305	NGC 5631
-Herschel 400	306	NGC 5634
-Herschel 400	307	NGC 5676
-Herschel 400	308	NGC 5689
-Herschel 400	309	NGC 5694
-Herschel 400	310	NGC 5746
-Herschel 400	311	NGC 5846
-Herschel 400	312	M 102
-Herschel 400	313	NGC 5897
-Herschel 400	314	NGC 5907
-Herschel 400	315	NGC 5982
-Herschel 400	316	NGC 6118
-Herschel 400	317	NGC 6144
-Herschel 400	318	M 107
-Herschel 400	319	NGC 6207
-Herschel 400	320	NGC 6217
-Herschel 400	321	NGC 6229
-Herschel 400	322	NGC 6235
-Herschel 400	323	NGC 6284
-Herschel 400	324	NGC 6287
-Herschel 400	325	NGC 6293
-Herschel 400	326	NGC 6304
-Herschel 400	327	NGC 6316
-Herschel 400	328	NGC 6342
-Herschel 400	329	NGC 6355
-Herschel 400	330	NGC 6356
-Herschel 400	331	NGC 6369
-Herschel 400	332	NGC 6401
-Herschel 400	333	NGC 6426
-Herschel 400	334	NGC 6440
-Herschel 400	335	NGC 6445
-Herschel 400	336	NGC 6451
-Herschel 400	337	M 20
-Herschel 400	338	NGC 6517
-Herschel 400	339	NGC 6520
-Herschel 400	340	NGC 6522
-Herschel 400	341	NGC 6528
-Herschel 400	342	NGC 6540
-Herschel 400	343	NGC 6543
-Herschel 400	344	NGC 6544
-Herschel 400	345	NGC 6553
-Herschel 400	346	NGC 6568
-Herschel 400	347	NGC 6569
-Herschel 400	348	NGC 6583
-Herschel 400	349	NGC 6624
-Herschel 400	350	NGC 6629
-Herschel 400	351	NGC 6633
-Herschel 400	352	NGC 6638
-Herschel 400	353	NGC 6642
-Herschel 400	354	NGC 6645
-Herschel 400	355	NGC 6664
-Herschel 400	356	NGC 6712
-Herschel 400	357	NGC 6755
-Herschel 400	358	NGC 6756
-Herschel 400	359	NGC 6781
-Herschel 400	360	NGC 6802
-Herschel 400	361	NGC 6818
-Herschel 400	362	NGC 6823
-Herschel 400	363	NGC 6826
-Herschel 400	364	NGC 6830
-Herschel 400	365	NGC 6834
-Herschel 400	366	NGC 6866
-Herschel 400	367	NGC 6882
-Herschel 400	368	NGC 6885
-Herschel 400	369	NGC 6905
-Herschel 400	370	NGC 6910
-Herschel 400	371	NGC 6934
-Herschel 400	372	NGC 6939
-Herschel 400	373	NGC 6940
-Herschel 400	374	NGC 6946
-Herschel 400	375	NGC 7000
-Herschel 400	376	NGC 7006
-Herschel 400	377	NGC 7008
-Herschel 400	378	NGC 7009
-Herschel 400	379	NGC 7044
-Herschel 400	380	NGC 7062
-Herschel 400	381	NGC 7086
-Herschel 400	382	NGC 7128
-Herschel 400	383	NGC 7142
-Herschel 400	384	NGC 7160
-Herschel 400	385	NGC 7209
-Herschel 400	386	NGC 7217
-Herschel 400	387	NGC 7243
-Herschel 400	388	NGC 7296
-Herschel 400	389	NGC 7331
-Herschel 400	390	NGC 7380
-Herschel 400	391	NGC 7448
-Herschel 400	392	NGC 7479
-Herschel 400	393	NGC 7510
-Herschel 400	394	NGC 7606
-Herschel 400	395	NGC 7662
-Herschel 400	396	NGC 7686
-Herschel 400	397	NGC 7723
-Herschel 400	398	NGC 7727
-Herschel 400	399	NGC 7789
-Herschel 400	400	NGC 7790
-Globular OP	3	G1
-Globular OP	10	G76
-Globular OP	33	NGC 288
-Globular OP	44	Pal 1
-Globular OP	47	Pal 2
-Globular OP	49	M 79
-Globular OP	51	NGC 2419
-Globular OP	59	NGC 4147
-Globular OP	62	M 68
-Globular OP	64	M 53
-Globular OP	65	NGC 5053
-Globular OP	67	M 3
-Globular OP	70	NGC 5466
-Globular OP	71	NGC 5634
-Globular OP	72	NGC 5694
-Globular OP	76	NGC 5897
-Globular OP	77	M 5
-Globular OP	84	M 80
-Globular OP	85	M 4
-Globular OP	87	NGC 6144
-Globular OP	90	M 107
-Globular OP	92	M 13
-Globular OP	93	NGC 6229
-Globular OP	94	M 12
-Globular OP	95	NGC 6235
-Globular OP	96	M 10
-Globular OP	99	M 62
-Globular OP	100	M 19
-Globular OP	101	NGC 6284
-Globular OP	102	NGC 6287
-Globular OP	103	NGC 6293
-Globular OP	104	NGC 6304
-Globular OP	105	NGC 6316
-Globular OP	106	M 92
-Globular OP	108	M 9
-Globular OP	109	NGC 6342
-Globular OP	110	NGC 6355
-Globular OP	111	NGC 6356
-Globular OP	114	NGC 6366
-Globular OP	124	NGC 6401
-Globular OP	125	M 14
-Globular OP	128	NGC 6426
-Globular OP	131	NGC 6440
-Globular OP	138	NGC 6517
-Globular OP	139	Djorg 2
-Globular OP	142	NGC 6535
-Globular OP	143	NGC 6539
-Globular OP	145	NGC 6540
-Globular OP	147	NGC 6544
-Globular OP	149	NGC 6553
-Globular OP	153	IC 1276
-Globular OP	158	M 28
-Globular OP	159	M 69
-Globular OP	160	NGC 6638
-Globular OP	161	NGC 6642
-Globular OP	163	M 22
-Globular OP	164	Pal 8
-Globular OP	165	M 70
-Globular OP	166	NGC 6712
-Globular OP	167	M 54
-Globular OP	168	NGC 6717
-Globular OP	170	NGC 6749
-Globular OP	172	NGC 6760
-Globular OP	173	M 56
-Globular OP	175	Pal 10
-Globular OP	177	M 55
-Globular OP	179	Pal 11
-Globular OP	180	M 71
-Globular OP	181	M 75
-Globular OP	182	NGC 6934
-Globular OP	183	M 72
-Globular OP	184	NGC 7006
-Globular OP	185	M 15
-Globular OP	186	M 2
-Globular OP	187	M 30
-Globular OP	188	Pal 12
-Globular OP	190	NGC 7492
-Vic Menard List	1	NGC 7793
-Vic Menard List	2	NGC 24
-Vic Menard List	3	NGC 55
-Vic Menard List	4	NGC 134
-Vic Menard List	5	NGC 253
-Vic Menard List	6	NGC 288
-Vic Menard List	7	NGC 613
-Vic Menard List	8	NGC 7789
-Vic Menard List	9	H 3053
-Vic Menard List	10	Eta Cas
-Vic Menard List	11	NGC 278
-Vic Menard List	12	NGC 281
-Vic Menard List	13	NGC 457
-Vic Menard List	14	NGC 663
-Vic Menard List	15	NGC 896
-Vic Menard List	16	Iota Cas
-Vic Menard List	17	IC 289
-Vic Menard List	18	NGC 7640
-Vic Menard List	19	NGC 7662
-Vic Menard List	20	VX And
-Vic Menard List	21	M 31
-Vic Menard List	22	Gamma And
-Vic Menard List	23	NGC 891
-Vic Menard List	24	M 33
-Vic Menard List	25	Iota Tri
-Vic Menard List	26	M 74
-Vic Menard List	27	Alpha Psc
-Vic Menard List	28	NGC 246
-Vic Menard List	29	Gamma Cet
-Vic Menard List	30	M 77
-Vic Menard List	31	Gamma Ari
-Vic Menard List	32	NGC 772
-Vic Menard List	33	M 76
-Vic Menard List	34a	NGC 869
-Vic Menard List	34b	NGC 884
-Vic Menard List	35	NGC 1023
-Vic Menard List	36	Eta Per
-Vic Menard List	37	NGC 1245
-Vic Menard List	38	NGC 1275
-Vic Menard List	39	NGC 1491
-Vic Menard List	40	NGC 1513
-Vic Menard List	41	NGC 1528
-Vic Menard List	42	NGC 1579
-Vic Menard List	43	NGC 1049
-Vic Menard List	44	NGC 1097
-Vic Menard List	45	NGC 1316
-Vic Menard List	46	NGC 1360
-Vic Menard List	47	NGC 1365
-Vic Menard List	48	NGC 1380
-Vic Menard List	49	NGC 1398
-Vic Menard List	50	NGC 1084
-Vic Menard List	51	Theta Eri
-Vic Menard List	52	NGC 1187
-Vic Menard List	53	NGC 1232
-Vic Menard List	54	NGC 1291
-Vic Menard List	55	NGC 1421
-Vic Menard List	56	32 Eri
-Vic Menard List	57	NGC 1532
-Vic Menard List	58	NGC 1535
-Vic Menard List	59	Omicron 2 Eri
-Vic Menard List	60	NGC 1433
-Vic Menard List	61	M 45
-Vic Menard List	62	NGC 1514
-Vic Menard List	63	M 1
-Vic Menard List	64	R Lep
-Vic Menard List	65	M 79
-Vic Menard List	66	IC 418
-Vic Menard List	67	NGC 1964
-Vic Menard List	68	NGC 1792
-Vic Menard List	69	NGC 1808
-Vic Menard List	70	NGC 1851
-Vic Menard List	71	W Ori
-Vic Menard List	72	Beta Ori
-Vic Menard List	73	Eta Ori
-Vic Menard List	74	Lambda Ori
-Vic Menard List	75	M 42
-Vic Menard List	76	Sigma Ori
-Vic Menard List	77	IC 434
-Vic Menard List	78	NGC 2024
-Vic Menard List	79	NGC 2022
-Vic Menard List	80	M 78
-Vic Menard List	81	NGC 2169
-Vic Menard List	82	NGC 2194
-Vic Menard List	83	NGC 1907
-Vic Menard List	84	M 37
-Vic Menard List	85	IC 2149
-Vic Menard List	86	Theta Aur
-Vic Menard List	87	M 35
-Vic Menard List	88	NGC 2266
-Vic Menard List	89	NGC 2304
-Vic Menard List	90	NGC 2355
-Vic Menard List	91	Delta Gem
-Vic Menard List	92a	NGC 2371
-Vic Menard List	92b	NGC 2372
-Vic Menard List	93	PK205+14.1
-Vic Menard List	94	NGC 2392
-Vic Menard List	95	Alpha Gem
-Vic Menard List	96	NGC 2420
-Vic Menard List	97	Epsilon Mon
-Vic Menard List	98	Beta Mon
-Vic Menard List	99	NGC 2244
-Vic Menard List	100	NGC 2261
-Vic Menard List	101	M 50
-Vic Menard List	102	NGC 2346
-Vic Menard List	103	NGC 2506
-Vic Menard List	104	NGC 2207
-Vic Menard List	105	Alpha CMa
-Vic Menard List	106	Epsilon CMa
-Vic Menard List	107	H 3945
-Vic Menard List	108	NGC 2360
-Vic Menard List	109	NGC 2359
-Vic Menard List	110	NGC 2362
-Vic Menard List	111	NGC 1501
-Vic Menard List	112	NGC 1502
-Vic Menard List	113	ST Cam
-Vic Menard List	114	U Cam
-Vic Menard List	115	NGC 2403
-Vic Menard List	116	NGC 2655
-Vic Menard List	117	IC 3568
-Vic Menard List	118	NGC 2421
-Vic Menard List	119	NGC 2423
-Vic Menard List	120	Kappa Pup
-Vic Menard List	121	M 46
-Vic Menard List	122	NGC 2440
-Vic Menard List	123	NGC 2452
-Vic Menard List	124	NGC 2477
-Vic Menard List	125	NGC 2467
-Vic Menard List	126	NGC 2539
-Vic Menard List	127	NGC 2567
-Vic Menard List	128	Zeta Cnc
-Vic Menard List	129	Iota Cnc
-Vic Menard List	130	X Cnc
-Vic Menard List	131	12 Lyn
-Vic Menard List	132	NGC 2419
-Vic Menard List	133	JE1
-Vic Menard List	134	NGC 2537
-Vic Menard List	135	NGC 2683
-Vic Menard List	136	NGC 2613
-Vic Menard List	137	NGC 2818
-Vic Menard List	138	Gamma Vel
-Vic Menard List	139	NGC 3132
-Vic Menard List	140	NGC 2997
-Vic Menard List	141	NGC 3044
-Vic Menard List	142	NGC 3115
-Vic Menard List	143	NGC 3166
-Vic Menard List	144	NGC 3003
-Vic Menard List	145	NGC 3344
-Vic Menard List	146	NGC 3395
-Vic Menard List	147	NGC 3432
-Vic Menard List	148	NGC 2903
-Vic Menard List	149	NGC 3190
-Vic Menard List	150	Gamma Leo
-Vic Menard List	151	NGC 3227
-Vic Menard List	152	M 95
-Vic Menard List	153	M 96
-Vic Menard List	154	NGC 3384
-Vic Menard List	155	NGC 3521
-Vic Menard List	156	NGC 3607
-Vic Menard List	157	M 65
-Vic Menard List	158	M 66
-Vic Menard List	159	NGC 3628
-Vic Menard List	160	NGC 3753
-Vic Menard List	161	NGC 3842
-Vic Menard List	162	NGC 3372
-Vic Menard List	163	NGC 2768
-Vic Menard List	164	NGC 2841
-Vic Menard List	165	NGC 2976
-Vic Menard List	166	NGC 2985
-Vic Menard List	167	M 81
-Vic Menard List	168	M 82
-Vic Menard List	169	Twin Quasar Mirage
-Vic Menard List	170	NGC 3079
-Vic Menard List	171	NGC 3184
-Vic Menard List	172	NGC 3198
-Vic Menard List	173	NGC 3359
-Vic Menard List	174	M 108
-Vic Menard List	175	M 97
-Vic Menard List	176	Xi UMa
-Vic Menard List	177	NGC 3631
-Vic Menard List	178	NGC 3675
-Vic Menard List	179	NGC 3718
-Vic Menard List	180	NGC 3726
-Vic Menard List	181	NGC 3877
-Vic Menard List	182	NGC 3893
-Vic Menard List	183	NGC 3938
-Vic Menard List	184	NGC 3945
-Vic Menard List	185	NGC 3953
-Vic Menard List	186	M 109
-Vic Menard List	187	NGC 4051
-Vic Menard List	188	NGC 4088
-Vic Menard List	189	NGC 4096
-Vic Menard List	190	NGC 4605
-Vic Menard List	191	Zeta UMa
-Vic Menard List	192	M 101
-Vic Menard List	193	NGC 2610
-Vic Menard List	194	NGC 3242
-Vic Menard List	195	NGC 3311
-Vic Menard List	196	V Hya
-Vic Menard List	197	NGC 3621
-Vic Menard List	198	M 83
-Vic Menard List	199	NGC 4027
-Vic Menard List	200	NGC 4038
-Vic Menard List	201	NGC 4361
-Vic Menard List	202	NGC 4169
-Vic Menard List	203	M 98
-Vic Menard List	204	M 99
-Vic Menard List	205	NGC 4274
-Vic Menard List	206	NGC 4293
-Vic Menard List	207	NGC 4298
-Vic Menard List	208	M 100
-Vic Menard List	209	NGC 4350
-Vic Menard List	210	NGC 4414
-Vic Menard List	211	NGC 4419
-Vic Menard List	212	NGC 4450
-Vic Menard List	213	NGC 4494
-Vic Menard List	214	M 88
-Vic Menard List	215	24 Com
-Vic Menard List	216	M 91
-Vic Menard List	217	NGC 4559
-Vic Menard List	218	NGC 4565
-Vic Menard List	219	NGC 4725
-Vic Menard List	220	M 64
-Vic Menard List	221	NGC 4874
-Vic Menard List	222	M 53
-Vic Menard List	223	NGC 3918
-Vic Menard List	224	NGC 4945
-Vic Menard List	225	NGC 5102
-Vic Menard List	226	NGC 5128
-Vic Menard List	227	NGC 5139
-Vic Menard List	228	IC 4329
-Vic Menard List	229	Alpha Cen
-Vic Menard List	230	NGC 4111
-Vic Menard List	231	NGC 4214
-Vic Menard List	232	2 CVn
-Vic Menard List	233	NGC 4244
-Vic Menard List	234	M 106
-Vic Menard List	235	NGC 4449
-Vic Menard List	236	NGC 4490
-Vic Menard List	237	NGC 4618
-Vic Menard List	238	NGC 4631
-Vic Menard List	239	NGC 4656,4657
-Vic Menard List	240	Y CVn
-Vic Menard List	241	M 94
-Vic Menard List	242	Alpha CVn
-Vic Menard List	243	NGC 5005
-Vic Menard List	244	NGC 5033
-Vic Menard List	245	M 63
-Vic Menard List	246	M 51
-Vic Menard List	247	M 3
-Vic Menard List	248	NGC 5353
-Vic Menard List	249	NGC 4179
-Vic Menard List	250	NGC 4216
-Vic Menard List	251	M 61
-Vic Menard List	252	M 84
-Vic Menard List	253	M 85
-Vic Menard List	254	NGC 4429
-Vic Menard List	255	NGC 4435
-Vic Menard List	256	M 49
-Vic Menard List	257	M 87
-Vic Menard List	258	NGC 4517
-Vic Menard List	259	NGC 4526
-Vic Menard List	260	NGC 4535
-Vic Menard List	261	NGC 4536
-Vic Menard List	262	NGC 4567
-Vic Menard List	263	M 90
-Vic Menard List	264	M 58
-Vic Menard List	265	M 104
-Vic Menard List	266	Gamma Vir
-Vic Menard List	267	M 60
-Vic Menard List	268	NGC 4654
-Vic Menard List	269	NGC 4666
-Vic Menard List	270	NGC 4698
-Vic Menard List	271	NGC 4697
-Vic Menard List	272	NGC 4699
-Vic Menard List	273	NGC 4753
-Vic Menard List	274	NGC 4762
-Vic Menard List	275	NGC 4866
-Vic Menard List	276	NGC 5054
-Vic Menard List	277	NGC 5247
-Vic Menard List	278	NGC 5364
-Vic Menard List	279	NGC 5566
-Vic Menard List	280	NGC 5746
-Vic Menard List	281	NGC 5846
-Vic Menard List	282	NGC 5248
-Vic Menard List	283	NGC 5676
-Vic Menard List	284	Pi Boo
-Vic Menard List	285	Epsilon Boo
-Vic Menard List	286	Xi Boo
-Vic Menard List	287	IC 4406
-Vic Menard List	288	NGC 6026
-Vic Menard List	289	M 5
-Vic Menard List	290	NGC 5921
-Vic Menard List	291	Delta Ser
-Vic Menard List	292	NGC 6027
-Vic Menard List	293	M 16
-Vic Menard List	294	NGC 3735
-Vic Menard List	295	M 102
-Vic Menard List	296	NGC 5907
-Vic Menard List	297	NGC 6503
-Vic Menard List	298	NGC 6543
-Vic Menard List	299	Epsilon Dra
-Vic Menard List	300	Xi Sco
-Vic Menard List	301	Beta Sco
-Vic Menard List	302	Nu Sco
-Vic Menard List	303	M 80
-Vic Menard List	304	M 4
-Vic Menard List	305	Alpha Sco
-Vic Menard List	306	NGC 6153
-Vic Menard List	307	NGC 6231
-Vic Menard List	308	NGC 6302
-Vic Menard List	309	NGC 6337
-Vic Menard List	310	NGC 6451
-Vic Menard List	311	M 13
-Vic Menard List	312	NGC 6207
-Vic Menard List	313	NGC 6210
-Vic Menard List	314	NGC 6229
-Vic Menard List	315	Alpha Her
-Vic Menard List	316	M 92
-Vic Menard List	317	Rho Her
-Vic Menard List	318	95 Her
-Vic Menard List	319	M 12
-Vic Menard List	320	M 10
-Vic Menard List	321	M 62
-Vic Menard List	322	M 19
-Vic Menard List	323	NGC 6309
-Vic Menard List	324	36 Oph
-Vic Menard List	325	Omicron Oph
-Vic Menard List	326	M 9
-Vic Menard List	327	NGC 6369
-Vic Menard List	328	NGC 6384
-Vic Menard List	329	70 Oph
-Vic Menard List	330	NGC 6572
-Vic Menard List	331	NGC 6541
-Vic Menard List	332	NGC 6440
-Vic Menard List	333	NGC 6445
-Vic Menard List	334	M 20
-Vic Menard List	335	NGC 6520
-Vic Menard List	336	M 8
-Vic Menard List	337	NGC 6563
-Vic Menard List	338	M 17
-Vic Menard List	339	M 28
-Vic Menard List	340	M 22
-Vic Menard List	341	M 55
-Vic Menard List	342	NGC 6818
-Vic Menard List	343	M 11
-Vic Menard List	344	NGC 6712
-Vic Menard List	345	IC 1295
-Vic Menard List	346	T Lyr
-Vic Menard List	347	Epsilon Lyr
-Vic Menard List	348	M 57
-Vic Menard List	349	NGC 6791
-Vic Menard List	350	V Aql
-Vic Menard List	351	Sh2-071
-Vic Menard List	352	NGC 6772
-Vic Menard List	353	NGC 6781
-Vic Menard List	354	NGC 6804
-Vic Menard List	355	NGC 6802
-Vic Menard List	356	NGC 6842
-Vic Menard List	357	M 27
-Vic Menard List	358	NGC 6940
-Vic Menard List	359	M 71
-Vic Menard List	360	NGC 6905
-Vic Menard List	361	Gamma Del
-Vic Menard List	362	Beta Cyg
-Vic Menard List	363	NGC 6819
-Vic Menard List	364	NGC 6826
-Vic Menard List	365	NGC 6888
-Vic Menard List	366	NGC 6894
-Vic Menard List	367	NGC 6960
-Vic Menard List	368	NGC 6992,6995
-Vic Menard List	369	NGC 7000
-Vic Menard List	370	NGC 7008
-Vic Menard List	371	NGC 7026
-Vic Menard List	372	61 Cyg
-Vic Menard List	373	NGC 7027
-Vic Menard List	374	NGC 7048
-Vic Menard List	375	RV Cyg
-Vic Menard List	376	M 30
-Vic Menard List	377	NGC 7009
-Vic Menard List	378	M 2
-Vic Menard List	379	Zeta Aqr
-Vic Menard List	380	NGC 7293
-Vic Menard List	381	NGC 7606
-Vic Menard List	382	M 15
-Vic Menard List	383	NGC 7320
-Vic Menard List	384	NGC 7331
-Vic Menard List	385	Einstein's Cross
-Vic Menard List	386	NGC 7448
-Vic Menard List	387	NGC 7479
-Vic Menard List	388	Jones1
-Vic Menard List	389	NGC 7814
-Vic Menard List	390	NGC 7172
-Vic Menard List	391	NGC 6939
-Vic Menard List	392	NGC 6946
-Vic Menard List	393	NGC 7023
-Vic Menard List	394	S Cep
-Vic Menard List	395	NGC 7354
-Vic Menard List	396	NGC 7538
-Vic Menard List	397	NGC 40
-Vic Menard List	398	IC 5148
-Vic Menard List	399	NGC 7410
-Vic Menard List	400	NGC 7582
-Open Cluster OP	1	Berk 58
-Open Cluster OP	2	Berk 59
-Open Cluster OP	3	King 13
-Open Cluster OP	4	Berk 2
-Open Cluster OP	5	King 14
-Open Cluster OP	6	NGC 225
-Open Cluster OP	7	King 16
-Open Cluster OP	8	NGC 188
-Open Cluster OP	9	M 103
-Open Cluster OP	10	Tr 1
-Open Cluster OP	11	Cr 463
-Open Cluster OP	12	Stock 4
-Open Cluster OP	13	IC 1805
-Open Cluster OP	14	Tr 2
-Open Cluster OP	15	NGC 1027
-Open Cluster OP	16	DoDz 1
-Open Cluster OP	17	IC 1848
-Open Cluster OP	18	Cr 34
-Open Cluster OP	19	Tr 3
-Open Cluster OP	20	Stock 23
-Open Cluster OP	21	NGC 1342
-Open Cluster OP	22	IC 348
-Open Cluster OP	23	Tombaugh 5
-Open Cluster OP	24	NGC 1444
-Open Cluster OP	25	King 7
-Open Cluster OP	26	NGC 1496
-Open Cluster OP	27	NGC 1502
-Open Cluster OP	28	NGC 1662
-Open Cluster OP	29	NGC 1746
-Open Cluster OP	30	NGC 1807
-Open Cluster OP	31	NGC 1798
-Open Cluster OP	32	NGC 1893
-Open Cluster OP	33	M 38
-Open Cluster OP	34	DoDz 3
-Open Cluster OP	35	Cr 69
-Open Cluster OP	36	NGC 1981
-Open Cluster OP	37	DoDz 4
-Open Cluster OP	38	NGC 2141
-Open Cluster OP	39	NGC 2158
-Open Cluster OP	40	NGC 2169
-Open Cluster OP	41	NGC 2232
-Open Cluster OP	42	NGC 2244
-Open Cluster OP	43	Ru 1
-Open Cluster OP	44	Ru 3
-Open Cluster OP	45	Biurakan 9
-Open Cluster OP	46	Ru 7
-Open Cluster OP	47	NGC 2353
-Open Cluster OP	48	Tr 6
-Open Cluster OP	49	Tr 7
-Open Cluster OP	50	M 47
-Open Cluster OP	51	Mel 71
-Open Cluster OP	52	NGC 2439
-Open Cluster OP	53	NGC 2453
-Open Cluster OP	54	Tr 9
-Open Cluster OP	55	M 48
-Open Cluster OP	56	M 44
-Open Cluster OP	57	M 67
-Open Cluster OP	58	Dolidze 27
-Open Cluster OP	59	Tr 26
-Open Cluster OP	60	Cr 333
-Open Cluster OP	61	NGC 6383
-Open Cluster OP	62	Tr 27
-Open Cluster OP	63	Tr 28
-Open Cluster OP	64	NGC 6416
-Open Cluster OP	65	Cr 347
-Open Cluster OP	66	IC 4665
-Open Cluster OP	67	M 7
-Open Cluster OP	68	NGC 6520
-Open Cluster OP	69	NGC 6530
-Open Cluster OP	70	DoDz 9
-Open Cluster OP	71	Tr 32
-Open Cluster OP	72	NGC 6604
-Open Cluster OP	73	Tr 33
-Open Cluster OP	74	NGC 6649
-Open Cluster OP	75	Tr 35
-Open Cluster OP	76	M 26
-Open Cluster OP	77	M 11
-Open Cluster OP	78	NGC 6709
-Open Cluster OP	79	Ru 146
-Open Cluster OP	80	Berk 80
-Open Cluster OP	81	Steph 1
-Open Cluster OP	82	NGC 6716
-Open Cluster OP	83	Berk 82
-Open Cluster OP	84	NGC 6774
-Open Cluster OP	85	NGC 6791
-Open Cluster OP	86	NGC 6793
-Open Cluster OP	87	King 25
-Open Cluster OP	88	NGC 6800
-Open Cluster OP	89	Berk 47
-Open Cluster OP	90	NGC 6811
-Open Cluster OP	91	Cr 401
-Open Cluster OP	92	NGC 6819
-Open Cluster OP	93	NGC 6823
-Open Cluster OP	94	Harvard 20
-Open Cluster OP	95	NGC 6871
-Open Cluster OP	96	Biurakan 2
-Open Cluster OP	97	NGC 6885
-Open Cluster OP	98	IC 4996
-Open Cluster OP	99	Berk 85
-Open Cluster OP	100	Berk 86
-Open Cluster OP	101	Berk 87
-Open Cluster OP	102	NGC 6910
-Open Cluster OP	103	Cr 421
-Open Cluster OP	104	Dolidze 9
-Open Cluster OP	105	Berk 90
-Open Cluster OP	106	French 1
-Open Cluster OP	107	IC 1369
-Open Cluster OP	108	Berk 55
-Open Cluster OP	109	NGC 7063
-Open Cluster OP	110	IC 1396
-Open Cluster OP	111	NGC 7142
-Open Cluster OP	112	NGC 7209
-Open Cluster OP	113	IC 1434
-Open Cluster OP	114	NGC 7235
-Open Cluster OP	115	King 9
-Open Cluster OP	116	Berk 94
-Open Cluster OP	117	Berk 96
-Open Cluster OP	118	King 18
-Open Cluster OP	119	NGC 7423
-Open Cluster OP	120	King 10
-Open Cluster OP	121	King 19
-Open Cluster OP	122	NGC 7510
-Open Cluster OP	123	NGC 7686
-Open Cluster OP	124	King 21
-Open Cluster OP	125	King 12
-Binocular Messier OP	1	M 2
-Binocular Messier OP	2	M 3
-Binocular Messier OP	3	M 4
-Binocular Messier OP	4	M 5
-Binocular Messier OP	5	M 6
-Binocular Messier OP	6	M 7
-Binocular Messier OP	7	M 8
-Binocular Messier OP	8	M 10
-Binocular Messier OP	9	M 11
-Binocular Messier OP	10	M 12
-Binocular Messier OP	11	M 13
-Binocular Messier OP	12	M 14
-Binocular Messier OP	13	M 15
-Binocular Messier OP	14	M 16
-Binocular Messier OP	15	M 17
-Binocular Messier OP	16	M 18
-Binocular Messier OP	17	M 19
-Binocular Messier OP	18	M 22
-Binocular Messier OP	19	M 23
-Binocular Messier OP	20	M 24
-Binocular Messier OP	21	M 25
-Binocular Messier OP	22	M 27
-Binocular Messier OP	23	M 28
-Binocular Messier OP	24	M 29
-Binocular Messier OP	25	M 30
-Binocular Messier OP	26	M 31
-Binocular Messier OP	27	M 33
-Binocular Messier OP	28	M 34
-Binocular Messier OP	29	M 35
-Binocular Messier OP	30	M 36
-Binocular Messier OP	31	M 37
-Binocular Messier OP	32	M 38
-Binocular Messier OP	33	M 39
-Binocular Messier OP	34	M 40
-Binocular Messier OP	35	M 41
-Binocular Messier OP	36	M 42
-Binocular Messier OP	37	M 44
-Binocular Messier OP	38	M 45
-Binocular Messier OP	39	M 46
-Binocular Messier OP	40	M 47
-Binocular Messier OP	41	M 48
-Binocular Messier OP	42	M 49
-Binocular Messier OP	43	M 50
-Binocular Messier OP	44	M 52
-Binocular Messier OP	45	M 53
-Binocular Messier OP	46	M 55
-Binocular Messier OP	47	M 62
-Binocular Messier OP	48	M 63
-Binocular Messier OP	49	M 64
-Binocular Messier OP	50	M 67
-Binocular Messier OP	51	M 78
-Binocular Messier OP	52	M 79
-Binocular Messier OP	53	M 80
-Binocular Messier OP	54	M 81
-Binocular Messier OP	55	M 82
-Binocular Messier OP	56	M 83
-Binocular Messier OP	57	M 92
-Binocular Messier OP	58	M 93
-Binocular Messier OP	59	M 94
-Binocular Messier OP	60	M 103
+#program	number	objectId	observationId
+Messier OP	1	M 31	20180817-05-m31
+Messier OP	2	M 32	20180817-05-m31
+Messier OP	3	M 110	20180901-04-m110
+Messier OP	4	M 33	20181013-03-m33
+Messier OP	5	M 52	20180805-03-m52
+Messier OP	6	M 103	20201029-01-m103
+Messier OP	7	M 34	20191128-03-m34
+Messier OP	8	M 76	20181010-01-m76
+Messier OP	9	M 1	20181013-04-m1
+Messier OP	10	M 45	20181015-03-m45
+Messier OP	11	M 36	20171027-02-m36
+Messier OP	12	M 37	20171220-02-m37
+Messier OP	13	M 38	20180114-01-m38
+Messier OP	14	M 42	20180114-04-m42
+Messier OP	15	M 43	20180114-04-m42
+Messier OP	16	M 78	20181203-02-m78
+Messier OP	17	M 79	20190101-01-m79
+Messier OP	18	M 35	20180114-03-m35
+Messier OP	19	M 50	20180220-03-m50
+Messier OP	20	M 41	20180212-03-m41
+Messier OP	21	M 46	20190113-03-m46
+Messier OP	22	M 47	20190101-04-m47
+Messier OP	23	M 93	20190113-07-m93
+Messier OP	24	M 44	20190115-01-m44
+Messier OP	25	M 67	20190128-02-m67
+Messier OP	26	M 48	20180319-01-m48
+Messier OP	27	M 81	20190129-02-m81m82
+Messier OP	28	M 82	20190129-02-m81m82
+Messier OP	29	M 97	20190128-01-m97
+Messier OP	30	M 108	20190128-05-m108
+Messier OP	31	M 109	20190302-04-m109
+Messier OP	32	M 101	20190302-05-m101
+Messier OP	33	M 40	20180923-01-m40
+Messier OP	34	M 65	20180311-03-leotriplet
+Messier OP	35	M 66	20180311-03-leotriplet
+Messier OP	36	M 95	20190302-02-m95
+Messier OP	37	M 96	20190302-01-m96
+Messier OP	38	M 105	20190302-03-m105ngc3384
+Messier OP	39	M 3	20200617-03-m3
+Messier OP	40	M 51	20180311-04-m51
+Messier OP	41	M 63	20190304-02-m63
+Messier OP	42	M 94	20190303-01-m94
+Messier OP	43	M 106	20190304-01-m106
+Messier OP	44	M 49	20190329-08-m49
+Messier OP	45	M 58	20190329-06-m58
+Messier OP	46	M 59	20190329-04-m59
+Messier OP	47	M 60	20190329-05-m59m60ngc4638
+Messier OP	48	M 84	20190304-04-m84m86
+Messier OP	49	M 86	20190304-04-m84m86
+Messier OP	50	M 87	20200416-05-m87ngc4468angc4478
+Messier OP	51	M 89	20190329-07-m89
+Messier OP	52	M 90	20190424-03-m90
+Messier OP	53	M 61	20190424-02-m61
+Messier OP	54	M 104	20190329-11-m104
+Messier OP	55	M 53	20200409-01-sandshovel
+Messier OP	56	M 64	20190304-03-m64
+Messier OP	57	M 85	20190324-02-m85
+Messier OP	58	M 88	20190329-09-m88
+Messier OP	59	M 98	20190324-04-m98
+Messier OP	60	M 99	20190324-03-m99
+Messier OP	61	M 100	20190324-05-m100
+Messier OP	62	M 91	20190329-10-m91
+Messier OP	63	M 68	20190424-01-m68
+Messier OP	64	M 83	20190424-04-m83
+Messier OP	65	M 5	20200518-06-m5
+Messier OP	66	M 102	20190403-01-m102
+Messier OP	67	M 13	20200710-04-m13
+Messier OP	68	M 92	20190721-04-m92
+Messier OP	69	M 9	20200622-02-m9
+Messier OP	70	M 10	20180711-05-m10
+Messier OP	71	M 12	20200618-03-m12
+Messier OP	72	M 14	20200710-02-m14
+Messier OP	73	M 19	20200621-01-m19
+Messier OP	74	M 62	20200718-04-m62
+Messier OP	75	M 107	20200621-04-m107
+Messier OP	76	M 4	20180616-02-m4
+Messier OP	77	M 80	20200618-01-m80
+Messier OP	78	M 6	20190629-03-m6
+Messier OP	79	M 7	20190629-02-m7
+Messier OP	80	M 11	20180711-04-m11
+Messier OP	81	M 26	20180901-01-m26
+Messier OP	82	M 16	20180807-03-m16
+Messier OP	83	M 17	20190530-08-m17
+Messier OP	84	M 18	20180702-03-m18
+Messier OP	85	M 24	20180616-04-m24
+Messier OP	86	M 20	20180712-07-m20
+Messier OP	87	M 21	20180712-06-m21
+Messier OP	88	M 8	20180616-07-m8
+Messier OP	89	M 22	20200714-02-m22
+Messier OP	90	M 28	20200713-03-m28
+Messier OP	91	M 23	20180614-01-m23vesta
+Messier OP	92	M 25	20180702-02-m25
+Messier OP	93	M 54	20200718-07-m54
+Messier OP	94	M 55	20190629-07-m55
+Messier OP	95	M 69	20200718-06-m69
+Messier OP	96	M 70	20200718-03-m70
+Messier OP	97	M 75	20200726-03-m75
+Messier OP	98	M 56	20190727-05-m56
+Messier OP	99	M 57	20180611-04-m57
+Messier OP	100	M 29	20180601-03-m29
+Messier OP	101	M 39	20180805-02-m39
+Messier OP	102	M 27	20190708-05-m27
+Messier OP	103	M 71	20180712-08-m71
+Messier OP	104	M 30	20200824-01-m30
+Messier OP	105	M 2	20200824-02-m2
+Messier OP	106	M 72	20180901-02-m72
+Messier OP	107	M 73	20180901-03-m73
+Messier OP	108	M 15	20200824-03-m15
+Messier OP	109	M 74	20181013-01-m74
+Messier OP	110	M 77	20181013-02-m77
+Urban OP	1	NGC 129	20180905-02-ngc129
+Urban OP	2	M 32	20180817-05-m31
+Urban OP	3	M 31	20180817-05-m31
+Urban OP	4	NGC 457	20191010-03-ngc457
+Urban OP	5	NGC 663	20180905-04-ngc663
+Urban OP	6	Cr 463	20180905-05-cr463
+Urban OP	7	NGC 752	20180903-06-ngc752
+Urban OP	8	Stock 2	20180817-04-stock2
+Urban OP	9	NGC 869	20180817-03-doublecluster
+Urban OP	10	NGC 884	20180817-03-doublecluster
+Urban OP	11	Tr 2	20180924-05-tr2
+Urban OP	12	M 77	20180113-01-m77
+Urban OP	13	Tr 3	20180928-04-tr3
+Urban OP	14	Stock 23	20180928-05-stock23
+Urban OP	15	Mel 20	20181012-01-mel20
+Urban OP	16	NGC 1342	20181011-03-ngc1342
+Urban OP	17	M 45	20180113-03-m45
+Urban OP	18	Mel 25	20181117-01-hyades
+Urban OP	19	NGC 1647	20181111-02-ngc1647
+Urban OP	20	NGC 1807	20181111-04-ngc1807
+Urban OP	21	NGC 1817	20181111-04-ngc1807
+Urban OP	22	M 38	20180114-01-m38
+Urban OP	23	M 36	20171027-02-m36
+Urban OP	24	M 42	20180114-04-m42
+Urban OP	25	NGC 1981	20180222-02-ngc1981
+Urban OP	26	M 37	20171220-02-m37
+Urban OP	27	M 35	20180114-03-m35
+Urban OP	28	NGC 2169	20180222-03-ngc2169
+Urban OP	29	NGC 2232	20190113-02-ngc2232
+Urban OP	30	NGC 2244	20190110-02-ngc2244
+Urban OP	31	NGC 2264	20180114-05-ngc2264
+Urban OP	32	NGC 2281	20180314-01-ngc2281
+Urban OP	33	M 41	20180212-03-m41
+Urban OP	34	NGC 2301	20180315-01-ngc2301
+Urban OP	35	M 50	20180220-03-m50
+Urban OP	36	NGC 2392	20190113-01-ngc2392
+Urban OP	37	NGC 2539	20200219-05-ngc2359
+Urban OP	38	M 48	20180319-01-m48
+Urban OP	39	M 44	20180212-05-m44
+Urban OP	40	M 67	20190128-02-m67
+Urban OP	41	M 81	20180305-02-m81
+Urban OP	42	M 82	20180305-01-m82
+Urban OP	43	NGC 3242	20190128-03-ngc3242
+Urban OP	44	Mel 111	20180314-02-mel111
+Urban OP	45	M 84	20190304-04-m84m86
+Urban OP	46	M 86	20190304-04-m84m86
+Urban OP	47	M 87	20190304-05-m87
+Urban OP	48	M 104	20190329-11-m104
+Urban OP	49	M 94	20190303-01-m94
+Urban OP	50	M 64	20190304-03-m64
+Urban OP	51	M 3	20180305-03-m3
+Urban OP	52	M 5	20180611-02-m5
+Urban OP	53	M 4	20190503-07-m4
+Urban OP	54	M 13	20190509-04-m13
+Urban OP	55	NGC 6210	20190510-06-ngc6210
+Urban OP	56	M 12	20180611-03-m12
+Urban OP	57	M 10	20180711-05-m10
+Urban OP	58	M 62	20190503-08-m62
+Urban OP	59	M 92	20180707-01-m92
+Urban OP	60	M 6	20190629-03-m6
+Urban OP	61	IC 4665	20180713-02-ic4665
+Urban OP	62	M 7	20190629-02-m7
+Urban OP	63	NGC 6520	20190629-01-ngc6520
+Urban OP	64	M 8	20180712-05-m8
+Urban OP	65	M 17	20190530-08-m17
+Urban OP	66	NGC 6633	20180711-03-ngc6633
+Urban OP	67	M 22	20180807-02-m22
+Urban OP	68	IC 4756	20180711-02-ic4756
+Urban OP	69	M 11	20180711-04-m11
+Urban OP	70	NGC 6709	20180806-02-ngc6709
+Urban OP	71	M 57	20180611-04-m57
+Urban OP	72	Cr 399	20171028-02-cr399
+Urban OP	73	NGC 6818	20180928-01-ngc6818
+Urban OP	74	NGC 6826	20180807-01-ngc6826
+Urban OP	75	M 27	20180712-09-m27
+Urban OP	76	NGC 6910	20180902-02-ngc6910
+Urban OP	77	NGC 6934	20180902-04-ngc6934
+Urban OP	78	NGC 6940	20180902-03-ngc6940
+Urban OP	79	NGC 7009	20180928-02-ngc7009
+Urban OP	80	M 15	20180902-05-m15
+Urban OP	81	M 2	20180905-06-m2
+Urban OP	82	M 39	20180805-02-m39
+Urban OP	83	NGC 7160	20180906-02-ngc7160
+Urban OP	84	NGC 7209	20180906-03-ngc7209
+Urban OP	85	NGC 7243	20180903-05-ngc7243
+Urban OP	86	NGC 7662	20180903-04-ngc7662
+Urban OP	87	NGC 7789	20180903-03-ngc7789
+Urban OP	88	Eta Cas	20180222-01-etacas
+Urban OP	89	Gamma Ari	20181004-01-gammaari
+Urban OP	90	Gamma And	20171220-04-almach
+Urban OP	91	Theta 1 Ori	20181118-05-m42trap
+Urban OP	92	Beta Mon	20180319-02-betamon
+Urban OP	93	Gamma Leo	20180210-01-algieba
+Urban OP	94	Zeta UMa	20180611-01-mizaralcor
+Urban OP	95	Beta Sco	20180712-03-betasco
+Urban OP	96	Epsilon Lyr	20180523-01-epslyr
+Urban OP	97	Beta Cyg	20171028-03-albireo
+Urban OP	98	Gamma Del	20180917-07-gammadel
+Urban OP	99	Delta Cep	20180906-01-deltacep
+Urban OP	100	Beta Per	
+Wimmer's List	1	M 31	
+Wimmer's List	2	NGC 752	
+Wimmer's List	3	NGC 7686	
+Wimmer's List	4	NGC 2129	
+Wimmer's List	5	M 35	
+Wimmer's List	6	M 45	
+Wimmer's List	7	NGC 1647	
+Wimmer's List	8	NGC 1746	
+Wimmer's List	9	Mel 25	
+Wimmer's List	10	NGC 7160	
+Wimmer's List	11	M 13	
+Wimmer's List	12	M 92	
+Wimmer's List	13	M 48	
+Wimmer's List	14	NGC 7209	
+Wimmer's List	15	NGC 7243	
+Wimmer's List	16	NGC 2232	
+Wimmer's List	17	NGC 2244	
+Wimmer's List	18	NGC 2264	
+Wimmer's List	19	NGC 2301	
+Wimmer's List	20	M 50	
+Wimmer's List	21	NGC 129	
+Wimmer's List	22	NGC 457	
+Wimmer's List	23	M 103	
+Wimmer's List	24	NGC 654	
+Wimmer's List	25	NGC 663	
+Wimmer's List	26	NGC 1027	
+Wimmer's List	27	M 52	
+Wimmer's List	28	NGC 7789	
+Wimmer's List	29	M 27	
+Wimmer's List	30	NGC 6940	
+Wimmer's List	31	M 57	
+Wimmer's List	32	NGC 6811	
+Wimmer's List	33	NGC 6871	
+Wimmer's List	34	M 29	
+Wimmer's List	35	M 39	
+Wimmer's List	36	NGC 1662	
+Wimmer's List	37	M 42	
+Wimmer's List	38	NGC 1981	
+Wimmer's List	39	M 43	
+Wimmer's List	40	NGC 2169	
+Wimmer's List	41	NGC 6709	
+Wimmer's List	42	M 104	
+Wimmer's List	43	M 15	
+Wimmer's List	44	NGC 869	
+Wimmer's List	45	NGC 884	
+Wimmer's List	46	M 34	
+Wimmer's List	47	NGC 1528	
+Wimmer's List	48	NGC 1545	
+Wimmer's List	49	M 51	
+Wimmer's List	50	M 3	
+Wimmer's List	51	M 44	
+Wimmer's List	52	M 67	
+Wimmer's List	53	M 47	
+Wimmer's List	54	M 46	
+Wimmer's List	55	M 93	
+Wimmer's List	56	NGC 2539	
+Wimmer's List	57	M 80	
+Wimmer's List	58	M 4	
+Wimmer's List	59	M 6	
+Wimmer's List	60	M 7	
+Wimmer's List	61	M 23	
+Wimmer's List	62	M 20	
+Wimmer's List	63	M 8	
+Wimmer's List	64	M 21	
+Wimmer's List	65	M 17	
+Wimmer's List	66	M 22	
+Wimmer's List	67	M 24	
+Wimmer's List	68	M 25	
+Wimmer's List	69	M 11	
+Wimmer's List	70	M 5	
+Wimmer's List	71	NGC 6604	
+Wimmer's List	72	M 16	
+Wimmer's List	73	M 12	
+Wimmer's List	74	M 10	
+Wimmer's List	75	NGC 6633	
+Wimmer's List	76	M 81	
+Wimmer's List	77	M 82	
+Wimmer's List	78	M 40	
+Wimmer's List	79	M 41	
+Wimmer's List	80	NGC 2354	
+Wimmer's List	81	NGC 2362	
+Wimmer's List	82	M 2	
+Wimmer's List	83	M 38	
+Wimmer's List	84	M 36	
+Wimmer's List	85	M 37	
+Wimmer's List	86	NGC 2281	
+Wimmer's List	87	NGC 1502	
+Wimmer's List	88	Golf Putter	
+Wimmer's List	89	Ally's Braid	
+Wimmer's List	90	Spermatozoon	
+Wimmer's List	91	Crossbow	
+Wimmer's List	92	Toadstool	
+Wimmer's List	93	Backwards 5	
+Wimmer's List	94	Lucky 7	
+Wimmer's List	95	Kemble's Kite	
+Wimmer's List	96	Stargate	
+Wimmer's List	97	Cr 399	
+Wimmer's List	98	Engagement Ring	
+Wimmer's List	99	Mini Coathanger	
+Wimmer's List	100	Sailboat	
+Wimmer's List	101	Orion's Belt	
+Wimmer's List	102	Orion's Sword	
+Wimmer's List	103	Lambda-Lambda	
+Wimmer's List	104	Jaws	
+Wimmer's List	105	DNA	
+Wimmer's List	106	Napoleon's Hat	
+Wimmer's List	107	Kemble's Cascade	
+Wimmer's List	108	Gamma And	
+Wimmer's List	109	Alpha Gem	
+Wimmer's List	110	Delta Cep	
+Wimmer's List	111	Gamma Del	
+Wimmer's List	112	Alpha Her	
+Wimmer's List	113	Eta Cas	
+Wimmer's List	114	Epsilon Lyr	
+Wimmer's List	115	Beta Lyr	
+Wimmer's List	116	Beta Cyg	
+Wimmer's List	117	Delta Ori	
+Wimmer's List	118	Theta 2 Ori	
+Wimmer's List	119	Theta 1 Ori	
+Wimmer's List	120	Sigma Ori	
+Wimmer's List	121	Alpha CVn	
+Wimmer's List	122	12 Lyn	
+Wimmer's List	123	16,17 Dra	
+Wimmer's List	124	Delta Ser	
+Wimmer's List	125	Zeta UMa	
+Wimmer's List	126	Pi Boo	
+Asterism OP	1	Small Keystone	
+Asterism OP	2	Renou 18	20191104-01-renou18
+Asterism OP	3	NGC 457	20191010-03-ngc457
+Asterism OP	4	Spatula	20191030-01-spatula
+Asterism OP	5	David's D	20191103-02-davidsd
+Asterism OP	6	Pouring Cup	20191105-01-pouringcup
+Asterism OP	7	Engagement Ring	20190720-02-engagementring
+Asterism OP	8	Kemble's Kite	20191106-02-kembleskite
+Asterism OP	9	Chi 1, 2, 3	
+Asterism OP	10	Letter "F"	
+Asterism OP	11	Letter "D"	
+Asterism OP	12	Fish Hook	20200209-02-fishhook
+Asterism OP	13	Double Triangle	20200209-01-doubletriangle
+Asterism OP	14	Elosser 1	20200218-02-elosser1
+Asterism OP	15	Leaping Minnow	20200229-04-leapingminnow
+Asterism OP	16	Metronome	20200209-04-metronome
+Asterism OP	17	Smiley Face	20180211-01-cheshire
+Asterism OP	18	Barbecue Fork	20200218-01-barbecuefork
+Asterism OP	19	Funnel	20180220-01-funnel
+Asterism OP	20	NGC 2169	20180222-03-ngc2169
+Asterism OP	21	Nagler 1	
+Asterism OP	22	Arrowhead	20180220-02-arrowhead
+Asterism OP	23	NGC 2264	20180114-05-ngc2264
+Asterism OP	24	Pakan's 3	20200219-01-pakans3
+Asterism OP	25	Little Leo	20200218-08-littleleo
+Asterism OP	26	Ray's Shrimp	20200219-04-raysshrimp
+Asterism OP	27	Levy 384	
+Asterism OP	28	Inchworm	20180319-04-inchworm
+Asterism OP	29	Greg's 3	20180315-02-gregs3
+Asterism OP	30	Spade	20200229-01-spade
+Asterism OP	31	The Heart	20200314-01-theheart
+Asterism OP	32	Camel	
+Asterism OP	33	Sailboat	
+Asterism OP	34	A	20200314-04-a
+Asterism OP	35	Rinnan's Run	20200314-05-rinnansrun
+Asterism OP	36	Broken Engagement Ring	20200229-03-brokenengagementring
+Asterism OP	37	Virgo Diamond	20200425-01-virgodiamond
+Asterism OP	38	Stargate	20190503-01-stargate
+Asterism OP	39	Jaws	20200427-02-jaws
+Asterism OP	40	Curved Arrow	20200409-02-curvedarrow
+Asterism OP	41	Ferrero 6	20200406-05-ferrero6
+Asterism OP	42	Sand Shovel	20200409-01-sandshovel
+Asterism OP	43	Gas Pump Handle	20200406-04-gaspumphandle
+Asterism OP	44	Napoleon's Hat	20180422-01-napoleonshat
+Asterism OP	45	Kangaroo	20200507-02-kangaroo
+Asterism OP	46	DoDz 5	20200616-01-dodz5
+Asterism OP	47	Mini Coathanger	20180422-04-minicoathanger
+Asterism OP	48	Backwards 5	20190708-02-backwards5
+Asterism OP	49	DoDz 6	20200616-02-dodz6
+Asterism OP	50	Shark	20200507-03-shark
+Asterism OP	51	Sudor Ophiuchi	20200617-01-sudororphiuchi
+Asterism OP	52	DoDz 7	20200617-04-dodz7
+Asterism OP	53	DoDz 8	20190803-02-dodz8
+Asterism OP	54	M 6	20190629-03-m6
+Asterism OP	55	Markov 1	20190708-03-markov1
+Asterism OP	56	Chinese Kite	20190725-02-chinesekite
+Asterism OP	57	Webb's Wreath	20200704-01-webbswreath
+Asterism OP	58	Mini Cassiopeia	20190805-02-minicassiopeia
+Asterism OP	59	Levy 157	20200704-03-levy157
+Asterism OP	60	Tennis Racket	20190805-01-tennisracket
+Asterism OP	61	Meerschaum Pipe	20190820-03-meerschaumpipe
+Asterism OP	62	Vultus Irrisorie	20190803-03-vultusissorie
+Asterism OP	63	Arrowchain	20190803-06-arrowchain
+Asterism OP	64	Leiter 4	20190803-07-leiter4
+Asterism OP	65	Fairy Ring	20190825-02-fairyring
+Asterism OP	66	Red Necked Emu	20190825-03-redneckedemu
+Asterism OP	67	Patchik 56	20190826-01-patchik56
+Asterism OP	68	Thompson 1	20190903-02-thompson1
+Asterism OP	69	HD 196944	20200815-03-hd196944
+Asterism OP	70	Poskus 1	20190903-01-poskus1
+Asterism OP	71	M 73	20180901-03-m73
+Asterism OP	72	Little Orion	20190730-02-littleorion
+Asterism OP	73	10 Aquarii	20200815-05-10aquarii
+Asterism OP	74	Toadstool	20190930-02-toadstool
+Asterism OP	75	Seedling	20200828-06-seedling
+Asterism OP	76	Tobacco Pipe	20191005-03-tobaccopipe
+Asterism OP	77	Delphinus Minor	20181012-02-delphinusminor
+Asterism OP	78	Rocketship	20200928-03-rocketship
+Asterism OP	79	Airplane	20191005-01-airplane
+Asterism OP	80	Yacht	20191005-02-yacht
+Asterism OP	81	TPK 1	
+Asterism OP	82	Home Plate	20181015-01-homeplate
+Asterism OP	83	Eddie's Coaster	20191006-03-eddiescoaster
+Asterism OP	84	Queen's Kite	20191006-02-queenskite
+Asterism OP	85	Golf Putter	20180903-06-ngc752
+Asterism OP	86	Question Mark	20191104-02-questionmark
+Asterism OP	87	Northern Fly	20191026-01-northernfly
+Asterism OP	88	M 45	20180113-03-m45
+Asterism OP	89	Kemble's Cascade	20181012-03-kemblescascade
+Asterism OP	90	Davis's Dog	20171220-03-davisdog
+Asterism OP	91	S in Orion's Belt	20200209-03-sinorinsbelt
+Asterism OP	92	Boomerang	20200209-05-boomerang
+Asterism OP	93	Star Gun	20200209-06-stargun
+Asterism OP	94	Umbrella	20200219-06-umbrella
+Asterism OP	95	Fly and Fly Swatter	20200314-03-flyandflyswatter
+Asterism OP	96	Sea Horse	20200409-03-seahorse
+Asterism OP	97	Baby Scorpion	20200515-02-babyscorpion
+Asterism OP	98	Taurus Poniatovii	20190725-03-taurusponiatovii
+Asterism OP	99	Cr 399	20190703-01-cr399
+Asterism OP	100	Herman's Cross	20200625-02-hermanscross
+Asterism OP	101	Lucky 7	20181015-02-luckyseven
+Asterism OP	102	Frederick's Glory	20191006-01-fredericksglory
+Asterism OP	103	Sickle	20200220-06-sickle
+Asterism OP	104	Big Dipper	20190720-03-bigdipper
+Asterism OP	105	Keystone	20190720-04-herculeskeystone
+Asterism OP	106	Tea Pot	20200625-01-teaspoonteapot
+Asterism OP	107	Teaspoon	20200625-01-teaspoonteapot
+Asterism OP	108	Northern Cross	20190720-05-northerncross
+Asterism OP	109	Job's Coffin	20190803-08-delphinus
+Asterism OP	110	Water Jar	
+Asterism OP	111	Circlet	20191030-02-circlet
+Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
+500 Best DSOs	1	NGC 40	20190828-01-ngc40
+500 Best DSOs	2	NGC 55	
+500 Best DSOs	3	NGC 128	
+500 Best DSOs	4	NGC 134	
+500 Best DSOs	5	NGC 147	
+500 Best DSOs	6	NGC 157	
+500 Best DSOs	7	NGC 185	20201108-03-ngc185
+500 Best DSOs	8	NGC 188	
+500 Best DSOs	9	NGC 189	
+500 Best DSOs	10	M 110	20180901-04-m110
+500 Best DSOs	11	NGC 206	
+500 Best DSOs	12	M 32	20180817-05-m31
+500 Best DSOs	13	M 31	20180817-05-m31
+500 Best DSOs	14	NGC 225	20201024-02-ngc225
+500 Best DSOs	15	NGC 246	20201204-04-ngc246
+500 Best DSOs	16	NGC 247	
+500 Best DSOs	17	NGC 253	
+500 Best DSOs	18	NGC 278	20201108-02-ngc278
+500 Best DSOs	19	NGC 281	20191006-04-ngc281
+500 Best DSOs	20	NGC 288	
+500 Best DSOs	21	NGC 300	
+500 Best DSOs	22	NGC 381	
+500 Best DSOs	23	NGC 404	20201204-02-ngc404
+500 Best DSOs	24	NGC 436	20201027-03-ngc436
+500 Best DSOs	25	NGC 457	20201027-02-ngc457
+500 Best DSOs	26	NGC 488	
+500 Best DSOs	27	NGC 578	
+500 Best DSOs	28	M 103	20201029-01-m103
+500 Best DSOs	29	NGC 584	
+500 Best DSOs	30	M 33	20181013-03-m33
+500 Best DSOs	31	M 74	20181013-01-m74
+500 Best DSOs	32	NGC 637	
+500 Best DSOs	33	NGC 654	20180817-02-ngc654
+500 Best DSOs	34	NGC 659	
+500 Best DSOs	35	NGC 663	20180905-04-ngc663
+500 Best DSOs	36	NGC 669	
+500 Best DSOs	37	NGC 670	
+500 Best DSOs	38	NGC 672	
+500 Best DSOs	39	NGC 684	
+500 Best DSOs	40	NGC 743	
+500 Best DSOs	41	NGC 751	
+500 Best DSOs	42	NGC 772	20201106-04-ngc772
+500 Best DSOs	43	NGC 784	
+500 Best DSOs	44	NGC 864	
+500 Best DSOs	45	NGC 869	20180817-03-doublecluster
+500 Best DSOs	46	NGC 877	
+500 Best DSOs	47	NGC 884	20180817-03-doublecluster
+500 Best DSOs	48	NGC 891	
+500 Best DSOs	49	NGC 908	
+500 Best DSOs	50	NGC 925	
+500 Best DSOs	51	NGC 949	
+500 Best DSOs	52	NGC 955	
+500 Best DSOs	53	NGC 972	
+500 Best DSOs	54	NGC 1003	
+500 Best DSOs	55	NGC 1023	20191028-04-uyandngc1023
+500 Best DSOs	56	M 34	20191128-03-m34
+500 Best DSOs	57	M 77	20181013-02-m77
+500 Best DSOs	58	NGC 1087	
+500 Best DSOs	59	NGC 1160	
+500 Best DSOs	60	NGC 1187	
+500 Best DSOs	61	NGC 1232	
+500 Best DSOs	62	NGC 1245	20201202-01-ngc1245
+500 Best DSOs	63	NGC 1300	
+500 Best DSOs	64	NGC 1316	
+500 Best DSOs	65	NGC 1331	
+500 Best DSOs	66	NGC 1332	
+500 Best DSOs	67	NGC 1333	
+500 Best DSOs	68	NGC 1342	20181011-03-ngc1342
+500 Best DSOs	69	NGC 1360	
+500 Best DSOs	70	NGC 1365	
+500 Best DSOs	71	NGC 1369	
+500 Best DSOs	72	NGC 1395	
+500 Best DSOs	73	NGC 1398	
+500 Best DSOs	74	NGC 1399	
+500 Best DSOs	75	NGC 1400	
+500 Best DSOs	76	NGC 1404	
+500 Best DSOs	77	NGC 1407	
+500 Best DSOs	78	NGC 1421	
+500 Best DSOs	79	NGC 1435	
+500 Best DSOs	80	NGC 1444	20201202-02-ngc1444
+500 Best DSOs	81	NGC 1491	20191129-02-ngc1491
+500 Best DSOs	82	NGC 1501	20201107-05-ngc1501
+500 Best DSOs	83	NGC 1502	
+500 Best DSOs	84	NGC 1507	
+500 Best DSOs	85	NGC 1514	
+500 Best DSOs	86	NGC 1528	20191129-03-ngc1528
+500 Best DSOs	87	NGC 1531	
+500 Best DSOs	88	NGC 1532	
+500 Best DSOs	89	NGC 1535	
+500 Best DSOs	90	NGC 1545	20201202-03-ngc1545
+500 Best DSOs	91	NGC 1579	
+500 Best DSOs	92	NGC 1647	20181111-02-ngc1647
+500 Best DSOs	93	NGC 1664	
+500 Best DSOs	94	NGC 1746	
+500 Best DSOs	95	NGC 1778	
+500 Best DSOs	96	NGC 1798	
+500 Best DSOs	97	NGC 1817	20181111-04-ngc1807
+500 Best DSOs	98	NGC 1857	
+500 Best DSOs	99	NGC 1883	
+500 Best DSOs	100	NGC 1893	
+500 Best DSOs	101	M 79	20190101-01-m79
+500 Best DSOs	102	NGC 1907	20201223-01-ngc1907
+500 Best DSOs	103	M 38	20180114-01-m38
+500 Best DSOs	104	NGC 1931	
+500 Best DSOs	105	M 1	20181013-04-m1
+500 Best DSOs	106	M 36	20171027-02-m36
+500 Best DSOs	107	NGC 1964	
+500 Best DSOs	108	M 42	20180114-04-m42
+500 Best DSOs	109	NGC 1980	20200317-02-ngc1980
+500 Best DSOs	110	NGC 1981	20180222-02-ngc1981
+500 Best DSOs	111	M 43	20180114-04-m42
+500 Best DSOs	112	NGC 1999	
+500 Best DSOs	113	NGC 2022	20200218-03-ngc2022
+500 Best DSOs	114	NGC 2024	
+500 Best DSOs	115	M 78	20181203-02-m78
+500 Best DSOs	116	M 37	20171220-02-m37
+500 Best DSOs	117	NGC 2126	
+500 Best DSOs	118	NGC 2129	20200229-05-ngc2129
+500 Best DSOs	119	NGC 2141	
+500 Best DSOs	120	NGC 2146	
+500 Best DSOs	121	NGC 2158	20210122-05-ngc2158
+500 Best DSOs	122	M 35	20180114-03-m35
+500 Best DSOs	123	NGC 2169	20180222-03-ngc2169
+500 Best DSOs	124	NGC 2192	
+500 Best DSOs	125	NGC 2194	
+500 Best DSOs	126	NGC 2204	
+500 Best DSOs	127	NGC 2207	
+500 Best DSOs	128	NGC 2217	
+500 Best DSOs	129	NGC 2225	
+500 Best DSOs	130	NGC 2236	
+500 Best DSOs	131	NGC 2251	20210312-04-ngc2251
+500 Best DSOs	132	NGC 2254	
+500 Best DSOs	133	NGC 2259	
+500 Best DSOs	134	NGC 2261	20200218-05-ngc2261
+500 Best DSOs	135	NGC 2264	20180114-05-ngc2264
+500 Best DSOs	136	NGC 2266	20210122-04-ngc2266
+500 Best DSOs	137	NGC 2268	
+500 Best DSOs	138	NGC 2269	
+500 Best DSOs	139	NGC 2281	20180314-01-ngc2281
+500 Best DSOs	140	NGC 2286	
+500 Best DSOs	141	M 41	20180212-03-m41
+500 Best DSOs	142	NGC 2301	20180315-01-ngc2301
+500 Best DSOs	143	NGC 2309	
+500 Best DSOs	144	NGC 2316	
+500 Best DSOs	145	M 50	20180220-03-m50
+500 Best DSOs	146	NGC 2336	
+500 Best DSOs	147	NGC 2345	
+500 Best DSOs	148	NGC 2353	
+500 Best DSOs	149	NGC 2354	
+500 Best DSOs	150	NGC 2355	20210122-07-ngc2355
+500 Best DSOs	151	NGC 2359	20190113-04-ngc2359
+500 Best DSOs	152	NGC 2360	
+500 Best DSOs	153	NGC 2362	20210303-01-ngc2362
+500 Best DSOs	154	NGC 2374	
+500 Best DSOs	155	NGC 2392	20190113-01-ngc2392
+500 Best DSOs	156	NGC 2401	
+500 Best DSOs	157	NGC 2403	20200220-01-ngc2403
+500 Best DSOs	158	NGC 2419	20210122-03-ngc2419
+500 Best DSOs	159	NGC 2420	20210122-06-ngc2420
+500 Best DSOs	160	NGC 2421	
+500 Best DSOs	161	M 47	20190101-04-m47
+500 Best DSOs	162	NGC 2425	
+500 Best DSOs	163	M 46	20190113-03-m46
+500 Best DSOs	164	NGC 2438	
+500 Best DSOs	165	NGC 2439	
+500 Best DSOs	166	NGC 2440	20200219-07-ngc2440
+500 Best DSOs	167	M 93	20190113-07-m93
+500 Best DSOs	168	NGC 2451	
+500 Best DSOs	169	NGC 2452	
+500 Best DSOs	170	NGC 2453	
+500 Best DSOs	171	NGC 2467	
+500 Best DSOs	172	NGC 2477	
+500 Best DSOs	173	NGC 2479	
+500 Best DSOs	174	NGC 2489	
+500 Best DSOs	175	NGC 2506	
+500 Best DSOs	176	NGC 2509	
+500 Best DSOs	177	NGC 2533	
+500 Best DSOs	178	NGC 2537	
+500 Best DSOs	179	NGC 2539	20200219-05-ngc2359
+500 Best DSOs	180	NGC 2546	
+500 Best DSOs	181	M 48	20180319-01-m48
+500 Best DSOs	182	NGC 2567	
+500 Best DSOs	183	NGC 2588	
+500 Best DSOs	184	NGC 2610	
+500 Best DSOs	185	NGC 2655	20200220-02-ngc2655
+500 Best DSOs	186	NGC 2681	20210310-01-ngc2681
+500 Best DSOs	187	M 67	20190128-02-m67
+500 Best DSOs	188	NGC 2683	20200227-04-ngc2683
+500 Best DSOs	189	NGC 2768	20210316-03-ngc2768
+500 Best DSOs	190	NGC 2815	
+500 Best DSOs	191	NGC 2841	20200315-03-ngc2841
+500 Best DSOs	192	NGC 2903	20200227-03-ngc2903
+500 Best DSOs	193	NGC 3003	
+500 Best DSOs	194	M 81	20190129-02-m81m82
+500 Best DSOs	195	M 82	20190129-02-m81m82
+500 Best DSOs	196	NGC 3077	20210311-01-ngc3077
+500 Best DSOs	197	NGC 3079	20200315-04-ngc3079
+500 Best DSOs	198	NGC 3091	
+500 Best DSOs	199	NGC 3109	
+500 Best DSOs	200	NGC 3115	20200318-03-ngc3115
+500 Best DSOs	201	NGC 3184	
+500 Best DSOs	202	NGC 3226	20210312-07-ngc3226ngc3227
+500 Best DSOs	203	NGC 3227	20210312-07-ngc3226ngc3227
+500 Best DSOs	204	NGC 3242	20190128-03-ngc3242
+500 Best DSOs	205	NGC 3344	20200317-05-ngc3344
+500 Best DSOs	206	M 95	20190302-02-m95
+500 Best DSOs	207	M 96	20190302-01-m96
+500 Best DSOs	208	NGC 3373	
+500 Best DSOs	209	M 105	20190302-03-m105ngc3384
+500 Best DSOs	210	NGC 3384	20190302-03-m105ngc3384
+500 Best DSOs	211	NGC 3432	20210316-04-ngc3432
+500 Best DSOs	212	NGC 3507	
+500 Best DSOs	213	NGC 3511	
+500 Best DSOs	214	NGC 3521	20200315-07-ngc3521
+500 Best DSOs	215	M 108	20190128-05-m108
+500 Best DSOs	216	M 97	20190128-01-m97
+500 Best DSOs	217	NGC 3621	
+500 Best DSOs	218	M 65	20180311-03-leotriplet
+500 Best DSOs	219	M 66	20180311-03-leotriplet
+500 Best DSOs	220	NGC 3628	20180311-03-leotriplet
+500 Best DSOs	221	NGC 3631	
+500 Best DSOs	222	NGC 3672	
+500 Best DSOs	223	NGC 3675	
+500 Best DSOs	224	NGC 3718	
+500 Best DSOs	225	NGC 3726	
+500 Best DSOs	226	NGC 3877	20200220-05-ngc3877
+500 Best DSOs	227	NGC 3887	
+500 Best DSOs	228	NGC 3893	
+500 Best DSOs	229	NGC 3896	
+500 Best DSOs	230	NGC 3917	
+500 Best DSOs	231	NGC 3938	
+500 Best DSOs	232	NGC 3945	
+500 Best DSOs	233	NGC 3953	
+500 Best DSOs	234	NGC 3955	
+500 Best DSOs	235	NGC 3962	
+500 Best DSOs	236	M 109	20190302-04-m109
+500 Best DSOs	237	NGC 4027	
+500 Best DSOs	238	NGC 4038	
+500 Best DSOs	239	NGC 4039	
+500 Best DSOs	240	NGC 4111	20200316-03-ngc4111
+500 Best DSOs	241	NGC 4147	20200416-01-ngc4147
+500 Best DSOs	242	M 98	20190324-04-m98
+500 Best DSOs	243	NGC 4214	20200316-05-ngc4214
+500 Best DSOs	244	NGC 4216	20200415-05-ngc4216ngc4206
+500 Best DSOs	245	NGC 4244	20200316-04-ngc4244
+500 Best DSOs	246	M 99	20190324-03-m99
+500 Best DSOs	247	M 106	20190304-01-m106
+500 Best DSOs	248	NGC 4274	20200412-06-ngc4278ngc4274
+500 Best DSOs	249	NGC 4278	20200412-06-ngc4278ngc4274
+500 Best DSOs	250	M 61	20190424-02-m61
+500 Best DSOs	251	NGC 4314	
+500 Best DSOs	252	M 100	20190324-05-m100
+500 Best DSOs	253	NGC 4346	20210310-10-ngc4346
+500 Best DSOs	254	NGC 4361	
+500 Best DSOs	255	M 84	20190304-04-m84m86
+500 Best DSOs	256	M 85	20190324-02-m85
+500 Best DSOs	257	M 86	20190304-04-m84m86
+500 Best DSOs	258	NGC 4414	20200321-07-ngc4414
+500 Best DSOs	259	NGC 4435	20200415-06-ngc4435ngc4438
+500 Best DSOs	260	NGC 4438	20200415-06-ngc4435ngc4438
+500 Best DSOs	261	NGC 4449	20200316-02-ngc4449
+500 Best DSOs	262	NGC 4450	
+500 Best DSOs	263	M 49	20190329-08-m49
+500 Best DSOs	264	NGC 4485	20210311-09-ngc4490ngc4485
+500 Best DSOs	265	M 87	20200416-05-m87ngc4468angc4478
+500 Best DSOs	266	NGC 4490	20210311-09-ngc4490ngc4485
+500 Best DSOs	267	NGC 4494	20200321-08-ngc4494
+500 Best DSOs	268	M 88	20190329-09-m88
+500 Best DSOs	269	NGC 4517	
+500 Best DSOs	270	NGC 4526	20200416-03-ngc4526
+500 Best DSOs	271	NGC 4535	
+500 Best DSOs	272	NGC 4536	
+500 Best DSOs	273	M 91	20190329-10-m91
+500 Best DSOs	274	M 89	20190329-07-m89
+500 Best DSOs	275	NGC 4559	20200416-02-ngc4559
+500 Best DSOs	276	NGC 4565	20200415-02-ngc4565
+500 Best DSOs	277	NGC 4567	20200416-04-ngc4567ngc4568ngc4564
+500 Best DSOs	278	NGC 4568	20200416-04-ngc4567ngc4568ngc4564
+500 Best DSOs	279	M 90	20190424-03-m90
+500 Best DSOs	280	M 58	20190329-06-m58
+500 Best DSOs	281	M 68	20190424-01-m68
+500 Best DSOs	282	M 104	20190329-11-m104
+500 Best DSOs	283	NGC 4605	20200227-05-ngc4605
+500 Best DSOs	284	NGC 4618	20210311-10-ngc4618
+500 Best DSOs	285	M 59	20190329-04-m59
+500 Best DSOs	286	NGC 4625	
+500 Best DSOs	287	NGC 4627	
+500 Best DSOs	288	NGC 4631	20200317-03-ngc4631
+500 Best DSOs	289	M 60	20190329-05-m59m60ngc4638
+500 Best DSOs	290	NGC 4666	
+500 Best DSOs	291	NGC 4699	
+500 Best DSOs	292	NGC 4710	
+500 Best DSOs	293	NGC 4725	
+500 Best DSOs	294	M 94	20190303-01-m94
+500 Best DSOs	295	NGC 4782	
+500 Best DSOs	296	NGC 4783	
+500 Best DSOs	297	M 64	20190304-03-m64
+500 Best DSOs	298	NGC 5005	20200318-04-ngc5005
+500 Best DSOs	299	M 53	20200409-01-sandshovel
+500 Best DSOs	300	NGC 5053	20200518-05-ngc5053
+500 Best DSOs	301	NGC 5054	
+500 Best DSOs	302	M 63	20190304-02-m63
+500 Best DSOs	303	NGC 5102	
+500 Best DSOs	304	M 51	20180311-04-m51
+500 Best DSOs	305	NGC 5195	20180311-04-m51
+500 Best DSOs	306	M 83	20190424-04-m83
+500 Best DSOs	307	NGC 5248	
+500 Best DSOs	308	M 3	20200617-03-m3
+500 Best DSOs	309	NGC 5363	
+500 Best DSOs	310	NGC 5364	
+500 Best DSOs	311	M 101	20190302-05-m101
+500 Best DSOs	312	NGC 5466	20200518-04-ngc5466
+500 Best DSOs	313	NGC 5634	
+500 Best DSOs	314	NGC 5676	20200518-02-ngc5676
+500 Best DSOs	315	NGC 5689	20200518-03-ngc5689
+500 Best DSOs	316	NGC 5746	
+500 Best DSOs	317	NGC 5846	
+500 Best DSOs	318	M 102	20190403-01-m102
+500 Best DSOs	319	NGC 5897	
+500 Best DSOs	320	M 5	20200518-06-m5
+500 Best DSOs	321	NGC 5907	
+500 Best DSOs	322	NGC 5986	
+500 Best DSOs	323	NGC 6015	
+500 Best DSOs	324	M 80	20200618-01-m80
+500 Best DSOs	325	M 4	20180616-02-m4
+500 Best DSOs	326	NGC 6140	
+500 Best DSOs	327	NGC 6144	
+500 Best DSOs	328	M 107	20180616-03-m107
+500 Best DSOs	329	M 13	20200710-04-m13
+500 Best DSOs	330	NGC 6207	
+500 Best DSOs	331	NGC 6210	20190510-06-ngc6210
+500 Best DSOs	332	M 12	20200618-03-m12
+500 Best DSOs	333	NGC 6242	
+500 Best DSOs	334	M 10	20200618-04-m10
+500 Best DSOs	335	M 62	20200718-04-m62
+500 Best DSOs	336	M 19	20200621-01-m19
+500 Best DSOs	337	NGC 6281	
+500 Best DSOs	338	NGC 6284	20200621-02-ngc6284
+500 Best DSOs	339	NGC 6302	
+500 Best DSOs	340	NGC 6309	
+500 Best DSOs	341	NGC 6316	
+500 Best DSOs	342	M 9	20200622-02-m9
+500 Best DSOs	343	M 92	20190721-04-m92
+500 Best DSOs	344	NGC 6356	20200622-03-ngc6356
+500 Best DSOs	345	NGC 6369	20200713-01-ngc6369
+500 Best DSOs	346	NGC 6383	
+500 Best DSOs	347	NGC 6400	
+500 Best DSOs	348	M 14	20200710-02-m14
+500 Best DSOs	349	NGC 6404	
+500 Best DSOs	350	M 6	20190629-03-m6
+500 Best DSOs	351	NGC 6440	20200710-01-ngc6440
+500 Best DSOs	352	NGC 6441	
+500 Best DSOs	353	NGC 6444	
+500 Best DSOs	354	NGC 6445	20200714-01-ngc6445
+500 Best DSOs	355	NGC 6451	
+500 Best DSOs	356	M 23	20180614-01-m23vesta
+500 Best DSOs	357	NGC 6503	20200716-02-ngc6503
+500 Best DSOs	358	NGC 6507	
+500 Best DSOs	359	M 20	20180712-07-m20
+500 Best DSOs	360	NGC 6520	20190629-01-ngc6520
+500 Best DSOs	361	NGC 6522	
+500 Best DSOs	362	M 8	20180616-07-m8
+500 Best DSOs	363	NGC 6528	
+500 Best DSOs	364	NGC 6530	
+500 Best DSOs	365	M 21	20180712-06-m21
+500 Best DSOs	366	NGC 6539	20200715-03-ngc6539
+500 Best DSOs	367	NGC 6540	
+500 Best DSOs	368	NGC 6543	20200716-01-ngc6543
+500 Best DSOs	369	NGC 6544	20200713-02-ngc6544
+500 Best DSOs	370	NGC 6553	
+500 Best DSOs	371	NGC 6558	
+500 Best DSOs	372	NGC 6563	
+500 Best DSOs	373	NGC 6572	20190719-02-ngc6572
+500 Best DSOs	374	NGC 6603	
+500 Best DSOs	375	M 16	20180807-03-m16
+500 Best DSOs	376	M 18	20180702-03-m18
+500 Best DSOs	377	M 17	20190530-08-m17
+500 Best DSOs	378	NGC 6624	
+500 Best DSOs	379	M 28	20200713-03-m28
+500 Best DSOs	380	NGC 6629	
+500 Best DSOs	381	NGC 6633	20180711-03-ngc6633
+500 Best DSOs	382	M 69	20200718-06-m69
+500 Best DSOs	383	NGC 6638	
+500 Best DSOs	384	NGC 6642	20200714-03-ngc6642
+500 Best DSOs	385	NGC 6643	20200716-03-ngc6643
+500 Best DSOs	386	NGC 6645	
+500 Best DSOs	387	NGC 6649	
+500 Best DSOs	388	M 22	20200714-02-m22
+500 Best DSOs	389	NGC 6664	
+500 Best DSOs	390	M 70	20200718-03-m70
+500 Best DSOs	391	M 26	20180901-01-m26
+500 Best DSOs	392	M 11	20180711-04-m11
+500 Best DSOs	393	NGC 6709	20180806-02-ngc6709
+500 Best DSOs	394	NGC 6712	20200713-04-ngc6712
+500 Best DSOs	395	M 54	20200718-07-m54
+500 Best DSOs	396	NGC 6717	20200726-02-ngc6717
+500 Best DSOs	397	M 57	20180611-04-m57
+500 Best DSOs	398	NGC 6723	
+500 Best DSOs	399	NGC 6726	
+500 Best DSOs	400	NGC 6755	20200720-03-ngc6755
+500 Best DSOs	401	NGC 6756	20200720-04-ngc6756
+500 Best DSOs	402	M 56	20190727-05-m56
+500 Best DSOs	403	NGC 6781	20190726-06-ngc6781
+500 Best DSOs	404	NGC 6791	20200818-01-ngc6791
+500 Best DSOs	405	NGC 6802	20190825-01-ngc6802
+500 Best DSOs	406	NGC 6804	20200808-01-ngc6804
+500 Best DSOs	407	M 55	20200718-05-m55
+500 Best DSOs	408	NGC 6811	
+500 Best DSOs	409	NGC 6818	20180928-01-ngc6818
+500 Best DSOs	410	NGC 6819	20190726-02-ngc6819
+500 Best DSOs	411	NGC 6820	
+500 Best DSOs	412	NGC 6822	
+500 Best DSOs	413	NGC 6823	20200818-02-ngc6823
+500 Best DSOs	414	NGC 6826	20180807-01-ngc6826
+500 Best DSOs	415	NGC 6830	20200818-03-ngc6830
+500 Best DSOs	416	NGC 6834	20200817-01-ngc6834
+500 Best DSOs	417	M 71	20180805-04-m71
+500 Best DSOs	418	M 27	20190708-05-m27
+500 Best DSOs	419	M 75	20200726-03-m75
+500 Best DSOs	420	NGC 6866	20200827-01-ngc6866
+500 Best DSOs	421	NGC 6888	20190726-07-ngc6888
+500 Best DSOs	422	NGC 6891	
+500 Best DSOs	423	NGC 6905	
+500 Best DSOs	424	NGC 6910	20180902-02-ngc6910
+500 Best DSOs	425	M 29	20180601-03-m29
+500 Best DSOs	426	NGC 6934	20190902-01-ngc6934
+500 Best DSOs	427	NGC 6939	20190828-02-ngc6939
+500 Best DSOs	428	NGC 6940	20180902-03-ngc6940
+500 Best DSOs	429	NGC 6946	
+500 Best DSOs	430	M 72	20180901-02-m72
+500 Best DSOs	431	NGC 7006	20190930-01-ngc7006
+500 Best DSOs	432	NGC 7008	20190806-01-ngc7008
+500 Best DSOs	433	NGC 7009	20180928-02-ngc7009
+500 Best DSOs	434	NGC 7015	
+500 Best DSOs	435	NGC 7026	
+500 Best DSOs	436	NGC 7027	20190708-06-ngc7027
+500 Best DSOs	437	NGC 7044	
+500 Best DSOs	438	NGC 7063	
+500 Best DSOs	439	M 15	20200824-03-m15
+500 Best DSOs	440	NGC 7086	
+500 Best DSOs	441	M 2	20200824-02-m2
+500 Best DSOs	442	M 39	20180805-02-m39
+500 Best DSOs	443	M 30	20200824-01-m30
+500 Best DSOs	444	NGC 7160	20180906-02-ngc7160
+500 Best DSOs	445	NGC 7174	
+500 Best DSOs	446	NGC 7176	
+500 Best DSOs	447	NGC 7209	20180906-03-ngc7209
+500 Best DSOs	448	NGC 7243	20180903-05-ngc7243
+500 Best DSOs	449	NGC 7245	
+500 Best DSOs	450	NGC 7293	
+500 Best DSOs	451	NGC 7314	
+500 Best DSOs	452	NGC 7331	20201106-03-ngc7331
+500 Best DSOs	453	NGC 7380	20200906-03-ngc7380
+500 Best DSOs	454	NGC 7423	
+500 Best DSOs	455	NGC 7479	
+500 Best DSOs	456	NGC 7510	
+500 Best DSOs	457	NGC 7541	
+500 Best DSOs	458	NGC 7606	
+500 Best DSOs	459	M 52	20180805-03-m52
+500 Best DSOs	460	NGC 7662	20180903-04-ngc7662
+500 Best DSOs	461	NGC 7762	
+500 Best DSOs	462	NGC 7789	20180903-03-ngc7789
+500 Best DSOs	463	NGC 7790	20201024-01-ngc7790
+500 Best DSOs	464	NGC 7793	
+500 Best DSOs	465	NGC 7814	
+500 Best DSOs	466	NGC 1554,1555	
+500 Best DSOs	467	NGC 1973,1975	
+500 Best DSOs	468	NGC 1977	
+500 Best DSOs	469	NGC 2237,2238,2239,2246	
+500 Best DSOs	470	NGC 2244	20190110-02-ngc2244
+500 Best DSOs	471a	NGC 2371	20200227-02-ngc2371ngc2372
+500 Best DSOs	471b	NGC 2372	20200227-02-ngc2371ngc2372
+500 Best DSOs	472	NGC 4656,4657	20200317-04-ngc4656
+500 Best DSOs	473	M 76	20181010-01-m76
+500 Best DSOs	474	NGC 6885	20200817-02-ngc6885
+500 Best DSOs	475a	NGC 6960	20200817-04-ngc6960
+500 Best DSOs	475b	NGC 6992,6995	20190703-03-veil
+500 Best DSOs	476	B 86	
+500 Best DSOs	477	B 92	
+500 Best DSOs	478	B 93	
+500 Best DSOs	479	Berkeley 68	
+500 Best DSOs	480	Berkeley 94	
+500 Best DSOs	481	Harvard 20	
+500 Best DSOs	482	IC 1310	
+500 Best DSOs	483	IC 10	
+500 Best DSOs	484	IC 1434	
+500 Best DSOs	485	IC 1805	20201106-02-ic1805
+500 Best DSOs	486	IC 2149	
+500 Best DSOs	487	IC 2163	
+500 Best DSOs	488	IC 349	
+500 Best DSOs	489	IC 3568	
+500 Best DSOs	490	IC 410	
+500 Best DSOs	491	IC 418	
+500 Best DSOs	492	IC 4593	
+500 Best DSOs	493	IC 4665	20180713-02-ic4665
+500 Best DSOs	494	M 25	20180702-02-m25
+500 Best DSOs	495	IC 4756	20180711-02-ic4756
+500 Best DSOs	496	IC 4776	
+500 Best DSOs	497	IC 5271	
+500 Best DSOs	498	King 10	
+500 Best DSOs	499	Mel 71	
+500 Best DSOs	500	Tr 1	20201029-02-tr1
+500 Best DSOs	501	Tr 32	
+RASC Best of NGC	1	NGC 7009	20180928-02-ngc7009
+RASC Best of NGC	2	NGC 7293	
+RASC Best of NGC	3	NGC 7331	20201106-03-ngc7331
+RASC Best of NGC	4	NGC 7635	
+RASC Best of NGC	5	NGC 7789	20180903-03-ngc7789
+RASC Best of NGC	6	NGC 185	20201108-03-ngc185
+RASC Best of NGC	7	NGC 281	20191006-04-ngc281
+RASC Best of NGC	8	NGC 457	20201027-02-ngc457
+RASC Best of NGC	9	NGC 663	20180905-04-ngc663
+RASC Best of NGC	10	IC 289	20201106-01-ic289
+RASC Best of NGC	11	NGC 7662	20180903-04-ngc7662
+RASC Best of NGC	12	NGC 891	
+RASC Best of NGC	13	NGC 253	
+RASC Best of NGC	14	NGC 772	20201106-04-ngc772
+RASC Best of NGC	15	NGC 246	20201204-04-ngc246
+RASC Best of NGC	16	NGC 936	
+RASC Best of NGC	17a	NGC 869	20180817-03-doublecluster
+RASC Best of NGC	17b	NGC 884	20180817-03-doublecluster
+RASC Best of NGC	18	NGC 1023	20191028-04-uyandngc1023
+RASC Best of NGC	19	NGC 1491	20191129-02-ngc1491
+RASC Best of NGC	20	NGC 1501	20201107-05-ngc1501
+RASC Best of NGC	21	NGC 1232	
+RASC Best of NGC	22	NGC 1535	
+RASC Best of NGC	23	NGC 1514	
+RASC Best of NGC	24	NGC 1931	
+RASC Best of NGC	25	NGC 1788	
+RASC Best of NGC	26	NGC 1973,1975	
+RASC Best of NGC	27	NGC 2022	20200218-03-ngc2022
+RASC Best of NGC	28	NGC 2024	
+RASC Best of NGC	29	NGC 2194	
+RASC Best of NGC	30a	NGC 2371	20200227-02-ngc2371ngc2372
+RASC Best of NGC	30b	NGC 2372	20200227-02-ngc2371ngc2372
+RASC Best of NGC	31	NGC 2392	20190113-01-ngc2392
+RASC Best of NGC	32	NGC 2237,2238,2239,2246	
+RASC Best of NGC	33	NGC 2261	20200218-05-ngc2261
+RASC Best of NGC	34	NGC 2359	20190113-04-ngc2359
+RASC Best of NGC	35	NGC 2440	20200219-07-ngc2440
+RASC Best of NGC	36	NGC 2539	20200219-05-ngc2359
+RASC Best of NGC	37	NGC 2403	20200220-01-ngc2403
+RASC Best of NGC	38	NGC 2655	20200220-02-ngc2655
+RASC Best of NGC	39	NGC 2683	20200227-04-ngc2683
+RASC Best of NGC	40	NGC 2841	20200315-03-ngc2841
+RASC Best of NGC	41	NGC 3079	20200315-04-ngc3079
+RASC Best of NGC	42	NGC 3184	
+RASC Best of NGC	43	NGC 3877	20200220-05-ngc3877
+RASC Best of NGC	44	NGC 3941	20200315-05-ngc3941
+RASC Best of NGC	45	NGC 4026	20200220-04-ngc4026
+RASC Best of NGC	46	NGC 4088	20200220-03-ngc4088ngc4085
+RASC Best of NGC	47	NGC 4157	
+RASC Best of NGC	48	NGC 4605	20200227-05-ngc4605
+RASC Best of NGC	49	NGC 3115	20200318-03-ngc3115
+RASC Best of NGC	50	NGC 3242	20190128-03-ngc3242
+RASC Best of NGC	51	NGC 3003	
+RASC Best of NGC	52	NGC 3344	20200317-05-ngc3344
+RASC Best of NGC	53	NGC 3432	
+RASC Best of NGC	54	NGC 2903	20200227-03-ngc2903
+RASC Best of NGC	55	NGC 3384	20190302-03-m105ngc3384
+RASC Best of NGC	56	NGC 3521	20200315-07-ngc3521
+RASC Best of NGC	57	NGC 3607	20200315-06-ngc3607ngc3605ngc3608
+RASC Best of NGC	58	NGC 3628	20180311-03-leotriplet
+RASC Best of NGC	59	NGC 4111	20200316-03-ngc4111
+RASC Best of NGC	60	NGC 4214	20200316-05-ngc4214
+RASC Best of NGC	61	NGC 4244	20200316-04-ngc4244
+RASC Best of NGC	62	NGC 4449	20200316-02-ngc4449
+RASC Best of NGC	63	NGC 4490	20200316-01-ngc4490
+RASC Best of NGC	64	NGC 4631	20200317-03-ngc4631
+RASC Best of NGC	65	NGC 4656,4657	20200317-04-ngc4656
+RASC Best of NGC	66	NGC 5005	20200318-04-ngc5005
+RASC Best of NGC	67	NGC 5033	
+RASC Best of NGC	68	NGC 4274	20200412-06-ngc4278ngc4274
+RASC Best of NGC	69	NGC 4414	20200321-07-ngc4414
+RASC Best of NGC	70	NGC 4494	20200321-08-ngc4494
+RASC Best of NGC	71	NGC 4559	20200416-02-ngc4559
+RASC Best of NGC	72	NGC 4565	20200415-02-ngc4565
+RASC Best of NGC	73	NGC 4725	
+RASC Best of NGC	74a	NGC 4038	
+RASC Best of NGC	74b	NGC 4039	
+RASC Best of NGC	75	NGC 4361	
+RASC Best of NGC	76	NGC 4216	20200415-05-ngc4216ngc4206
+RASC Best of NGC	77	NGC 4388	
+RASC Best of NGC	78	NGC 4438	20200415-06-ngc4435ngc4438
+RASC Best of NGC	79	NGC 4517	
+RASC Best of NGC	80	NGC 4526	20200416-03-ngc4526
+RASC Best of NGC	81	NGC 4535	
+RASC Best of NGC	82a	NGC 4567	20200416-04-ngc4567ngc4568ngc4564
+RASC Best of NGC	82b	NGC 4568	20200416-04-ngc4567ngc4568ngc4564
+RASC Best of NGC	83	NGC 4699	
+RASC Best of NGC	84	NGC 4762	20200411-06-ngc4762ngc4754
+RASC Best of NGC	85	NGC 5746	
+RASC Best of NGC	86	NGC 5466	20200518-04-ngc5466
+RASC Best of NGC	87	NGC 5907	
+RASC Best of NGC	88	NGC 6503	20200716-02-ngc6503
+RASC Best of NGC	89	NGC 6543	20200716-01-ngc6543
+RASC Best of NGC	90	NGC 6210	20190510-06-ngc6210
+RASC Best of NGC	91	NGC 6369	20200713-01-ngc6369
+RASC Best of NGC	92	NGC 6572	20190719-02-ngc6572
+RASC Best of NGC	93	NGC 6633	20180711-03-ngc6633
+RASC Best of NGC	94	NGC 6712	20200713-04-ngc6712
+RASC Best of NGC	95	NGC 6781	20190726-06-ngc6781
+RASC Best of NGC	96	NGC 6819	20190726-02-ngc6819
+RASC Best of NGC	97	NGC 6826	20180807-01-ngc6826
+RASC Best of NGC	98	NGC 6888	20190726-07-ngc6888
+RASC Best of NGC	99a	NGC 6960	20200817-04-ngc6960
+RASC Best of NGC	99b	NGC 6992,6995	20190703-03-veil
+RASC Best of NGC	100	NGC 7000	
+RASC Best of NGC	101	NGC 7027	20190708-06-ngc7027
+RASC Best of NGC	102	NGC 6445	20200714-01-ngc6445
+RASC Best of NGC	103	NGC 6520	20190629-01-ngc6520
+RASC Best of NGC	104	NGC 6818	20180928-01-ngc6818
+RASC Best of NGC	105	NGC 6802	20190825-01-ngc6802
+RASC Best of NGC	106	NGC 6940	20180902-03-ngc6940
+RASC Best of NGC	107	NGC 6939	20190826-04-ngc6939
+RASC Best of NGC	108	NGC 6946	
+RASC Best of NGC	109	NGC 7129	
+RASC Best of NGC	110	NGC 40	20190828-01-ngc40
+Multiple Star OP	1	STF 3056 AB,C,D	
+Multiple Star OP	2	STF 28, FYM 12	
+Multiple Star OP	3	STF 42	
+Multiple Star OP	4	5 Aql	
+Multiple Star OP	5	STF 2787	
+Multiple Star OP	6	STF 2944	
+Multiple Star OP	7	AG 38	20201201-05-ag38
+Multiple Star OP	8	STF 271	20201201-02-stf271
+Multiple Star OP	9	STF 291	20201201-03-stf291
+Multiple Star OP	10	STF 711 ABCD	
+Multiple Star OP	11	STF 718 ABC	
+Multiple Star OP	12	STF 796	
+Multiple Star OP	13	STF 1808	
+Multiple Star OP	14	STF 1843	
+Multiple Star OP	15	STF 1854	
+Multiple Star OP	16	BU 31	
+Multiple Star OP	17	STF 1896	
+Multiple Star OP	18	STF 373 AB, STTA 33 AC, STU1 AD	
+Multiple Star OP	19	HJ 2200 ABC	
+Multiple Star OP	20	STF 617 and STF 618	
+Multiple Star OP	21	STF 866	
+Multiple Star OP	22	STF 1075	
+Multiple Star OP	23	STF 1169, PKO 21	
+Multiple Star OP	24	STT 7	20201031-02-stt7
+Multiple Star OP	25	STT 9	20201031-03-stt9
+Multiple Star OP	26	HJ 1054	20201031-04-hj1054
+Multiple Star OP	27	BU 1	20201031-05-bu1
+Multiple Star OP	28	Iota Cas	
+Multiple Star OP	29	AR Cas, STT 496	20201031-01-arcasstt496
+Multiple Star OP	30	STF 2816	20200906-02-stf2816
+Multiple Star OP	31	H III 80	
+Multiple Star OP	32	HJ 658	20201201-06-hj658
+Multiple Star OP	33	S 516	
+Multiple Star OP	34	Tau CMa, HJ 3948	
+Multiple Star OP	35	Zeta Cnc	20210330-01-stf1196
+Multiple Star OP	36	STF 1245	20210329-06-stf1245
+Multiple Star OP	37	S 571	20210329-04-eng37s571
+Multiple Star OP	38	ENG 37	20210329-04-eng37s571
+Multiple Star OP	39	STF 1300	20210329-05-stf1300
+Multiple Star OP	40	HJ 3858	
+Multiple Star OP	41	HJ 3875+BU 755	
+Multiple Star OP	42	12 Com	
+Multiple Star OP	43	STF 1685	
+Multiple Star OP	44	STF 1964	20200709-01-stf1964
+Multiple Star OP	45	STF 2011	20200705-01-stf2011
+Multiple Star OP	46	SHJ 223	20200705-02-shj223
+Multiple Star OP	47	JC 16	20210330-02-jc16
+Multiple Star OP	48	STF 1604	
+Multiple Star OP	49	Stargate	
+Multiple Star OP	50	STF 1669	
+Multiple Star OP	51	HJ 2617+BKO 114	
+Multiple Star OP	52	STT 269+ARN 8	
+Multiple Star OP	53	STF 1769	
+Multiple Star OP	54	Delta Cyg	20200828-02-deltactygstf25479
+Multiple Star OP	55	STF 2673, 2374	20200828-03-stf2673stf2374
+Multiple Star OP	56	S 752, BU 987	20200828-04-s752bu987
+Multiple Star OP	57	STFA 25 ABC	
+Multiple Star OP	58	STF 1996 ABC	
+Multiple Star OP	59	STF 2302	20200806-02-stf2302
+Multiple Star OP	60	STF 518 A, BC, D, E	
+Multiple Star OP	61	HJ 3644 AB,C AB,D	
+Multiple Star OP	62	51 Eri, BU 88, WAL 32	
+Multiple Star OP	63	HJ 3677 AB, DAW 81 BC	
+Multiple Star OP	64	62 Eri, SHJ 48, GMC 11	
+Multiple Star OP	65	66 Eri, STF 642, HUB 5	
+Multiple Star OP	66	HJ 3518	
+Multiple Star OP	67	STF 982 ABC	20210325-01-stf982
+Multiple Star OP	68	STF 1007 AD	20210325-02-stf1007
+Multiple Star OP	69	STF 1054	20210325-04-stf1054
+Multiple Star OP	70	STF 1102 ABDE	20210325-03-stf1102
+Multiple Star OP	71	Castor ABCD, STF 1110	20210325-05-castor
+Multiple Star OP	72	STF 2052	20200804-01-stf2052
+Multiple Star OP	73	STFA 31AB	
+Multiple Star OP	74	STF 2083	20200705-03-stf2083
+Multiple Star OP	75	100 Her, STF 2280	20200804-02-100her
+Multiple Star OP	76	STF 1316	20210329-03-stf1316
+Multiple Star OP	77	HU 227	
+Multiple Star OP	78	DUN 116 ABC	
+Multiple Star OP	79	HJ 1823	
+Multiple Star OP	80	STF 1364, HJ 466	20210330-04-stf1364
+Multiple Star OP	81	STT 204, WAL 56	20210330-03-stt204
+Multiple Star OP	82	HJ 3780	
+Multiple Star OP	83	5 Lyn	
+Multiple Star OP	84	STT 525	20200806-01-stt525
+Multiple Star OP	85	10 Mon	20210329-02-10mon
+Multiple Star OP	86	Rho Oph, H 2 19	
+Multiple Star OP	87	STF 2050 ABCD	
+Multiple Star OP	88	SHJ 49	
+Multiple Star OP	89	STF 697	
+Multiple Star OP	90	STF 761 & 762	
+Multiple Star OP	91	STF 788	
+Multiple Star OP	92	STF 815	
+Multiple Star OP	93	BU 193	
+Multiple Star OP	94	STF 3060 ABCDE	
+Multiple Star OP	95	STF 2799	
+Multiple Star OP	96	STF 162	
+Multiple Star OP	97	STF 270	
+Multiple Star OP	98	Zeta Per, STF 464	
+Multiple Star OP	99	STF 533	
+Multiple Star OP	100	HJ 4106+LDS 223	
+Multiple Star OP	101	HDO 204	
+Multiple Star OP	102	HJ 4199	
+Multiple Star OP	103	HJ 4935, Gliese 667	
+Multiple Star OP	104	STF 2007	
+Multiple Star OP	105	STF 1464	
+Multiple Star OP	106	STFA 7 and STF 401	
+Multiple Star OP	107	STFA 8 Alcyone	
+Multiple Star OP	108	STF 258 + BU 876AB	
+Multiple Star OP	109	STF 1415	
+Multiple Star OP	110	36 UMa, LDS 2863	
+Multiple Star OP	111	STF 1608 ABC	
+Multiple Star OP	112	STF 1691 ABC*	
+Multiple Star OP	113	STF 1830 & 1831 ABCDEFG	
+Multiple Star OP	114	STF 2521 ABCD	20200828-01-stf2521abcd
+Best Triples	73	1 Aqr	
+Best Triples	43	10 Mon	
+Best Triples	68	12 Com	
+Best Triples	4	12 Lyn	
+Best Triples	13	14 Aur	
+Best Triples	12	16,17 Dra	
+Best Triples	32	41 Aqr	
+Best Triples	28	41 Lep	
+Best Triples	38	5 Aql	
+Best Triples	69	5 Lyn	
+Best Triples	44	6 Cas	
+Best Triples	76	7 LMi	
+Best Triples	47	Alpha Cap	
+Best Triples	1	Beta Mon	
+Best Triples	36	BU 126	
+Best Triples	7	BU 225	
+Best Triples	8	BU 324	
+Best Triples	11	BU 328	
+Best Triples	15	BU 575	
+Best Triples	67	S 752, BU 987	
+Best Triples	70	Delta Scl	
+Best Triples	3	Epsilon Equ	
+Best Triples	58	Eta Sgr	
+Best Triples	25	H 119	
+Best Triples	54	H 1647	
+Best Triples	23	H 2866	
+Best Triples	56	H 4926	
+Best Triples	41	H 5082	
+Best Triples	60	H 5311	
+Best Triples	24	H N 40	
+Best Triples	72	HDO 198	
+Best Triples	10	Iota Cas	
+Best Triples	40	Iota Ori	
+Best Triples	20	Iota2 Cnc	
+Best Triples	78	Kappa And	
+Best Triples	34	Lambda Ori	
+Best Triples	65	Mu Per	
+Best Triples	39	Pi Ari	
+Best Triples	49	RS Sgr	
+Best Triples	45	South 598	
+Best Triples	31	STF 1090	
+Best Triples	46	STF 1126	
+Best Triples	14	STF 1127	
+Best Triples	35	STF 1369	
+Best Triples	61	STF 1473	
+Best Triples	27	STF 157	
+Best Triples	18	STF 1604	
+Best Triples	59	STF 1619	
+Best Triples	62	STF 1788	
+Best Triples	75	STF 2087	
+Best Triples	64	STF 2466	
+Best Triples	77	STF 2532	
+Best Triples	63	STF 270	
+Best Triples	53	STF 2790	
+Best Triples	6	STF 2816	
+Best Triples	71	STF 3021	
+Best Triples	26	STF 3041	
+Best Triples	55	STF 3048	
+Best Triples	66	STF 3053	
+Best Triples	42	STF 430	
+Best Triples	29	STF 479	
+Best Triples	9	STF 734	
+Best Triples	22	STF 780	
+Best Triples	52	STF 915	
+Best Triples	19	STF 939	
+Best Triples	51	STF 941	
+Best Triples	30	STT 371	
+Best Triples	17	STT 388	
+Best Triples	48	STT 390	
+Best Triples	57	STT 485	
+Best Triples	21	STT 525	
+Best Triples	37	STT 64	
+Best Triples	16	STT 410	
+Best Triples	50	Tau4 Eri	
+Best Triples	74	Theta Lyr	
+Best Triples	33	Theta Sge	
+Best Triples	5	Xi Sco	
+Best Triples	2	Zeta Cnc	
+Double Star OP	1	Eta Cas	20180222-01-etacas
+Double Star OP	2	65 Psc	20181004-04-65psc
+Double Star OP	3	Psi 1 Psc	20181004-03-psipsc
+Double Star OP	4	Zeta Psc	20181010-06-zetapsc
+Double Star OP	5	Gamma Ari	20181004-01-gammaari
+Double Star OP	6	Lambda Ari	20181004-02-lambdaari
+Double Star OP	7	Alpha Psc	20181010-07-alphapsc
+Double Star OP	8	Gamma And	20171220-04-almach
+Double Star OP	9	Iota Tri	20181010-02-iotatri
+Double Star OP	10	Alpha UMi	20180601-01-polaris
+Double Star OP	11	Gamma Cet	20181118-02-gammacet
+Double Star OP	12	Eta Per	20181011-02-etaper
+Double Star OP	13	Struve 331	20181010-04-struve331
+Double Star OP	14	32 Eri	20181111-05-32eri
+Double Star OP	15	Chi Tau	20181111-01-chitau
+Double Star OP	16	1 Cam	20181017-03-1cam
+Double Star OP	17	55 Eri	20181203-01-55eri
+Double Star OP	18	Beta Ori	20180212-04-rigel
+Double Star OP	19	118 Tau	20181117-02-118tau
+Double Star OP	20	Delta Ori	20180212-02-deltaori
+Double Star OP	21	Struve 747	20181118-06-struve747iotaori
+Double Star OP	22	Lambda Ori	20181118-03-lambdaori
+Double Star OP	23	Theta 1 Ori	20191129-04-trapezium
+Double Star OP	24	Iota Ori	20181118-06-struve747iotaori
+Double Star OP	25	Theta 2 Ori	20181118-05-m42trap
+Double Star OP	26	Sigma Ori	20180211-02-sigmaori
+Double Star OP	27	Zeta Ori	20190101-07-zetaori
+Double Star OP	28	Gamma Lep	20190101-02-gammalep
+Double Star OP	29	Theta Aur	20190101-05-thetaaur
+Double Star OP	30	Epsilon Mon	20190110-03-epsmon
+Double Star OP	31	Beta Mon	20180319-02-betamon
+Double Star OP	32	12 Lyn	20190112-01-12lyn
+Double Star OP	33	Epsilon CMa	20190129-01-epsiloncma
+Double Star OP	34	Delta Gem	20190115-02-deltagem
+Double Star OP	35	19 Lyn	20190112-02-19lyn
+Double Star OP	36	Alpha Gem	20180113-02-castor
+Double Star OP	37	k Pup	20190113-06-kpup
+Double Star OP	38	Zeta Cnc	20190115-03-zetacnc
+Double Star OP	39	Iota Cnc	20190115-04-iotacnc
+Double Star OP	40	38 Lyn	20190115-05-38lyn
+Double Star OP	41	Alpha Leo	20190128-04-alphaleo
+Double Star OP	42	Gamma Leo	20190329-02-gammaleo
+Double Star OP	43	54 Leo	20190303-02-54leo
+Double Star OP	44	N Hya	20190309-02-nhya
+Double Star OP	45	Delta Crv	20190309-01-deltacrv
+Double Star OP	46	24 Com	20190324-01-24com
+Double Star OP	47	Gamma Vir	20190329-01-gammavir
+Double Star OP	48	32 Cam	20190129-03-32cam
+Double Star OP	49	Alpha CVn	20180210-03-corcaroli
+Double Star OP	50	Zeta UMa	20180611-01-mizaralcor
+Double Star OP	51	Kappa Boo	20180422-03-kappaboo
+Double Star OP	52	Iota Boo	20180422-02-iotaboo
+Double Star OP	53	Pi Boo	20190420-05-piboo
+Double Star OP	54	Epsilon Boo	20200709-02-izar
+Double Star OP	55	Alpha Lib	20190503-03-alphalib
+Double Star OP	56	Xi Boo	20190420-04-xiboo
+Double Star OP	57	Delta Boo	20190420-01-deltaboo
+Double Star OP	58	Mu Boo	20190420-02-muboo
+Double Star OP	59	Delta Ser	20190503-02-deltaser
+Double Star OP	60	Zeta CrB	20190420-03-zetacrb
+Double Star OP	61	Xi Sco	20190503-05-xiscostruve1999
+Double Star OP	62	Struve 1999	20190503-05-xiscostruve1999
+Double Star OP	63	Beta Sco	20180712-03-betasco
+Double Star OP	64	Kappa Her	20190527-01-kappaher
+Double Star OP	65	Nu Sco	20190503-04-nusco
+Double Star OP	66	Sigma CrB	20180524-01-sigmacrb
+Double Star OP	67	16,17 Dra	20190510-03-16dra17dra
+Double Star OP	68	Mu Dra	20190510-02-mudra
+Double Star OP	69	Alpha Her	20190530-01-alphaher
+Double Star OP	70	Delta Her	20190510-05-deltaher
+Double Star OP	71	36 Oph	20190530-06-36oph
+Double Star OP	72	Omicron Oph	20190530-05-omicronoph
+Double Star OP	73	Rho Her	20190510-04-rhoher
+Double Star OP	74	Nu Dra	20190510-01-nudra
+Double Star OP	75	Psi Dra	20190509-02-psidra
+Double Star OP	76	40,41 Dra	20190509-03-40dra41dra
+Double Star OP	77	95 Her	20190530-02-95her
+Double Star OP	78	70 Oph	20190530-07-70oph
+Double Star OP	79	Epsilon Lyr	20180523-01-epslyr
+Double Star OP	80	Zeta Lyr	20180917-03-zetalyr
+Double Star OP	81	Beta Lyr	20180917-04-betalyr
+Double Star OP	82	Struve 2404	20180923-04-struve2404
+Double Star OP	83	STT 525	20180917-05-ottostruve525
+Double Star OP	84	Theta Ser	20180924-04-thetaser
+Double Star OP	85	Beta Cyg	20171028-03-albireo
+Double Star OP	86	57 Aql	20180924-03-57aql
+Double Star OP	87	31 Cyg	20180917-08-31cyg
+Double Star OP	88	Alpha Cap	20180924-01-alphacap
+Double Star OP	89	Beta Cap	20180924-02-betacap
+Double Star OP	90	Gamma Del	20180917-07-gammadel
+Double Star OP	91	61 Cyg	20180917-06-61cyg
+Double Star OP	92	Beta Cep	20180925-01-betacep
+Double Star OP	93	STF 2816	20180925-03-struve2816
+Double Star OP	94	Epsilon Peg	20180926-01-epsilonpeg
+Double Star OP	95	Xi Cep	20180925-02-xicep
+Double Star OP	96	Zeta Aqr	20180926-02-zetaaqr
+Double Star OP	97	Delta Cep	20180906-01-deltacep
+Double Star OP	98	8 Lac	20180926-03-8lac
+Double Star OP	99	94 Aqr	20180926-04-94aqr
+Double Star OP	100	Sigma Cas	20180928-03-sigmacas
+Carbon Star OP	1	WZ Cas	20191010-01-wzcas
+Carbon Star OP	2	SU And	20191009-02-suand
+Carbon Star OP	3	SAO 109003	20191103-01-sao109003
+Carbon Star OP	4	VX And	20191009-03-vxand
+Carbon Star OP	5	AQ And	20191009-01-aqand
+Carbon Star OP	6	NSV 15196	20191106-03-nsv15196
+Carbon Star OP	7	W Cas	20191010-02-wcas
+Carbon Star OP	8	Z Psc	20191029-01-zpsc
+Carbon Star OP	9	V Ari	20191029-02-vari
+Carbon Star OP	10	SAO 129989	20201005-06-sao129989
+Carbon Star OP	11	UY And	20191028-04-uyandngc1023
+Carbon Star OP	12	V623 Cas	20191010-04-v623cas
+Carbon Star OP	13	Y Per	20191028-03-yper
+Carbon Star OP	14	V466 Per	20191106-04-v466per
+Carbon Star OP	15	U Cam	20201005-01-ucam
+Carbon Star OP	16	UV Cam	20201005-02-uvcam
+Carbon Star OP	17	XX Cam	20201005-04-xxcam
+Carbon Star OP	18	ST Cam	20201005-03-stcam
+Carbon Star OP	19	TT Tau	20200406-01-tttau
+Carbon Star OP	20	R Lep	20190101-03-rlep
+Carbon Star OP	21	EL Aur	20200401-04-elaur
+Carbon Star OP	22	W Ori	20200317-01-wori
+Carbon Star OP	23	TX Aur	20200401-03-txaur
+Carbon Star OP	24	SY Eri	20200401-01-syeri
+Carbon Star OP	25	UV Aur	20200325-02-uvaur
+Carbon Star OP	26	S Aur	20200401-02-saur
+Carbon Star OP	27	RT Ori	20200218-04-rtori
+Carbon Star OP	28	S Cam	20200401-05-scam
+Carbon Star OP	29	TU Tau	20200321-02-tutau
+Carbon Star OP	30	Y Tau	20200321-01-ytau
+Carbon Star OP	31	FU Aur	20200325-01-fuaur
+Carbon Star OP	32	TU Gem	20200309-06-tugem
+Carbon Star OP	33	FU Mon	20200218-06-fumon
+Carbon Star OP	34	V Aur	20200309-09-vaur
+Carbon Star OP	35	BL Ori	20200309-05-blori
+Carbon Star OP	36	UU Aur	20200309-08-uuaur
+Carbon Star OP	37	VW Gem	20200309-07-vwgem
+Carbon Star OP	38	GY Mon	20200219-03-gymon
+Carbon Star OP	39	RV Mon	20200218-07-rvmon
+Carbon Star OP	40	V614 Mon	20200308-01-v614mon
+Carbon Star OP	41	RY Mon	20200308-02-rymon
+Carbon Star OP	42	W CMa	20200219-02-wcma
+Carbon Star OP	43	R CMi	20200309-03-rcmi
+Carbon Star OP	44	BM Gem	20200308-05-bmgem
+Carbon Star OP	45	RU Cam	20200309-01-rucam
+Carbon Star OP	46	NQ Gem	20200308-04-nqgem
+Carbon Star OP	47	RU Pup	20200309-02-rupup
+Carbon Star OP	48	X Cnc	20200321-03-xcnc
+Carbon Star OP	49	T Cnc	20200321-04-tcnc
+Carbon Star OP	50	Y Hya	20200318-01-yhya
+Carbon Star OP	51	U Hya	20200314-03-flyandflyswatter
+Carbon Star OP	52	VY UMa	20200406-02-vyuma
+Carbon Star OP	53	V Hya	20200318-02-vhya
+Carbon Star OP	54	SS Vir	20200503-02-ssvir
+Carbon Star OP	55	Y CVn	20190509-01-ycvn
+Carbon Star OP	56	RY Dra	20200406-03-rydra
+Carbon Star OP	57	SAO 157721	20200427-03-sao157721
+Carbon Star OP	58	V CrB	20200503-03-vcrb
+Carbon Star OP	59	RR Her	20190708-04-rrher
+Carbon Star OP	60	V Oph	20200616-03-voph
+Carbon Star OP	61	SAO 46574	20190726-05-sao46574
+Carbon Star OP	62	TW Oph	20200617-02-twoph
+Carbon Star OP	63	SZ Sgr	20200622-04-szsgr
+Carbon Star OP	64	T Dra	20190825-04-tdra
+Carbon Star OP	65	FO Ser	20200622-05-foser
+Carbon Star OP	66	AC Her	20200704-02-acher
+Carbon Star OP	67	T Lyr	20190727-02-tlyr
+Carbon Star OP	68	HK Lyr	20190727-03-hklyr
+Carbon Star OP	69	S Sct	20200713-05-ssct
+Carbon Star OP	70	UV Aql	20200727-02-uvaql
+Carbon Star OP	71	V Aql	20200727-04-vaql
+Carbon Star OP	72	V1942 Sgr	20200714-04-v1942sgr
+Carbon Star OP	73	U Lyr	20190727-04-ulyrngc6791
+Carbon Star OP	74	UX Dra	20200517-02-uxdra
+Carbon Star OP	75	NSV 11960	20200727-03-nsv11960
+Carbon Star OP	76	AW Cyg	20190803-05-afcygawcyg
+Carbon Star OP	77	AQ Sgr	20200714-05-aqsgr
+Carbon Star OP	78	TT Cyg	20190820-02-ttcyg
+Carbon Star OP	79	AX Cyg	20190803-04-axcyg
+Carbon Star OP	80	V1469 Aql	20200727-01-v1469aql
+Carbon Star OP	81	BF Sge	20200813-03-bfsge
+Carbon Star OP	82	X Sge	20200813-02-xsge
+Carbon Star OP	83	SV Cyg	20190726-03-svcyg
+Carbon Star OP	84	RY Cyg	20190730-05-rycyg
+Carbon Star OP	85	RS Cyg	20190730-04-rscyg
+Carbon Star OP	86	RT Cap	20200813-01-rtcap
+Carbon Star OP	87	U Cyg	20190820-01-ucyg
+Carbon Star OP	88	V Cyg	20190726-04-vcyg
+Carbon Star OP	89	CY Cyg	20190721-02-cycyg
+Carbon Star OP	90	SAO 106516	20190902-02-sao106516
+Carbon Star OP	91	NSV 13571	20200813-04-nsv13571
+Carbon Star OP	92	S Cep	20191106-01-scep
+Carbon Star OP	93	V460 Cyg	20190826-03-v460cyg
+Carbon Star OP	94	RV Cyg	20190826-02-rvcyg
+Carbon Star OP	95	RX Peg	20191028-02-rxpeg
+Carbon Star OP	96	RZ Peg	20191028-01-rzpeg
+Carbon Star OP	97	RU Aqr	20200928-01-ruaqr
+Carbon Star OP	98	ST And	20191009-04-stand
+Carbon Star OP	99	TX Psc	20191029-03-txpsc
+Carbon Star OP	100	SAO 128396	20191029-04-sao128396
+Herschel 400	1	NGC 40	20190828-01-ngc40
+Herschel 400	2	NGC 129	20180905-02-ngc129
+Herschel 400	3	NGC 136	
+Herschel 400	4	NGC 157	
+Herschel 400	5	NGC 185	20201108-03-ngc185
+Herschel 400	6	M 110	20180901-04-m110
+Herschel 400	7	NGC 225	20201024-02-ngc225
+Herschel 400	8	NGC 246	20201204-04-ngc246
+Herschel 400	9	NGC 247	
+Herschel 400	10	NGC 253	
+Herschel 400	11	NGC 278	20201108-02-ngc278
+Herschel 400	12	NGC 288	
+Herschel 400	13	NGC 381	
+Herschel 400	14	NGC 404	20201204-02-ngc404
+Herschel 400	15	NGC 436	20201027-03-ngc436
+Herschel 400	16	NGC 457	20191010-03-ngc457
+Herschel 400	17	NGC 488	
+Herschel 400	18	NGC 524	20201204-03-ngc524
+Herschel 400	19	NGC 559	
+Herschel 400	20	NGC 584	
+Herschel 400	21	NGC 596	
+Herschel 400	22	M 33	20181013-03-m33
+Herschel 400	23	NGC 613	
+Herschel 400	24	NGC 615	
+Herschel 400	25	NGC 637	
+Herschel 400	26	M 76	20181010-01-m76
+Herschel 400	27	NGC 654	20180817-02-ngc654
+Herschel 400	28	NGC 659	
+Herschel 400	29	NGC 663	20180905-04-ngc663
+Herschel 400	30	NGC 720	
+Herschel 400	31	NGC 752	20180903-06-ngc752
+Herschel 400	32	NGC 772	20201106-04-ngc772
+Herschel 400	33	NGC 779	
+Herschel 400	34	NGC 869	20180817-03-doublecluster
+Herschel 400	35	NGC 884	20180817-03-doublecluster
+Herschel 400	36	NGC 891	
+Herschel 400	37	NGC 908	
+Herschel 400	38	NGC 936	
+Herschel 400	39	NGC 1022	
+Herschel 400	40	NGC 1023	20191028-04-uyandngc1023
+Herschel 400	41	NGC 1027	
+Herschel 400	42	NGC 1052	20201107-04-ngc1502
+Herschel 400	43	NGC 1055	
+Herschel 400	44	NGC 1084	
+Herschel 400	45	NGC 1245	20201202-01-ngc1245
+Herschel 400	46	NGC 1342	20181011-03-ngc1342
+Herschel 400	47	NGC 1407	
+Herschel 400	48	NGC 1444	20201202-02-ngc1444
+Herschel 400	49	NGC 1501	20201107-05-ngc1501
+Herschel 400	50	NGC 1502	
+Herschel 400	51	NGC 1513	20201202-04-ngc1513
+Herschel 400	52	NGC 1528	20191129-03-ngc1528
+Herschel 400	53	NGC 1535	
+Herschel 400	54	NGC 1545	20201202-03-ngc1545
+Herschel 400	55	NGC 1647	20181111-02-ngc1647
+Herschel 400	56	NGC 1664	
+Herschel 400	57	NGC 1750	
+Herschel 400	58	NGC 1788	
+Herschel 400	59	NGC 1817	20181111-04-ngc1807
+Herschel 400	60	NGC 1857	
+Herschel 400	61	NGC 1907	20201223-01-ngc1907
+Herschel 400	62	NGC 1931	
+Herschel 400	63	NGC 1961	
+Herschel 400	64	NGC 1964	
+Herschel 400	65	NGC 1980	20200317-02-ngc1980
+Herschel 400	66	NGC 1999	
+Herschel 400	67	NGC 2022	20200218-03-ngc2022
+Herschel 400	68	NGC 2024	
+Herschel 400	69	NGC 2126	
+Herschel 400	70	NGC 2129	20200229-05-ngc2129
+Herschel 400	71	NGC 2158	20210122-05-ngc2158
+Herschel 400	72	NGC 2169	20180222-03-ngc2169
+Herschel 400	73	NGC 2185	
+Herschel 400	74	NGC 2186	
+Herschel 400	75	NGC 2194	
+Herschel 400	76	NGC 2204	
+Herschel 400	77	NGC 2215	20210312-01-ngc2215
+Herschel 400	78	NGC 2232	20190113-02-ngc2232
+Herschel 400	79	NGC 2244	20190110-02-ngc2244
+Herschel 400	80	NGC 2251	20210312-04-ngc2251
+Herschel 400	81	NGC 2264	20180114-05-ngc2264
+Herschel 400	82	NGC 2266	20210122-04-ngc2266
+Herschel 400	83	NGC 2281	20180314-01-ngc2281
+Herschel 400	84	NGC 2286	
+Herschel 400	85	NGC 2301	20180315-01-ngc2301
+Herschel 400	86	NGC 2304	20210311-03-ngc2304
+Herschel 400	87	NGC 2311	20210312-03-ngc2311
+Herschel 400	88	NGC 2324	
+Herschel 400	89	NGC 2335	20200308-03-ngc2335
+Herschel 400	90	NGC 2343	20210303-02-ngc2343
+Herschel 400	91	NGC 2353	
+Herschel 400	92	NGC 2354	
+Herschel 400	93	NGC 2355	20210122-07-ngc2355
+Herschel 400	94	NGC 2360	
+Herschel 400	95	NGC 2362	20210303-01-ngc2362
+Herschel 400	96	NGC 2371	20200227-02-ngc2371ngc2372
+Herschel 400	97	NGC 2372	20200227-02-ngc2371ngc2372
+Herschel 400	98	NGC 2392	20190113-01-ngc2392
+Herschel 400	99	NGC 2395	20210122-08-ngc2395
+Herschel 400	100	NGC 2403	20200220-01-ngc2403
+Herschel 400	101	NGC 2419	20210122-03-ngc2419
+Herschel 400	102	NGC 2420	20210122-06-ngc2420
+Herschel 400	103	NGC 2421	
+Herschel 400	104	M 47	20180220-04-m47
+Herschel 400	105	NGC 2423	
+Herschel 400	106	NGC 2438	
+Herschel 400	107	NGC 2440	20200219-07-ngc2440
+Herschel 400	108	NGC 2479	
+Herschel 400	109	NGC 2482	
+Herschel 400	110	NGC 2489	
+Herschel 400	111	NGC 2506	
+Herschel 400	112	NGC 2509	
+Herschel 400	113	NGC 2527	
+Herschel 400	114	NGC 2539	20200219-05-ngc2359
+Herschel 400	115	M 48	20180319-01-m48
+Herschel 400	116	NGC 2567	
+Herschel 400	117	NGC 2571	
+Herschel 400	118	NGC 2613	
+Herschel 400	119	NGC 2627	
+Herschel 400	120	NGC 2655	20200220-02-ngc2655
+Herschel 400	121	NGC 2681	20210310-01-ngc2681
+Herschel 400	122	NGC 2683	20200227-04-ngc2683
+Herschel 400	123	NGC 2742	
+Herschel 400	124	NGC 2768	20210316-03-ngc2768
+Herschel 400	125	NGC 2775	20210312-06-ngc2775
+Herschel 400	126	NGC 2782	20210310-02-ngc2782
+Herschel 400	127	NGC 2787	20200419-01-ngc2787
+Herschel 400	128	NGC 2811	
+Herschel 400	129	NGC 2841	20200315-03-ngc2841
+Herschel 400	130	NGC 2859	20210310-03-ngc2859
+Herschel 400	131	NGC 2903	20200227-03-ngc2903
+Herschel 400	132	NGC 2950	20200419-02-ngc2950
+Herschel 400	133	NGC 2964	20210316-05-ngc2964
+Herschel 400	134	NGC 2974	
+Herschel 400	135	NGC 2976	
+Herschel 400	136	NGC 2985	20210311-02-ngc2985
+Herschel 400	137	M 82	20190129-02-m81m82
+Herschel 400	138	NGC 3077	20210311-01-ngc3077
+Herschel 400	139	NGC 3079	20200315-04-ngc3079
+Herschel 400	140	NGC 3115	20200318-03-ngc3115
+Herschel 400	141	NGC 3147	20210316-02-ngc3147
+Herschel 400	142	NGC 3166	20210316-06-ngc3166
+Herschel 400	143	NGC 3169	
+Herschel 400	144	NGC 3184	
+Herschel 400	145	NGC 3190	20210312-08-ngc3190ngc3193
+Herschel 400	146	NGC 3193	20210312-08-ngc3190ngc3193
+Herschel 400	147	NGC 3198	
+Herschel 400	148	NGC 3226	20210312-07-ngc3226ngc3227
+Herschel 400	149	NGC 3227	20210312-07-ngc3226ngc3227
+Herschel 400	150	NGC 3242	20190128-03-ngc3242
+Herschel 400	151	NGC 3245	20200321-05-ngc3245
+Herschel 400	152	NGC 3277	20200321-06-3277
+Herschel 400	153	NGC 3294	20210310-05-ngc3294
+Herschel 400	154	NGC 3310	20210310-04-ngc3310
+Herschel 400	155	NGC 3344	20200317-05-ngc3344
+Herschel 400	156	NGC 3377	20200411-01-ngc3377
+Herschel 400	157	M 105	20190302-03-m105ngc3384
+Herschel 400	158	NGC 3384	20190302-03-m105ngc3384
+Herschel 400	159	NGC 3395	20210310-06-ngc3395
+Herschel 400	160	NGC 3412	20200411-03-ngc3412
+Herschel 400	161	NGC 3414	20210310-07-ngc3414
+Herschel 400	162	NGC 3432	20210316-04-ngc3432
+Herschel 400	163	NGC 3486	
+Herschel 400	164	NGC 3489	20200412-04-ngc3489
+Herschel 400	165	NGC 3504	20210310-08-ngc3504
+Herschel 400	166	NGC 3521	20200315-07-ngc3521
+Herschel 400	167	M 108	20190128-05-m108
+Herschel 400	168	NGC 3593	20200412-03-ngc3593
+Herschel 400	169	NGC 3607	20200315-06-ngc3607ngc3605ngc3608
+Herschel 400	170	NGC 3608	20200315-06-ngc3607ngc3605ngc3608
+Herschel 400	171	NGC 3610	20200419-03-ngc3610
+Herschel 400	172	NGC 3613	20200321-10-ngc3613ngc3619
+Herschel 400	173	NGC 3619	20200321-10-ngc3613ngc3619
+Herschel 400	174	NGC 3621	
+Herschel 400	175	NGC 3626	20200415-01-ngc3626
+Herschel 400	176	NGC 3628	20180311-03-leotriplet
+Herschel 400	177	NGC 3631	
+Herschel 400	178	NGC 3640	
+Herschel 400	179	NGC 3655	
+Herschel 400	180	NGC 3665	20210311-05-ngc3665
+Herschel 400	181	NGC 3675	
+Herschel 400	182	NGC 3686	20210312-09-ngc3686ngc3684
+Herschel 400	183	NGC 3726	
+Herschel 400	184	NGC 3729	20210303-06-ngc3729
+Herschel 400	185	NGC 3810	20210316-07-ngc3810
+Herschel 400	186	NGC 3813	20210311-06-ngc3813
+Herschel 400	187	NGC 3877	20200220-05-ngc3877
+Herschel 400	188	NGC 3893	
+Herschel 400	189	NGC 3898	20210303-04-ngc3898
+Herschel 400	190	NGC 3900	20200411-04-ngc3900
+Herschel 400	191	NGC 3912	20200411-05-ngc3912
+Herschel 400	192	NGC 3938	
+Herschel 400	193	NGC 3941	20200315-05-ngc3941
+Herschel 400	194	NGC 3945	
+Herschel 400	195	NGC 3949	20210311-04-ngc3949
+Herschel 400	196	NGC 3953	
+Herschel 400	197	NGC 3962	
+Herschel 400	198	NGC 3982	
+Herschel 400	199	M 109	20190302-04-m109
+Herschel 400	200	NGC 3998	20210303-05-ngc3982ngc3998
+Herschel 400	201	NGC 4026	20200220-04-ngc4026
+Herschel 400	202	NGC 4027	
+Herschel 400	203	NGC 4030	
+Herschel 400	204	NGC 4036	20210303-03-ngc4036ngc4041
+Herschel 400	205	NGC 4038	
+Herschel 400	206	NGC 4041	20210303-03-ngc4036ngc4041
+Herschel 400	207	NGC 4051	
+Herschel 400	208	NGC 4085	20200220-03-ngc4088ngc4085
+Herschel 400	209	NGC 4088	20200220-03-ngc4088ngc4085
+Herschel 400	210	NGC 4102	20210310-09-ngc4102
+Herschel 400	211	NGC 4111	20200316-03-ngc4111
+Herschel 400	212	NGC 4143	20210311-07-ngc4143
+Herschel 400	213	NGC 4147	20200416-01-ngc4147
+Herschel 400	214	NGC 4150	20200412-05-ngc4150
+Herschel 400	215	NGC 4151	20210311-08-ngc4151
+Herschel 400	216	NGC 4179	
+Herschel 400	217	NGC 4203	
+Herschel 400	218	NGC 4214	20200316-05-ngc4214
+Herschel 400	219	NGC 4216	20200415-05-ngc4216ngc4206
+Herschel 400	220	NGC 4245	20200415-04-ngc4245
+Herschel 400	221	NGC 4251	20200415-03-ngc4251
+Herschel 400	222	M 106	20190304-01-m106
+Herschel 400	223	NGC 4261	20200419-06-ngc4261
+Herschel 400	224	NGC 4273	
+Herschel 400	225	NGC 4274	20200412-06-ngc4278ngc4274
+Herschel 400	226	NGC 4278	20200412-06-ngc4278ngc4274
+Herschel 400	227	NGC 4281	
+Herschel 400	228	NGC 4293	
+Herschel 400	229	M 61	20190424-02-m61
+Herschel 400	230	NGC 4314	
+Herschel 400	231	NGC 4346	20210310-10-ngc4346
+Herschel 400	232	NGC 4350	
+Herschel 400	233	NGC 4361	
+Herschel 400	234	NGC 4365	20200419-05-ngc4365
+Herschel 400	235	NGC 4371	
+Herschel 400	236	NGC 4394	
+Herschel 400	237	NGC 4414	20200321-07-ngc4414
+Herschel 400	238	NGC 4419	
+Herschel 400	239	NGC 4429	
+Herschel 400	240	NGC 4435	20200415-06-ngc4435ngc4438
+Herschel 400	241	NGC 4438	20200415-06-ngc4435ngc4438
+Herschel 400	242	NGC 4442	20200419-04-ngc4442
+Herschel 400	243	NGC 4448	
+Herschel 400	244	NGC 4449	20200316-02-ngc4449
+Herschel 400	245	NGC 4450	
+Herschel 400	246	NGC 4459	
+Herschel 400	247	NGC 4473	
+Herschel 400	248	NGC 4477	
+Herschel 400	249	NGC 4478	20200416-05-m87ngc4468angc4478
+Herschel 400	250	NGC 4485	20210311-09-ngc4490ngc4485
+Herschel 400	251	NGC 4490	20200316-01-ngc4490
+Herschel 400	252	NGC 4494	20200321-08-ngc4494
+Herschel 400	253	NGC 4526	20200416-03-ngc4526
+Herschel 400	254	NGC 4527	
+Herschel 400	255	NGC 4535	
+Herschel 400	256	NGC 4536	
+Herschel 400	257	NGC 4546	
+Herschel 400	258	M 91	20190329-10-m91
+Herschel 400	259	NGC 4550	
+Herschel 400	260	NGC 4559	20200416-02-ngc4559
+Herschel 400	261	NGC 4565	20200415-02-ngc4565
+Herschel 400	262	NGC 4570	
+Herschel 400	263	M 104	20190329-11-m104
+Herschel 400	264	NGC 4596	
+Herschel 400	265	NGC 4618	20210311-10-ngc4618
+Herschel 400	266	NGC 4631	20200317-03-ngc4631
+Herschel 400	267	NGC 4636	
+Herschel 400	268	NGC 4643	
+Herschel 400	269	NGC 4654	
+Herschel 400	270	NGC 4656,4657	20200317-04-ngc4656
+Herschel 400	271	NGC 4660	
+Herschel 400	272	NGC 4665	
+Herschel 400	273	NGC 4666	
+Herschel 400	274	NGC 4689	
+Herschel 400	275	NGC 4697	
+Herschel 400	276	NGC 4698	
+Herschel 400	277	NGC 4699	
+Herschel 400	278	NGC 4725	
+Herschel 400	279	NGC 4753	
+Herschel 400	280	NGC 4754	20200411-06-ngc4762ngc4754
+Herschel 400	281	NGC 4762	20200411-06-ngc4762ngc4754
+Herschel 400	282	NGC 4781	
+Herschel 400	283	NGC 4800	
+Herschel 400	284	NGC 4845	
+Herschel 400	285	NGC 4856	
+Herschel 400	286	NGC 4866	
+Herschel 400	287	NGC 4900	
+Herschel 400	288	NGC 4958	
+Herschel 400	289	NGC 4995	
+Herschel 400	290	NGC 5005	20200318-04-ngc5005
+Herschel 400	291	NGC 5033	
+Herschel 400	292	NGC 5054	
+Herschel 400	293	NGC 5195	20180311-04-m51
+Herschel 400	294	NGC 5248	
+Herschel 400	295	NGC 5273	
+Herschel 400	296	NGC 5322	20210310-11-ngc5322
+Herschel 400	297	NGC 5363	
+Herschel 400	298	NGC 5364	
+Herschel 400	299	NGC 5466	20200518-04-ngc5466
+Herschel 400	300	NGC 5473	
+Herschel 400	301	NGC 5474	
+Herschel 400	302	NGC 5557	
+Herschel 400	303	NGC 5566	
+Herschel 400	304	NGC 5576	
+Herschel 400	305	NGC 5631	
+Herschel 400	306	NGC 5634	
+Herschel 400	307	NGC 5676	20200518-02-ngc5676
+Herschel 400	308	NGC 5689	20200518-03-ngc5689
+Herschel 400	309	NGC 5694	
+Herschel 400	310	NGC 5746	
+Herschel 400	311	NGC 5846	
+Herschel 400	312	M 102	20190403-01-m102
+Herschel 400	313	NGC 5897	
+Herschel 400	314	NGC 5907	
+Herschel 400	315	NGC 5982	
+Herschel 400	316	NGC 6118	
+Herschel 400	317	NGC 6144	
+Herschel 400	318	M 107	20180616-03-m107
+Herschel 400	319	NGC 6207	
+Herschel 400	320	NGC 6217	
+Herschel 400	321	NGC 6229	20190729-02-ngc6229
+Herschel 400	322	NGC 6235	
+Herschel 400	323	NGC 6284	20200621-02-ngc6284
+Herschel 400	324	NGC 6287	20200621-03-ngc6287
+Herschel 400	325	NGC 6293	
+Herschel 400	326	NGC 6304	
+Herschel 400	327	NGC 6316	
+Herschel 400	328	NGC 6342	20200715-05-ngc6342
+Herschel 400	329	NGC 6355	
+Herschel 400	330	NGC 6356	20200622-03-ngc6356
+Herschel 400	331	NGC 6369	20200713-01-ngc6369
+Herschel 400	332	NGC 6401	20200622-01-ngc6401
+Herschel 400	333	NGC 6426	20200715-04-ngc6426
+Herschel 400	334	NGC 6440	20200710-01-ngc6440
+Herschel 400	335	NGC 6445	20200714-01-ngc6445
+Herschel 400	336	NGC 6451	
+Herschel 400	337	M 20	20180712-07-m20
+Herschel 400	338	NGC 6517	20200715-02-ngc6517
+Herschel 400	339	NGC 6520	20190629-01-ngc6520
+Herschel 400	340	NGC 6522	
+Herschel 400	341	NGC 6528	
+Herschel 400	342	NGC 6540	
+Herschel 400	343	NGC 6543	20200716-01-ngc6543
+Herschel 400	344	NGC 6544	20200713-02-ngc6544
+Herschel 400	345	NGC 6553	
+Herschel 400	346	NGC 6568	
+Herschel 400	347	NGC 6569	
+Herschel 400	348	NGC 6583	
+Herschel 400	349	NGC 6624	
+Herschel 400	350	NGC 6629	
+Herschel 400	351	NGC 6633	20180711-03-ngc6633
+Herschel 400	352	NGC 6638	
+Herschel 400	353	NGC 6642	20200714-03-ngc6642
+Herschel 400	354	NGC 6645	
+Herschel 400	355	NGC 6664	
+Herschel 400	356	NGC 6712	20200713-04-ngc6712
+Herschel 400	357	NGC 6755	20200720-03-ngc6755
+Herschel 400	358	NGC 6756	20200720-04-ngc6756
+Herschel 400	359	NGC 6781	20190726-06-ngc6781
+Herschel 400	360	NGC 6802	20190825-01-ngc6802
+Herschel 400	361	NGC 6818	20180928-01-ngc6818
+Herschel 400	362	NGC 6823	20200818-02-ngc6823
+Herschel 400	363	NGC 6826	20190724-02-ngc6826
+Herschel 400	364	NGC 6830	20200818-03-ngc6830
+Herschel 400	365	NGC 6834	20200817-01-ngc6834
+Herschel 400	366	NGC 6866	20200827-01-ngc6866
+Herschel 400	367	NGC 6882	20200817-03-ngc6882
+Herschel 400	368	NGC 6885	20200817-02-ngc6885
+Herschel 400	369	NGC 6905	
+Herschel 400	370	NGC 6910	20180902-02-ngc6910
+Herschel 400	371	NGC 6934	20190902-01-ngc6934
+Herschel 400	372	NGC 6939	20190826-04-ngc6939
+Herschel 400	373	NGC 6940	20180902-03-ngc6940
+Herschel 400	374	NGC 6946	
+Herschel 400	375	NGC 7000	
+Herschel 400	376	NGC 7006	20190930-01-ngc7006
+Herschel 400	377	NGC 7008	20190806-01-ngc7008
+Herschel 400	378	NGC 7009	20180928-02-ngc7009
+Herschel 400	379	NGC 7044	
+Herschel 400	380	NGC 7062	20200827-03-ngc7062
+Herschel 400	381	NGC 7086	
+Herschel 400	382	NGC 7128	
+Herschel 400	383	NGC 7142	
+Herschel 400	384	NGC 7160	20180906-02-ngc7160
+Herschel 400	385	NGC 7209	20180906-03-ngc7209
+Herschel 400	386	NGC 7217	
+Herschel 400	387	NGC 7243	20180903-05-ngc7243
+Herschel 400	388	NGC 7296	
+Herschel 400	389	NGC 7331	20201106-03-ngc7331
+Herschel 400	390	NGC 7380	20200906-03-ngc7380
+Herschel 400	391	NGC 7448	20201108-01-ngc7448
+Herschel 400	392	NGC 7479	
+Herschel 400	393	NGC 7510	
+Herschel 400	394	NGC 7606	
+Herschel 400	395	NGC 7662	20180903-04-ngc7662
+Herschel 400	396	NGC 7686	
+Herschel 400	397	NGC 7723	
+Herschel 400	398	NGC 7727	
+Herschel 400	399	NGC 7789	20180903-03-ngc7789
+Herschel 400	400	NGC 7790	20201024-01-ngc7790
+Globular OP	3	G1	20200822-03-g1
+Globular OP	10	G76	
+Globular OP	33	NGC 288	
+Globular OP	44	Pal 1	20191129-01-pal1
+Globular OP	47	Pal 2	
+Globular OP	49	M 79	
+Globular OP	51	NGC 2419	20210122-03-ngc2419
+Globular OP	59	NGC 4147	20200416-01-ngc4147
+Globular OP	62	M 68	
+Globular OP	64	M 53	20200616-04-m53
+Globular OP	65	NGC 5053	20200518-05-ngc5053
+Globular OP	67	M 3	20200617-03-m3
+Globular OP	70	NGC 5466	20200518-04-ngc5466
+Globular OP	71	NGC 5634	
+Globular OP	72	NGC 5694	
+Globular OP	76	NGC 5897	
+Globular OP	77	M 5	20200518-06-m5
+Globular OP	84	M 80	20200618-01-m80
+Globular OP	85	M 4	20200618-02-m4
+Globular OP	87	NGC 6144	
+Globular OP	90	M 107	20200621-04-m107
+Globular OP	92	M 13	20200710-04-m13
+Globular OP	93	NGC 6229	20190729-02-ngc6229
+Globular OP	94	M 12	20200618-03-m12
+Globular OP	95	NGC 6235	
+Globular OP	96	M 10	20200618-04-m10
+Globular OP	99	M 62	20200718-04-m62
+Globular OP	100	M 19	20200621-01-m19
+Globular OP	101	NGC 6284	20200621-02-ngc6284
+Globular OP	102	NGC 6287	20200621-03-ngc6287
+Globular OP	103	NGC 6293	
+Globular OP	104	NGC 6304	
+Globular OP	105	NGC 6316	
+Globular OP	106	M 92	20190721-04-m92
+Globular OP	108	M 9	20200622-02-m9
+Globular OP	109	NGC 6342	20200715-05-ngc6342
+Globular OP	110	NGC 6355	
+Globular OP	111	NGC 6356	20200622-03-ngc6356
+Globular OP	114	NGC 6366	20200710-03-ngc6366
+Globular OP	124	NGC 6401	20200622-01-ngc6401
+Globular OP	125	M 14	20200710-02-m14
+Globular OP	128	NGC 6426	20200715-04-ngc6426
+Globular OP	131	NGC 6440	20200710-01-ngc6440
+Globular OP	138	NGC 6517	20200715-02-ngc6517
+Globular OP	139	Djorg 2	
+Globular OP	142	NGC 6535	20200720-01-ngc6535
+Globular OP	143	NGC 6539	20200715-03-ngc6539
+Globular OP	145	NGC 6540	
+Globular OP	147	NGC 6544	20200713-02-ngc6544
+Globular OP	149	NGC 6553	
+Globular OP	153	IC 1276	
+Globular OP	158	M 28	20200713-03-m28
+Globular OP	159	M 69	20200718-06-m69
+Globular OP	160	NGC 6638	
+Globular OP	161	NGC 6642	20200714-03-ngc6642
+Globular OP	163	M 22	20200714-02-m22
+Globular OP	164	Pal 8	
+Globular OP	165	M 70	20200718-03-m70
+Globular OP	166	NGC 6712	20200713-04-ngc6712
+Globular OP	167	M 54	20200718-07-m54
+Globular OP	168	NGC 6717	20200726-02-ngc6717
+Globular OP	170	NGC 6749	
+Globular OP	172	NGC 6760	20200720-02-ngc6760
+Globular OP	173	M 56	20190727-05-m56
+Globular OP	175	Pal 10	
+Globular OP	177	M 55	20200718-05-m55
+Globular OP	179	Pal 11	20200822-01-pal11
+Globular OP	180	M 71	20191001-02-m71
+Globular OP	181	M 75	20200726-03-m75
+Globular OP	182	NGC 6934	20190902-01-ngc6934
+Globular OP	183	M 72	20200815-04-m72
+Globular OP	184	NGC 7006	20190930-01-ngc7006
+Globular OP	185	M 15	20200824-03-m15
+Globular OP	186	M 2	20200824-02-m2
+Globular OP	187	M 30	20200824-01-m30
+Globular OP	188	Pal 12	
+Globular OP	190	NGC 7492	
+Vic Menard List	1	NGC 7793	
+Vic Menard List	2	NGC 24	
+Vic Menard List	3	NGC 55	
+Vic Menard List	4	NGC 134	
+Vic Menard List	5	NGC 253	
+Vic Menard List	6	NGC 288	
+Vic Menard List	7	NGC 613	
+Vic Menard List	8	NGC 7789	
+Vic Menard List	9	H 3053	
+Vic Menard List	10	Eta Cas	
+Vic Menard List	11	NGC 278	
+Vic Menard List	12	NGC 281	
+Vic Menard List	13	NGC 457	
+Vic Menard List	14	NGC 663	
+Vic Menard List	15	NGC 896	
+Vic Menard List	16	Iota Cas	
+Vic Menard List	17	IC 289	
+Vic Menard List	18	NGC 7640	
+Vic Menard List	19	NGC 7662	
+Vic Menard List	20	VX And	
+Vic Menard List	21	M 31	
+Vic Menard List	22	Gamma And	
+Vic Menard List	23	NGC 891	
+Vic Menard List	24	M 33	
+Vic Menard List	25	Iota Tri	
+Vic Menard List	26	M 74	
+Vic Menard List	27	Alpha Psc	
+Vic Menard List	28	NGC 246	
+Vic Menard List	29	Gamma Cet	
+Vic Menard List	30	M 77	
+Vic Menard List	31	Gamma Ari	
+Vic Menard List	32	NGC 772	
+Vic Menard List	33	M 76	
+Vic Menard List	34a	NGC 869	
+Vic Menard List	34b	NGC 884	
+Vic Menard List	35	NGC 1023	
+Vic Menard List	36	Eta Per	
+Vic Menard List	37	NGC 1245	
+Vic Menard List	38	NGC 1275	
+Vic Menard List	39	NGC 1491	
+Vic Menard List	40	NGC 1513	
+Vic Menard List	41	NGC 1528	
+Vic Menard List	42	NGC 1579	
+Vic Menard List	43	NGC 1049	
+Vic Menard List	44	NGC 1097	
+Vic Menard List	45	NGC 1316	
+Vic Menard List	46	NGC 1360	
+Vic Menard List	47	NGC 1365	
+Vic Menard List	48	NGC 1380	
+Vic Menard List	49	NGC 1398	
+Vic Menard List	50	NGC 1084	
+Vic Menard List	51	Theta Eri	
+Vic Menard List	52	NGC 1187	
+Vic Menard List	53	NGC 1232	
+Vic Menard List	54	NGC 1291	
+Vic Menard List	55	NGC 1421	
+Vic Menard List	56	32 Eri	
+Vic Menard List	57	NGC 1532	
+Vic Menard List	58	NGC 1535	
+Vic Menard List	59	Omicron 2 Eri	
+Vic Menard List	60	NGC 1433	
+Vic Menard List	61	M 45	
+Vic Menard List	62	NGC 1514	
+Vic Menard List	63	M 1	
+Vic Menard List	64	R Lep	
+Vic Menard List	65	M 79	
+Vic Menard List	66	IC 418	
+Vic Menard List	67	NGC 1964	
+Vic Menard List	68	NGC 1792	
+Vic Menard List	69	NGC 1808	
+Vic Menard List	70	NGC 1851	
+Vic Menard List	71	W Ori	
+Vic Menard List	72	Beta Ori	
+Vic Menard List	73	Eta Ori	
+Vic Menard List	74	Lambda Ori	
+Vic Menard List	75	M 42	
+Vic Menard List	76	Sigma Ori	
+Vic Menard List	77	IC 434	
+Vic Menard List	78	NGC 2024	
+Vic Menard List	79	NGC 2022	
+Vic Menard List	80	M 78	
+Vic Menard List	81	NGC 2169	
+Vic Menard List	82	NGC 2194	
+Vic Menard List	83	NGC 1907	
+Vic Menard List	84	M 37	
+Vic Menard List	85	IC 2149	
+Vic Menard List	86	Theta Aur	
+Vic Menard List	87	M 35	
+Vic Menard List	88	NGC 2266	
+Vic Menard List	89	NGC 2304	
+Vic Menard List	90	NGC 2355	
+Vic Menard List	91	Delta Gem	
+Vic Menard List	92a	NGC 2371	
+Vic Menard List	92b	NGC 2372	
+Vic Menard List	93	PK205+14.1	
+Vic Menard List	94	NGC 2392	
+Vic Menard List	95	Alpha Gem	
+Vic Menard List	96	NGC 2420	
+Vic Menard List	97	Epsilon Mon	
+Vic Menard List	98	Beta Mon	
+Vic Menard List	99	NGC 2244	
+Vic Menard List	100	NGC 2261	
+Vic Menard List	101	M 50	
+Vic Menard List	102	NGC 2346	
+Vic Menard List	103	NGC 2506	
+Vic Menard List	104	NGC 2207	
+Vic Menard List	105	Alpha CMa	
+Vic Menard List	106	Epsilon CMa	
+Vic Menard List	107	H 3945	
+Vic Menard List	108	NGC 2360	
+Vic Menard List	109	NGC 2359	
+Vic Menard List	110	NGC 2362	
+Vic Menard List	111	NGC 1501	
+Vic Menard List	112	NGC 1502	
+Vic Menard List	113	ST Cam	
+Vic Menard List	114	U Cam	
+Vic Menard List	115	NGC 2403	
+Vic Menard List	116	NGC 2655	
+Vic Menard List	117	IC 3568	
+Vic Menard List	118	NGC 2421	
+Vic Menard List	119	NGC 2423	
+Vic Menard List	120	Kappa Pup	
+Vic Menard List	121	M 46	
+Vic Menard List	122	NGC 2440	
+Vic Menard List	123	NGC 2452	
+Vic Menard List	124	NGC 2477	
+Vic Menard List	125	NGC 2467	
+Vic Menard List	126	NGC 2539	
+Vic Menard List	127	NGC 2567	
+Vic Menard List	128	Zeta Cnc	
+Vic Menard List	129	Iota Cnc	
+Vic Menard List	130	X Cnc	
+Vic Menard List	131	12 Lyn	
+Vic Menard List	132	NGC 2419	
+Vic Menard List	133	JE1	
+Vic Menard List	134	NGC 2537	
+Vic Menard List	135	NGC 2683	
+Vic Menard List	136	NGC 2613	
+Vic Menard List	137	NGC 2818	
+Vic Menard List	138	Gamma Vel	
+Vic Menard List	139	NGC 3132	
+Vic Menard List	140	NGC 2997	
+Vic Menard List	141	NGC 3044	
+Vic Menard List	142	NGC 3115	
+Vic Menard List	143	NGC 3166	
+Vic Menard List	144	NGC 3003	
+Vic Menard List	145	NGC 3344	
+Vic Menard List	146	NGC 3395	
+Vic Menard List	147	NGC 3432	
+Vic Menard List	148	NGC 2903	
+Vic Menard List	149	NGC 3190	
+Vic Menard List	150	Gamma Leo	
+Vic Menard List	151	NGC 3227	
+Vic Menard List	152	M 95	
+Vic Menard List	153	M 96	
+Vic Menard List	154	NGC 3384	
+Vic Menard List	155	NGC 3521	
+Vic Menard List	156	NGC 3607	
+Vic Menard List	157	M 65	
+Vic Menard List	158	M 66	
+Vic Menard List	159	NGC 3628	
+Vic Menard List	160	NGC 3753	
+Vic Menard List	161	NGC 3842	
+Vic Menard List	162	NGC 3372	
+Vic Menard List	163	NGC 2768	
+Vic Menard List	164	NGC 2841	
+Vic Menard List	165	NGC 2976	
+Vic Menard List	166	NGC 2985	
+Vic Menard List	167	M 81	
+Vic Menard List	168	M 82	
+Vic Menard List	169	Twin Quasar Mirage	
+Vic Menard List	170	NGC 3079	
+Vic Menard List	171	NGC 3184	
+Vic Menard List	172	NGC 3198	
+Vic Menard List	173	NGC 3359	
+Vic Menard List	174	M 108	
+Vic Menard List	175	M 97	
+Vic Menard List	176	Xi UMa	
+Vic Menard List	177	NGC 3631	
+Vic Menard List	178	NGC 3675	
+Vic Menard List	179	NGC 3718	
+Vic Menard List	180	NGC 3726	
+Vic Menard List	181	NGC 3877	
+Vic Menard List	182	NGC 3893	
+Vic Menard List	183	NGC 3938	
+Vic Menard List	184	NGC 3945	
+Vic Menard List	185	NGC 3953	
+Vic Menard List	186	M 109	
+Vic Menard List	187	NGC 4051	
+Vic Menard List	188	NGC 4088	
+Vic Menard List	189	NGC 4096	
+Vic Menard List	190	NGC 4605	
+Vic Menard List	191	Zeta UMa	
+Vic Menard List	192	M 101	
+Vic Menard List	193	NGC 2610	
+Vic Menard List	194	NGC 3242	
+Vic Menard List	195	NGC 3311	
+Vic Menard List	196	V Hya	
+Vic Menard List	197	NGC 3621	
+Vic Menard List	198	M 83	
+Vic Menard List	199	NGC 4027	
+Vic Menard List	200	NGC 4038	
+Vic Menard List	201	NGC 4361	
+Vic Menard List	202	NGC 4169	
+Vic Menard List	203	M 98	
+Vic Menard List	204	M 99	
+Vic Menard List	205	NGC 4274	
+Vic Menard List	206	NGC 4293	
+Vic Menard List	207	NGC 4298	
+Vic Menard List	208	M 100	
+Vic Menard List	209	NGC 4350	
+Vic Menard List	210	NGC 4414	
+Vic Menard List	211	NGC 4419	
+Vic Menard List	212	NGC 4450	
+Vic Menard List	213	NGC 4494	
+Vic Menard List	214	M 88	
+Vic Menard List	215	24 Com	
+Vic Menard List	216	M 91	
+Vic Menard List	217	NGC 4559	
+Vic Menard List	218	NGC 4565	
+Vic Menard List	219	NGC 4725	
+Vic Menard List	220	M 64	
+Vic Menard List	221	NGC 4874	
+Vic Menard List	222	M 53	
+Vic Menard List	223	NGC 3918	
+Vic Menard List	224	NGC 4945	
+Vic Menard List	225	NGC 5102	
+Vic Menard List	226	NGC 5128	
+Vic Menard List	227	NGC 5139	
+Vic Menard List	228	IC 4329	
+Vic Menard List	229	Alpha Cen	
+Vic Menard List	230	NGC 4111	
+Vic Menard List	231	NGC 4214	
+Vic Menard List	232	2 CVn	
+Vic Menard List	233	NGC 4244	
+Vic Menard List	234	M 106	
+Vic Menard List	235	NGC 4449	
+Vic Menard List	236	NGC 4490	
+Vic Menard List	237	NGC 4618	
+Vic Menard List	238	NGC 4631	
+Vic Menard List	239	NGC 4656,4657	
+Vic Menard List	240	Y CVn	
+Vic Menard List	241	M 94	
+Vic Menard List	242	Alpha CVn	
+Vic Menard List	243	NGC 5005	
+Vic Menard List	244	NGC 5033	
+Vic Menard List	245	M 63	
+Vic Menard List	246	M 51	
+Vic Menard List	247	M 3	
+Vic Menard List	248	NGC 5353	
+Vic Menard List	249	NGC 4179	
+Vic Menard List	250	NGC 4216	
+Vic Menard List	251	M 61	
+Vic Menard List	252	M 84	
+Vic Menard List	253	M 85	
+Vic Menard List	254	NGC 4429	
+Vic Menard List	255	NGC 4435	
+Vic Menard List	256	M 49	
+Vic Menard List	257	M 87	
+Vic Menard List	258	NGC 4517	
+Vic Menard List	259	NGC 4526	
+Vic Menard List	260	NGC 4535	
+Vic Menard List	261	NGC 4536	
+Vic Menard List	262	NGC 4567	
+Vic Menard List	263	M 90	
+Vic Menard List	264	M 58	
+Vic Menard List	265	M 104	
+Vic Menard List	266	Gamma Vir	
+Vic Menard List	267	M 60	
+Vic Menard List	268	NGC 4654	
+Vic Menard List	269	NGC 4666	
+Vic Menard List	270	NGC 4698	
+Vic Menard List	271	NGC 4697	
+Vic Menard List	272	NGC 4699	
+Vic Menard List	273	NGC 4753	
+Vic Menard List	274	NGC 4762	
+Vic Menard List	275	NGC 4866	
+Vic Menard List	276	NGC 5054	
+Vic Menard List	277	NGC 5247	
+Vic Menard List	278	NGC 5364	
+Vic Menard List	279	NGC 5566	
+Vic Menard List	280	NGC 5746	
+Vic Menard List	281	NGC 5846	
+Vic Menard List	282	NGC 5248	
+Vic Menard List	283	NGC 5676	
+Vic Menard List	284	Pi Boo	
+Vic Menard List	285	Epsilon Boo	
+Vic Menard List	286	Xi Boo	
+Vic Menard List	287	IC 4406	
+Vic Menard List	288	NGC 6026	
+Vic Menard List	289	M 5	
+Vic Menard List	290	NGC 5921	
+Vic Menard List	291	Delta Ser	
+Vic Menard List	292	NGC 6027	
+Vic Menard List	293	M 16	
+Vic Menard List	294	NGC 3735	
+Vic Menard List	295	M 102	
+Vic Menard List	296	NGC 5907	
+Vic Menard List	297	NGC 6503	
+Vic Menard List	298	NGC 6543	
+Vic Menard List	299	Epsilon Dra	
+Vic Menard List	300	Xi Sco	
+Vic Menard List	301	Beta Sco	
+Vic Menard List	302	Nu Sco	
+Vic Menard List	303	M 80	
+Vic Menard List	304	M 4	
+Vic Menard List	305	Alpha Sco	
+Vic Menard List	306	NGC 6153	
+Vic Menard List	307	NGC 6231	
+Vic Menard List	308	NGC 6302	
+Vic Menard List	309	NGC 6337	
+Vic Menard List	310	NGC 6451	
+Vic Menard List	311	M 13	
+Vic Menard List	312	NGC 6207	
+Vic Menard List	313	NGC 6210	
+Vic Menard List	314	NGC 6229	
+Vic Menard List	315	Alpha Her	
+Vic Menard List	316	M 92	
+Vic Menard List	317	Rho Her	
+Vic Menard List	318	95 Her	
+Vic Menard List	319	M 12	
+Vic Menard List	320	M 10	
+Vic Menard List	321	M 62	
+Vic Menard List	322	M 19	
+Vic Menard List	323	NGC 6309	
+Vic Menard List	324	36 Oph	
+Vic Menard List	325	Omicron Oph	
+Vic Menard List	326	M 9	
+Vic Menard List	327	NGC 6369	
+Vic Menard List	328	NGC 6384	
+Vic Menard List	329	70 Oph	
+Vic Menard List	330	NGC 6572	
+Vic Menard List	331	NGC 6541	
+Vic Menard List	332	NGC 6440	
+Vic Menard List	333	NGC 6445	
+Vic Menard List	334	M 20	
+Vic Menard List	335	NGC 6520	
+Vic Menard List	336	M 8	
+Vic Menard List	337	NGC 6563	
+Vic Menard List	338	M 17	
+Vic Menard List	339	M 28	
+Vic Menard List	340	M 22	
+Vic Menard List	341	M 55	
+Vic Menard List	342	NGC 6818	
+Vic Menard List	343	M 11	
+Vic Menard List	344	NGC 6712	
+Vic Menard List	345	IC 1295	
+Vic Menard List	346	T Lyr	
+Vic Menard List	347	Epsilon Lyr	
+Vic Menard List	348	M 57	
+Vic Menard List	349	NGC 6791	
+Vic Menard List	350	V Aql	
+Vic Menard List	351	Sh2-071	
+Vic Menard List	352	NGC 6772	
+Vic Menard List	353	NGC 6781	
+Vic Menard List	354	NGC 6804	
+Vic Menard List	355	NGC 6802	
+Vic Menard List	356	NGC 6842	
+Vic Menard List	357	M 27	
+Vic Menard List	358	NGC 6940	
+Vic Menard List	359	M 71	
+Vic Menard List	360	NGC 6905	
+Vic Menard List	361	Gamma Del	
+Vic Menard List	362	Beta Cyg	
+Vic Menard List	363	NGC 6819	
+Vic Menard List	364	NGC 6826	
+Vic Menard List	365	NGC 6888	
+Vic Menard List	366	NGC 6894	
+Vic Menard List	367	NGC 6960	
+Vic Menard List	368	NGC 6992,6995	
+Vic Menard List	369	NGC 7000	
+Vic Menard List	370	NGC 7008	
+Vic Menard List	371	NGC 7026	
+Vic Menard List	372	61 Cyg	
+Vic Menard List	373	NGC 7027	
+Vic Menard List	374	NGC 7048	
+Vic Menard List	375	RV Cyg	
+Vic Menard List	376	M 30	
+Vic Menard List	377	NGC 7009	
+Vic Menard List	378	M 2	
+Vic Menard List	379	Zeta Aqr	
+Vic Menard List	380	NGC 7293	
+Vic Menard List	381	NGC 7606	
+Vic Menard List	382	M 15	
+Vic Menard List	383	NGC 7320	
+Vic Menard List	384	NGC 7331	
+Vic Menard List	385	Einstein's Cross	
+Vic Menard List	386	NGC 7448	
+Vic Menard List	387	NGC 7479	
+Vic Menard List	388	Jones1	
+Vic Menard List	389	NGC 7814	
+Vic Menard List	390	NGC 7172	
+Vic Menard List	391	NGC 6939	
+Vic Menard List	392	NGC 6946	
+Vic Menard List	393	NGC 7023	
+Vic Menard List	394	S Cep	
+Vic Menard List	395	NGC 7354	
+Vic Menard List	396	NGC 7538	
+Vic Menard List	397	NGC 40	
+Vic Menard List	398	IC 5148	
+Vic Menard List	399	NGC 7410	
+Vic Menard List	400	NGC 7582	
+Open Cluster OP	1	Berk 58	
+Open Cluster OP	2	Berk 59	
+Open Cluster OP	3	King 13	
+Open Cluster OP	4	Berk 2	
+Open Cluster OP	5	King 14	20201027-04-king14ngc133ngc146
+Open Cluster OP	6	NGC 225	20201024-02-ngc225
+Open Cluster OP	7	King 16	
+Open Cluster OP	8	NGC 188	
+Open Cluster OP	9	M 103	20201029-01-m103
+Open Cluster OP	10	Tr 1	20201029-02-tr1
+Open Cluster OP	11	Cr 463	
+Open Cluster OP	12	Stock 4	
+Open Cluster OP	13	IC 1805	20201106-02-ic1805
+Open Cluster OP	14	Tr 2	
+Open Cluster OP	15	NGC 1027	
+Open Cluster OP	16	DoDz 1	20201201-04-dodz1
+Open Cluster OP	17	IC 1848	
+Open Cluster OP	18	Cr 34	20201107-01-cr34
+Open Cluster OP	19	Tr 3	
+Open Cluster OP	20	Stock 23	20201107-02-stock23
+Open Cluster OP	21	NGC 1342	
+Open Cluster OP	22	IC 348	20201204-05-ic348
+Open Cluster OP	23	Tombaugh 5	20201107-03-tombaugh5
+Open Cluster OP	24	NGC 1444	20201202-02-ngc1444
+Open Cluster OP	25	King 7	
+Open Cluster OP	26	NGC 1496	
+Open Cluster OP	27	NGC 1502	
+Open Cluster OP	28	NGC 1662	
+Open Cluster OP	29	NGC 1746	
+Open Cluster OP	30	NGC 1807	
+Open Cluster OP	31	NGC 1798	
+Open Cluster OP	32	NGC 1893	
+Open Cluster OP	33	M 38	
+Open Cluster OP	34	DoDz 3	
+Open Cluster OP	35	Cr 69	
+Open Cluster OP	36	NGC 1981	
+Open Cluster OP	37	DoDz 4	
+Open Cluster OP	38	NGC 2141	
+Open Cluster OP	39	NGC 2158	20210122-05-ngc2158
+Open Cluster OP	40	NGC 2169	
+Open Cluster OP	41	NGC 2232	20210312-02-ngc2232
+Open Cluster OP	42	NGC 2244	20210312-05-ngc2244
+Open Cluster OP	43	Ru 1	
+Open Cluster OP	44	Ru 3	
+Open Cluster OP	45	Biurakan 9	
+Open Cluster OP	46	Ru 7	
+Open Cluster OP	47	NGC 2353	
+Open Cluster OP	48	Tr 6	
+Open Cluster OP	49	Tr 7	
+Open Cluster OP	50	M 47	
+Open Cluster OP	51	Mel 71	
+Open Cluster OP	52	NGC 2439	
+Open Cluster OP	53	NGC 2453	
+Open Cluster OP	54	Tr 9	
+Open Cluster OP	55	M 48	
+Open Cluster OP	56	M 44	
+Open Cluster OP	57	M 67	
+Open Cluster OP	58	Dolidze 27	
+Open Cluster OP	59	Tr 26	
+Open Cluster OP	60	Cr 333	
+Open Cluster OP	61	NGC 6383	
+Open Cluster OP	62	Tr 27	
+Open Cluster OP	63	Tr 28	
+Open Cluster OP	64	NGC 6416	
+Open Cluster OP	65	Cr 347	
+Open Cluster OP	66	IC 4665	
+Open Cluster OP	67	M 7	
+Open Cluster OP	68	NGC 6520	
+Open Cluster OP	69	NGC 6530	
+Open Cluster OP	70	DoDz 9	
+Open Cluster OP	71	Tr 32	
+Open Cluster OP	72	NGC 6604	
+Open Cluster OP	73	Tr 33	
+Open Cluster OP	74	NGC 6649	
+Open Cluster OP	75	Tr 35	
+Open Cluster OP	76	M 26	
+Open Cluster OP	77	M 11	
+Open Cluster OP	78	NGC 6709	
+Open Cluster OP	79	Ru 146	
+Open Cluster OP	80	Berk 80	
+Open Cluster OP	81	Steph 1	
+Open Cluster OP	82	NGC 6716	
+Open Cluster OP	83	Berk 82	
+Open Cluster OP	84	NGC 6774	
+Open Cluster OP	85	NGC 6791	20200818-01-ngc6791
+Open Cluster OP	86	NGC 6793	
+Open Cluster OP	87	King 25	
+Open Cluster OP	88	NGC 6800	
+Open Cluster OP	89	Berk 47	
+Open Cluster OP	90	NGC 6811	
+Open Cluster OP	91	Cr 401	
+Open Cluster OP	92	NGC 6819	
+Open Cluster OP	93	NGC 6823	20200818-02-ngc6823
+Open Cluster OP	94	Harvard 20	
+Open Cluster OP	95	NGC 6871	
+Open Cluster OP	96	Biurakan 2	
+Open Cluster OP	97	NGC 6885	20200817-02-ngc6885
+Open Cluster OP	98	IC 4996	
+Open Cluster OP	99	Berk 85	
+Open Cluster OP	100	Berk 86	
+Open Cluster OP	101	Berk 87	
+Open Cluster OP	102	NGC 6910	
+Open Cluster OP	103	Cr 421	
+Open Cluster OP	104	Dolidze 9	
+Open Cluster OP	105	Berk 90	
+Open Cluster OP	106	French 1	
+Open Cluster OP	107	IC 1369	
+Open Cluster OP	108	Berk 55	
+Open Cluster OP	109	NGC 7063	
+Open Cluster OP	110	IC 1396	
+Open Cluster OP	111	NGC 7142	
+Open Cluster OP	112	NGC 7209	
+Open Cluster OP	113	IC 1434	
+Open Cluster OP	114	NGC 7235	
+Open Cluster OP	115	King 9	
+Open Cluster OP	116	Berk 94	
+Open Cluster OP	117	Berk 96	
+Open Cluster OP	118	King 18	
+Open Cluster OP	119	NGC 7423	
+Open Cluster OP	120	King 10	
+Open Cluster OP	121	King 19	
+Open Cluster OP	122	NGC 7510	
+Open Cluster OP	123	NGC 7686	
+Open Cluster OP	124	King 21	20201027-01-king21
+Open Cluster OP	125	King 12	
+Binocular Messier OP	1	M 2	
+Binocular Messier OP	2	M 3	
+Binocular Messier OP	3	M 4	
+Binocular Messier OP	4	M 5	
+Binocular Messier OP	5	M 6	
+Binocular Messier OP	6	M 7	
+Binocular Messier OP	7	M 8	
+Binocular Messier OP	8	M 10	20200809-03-m10m12
+Binocular Messier OP	9	M 11	20200809-04-m11
+Binocular Messier OP	10	M 12	20200809-03-m10m12
+Binocular Messier OP	11	M 13	20200809-01-m13
+Binocular Messier OP	12	M 14	
+Binocular Messier OP	13	M 15	
+Binocular Messier OP	14	M 16	20200814-02-m16m17m18m24
+Binocular Messier OP	15	M 17	20200814-02-m16m17m18m24
+Binocular Messier OP	16	M 18	20200814-02-m16m17m18m24
+Binocular Messier OP	17	M 19	
+Binocular Messier OP	18	M 22	
+Binocular Messier OP	19	M 23	
+Binocular Messier OP	20	M 24	20200814-02-m16m17m18m24
+Binocular Messier OP	21	M 25	20200814-01-m25
+Binocular Messier OP	22	M 27	20200809-05-m27
+Binocular Messier OP	23	M 28	
+Binocular Messier OP	24	M 29	20200809-06-m29
+Binocular Messier OP	25	M 30	
+Binocular Messier OP	26	M 31	20201211-02-m31m32
+Binocular Messier OP	27	M 33	
+Binocular Messier OP	28	M 34	
+Binocular Messier OP	29	M 35	20210309-03-m35
+Binocular Messier OP	30	M 36	20201222-03-m38m36
+Binocular Messier OP	31	M 37	20201222-02-m37
+Binocular Messier OP	32	M 38	20201222-03-m38m36
+Binocular Messier OP	33	M 39	20200823-01-m39
+Binocular Messier OP	34	M 40	
+Binocular Messier OP	35	M 41	20210316-01-m41
+Binocular Messier OP	36	M 42	20210117-02-m42
+Binocular Messier OP	37	M 44	20210307-01-m44
+Binocular Messier OP	38	M 45	20210107-01-m45
+Binocular Messier OP	39	M 46	20210309-01-m46m47
+Binocular Messier OP	40	M 47	20210309-01-m46m47
+Binocular Messier OP	41	M 48	
+Binocular Messier OP	42	M 49	
+Binocular Messier OP	43	M 50	20210309-02-m50
+Binocular Messier OP	44	M 52	
+Binocular Messier OP	45	M 53	
+Binocular Messier OP	46	M 55	
+Binocular Messier OP	47	M 62	
+Binocular Messier OP	48	M 63	
+Binocular Messier OP	49	M 64	
+Binocular Messier OP	50	M 67	20210309-04-m67
+Binocular Messier OP	51	M 78	
+Binocular Messier OP	52	M 79	
+Binocular Messier OP	53	M 80	
+Binocular Messier OP	54	M 81	20210309-05-m81m82
+Binocular Messier OP	55	M 82	20210309-05-m81m82
+Binocular Messier OP	56	M 83	
+Binocular Messier OP	57	M 92	20200809-02-m92
+Binocular Messier OP	58	M 93	
+Binocular Messier OP	59	M 94	
+Binocular Messier OP	60	M 103	20201211-03-m103

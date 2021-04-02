@@ -373,9 +373,9 @@ function ParseData(responses) {
 
 function LoadDataAndSetupPage() {
     Promise.all([
-        fetch('data/full_observations.tsv'),
+        fetch('data/observations.tsv'),
         fetch('data/objects.tsv'),
-        fetch('data/full_programs.tsv'),
+        fetch('data/programs.tsv'),
     ])
     .then(handleErrors)
     .then(result => Promise.all(result.map(v => v.text())))
