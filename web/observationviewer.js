@@ -38,30 +38,50 @@ function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
-function getObservationTitle(obs) {
-    custom_title = obs["CustomTitle"];
-    if (custom_title !== "") {
-        return custom_title;
-    }
+function setObjectInfo(obs, element) {
+    const obj_ids = obs["ObjIds"].split("|");
+    var nameInfo = document.createElement("ul");
+    for (obj_id of obj_ids) {
+        const obj = objects[obj_id];
+        var title = document.createElement("div");
+        title.className = "objname";
+        title.textContent = obj["Names"];
+        element.appendChild(title);
 
-    // infer a reasonable default title from the object(s) 
-    // observed
-    obj_ids = obs["ObjIds"].split("|");
-    const title = obj_ids.map( obj_id => objects[obj_id]["Names"] ).join(" and ");
-    return title;
+        // Only bother to show type, con etc. for
+        // objects that have a fixed position in the sky.
+        if (obj["Con"] !== "") {
+            var attrslist = document.createElement("ul");
+            var attributes = ["Type", "Con", "RA", "Dec"];
+            for (const attr of attributes) {
+                if (obj[attr] !== "") {
+                    var li = document.createElement('li');
+                    li.textContent = attr + ": " + obj[attr];
+                    attrslist.appendChild(li);
+                }
+            }
+            element.appendChild(attrslist);
+        }
+    }
 }
 
-function showObservations(observation_ids) {
-    var resultsArea = document.getElementById("results");
+function showObservations(observation_ids, object_ids) {
+    // count of observations
+    var resultsHeader = document.getElementById("results_header");
+    // clear old header
+    while (resultsHeader.hasChildNodes()) {
+        resultsHeader.removeChild(resultsHeader.lastChild);
+    }
+    var resultCount = document.createElement("p");
+    resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
+    resultsHeader.appendChild(resultCount);
+
+    var resultsArea = document.getElementById("results_list");
 
     // clear old results
     while (resultsArea.hasChildNodes()) {
         resultsArea.removeChild(resultsArea.lastChild);
     }
-
-    var resultCount = document.createElement("p");
-    resultCount.textContent = "Found " + observation_ids.length + " entries.";
-    resultsArea.appendChild(resultCount);
 
     // add new results
     for (const observation_id of observation_ids) {
@@ -83,9 +103,8 @@ function showObservations(observation_ids) {
 
             var notesDiv = document.createElement("div");
             notesDiv.className = "notes";
-            var objname = document.createElement("div");
-            objname.className = "objname";
-            objname.textContent = getObservationTitle(obs);
+            var objinfo = document.createElement("div");
+            setObjectInfo(obs, objinfo);
 
             var notesList = document.createElement("ul");
             var attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
@@ -96,7 +115,7 @@ function showObservations(observation_ids) {
                     notesList.appendChild(li);
                 }
             }
-            notesDiv.appendChild(objname);
+            notesDiv.appendChild(objinfo);
             notesDiv.appendChild(notesList);
             if (obs["Notes"] != null) {
                 var description = document.createElement("p");
@@ -125,10 +144,16 @@ function showObjectsForSelectedProgram() {
     const program_name = programpicker.options[programpicker.selectedIndex].value;
     const entries = programs[program_name];
     const obs_ids = entries
+        .filter(o => o["observationId"] !== "")
         .map(o => o["observationId"])
-        .filter(onlyUnique)
-        .filter(name => name !== "");
-    showObservations(obs_ids);
+        .filter(onlyUnique);
+
+    // make a list of objects that appear in these observations
+    const obj_ids = entries
+        .filter(o => o["observationId"] !== "")
+        .map(o => o["objectId"])
+        .filter(onlyUnique);
+    showObservations(obs_ids, obj_ids);
 }
 
 function showObjectsForSelectedDate() {
@@ -140,7 +165,15 @@ function showObjectsForSelectedDate() {
             observation_ids.push(observation_id);
         }
     }
-    showObservations(observation_ids);
+
+    // make a list of objects that appear in these observations
+    const obj_ids = observation_ids
+        .map(o => observations[o]["ObjIds"])
+        .flat()
+        .map(o => o.split("|"))
+        .flat()
+        .filter(onlyUnique);
+    showObservations(observation_ids, obj_ids);
 }
 
 function ObjectNameIs(obj, name) {
@@ -190,9 +223,9 @@ function showObjectsForObjectQuery() {
     const do_con_match = constellation_element.value !== "";
 
     var observation_ids_and_matching_obj_id = [];
+    var all_matching_object_ids = [];
     for (const [observation_id, observation] of Object.entries(observations)) {
-        var observation_matches = false;
-        var matching_object = null;
+        var matching_objects = [];
         const obj_ids = observation["ObjIds"].split("|");
         const objs = obj_ids.map( obj_id => objects[obj_id])
         for (const obj of objs) {
@@ -212,14 +245,15 @@ function showObjectsForObjectQuery() {
                 object_matches = false;
             }
             if (object_matches) {
-                observation_matches = true;
-                matching_object = obj;
+                matching_objects.push(obj);
             }
         }
 
-        if (observation_matches) {
-            const obj_name = matching_object["Names"].split("/")[0];
+        if (matching_objects.length > 0) {
+            const obj_name = matching_objects[0]["Names"].split("/")[0];
             observation_ids_and_matching_obj_id.push([observation_id, obj_name]);
+            all_matching_object_ids = all_matching_object_ids.concat(
+                matching_objects.map(mo => mo["#id"]));
         }
     }
 
@@ -232,7 +266,8 @@ function showObjectsForObjectQuery() {
     // and strip down to just obs ids
     observation_ids = observation_ids_and_matching_obj_id.map(x => x[0]);
 
-    showObservations(observation_ids);
+    const deduped_matching_obj_ids = all_matching_object_ids.filter(onlyUnique);
+    showObservations(observation_ids, deduped_matching_obj_ids);
 }
 
 function invert() {
@@ -338,9 +373,9 @@ function ParseData(responses) {
 
 function LoadDataAndSetupPage() {
     Promise.all([
-        fetch('data/full_observations.tsv'),
+        fetch('data/observations.tsv'),
         fetch('data/objects.tsv'),
-        fetch('data/full_programs.tsv'),
+        fetch('data/programs.tsv'),
     ])
     .then(handleErrors)
     .then(result => Promise.all(result.map(v => v.text())))

@@ -1,6 +1,9 @@
 # astrodb
 
 This project is a quick-and-dirty astronomy observing list database.
+There are two parts: a command-line interface to query objects
+in the database, and a web UI to query observations, at 
+https://jonathanacross.github.io/astrodb/
 
 Data is read in from three TSV files that correspond to three 
 tables: one for object data, one for observing program data, and
@@ -61,16 +64,20 @@ build/install/astrodb/bin/astrodb \
 ```
 
 ```
-# Make an observing list of objects in a particular program that
-# you haven't seen for a while.
+# Make a list of objects for a particular program that
+# you have observed, but no observation is marked
+# for the program.  Such objects may have been intentionally
+# missed (e.g., because of specific program requirements)
+# or may have been accidental.
 build/install/astrodb/bin/astrodb \
 --objects="data/objects.tsv" \
 --programs="data/programs.tsv" \
 --observations="data/observations.tsv" \
 --mode=observing_list \
 --filter='
-    program = "Globular OP"
-    notseen after 2018-07-20
+    program = "Binocular Messier OP"
+    checkedinprogram = false
+    seen = true
 '
 ```
 
@@ -131,65 +138,3 @@ build/install/astrodb/bin/astrodb \
 --mode=meta_list \
 --filter='seen = true'
 ```
-
-## Data files
-
-### Object file
-
-This contains all intrinsic data for objects.  This file has columns:
-- Id - id of object used to join against other tables.  
-   This can be an arbitrary string,
-   though I prefer to use a name I might recognize to make editing easier,
-   e.g., "M 31" rather than "12345".
-- Names - alternate names of object, separated by /
-- Type - object type, separated by +.  Object types used in various
-          observing programs are supported.  E.g., "galaxy", "Gal", "GX"
-          all represent a galaxy.
-- Con - constellation name (capitalization ignored)
-- RA - Right ascension.  Handles various formats, e.g.,
-   24h 32.52m", "24 32 31" "24:32:31" "24:32.52" all map to 24.542
-- Dec - Declination.  Handles various formats, e.g.,
-    "-55 20' 15", "-55:20:15", "-55° 20.25'" all map to -55.3375
-- Mag - Magnitude. Can be one of
-     - Empty (e.g., for dark nebulae)
-     - A single value
-     - A list of values, for double stars, e.g., "6.5,7.3"
-     - A range of values, for asterisms, e.g., "6 to 7" or "6-7"
-     - Named key-value pairs, for multiple stars, e.g., "A=3.4, BC=4.5, D=8"
-- Size - Size of an object. Can be one of 
-     - Empty (e.g., for carbon stars)
-     - Single number for the diameter of the object. Default is in arcminutes
-       if no units are specified. Examples: "12.3'", "4 deg", "6.2"
-     - Pair of numbers specifying the major/minor diameters of the object.
-       E.g., "2.5 x 1.3".
-- Sep - For double stars, the separations, in arcseconds.  Can be one of
-     - Empty
-     - A single number for double stars
-     - Named key-value pairs, separated by ", " for multiple stars, e.g., 
-       "A,BC=12, AD=53"
-- PA - for double stars, the position angles, in degrees.  Can be one of
-     - Empty
-     - A single number for double stars
-     - Named key-value pairs, separated by ", " for multiple stars, e.g., 
-       "A,BC=334, AD=98"
-- Class - class of the object.  A freeform string.  Informational only;
-     not used in filtering.
-- Distance - distance to the object.  Informational only.  Can be given
-     in "ly", "kly", "mly" for units.
-- Notes - other notes for the object.
-
-### Program file
-This file stores which items are in which observing programs.  This has
-columns:
-
-- Program - name of the program
-- Number - number in the program.  Some programs have entries with
-  suffixes like 68a, 68b.  These are supported and will be sorted correctly.
-- Id - item id to join with objects
-
-### Observations file
-This just has a list of the dates of when objects were observed. 
-This has columns:
-
-- Date in format yyyy-mm-dd
-- Id - item id to join with objects
