@@ -52,6 +52,7 @@ fun parseQuery(query: String): ObjectFilter {
     var programIs: String? = null
     var programIn: List<String> = emptyList()
     var programLike: String? = null
+    var checkedInProgram: Boolean? = null
     var seen: Boolean? = null
     var seenBefore: String? = null
     var seenAfter: String? = null
@@ -78,6 +79,7 @@ fun parseQuery(query: String): ObjectFilter {
             Keyword.PROGRAM_IS -> { programIs = tokens[idx + 2]; idx += 3 }
             Keyword.PROGRAM_IN -> { programIn = tokens[idx + 2].split(","); idx += 3 }
             Keyword.PROGRAM_LIKE -> { programLike = tokens[idx + 2]; idx += 3 }
+            Keyword.CHECKED_IN_PROGRAM_IS -> { checkedInProgram = tokens[idx + 2].toBoolean(); idx += 3 }
             Keyword.SEEN_IS -> { seen = tokens[idx + 2].toBoolean(); idx += 3 }
             Keyword.SEEN_BEFORE -> { seenBefore = tokens[idx + 2]; idx += 3 }
             Keyword.SEEN_AFTER -> { seenAfter = tokens[idx + 2]; idx += 3 }
@@ -104,6 +106,7 @@ fun parseQuery(query: String): ObjectFilter {
         programIs = programIs,
         programIn = programIn,
         programLike = programLike,
+        checkedInProgram = checkedInProgram,
         seen = seen,
         seenBefore = seenBefore,
         seenAfter = seenAfter,
@@ -130,6 +133,7 @@ enum class Keyword(val token1: String, val token2: String, val example: String) 
     PROGRAM_IS("program", "=", "program = \"Messier OP\""),
     PROGRAM_IN("program", "in", "program in \"Messier OP\",\"Urban OP\""),
     PROGRAM_LIKE("program", "like", "program like RASC"),
+    CHECKED_IN_PROGRAM_IS("checkedinprogram", "=", "checkedinprogram = false"),
     SEEN_IS("seen", "=", "seen = false"),
     SEEN_BEFORE("seen", "before", "seen before 2018-01-15  (exists an observation before the date)"),
     SEEN_AFTER("seen", "after", "seen after 2018-01-15  (exists an observation after the date)"),

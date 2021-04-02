@@ -19,14 +19,18 @@ data class ItemNumber(val itemNumber: Int, val subNumber: String) {
     }
 }
 
-data class ProgramEntry(val programName: String, val itemNumber: ItemNumber, val itemId: String) {
+data class ProgramEntry(val programName: String,
+                        val itemNumber: ItemNumber,
+                        val itemId: String,
+                        val observationId: String) {
     companion object {
         fun parse(line: String): ProgramEntry {
             val fields = line.split("\t")
             val programName = fields[0]
             val itemNumber = ItemNumber.parse(fields[1])
             val itemId = fields[2]
-            return ProgramEntry(programName, itemNumber, itemId)
+            val observationId = fields[3]
+            return ProgramEntry(programName, itemNumber, itemId, observationId)
         }
     }
 }

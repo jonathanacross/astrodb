@@ -29,6 +29,7 @@ data class ObjectFilter(
     val programIs: String? = null,
     val programIn: List<String> = emptyList(),
     val programLike: String? = null,
+    val checkedInProgram: Boolean? = null,
     val seen: Boolean? = null,
     val seenBefore: String? = null,
     val seenAfter: String? = null,
@@ -53,6 +54,11 @@ data class ObjectFilter(
 
     private fun listMatchesProgram(list: List<ProgramEntry>, str: String): Boolean {
         return list.any { li -> li.programName.contains(str) }
+    }
+
+    private fun programHasObservationFor(programEntries: List<ProgramEntry>,
+                                         programName: String): Boolean {
+        return programEntries.any { p -> p.programName == programName && p.observationId.isNotEmpty() }
     }
 
     private fun observedBefore(obs: List<Observation>, date: String): Boolean {
@@ -143,6 +149,11 @@ data class ObjectFilter(
             return false
         }
         if (programLike != null && !listMatchesProgram(obj.programs, programLike)) {
+            return false
+        }
+        if (checkedInProgram != null &&
+            programIs != null &&
+            programHasObservationFor(obj.programs, programIs) != checkedInProgram) {
             return false
         }
         if (seen != null && ((obj.observations.isEmpty()) == seen)) {
