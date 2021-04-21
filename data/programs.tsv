@@ -1106,8 +1106,8 @@ Multiple Star OP	38	ENG 37	20210329-04-eng37s571
 Multiple Star OP	39	STF 1300	20210329-05-stf1300
 Multiple Star OP	40	HJ 3858	
 Multiple Star OP	41	HJ 3875+BU 755	
-Multiple Star OP	42	12 Com	
-Multiple Star OP	43	STF 1685	
+Multiple Star OP	42	12 Com	20210420-06-12com
+Multiple Star OP	43	STF 1685	20210420-07-stf1685
 Multiple Star OP	44	STF 1964	20200709-01-stf1964
 Multiple Star OP	45	STF 2011	20200705-01-stf2011
 Multiple Star OP	46	SHJ 223	20200705-02-shj223
@@ -1115,13 +1115,13 @@ Multiple Star OP	47	JC 16	20210330-02-jc16
 Multiple Star OP	48	STF 1604	20210416-01-stf1604
 Multiple Star OP	49	Stargate	
 Multiple Star OP	50	STF 1669	20210416-02-stf1669
-Multiple Star OP	51	HJ 2617+BKO 114	
+Multiple Star OP	51	HJ 2617+BKO 114	20210420-04-hj2617
 Multiple Star OP	52	STT 269+ARN 8	
-Multiple Star OP	53	STF 1769	
+Multiple Star OP	53	STF 1769	20210420-05-stf1769
 Multiple Star OP	54	Delta Cyg	20200828-02-deltactygstf25479
 Multiple Star OP	55	STF 2673, 2374	20200828-03-stf2673stf2374
 Multiple Star OP	56	S 752, BU 987	20200828-04-s752bu987
-Multiple Star OP	57	STFA 25 ABC	
+Multiple Star OP	57	STFA 25 ABC	20210420-03-stfa25
 Multiple Star OP	58	STF 1996 ABC	
 Multiple Star OP	59	STF 2302	20200806-02-stf2302
 Multiple Star OP	60	STF 518 A, BC, D, E	
@@ -1175,13 +1175,13 @@ Multiple Star OP	107	STFA 8 Alcyone
 Multiple Star OP	108	STF 258 + BU 876AB	
 Multiple Star OP	109	STF 1415	20210411-01-stf1415
 Multiple Star OP	110	36 UMa, LDS 2863	20210411-02-36uma
-Multiple Star OP	111	STF 1608 ABC	
-Multiple Star OP	112	STF 1691 ABC*	
+Multiple Star OP	111	STF 1608 ABC	20210420-02-stf1608
+Multiple Star OP	112	STF 1691 ABC*	20210420-01-stf1691
 Multiple Star OP	113	STF 1830 & 1831 ABCDEFG	
 Multiple Star OP	114	STF 2521 ABCD	20200828-01-stf2521abcd
 Best Triples	73	1 Aqr	
 Best Triples	43	10 Mon	
-Best Triples	68	12 Com	
+Best Triples	68	12 Com	20210420-06-12com
 Best Triples	4	12 Lyn	
 Best Triples	13	14 Aur	
 Best Triples	12	16,17 Dra	
