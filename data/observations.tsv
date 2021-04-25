@@ -617,7 +617,7 @@
 20200406-03-rydra	2020-04-06	Bellevue at home	Dobstuff 10	G	3-	RY Dra	11:21	12mm	94x		Pale apricot color. Part of a large C shape.
 20200406-04-gaspumphandle	2020-04-06	Bellevue at home	Dobstuff 10	G	3-	Gas Pump Handle	11:39	28mm	40x		7 bright stars including 82 UMa. Don't see a gas pump handle, looks more like a horse without a head.
 20200406-05-ferrero6	2020-04-06	Bellevue at home	Dobstuff 10	G	3-	Ferrero 6	11:57	12mm	94x		Brightest stars make a sigma. Can see a potential Eiffel tower pointing to the south.
-20200407-01-fullmoon	2020-04-07	Bellevue at home	Dobstuff 10	G	2	Moon and major features	10:30-11:34	9mm	62x	Full moon	
+20200407-01-fullmoon	2020-04-07	Bellevue at home	SV Access 80	G	2	Moon and major features	10:30-11:34	9mm	62x	Full moon	
 20200408-01-langreneus	2020-04-08	Bellevue at home	Dobstuff 10	F	2	Lagreneus	10:50-11:06	9mm	125x	15 day moon	Bright peak in the middle. Floor is flat. Crater walls look very rough and mountainous.
 20200408-02-picard	2020-04-08	Bellevue at home	Dobstuff 10	F	2	Picard	11:15-11:25	9mm	125x	15 day moon	Smooth and bowl-shaped. Rim looks raised. Brighter than the surrounding Mare Crisium.
 20200409-01-sandshovel	2020-04-09	Bellevue at home	Meade Infinity 80	G	3	Sand Shovel|M 53	11:07	18mm	22x		Nice shovel, somewhat like the big dipper with a differently shaped handle. M53 in the view. :)
@@ -945,3 +945,64 @@
 20210330-04-stf1364	2021-03-30	Bellevue at home	Dobstuff 10	G	3	STF 1364, HJ 466	11:40	4.5mm	250x		Nice little pattern of stars. Y is slightly yellow. A is maybe 1 mag brighter than B. C is very faint, only seen with averted vision.
 20210401-01-m3	2021-04-01	Bellevue at home	10x50 Binoculars	G	3	M 3	11:22				Appears almost stellar with direct vision. With averted vision, appears as a small fuzzy patch with a bright core.
 20210401-02-m53	2021-04-01	Bellevue at home	10x50 Binoculars	G	3	M 53	11:35				Very faint, only visible with averted vision. Core not very bright, maybe class VIII.
+20210404-01-ngc3953	2021-04-04	Bellevue at home	Dobstuff 10	G	3+	NGC 3953	10:31	8mm	141x		Stars here are faint, barely seen without averted vision.  3953 is a faint oval, more concentrated at the center. Best seen when moving the scope.
+20210404-02-ngc3726	2021-04-04	Bellevue at home	Dobstuff 10	G	3+	NGC 3726	11:02	8mm	141x		Right at zenith -- very hard to find!  Very faint, barely lighter than the sky. Large, uniform brightness.
+20210404-03-ngc4203	2021-04-04	Bellevue at home	Dobstuff 10	G	3+	NGC 4203	11:25	8mm	141x		Small, fairly bright; nearly stellar core.
+20210404-04-ngc4656ngc4657	2021-04-04	Bellevue at home	Dobstuff 10	G	3+	NGC 4656,4657	11:35	8mm	141x		Very faint. Had to close my eyes for a minute to be dark adapted enough to see. 4656 elongated; brighter core. 4657 only the core visible, and appears somewhat joined to 4656.  Near NGC 4631 (the Whale).
+20210404-05-ngc5033	2021-04-04	Bellevue at home	Dobstuff 10	G	4	NGC 5033	12:02	8mm	141x		Dim, but bright core. Elongated, small.
+20210404-06-ngc5273	2021-04-04	Bellevue at home	Dobstuff 10	G	4	NGC 5273	12:15	8mm	141x		Very faint, elusive; roundish. Core slightly brighter.
+20210405-01-ngc3982	2021-04-05	Bellevue at home	Dobstuff 10	G	3	NGC 3982	9:55	8mm	141x		Very faint, dim. Med size, oval shaped. Almost appears sparkly/mottled
+20210405-02-ngc3675	2021-04-05	Bellevue at home	Dobstuff 10	G	3	NGC 3675	10:05	8mm	141x		Small, elongated. Bright core
+20210405-03-ngc4800	2021-04-05	Bellevue at home	Dobstuff 10	G	3	NGC 4800	10:16	8mm	141x		Dim, but brighter core. Roundish. Mottled texture. Core looks brighter vertically. A bar? [no]
+20210405-04-ngc3003	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 3003	10:55	8mm	141x		Very faint, difficult. Core slightly brighter. Oval shaped. Only see occasionally.
+20210405-05-ngc4419	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 4419	11:37	8mm	141x		Fairly bright. Bright core, elongated. Near a faint star.
+20210405-06-ngc4473ngc4477	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 4473|NGC 4477	12:03	8mm	141x		4473: Bright, core is quite bright, stellar. Oval.  4477: Dimmer, very concentrated stellar core. Elongated a little.
+20210405-07-ngc4459	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 4459	12:15	8mm	141x		Quite bright. Round, fuzzy. Core is brighter.
+20210405-08-m85ngc4394	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	M 85|NGC 4394	12:32	8mm	141x		M 85: super big and bright. Bright core.  Looks grainy.  4394: small, faint, round. Stellar core.
+20210405-09-ngc4450	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 4450	12:46	8mm	141x		Dim, though clearly seen with averted vision. Oval. Core is brighter.
+20210405-10-ngc4866	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 4866	1:14	8mm	141x		Faint, small, elongated. Brighter core. Requires averted vision; only see occasionally.
+20210405-11-ngc4698	2021-04-05	Bellevue at home	Dobstuff 10	G	3+	NGC 4698	1:28	8mm	141x		Dim, elongated. Brighter core, almost stellar. Appears sparkly.
+20210410-01-ngc3640	2021-04-10	Bellevue at home	Dobstuff 10	G	3+	NGC 3640	12:41	8mm	141x		Round. Bright core. Appears elliptical. Easy to see with averted vision.
+20210410-02-ngc4666	2021-04-10	Bellevue at home	Dobstuff 10	G	3+	NGC 4666	12:55	8mm	141x		Very faint; elusive. Elongated. Core only slightly brighter. Slightly sparkly
+20210410-03-ngc4636	2021-04-10	Bellevue at home	Dobstuff 10	G	3+	NGC 4636	1:19	8mm	141x		Bright. Round core is concentrated. Small. [In fact, only seeing the bright core here; galaxy is larger.]
+20210410-04-ngc4665	2021-04-10	Bellevue at home	Dobstuff 10	G	3+	NGC 4665	1:26	8mm	141x		Faint, round. Core somewhat brighter. Appears stellar with averted vision.
+20210410-05-ngc4643	2021-04-10	Bellevue at home	Dobstuff 10	G	3+	NGC 4643	1:39	8mm	141x		Bright core. Can see with direct vision. Mottled, circular, like a faint globular.
+20210411-01-stf1415	2021-04-11	Bellevue at home	Dobstuff 10	F	3+	STF 1415	10:19	4.5mm	250x		Two bright stars in the center of a triangle. Primary and secondary similar brightness; see fair amount of turbulence about them.
+20210411-02-36uma	2021-04-11	Bellevue at home	Dobstuff 10	F	3+	36 UMa, LDS 2863	10:39	8mm	141x		Primary is bright, with a yellow tint. Secondary maybe has a faint hint of red. Nice line of 3 stars. :)
+20210411-03-ngc3631	2021-04-11	Bellevue at home	Dobstuff 10	G	4	NGC 3631	11:00	8mm	141x		Very faint, diffuse, flat.
+20210411-04-ngc4314	2021-04-11	Bellevue at home	Dobstuff 10	G	4	NGC 4314	11:25	8mm	141x		Brighter core, round. Outer part oval shaped. Mottled texture. Like to check this in darker skies.
+20210411-05-ngc4725	2021-04-11	Bellevue at home	Dobstuff 10	G	4	NGC 4725	11:38	8mm	141x		Very bright core, starlike. Easy to see. Generally round, but near the core shape seems irregular.
+20210411-06-ngc4030	2021-04-11	Bellevue at home	Dobstuff 10	G	4	NGC 4030	12:03	8mm	141x		Faint, elongated. Between two stars.
+20210411-07-ngc4527	2021-04-11	Bellevue at home	Dobstuff 10	G	4	NGC 4527	12:23	8mm	141x		Faint. Elongated. Dim core. Elusive
+20210411-08-ngc4281ngc4273	2021-04-11	Bellevue at home	Dobstuff 10	G	4	NGC 4281|NGC 4273	12:39	8mm	141x		4281: small, somewhat bright. Stellar core. Circular. 4273: very faint. Core diffuse. Oval.
+20210412-01-m94	2021-04-12	Bellevue at home	10x50 Binoculars	G	3+	M 94	11:25				Faint, small, bright core. Looks like a star with direct vision, but see some fuzziness with averted vision. Bright star is Cor Caroli
+20210412-01-m66	2021-04-12	Bellevue at home	10x50 Binoculars	G	4	M 66	11:47				Very faint, elusive. Only see occasionally. Elongated in N/S direction. Core slightly brighter.
+20210412-01-m49	2021-04-12	Bellevue at home	10x50 Binoculars	G	4	M 49	12:04				Very faint, small round, flat gray patch. Only seen with averted vision about 30% of the time.
+20210414-01-promontoriumagarum	2021-04-14	Bellevue at home	Dobstuff 10	F	0 (dusk)	Promontorium Agarum	8:47-8:59	8mm	141x	2.7 day moon	Prom Agarum looks rough and rocky at the top, casts stark shadows down to Mare Crisium, which appears smooth and gray. Many dorsae are clear as raised ridges
+20210414-02-vendelinus	2021-04-14	Bellevue at home	Dobstuff 10	P	2	Vendelinus	9:11-9:29	8mm	141x	2.7 day moon	Gray interior. Irregular rocky sides. Par bodering Lame has a double stepped wall. See some internal craterlets as dark spots
+20210414-03-ngc4429	2021-04-14	Bellevue at home	Dobstuff 10	F	3+	NGC 4429	11:32	8mm	141x		Rather bright. Brighter core, though not stellar. Rather like a faint class III globular.
+20210414-04-ngc4371	2021-04-14	Bellevue at home	Dobstuff 10	F	3+	NGC 4371	11:40	8mm	141x		Faint, but not hard with averted vision. Core is brighter, and sparkly. Core is circular, bu thints that galaxy is elongated. Suspect spiral?
+20210414-05-ngc4550m89	2021-04-14	Bellevue at home	Dobstuff 10	F	3+	NGC 4550|M 89	12:02	8mm	141x		4550: small, dim, elongated. Stellar core. M 89: quite bright. Core is bright and stellar. Circular
+20210414-06-ngc4753	2021-04-14	Bellevue at home	Dobstuff 10	F	4	NGC 4753	12:26	8mm	141x		Dim, but grighter circular core. Outer part elongated. Mottled texture. Spiral?
+20210414-07-ngc4697	2021-04-14	Bellevue at home	Dobstuff 10	F	4	NGC 4697	12:45	8mm	141x		Large, elongated, very faint. Core not concentrated much. I suspect I'm partially looking through a roof, so using less than full aperture.
+20210414-08-ngc4900	2021-04-14	Bellevue at home	Dobstuff 10	F	4	NGC 4900	1:01	8mm	141x		Very faint. Appears as slight nebulosity around a star, slightly offset.
+20210415-01-ngc4350	2021-04-15	Bellevue at home	Dobstuff 10	G	4	NGC 4350	11:00	8mm	141x		Very bright concentrated core. Sparkly outer part, a bit amorphous. Spiral?
+20210415-02-ngc4596	2021-04-15	Bellevue at home	Dobstuff 10	G	4	NGC 4596	11:19	8mm	141x		Fuzzy and round. Bright core. Overlaps a star. :)
+20210415-03-ngc4570	2021-04-15	Bellevue at home	Dobstuff 10	G	4	NGC 4570	11:33	8mm	141x		Somewhat faint, bright stellar core. Core is round, but galaxy is oval-shaped.
+20210415-04-ngc4660	2021-04-15	Bellevue at home	Dobstuff 10	G	4	NGC 4660	11:45	8mm	141x		Looks stellar with direct vision. With averted vision, see some mottled nebulosity. Oval shape.
+20210415-05-ngc4698	2021-04-15	Bellevue at home	Dobstuff 10	G	4	NGC 4698	11:58	8mm	141x		Very small, elongated. Brighter core, though not stellar.
+20210415-06-ngc4546	2021-04-15	Bellevue at home	Dobstuff 10	G	4	NGC 4546	12:30	8mm	141x		Small. Elongated. Bright, concentrated core. Though overall faint; best seen with averted vision.
+20210416-01-stf1604	2021-04-16	Bellevue at home	Dobstuff 10	F	3	STF 1604	11:48	4.5mm	250x		Nice equally-spaced triple! :) B appears orangish, A slightly yellow, C a little bluish.  A brightest, then C, then B.
+20210416-02-stf1669	2021-04-16	Bellevue at home	Dobstuff 10	F	3	STF 1669	12:00	4.5mm	250x		Drawn slightly enlarged.  A, B have equal brightness. Both yellow. C is dim and white.
+20210416-03-ngc4699	2021-04-16	Bellevue at home	Dobstuff 10	F	3	NGC 4699	12:14	8mm	141x		Very small, bright. Core is starlike. Looks slightly elongated.
+20210418-01-aristotelesmitchell	2021-04-18	Bellevue at home	Dobstuff 10	F	3-	Aristoteles|Mitchell	11:03-11:32	6.5mm	173x	6.4 day moon	Aristoteles: large. Flat basin. Rocky, uneven walls. One side of the wall very bright white. Mitchell: smaller, flat. Seems to have a bump in the middle.
+20210420-01-stf1691	2021-04-20	Bellevue at home	Dobstuff 10	G	3	STF 1691 ABC*	10:39	8mm	141x		A brightest, C nearly as bright, and B dimmer, sometimes appears slightly reddish.
+20210420-02-stf1608	2021-04-20	Bellevue at home	Dobstuff 10	G	3	STF 1608 ABC	10:50	8mm	141x		A, B have nearly equal brightness nd are wide enough to drive a proverbial truck through. C not too much dimmer.
+20210420-03-stfa25	2021-04-20	Bellevue at home	Dobstuff 10	G	3	STFA 25 ABC	11:06	8mm	141x		Nice wide triangle; split in finder. A is bright; light gold color. B a little yellowish as well. C a magnitude dimmer.
+20210420-04-hj2617	2021-04-20	Bellevue at home	Dobstuff 10	G	3	HJ 2617+BKO 114	11:21	4.5mm	250x		A, B brighter and fairly close, but cleanly and easily split. C is dimmer, and D is very faint; can only see occasionally.  Saw a bright meteor pass through the field of view.
+20210420-05-stf1769	2021-04-20	Bellevue at home	Dobstuff 10	G	3	STF 1769	11:43	4.5mm	250x		AB - unable to split. Cann see some noisy Airy rings faintly. C is maybe 0.7 magnitude dimmer. D is very faint, but clear with averted vision.
+20210420-06-12com	2021-04-20	Bellevue at home	Dobstuff 10	G	3	12 Com	11:54	4.5mm	250x		A is very bright; pale yellow. C,D are white, similar magnitudes. B is very faint, need averted vision.
+20210420-07-stf1685	2021-04-20	Bellevue at home	Dobstuff 10	G	3	STF 1685	12:09	8mm	141x		Part of a larger group of stars. ABC all pretty bright and easily split. Pretty! :)
+20210421-01-stargate	2021-04-20	Bellevue at home	Dobstuff 10	F	3-	Stargate	10:04	8mm	141x		Great asterism/multiple stars. Near M104. :) A,B,E,F are bright, D dimmer, and C is faint. E is slightly yellow.
+20210421-02-stt269	2021-04-20	Bellevue at home	Dobstuff 10	F	3-	STT 269+ARN 8	10:24	12mm	94x		Very bright, wide triple. Could likely see in the finderscope if sky were slightly darker. All stars white.
+20210421-03-stf1619	2021-04-20	Bellevue at home	Dobstuff 10	F	3-	STF 1619	10:47	4.5mm	250x		Primary, secondary nearly equally bright. C is dimmer.

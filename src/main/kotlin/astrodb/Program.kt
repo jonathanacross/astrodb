@@ -29,6 +29,9 @@ data class ProgramEntry(val programName: String,
             val programName = fields[0]
             val itemNumber = ItemNumber.parse(fields[1])
             val itemId = fields[2]
+            if (itemId.isBlank()) {
+                throw ParseException("reading programs; expected object id to be non-blank.");
+            }
             val observationId = fields[3]
             return ProgramEntry(programName, itemNumber, itemId, observationId)
         }

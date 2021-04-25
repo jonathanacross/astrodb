@@ -200,8 +200,8 @@ fun joinData(objects: List<Object>, programs: List<ProgramEntry>, observations: 
     if (missingObjects.isNotEmpty()) {
         throw ParseException(
                 "Found " + missingObjects.size +
-                        " objects in observing lists that had no object data. Item ids = \n" +
-                        missingObjects.joinToString("\n")
+                        " objects in observing lists that had no object data. Item ids = \n'" +
+                        missingObjects.joinToString("'\n'") + "'"
         )
     }
     // convert ProgramEntry to a map based on the object ids.
