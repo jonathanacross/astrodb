@@ -305,7 +305,7 @@ function getObservationRanges(observations) {
 
 function setupControls() {
     var programpicker = document.getElementById("program");
-    for (const [program_name, observation_ids] of Object.entries(programs)) {
+    for (const [program_name, observation_ids] of Object.entries(programs).sort()) {
         var option = document.createElement("option");
         option.text = program_name;
         programpicker.add(option);
