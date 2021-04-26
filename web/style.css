@@ -25,7 +25,20 @@ body {
     margin: 0;
 }
 
-.query {
+.queryheader {
+  font-weight: bold;
+}
+
+.formgroup {
+    display: block;
+}
+
+.formgroup label { display:inline-block; width: 40px; }
+
+.formgroup input { display:inline-block; width: 110px; }
+
+
+.sidebar {
   height: 100%;
   width: 180px; 
   position: fixed;
@@ -35,6 +48,10 @@ body {
   background-color: #c2cad6;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+.query {
+  padding: 10;
 }
 
 .results {

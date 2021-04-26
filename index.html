@@ -9,66 +9,86 @@
         <h1>Jonathan's Astronomical Sketches</h1>
     </div>
 
-    <div class="query">
+    <div class="sidebar">
 
-      <div class="programquery">
-        <label for="program">Program:</label>
-        <select name="program" id="program">
-        </select>
-        <button id="programshow">Show</button>
+      <div class="query">
+  
+        <div class="programquery">
+          <p class="queryheader">See progress for a particular program:</p>
+          <select name="program" id="program">
+          </select>
+          <button id="programshow">Show</button>
+        </div>
+  
+  
+        <div class=objectquery">
+          <p class="queryheader">Observation Search</p>
+
+          <div class="formgroup">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+          </div>
+  
+          <div class="formgroup">
+            <label for="type">Type:</label>
+            <input list="type_list" name="type" type="text" id="type" multiple>
+            <datalist id="type_list">
+              <option value="Ast">Asterism</option>
+              <option value="Asteroid">Asteroid</option>
+              <option value="Carbon">Carbon Star</option>
+              <option value="Comet">Comet</option>
+              <option value="Con">Constellation</option>
+              <option value="DN">Dark Nebula</option>
+              <option value="Double">Double/Multiple Star</option>
+              <option value="EN">Emission Nebula</option>
+              <option value="Gal">Galaxy</option>
+              <option value="GCl">Globular Cluster</option>
+              <option value="Moon">Moon / Lunar feature</option>
+              <option value="OCl">Open Cluster</option>
+              <option value="Planet">Planet</option>
+              <option value="PN">Planetary Nebula</option>
+              <option value="Q">Quasar</option>
+              <option value="RN">Reflection Nebula</option>
+              <option value="Star Cloud">Star Cloud</option>
+              <option value="Sun">Sun</option>
+              <option value="SNR">Supernova Remnant</option>
+              <option value="Variable">Variable Star</option>
+            </datalist>
+          </div>
+  
+          <div class="formgroup">
+            <label for="constellation">Con:</label>
+            <input list="constellation_list" name="constellation" type="text" id="constellation"  multiple>
+            <datalist id="constellation_list">
+            </datalist>
+          </div>
+
+          <div class="formgroup">
+            <label for="dateobs">Date:</label>
+            <input type="text" id="dateobs" name="dateobs" placeholder="YYYY-MM-DD">
+          </div>
+  
+          <div class=radiogroup>
+            <legend>Sort by</legend>
+            <input type="radio" name="sort" value="date" id="date_radio">
+            <label for="date_radio">Date</label><br>
+            <input type="radio" name="sort" value="name" id="name_radio" checked>
+            <label for="name_radio">Name, Date</label><br>
+            <input type="radio" name="sort" value="ra" id="ra_radio">
+            <label for="ra_radio">R.A., Name, Date</label><br>
+            <input type="radio" name="sort" value="con" id="con_radio">
+            <label for="con_radio">Con, R.A., Name, Date</label>
+          </div>
+  
+          <button id="objshow">Show</button>
+        </div>
+
+        <div class=options>
+          <p class="queryheader">Options</p>
+          <label for="invert">Invert:</label>
+          <input type="checkbox" name="invert" id="invert">
+        </div>
       </div>
-
-      <div class="datequery">
-        <label for="month">Month:</label>
-        <input type="month" id="month" name="month">
-        <button id="dateshow">Show</button>
-      </div>
-
-      <div class=objectquery">
-        <label for="name">Name</label>
-        <select name="namematch" id="namematch">
-          <option value="contains">contains</option>
-          <option value="is">is</option>
-        </select>
-        <input type="name" id="name" name="name">
-
-        <label for="type">Type:</label>
-        <input list="type_list" name="type" type="text" id="type" multiple>
-        <datalist id="type_list">
-          <option value="Ast">Asterism</option>
-          <option value="Asteroid">Asteroid</option>
-          <option value="Carbon">Carbon Star</option>
-          <option value="Comet">Comet</option>
-          <option value="Con">Constellation</option>
-          <option value="DN">Dark Nebula</option>
-          <option value="Double">Double/Multiple Star</option>
-          <option value="EN">Emission Nebula</option>
-          <option value="Gal">Galaxy</option>
-          <option value="GCl">Globular Cluster</option>
-          <option value="Moon">Moon / Lunar feature</option>
-          <option value="OCl">Open Cluster</option>
-          <option value="Planet">Planet</option>
-          <option value="PN">Planetary Nebula</option>
-          <option value="Q">Quasar</option>
-          <option value="RN">Reflection Nebula</option>
-          <option value="Star Cloud">Star Cloud</option>
-          <option value="Sun">Sun</option>
-          <option value="SNR">Supernova Remnant</option>
-          <option value="Variable">Variable Star</option>
-        </datalist>
-
-        <label for="constellation">Constellation:</label>
-        <input list="constellation_list" name="constellation" type="text" id="constellation" multiple>
-        <datalist id="constellation_list">
-        </datalist>
-        <button id="objshow">Show</button>
-      </div>
-
-      <div class=options>
-        <label for="invert">Invert:</label>
-        <input type="checkbox" name="invert" id="invert">
-      </div>
-
     </div>
 
     <div class="results">
