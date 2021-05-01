@@ -1,8 +1,10 @@
+/*jshint esversion: 6 */
+
 function tsvToJson(tsv) {
-    const lines = tsv.split('\n').filter( line => line !== "");
-    const headers = lines.shift().split('\t');
+    const lines = tsv.split("\n").filter(line => line !== "");
+    const headers = lines.shift().split("\t");
     return lines.map(line => {
-        const data = line.split('\t');
+        const data = line.split("\t");
         return headers.reduce((obj, nextKey, index) => {
             obj[nextKey] = data[index];
             return obj;
@@ -13,7 +15,7 @@ function tsvToJson(tsv) {
 // takes a list of objects that each have a #id,
 // and creates a map with that id
 function keyByColumn(list, column_name) {
-    var result = {}
+    let result = {};
     for (const entry of list) {
         result[entry[column_name]] = entry;
     }
@@ -23,7 +25,7 @@ function keyByColumn(list, column_name) {
 // takes a list of objects that each have a #id,
 // and creates a map with that id
 function keyByColumnAsLists(list, column_name) {
-    var result = {}
+    let result = {};
     for (const entry of list) {
         const key = entry[column_name];
         if (!(key in result)) {
@@ -35,27 +37,26 @@ function keyByColumnAsLists(list, column_name) {
 }
 
 function onlyUnique(value, index, self) {
-  return self.indexOf(value) === index;
+    return self.indexOf(value) === index;
 }
 
 function setObjectInfo(obs, element) {
-    const obj_ids = obs["ObjIds"].split("|");
-    var nameInfo = document.createElement("ul");
-    for (obj_id of obj_ids) {
+    const obj_ids = obs.ObjIds.split("|");
+    for (const obj_id of obj_ids) {
         const obj = objects[obj_id];
-        var title = document.createElement("div");
+        let title = document.createElement("div");
         title.className = "objname";
-        title.textContent = obj["Names"];
+        title.textContent = obj.Names;
         element.appendChild(title);
 
         // Only bother to show type, con etc. for
         // objects that have a fixed position in the sky.
-        if (obj["Con"] !== "") {
-            var attrslist = document.createElement("ul");
-            var attributes = ["Type", "Con", "RA", "Dec"];
+        if (obj.Con !== "") {
+            let attrslist = document.createElement("ul");
+            let attributes = ["Type", "Con", "RA", "Dec"];
             for (const attr of attributes) {
                 if (obj[attr] !== "") {
-                    var li = document.createElement('li');
+                    let li = document.createElement("li");
                     li.textContent = attr + ": " + obj[attr];
                     attrslist.appendChild(li);
                 }
@@ -67,16 +68,16 @@ function setObjectInfo(obs, element) {
 
 function showObservations(observation_ids, object_ids) {
     // count of observations
-    var resultsHeader = document.getElementById("results_header");
+    let resultsHeader = document.getElementById("results_header");
     // clear old header
     while (resultsHeader.hasChildNodes()) {
         resultsHeader.removeChild(resultsHeader.lastChild);
     }
-    var resultCount = document.createElement("p");
+    let resultCount = document.createElement("p");
     resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
     resultsHeader.appendChild(resultCount);
 
-    var resultsArea = document.getElementById("results_list");
+    let resultsArea = document.getElementById("results_list");
 
     // clear old results
     while (resultsArea.hasChildNodes()) {
@@ -86,46 +87,46 @@ function showObservations(observation_ids, object_ids) {
     // add new results
     for (const observation_id of observation_ids) {
         obs = observations[observation_id];
-        var fragment = document.createDocumentFragment();
+        let fragment = document.createDocumentFragment();
         if (obs == null) {
-            var obsDiv = document.createElement("div");
+            let obsDiv = document.createElement("div");
             obsDiv.className = "observation";
-            
-            var errDiv = document.createElement("div");
+
+            let errDiv = document.createElement("div");
             errDiv.className = "error";
             errDiv.textContent = "Error: can't find observation id '" + observation_id + "'";
 
             obsDiv.appendChild(errDiv);
             fragment.appendChild(obsDiv);
         } else {
-            var obsDiv = document.createElement("div");
+            let obsDiv = document.createElement("div");
             obsDiv.className = "observation";
 
-            var notesDiv = document.createElement("div");
+            let notesDiv = document.createElement("div");
             notesDiv.className = "notes";
-            var objinfo = document.createElement("div");
+            let objinfo = document.createElement("div");
             setObjectInfo(obs, objinfo);
 
-            var notesList = document.createElement("ul");
-            var attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
+            let notesList = document.createElement("ul");
+            const attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
             for (const attr of attributes) {
                 if (obs[attr] !== "") {
-                    var li = document.createElement('li');
+                    let li = document.createElement("li");
                     li.textContent = attr + ": " + obs[attr];
                     notesList.appendChild(li);
                 }
             }
             notesDiv.appendChild(objinfo);
             notesDiv.appendChild(notesList);
-            if (obs["Notes"] != null) {
-                var description = document.createElement("p");
-                description.textContent = obs["Notes"];
+            if (obs.Notes != null) {
+                let description = document.createElement("p");
+                description.textContent = obs.Notes;
                 notesDiv.appendChild(description);
             }
 
-            var sketchDiv = document.createElement("div");
+            let sketchDiv = document.createElement("div");
             sketchDiv.className = "sketch";
-            var sketch = document.createElement("img");
+            let sketch = document.createElement("img");
             sketch.src = "data/sketches/" + obs["#id"] + ".jpg";
             sketchDiv.appendChild(sketch);
 
@@ -140,10 +141,10 @@ function showObservations(observation_ids, object_ids) {
 }
 
 function doProgramQuery() {
-    var programpicker = document.getElementById("program");
+    let programpicker = document.getElementById("program");
     const program_name = programpicker.options[programpicker.selectedIndex].value;
-    
-    var newquery = "show=program";
+
+    let newquery = "show=program";
     newquery += "&name=" + encodeURIComponent(program_name);
 
     history.replaceState(null, "", window.location.origin + "?" + newquery);
@@ -153,31 +154,21 @@ function doProgramQuery() {
 function showObjectsForSelectedProgram(program_name) {
     const entries = programs[program_name];
     const obs_ids = entries
-        .filter(o => o["observationId"] !== "")
-        .map(o => o["observationId"])
+        .filter(o => o.observationId !== "")
+        .map(o => o.observationId)
         .filter(onlyUnique);
 
     // make a list of objects that appear in these observations
     const obj_ids = entries
-        .filter(o => o["observationId"] !== "")
-        .map(o => o["objectId"])
+        .filter(o => o.observationId !== "")
+        .map(o => o.objectId)
         .filter(onlyUnique);
     showObservations(obs_ids, obj_ids);
 }
 
-function ObjectNameIs(obj, name) {
-    const names = obj["Names"].toLowerCase().split("/");
-    for (n of names) {
-        if (n === name) {
-            return true;
-        }
-    }
-    return false;
-}
-
 function ObjectNameContains(obj, name) {
-    const names = obj["Names"].toLowerCase().split("/");
-    for (n of names) {
+    const names = obj.Names.toLowerCase().split("/");
+    for (const n of names) {
         if (n.includes(name)) {
             return true;
         }
@@ -186,12 +177,12 @@ function ObjectNameContains(obj, name) {
 }
 
 function ObsDateContains(obs, month) {
-    return obs["Date"].includes(month);
+    return obs.Date.includes(month);
 }
 
 function ObjectTypeContains(obj, type) {
-    const types = obj["Type"].split("+");
-    for (t of types) {
+    const types = obj.Type.split("+");
+    for (const t of types) {
         if (t === type) {
             return true;
         }
@@ -200,37 +191,37 @@ function ObjectTypeContains(obj, type) {
 }
 
 function ObjectConIs(obj, con) {
-    return obj["Con"] === con
+    return obj.Con === con;
 }
 
 function getSortFunction(sort_method) {
     if (sort_method === "name") {
         return function(x, y) {
             // first sort by name
-            if (x["obj_name"] !== y["obj_name"]) {
-            return x["obj_name"].localeCompare(y["obj_name"], undefined, {numeric: true, sensitivity: 'base'});
+            if (x.obj_name !== y.obj_name) {
+                return x.obj_name.localeCompare(y.obj_name, undefined, {numeric: true, sensitivity: "base"});
             }
             // fall back to observation date/number
-            return x["obs_id"].localeCompare(y["obs_id"]);
-        }
+            return x.obs_id.localeCompare(y.obs_id);
+        };
     } else if (sort_method === "date") {
         return function(x, y) {
             // obs_id has date-obs#-name, so this includes date then observation number
-            return x["obs_id"].localeCompare(y["obs_id"]);
-        }
+            return x.obs_id.localeCompare(y.obs_id);
+        };
     } else if (sort_method === "ra") {
         return function(x, y) {
             // Sort by RA first
-            if (Math.abs(x["obj_ra"] - y["obj_ra"]) > 0.00001) {
-                return x["obj_ra"] - y["obj_ra"];
+            if (Math.abs(x.obj_ra - y.obj_ra) > 0.00001) {
+                return x.obj_ra - y.obj_ra;
             }
             // For objects with no constellation/RA, sort by name
-            if (x["obj_name"] !== y["obj_name"]) {
-                return x["obj_name"].localeCompare(y["obj_name"], undefined, {numeric: true, sensitivity: 'base'});
+            if (x.obj_name !== y.obj_name) {
+                return x.obj_name.localeCompare(y.obj_name, undefined, {numeric: true, sensitivity: "base"});
             }
             // And finally fall back to date/observation number (encapsulated by obs_id)
-            return x["obs_id"].localeCompare(y["obs_id"]);
-        }
+            return x.obs_id.localeCompare(y.obs_id);
+        };
     } else {
         // RA is the average of the most eastward and most westward RA.
         // From https://en.wikipedia.org/wiki/IAU_designated_constellations_by_area
@@ -262,32 +253,32 @@ function getSortFunction(sort_method) {
                 // things with no constellation put last
                 "":    "99 99.99",
             };
-            if (x["obj_con"] !== y["obj_con"]) {
-                return con_to_ra[x["obj_con"]].localeCompare(con_to_ra[y["obj_con"]]);
+            if (x.obj_con !== y.obj_con) {
+                return con_to_ra[x.obj_con].localeCompare(con_to_ra[y.obj_con]);
             }
             // Within constellation sort by RA
-            if (Math.abs(x["obj_ra"] - y["obj_ra"]) > 0.00001) {
-                return x["obj_ra"] - y["obj_ra"];
+            if (Math.abs(x.obj_ra - y.obj_ra) > 0.00001) {
+                return x.obj_ra - y.obj_ra;
             }
             // For objects with no constellation/RA, sort by name
-            if (x["obj_name"] !== y["obj_name"]) {
-                return x["obj_name"].localeCompare(y["obj_name"], undefined, {numeric: true, sensitivity: 'base'});
+            if (x.obj_name !== y.obj_name) {
+                return x.obj_name.localeCompare(y.obj_name, undefined, {numeric: true, sensitivity: "base"});
             }
             // And finally fall back to date/observation number (encapsulated by obs_id)
-            return x["obs_id"].localeCompare(y["obs_id"]);
-        }
+            return x.obs_id.localeCompare(y.obs_id);
+        };
     }
 }
 
 function raStringToFloat(ra_str) {
-  const regex = /\d+/g;
-  const found = ra_str.match(regex);
-  if (found !== null && found.length === 3) {
-      const hrs = parseFloat(found[0]);
-      const mins = parseFloat(found[1]);
-      const secs = parseFloat(found[2]);
-      return hrs + (mins / 60.0) + (secs / 3600.0);
-  }
+    const regex = /\d+/g;
+    const found = ra_str.match(regex);
+    if (found !== null && found.length === 3) {
+        const hrs = parseFloat(found[0]);
+        const mins = parseFloat(found[1]);
+        const secs = parseFloat(found[2]);
+        return hrs + (mins / 60.0) + (secs / 3600.0);
+    }
     else {
         // This will be the case for things without a position,
         // e.g., planets and comets.
@@ -297,29 +288,29 @@ function raStringToFloat(ra_str) {
 }
 
 function doObjectQuery() {
-    var namequery_element = document.getElementById("name");
-    var type_element = document.getElementById("type");
-    var constellation_element = document.getElementById("constellation");
-    var dateobs_element = document.getElementById("dateobs");
-    var sort_method = document.querySelector('input[name="sort"]:checked').value;
+    let namequery_element = document.getElementById("name");
+    let type_element = document.getElementById("type");
+    let constellation_element = document.getElementById("constellation");
+    let dateobs_element = document.getElementById("dateobs");
+    let sort_method = document.querySelector('input[name="sort"]:checked').value;
 
-    var newquery = "show=objects";
-    var newname = null;
+    let newquery = "show=objects";
+    let newname = null;
     if (namequery_element.value !== "") {
         newquery += "&name=" + encodeURIComponent(namequery_element.value);
-        newname = namequery_element.value; 
+        newname = namequery_element.value;
     }
-    var newtype = null;
+    let newtype = null;
     if (type_element.value !== "") {
         newquery += "&type=" + encodeURIComponent(type_element.value);
         newtype = type_element.value;
     }
-    var newcon = null;
+    let newcon = null;
     if (constellation_element.value !== "") {
         newquery += "&con=" + encodeURIComponent(constellation_element.value);
         newcon = constellation_element.value;
     }
-    var newdate = null;
+    let newdate = null;
     if (dateobs_element.value !== "") {
         newquery += "&date=" + encodeURIComponent(dateobs_element.value);
         newdate = dateobs_element.value;
@@ -331,23 +322,23 @@ function doObjectQuery() {
 }
 
 function showObjectsForObjectQuery(name_query, type_query, con_query, date_query, sort_method) {
-    var observation_ids_and_matching_obj_info = [];
-    var all_matching_object_ids = [];
+    let observation_ids_and_matching_obj_info = [];
+    let all_matching_object_ids = [];
     for (const [observation_id, observation] of Object.entries(observations)) {
-        var matching_objects = [];
-        const obj_ids = observation["ObjIds"].split("|");
-        const objs = obj_ids.map( obj_id => objects[obj_id])
+        let matching_objects = [];
+        const obj_ids = observation.ObjIds.split("|");
+        const objs = obj_ids.map(obj_id => objects[obj_id]);
         for (const obj of objs) {
-            var object_matches = true;
+            let object_matches = true;
             if (name_query !== null && !ObjectNameContains(obj, name_query.toLowerCase())) {
                 object_matches = false;
             }
             if (con_query !== null && (
-                obj["Con"] == null || !ObjectConIs(obj, con_query))) {
+                obj.Con == null || !ObjectConIs(obj, con_query))) {
                 object_matches = false;
             }
             if (type_query !== null && (
-                obj["Type"] == null || !ObjectTypeContains(obj, type_query))) {
+                obj.Type == null || !ObjectTypeContains(obj, type_query))) {
                 object_matches = false;
             }
             if (date_query !== null && !ObsDateContains(observation, date_query)) {
@@ -359,10 +350,10 @@ function showObjectsForObjectQuery(name_query, type_query, con_query, date_query
         }
 
         if (matching_objects.length > 0) {
-            const obj_name = matching_objects[0]["Names"].split("/")[0];
-            const obj_con = matching_objects[0]["Con"];
-            const obj_ra = raStringToFloat(matching_objects[0]["RA"]);
-            const obs_date = observation["Date"];
+            const obj_name = matching_objects[0].Names.split("/")[0];
+            const obj_con = matching_objects[0].Con;
+            const obj_ra = raStringToFloat(matching_objects[0].RA);
+            const obs_date = observation.Date;
             observation_ids_and_matching_obj_info.push({
                 obs_id: observation_id,
                 obj_name: obj_name,
@@ -376,46 +367,27 @@ function showObjectsForObjectQuery(name_query, type_query, con_query, date_query
     }
 
     // sort observations
-    sort_fun = getSortFunction(sort_method);
+    const sort_fun = getSortFunction(sort_method);
     observation_ids_and_matching_obj_info.sort(sort_fun);
     // and strip down to just obs ids
-    observation_ids = observation_ids_and_matching_obj_info.map(x => x["obs_id"]);
+    observation_ids = observation_ids_and_matching_obj_info.map(x => x.obs_id);
 
     const deduped_matching_obj_ids = all_matching_object_ids.filter(onlyUnique);
     showObservations(observation_ids, deduped_matching_obj_ids);
 }
 
 function invert() {
-  var invert = document.getElementById("invert").checked;
+    let invert = document.getElementById("invert").checked;
 
-  // Can change this to use a class name if this is too generic.
-  var imgs = document.getElementsByTagName('img');
-  for(i = 0; i < imgs.length; i++) {
-    if (invert) {
-      imgs[i].style.filter = 'invert(1)';
-    } else {
-      imgs[i].style.filter = null;
-    }
-  }
-}
-
-// Trims a string of the format yyyy-mm-dd to just yyyy-mm
-function trimToMonth(yearmonthday) {
-    return yearmonthday.substring(0, 7);
-}
-
-function getObservationRanges(observations) {
-    var minDate = "9999-12-31";
-    var maxDate = "0000-01-01";
-    for (const [observation_id, observation] of Object.entries(observations)) {
-        if (observation["Date"] < minDate) {
-            minDate = observation["Date"];
-        }
-        if (observation["Date"] > maxDate) {
-            maxDate = observation["Date"];
+    // Can change this to use a class name if this is too generic.
+    let imgs = document.getElementsByTagName("img");
+    for (let i = 0; i < imgs.length; i++) {
+        if (invert) {
+            imgs[i].style.filter = "invert(1)";
+        } else {
+            imgs[i].style.filter = null;
         }
     }
-    return {"min": trimToMonth(minDate), "max": trimToMonth(maxDate)};
 }
 
 function showResults() {
@@ -443,7 +415,7 @@ function updateControlsFromSearchParams() {
     const show_query = urlParams.get("show");
     if (show_query == "program") {
         const program_name = urlParams.get("name");
-        var programpicker = document.getElementById("program");
+        let programpicker = document.getElementById("program");
         programpicker.value = program_name;
     } else if (show_query == "objects") {
         const name_query = urlParams.get("name");
@@ -451,11 +423,11 @@ function updateControlsFromSearchParams() {
         const con_query = urlParams.get("con");
         const date_query = urlParams.get("date");
         const sort_method = urlParams.has("sortby") ? urlParams.get("sortby") : "name";
-        var namequery_element = document.getElementById("name");
-        var type_element = document.getElementById("type");
-        var con_element = document.getElementById("constellation");
-        var date_element = document.getElementById("dateobs");
-        var sort_method_element = document.getElementById(sort_method + "_radio");
+        let namequery_element = document.getElementById("name");
+        let type_element = document.getElementById("type");
+        let con_element = document.getElementById("constellation");
+        let date_element = document.getElementById("dateobs");
+        let sort_method_element = document.getElementById(sort_method + "_radio");
         namequery_element.value = name_query;
         type_element.value = type_query;
         con_element.value = con_query;
@@ -465,42 +437,38 @@ function updateControlsFromSearchParams() {
 }
 
 function setupControls() {
-
-
-    // TODO: update the control state based on URLSearchParams
-    var programpicker = document.getElementById("program");
-    for (const [program_name, observation_ids] of Object.entries(programs).sort()) {
-        var option = document.createElement("option");
+    let programpicker = document.getElementById("program");
+    for (const [program_name, _] of Object.entries(programs).sort()) {
+        let option = document.createElement("option");
         option.text = program_name;
         programpicker.add(option);
     }
-    var programbutton = document.getElementById("programshow");
+    let programbutton = document.getElementById("programshow");
     programbutton.addEventListener("click", doProgramQuery);
 
-    var cons = new Set()
-    for (const [obs_id, obs] of Object.entries(observations)) {
-        obj_ids = obs["ObjIds"].split("|");
+    let cons = new Set();
+    for (const [_, obs] of Object.entries(observations)) {
+        const obj_ids = obs.ObjIds.split("|");
         for (const obj_id of obj_ids) {
-            c = objects[obj_id]["Con"];
+            const c = objects[obj_id].Con;
             if (c != null) {
                 cons.add(c);
             }
-            t = objects[obj_id]["Type"];
         }
     }
     cons = Array.from(cons).sort();
-    var conpicker = document.getElementById("constellation_list");
+    let conpicker = document.getElementById("constellation_list");
     for (const c of cons) {
-        var option = document.createElement("option");
+        let option = document.createElement("option");
         option.value = c;
         option.text = c;
         conpicker.appendChild(option);
     }
 
-    var objbutton = document.getElementById("objshow");
+    let objbutton = document.getElementById("objshow");
     objbutton.addEventListener("click", doObjectQuery);
 
-    var invertcheck = document.getElementById("invert");
+    let invertcheck = document.getElementById("invert");
     invertcheck.addEventListener("click", invert);
 
     updateControlsFromSearchParams();
@@ -517,14 +485,6 @@ function handleErrors(responses) {
     return responses;
 }
 
-function DisplayError(errors) {
-    var body = document.body;
-    while (body.hasChildNodes()) {
-        body.removeChild(body.lastChild);
-    }
-    body.innerHTML = "<p>Couldn't load data. <br>" + errors + "</p>";
-}
-
 function ParseData(responses) {
     observations = keyByColumn(tsvToJson(responses[0]), "#id");
     objects = keyByColumn(tsvToJson(responses[1]), "#id");
@@ -533,16 +493,14 @@ function ParseData(responses) {
 
 function LoadDataAndSetupPage() {
     Promise.all([
-        fetch('data/observations.tsv'),
-        fetch('data/objects.tsv'),
-        fetch('data/programs.tsv'),
+        fetch("data/observations.tsv"),
+        fetch("data/objects.tsv"),
+        fetch("data/programs.tsv"),
     ])
-    .then(handleErrors)
-    .then(result => Promise.all(result.map(v => v.text())))
-    .then(responses => ParseData(responses))
-    .then(setupControls);
-    //.catch(error => DisplayError(error));
-
+        .then(handleErrors)
+        .then(result => Promise.all(result.map(v => v.text())))
+        .then(responses => ParseData(responses))
+        .then(setupControls);
 }
 
-window.onload = LoadDataAndSetupPage
+window.onload = LoadDataAndSetupPage;
