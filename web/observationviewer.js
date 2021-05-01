@@ -147,7 +147,7 @@ function doProgramQuery() {
     let newquery = "show=program";
     newquery += "&name=" + encodeURIComponent(program_name);
 
-    history.replaceState(null, "", window.location.origin + "?" + newquery);
+    history.replaceState(null, "", window.location.origin + window.location.pathname + "?" + newquery);
     showObjectsForSelectedProgram(program_name);
 }
 
@@ -317,7 +317,7 @@ function doObjectQuery() {
     }
     newquery += "&sortby=" + encodeURIComponent(sort_method);
 
-    history.replaceState(null, "", window.location.origin + "?" + newquery) ;
+    history.replaceState(null, "", window.location.origin + window.location.pathname + "?" + newquery);
     showObjectsForObjectQuery(newname, newtype, newcon, newdate, sort_method);
 }
 
