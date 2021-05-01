@@ -139,9 +139,18 @@ function showObservations(observation_ids, object_ids) {
     invert();
 }
 
-function showObjectsForSelectedProgram() {
+function doProgramQuery() {
     var programpicker = document.getElementById("program");
     const program_name = programpicker.options[programpicker.selectedIndex].value;
+    
+    var newquery = "show=program";
+    newquery += "&name=" + encodeURIComponent(program_name);
+
+    history.replaceState(null, "", window.location.origin + "?" + newquery);
+    showObjectsForSelectedProgram(program_name);
+}
+
+function showObjectsForSelectedProgram(program_name) {
     const entries = programs[program_name];
     const obs_ids = entries
         .filter(o => o["observationId"] !== "")
@@ -194,9 +203,7 @@ function ObjectConIs(obj, con) {
     return obj["Con"] === con
 }
 
-
-function getSortFunction() {
-    var sort_method = document.querySelector('input[name="sort"]:checked').value;
+function getSortFunction(sort_method) {
     if (sort_method === "name") {
         return function(x, y) {
             // first sort by name
@@ -289,19 +296,41 @@ function raStringToFloat(ra_str) {
     }
 }
 
-function showObjectsForObjectQuery() {
+function doObjectQuery() {
     var namequery_element = document.getElementById("name");
     var type_element = document.getElementById("type");
     var constellation_element = document.getElementById("constellation");
     var dateobs_element = document.getElementById("dateobs");
+    var sort_method = document.querySelector('input[name="sort"]:checked').value;
 
-    const name_query = namequery_element.value.toLowerCase();
-    const do_exact_name_match = false;
-    const do_substring_name_match = true;
-    const do_type_match = type_element.value !== "";
-    const do_con_match = constellation_element.value !== "";
-    const do_dateobs_element = dateobs_element.value !== "";
+    var newquery = "show=objects";
+    var newname = null;
+    if (namequery_element.value !== "") {
+        newquery += "&name=" + encodeURIComponent(namequery_element.value);
+        newname = namequery_element.value; 
+    }
+    var newtype = null;
+    if (type_element.value !== "") {
+        newquery += "&type=" + encodeURIComponent(type_element.value);
+        newtype = type_element.value;
+    }
+    var newcon = null;
+    if (constellation_element.value !== "") {
+        newquery += "&con=" + encodeURIComponent(constellation_element.value);
+        newcon = constellation_element.value;
+    }
+    var newdate = null;
+    if (dateobs_element.value !== "") {
+        newquery += "&date=" + encodeURIComponent(dateobs_element.value);
+        newdate = dateobs_element.value;
+    }
+    newquery += "&sortby=" + encodeURIComponent(sort_method);
 
+    history.replaceState(null, "", window.location.origin + "?" + newquery) ;
+    showObjectsForObjectQuery(newname, newtype, newcon, newdate, sort_method);
+}
+
+function showObjectsForObjectQuery(name_query, type_query, con_query, date_query, sort_method) {
     var observation_ids_and_matching_obj_info = [];
     var all_matching_object_ids = [];
     for (const [observation_id, observation] of Object.entries(observations)) {
@@ -310,21 +339,18 @@ function showObjectsForObjectQuery() {
         const objs = obj_ids.map( obj_id => objects[obj_id])
         for (const obj of objs) {
             var object_matches = true;
-            if (do_exact_name_match && !ObjectNameIs(obj, name_query)) {
+            if (name_query !== null && !ObjectNameContains(obj, name_query.toLowerCase())) {
                 object_matches = false;
             }
-            if (do_substring_name_match && !ObjectNameContains(obj, name_query)) {
+            if (con_query !== null && (
+                obj["Con"] == null || !ObjectConIs(obj, con_query))) {
                 object_matches = false;
             }
-            if (do_con_match && (
-                obj["Con"] == null || !ObjectConIs(obj, constellation_element.value))) {
+            if (type_query !== null && (
+                obj["Type"] == null || !ObjectTypeContains(obj, type_query))) {
                 object_matches = false;
             }
-            if (do_type_match && (
-                obj["Type"] == null || !ObjectTypeContains(obj, type_element.value))) {
-                object_matches = false;
-            }
-            if (do_dateobs_element && !ObsDateContains(observation, dateobs_element.value)) {
+            if (date_query !== null && !ObsDateContains(observation, date_query)) {
                 object_matches = false;
             }
             if (object_matches) {
@@ -350,7 +376,7 @@ function showObjectsForObjectQuery() {
     }
 
     // sort observations
-    sort_fun = getSortFunction();
+    sort_fun = getSortFunction(sort_method);
     observation_ids_and_matching_obj_info.sort(sort_fun);
     // and strip down to just obs ids
     observation_ids = observation_ids_and_matching_obj_info.map(x => x["obs_id"]);
@@ -392,7 +418,56 @@ function getObservationRanges(observations) {
     return {"min": trimToMonth(minDate), "max": trimToMonth(maxDate)};
 }
 
+function showResults() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const show_query = urlParams.get("show");
+    if (show_query == "program") {
+        const program_name = urlParams.get("name");
+        showObjectsForSelectedProgram(program_name);
+    } else if (show_query == "objects") {
+        const name_query = urlParams.get("name");
+        const type_query = urlParams.get("type");
+        const con_query = urlParams.get("con");
+        const date_query = urlParams.get("date");
+        const sort_method = urlParams.has("sortby") ? urlParams.get("sortby") : "name";
+        showObjectsForObjectQuery(name_query, type_query, con_query, date_query, sort_method);
+    }
+}
+
+function updateControlsFromSearchParams() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const show_query = urlParams.get("show");
+    if (show_query == "program") {
+        const program_name = urlParams.get("name");
+        var programpicker = document.getElementById("program");
+        programpicker.value = program_name;
+    } else if (show_query == "objects") {
+        const name_query = urlParams.get("name");
+        const type_query = urlParams.get("type");
+        const con_query = urlParams.get("con");
+        const date_query = urlParams.get("date");
+        const sort_method = urlParams.has("sortby") ? urlParams.get("sortby") : "name";
+        var namequery_element = document.getElementById("name");
+        var type_element = document.getElementById("type");
+        var con_element = document.getElementById("constellation");
+        var date_element = document.getElementById("dateobs");
+        var sort_method_element = document.getElementById(sort_method + "_radio");
+        namequery_element.value = name_query;
+        type_element.value = type_query;
+        con_element.value = con_query;
+        date_element.value = date_query;
+        sort_method_element.checked = true;
+    }
+}
+
 function setupControls() {
+
+
+    // TODO: update the control state based on URLSearchParams
     var programpicker = document.getElementById("program");
     for (const [program_name, observation_ids] of Object.entries(programs).sort()) {
         var option = document.createElement("option");
@@ -400,7 +475,7 @@ function setupControls() {
         programpicker.add(option);
     }
     var programbutton = document.getElementById("programshow");
-    programbutton.addEventListener("click", showObjectsForSelectedProgram);
+    programbutton.addEventListener("click", doProgramQuery);
 
     var cons = new Set()
     for (const [obs_id, obs] of Object.entries(observations)) {
@@ -423,10 +498,14 @@ function setupControls() {
     }
 
     var objbutton = document.getElementById("objshow");
-    objbutton.addEventListener("click", showObjectsForObjectQuery);
-    
+    objbutton.addEventListener("click", doObjectQuery);
+
     var invertcheck = document.getElementById("invert");
     invertcheck.addEventListener("click", invert);
+
+    updateControlsFromSearchParams();
+
+    showResults();
 }
 
 function handleErrors(responses) {
