@@ -2028,7 +2028,7 @@ Vic Menard List	90	NGC 2355
 Vic Menard List	91	Delta Gem	
 Vic Menard List	92a	NGC 2371	
 Vic Menard List	92b	NGC 2372	
-Vic Menard List	93	PK205+14.1	
+Vic Menard List	93	Abell 21	
 Vic Menard List	94	NGC 2392	
 Vic Menard List	95	Alpha Gem	
 Vic Menard List	96	NGC 2420	
@@ -2068,7 +2068,7 @@ Vic Menard List	129	Iota Cnc
 Vic Menard List	130	X Cnc	
 Vic Menard List	131	12 Lyn	
 Vic Menard List	132	NGC 2419	
-Vic Menard List	133	JE1	
+Vic Menard List	133	JnEr 1	
 Vic Menard List	134	NGC 2537	
 Vic Menard List	135	NGC 2683	
 Vic Menard List	136	NGC 2613	
@@ -2286,7 +2286,7 @@ Vic Menard List	347	Epsilon Lyr
 Vic Menard List	348	M 57	
 Vic Menard List	349	NGC 6791	
 Vic Menard List	350	V Aql	
-Vic Menard List	351	Sh2-071	
+Vic Menard List	351	Sh 2-71	
 Vic Menard List	352	NGC 6772	
 Vic Menard List	353	NGC 6781	
 Vic Menard List	354	NGC 6804	
@@ -2323,7 +2323,7 @@ Vic Menard List	384	NGC 7331
 Vic Menard List	385	Einstein's Cross	
 Vic Menard List	386	NGC 7448	
 Vic Menard List	387	NGC 7479	
-Vic Menard List	388	Jones1	
+Vic Menard List	388	Jones 1	
 Vic Menard List	389	NGC 7814	
 Vic Menard List	390	NGC 7172	
 Vic Menard List	391	NGC 6939	
@@ -2522,3 +2522,113 @@ Binocular Messier OP	58	M 92	20200809-02-m92
 Binocular Messier OP	59	M 93	
 Binocular Messier OP	60	M 94	20210412-01-m94
 Binocular Messier OP	61	M 103	20201211-03-m103
+Planetary Nebula OP	1	NGC 40	
+Planetary Nebula OP	2	Vy1-1	
+Planetary Nebula OP	3	NGC 246	
+Planetary Nebula OP	4	M 76	
+Planetary Nebula OP	5	IC 1747	
+Planetary Nebula OP	6	Abell 4	
+Planetary Nebula OP	7	IC 289	
+Planetary Nebula OP	8	NGC 1360	
+Planetary Nebula OP	9	M 1-4	
+Planetary Nebula OP	10	IC 351	
+Planetary Nebula OP	11	IC 2003	
+Planetary Nebula OP	12	NGC 1501	
+Planetary Nebula OP	13	NGC 1514	
+Planetary Nebula OP	14	NGC 1535	
+Planetary Nebula OP	15	Sh 2-216	
+Planetary Nebula OP	16	Jonckheere 320	
+Planetary Nebula OP	17	IC 418	
+Planetary Nebula OP	18	NGC 2022	
+Planetary Nebula OP	19	IC 2149	
+Planetary Nebula OP	20	IC 2165	
+Planetary Nebula OP	21	Jonckheere 900	
+Planetary Nebula OP	22	M1-7	
+Planetary Nebula OP	23	NGC 2346	
+Planetary Nebula OP	24	NGC 2371	
+Planetary Nebula OP	25	Abell 21	
+Planetary Nebula OP	26	NGC 2392	
+Planetary Nebula OP	27	NGC 2438	
+Planetary Nebula OP	28	NGC 2440	
+Planetary Nebula OP	29	NGC 2452	
+Planetary Nebula OP	30	JnEr 1	
+Planetary Nebula OP	31	NGC 2610	
+Planetary Nebula OP	32	NGC 3242	
+Planetary Nebula OP	33	M 97	
+Planetary Nebula OP	34	NGC 4361	
+Planetary Nebula OP	35	IC 3568	
+Planetary Nebula OP	36	Abell 35	
+Planetary Nebula OP	37	Abell 36	
+Planetary Nebula OP	38	NGC 6058	
+Planetary Nebula OP	39	IC 4593	
+Planetary Nebula OP	40	DdDm 1	
+Planetary Nebula OP	41	NGC 6210	
+Planetary Nebula OP	42	IC 4634	
+Planetary Nebula OP	43	M 2-9	
+Planetary Nebula OP	44	NGC 6309	
+Planetary Nebula OP	45	NGC 6369	
+Planetary Nebula OP	46	NGC 6445	
+Planetary Nebula OP	47	Vy 1-2	
+Planetary Nebula OP	48	IC 4670	
+Planetary Nebula OP	49	NGC 6543	
+Planetary Nebula OP	50	NGC 6537	
+Planetary Nebula OP	51	NGC 6565	
+Planetary Nebula OP	52	NGC 6572	
+Planetary Nebula OP	53	NGC 6567	
+Planetary Nebula OP	54	NGC 6578	
+Planetary Nebula OP	55	Cn 3-1	
+Planetary Nebula OP	56	NGC 6620	
+Planetary Nebula OP	57	PC 19	
+Planetary Nebula OP	58	NGC 6629	
+Planetary Nebula OP	59	NGC 6644	
+Planetary Nebula OP	60	IC 4732	
+Planetary Nebula OP	61	M 1-54	
+Planetary Nebula OP	62	M 57	
+Planetary Nebula OP	63	IC 1295	
+Planetary Nebula OP	64	NGC 6742	
+Planetary Nebula OP	65	Sh 2-71	
+Planetary Nebula OP	66	NGC 6741	
+Planetary Nebula OP	67	NGC 6751	
+Planetary Nebula OP	68	NGC 6765	
+Planetary Nebula OP	69	IC 4846	
+Planetary Nebula OP	70	NGC 6778	
+Planetary Nebula OP	71	NGC 6781	
+Planetary Nebula OP	72	NGC 6790	
+Planetary Nebula OP	73	Vy 2-2	
+Planetary Nebula OP	74	M 3-34	
+Planetary Nebula OP	75	NGC 6803	
+Planetary Nebula OP	76	NGC 6804	
+Planetary Nebula OP	77	NGC 6807	
+Planetary Nebula OP	78	BD+30 3639	
+Planetary Nebula OP	79	NGC 6818	
+Planetary Nebula OP	80	NGC 6826	
+Planetary Nebula OP	81	NGC 6833	
+Planetary Nebula OP	82	M 27	
+Planetary Nebula OP	83	NGC 6852	
+Planetary Nebula OP	84	NGC 6884	
+Planetary Nebula OP	85	NGC 6879	
+Planetary Nebula OP	86	NGC 6881	
+Planetary Nebula OP	87	NGC 6886	
+Planetary Nebula OP	88	NGC 6891	
+Planetary Nebula OP	89	NGC 6894	
+Planetary Nebula OP	90	IC 4997	
+Planetary Nebula OP	91	NGC 6905	
+Planetary Nebula OP	92	NGC 7008	
+Planetary Nebula OP	93	NGC 7009	
+Planetary Nebula OP	94	NGC 7026	
+Planetary Nebula OP	95	NGC 7027	
+Planetary Nebula OP	96	Sh 1-89	
+Planetary Nebula OP	97	NGC 7048 Hubble 9	
+Planetary Nebula OP	98	Pease 1	
+Planetary Nebula OP	99	IC 5117	
+Planetary Nebula OP	100	Hu 1-2	
+Planetary Nebula OP	101	NGC 7094 K 1-19	
+Planetary Nebula OP	102	M 1-79	
+Planetary Nebula OP	103	NGC 7139	
+Planetary Nebula OP	104	IC 5217	
+Planetary Nebula OP	105	NGC 7293	
+Planetary Nebula OP	106	Me 2-2	
+Planetary Nebula OP	107	NGC 7354	
+Planetary Nebula OP	108	NGC 7662	
+Planetary Nebula OP	109	Jones 1	
+Planetary Nebula OP	110	Abell 82	
