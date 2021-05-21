@@ -27,10 +27,7 @@ def extract_counts(obs_file: str) -> ObservationsAndSessionsByMonth:
     num_observations: Counter[YearMonth] = Counter()
     sessions: DefaultDict[YearMonth, set] = defaultdict(set)
     for line in lines:
-        # Note we extract out even commented lines with dates,
-        # since they still correspond to observations (e.g., planets
-        # lunar features, comets, etc.)
-        date_match = re.search(r"(\d\d\d\d)-(\d\d)-(\d\d)", line)
+        date_match = re.search(r"\t(\d\d\d\d)-(\d\d)-(\d\d)\t", line)
         if date_match:
             year = int(date_match.group(1))
             month = int(date_match.group(2))
