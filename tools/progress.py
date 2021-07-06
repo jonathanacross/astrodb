@@ -85,8 +85,6 @@ if __name__ == "__main__":
     parser = OptionParser()
     parser.add_option("-p", "--program_file", dest="program_file",
                       help="file with programs", metavar="FILE")
-    #parser.add_option("-b", "--observation_file", dest="observation_file",
-    #                  help="file with observations", metavar="FILE")
     parser.add_option("-n", "--program_name", dest="program_name",
                       help="program name to graph")
     parser.add_option("-o", "--output_file", dest="output_file",
