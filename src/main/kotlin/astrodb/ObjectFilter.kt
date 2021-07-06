@@ -56,6 +56,12 @@ data class ObjectFilter(
         return list.any { li -> li.programName.contains(str) }
     }
 
+    private fun existsProgramWhereCheckedIs(programEntries: List<ProgramEntry>, programsOfInterest: List<String>, checked: Boolean): Boolean {
+        return programEntries.any { p ->
+            programsOfInterest.contains(p.programName) && (p.observationId.isNotEmpty() == checked)
+        }
+    }
+
     private fun programHasObservationFor(programEntries: List<ProgramEntry>,
                                          programName: String): Boolean {
         return programEntries.any { p -> p.programName == programName && p.observationId.isNotEmpty() }
@@ -151,10 +157,15 @@ data class ObjectFilter(
         if (programLike != null && !listMatchesProgram(obj.programs, programLike)) {
             return false
         }
-        if (checkedInProgram != null &&
-            programIs != null &&
-            programHasObservationFor(obj.programs, programIs) != checkedInProgram) {
-            return false
+        if (checkedInProgram != null) {
+            if (programIs != null &&
+                programHasObservationFor(obj.programs, programIs) != checkedInProgram) {
+                return false
+            }
+            if (programIn.isNotEmpty() &&
+                !existsProgramWhereCheckedIs(obj.programs, programIn, checkedInProgram)) {
+                return false
+            }
         }
         if (seen != null && ((obj.observations.isEmpty()) == seen)) {
             return false
