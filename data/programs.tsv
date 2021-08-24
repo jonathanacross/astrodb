@@ -884,9 +884,9 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	435	NGC 7026	
 500 Best DSOs	436	NGC 7027	20190708-06-ngc7027
 500 Best DSOs	437	NGC 7044	
-500 Best DSOs	438	NGC 7063	
+500 Best DSOs	438	NGC 7063	20210823-02-ngc7063
 500 Best DSOs	439	M 15	20200824-03-m15
-500 Best DSOs	440	NGC 7086	
+500 Best DSOs	440	NGC 7086	20210823-03-ngc7086
 500 Best DSOs	441	M 2	20200824-02-m2
 500 Best DSOs	442	M 39	20180805-02-m39
 500 Best DSOs	443	M 30	20200824-01-m30
@@ -1837,9 +1837,9 @@ Herschel 400	377	NGC 7008	20190806-01-ngc7008
 Herschel 400	378	NGC 7009	20180928-02-ngc7009
 Herschel 400	379	NGC 7044	
 Herschel 400	380	NGC 7062	20200827-03-ngc7062
-Herschel 400	381	NGC 7086	
-Herschel 400	382	NGC 7128	
-Herschel 400	383	NGC 7142	
+Herschel 400	381	NGC 7086	20210823-03-ngc7086
+Herschel 400	382	NGC 7128	20210817-05-ngc7128
+Herschel 400	383	NGC 7142	20210823-05-ngc7142
 Herschel 400	384	NGC 7160	20180906-02-ngc7160
 Herschel 400	385	NGC 7209	20180906-03-ngc7209
 Herschel 400	386	NGC 7217	
@@ -2427,15 +2427,15 @@ Open Cluster OP	88	NGC 6800	20210802-02-ngc6800
 Open Cluster OP	89	Berk 47	20210811-06-berk47
 Open Cluster OP	90	NGC 6811	
 Open Cluster OP	91	Cr 401	20210810-04-cr401
-Open Cluster OP	92	NGC 6819	
+Open Cluster OP	92	NGC 6819	20210817-01-ngc6819
 Open Cluster OP	93	NGC 6823	20200818-02-ngc6823
 Open Cluster OP	94	Harvard 20	
 Open Cluster OP	95	NGC 6871	20210803-01-ngc6871b1b2
 Open Cluster OP	96	Biurakan 2	20210803-01-ngc6871b1b2
 Open Cluster OP	97	NGC 6885	20200817-02-ngc6885
-Open Cluster OP	98	IC 4996	
+Open Cluster OP	98	IC 4996	20210817-02-ic4996
 Open Cluster OP	99	Berk 85	
-Open Cluster OP	100	Berk 86	
+Open Cluster OP	100	Berk 86	20210817-03-berk86
 Open Cluster OP	101	Berk 87	
 Open Cluster OP	102	NGC 6910	20210803-02-ngc6910
 Open Cluster OP	103	Cr 421	
@@ -2444,9 +2444,9 @@ Open Cluster OP	105	Berk 90
 Open Cluster OP	106	French 1	
 Open Cluster OP	107	IC 1369	
 Open Cluster OP	108	Berk 55	
-Open Cluster OP	109	NGC 7063	
-Open Cluster OP	110	IC 1396	
-Open Cluster OP	111	NGC 7142	
+Open Cluster OP	109	NGC 7063	20210823-02-ngc7063
+Open Cluster OP	110	IC 1396	20210823-04-ic1396
+Open Cluster OP	111	NGC 7142	20210823-05-ngc7142
 Open Cluster OP	112	NGC 7209	
 Open Cluster OP	113	IC 1434	
 Open Cluster OP	114	NGC 7235	
@@ -2601,7 +2601,7 @@ Planetary Nebula OP	76	NGC 6804	20210810-02-ngc6804
 Planetary Nebula OP	77	NGC 6807	20210810-05-ngc6807
 Planetary Nebula OP	78	BD+30 3639	
 Planetary Nebula OP	79	NGC 6818	
-Planetary Nebula OP	80	NGC 6826	
+Planetary Nebula OP	80	NGC 6826	20210823-01-ngc6826
 Planetary Nebula OP	81	NGC 6833	
 Planetary Nebula OP	82	M 27	
 Planetary Nebula OP	83	NGC 6852	20210810-06-ngc6852
@@ -2616,7 +2616,7 @@ Planetary Nebula OP	91	NGC 6905
 Planetary Nebula OP	92	NGC 7008	
 Planetary Nebula OP	93	NGC 7009	
 Planetary Nebula OP	94	NGC 7026	
-Planetary Nebula OP	95	NGC 7027	
+Planetary Nebula OP	95	NGC 7027	20210817-04-ngc7027
 Planetary Nebula OP	96	Sh 1-89	
 Planetary Nebula OP	97	NGC 7048 Hubble 9	
 Planetary Nebula OP	98	Pease 1	
