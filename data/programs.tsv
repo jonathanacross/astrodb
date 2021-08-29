@@ -454,7 +454,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	5	NGC 147	
 500 Best DSOs	6	NGC 157	
 500 Best DSOs	7	NGC 185	20201108-03-ngc185
-500 Best DSOs	8	NGC 188	
+500 Best DSOs	8	NGC 188	20210827-03-ngc188
 500 Best DSOs	9	NGC 189	
 500 Best DSOs	10	M 110	20180901-04-m110
 500 Best DSOs	11	NGC 206	
@@ -1069,7 +1069,7 @@ Multiple Star OP	1	STF 3056 AB,C,D
 Multiple Star OP	2	STF 28, FYM 12	
 Multiple Star OP	3	STF 42	
 Multiple Star OP	4	5 Aql	20210802-01-5aql
-Multiple Star OP	5	STF 2787	
+Multiple Star OP	5	STF 2787	20210827-06-stf2787
 Multiple Star OP	6	STF 2944	
 Multiple Star OP	7	AG 38	20201201-05-ag38
 Multiple Star OP	8	STF 271	20201201-02-stf271
@@ -1092,7 +1092,7 @@ Multiple Star OP	24	STT 7	20201031-02-stt7
 Multiple Star OP	25	STT 9	20201031-03-stt9
 Multiple Star OP	26	HJ 1054	20201031-04-hj1054
 Multiple Star OP	27	BU 1	20201031-05-bu1
-Multiple Star OP	28	Iota Cas	
+Multiple Star OP	28	Iota Cas	20210827-01-iotacas
 Multiple Star OP	29	AR Cas, STT 496	20201031-01-arcasstt496
 Multiple Star OP	30	STF 2816	20200906-02-stf2816
 Multiple Star OP	31	H III 80	
@@ -1143,7 +1143,7 @@ Multiple Star OP	75	100 Her, STF 2280	20200804-02-100her
 Multiple Star OP	76	STF 1316	20210329-03-stf1316
 Multiple Star OP	77	HU 227	
 Multiple Star OP	78	DUN 116 ABC	
-Multiple Star OP	79	HJ 1823	
+Multiple Star OP	79	HJ 1823	20210827-02-hj1823
 Multiple Star OP	80	STF 1364, HJ 466	20210330-04-stf1364
 Multiple Star OP	81	STT 204, WAL 56	20210330-03-stt204
 Multiple Star OP	82	HJ 3780	
@@ -1159,7 +1159,7 @@ Multiple Star OP	91	STF 788
 Multiple Star OP	92	STF 815	
 Multiple Star OP	93	BU 193	
 Multiple Star OP	94	STF 3060 ABCDE	
-Multiple Star OP	95	STF 2799	
+Multiple Star OP	95	STF 2799	20210827-04-stf2799
 Multiple Star OP	96	STF 162	
 Multiple Star OP	97	STF 270	
 Multiple Star OP	98	Zeta Per, STF 464	
@@ -1210,7 +1210,7 @@ Best Triples	41	H 5082
 Best Triples	60	H 5311	
 Best Triples	24	H N 40	
 Best Triples	72	HDO 198	
-Best Triples	10	Iota Cas	
+Best Triples	10	Iota Cas	20210827-01-iotacas
 Best Triples	40	Iota Ori	
 Best Triples	20	Iota2 Cnc	
 Best Triples	78	Kappa And	
@@ -2343,7 +2343,7 @@ Open Cluster OP	4	Berk 2
 Open Cluster OP	5	King 14	20201027-04-king14ngc133ngc146
 Open Cluster OP	6	NGC 225	20201024-02-ngc225
 Open Cluster OP	7	King 16	
-Open Cluster OP	8	NGC 188	
+Open Cluster OP	8	NGC 188	20210827-03-ngc188
 Open Cluster OP	9	M 103	20201029-01-m103
 Open Cluster OP	10	Tr 1	20201029-02-tr1
 Open Cluster OP	11	Cr 463	
@@ -2622,7 +2622,7 @@ Planetary Nebula OP	97	NGC 7048 Hubble 9
 Planetary Nebula OP	98	Pease 1	
 Planetary Nebula OP	99	IC 5117	
 Planetary Nebula OP	100	Hu 1-2	
-Planetary Nebula OP	101	NGC 7094 K 1-19	
+Planetary Nebula OP	101	NGC 7094	20210827-05-ngc7094
 Planetary Nebula OP	102	M 1-79	
 Planetary Nebula OP	103	NGC 7139	
 Planetary Nebula OP	104	IC 5217	
