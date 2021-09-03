@@ -211,7 +211,7 @@ Urban OP	99	Delta Cep	20180906-01-deltacep
 Urban OP	100	Beta Per	
 Wimmer's List	1	M 31	20201211-02-m31m32
 Wimmer's List	2	NGC 752	20180903-06-ngc752
-Wimmer's List	3	NGC 7686	
+Wimmer's List	3	NGC 7686	20210902-06-ngc7686
 Wimmer's List	4	NGC 2129	20200229-05-ngc2129
 Wimmer's List	5	M 35	20180114-03-m35
 Wimmer's List	6	M 45	20181015-03-m45
@@ -241,7 +241,7 @@ Wimmer's List	29	M 27	20180712-09-m27
 Wimmer's List	30	NGC 6940	20180902-03-ngc6940
 Wimmer's List	31	M 57	20171210-02-m57
 Wimmer's List	32	NGC 6811	
-Wimmer's List	33	NGC 6871	
+Wimmer's List	33	NGC 6871	20210803-01-ngc6871b1b2
 Wimmer's List	34	M 29	20180601-03-m29
 Wimmer's List	35	M 39	20180805-02-m39
 Wimmer's List	36	NGC 1662	
@@ -902,7 +902,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	453	NGC 7380	20200906-03-ngc7380
 500 Best DSOs	454	NGC 7423	
 500 Best DSOs	455	NGC 7479	
-500 Best DSOs	456	NGC 7510	
+500 Best DSOs	456	NGC 7510	20210902-03-ngc7510
 500 Best DSOs	457	NGC 7541	
 500 Best DSOs	458	NGC 7606	
 500 Best DSOs	459	M 52	20180805-03-m52
@@ -1844,15 +1844,15 @@ Herschel 400	384	NGC 7160	20180906-02-ngc7160
 Herschel 400	385	NGC 7209	20180906-03-ngc7209
 Herschel 400	386	NGC 7217	20210828-05-ngc7217
 Herschel 400	387	NGC 7243	20180903-05-ngc7243
-Herschel 400	388	NGC 7296	
+Herschel 400	388	NGC 7296	20210902-05-ngc7296
 Herschel 400	389	NGC 7331	20201106-03-ngc7331
 Herschel 400	390	NGC 7380	20200906-03-ngc7380
 Herschel 400	391	NGC 7448	20201108-01-ngc7448
 Herschel 400	392	NGC 7479	
-Herschel 400	393	NGC 7510	
+Herschel 400	393	NGC 7510	20210902-03-ngc7510
 Herschel 400	394	NGC 7606	
 Herschel 400	395	NGC 7662	20210901-03-ngc7662
-Herschel 400	396	NGC 7686	
+Herschel 400	396	NGC 7686	20210902-06-ngc7686
 Herschel 400	397	NGC 7723	
 Herschel 400	398	NGC 7727	
 Herschel 400	399	NGC 7789	20210804-06-ngc7789
@@ -2457,8 +2457,8 @@ Open Cluster OP	118	King 18
 Open Cluster OP	119	NGC 7423	
 Open Cluster OP	120	King 10	
 Open Cluster OP	121	King 19	
-Open Cluster OP	122	NGC 7510	
-Open Cluster OP	123	NGC 7686	
+Open Cluster OP	122	NGC 7510	20210902-03-ngc7510
+Open Cluster OP	123	NGC 7686	20210902-06-ngc7686
 Open Cluster OP	124	King 21	20201027-01-king21
 Open Cluster OP	125	King 12	
 Binocular Messier OP	1	M 2	
@@ -2624,11 +2624,11 @@ Planetary Nebula OP	99	IC 5117
 Planetary Nebula OP	100	Hu 1-2	
 Planetary Nebula OP	101	NGC 7094	20210827-05-ngc7094
 Planetary Nebula OP	102	M 1-79	
-Planetary Nebula OP	103	NGC 7139	
-Planetary Nebula OP	104	IC 5217	
+Planetary Nebula OP	103	NGC 7139	20210902-02-ngc7139
+Planetary Nebula OP	104	IC 5217	20210902-04-ic5217
 Planetary Nebula OP	105	NGC 7293	
 Planetary Nebula OP	106	Me 2-2	20210901-02-me22
-Planetary Nebula OP	107	NGC 7354	
+Planetary Nebula OP	107	NGC 7354	20210902-01-ngc7354
 Planetary Nebula OP	108	NGC 7662	20210901-03-ngc7662
 Planetary Nebula OP	109	Jones 1	20210828-06-jones1
 Planetary Nebula OP	110	Abell 82	
