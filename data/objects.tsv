@@ -1345,6 +1345,7 @@ King 25	King 25	OCl	Aql	19h 24m 30s	13° 42' 00"		5'			III2m
 NGC 6800	NGC 6800	OCl	Vul	19h 27m 00s	25° 05' 36"		5'					
 Berk 47	Berk 47	OCl	Sge	19h 28m 27s	17° 21' 57"		3'					
 Cr 401	Cr 401	OCl	Aql	19h 38m 22s	00° 20' 43"	7.0	1'					
+Biurakan 1	Biurakan 1	OCl	Cyg	20h 08m 18s	35° 44' 43"		10'					
 Biurakan 2	Biurakan 2	OCl	Cyg	20h 09m 14s	35° 29' 03"	6.3	20'					
 IC 4996	IC 4996	OCl	Cyg	20h 16m 32s	37° 38' 35"	7.3	7'					
 Berk 85	Berk 85	OCl	Cyg	20h 18m 47s	37° 45' 18"		6'					
@@ -1407,7 +1408,7 @@ Hesiodus A	Hesiodus A	Moon
 Julius Caesar	Julius Caesar	Moon										
 Kies Pi	Kies Pi	Moon										
 Lacus Mortis	Lacus Mortis	Moon										
-Lagreneus	Lagreneus	Moon										
+Langrenus	Langrenus	Moon										
 Longomontanus	Longomontanus	Moon										
 Lunar Limb	Lunar Limb	Moon										
 Macrobius	Macrobius	Moon										
@@ -1486,7 +1487,7 @@ Vy 2-2	Vy 2-2/M 1-70	PN	Aql	19h 24m 22s	09° 53' 57"	12.7	14"			1		Central star 
 M 3-34	M 3-34/Sa 2-390/(Minkowski)	PN	Aql	19h 27m 02s	-06° 35' 05"	12.4	6"					
 NGC 6803	NGC 6803	PN	Aql	19h 31m 17s	10° 03' 22"	11.0	4"			2a		Central star mag 16
 NGC 6807	NGC 6807	PN	Aql	19h 34m 34s	05° 41' 03"	13.8	2"			2		Central star mag 16.3
-BD+30 3639	BD+30 3639/Campbell's Hydrogen Star	PN	Cyg	19h 34m 45s	30° 30' 59"	9.6	35"			4		Central star mag 10.5
+BD+30 3639	BD+30 3639/PK 64+5.1/Campbell's Hydrogen Star	PN	Cyg	19h 34m 45s	30° 30' 59"	9.6	35"			4		Requires high power. Central star mag 10.5. Hydrogen Beta filter slightly helpful; other filters not too useful.
 NGC 6833	NGC 6833	PN	Cyg	19h 49m 47s	48° 57' 40"	13.8	2"			2		Central star mag 14.4
 NGC 6852	NGC 6852/K1-18	PN	Aql	20h 00m 39s	01° 43' 40"	11.4	28'					
 NGC 6884	NGC 6884	PN	Cyg	20h 10m 24s	46° 27' 40"	12.6	5.6"			2b		Central star mag 16.7
@@ -1499,7 +1500,7 @@ NGC 7048 Hubble 9	NGC 7048 Hubble 9	PN	Cyg	21h 14m 15s	46° 17' 18"	11.0	1'			3b
 Pease 1	Pease 1	PN	Peg	21h 30m 01s	12° 10' 11"	14.9	1"			1		In M 15. Central star mag 14.9
 IC 5117	IC 5117	PN	Cyg	21h 32m 31s	44° 35' 49"	13.3	2"			2		Central star mag 16.7
 Hu 1-2	Hu 1-2/Baby Dumbbell	PN	Cyg	21h 33m 08s	39° 38' 10"	12.7	32"			2		Central star mag 17.3
-NGC 7094 K 1-19	NGC 7094 K 1-19	PN	Peg	21h 36m 53s	12° 47' 19"	13.4	1.7'			4		Central star mag 13.8
+NGC 7094	NGC 7094/K 1-19	PN	Peg	21h 36m 53s	12° 47' 19"	13.4	1.7'			4		Central star mag 13.8
 M 1-79	M 1-79/(Minkowski)	PN	Cyg	21h 37m 02s	48° 56' 03"	13.2	36"					
 NGC 7139	NGC 7139	PN	Cep	21h 46m 09s	63° 47' 29"	13.5	76'					
 IC 5217	IC 5217	PN	Lac	22h 23m 56s	50° 58' 00"	12.6	7.5"			2		Central star mag 16.3
