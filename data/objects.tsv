@@ -949,7 +949,7 @@ NGC 7023	NGC 7023	EN+OCl	Cep	21h 02m 00s	68° 09' 00"	6.8	18'					Nebula (mag10?
 NGC 7026	NGC 7026/Cheeseburger Nebula	PN	Cyg	21h 06m 18s	47° 51' 00"	12.0	25.2" x 9"			3a	7.11kly	! miniature M27, mag15 central star
 NGC 7027	NGC 7027/Pink Pillow Nebula/Magic Carpet Nebula/Green Rectangle	PN	Cyg	21h 07m 00s	42° 14' 00"	9.6	18" x 10.8"			3a	3kly	unusual protoplanetary nebula. Central star mag 16.5
 NGC 7044	NGC 7044	OCl	Cyg	21h 13m 06s	42° 29' 00"	12.0	7'			II 2 R	10.3kly	60 stars
-NGC 7048	NGC 7048	PN	Cyg	21h 14m 12s	46° 16' 00"	12.0	1'					annular, owl eyes
+NGC 7048	NGC 7048/Hubble 9	PN	Cyg	21h 14m 15s	46° 17' 18"	11.0	1'			3b		Annular, owl eyes. Central star mag 19.1
 NGC 7062	NGC 7062	OCl	Cyg	21h 23m 12s	46° 23' 00"	8.3	5'					30 stars inter. rich
 NGC 7063	NGC 7063	OCl	Cyg	21h 24m 30s	36° 30' 00"	7.0	9'			III 2 p	2.25kly	66 stars
 NGC 7086	NGC 7086	OCl	Cyg	21h 30m 30s	51° 36' 00"	8.4	12'			II 2 m	4.24kly	80 stars
@@ -1159,7 +1159,7 @@ STF 3041	STF 3041	Double	Peg	23h 47m 54s	17° 03' 00"	A=8.4, B=9.1, C=9.2		AB=4.
 STF 3048	STF 3048	Double	Peg	23h 58m 12s	24° 20' 00"	A=7.9, B=10.2, C=11.3		AB=8.5, AC=37.5				
 STF 3053	STF 3053	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				
 STF 3056 AB,C,D	STF 3056 AB,C,D	Double	And	00h 04m 40s	34° 15' 54"	A=7.7, C=10.1, D=10.6		AB,C=26, AB,D=95.3	AB,C=4, AB,D=238, AB,D=107			
-STF 3060 ABCDE	STF 3060 ABCDE	Double	Peg	00h 05m 55s	18° 04' 34"	A=9.3, B=9.6, C=12.0		AB=3.4, AC=66	AB=136, AC=272			
+STF 3060 ABCD	STF 3060 ABCD	Double	Peg	00h 05m 55s	18° 04' 34"	A=9.3, B=9.6, C=12.0		AB=3.4, AC=66	AB=136, AC=272			
 STF 373 AB, STTA 33 AC, STU1 AD	STF 373 AB, STTA 33 AC, STU1 AD	Double	Cam	03h 22m 05s	62° 44' 29"	A=7.7, B=10.0, C=7.8, D=9.2		AB=20, AC=115.5, AD=179.2	AB=120, AC=112, AD=168			
 STF 42	STF 42	Double	And	00h 36m 02s	29° 59' 34"	A=8.3, B=9.0, C=11.5		AB=6.3, AC=36.7	AB=20, AC=290			
 STF 430	STF 430	Double	Tau	03h 40m 30s	05° 08' 00"	A=6.8, B=9.6, C=10.5		AB=26.6, AC=34.9				
@@ -1339,7 +1339,7 @@ Berk 80	Berk 80	OCl	Aql	18h 54m 21s	-01° 13' 12"		3'
 Steph 1	Steph 1	OCl	Lyr	18h 54m 31s	36° 53' 59"	3.8	40'					
 NGC 6716	NGC 6716	OCl	Sgr	18h 54m 34s	-19° 54' 30"	7.5	10'					
 Berk 82	Berk 82	OCl	Aql	19h 11m 20s	13° 06' 42"		2.5'					
-NGC 6774	NGC 6774	OCl	Sgr	19h 16m 18s	-16° 19' 30"		45'					
+NGC 6774	NGC 6774	OCl	Sgr	19h 16m 18s	-16° 19' 30"		45'					looks like an eagle (in binocs). Use lowest power
 NGC 6793	NGC 6793	OCl	Vul	19h 23m 13s	22° 09' 27"		7'					
 King 25	King 25	OCl	Aql	19h 24m 30s	13° 42' 00"		5'			III2m		
 NGC 6800	NGC 6800	OCl	Vul	19h 27m 00s	25° 05' 36"		5'					
@@ -1496,7 +1496,6 @@ NGC 6881	NGC 6881	PN	Cyg	20h 10m 53s	37° 24' 41"	14.3	3.3"			2a+3		Central star
 NGC 6886	NGC 6886	PN	Sge	20h 12m 43s	19° 59' 23"	12.5	4"			2+3		Central star mag 18
 IC 4997	IC 4997	PN	Sge	20h 20m 09s	16° 43' 54"	11.3	2"			1		Central star mag 12.2
 Sh 1-89	Sh 1-89/Sharpless 1-89/Moth Nebula	PN	Cyg	21h 14m 08s	47° 46' 22"	14.8	1.1'			3a		Central star mag 19.1
-NGC 7048 Hubble 9	NGC 7048 Hubble 9	PN	Cyg	21h 14m 15s	46° 17' 18"	11.0	1'			3b		Central star mag 19.1
 Pease 1	Pease 1	PN	Peg	21h 30m 01s	12° 10' 11"	14.9	1"			1		In M 15. Central star mag 14.9
 IC 5117	IC 5117	PN	Cyg	21h 32m 31s	44° 35' 49"	13.3	2"			2		Central star mag 16.7
 Hu 1-2	Hu 1-2/Baby Dumbbell	PN	Cyg	21h 33m 08s	39° 38' 10"	12.7	32"			2		Central star mag 17.3
