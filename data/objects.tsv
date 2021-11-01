@@ -176,7 +176,7 @@ H 3945	H 3945	Double	CMa	07h 16m 36s	-23° 18' 00"	4.8		26.6				! orange, white
 H 4926	H 4926	Double	Sco	17h 14m 30s	-39° 46' 00"	A=6.7, B=10.1, C=11.4		AB=14.2, AC=16.4				
 H 5082	H 5082	Double	Sgr	19h 03m 12s	-19° 15' 00"	A=6.2, B=9.0, C=10.8		AB=7.5, AC=19.9				
 H 5311	H 5311	Double	PsA	21h 59m 30s	-29° 03' 00"	A=7.1, B=10.6, C=10.9		AB=40.3, AC=44.8				
-H III 80	H III 80/AB Cet	Double	Cet	02h 26m 20s	-15° 20' 28"	A=5.9, B=9.1, C=10.5		AB=12.1, AC=109.6	AB=295, AC=31			
+H 3 80	H 3 80/AB Cet	Double	Cet	02h 26m 20s	-15° 20' 28"	A=5.9, B=9.1, C=10.5		AB=12.1, AC=109.6	AB=295, AC=31			
 H N 40	H N 40	Double	Sgr	18h 02m 24s	-23° 02' 00"	A=7.6, B=8.7, C=10.4		AB=6.1, AC=11				
 Harvard 20	Harvard 20	OCl	Sge	19h 53m 12s	18° 21' 00"	7.7	8'			III 2 p	5.02kly	28 stars
 HD 196944	HD 196944	Ast	Aqr	20h 41m 00s	-06° 49' 00"	6.6	23'					Christmas Tree shape, with tip pointed south. Total of 20 stars.
@@ -1306,6 +1306,8 @@ King 13	King 13	OCl	Cas	00h 10m 10s	61° 11' 00"		5'			II2m		brightest star mag 
 Berk 2	Berk 2	OCl	Cas	00h 25m 15s	60° 23' 18"		2'					
 King 14	King 14	OCl	Cas	00h 31m 54s	63° 10' 00"	8.5	7'			III1p		
 King 16	King 16	OCl	Cas	00h 43m 42s	64° 11' 00"	10.3	5'			I2m		
+Berk 4	Berk 4	OCl	Cas	00h 46m 18s	64° 30' 02"	10.6	6'					
+Omega snake	Omega snake	Ast	Cas	00h 47m 9s	64° 31' 11"		15'					A serpentine omega shape, consisting of about 20 stars. Berk 4 is on the W end of it, seen as 3-4 stars.
 Stock 4	Stock 4	OCl	Per	01h 52m 42s	57° 04' 00"		12'					
 DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					Near 42 Ari
 IC 1848	IC 1848	OCl	Cas	02h 51m 11s	60° 24' 06"	6.5	18'					
