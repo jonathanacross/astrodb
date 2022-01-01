@@ -216,7 +216,7 @@ Wimmer's List	4	NGC 2129	20200229-05-ngc2129
 Wimmer's List	5	M 35	20180114-03-m35
 Wimmer's List	6	M 45	20181015-03-m45
 Wimmer's List	7	NGC 1647	20181111-02-ngc1647
-Wimmer's List	8	NGC 1746	
+Wimmer's List	8	NGC 1746	20211231-02-ngc1746ngc1750
 Wimmer's List	9	Mel 25	20181117-01-hyades
 Wimmer's List	10	NGC 7160	20180906-02-ngc7160
 Wimmer's List	11	M 13	20180511-01-m13
@@ -540,9 +540,9 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	91	NGC 1579	
 500 Best DSOs	92	NGC 1647	20181111-02-ngc1647
 500 Best DSOs	93	NGC 1664	
-500 Best DSOs	94	NGC 1746	
+500 Best DSOs	94	NGC 1746	20211231-02-ngc1746ngc1750
 500 Best DSOs	95	NGC 1778	
-500 Best DSOs	96	NGC 1798	
+500 Best DSOs	96	NGC 1798	20211231-01-ngc1798
 500 Best DSOs	97	NGC 1817	20181111-04-ngc1807
 500 Best DSOs	98	NGC 1857	
 500 Best DSOs	99	NGC 1883	
@@ -1129,7 +1129,7 @@ Multiple Star OP	61	HJ 3644 AB,C AB,D
 Multiple Star OP	62	51 Eri, BU 88, WAL 32	20211116-04-51eri
 Multiple Star OP	63	HJ 3677 AB, DAW 81 BC	
 Multiple Star OP	64	62 Eri, SHJ 48, GMC 11	20211116-06-62eri
-Multiple Star OP	65	66 Eri, STF 642, HUB 5	
+Multiple Star OP	65	66 Eri, STF 642, HUB 5	20211213-03-66eri
 Multiple Star OP	66	HJ 3518	
 Multiple Star OP	67	STF 982 ABC	20210325-01-stf982
 Multiple Star OP	68	STF 1007 AD	20210325-02-stf1007
@@ -1146,18 +1146,18 @@ Multiple Star OP	78	DUN 116 ABC
 Multiple Star OP	79	HJ 1823	20210827-02-hj1823
 Multiple Star OP	80	STF 1364, HJ 466	20210330-04-stf1364
 Multiple Star OP	81	STT 204, WAL 56	20210330-03-stt204
-Multiple Star OP	82	HJ 3780	
+Multiple Star OP	82	HJ 3780	20211213-01-hj3780
 Multiple Star OP	83	5 Lyn	
 Multiple Star OP	84	STT 525	20200806-01-stt525
 Multiple Star OP	85	10 Mon	20210329-02-10mon
 Multiple Star OP	86	Rho Oph, H 2 19	20210620-01-rhooph
 Multiple Star OP	87	STF 2050 ABCD	20210620-04-stf2050abcd
-Multiple Star OP	88	SHJ 49	
-Multiple Star OP	89	STF 697	
-Multiple Star OP	90	STF 761 & 762	
-Multiple Star OP	91	STF 788	
-Multiple Star OP	92	STF 815	
-Multiple Star OP	93	BU 193	
+Multiple Star OP	88	SHJ 49	20211231-03-shj49
+Multiple Star OP	89	STF 697	20211231-04-stf697
+Multiple Star OP	90	STF 761 & 762	20211213-02-stf761762
+Multiple Star OP	91	STF 788	20211231-06-stf788
+Multiple Star OP	92	STF 815	20211231-05-stf815
+Multiple Star OP	93	BU 193	20211231-07-bu193
 Multiple Star OP	94	STF 3060 ABCD	20210906-05-stf3060
 Multiple Star OP	95	STF 2799	20210827-04-stf2799
 Multiple Star OP	96	STF 162	20211011-05-stf162
@@ -1513,7 +1513,7 @@ Herschel 400	53	NGC 1535
 Herschel 400	54	NGC 1545	20201202-03-ngc1545
 Herschel 400	55	NGC 1647	20181111-02-ngc1647
 Herschel 400	56	NGC 1664	
-Herschel 400	57	NGC 1750	
+Herschel 400	57	NGC 1750	20211231-02-ngc1746ngc1750
 Herschel 400	58	NGC 1788	
 Herschel 400	59	NGC 1817	20181111-04-ngc1807
 Herschel 400	60	NGC 1857	
@@ -2364,9 +2364,9 @@ Open Cluster OP	25	King 7
 Open Cluster OP	26	NGC 1496	
 Open Cluster OP	27	NGC 1502	20201107-04-ngc1502
 Open Cluster OP	28	NGC 1662	
-Open Cluster OP	29	NGC 1746	
+Open Cluster OP	29	NGC 1746	20211231-02-ngc1746ngc1750
 Open Cluster OP	30	NGC 1807	
-Open Cluster OP	31	NGC 1798	
+Open Cluster OP	31	NGC 1798	20211231-01-ngc1798
 Open Cluster OP	32	NGC 1893	
 Open Cluster OP	33	M 38	
 Open Cluster OP	34	DoDz 3	
