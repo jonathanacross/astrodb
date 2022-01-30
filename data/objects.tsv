@@ -1307,7 +1307,7 @@ Berk 2	Berk 2	OCl	Cas	00h 25m 15s	60° 23' 18"		2'
 King 14	King 14	OCl	Cas	00h 31m 54s	63° 10' 00"	8.5	7'			III1p		
 King 16	King 16	OCl	Cas	00h 43m 42s	64° 11' 00"	10.3	5'			I2m		
 Berk 4	Berk 4	OCl	Cas	00h 46m 18s	64° 30' 02"	10.6	6'					
-Omega snake	Omega snake	Ast	Cas	00h 47m 9s	64° 31' 11"		15'					A serpentine omega shape, consisting of about 20 stars. Berk 4 is on the W end of it, seen as 3-4 stars.
+Omega snake	Omega snake	Ast	Cas	00h 47m 09s	64° 31' 11"		15'					A serpentine omega shape, consisting of about 20 stars. Berk 4 is on the W end of it, seen as 3-4 stars.
 Stock 4	Stock 4	OCl	Per	01h 52m 42s	57° 04' 00"		12'					
 DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					Near 42 Ari
 IC 1848	IC 1848	OCl	Cas	02h 51m 11s	60° 24' 06"	6.5	18'					
@@ -1341,7 +1341,7 @@ Berk 80	Berk 80	OCl	Aql	18h 54m 21s	-01° 13' 12"		3'
 Steph 1	Steph 1	OCl	Lyr	18h 54m 31s	36° 53' 59"	3.8	40'					
 NGC 6716	NGC 6716	OCl	Sgr	18h 54m 34s	-19° 54' 30"	7.5	10'					
 Berk 82	Berk 82	OCl	Aql	19h 11m 20s	13° 06' 42"		2.5'					
-NGC 6774	NGC 6774	OCl	Sgr	19h 16m 18s	-16° 19' 30"		45'					looks like an eagle (in binocs). Use lowest power
+NGC 6774	NGC 6774/Ru 147	OCl	Sgr	19h 16m 18s	-16° 19' 30"		45'					looks like an eagle (in binocs). Use lowest power
 NGC 6793	NGC 6793	OCl	Vul	19h 23m 13s	22° 09' 27"		7'					
 King 25	King 25	OCl	Aql	19h 24m 30s	13° 42' 00"		5'			III2m		
 NGC 6800	NGC 6800	OCl	Vul	19h 27m 00s	25° 05' 36"		5'					
@@ -1388,9 +1388,11 @@ Anaxagoras	Anaxagoras	Moon
 Aristarchus Plateau	Aristarchus Plateau	Moon										
 Aristoteles	Aristoteles	Moon										
 Birmingham	Birmingham	Moon										
+Billy	Billy	Moon										
 Bullialdus	Bullialdus	Moon										
 Byrgius A	Byrgius A	Moon										
 Cassini	Cassini	Moon										
+Catharina	Catharina	Moon										
 Censorinus	Censorinus	Moon										
 Clavius	Clavius	Moon										
 Cruger	Cruger	Moon										
@@ -1404,6 +1406,7 @@ Furnerius	Furnerius	Moon
 Gassendi	Gassendi	Moon										
 Grimaldi	Grimaldi	Moon										
 Hainzel	Hainzel	Moon										
+Hansteen	Hansteen	Moon										
 Heraclides	Heraclides	Moon										
 Hercules	Hercules	Moon										
 Hesiodus A	Hesiodus A	Moon										
@@ -1416,8 +1419,10 @@ Longomontanus	Longomontanus	Moon
 Lunar Limb	Lunar Limb	Moon										
 Macrobius	Macrobius	Moon										
 Mairan	Mairan	Moon										
+Mare Crisium	Mare Crisium	Moon										
 Mare Imbrium	Mare Imbrium	Moon										
 Marius Hills	Marius Hills	Moon										
+Maurolycus	Maurolycus	Moon										
 Mersenius	Mersenius	Moon										
 Messier	Messier	Moon										
 Milichius Pi	Milichius Pi	Moon										
@@ -1508,3 +1513,23 @@ NGC 7139	NGC 7139	PN	Cep	21h 46m 09s	63° 47' 29"	13.5	76'
 IC 5217	IC 5217	PN	Lac	22h 23m 56s	50° 58' 00"	12.6	7.5"			2		Central star mag 16.3
 Me 2-2	Me 2-2/PK 100-8.1/(Merrill)	PN	Lac	22h 31m 44s	47° 48' 04"	11.9	6"					
 Abell 82	Abell 82	PN	Cas	23h 45m 48s	57° 03' 59"	15.2	1.6'			3b		Central star mag 14.9
+NGC 7826	NGC 7826	OCl	Cet	00h 05m 17s	-20° 41' 30"	12.0						
+NGC 1498	NGC 1498	OCl	Eri	04h 00m 18s	-12° 00' 54"	12.0						
+Dolidze 19	Dolidze 19	OCl	Ori	05h 23m 42s	08° 11' 00"		23'					
+Cr 70	Cr 70	OCl	Lep	05h 35m 31s	-01° 06' 00"	8.1						
+NGC 2017	NGC 2017	OCl	Lep	05h 39m 17s	-17° 50' 48"		10'					
+NGC 2112	NGC 2112	OCl	Ori	05h 53m 45s	00° 24' 36"	9.6	18'					
+Platais 5	Platais 5	OCl	Lep	06h 09m 36s	-22° 09' 06"	7.2	5°					
+NGC 2184	NGC 2184	OCl	Ori	06h 11m 13s	-03° 26' 24"	8.3	33'					
+NGC 2202	NGC 2202	OCl	Ori	06h 16m 51s	06° 00' 00"	9.8	7'					
+Cr 96	Cr 96	OCl	Mon	06h 30m 18s	02° 52' 00"	7.3	12'					
+NGC 2319	NGC 2319	OCl	Mon	07h 00m 43s	03° 02' 23"	10.4	16'					
+Tombaugh 2	Tombaugh 2	OCl	Pup	07h 03m 05s	-20° 49' 00"	12.8	3'					
+Cr 350	Cr 350	OCl	Oph	17h 48m 07s	01° 21' 00"	6.1	45'					
+NGC 6514	NGC 6514	OCl	Sgr	18h 02m 42s	-22° 58' 18"	6.3	30'					
+NGC 6546	NGC 6546	OCl	Sgr	18h 07m 22s	-23° 17' 48"	8.0	15'					
+NGC 6639	NGC 6639	OCl	Sct	18h 30m 57s	-13° 08' 59"	7.8	10'					
+NGC 6863	NGC 6863	OCl	Aql	20h 05m 07s	-03° 33' 18"							
+NGC 6980	NGC 6980	OCl	Aqr	20h 52m 48s	-05° 50' 12"							
+NGC 7005	NGC 7005	OCl	Aqr	21h 01m 57s	-12° 52' 50"		30'					
+NGC 7134	NGC 7134	OCl	Cap	21h 48m 55s	-12° 58' 24"							
