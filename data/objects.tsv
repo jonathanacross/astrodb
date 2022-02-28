@@ -477,7 +477,7 @@ NGC 2141	NGC 2141	OCl	Ori	06h 02m 54s	10° 27' 00"	9.4	10'			II 3 r	13.1kly	365 
 NGC 2146	NGC 2146/Dusty Hand Galaxy	Gal	Cam	06h 18m 36s	78° 21' 00"	10.6	5.7' x 3.3'			SBab/P	39mly	
 NGC 2158	NGC 2158	OCl	Gem	06h 07m 24s	24° 06' 00"	8.6	5'			II 3 r	16.5kly	973 stars
 NGC 2169	NGC 2169/Shopping Cart Cluster/"37" Cluster	OCl+Ast	Ori	06h 08m 24s	13° 58' 00"	5.9	6'			I 3 p n	3.43kly	!! 30 stars. Open cluster shows the number '37'.
-NGC 2185	NGC 2185	DN	Ori	06h 11m 06s	-06° 13' 00"	11.0	2' x 2'					brt fuzzy with NGC 2183 + 2184
+NGC 2185	NGC 2185	EN	Ori	06h 11m 06s	-06° 13' 00"	11.0	2' x 2'					brt fuzzy with NGC 2183 + 2184
 NGC 2186	NGC 2186	OCl	Ori	06h 12m 12s	05° 27' 00"	9.5	5'					30 stars loose poor some brt
 NGC 2192	NGC 2192	OCl	Aur	06h 15m 18s	39° 51' 00"	10.9	5'			III 1 p	8.15kly	45 stars
 NGC 2194	NGC 2194	OCl	Ori	06h 13m 48s	12° 48' 00"	8.5	9'			III 1 r	12.3kly	194 stars. faint, fairly rich; look for 2169 nearby
@@ -615,7 +615,7 @@ NGC 3395	NGC 3395	Gal	LMi	10h 49m 48s	32° 59' 00"	12.0	1.5' x 0.9'					sp elus 
 NGC 3412	NGC 3412	Gal	Leo	10h 50m 54s	13° 25' 00"	10.4	2.4' x 1.1'					el circular very difficult
 NGC 3414	NGC 3414	Gal	LMi	10h 51m 18s	27° 59' 00"	11.0	1.4' x 1'					Bsp starlike fuzzy nebulosity
 NGC 3432	NGC 3432/The Knitting Needle Galaxy	Gal	LMi	10h 52m 30s	36° 37' 00"	11.3	6.6' x 1.6'			SB	39mly	! Edge-on streak w/3 stars superimposed
-NGC 3486	NGC 3486	Gal	LMi	10h 00m 24s	28° 58' 00"	11.0	6.8' x 4.5'					sp round faint fuzzy uniform
+NGC 3486	NGC 3486	Gal	LMi	11h 00m 24s	28° 58' 00"	11.0	6.8' x 4.5'					sp round faint fuzzy uniform
 NGC 3489	NGC 3489	Gal	Leo	11h 00m 18s	13° 54' 00"	11.5	2' x 0.9'					el round impressive brt nucleus
 NGC 3504	NGC 3504	Gal	LMi	11h 00m 30s	27° 58' 00"	10.9	2.2' x 2.2'					sp round very impressive
 NGC 3507	NGC 3507	Gal	Leo	11h 03m 24s	18° 08' 00"	10.9	3.4' x 2.9'			SBb	59mly	
@@ -633,7 +633,7 @@ NGC 3626	NGC 3626	Gal	Leo	11h 20m 06s	18° 21' 00"	10.5	1.6' x 1.1'					sp starl
 NGC 3628	NGC 3628/King Hamlet's Ghost/The Trio in Leo/Hotdog Galaxy	Gal	Leo	11h 20m 18s	13° 35' 00"	9.5	13.1' x 3.1'			Sb	25mly	! large edge-on; same field as M65 and M66
 NGC 3631	NGC 3631	Gal	UMa	11h 21m 00s	53° 10' 00"	10.4	5' x 4.8'			Sc	70mly	
 NGC 3640	NGC 3640	Gal	Leo	11h 21m 06s	03° 14' 00"	10.7	1.1' x 1'					el round small faint near a star
-NGC 3655	NGC 3655	Gal	UMa	11h 22m 54s	16° 35' 00"	11.3	1.2' x 0.9'					sp small fuzzy round faint
+NGC 3655	NGC 3655	Gal	Leo	11h 22m 54s	16° 35' 00"	11.3	1.2' x 0.9'					sp small fuzzy round faint
 NGC 3665	NGC 3665	Gal	UMa	11h 24m 42s	38° 46' 00"	11.4	1.6' x 1.2'					el round brt nucleus small
 NGC 3672	NGC 3672	Gal	Crt	11h 25m 00s	-09° 48' 00"	11.4	4' x 1.8'			Sc	99mly	
 NGC 3675	NGC 3675	Gal	UMa	11h 26m 06s	43° 35' 00"	10.2	6.2' x 3.6'			Sb	40mly	Bright, elongated galaxy with dark structure near nucleus
@@ -1021,7 +1021,6 @@ Nu Dra	Nu Dra	Double	Dra	17h 32m 12s	55° 11' 00"	4.9, 4.9		62	311
 Nu Sco	Nu Sco/Southern Double Double	Double	Sco	16h 12m 00s	-19° 28' 00"	4.4, 6.6		41.4	336			! B-m5.6, C-m6.8, D-m7.8 CD-2.3", AC - 41.4" Southern Double Double
 Omicron 2 Eri	Omicron 2 Eri	Double	Eri	04h 15m 24s	-07° 36' 00"	9.5		8.5				C-m11.1, red dwarf and white dwarf, A component is m4.5, 82" distant, Beid
 Omicron Oph	Omicron Oph/39 Oph	Double	Oph	17h 18m 00s	-24° 17' 00"	5.2, 6.6		10	355			! yellow, blue
-Orion's Belt	Orion's Belt	Ast	Ori	05h 36m 12s	-01° 12' 07"	1.0	3°					three bright stars in Orion's belt
 Orion's Sword	Orion's Sword	Ast	Ori	05h 35m 35s	-05° 06' 00"	2.0	2.5°					just below Orion's belt. Contains M 42
 Pakan's 3	Pakan's 3	Ast	Mon	06h 52m 00s	-10° 10' 00"	9.5 - 11.5	60'					Located 3 degrees southwest of cluster M 50. Has the shape of a number '3'.
 Pal 1	Pal 1	GCl	Cep	03h 33m 21s	79° 34' 50"	13.6	1.8'					
@@ -1309,16 +1308,16 @@ King 16	King 16	OCl	Cas	00h 43m 42s	64° 11' 00"	10.3	5'			I2m
 Berk 4	Berk 4	OCl	Cas	00h 46m 18s	64° 30' 02"	10.6	6'					
 Omega snake	Omega snake	Ast	Cas	00h 47m 09s	64° 31' 11"		15'					A serpentine omega shape, consisting of about 20 stars. Berk 4 is on the W end of it, seen as 3-4 stars.
 Stock 4	Stock 4	OCl	Per	01h 52m 42s	57° 04' 00"		12'					
-DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					Near 42 Ari
+DoDz 1	DoDz 1	OCl	Ari	02h 47m 27s	17° 15' 18"	7.1	7.5'					Near 42 Ari. 3 brightest stars are each doubles, form a triangle
 IC 1848	IC 1848	OCl	Cas	02h 51m 11s	60° 24' 06"	6.5	18'					
 Cr 34	Cr 34	OCl	Cas	02h 59m 23s	60° 34' 00"	6.8	24'					
 IC 348	IC 348	OCl	Per	03h 44m 34s	32° 09' 48"	7.3	8'					
 Tombaugh 5	Tombaugh 5	OCl	Cam	03h 47m 44s	59° 05' 24"	8.4	15'					
 King 7	King 7	OCl	Per	03h 59m 10s	51° 46' 48"		8'			I2r		brightest star mag 16
 NGC 1496	NGC 1496	OCl	Per	04h 04m 32s	52° 39' 42"	9.6	3'					
-DoDz 3	DoDz 3	OCl	Tau	05h 33m 30s	26° 31' 00"		10'					brightest star HD 244759
+DoDz 3	DoDz 3	OCl	Tau	05h 33m 30s	26° 31' 00"		10'					brightest star HD 244759. Small, few stars. Can see DoDz 4 in same view at lower power.
 Cr 69	Cr 69/Lambda Ori Cluster	OCl	Ori	05h 35m 00s	09° 56' 00"	2.8	70'					
-DoDz 4	DoDz 4	OCl	Tau	05h 35m 54s	25° 57' 00"		25'					brightest star HD 36994
+DoDz 4	DoDz 4	OCl	Tau	05h 35m 54s	25° 57' 00"		25'					brightest star HD 36994. Has 7 sets of close doubles. Can see DoDz 3 in same view at lower power.
 Ru 1	Ru 1	OCl	CMa	06h 36m 24s	-14° 09' 00"		6'					
 Ru 3	Ru 3	OCl	CMa	06h 42m 06s	-29° 27' 12"		3'					
 Biurakan 9	Biurakan 9/Berk 30	OCl	Mon	06h 57m 46s	03° 13' 42"		3'					
@@ -1333,7 +1332,7 @@ Tr 27	Tr 27/Cr 336	OCl	Sco	17h 36m 13s	-33° 29' 19"	6.7	7'
 Tr 28	Tr 28/Cr 337	OCl	Sco	17h 36m 59s	-32° 28' 24"	7.7	6'					
 NGC 6416	NGC 6416	OCl	Sco	17h 44m 18s	-32° 21' 00"	5.7	15'					
 Cr 347	Cr 347	OCl	Sgr	17h 46m 19s	-29° 20' 09"	8.8	10'					
-DoDz 9	DoDz 9	OCl	Her	18h 08m 48s	31° 32' 00"		28'					maybe 0.5 degree in size; view at low power
+DoDz 9	DoDz 9	OCl	Her	18h 08m 48s	31° 32' 00"		28'					maybe 0.5 degree in size; view at low power; about 15 stars. Brightest ones form a rough circle
 Tr 33	Tr 33/Cr 378	OCl	Sgr	18h 24m 39s	-19° 43' 57"	7.8	6'					
 Tr 35	Tr 35/Cr 388	OCl	Sct	18h 43m 00s	-04° 13' 31"	9.2	6'					
 Ru 146	Ru 146	OCl	Sgr	18h 52m 30s	-21° 04' 54"		4'					
@@ -1393,6 +1392,7 @@ Bullialdus	Bullialdus	Moon
 Byrgius A	Byrgius A	Moon										
 Cassini	Cassini	Moon										
 Catharina	Catharina	Moon										
+Cauchy, Cauchy Omega, Cauchy Tau	Cauchy, Cauchy Omega, Cauchy Tau	Moon										
 Censorinus	Censorinus	Moon										
 Clavius	Clavius	Moon										
 Cruger	Cruger	Moon										
@@ -1427,16 +1427,19 @@ Mersenius	Mersenius	Moon
 Messier	Messier	Moon										
 Milichius Pi	Milichius Pi	Moon										
 Mitchell	Mitchell	Moon										
+Montes Foucault	Montes Foucault	Moon										
 Moon and major features	Moon and major features	Moon										
 Moon Occultation	Moon Occultation	Moon										
 Moon Conjunction	Moon Conjunction	Moon										
 New Moon	New Moon	Moon										
 New Moon in Old Moon's Arms	New Moon in Old Moon's Arms	Moon										
 Old moon in new moon's arms	Old moon in new moon's arms	Moon										
+Palus Epidemiarum	Palus Epidemiarum	Moon										
 Palus Somnii	Palus Somnii	Moon										
 Picard	Picard	Moon										
 Piccolomini	Piccolomini	Moon										
 Plato	Plato	Moon										
+Plinius	Plinius	Moon										
 Proclus	Proclus	Moon										
 Posidonius	Posidonius	Moon										
 Promontorium Agarum	Promontorium Agarum	Moon										
@@ -1516,7 +1519,7 @@ Abell 82	Abell 82	PN	Cas	23h 45m 48s	57° 03' 59"	15.2	1.6'			3b		Central star m
 NGC 7826	NGC 7826	OCl	Cet	00h 05m 17s	-20° 41' 30"	12.0						
 NGC 1498	NGC 1498	OCl	Eri	04h 00m 18s	-12° 00' 54"	12.0						
 Dolidze 19	Dolidze 19	OCl	Ori	05h 23m 42s	08° 11' 00"		23'					
-Cr 70	Cr 70	OCl	Lep	05h 35m 31s	-01° 06' 00"	8.1						
+Cr 70	Cr 70/Orion's Belt	OCl+Ast	Ori	05h 35m 31s	-01° 06' 00"	0.4	3°					Three brightest stars form Orion's Belt
 NGC 2017	NGC 2017	OCl	Lep	05h 39m 17s	-17° 50' 48"		10'					
 NGC 2112	NGC 2112	OCl	Ori	05h 53m 45s	00° 24' 36"	9.6	18'					
 Platais 5	Platais 5	OCl	Lep	06h 09m 36s	-22° 09' 06"	7.2	5°					
