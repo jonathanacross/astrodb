@@ -229,7 +229,7 @@ Iota Cas	Iota Cas/STF 262	Double	Cas	02h 29m 03s	67° 24' 08"	A=4.6, B=6.9, C=9.
 Iota Cnc	Iota Cnc	Double	Cnc	08h 46m 42s	28° 46' 00"	4.1, 6.0		31	305			! yellow, blue
 Iota Ori	Iota Ori	Double	Ori	05h 35m 24s	-05° 55' 00"	A=2.8, B=7.7, C=9.8		AB=11.4, AC=49.4	AB=142, AC=143			
 Iota Tri	Iota Tri/6 Tri	Double	Tri	02h 12m 24s	30° 18' 00"	5.3, 6.7		3.8	69			! yellow, blue
-Iota2 Cnc	Iota2 Cnc	Double	Cnc	08h 54m 12s	30° 35' 00"	A=6.1, B=6.4, C=9.2		AB=1.5, AC=54.5				
+Iota2 Cnc	Iota2 Cnc	Double	Cnc	08h 54m 12s	30° 35' 00"	A=6.1, B=6.4, C=9.2		AB=1.5, AC=54.5				Best guess is this is supposed to be 57 Cnc.
 Jaws	Jaws/Ty's Oil Can	Ast	Vir	12h 39m 00s	-11° 25' 00"	9.0 - 11.5	30'					3 brightest stars of this asterism form the jaws of the shark with 6 more that curve to make the body. Very close to M104.
 JC 16	JC 16	Double	Crt	11h 29m 38s	-24° 27' 50"	A=5.8, B=8.6, C=8.9		AB=8.4, AC=169.5	AB=82, AC=116			
 JnEr 1	JnEr 1/Headphones Nebula	PN	Lyn	07h 57m 48s	53° 25' 00"	12.1	7'					!? low power and filter! faint Helix. Central star mag 16.8
@@ -1429,6 +1429,8 @@ Mersenius	Mersenius	Moon
 Messier	Messier	Moon										
 Milichius Pi	Milichius Pi	Moon										
 Mitchell	Mitchell	Moon										
+Mons Rumber	Mons Rumber	Moon										
+Montes Apennius	Montes Apennius	Moon										
 Montes Foucault	Montes Foucault	Moon										
 Moon and major features	Moon and major features	Moon										
 Moon Occultation	Moon Occultation	Moon										
@@ -1437,6 +1439,7 @@ New Moon	New Moon	Moon
 New Moon in Old Moon's Arms	New Moon in Old Moon's Arms	Moon										
 Old moon in new moon's arms	Old moon in new moon's arms	Moon										
 Palus Epidemiarum	Palus Epidemiarum	Moon										
+Palus Putredinus	Palus Putredinus	Moon										
 Palus Somnii	Palus Somnii	Moon										
 Picard	Picard	Moon										
 Piccolomini	Piccolomini	Moon										
