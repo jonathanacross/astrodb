@@ -379,6 +379,7 @@ Mini Coathanger	Mini Coathanger	Ast	UMi	16h 29m 00s	80° 13' 00"	10.0	15'					St
 Mu Boo	Mu Boo	Double	Boo	15h 24m 30s	37° 23' 00"	4.3, 7.1		109	171			
 Mu Cep	Mu Cep/Hershel's Garnet Star/Erakis	Variable	Cep	21h 43m 31s	48° 46' 48"	4.2						
 Mu Dra	Mu Dra	Double	Dra	17h 05m 18s	54° 28' 00"	5.7, 5.7		2.4	5			
+Mu Her	Mu Her	Double	Her	17h 46m 28s	27° 43' 01"	A=3.5, B=10.2, C=10.7		A,BC=35.5, BC=0.9				Primary is gold. This is quadruple star system A also has a faint, close pair.
 Mu Per	Mu Per	Double	Per	04h 14m 54s	48° 25' 00"	A=4.2, B=10.3, C=10.4		AB=14.7, AC=83.3				
 N Hya	N Hya	Double	Hya	11h 32m 18s	-29° 16' 00"	5.6, 5.7		9.4	210			
 Nagler 1	Nagler 1	Ast	CMa	06h 22m 00s	-26° 28' 00"	7.0 - 10.0	16' x 48'					In the shape of a chevron. Located just above galaxy NGC 2217 in Canis Major.
@@ -1381,6 +1382,7 @@ Vesta	Vesta	Asteroid
 C2020 F3 Neowise	C2020 F3 Neowise	Comet										
 Sunspots	Sunspots	Sun										
 Sun	Sun	Sun										
+Apollo 15 Site	Apollo 15 Site	Moon										
 Arago	Arago	Moon										
 Arago alpha & Arago beta	Arago alpha & Arago beta	Moon										
 Anaxagoras	Anaxagoras	Moon										
@@ -1389,6 +1391,7 @@ Aristoteles	Aristoteles	Moon
 Birmingham	Birmingham	Moon										
 Bailly	Bailly	Moon										
 Billy	Billy	Moon										
+Boscovich	Boscovich	Moon										
 Bullialdus	Bullialdus	Moon										
 Byrgius A	Byrgius A	Moon										
 Cassini	Cassini	Moon										
@@ -1420,6 +1423,7 @@ Langrenus	Langrenus	Moon
 Longomontanus	Longomontanus	Moon										
 Lunar Limb	Lunar Limb	Moon										
 Macrobius	Macrobius	Moon										
+Manilus	Manilus	Moon										
 Mairan	Mairan	Moon										
 Mare Crisium	Mare Crisium	Moon										
 Mare Imbrium	Mare Imbrium	Moon										
@@ -1429,6 +1433,7 @@ Mersenius	Mersenius	Moon
 Messier	Messier	Moon										
 Milichius Pi	Milichius Pi	Moon										
 Mitchell	Mitchell	Moon										
+Mons Hadley	Mons Hadley	Moon										
 Mons Rumber	Mons Rumber	Moon										
 Montes Apennius	Montes Apennius	Moon										
 Montes Foucault	Montes Foucault	Moon										
@@ -1451,6 +1456,7 @@ Posidonius	Posidonius	Moon
 Promontorium Agarum	Promontorium Agarum	Moon										
 Promontoria Lapace	Promontoria Lapace	Moon										
 Reiner Gamma	Reiner Gamma	Moon										
+Rima Hyginus	Rima Hyginus	Moon										
 Rupes Altai	Rupes Altai	Moon										
 Rupes Recta	Rupes Recta	Moon										
 Schickard	Schickard	Moon										
@@ -1464,6 +1470,7 @@ Timocharis	Timocharis	Moon
 Tranquility Base	Tranquility Base	Moon										
 Tycho	Tycho	Moon										
 Vendelinus	Vendelinus	Moon										
+Walter	Walter	Moon										
 Wargentin	Wargentin	Moon										
 Vy1-1	Vy1-1/VV' 4/(Vyssotsky)	PN	Cas	00h 18m 42s	53° 52' 20"	12.5	6"					
 IC 1747	IC 1747	PN	Cas	01h 57m 36s	63° 19' 19"	12.0	13"			3b		Central star mag 15.4
