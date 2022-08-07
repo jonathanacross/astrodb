@@ -1179,7 +1179,7 @@ Multiple Star OP	111	STF 1608 ABC	20210420-02-stf1608
 Multiple Star OP	112	STF 1691 ABC*	20210420-01-stf1691
 Multiple Star OP	113	STF 1830 & 1831 ABCDEFG	20210513-05-stf1830stf1831
 Multiple Star OP	114	STF 2521 ABCD	20200828-01-stf2521abcd
-Best Triples	73	1 Aqr	
+Best Triples	73	1 Aqr	20220806-04-1aqr
 Best Triples	43	10 Mon	20210329-02-10mon
 Best Triples	68	12 Com	20210420-06-12com
 Best Triples	4	12 Lyn	
@@ -1191,7 +1191,7 @@ Best Triples	38	5 Aql	20210802-01-5aql
 Best Triples	69	5 Lyn	20220127-02-5lyn
 Best Triples	44	6 Cas	
 Best Triples	76	7 LMi	20220423-03-7lmi
-Best Triples	47	Alpha Cap	
+Best Triples	47	Alpha Cap	20220806-05-alphacap
 Best Triples	1	Beta Mon	20210329-01-betamon
 Best Triples	36	BU 126	
 Best Triples	7	BU 225	
@@ -1200,7 +1200,7 @@ Best Triples	11	BU 328
 Best Triples	15	BU 575	
 Best Triples	67	S 752, BU 987	20200828-04-s752bu987
 Best Triples	70	Delta Scl	
-Best Triples	3	Epsilon Equ	
+Best Triples	3	Epsilon Equ	20220806-03-epsilonequ
 Best Triples	58	Eta Sgr	
 Best Triples	25	H 119	
 Best Triples	54	H 1647	
@@ -1230,7 +1230,7 @@ Best Triples	59	STF 1619	20210421-03-stf1619
 Best Triples	62	STF 1788	20210509-03-stf1788
 Best Triples	75	STF 2087	20220711-01-stf2087
 Best Triples	64	STF 2466	20220711-02-stf2466
-Best Triples	77	STF 2532	
+Best Triples	77	STF 2532	20220806-02-stf2532
 Best Triples	63	STF 270	
 Best Triples	53	STF 2790	
 Best Triples	6	STF 2816	20200906-02-stf2816
@@ -2490,11 +2490,11 @@ Open Cluster OP	151	NGC 6568	20210702-03-ngc6568
 Open Cluster OP	152	M 18	20220729-02-m18
 Open Cluster OP	153	NGC 6639	20220729-03-ngc6639
 Open Cluster OP	154	IC 4756	20220726-02-ic4756
-Open Cluster OP	155	NGC 6863	
-Open Cluster OP	156	NGC 6980	
+Open Cluster OP	155	NGC 6863	20220806-06-ngc6863
+Open Cluster OP	156	NGC 6980	20220806-07-ngc6980
 Open Cluster OP	157	M 73	20220729-04-m73
-Open Cluster OP	158	NGC 7005	
-Open Cluster OP	159	NGC 7134	
+Open Cluster OP	158	NGC 7005	20220806-08-ngc7005
+Open Cluster OP	159	NGC 7134	20220806-09-ngc7134
 Binocular Messier OP	1	M 2	20210923-02-m2
 Binocular Messier OP	2	M 3	20210401-01-m3
 Binocular Messier OP	3	M 4	20220621-01-m4
