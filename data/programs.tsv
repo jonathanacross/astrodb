@@ -240,7 +240,7 @@ Wimmer's List	28	NGC 7789	20180903-03-ngc7789
 Wimmer's List	29	M 27	20180712-09-m27
 Wimmer's List	30	NGC 6940	20180902-03-ngc6940
 Wimmer's List	31	M 57	20171210-02-m57
-Wimmer's List	32	NGC 6811	
+Wimmer's List	32	NGC 6811	20220719-02-ngc6811
 Wimmer's List	33	NGC 6871	20210803-01-ngc6871b1b2
 Wimmer's List	34	M 29	20180601-03-m29
 Wimmer's List	35	M 39	20180805-02-m39
@@ -300,7 +300,7 @@ Wimmer's List	88	Golf Putter	20180903-06-ngc752
 Wimmer's List	89	Ally's Braid	
 Wimmer's List	90	Spermatozoon	20220224-01-spermatozoon
 Wimmer's List	91	Crossbow	
-Wimmer's List	92	Toadstool	20190930-02-toadstool
+Wimmer's List	92	French 1	20190930-02-toadstool
 Wimmer's List	93	Backwards 5	20190708-02-backwards5
 Wimmer's List	94	Lucky 7	20181015-02-luckyseven
 Wimmer's List	95	Kemble's Kite	20191106-02-kembleskite
@@ -408,7 +408,7 @@ Asterism OP	70	Poskus 1	20190903-01-poskus1
 Asterism OP	71	M 73	20180901-03-m73
 Asterism OP	72	Little Orion	20190730-02-littleorion
 Asterism OP	73	10 Aquarii	20200815-05-10aquarii
-Asterism OP	74	Toadstool	20190930-02-toadstool
+Asterism OP	74	French 1	20190930-02-toadstool
 Asterism OP	75	Seedling	20200828-06-seedling
 Asterism OP	76	Tobacco Pipe	20191005-03-tobaccopipe
 Asterism OP	77	Delphinus Minor	20181012-02-delphinusminor
@@ -822,7 +822,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	373	NGC 6572	20190719-02-ngc6572
 500 Best DSOs	374	NGC 6603	
 500 Best DSOs	375	M 16	20180807-03-m16
-500 Best DSOs	376	M 18	20180702-03-m18
+500 Best DSOs	376	M 18	20220729-02-m18
 500 Best DSOs	377	M 17	20190530-08-m17
 500 Best DSOs	378	NGC 6624	20220623-13-ngc6624
 500 Best DSOs	379	M 28	20200713-03-m28
@@ -854,7 +854,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	405	NGC 6802	20190825-01-ngc6802
 500 Best DSOs	406	NGC 6804	20200808-01-ngc6804
 500 Best DSOs	407	M 55	20200718-05-m55
-500 Best DSOs	408	NGC 6811	
+500 Best DSOs	408	NGC 6811	20220719-02-ngc6811
 500 Best DSOs	409	NGC 6818	20210906-01-ngc6818
 500 Best DSOs	410	NGC 6819	20190726-02-ngc6819
 500 Best DSOs	411	NGC 6820	
@@ -868,8 +868,8 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	419	M 75	20200726-03-m75
 500 Best DSOs	420	NGC 6866	20200827-01-ngc6866
 500 Best DSOs	421	NGC 6888	20190726-07-ngc6888
-500 Best DSOs	422	NGC 6891	
-500 Best DSOs	423	NGC 6905	
+500 Best DSOs	422	NGC 6891	20220718-04-ngc6891
+500 Best DSOs	423	NGC 6905	20220718-05-ngc6905
 500 Best DSOs	424	NGC 6910	20210803-02-ngc6910
 500 Best DSOs	425	M 29	20180601-03-m29
 500 Best DSOs	426	NGC 6934	20190902-01-ngc6934
@@ -927,8 +927,8 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	476	B 86	
 500 Best DSOs	477	B 92	
 500 Best DSOs	478	B 93	
-500 Best DSOs	479	Berkeley 68	
-500 Best DSOs	480	Berkeley 94	
+500 Best DSOs	479	Berk 68	
+500 Best DSOs	480	Berk 94	
 500 Best DSOs	481	Harvard 20	20210920-01-harvard20
 500 Best DSOs	482	IC 1310	
 500 Best DSOs	483	IC 10	
@@ -1004,7 +1004,7 @@ RASC Best of NGC	49	NGC 3115	20200318-03-ngc3115
 RASC Best of NGC	50	NGC 3242	20190128-03-ngc3242
 RASC Best of NGC	51	NGC 3003	20210405-04-ngc3003
 RASC Best of NGC	52	NGC 3344	20200317-05-ngc3344
-RASC Best of NGC	53	NGC 3432	
+RASC Best of NGC	53	NGC 3432	20210316-04-ngc3432
 RASC Best of NGC	54	NGC 2903	20200227-03-ngc2903
 RASC Best of NGC	55	NGC 3384	20190302-03-m105ngc3384
 RASC Best of NGC	56	NGC 3521	20200315-07-ngc3521
@@ -1029,7 +1029,7 @@ RASC Best of NGC	74a	NGC 4038
 RASC Best of NGC	74b	NGC 4039	
 RASC Best of NGC	75	NGC 4361	20210510-01-ngc4361
 RASC Best of NGC	76	NGC 4216	20200415-05-ngc4216ngc4206
-RASC Best of NGC	77	NGC 4388	
+RASC Best of NGC	77	NGC 4388	20220426-01-markarian
 RASC Best of NGC	78	NGC 4438	20200415-06-ngc4435ngc4438
 RASC Best of NGC	79	NGC 4517	
 RASC Best of NGC	80	NGC 4526	20200416-03-ngc4526
@@ -1054,7 +1054,7 @@ RASC Best of NGC	97	NGC 6826	20180807-01-ngc6826
 RASC Best of NGC	98	NGC 6888	20190726-07-ngc6888
 RASC Best of NGC	99a	NGC 6960	20200817-04-ngc6960
 RASC Best of NGC	99b	NGC 6992,6995	20190703-03-veil
-RASC Best of NGC	100	NGC 7000	
+RASC Best of NGC	100	NGC 7000	20220805-02-ngc7000
 RASC Best of NGC	101	NGC 7027	20190708-06-ngc7027
 RASC Best of NGC	102	NGC 6445	20200714-01-ngc6445
 RASC Best of NGC	103	NGC 6520	20190629-01-ngc6520
@@ -1184,7 +1184,7 @@ Best Triples	43	10 Mon	20210329-02-10mon
 Best Triples	68	12 Com	20210420-06-12com
 Best Triples	4	12 Lyn	
 Best Triples	13	14 Aur	
-Best Triples	12	16,17 Dra	
+Best Triples	12	16,17 Dra	20190510-03-16dra17dra
 Best Triples	32	41 Aqr	
 Best Triples	28	41 Lep	
 Best Triples	38	5 Aql	20210802-01-5aql
@@ -1228,8 +1228,8 @@ Best Triples	27	STF 157
 Best Triples	18	STF 1604	20210416-01-stf1604
 Best Triples	59	STF 1619	20210421-03-stf1619
 Best Triples	62	STF 1788	20210509-03-stf1788
-Best Triples	75	STF 2087	
-Best Triples	64	STF 2466	
+Best Triples	75	STF 2087	20220711-01-stf2087
+Best Triples	64	STF 2466	20220711-02-stf2466
 Best Triples	77	STF 2532	
 Best Triples	63	STF 270	
 Best Triples	53	STF 2790	
@@ -1245,15 +1245,15 @@ Best Triples	22	STF 780
 Best Triples	52	STF 915	
 Best Triples	19	STF 939	
 Best Triples	51	STF 941	
-Best Triples	30	STT 371	
-Best Triples	17	STT 388	
-Best Triples	48	STT 390	
+Best Triples	30	STT 371	20220711-03-stt371
+Best Triples	17	STT 388	20220712-02-stt388
+Best Triples	48	STT 390	20220712-03-stt390
 Best Triples	57	STT 485	
 Best Triples	21	STT 525	20200806-01-stt525
 Best Triples	37	STT 64	
 Best Triples	16	STT 410	
 Best Triples	50	Tau4 Eri	
-Best Triples	74	Theta Lyr	
+Best Triples	74	Theta Lyr	20220711-04-thetalyr
 Best Triples	33	Theta Sge	
 Best Triples	5	Xi Sco	
 Best Triples	2	Zeta Cnc	20210330-01-stf1196
@@ -1825,13 +1825,13 @@ Herschel 400	365	NGC 6834	20200817-01-ngc6834
 Herschel 400	366	NGC 6866	20200827-01-ngc6866
 Herschel 400	367	NGC 6882	20200817-03-ngc6882
 Herschel 400	368	NGC 6885	20200817-02-ngc6885
-Herschel 400	369	NGC 6905	
+Herschel 400	369	NGC 6905	20220718-05-ngc6905
 Herschel 400	370	NGC 6910	20210803-02-ngc6910
 Herschel 400	371	NGC 6934	20190902-01-ngc6934
 Herschel 400	372	NGC 6939	20190826-04-ngc6939
 Herschel 400	373	NGC 6940	20180902-03-ngc6940
 Herschel 400	374	NGC 6946	20210828-01-ngc6946
-Herschel 400	375	NGC 7000	
+Herschel 400	375	NGC 7000	20220805-02-ngc7000
 Herschel 400	376	NGC 7006	20190930-01-ngc7006
 Herschel 400	377	NGC 7008	20190806-01-ngc7008
 Herschel 400	378	NGC 7009	20210906-02-ngc7009
@@ -1853,8 +1853,8 @@ Herschel 400	393	NGC 7510	20210902-03-ngc7510
 Herschel 400	394	NGC 7606	20211030-02-ngc7606
 Herschel 400	395	NGC 7662	20210901-03-ngc7662
 Herschel 400	396	NGC 7686	20210902-06-ngc7686
-Herschel 400	397	NGC 7723	
-Herschel 400	398	NGC 7727	
+Herschel 400	397	NGC 7723	20220730-06-ngc7723ngc7727
+Herschel 400	398	NGC 7727	20220730-06-ngc7723ngc7727
 Herschel 400	399	NGC 7789	20210804-06-ngc7789
 Herschel 400	400	NGC 7790	20201024-01-ngc7790
 Globular OP	3	G1	20200822-03-g1
@@ -2419,13 +2419,13 @@ Open Cluster OP	80	Berk 80	20210811-04-berk80
 Open Cluster OP	81	Steph 1	20210708-01-steph1
 Open Cluster OP	82	NGC 6716	20210702-05-ngc6716
 Open Cluster OP	83	Berk 82	20210729-04-berk82
-Open Cluster OP	84	NGC 6774	
+Open Cluster OP	84	NGC 6774	20220726-03-ngc6774
 Open Cluster OP	85	NGC 6791	20200818-01-ngc6791
 Open Cluster OP	86	NGC 6793	20210811-05-ngc6793
 Open Cluster OP	87	King 25	20210804-05-k25
 Open Cluster OP	88	NGC 6800	20210802-02-ngc6800
 Open Cluster OP	89	Berk 47	20210811-06-berk47
-Open Cluster OP	90	NGC 6811	
+Open Cluster OP	90	NGC 6811	20220719-02-ngc6811
 Open Cluster OP	91	Cr 401	20210810-04-cr401
 Open Cluster OP	92	NGC 6819	20210817-01-ngc6819
 Open Cluster OP	93	NGC 6823	20200818-02-ngc6823
@@ -2439,9 +2439,9 @@ Open Cluster OP	100	Berk 86	20210817-03-berk86
 Open Cluster OP	101	Berk 87	20210829-03-berk87
 Open Cluster OP	102	NGC 6910	20210803-02-ngc6910
 Open Cluster OP	103	Cr 421	20210829-01-cr421
-Open Cluster OP	104	Dolidze 9	
-Open Cluster OP	105	Berk 90	
-Open Cluster OP	106	French 1	
+Open Cluster OP	104	Dolidze 9	20220719-04-dolidze9
+Open Cluster OP	105	Berk 90	20220730-05-berk90
+Open Cluster OP	106	French 1	20220727-03-french1
 Open Cluster OP	107	IC 1369	20210908-02-ic1369
 Open Cluster OP	108	Berk 55	
 Open Cluster OP	109	NGC 7063	20210823-02-ngc7063
@@ -2484,15 +2484,15 @@ Open Cluster OP	145	NGC 2335	20220224-06-ngc2335
 Open Cluster OP	146	NGC 2506	20220224-07-ngc2506
 Open Cluster OP	147	NGC 2509	20220212-05-ngc2509
 Open Cluster OP	148	Cr 350	20220627-01-cr350
-Open Cluster OP	149	NGC 6514	
-Open Cluster OP	150	NGC 6546	
+Open Cluster OP	149	M 20	20220729-01-m20
+Open Cluster OP	150	NGC 6546	20220730-02-ngc6546
 Open Cluster OP	151	NGC 6568	20210702-03-ngc6568
-Open Cluster OP	152	M 18	
-Open Cluster OP	153	NGC 6639	
-Open Cluster OP	154	IC 4756	
+Open Cluster OP	152	M 18	20220729-02-m18
+Open Cluster OP	153	NGC 6639	20220729-03-ngc6639
+Open Cluster OP	154	IC 4756	20220726-02-ic4756
 Open Cluster OP	155	NGC 6863	
 Open Cluster OP	156	NGC 6980	
-Open Cluster OP	157	M 73	
+Open Cluster OP	157	M 73	20220729-04-m73
 Open Cluster OP	158	NGC 7005	
 Open Cluster OP	159	NGC 7134	
 Binocular Messier OP	1	M 2	20210923-02-m2
@@ -2609,7 +2609,7 @@ Planetary Nebula OP	50	NGC 6537	20210709-05-ngc6537
 Planetary Nebula OP	51	NGC 6565	20220701-04-ngc6565
 Planetary Nebula OP	52	NGC 6572	20210729-01-ngc6572
 Planetary Nebula OP	53	NGC 6567	20210705-04-ngc6567
-Planetary Nebula OP	54	NGC 6578	
+Planetary Nebula OP	54	NGC 6578	20220723-01-ngc6758
 Planetary Nebula OP	55	Cn 3-1	20210729-02-cn31
 Planetary Nebula OP	56	NGC 6620	20220701-03-ngc6620
 Planetary Nebula OP	57	PC 19	20210811-01-pc19
@@ -2618,41 +2618,41 @@ Planetary Nebula OP	59	NGC 6644	20210705-02-ngc6644
 Planetary Nebula OP	60	IC 4732	20220701-02-ic4732
 Planetary Nebula OP	61	M 1-54	20210710-03-m154
 Planetary Nebula OP	62	M 57	20210708-03-m57
-Planetary Nebula OP	63	IC 1295	
-Planetary Nebula OP	64	NGC 6742	
-Planetary Nebula OP	65	Sh 2-71	
+Planetary Nebula OP	63	IC 1295	20220723-02-ic1295
+Planetary Nebula OP	64	NGC 6742	20220719-01-ngc6742
+Planetary Nebula OP	65	Sh 2-71	20220727-04-sh271
 Planetary Nebula OP	66	NGC 6741	20210811-02-ngc6741
-Planetary Nebula OP	67	NGC 6751	
+Planetary Nebula OP	67	NGC 6751	20220723-04-ngc6751
 Planetary Nebula OP	68	NGC 6765	20210708-04-ngc6765
-Planetary Nebula OP	69	IC 4846	
+Planetary Nebula OP	69	IC 4846	20220723-03-ic4846
 Planetary Nebula OP	70	NGC 6778	20210811-03-ngc6778
 Planetary Nebula OP	71	NGC 6781	20210804-03-ngc6781
 Planetary Nebula OP	72	NGC 6790	20210810-03-ngc6790
 Planetary Nebula OP	73	Vy 2-2	20210804-04-vy22
-Planetary Nebula OP	74	M 3-34	
+Planetary Nebula OP	74	M 3-34	20220723-05-m334
 Planetary Nebula OP	75	NGC 6803	20210810-01-ngc6803
 Planetary Nebula OP	76	NGC 6804	20210810-02-ngc6804
 Planetary Nebula OP	77	NGC 6807	20210810-05-ngc6807
-Planetary Nebula OP	78	BD+30 3639	
+Planetary Nebula OP	78	BD+30 3639	20220718-02-bd303639
 Planetary Nebula OP	79	NGC 6818	20210906-01-ngc6818
 Planetary Nebula OP	80	NGC 6826	20210823-01-ngc6826
-Planetary Nebula OP	81	NGC 6833	
-Planetary Nebula OP	82	M 27	
+Planetary Nebula OP	81	NGC 6833	20220712-04-ngc6833
+Planetary Nebula OP	82	M 27	20220725-02-m27
 Planetary Nebula OP	83	NGC 6852	20210810-06-ngc6852
-Planetary Nebula OP	84	NGC 6884	
+Planetary Nebula OP	84	NGC 6884	20220719-03-ngc6884
 Planetary Nebula OP	85	NGC 6879	20210920-02-ngc6879
-Planetary Nebula OP	86	NGC 6881	
+Planetary Nebula OP	86	NGC 6881	20220718-06-ngc6881
 Planetary Nebula OP	87	NGC 6886	20210920-03-ngc6886
-Planetary Nebula OP	88	NGC 6891	
-Planetary Nebula OP	89	NGC 6894	
-Planetary Nebula OP	90	IC 4997	
-Planetary Nebula OP	91	NGC 6905	
-Planetary Nebula OP	92	NGC 7008	
+Planetary Nebula OP	88	NGC 6891	20220718-04-ngc6891
+Planetary Nebula OP	89	NGC 6894	20220714-02-ngc6894
+Planetary Nebula OP	90	IC 4997	20220718-03-ic4997
+Planetary Nebula OP	91	NGC 6905	20220718-05-ngc6905
+Planetary Nebula OP	92	NGC 7008	20220802-01-ngc7008
 Planetary Nebula OP	93	NGC 7009	20210906-02-ngc7009
 Planetary Nebula OP	94	NGC 7026	20210908-01-ngc7026
 Planetary Nebula OP	95	NGC 7027	20210817-04-ngc7027
-Planetary Nebula OP	96	Sh 1-89	
-Planetary Nebula OP	97	NGC 7048	
+Planetary Nebula OP	96	Sh 1-89	20220730-03-sh189
+Planetary Nebula OP	97	NGC 7048	20220727-01-ngc7048
 Planetary Nebula OP	98	Pease 1	
 Planetary Nebula OP	99	IC 5117	
 Planetary Nebula OP	100	Hu 1-2	

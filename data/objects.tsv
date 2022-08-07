@@ -11,6 +11,7 @@
 14 Aur	14 Aur	Double	Aur	05h 15m 24s	32° 41' 00"	A=5.0, B=7.3, C=9.0		AB=10, AC=14.2				
 145 CMa	145 CMa	Double	CMa	07h 16m 37s	-23° 18' 56"	5.0, 5.8		26.8	50		6.272kly	
 16,17 Dra	16,17 Dra	Double	Dra	16h 36m 12s	52° 55' 00"	A=5.4, B=6.4, C=5.5		AB=3.1, AC=90.1	AB=104, AC=193			
+16 Cyg	16 Cyg	Double	Cyg	16h 19m 42s	25° 50' 34"	5.95, 6.25						
 19 Lyn	19 Lyn	Double	Lyn	07h 22m 54s	55° 17' 00"	5.8, 6.7		14.7	316			
 2 CVn	2 CVn	Double	CVn	12h 16m 06s	40° 40' 00"	5.8, 8.1		11				! gold, blue
 24 Com	24 Com	Double	Com	12h 35m 06s	18° 23' 00"	5.1, 6.3		20.1	270			! yellow, blue
@@ -69,8 +70,6 @@ B 93	B 93	DN	Sgr	18h 16m 54s	-18° 04' 00"		8' x 3'			n/a	10kly	on northside of 
 Baby Scorpion	Baby Scorpion	Ast	Hya	14h 48m 00s	-26° 06' 00"	5.0 - 8.0	5°					Smaller version of Scorpius facing the same direction, composed of 11 stars
 Backwards 5	Backwards 5	Ast	Her	16h 37m 00s	30° 45' 00"	7.0 - 10.0	20'					Find this asterism 1 degree southwest of Zeta Herculis. Shape of number '5'.
 Barbecue Fork	Barbecue Fork	Ast	Tau	05h 43m 00s	21° 20' 00"	9.0 - 11.5	90'					Close string of stars that run east/west are the handle with a line of stars that curve upward and downward for the fork prongs. 2 stars on the west side that are north/south endthe handle.
-Berkeley 68	Berkeley 68	OCl	Per	04h 44m 30s	42° 04' 00"	9.8	12'			IV 2 p	5.47kly	113 stars
-Berkeley 94	Berkeley 94	OCl	Cep	22h 22m 54s	55° 53' 00"	8.7	3'			I 1 p n	8.6kly	12 stars
 Beta Cap	Beta Cap	Double	Cap	20h 21m 00s	-14° 47' 00"	3.2, 6.1		205.4	267			
 Beta Cep	Beta Cep	Double	Cep	21h 28m 42s	70° 34' 00"	3.2, 8.6		14.1	248			
 Beta Cyg	Beta Cyg/Albireo	Double	Cyg	19h 30m 42s	27° 58' 00"	3.2, 4.7		34.7	55			!! yellow, blue
@@ -1226,7 +1225,7 @@ Theta Lyr	Theta Lyr	Double	Lyr	19h 16m 24s	38° 08' 00"	A=4.5, B=10.1, C=11.1		A
 Theta Ser	Theta Ser	Double	Ser	18h 56m 12s	04° 12' 00"	4.6, 4.9		22.3	104			
 Theta Sge	Theta Sge	Double	Sge	20h 09m 54s	20° 55' 00"	A=6.6, B=7.5, C=8.9		AB=12, AC=90				
 Thompson 1	Thompson 1	Ast	Del	20h 38m 00s	11° 20' 00"	9.0	6'					About 13 stars  magnitude 10 to 13, and a distinctive triangle whose pointed end aims south - southwest.
-Toadstool	Toadstool/French 1	Ast	Del	21h 07m 00s	16° 20' 00"	9.0 - 12.0	15'					13 stars total. Looks like a mushroom with 6 stars as the stem, (northeast) and 7 stars as the cap (southwest)
+French 1	Toadstool/French 1	OCl+Ast	Del	21h 07m 00s	16° 20' 00"	9.0 - 12.0	15'					13 stars total. Looks like a mushroom with 6 stars as the stem, (northeast) and 7 stars as the cap (southwest)
 Tobacco Pipe	Tobacco Pipe	Ast	Cep	22h 30m 00s	70° 30' 00"	8.0 - 9.0	90'					Stem of 8 stars, pointed north. Bowl of 5 stars on south end.
 TPK 1	TPK 1	Ast	And	23h 39m 00s	47° 31' 00"	9.0 - 12.0	23' x 11'					Rough shape of a trapezium
 Tr 2	Tr 2/Cr 29	OCl	Per	02h 37m 18s	55° 59' 00"	5.9	20'					
@@ -1300,6 +1299,7 @@ Zeta UMa	Zeta UMa/Mizar & Alcor	Double	UMa	13h 23m 54s	54° 56' 00"	A=2.2, B=3.9
 3C 273	3C 273	Q	Vir	12h 29m 07s	02° 03' 07"	12.9					2006mly	easiest quasar to see
 MK 421	MK 421/UGC 6132	Q	UMa	11h 04m 27s	38° 12' 32"	13.5					407mly	
 MK 501	MK 501/UGC 10599	Q	Her	16h 53m 52s	39° 45' 37"	13.9					456mly	
+Berk 68	Berk 68	OCl	Per	04h 44m 30s	42° 04' 00"	9.8	12'			IV 2 p	5.47kly	113 stars
 Berk 58	Berk 58	OCl	Cas	00h 00m 12s	60° 56' 30"	9.7	5'					
 Berk 59	Berk 59	OCl	Cep	00h 02m 10s	67° 25' 12"		10'					
 King 13	King 13	OCl	Cas	00h 10m 10s	61° 11' 00"		5'			II2m		brightest star mag 12
@@ -1356,13 +1356,12 @@ Berk 87	Berk 87	OCl	Cyg	20h 21m 35s	37° 23' 30"		10'
 Cr 421	Cr 421	OCl	Cyg	20h 23m 18s	41° 42' 00"	10.1	8'					
 Dolidze 9	Dolidze 9	OCl	Cyg	20h 25m 33s	41° 54' 25"		3'					
 Berk 90	Berk 90	OCl	Cyg	20h 35m 16s	46° 50' 42"		3'					
-French 1	French 1	OCl	Del	21h 07m 22s	16° 17' 54"		13'					
 IC 1369	IC 1369	OCl	Cyg	21h 12m 07s	47° 46' 00"	8.8	5'					
 Berk 55	Berk 55	OCl	Cyg	21h 16m 57s	51° 45' 30"		5'					
 IC 1396	IC 1396	OCl	Cep	21h 39m 00s	57° 30' 00"	3.5	90'					
 NGC 7235	NGC 7235	OCl	Cep	22h 12m 24s	57° 16' 24"	7.7	6'					
 King 9	King 9	OCl	Lac	22h 15m 31s	54° 24' 36"		3'			I1m		brightest star mag 18
-Berk 94	Berk 94	OCl	Cep	22h 22m 53s	55° 52' 30"	8.7	3'					
+Berk 94	Berk 94	OCl	Cep	22h 22m 54s	55° 53' 00"	8.7	3'			I 1 p n	8.6kly	12 stars
 Berk 96	Berk 96	OCl	Lac	22h 29m 51s	55° 24' 22"		2'					
 King 18	King 18	OCl	Cep	22h 52m 08s	58° 18' 42"		5'			II2p		brightest star mag 12
 King 19	King 19	OCl	Cep	23h 08m 18s	60° 31' 00"	9.2	5'			III2p		
@@ -1544,7 +1543,6 @@ Cr 96	Cr 96	OCl	Mon	06h 30m 18s	02° 52' 00"	7.3	12'
 NGC 2319	NGC 2319	OCl	Mon	07h 00m 43s	03° 02' 23"	10.4	16'					
 Tombaugh 2	Tombaugh 2	OCl	Pup	07h 03m 05s	-20° 49' 00"	12.8	3'					
 Cr 350	Cr 350	OCl	Oph	17h 48m 07s	01° 21' 00"	6.1	45'					
-NGC 6514	NGC 6514	OCl	Sgr	18h 02m 42s	-22° 58' 18"	6.3	30'					
 NGC 6546	NGC 6546	OCl	Sgr	18h 07m 22s	-23° 17' 48"	8.0	15'					
 NGC 6639	NGC 6639	OCl	Sct	18h 30m 57s	-13° 08' 59"	7.8	10'					
 NGC 6863	NGC 6863	OCl	Aql	20h 05m 07s	-03° 33' 18"							
