@@ -170,7 +170,6 @@ GY Mon	GY Mon/HIP 33059	Carbon	Mon	06h 53m 11s	-04° 34' 34"	8.1 - 9.0				C6 (N3
 H 119	H 119	Double	PsA	22h 39m 42s	-28° 20' 00"	A=6.4, B=7.5, C=8.6		AB=3.1, AC=86.5				
 H 1647	H 1647/NV Peg	Double	Peg	21h 29m 00s	22° 11' 00"	A=6.1, B=10.2, C=10.6		AB=40.3, AC=41.5				
 H 2866	H 2866	Double	Sgr	19h 23m 24s	-18° 00' 00"	A=8.7, B=8.7, C=9.6		AB=23, AC=35				
-H 3053	H 3053	Double	Cas	00h 02m 30s	66° 06' 00"	5.9		15				! yellow, blue
 H 3945	H 3945	Double	CMa	07h 16m 36s	-23° 18' 00"	4.8		26.6				! orange, white
 H 4926	H 4926	Double	Sco	17h 14m 30s	-39° 46' 00"	A=6.7, B=10.1, C=11.4		AB=14.2, AC=16.4				
 H 5082	H 5082	Double	Sgr	19h 03m 12s	-19° 15' 00"	A=6.2, B=9.0, C=10.8		AB=7.5, AC=19.9				
@@ -1159,7 +1158,7 @@ STF 2944	STF 2944	Double	Aqr	22h 47m 50s	-04° 14' 43"	A=7.3, B=7.7, C=8.6		AB=1
 STF 3021	STF 3021	Double	Peg	23h 31m 24s	16° 13' 00"	A=8.1, B=9.3, C=10.8		AB=8.7, AC=118				
 STF 3041	STF 3041	Double	Peg	23h 47m 54s	17° 03' 00"	A=8.4, B=9.1, C=9.2		AB=4.1, AC=57				
 STF 3048	STF 3048	Double	Peg	23h 58m 12s	24° 20' 00"	A=7.9, B=10.2, C=11.3		AB=8.5, AC=37.5				
-STF 3053	STF 3053	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				
+STF 3053	STF 3053	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				! yellow, blue
 STF 3056 AB,C,D	STF 3056 AB,C,D	Double	And	00h 04m 40s	34° 15' 54"	A=7.7, C=10.1, D=10.6		AB,C=26, AB,D=95.3	AB,C=4, AB,D=238, AB,D=107			
 STF 3060 ABCD	STF 3060 ABCD	Double	Peg	00h 05m 55s	18° 04' 34"	A=9.3, B=9.6, C=12.0		AB=3.4, AC=66	AB=136, AC=272			
 STF 373 AB, STTA 33 AC, STU1 AD	STF 373 AB, STTA 33 AC, STU1 AD	Double	Cam	03h 22m 05s	62° 44' 29"	A=7.7, B=10.0, C=7.8, D=9.2		AB=20, AC=115.5, AD=179.2	AB=120, AC=112, AD=168			
