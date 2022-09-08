@@ -415,7 +415,7 @@ Asterism OP	77	Delphinus Minor	20181012-02-delphinusminor
 Asterism OP	78	Rocketship	20200928-03-rocketship
 Asterism OP	79	Airplane	20191005-01-airplane
 Asterism OP	80	Yacht	20191005-02-yacht
-Asterism OP	81	TPK 1	
+Asterism OP	81	TPK 1	20220907-02-tpk1
 Asterism OP	82	Home Plate	20181015-01-homeplate
 Asterism OP	83	Eddie's Coaster	20191006-03-eddiescoaster
 Asterism OP	84	Queen's Kite	20191006-02-queenskite
@@ -1213,7 +1213,7 @@ Best Triples	72	HDO 198
 Best Triples	10	Iota Cas	20210827-01-iotacas
 Best Triples	40	Iota Ori	
 Best Triples	20	Iota2 Cnc	
-Best Triples	78	Kappa And	
+Best Triples	78	Kappa And	20220905-04-kappaand
 Best Triples	34	Lambda Ori	
 Best Triples	65	Mu Per	
 Best Triples	39	Pi Ari	
@@ -1237,7 +1237,7 @@ Best Triples	6	STF 2816	20200906-02-stf2816
 Best Triples	71	STF 3021	
 Best Triples	26	STF 3041	
 Best Triples	55	STF 3048	
-Best Triples	66	STF 3053	
+Best Triples	66	STF 3053	20220905-01-stf3053
 Best Triples	42	STF 430	
 Best Triples	29	STF 479	
 Best Triples	9	STF 734	
@@ -1248,7 +1248,7 @@ Best Triples	51	STF 941
 Best Triples	30	STT 371	20220711-03-stt371
 Best Triples	17	STT 388	20220712-02-stt388
 Best Triples	48	STT 390	20220712-03-stt390
-Best Triples	57	STT 485	
+Best Triples	57	STT 485	20220907-03-stt485
 Best Triples	21	STT 525	20200806-01-stt525
 Best Triples	37	STT 64	
 Best Triples	16	STT 410	20220814-02-stt410
@@ -2557,7 +2557,7 @@ Binocular Messier OP	59	M 93	20220206-04-m93
 Binocular Messier OP	60	M 94	20210412-01-m94
 Binocular Messier OP	61	M 103	20201211-03-m103
 Planetary Nebula OP	1	NGC 40	20210913-02-ngc40
-Planetary Nebula OP	2	Vy1-1	
+Planetary Nebula OP	2	Vy 1-1	20220905-02-vy11
 Planetary Nebula OP	3	NGC 246	
 Planetary Nebula OP	4	M 76	
 Planetary Nebula OP	5	IC 1747	20211031-01-ic1747
@@ -2665,4 +2665,4 @@ Planetary Nebula OP	106	Me 2-2	20210901-02-me22
 Planetary Nebula OP	107	NGC 7354	20210902-01-ngc7354
 Planetary Nebula OP	108	NGC 7662	20210901-03-ngc7662
 Planetary Nebula OP	109	Jones 1	20210828-06-jones1
-Planetary Nebula OP	110	Abell 82	
+Planetary Nebula OP	110	Abell 82	20220905-03-abell82
