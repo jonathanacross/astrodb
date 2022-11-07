@@ -168,9 +168,8 @@ Great Square of Pegasus	Great Square of Pegasus	Ast	Peg	23h 40m 00s	23° 00' 00"
 Greg's 3	Greg's 3	Ast	Leo	09h 38m 00s	15° 17' 00"		16' x 12'					9 stars form a number '3'
 GY Mon	GY Mon/HIP 33059	Carbon	Mon	06h 53m 11s	-04° 34' 34"	8.1 - 9.0				C6 (N3/R8)		
 H 119	H 119	Double	PsA	22h 39m 42s	-28° 20' 00"	A=6.4, B=7.5, C=8.6		AB=3.1, AC=86.5				
-H 1647	H 1647	Double	Peg	21h 29m 00s	22° 11' 00"	A=6.1, B=10.2, C=10.6		AB=40.3, AC=41.5				
+H 1647	H 1647/NV Peg	Double	Peg	21h 29m 00s	22° 11' 00"	A=6.1, B=10.2, C=10.6		AB=40.3, AC=41.5				
 H 2866	H 2866	Double	Sgr	19h 23m 24s	-18° 00' 00"	A=8.7, B=8.7, C=9.6		AB=23, AC=35				
-H 3053	H 3053	Double	Cas	00h 02m 30s	66° 06' 00"	5.9		15				! yellow, blue
 H 3945	H 3945	Double	CMa	07h 16m 36s	-23° 18' 00"	4.8		26.6				! orange, white
 H 4926	H 4926	Double	Sco	17h 14m 30s	-39° 46' 00"	A=6.7, B=10.1, C=11.4		AB=14.2, AC=16.4				
 H 5082	H 5082	Double	Sgr	19h 03m 12s	-19° 15' 00"	A=6.2, B=9.0, C=10.8		AB=7.5, AC=19.9				
@@ -220,6 +219,7 @@ IC 4593	IC 4593/White-eyed Pea Nebula	PN	Her	16h 11m 42s	12° 04' 00"	11.0	12.6"
 IC 4665	IC 4665/Poseidon's Trident	OCl	Oph	17h 46m 12s	05° 43' 00"	4.2	70'			III 2 m	1.15kly	57 stars
 IC 4756	IC 4756/Tweedledee Cluster	OCl	Ser	18h 38m 54s	05° 26' 00"	4.6	40'			III 2 m	1.58kly	466 stars
 IC 4776	IC 4776	PN	Sgr	18h 45m 48s	-33° 21' 00"	12.5	7.8" x 6"			2a	20.5kly	
+IC 5070	IC 5070/Pelican Nebula	EN	Cyg	20h 51m 01s	44° 22' 28"		1'					Next to NGC 7000
 IC 5148	IC 5148	PN	Gru	21h 59m 30s	-39° 23' 00"	12.9	1.9'					annular
 IC 5271	IC 5271	Gal	PsA	22h 58m 00s	-33° 45' 00"	11.6	2.6' x 0.9'			Sb	77mly	
 Inchworm	Inchworm	Ast	Lyn	09h 05m 00s	38° 16' 00"	4.0	46'					11 stars total. 2 stars form a curve in the middle, one of which is HD 77912.
@@ -387,6 +387,7 @@ NGC 1003	NGC 1003	Gal	Per	02h 39m 18s	40° 52' 00"	11.4	5.7' x 2.2'			Sc	19mly
 NGC 1022	NGC 1022	Gal	Cet	02h 38m 30s	-06° 40' 00"	11.2	1.8' x 1.4'					Bsp small almost stellar faint
 NGC 1023	NGC 1023/Perseus Lenticular	Gal	Per	02h 40m 24s	39° 04' 00"	9.4	8.1' x 3.4'			E7p	36mly	! bright lens-shaped galaxy near M34
 NGC 1027	NGC 1027/Cr 30	OCl	Cas	02h 42m 43s	61° 37' 59"	6.7	18'					
+NGC 1042	NGC 1042	Gal	Cet	02h 40m 25s	-08° 25' 51"	11.0	2'					
 NGC 1049	NGC 1049	GCl	For	02h 39m 42s	-34° 17' 00"	12.9	24"					! Extragalactic GC - Part of Fornax Dwarf System
 NGC 1052	NGC 1052	Gal	Cet	02h 41m 06s	-08° 15' 00"	11.2	1.3' x 1'					el stellar small hint nebulosity
 NGC 1055	NGC 1055	Gal	Cet	02h 41m 48s	00° 26' 00"	11.5	6.7' x 1.5'					sp edge on elus same field M77
@@ -419,6 +420,7 @@ NGC 1395	NGC 1395	Gal	Eri	03h 38m 30s	-23° 02' 00"	9.6	5.6' x 4.6'			E3	81mly
 NGC 1398	NGC 1398	Gal	For	03h 38m 54s	-26° 20' 00"	9.5	7.6' x 5.3'			(R')SB(rs)ab	55mly	round, very faint spiral arms
 NGC 1399	NGC 1399	Gal	For	03h 38m 30s	-35° 27' 00"	9.6	6.6' x 6.1'			E1p	60mly	
 NGC 1400	NGC 1400	Gal	Eri	03h 39m 30s	-18° 41' 00"	11.0	2.5' x 2.1'			E1	19mly	
+NGC 1402	NGC 1402	Gal	Eri	03h 39m 31s	-18° 31' 25"	14.0	30" x 20"					
 NGC 1404	NGC 1404	Gal	For	03h 38m 54s	-35° 36' 00"	10.0	3.9' x 3.3'			E1	60mly	
 NGC 1407	NGC 1407	Gal	Eri	03h 40m 12s	-18° 35' 00"	9.7	4.9' x 4.5'			EO	94mly	
 NGC 1421	NGC 1421	Gal	Eri	03h 42m 30s	-13° 29' 00"	11.4	3.4' x 0.8'			SBbc	87mly	gray splinter, mottled, hooked on one end
@@ -556,7 +558,7 @@ NGC 2571	NGC 2571	OCl	Pup	08h 18m 54s	-29° 44' 00"	7.5	8'					25 stars loose ir
 NGC 2588	NGC 2588	OCl	Pup	08h 23m 12s	-32° 59' 00"	11.8	2'			II 1 p	16.1kly	20 stars
 NGC 2610	NGC 2610	PN	Hya	08h 33m 24s	-16° 09' 00"	13.0	49.8" x 46.8"			4(2)	7.22kly	annular, use high power. Central star mag 16.
 NGC 2613	NGC 2613	Gal	Pyx	08h 33m 24s	-22° 58' 00"	11.0	6.6' x 1.3'					sp edge-on elus difficult
-NGC 2627	NGC 2627	OCl	Pyx	08h 37m 18s	-29° 57' 00"	8.3	8'					40 stars small hard distinguih
+NGC 2627	NGC 2627	OCl	Pyx	08h 37m 18s	-29° 57' 00"	8.3	8'					40 stars small hard distinguish
 NGC 2655	NGC 2655	Gal	Cam	08h 55m 36s	78° 13' 00"	10.1	4.9' x 4.1'			SBO-a	63mly	bright ellipse with starlike nucleus
 NGC 2681	NGC 2681	Gal	UMa	08h 53m 30s	51° 19' 00"	10.3	3.7'			SBO-a	38mly	
 NGC 2683	NGC 2683/UFO Galaxy	Gal	Lyn	08h 52m 42s	33° 25' 00"	9.8	8.8' x 2.5'			Sb	30mly	!! nearly edge-on spiral; very bright, dark lane
@@ -940,7 +942,7 @@ NGC 6946	NGC 6946	Gal	Cep	20h 34m 54s	60° 09' 00"	8.8	11.2' x 9.8'			SBc	20mly	
 NGC 6960	NGC 6960/West Veil Nebula/The Witch Broom/Bridal Veil	SNR	Cyg	20h 45m 42s	30° 43' 00"	7.0	70' x 6'			R	1.47kly	!! Veil Nebula: west half; use filter !
 NGC 6979	NGC 6979/Fleming's Triangular Wisp/Veil Nebula	SNR	Cyg	20h 50m 28s	32° 01' 33"	7.0	7' x 3'			R	1.47kly	!! Veil Nebula: part of west half; use filter !
 NGC 6992,6995	NGC 6992,6995/East Veil Nebula	SNR	Cyg	20h 56m 24s	31° 43' 00"	7.0	78' x 8'			R	1.47kly	!! Veil Nebula: east half; use filter !
-NGC 7000	NGC 7000	EN	Cyg	20h 58m 48s	44° 20' 00"	4.0	120' x 100'					North American Nebula, best with UHC - wide field, Pelican visible also
+NGC 7000	NGC 7000/North American Nebula	EN	Cyg	20h 58m 48s	44° 20' 00"	4.0	120' x 100'					North American Nebula, best with UHC - wide field, Pelican visible also
 NGC 7006	NGC 7006	GCl	Del	21h 01m 30s	16° 11' 00"	10.6	3.6'			I	160kly	
 NGC 7008	NGC 7008/Coat Button Nebula/Fetus Nebula	PN	Cyg	21h 00m 30s	54° 33' 00"	12.0	1.43' x 1.15'			3	2.8kly	! Oval nebula with embedded stars, detail - the Fetus. Central star mag 13.2
 NGC 7009	NGC 7009/Saturn Nebula	PN	Aqr	21h 04m 12s	-11° 22' 00"	8.3	28.2" x 22.8"			4(6)	4kly	!! Saturn Nebula; small bright oval, central star mag 12.5
@@ -993,6 +995,9 @@ NGC 772	NGC 772/Fiddlehead Galaxy	Gal	Ari	01h 59m 18s	19° 00' 00"	10.3	7.5' x 4
 NGC 7723	NGC 7723	Gal	Aqr	23h 38m 54s	-12° 58' 00"	11.1	2.2' x 1.6'					Bsp faint small elusive
 NGC 7727	NGC 7727	Gal	Aqr	23h 39m 54s	-12° 18' 00"	10.7	2.7'					sp elusive slightly elongated
 NGC 7762	NGC 7762	OCl	Cep	23h 49m 54s	68° 01' 00"	10.0	15'			II 2 p	2.425kly	40 stars
+NGC 7788	NGC 7788/Cr 459	OCl	Cas	23h 56m 40s	61° 24' 00"	9.4	4'			I 2 p		
+Frolov 1	Frolov 1	OCl	Cas	23h 58m 31s	61° 45' 30"	9.2	4'					
+Harvard 21	Harvard 21	OCl	Cas	23h 55m 13s	61° 53' 29"	9.0	3'					
 NGC 7789	NGC 7789/Ghost Cluster/Star Mist Cluster/Caroline's Cluster	OCl	Cas	23h 57m 30s	56° 43' 00"	6.7	25'			II 1 r	7.6kly	!! 583*; faint but very rich cluster
 NGC 779	NGC 779	Gal	Cet	01h 59m 42s	-05° 58' 00"	11.3	3.7' x 0.9'					Bsp edge on extremely elongated
 NGC 7790	NGC 7790/The Widow's Web Cluster	OCl	Cas	23h 58m 24s	61° 13' 00"	8.5	5'			III 2 p	9.6kly	134 stars
@@ -1156,7 +1161,7 @@ STF 2944	STF 2944	Double	Aqr	22h 47m 50s	-04° 14' 43"	A=7.3, B=7.7, C=8.6		AB=1
 STF 3021	STF 3021	Double	Peg	23h 31m 24s	16° 13' 00"	A=8.1, B=9.3, C=10.8		AB=8.7, AC=118				
 STF 3041	STF 3041	Double	Peg	23h 47m 54s	17° 03' 00"	A=8.4, B=9.1, C=9.2		AB=4.1, AC=57				
 STF 3048	STF 3048	Double	Peg	23h 58m 12s	24° 20' 00"	A=7.9, B=10.2, C=11.3		AB=8.5, AC=37.5				
-STF 3053	STF 3053	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				
+STF 3053	STF 3053	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				! yellow, blue
 STF 3056 AB,C,D	STF 3056 AB,C,D	Double	And	00h 04m 40s	34° 15' 54"	A=7.7, C=10.1, D=10.6		AB,C=26, AB,D=95.3	AB,C=4, AB,D=238, AB,D=107			
 STF 3060 ABCD	STF 3060 ABCD	Double	Peg	00h 05m 55s	18° 04' 34"	A=9.3, B=9.6, C=12.0		AB=3.4, AC=66	AB=136, AC=272			
 STF 373 AB, STTA 33 AC, STU1 AD	STF 373 AB, STTA 33 AC, STU1 AD	Double	Cam	03h 22m 05s	62° 44' 29"	A=7.7, B=10.0, C=7.8, D=9.2		AB=20, AC=115.5, AD=179.2	AB=120, AC=112, AD=168			
@@ -1379,6 +1384,8 @@ Ceres	Ceres	Asteroid
 Vesta	Vesta	Asteroid										
 46P Wirtanen	46P Wirtanen	Comet										
 C2020 F3 Neowise	C2020 F3 Neowise	Comet										
+C2022 E3 ZTF	C2022 E3 ZTF	Comet										
+C2017 K2 PANSTARRS	C2017 K2 PANSTARRS	Comet										
 Sunspots	Sunspots	Sun										
 Sun	Sun	Sun										
 Apollo 15 Site	Apollo 15 Site	Moon										
@@ -1433,6 +1440,7 @@ Messier	Messier	Moon
 Milichius Pi	Milichius Pi	Moon										
 Mitchell	Mitchell	Moon										
 Mons Hadley	Mons Hadley	Moon										
+Mons Pico	Mons Pico	Moon										
 Mons Rumber	Mons Rumber	Moon										
 Montes Apennius	Montes Apennius	Moon										
 Montes Foucault	Montes Foucault	Moon										
@@ -1471,7 +1479,7 @@ Tycho	Tycho	Moon
 Vendelinus	Vendelinus	Moon										
 Walter	Walter	Moon										
 Wargentin	Wargentin	Moon										
-Vy1-1	Vy1-1/VV' 4/(Vyssotsky)	PN	Cas	00h 18m 42s	53° 52' 20"	12.5	6"					
+Vy 1-1	Vy 1-1/VV' 4/(Vyssotsky)	PN	Cas	00h 18m 42s	53° 52' 20"	12.5	6"					
 IC 1747	IC 1747	PN	Cas	01h 57m 36s	63° 19' 19"	12.0	13"			3b		Central star mag 15.4
 Abell 4	Abell 4	PN	Per	02h 45m 24s	42° 33' 05"	16.7	22"			3b		Central star mag 19.9
 M 1-4	M 1-4/(Minkowski)	PN	Per	03h 41m 43s	52° 17' 00"	13.6	6"					
