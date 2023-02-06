@@ -83,6 +83,7 @@ Big Dipper	Big Dipper	Ast	UMa	12h 30m 00s	55° 00' 00"	2.0	27° x 13°					Forme
 BL Ori	BL Ori/HIP 30564	Carbon	Ori	06h 25m 28s	14° 43' 19"	6.0 - 7.0				C6 (Nb, Tc)		
 BM Gem	BM Gem/HIP 35617	Carbon	Gem	07h 20m 59s	24° 59' 58"	8.3 - 9.2				C5(Nb)		
 Boomerang	Boomerang	Ast	CMa	07h 05m 00s	-26° 00' 00"	4.0 - 6.0	2°					Semi-circle of 8 to 10 stars centered around Delta Canis Majoris.
+Bowl of Stars	Bowl of Stars	Ast	Cas	23h 55m 00s	56° 30' 00"	8	120'					wide field EP, binoculars
 Broken Engagement Ring	Broken Engagement Ring	Ast	UMa	10h 51m 00s	56° 09' 00"	7.0	20'					About 10 stars visible. West of Beta Ursa Majoris.Stars form an incomplete circle.
 BU 1	BU 1	Double	Cas	00h 52m 49s	56° 37' 40"	A=8.5, B=9.3, C=8.8, D=9.6		AB=1.5, AC=3.9, AD=9, AE=15.8	AB=83, AC=134, AD=194, AB,E=42			In the Pacman Nebula, NGC 281
 BU 126	BU 126	Double	Oph	17h 19m 54s	-17° 45' 00"	A=6.3, B=7.6, C=11.2		AB=2.3, AC=12				
@@ -210,6 +211,7 @@ IC 2163	IC 2163	Gal	CMa	06h 16m 30s	-21° 23' 00"	11.6	3' x 1.2'			Sbc pec.	81ml
 IC 289	IC 289	PN	Cas	03h 10m 18s	61° 19' 00"	12.3	34"					dim oval smudge; use nebula filter! Central star mag 13.3
 IC 349	IC 349	RN	Tau	03h 46m 18s	23° 56' 00"		30'			R	450ly	Van den Bergh 22 in Pleiades
 IC 3568	IC 3568/Theoretician's Nebula/Lemon Slice Nebula/Baby Eskimo	PN	Cam	12h 33m 06s	82° 34' 00"	10.6	18"			2+2a	9kly	very small. Central star mag 13
+IC 405	IC 405/Flaming Star Nebula	EN	Aur	05h 18m 56s	34° 24' 24"	10	30' x 19'					
 IC 410	IC 410/The Tadpoles	EN	Aur	05h 22m 42s	33° 25' 00"	7.5	30'			E	11kly	
 IC 418	IC 418/Spirograph Nebula/Raspberry Nebula	PN	Lep	05h 27m 30s	-12° 42' 00"	10.7	13.8" x 10.8"			4	3.6kly	Small, round, pink, central star, the Raspberry. Central star mag 10.2
 IC 4329	IC 4329	Gal	Cen	13h 49m 06s	-30° 18' 00"	12.8	90" x 30"					IC4329 galaxy group, 9 galaxies in 25' field
@@ -479,7 +481,8 @@ NGC 2141	NGC 2141	OCl	Ori	06h 02m 54s	10° 27' 00"	9.4	10'			II 3 r	13.1kly	365 
 NGC 2146	NGC 2146/Dusty Hand Galaxy	Gal	Cam	06h 18m 36s	78° 21' 00"	10.6	5.7' x 3.3'			SBab/P	39mly	
 NGC 2158	NGC 2158	OCl	Gem	06h 07m 24s	24° 06' 00"	8.6	5'			II 3 r	16.5kly	973 stars
 NGC 2169	NGC 2169/Shopping Cart Cluster/"37" Cluster	OCl+Ast	Ori	06h 08m 24s	13° 58' 00"	5.9	6'			I 3 p n	3.43kly	!! 30 stars. Open cluster shows the number '37'.
-NGC 2185	NGC 2185	EN	Ori	06h 11m 06s	-06° 13' 00"	11.0	2' x 2'					brt fuzzy with NGC 2183 + 2184
+NGC 2175	NGC 2175	OC	Ori	06h 11m 02s	20° 28' 59"	6.8	18'						
+NGC 2185	NGC 2185	EN	Ori	06h 11m 06s	-06° 13' 00"	11.0	2' x 2'						brt fuzzy with NGC 2183 + 2184
 NGC 2186	NGC 2186	OCl	Ori	06h 12m 12s	05° 27' 00"	9.5	5'					30 stars loose poor some brt
 NGC 2192	NGC 2192	OCl	Aur	06h 15m 18s	39° 51' 00"	10.9	5'			III 1 p	8.15kly	45 stars
 NGC 2194	NGC 2194	OCl	Ori	06h 13m 48s	12° 48' 00"	8.5	9'			III 1 r	12.3kly	194 stars. faint, fairly rich; look for 2169 nearby
@@ -906,6 +909,7 @@ NGC 6717	NGC 6717/Palomar 9	GCl	Sgr	18h 55m 06s	-22° 42' 00"	8.4	5.4'			VIII	23
 NGC 672	NGC 672	Gal	Tri	01h 47m 54s	27° 26' 00"	10.9	7.5' x 2.6'			SBc	7mly	
 NGC 6723	NGC 6723/Chandelier Cluster	GCl	Sgr	18h 59m 36s	-36° 38' 00"	6.8	13'			VII	28.4kly	
 NGC 6726	NGC 6726	RN	CrA	19h 01m 42s	-36° 53' 00"		2'			E	425ly	
+NGC 6729	NGC 6729	RN	CrA	19h 01m 45s	-36° 57' 39"		25' x 20'					also include NGC 6726 and double star HR 7169 in the view
 NGC 6749	NGC 6749	GCl	Aql	19h 05m 15s	01° 54' 03"	12.4	6.3'			o		
 NGC 6755	NGC 6755	OCl	Aql	19h 07m 48s	04° 16' 00"	7.5	15'			IV 2 m	4.635kly	157 stars
 NGC 6756	NGC 6756	OCl	Aql	19h 08m 42s	04° 42' 00"	10.6	4'			I 2 m	4.915kly	40 stars
@@ -1022,6 +1026,7 @@ NQ Gem	NQ Gem/HIP 36623	Carbon	Gem	07h 31m 54s	24° 30' 12"	7.4 - 8.0				C6(R9)
 NSV 11960	NSV 11960/HIP 95289	Carbon	Aql	19h 23m 10s	-10° 42' 11"	7.0 - 7.1				C2 (R0)		
 NSV 13571	NSV 13571/HIP 104486	Carbon	Vul	21h 09m 59s	26° 36' 54"	8.1 - 8.2				C1 (Kp)		
 NSV 15196	NSV 15196/HIP 4252	Carbon	And	00h 54m 13s	24° 04' 01"	8.3 - 8.7				C1 (Rp)		
+17 and 21 Boo	17 and 21 Boo	Double	Boo	14h 14m 18s	51° 40' 52"	A=4.5, B=6.6, C=4.5, D=8.2	14'					yellow/white dbl stars
 Nu Dra	Nu Dra	Double	Dra	17h 32m 12s	55° 11' 00"	4.9, 4.9		62	311			
 Nu Sco	Nu Sco/Southern Double Double	Double	Sco	16h 12m 00s	-19° 28' 00"	4.4, 6.6		41.4	336			! B-m5.6, C-m6.8, D-m7.8 CD-2.3", AC - 41.4" Southern Double Double
 Omicron 2 Eri	Omicron 2 Eri	Double	Eri	04h 15m 24s	-07° 36' 00"	9.5		8.5				C-m11.1, red dwarf and white dwarf, A component is m4.5, 82" distant, Beid
@@ -1045,7 +1050,7 @@ Psi Dra	Psi Dra	Double	Dra	17h 41m 54s	72° 09' 00"	4.6, 5.6		30	16
 Queen's Kite	Queen's Kite	Ast	Cas	01h 38m 00s	58° 30' 00"	6.0 - 7.0	120' x 90'					The stars in Queen’s Kite, including Chi Cas, forms a rough pentagon shape
 Question Mark	Question Mark	Ast	Cet	02h 36m 00s	06° 42' 00"	5.0 - 7.0	60' x 120'					6 stars make a question mark, last star is is Nu Ceti.
 R CMi	R CMi/HIP 34474	Carbon	CMi	07h 08m 42s	10° 01' 26"	7.3 - 11.6				C7(Csep)		
-R Lep	R Lep/HIP 23203/Hind's Crimson Star	Carbon	Lep	04h 59m 36s	-14° 48' 22"	5.5 - 11.7				C7(N6)		! Hind's Crimson Star, 432 days
+R Lep	R Lep/HIP 23203/Hind's Crimson Star/HR 1602	Carbon	Lep	04h 59m 36s	-14° 48' 22"	5.5 - 11.7				C7(N6)		! Hind's Crimson Star, 432 days
 Ray's Shrimp	Ray's Shrimp/Howard 1	Ast	Pup	08h 11m 00s	-14° 22' 00"	7.6 - 10.9	15' x 6'					1.5 degrees south of 19 Pup.  Nose of shrimp is brightest star, tip of tail is the westernmost star.
 Red Necked Emu	Red Necked Emu/Bent Fan	Ast	Cyg	20h 14m 00s	36° 35' 00"	5.5 - 10.5	30'					About 12 stars total. Side view of emu with an 'S' shape for head and body and 4 stars at a 90 degree angle make a foot. Bright star in the tail is 29 Cygni.
 Renou 18	Renou 18	Ast	Psc	01h 14m 00s	30° 00' 00"	9.0	18'					Looks like the letter 'S' from Superman
@@ -1161,7 +1166,7 @@ STF 2944	STF 2944	Double	Aqr	22h 47m 50s	-04° 14' 43"	A=7.3, B=7.7, C=8.6		AB=1
 STF 3021	STF 3021	Double	Peg	23h 31m 24s	16° 13' 00"	A=8.1, B=9.3, C=10.8		AB=8.7, AC=118				
 STF 3041	STF 3041	Double	Peg	23h 47m 54s	17° 03' 00"	A=8.4, B=9.1, C=9.2		AB=4.1, AC=57				
 STF 3048	STF 3048	Double	Peg	23h 58m 12s	24° 20' 00"	A=7.9, B=10.2, C=11.3		AB=8.5, AC=37.5				
-STF 3053	STF 3053	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				! yellow, blue
+STF 3053	STF 3053/HR 9094	Double	Cas	00h 02m 36s	66° 06' 00"	A=6.0, B=7.2, C=11.0		AB=15.1, AC=98.5				! yellow, blue
 STF 3056 AB,C,D	STF 3056 AB,C,D	Double	And	00h 04m 40s	34° 15' 54"	A=7.7, C=10.1, D=10.6		AB,C=26, AB,D=95.3	AB,C=4, AB,D=238, AB,D=107			
 STF 3060 ABCD	STF 3060 ABCD	Double	Peg	00h 05m 55s	18° 04' 34"	A=9.3, B=9.6, C=12.0		AB=3.4, AC=66	AB=136, AC=272			
 STF 373 AB, STTA 33 AC, STU1 AD	STF 373 AB, STTA 33 AC, STU1 AD	Double	Cam	03h 22m 05s	62° 44' 29"	A=7.7, B=10.0, C=7.8, D=9.2		AB=20, AC=115.5, AD=179.2	AB=120, AC=112, AD=168			
@@ -1396,6 +1401,7 @@ Arago alpha & Arago beta	Arago alpha & Arago beta	Moon
 Aristarchus Plateau	Aristarchus Plateau	Moon										
 Aristoteles	Aristoteles	Moon										
 Arzachel	Arzachel	Moon										
+Atlas	Atlas	Moon										
 Birmingham	Birmingham	Moon										
 Bailly	Bailly	Moon										
 Billy	Billy	Moon										
@@ -1407,6 +1413,7 @@ Catharina	Catharina	Moon
 Cauchy, Cauchy Omega, Cauchy Tau	Cauchy, Cauchy Omega, Cauchy Tau	Moon										
 Censorinus	Censorinus	Moon										
 Clavius	Clavius	Moon										
+Crescent Moon	Crescent Moon	Moon										
 Cruger	Cruger	Moon										
 Delaunay	Delaunay	Moon										
 Epigenes	Epigenes	Moon										
@@ -1426,6 +1433,7 @@ Hesiodus A	Hesiodus A	Moon
 Hipparchus	Hipparchus	Moon										
 J. Herschel	J. Herschel	Moon										
 Julius Caesar	Julius Caesar	Moon										
+Kepler	Kepler	Moon										
 Kies Pi	Kies Pi	Moon										
 Lacus Mortis	Lacus Mortis	Moon										
 Langrenus	Langrenus	Moon										
@@ -1482,6 +1490,9 @@ Tycho	Tycho	Moon
 Vendelinus	Vendelinus	Moon										
 Walter	Walter	Moon										
 Wargentin	Wargentin	Moon										
+Comet	Comet	Comet										any comet
+Conjunction	Conjunction	Planet										any conjunction
+Eclipse	Eclipse	Sun										lunar or solar	
 Vy 1-1	Vy 1-1/VV' 4/(Vyssotsky)	PN	Cas	00h 18m 42s	53° 52' 20"	12.5	6"					
 IC 1747	IC 1747	PN	Cas	01h 57m 36s	63° 19' 19"	12.0	13"			3b		Central star mag 15.4
 Abell 4	Abell 4	PN	Per	02h 45m 24s	42° 33' 05"	16.7	22"			3b		Central star mag 19.9
