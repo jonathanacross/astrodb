@@ -1393,6 +1393,7 @@ Neptune	Neptune	Planet
 Ceres	Ceres	Asteroid										
 Vesta	Vesta	Asteroid										
 46P Wirtanen	46P Wirtanen	Comet										
+C2023 E1 ATLAS	C2023 E1 ATLAS	Comet										
 C2020 F3 Neowise	C2020 F3 Neowise	Comet										
 C2022 E3 ZTF	C2022 E3 ZTF	Comet										
 C2017 K2 PANSTARRS	C2017 K2 PANSTARRS	Comet										
@@ -1420,6 +1421,8 @@ Censorinus	Censorinus	Moon
 Clavius	Clavius	Moon										
 Crescent Moon	Crescent Moon	Moon										
 Cruger	Cruger	Moon										
+Davy	Davy	Moon										
+Davy Y	Davy Y	Moon										
 Delaunay	Delaunay	Moon										
 Epigenes	Epigenes	Moon										
 Eratosthenes	Eratosthenes	Moon										
@@ -1449,6 +1452,7 @@ Manilus	Manilus	Moon
 Mairan	Mairan	Moon										
 Mare Crisium	Mare Crisium	Moon										
 Mare Imbrium	Mare Imbrium	Moon										
+Mare Vaporum	Mare Vaporum	Moon										
 Marius Hills	Marius Hills	Moon										
 Maurolycus	Maurolycus	Moon										
 Mersenius	Mersenius	Moon										
@@ -1458,7 +1462,7 @@ Mitchell	Mitchell	Moon
 Mons Hadley	Mons Hadley	Moon										
 Mons Pico	Mons Pico	Moon										
 Mons Rumber	Mons Rumber	Moon										
-Montes Apennius	Montes Apennius	Moon										
+Montes Apenninus	Montes Apenninus	Moon										
 Montes Foucault	Montes Foucault	Moon										
 Moon and major features	Moon and major features	Moon										
 Moon Occultation	Moon Occultation	Moon										
@@ -1483,9 +1487,11 @@ Rima Hyginus	Rima Hyginus	Moon
 Rupes Altai	Rupes Altai	Moon										
 Rupes Recta	Rupes Recta	Moon										
 Schickard	Schickard	Moon										
+Sinus Aestuum	Sinus Aestuum	Moon										
 Sinus Asperitatis	Sinus Asperitatis	Moon										
 Sinus Concordiae	Sinus Concordiae	Moon										
 Sinus Iridum	Sinus Iridum	Moon										
+Sinus Medii	Sinus Medii	Moon										
 Stadius Catanae	Stadius Catanae	Moon										
 Taruntius	Taruntius	Moon										
 Theophilus	Theophilus	Moon										
