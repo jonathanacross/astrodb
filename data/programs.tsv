@@ -463,7 +463,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	14	NGC 225	20201024-02-ngc225
 500 Best DSOs	15	NGC 246	20220925-05-ngc246
 500 Best DSOs	16	NGC 247	20211030-03-ngc247
-500 Best DSOs	17	NGC 253	
+500 Best DSOs	17	NGC 253	20230909-06-ngc253
 500 Best DSOs	18	NGC 278	20201108-02-ngc278
 500 Best DSOs	19	NGC 281	20191006-04-ngc281
 500 Best DSOs	20	NGC 288	20211030-05-ngc288
@@ -911,7 +911,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	462	NGC 7789	20210804-06-ngc7789
 500 Best DSOs	463	NGC 7790	20201024-01-ngc7790
 500 Best DSOs	464	NGC 7793	
-500 Best DSOs	465	NGC 7814	
+500 Best DSOs	465	NGC 7814	20230909-08-ngc7814
 500 Best DSOs	466	NGC 1554,1555	
 500 Best DSOs	467	NGC 1973,1975	
 500 Best DSOs	468	NGC 1977	20230120-04-ngc1977
@@ -2653,8 +2653,7 @@ Planetary Nebula OP	94	NGC 7026	20210908-01-ngc7026
 Planetary Nebula OP	95	NGC 7027	20210817-04-ngc7027
 Planetary Nebula OP	96	Sh 1-89	20220730-03-sh189
 Planetary Nebula OP	97	NGC 7048	20220727-01-ngc7048
-Planetary Nebula OP	98a1	Pease 1 attempt 1	20220730-04-pease1
-Planetary Nebula OP	98a2	Pease 1 attempt 2	20220805-03-pease1
+Planetary Nebula OP	98	Pease 1	20230909-04-m15pease1
 Planetary Nebula OP	99	IC 5117	20220816-02-ic5117
 Planetary Nebula OP	100	Hu 1-2	20220816-01-hu12
 Planetary Nebula OP	101	NGC 7094	20210827-05-ngc7094
@@ -2668,13 +2667,13 @@ Planetary Nebula OP	108	NGC 7662	20210901-03-ngc7662
 Planetary Nebula OP	109	Jones 1	20210828-06-jones1
 Planetary Nebula OP	110	Abell 82	20220905-03-abell82
 Sketching OP	1	STF 3053	
-Sketching OP	2	NGC 7814	
+Sketching OP	2	NGC 7814	20230909-08-ngc7814
 Sketching OP	3	NGC 55	
 Sketching OP	4	M 31	
-Sketching OP	5	NGC 247	
-Sketching OP	6	NGC 253	
+Sketching OP	5	NGC 247	20230909-07-ngc247
+Sketching OP	6	NGC 253	20230909-06-ngc253
 Sketching OP	7	NGC 281	
-Sketching OP	8	NGC 404	
+Sketching OP	8	NGC 404	20230913-02-ngc404
 Sketching OP	9	NGC 457	
 Sketching OP	10	NGC 752	
 Sketching OP	11a	NGC 869	
@@ -2757,26 +2756,26 @@ Sketching OP	76	NGC 6729
 Sketching OP	77	Beta Cyg	20230817-01-albireo
 Sketching OP	78	NGC 6791	
 Sketching OP	79	Cr 399	20230817-02-cr399
-Sketching OP	80	NGC 6818	20230818-02-ngc6818
-Sketching OP	80	NGC 6822	
+Sketching OP	80	NGC 6818	20230909-03-ngc6818ngc6822
+Sketching OP	80	NGC 6822	20230909-03-ngc6818ngc6822
 Sketching OP	81	NGC 6819	
 Sketching OP	82	M 27	
 Sketching OP	83	NGC 6888	20230818-03-ngc6888
 Sketching OP	84	NGC 6910	
 Sketching OP	85	NGC 6946	20230818-06-ngc6946
-Sketching OP	86	NGC 6960	
-Sketching OP	87	NGC 6992,6995	
+Sketching OP	86	NGC 6960	20230909-01-ngc6960
+Sketching OP	87	NGC 6992,6995	20230909-02-ngc69926995
 Sketching OP	88	NGC 7008	
 Sketching OP	89	NGC 7009	20230818-05-ngc7009
 Sketching OP	90	NGC 7026	
-Sketching OP	91	M 15	
+Sketching OP	91	M 15	20230909-04-m15pease1
 Sketching OP	92	Mu Cep	
 Sketching OP	93	NGC 7243	
-Sketching OP	94	NGC 7293	
+Sketching OP	94	NGC 7293	20230909-05-ngc7293
 Sketching OP	95	NGC 7635	
 Sketching OP	96	M 52	
 Sketching OP	97	NGC 7662	
-Sketching OP	98	Bowl of Stars	
+Sketching OP	98	Bowl of Stars	20230913-01-bowlofstarsngc7789
 Sketching OP	99	NGC 7789	
 Sketching OP	100	Crescent Moon	
 Sketching OP	101a	Atlas	
@@ -2788,7 +2787,7 @@ Sketching OP	105	Clavius
 Sketching OP	106	Kepler	
 Sketching OP	107	Mare Imbrium	
 Sketching OP	108	Jupiter	
-Sketching OP	109	Saturn	
+Sketching OP	109	Saturn	20230812-03-saturn
 Sketching OP	110	Mars	
 Sketching OP	111	Sunspots	20230520-01-sunspots
 Sketching OP	112	C2023 E1 ATLAS	20230717-01-c2023e1atlas

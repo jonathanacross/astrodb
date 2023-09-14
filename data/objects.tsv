@@ -83,7 +83,7 @@ Big Dipper	Big Dipper	Ast	UMa	12h 30m 00s	55° 00' 00"	2.0	27° x 13°					Forme
 BL Ori	BL Ori/HIP 30564	Carbon	Ori	06h 25m 28s	14° 43' 19"	6.0 - 7.0				C6 (Nb, Tc)		
 BM Gem	BM Gem/HIP 35617	Carbon	Gem	07h 20m 59s	24° 59' 58"	8.3 - 9.2				C5(Nb)		
 Boomerang	Boomerang	Ast	CMa	07h 05m 00s	-26° 00' 00"	4.0 - 6.0	2°					Semi-circle of 8 to 10 stars centered around Delta Canis Majoris.
-Bowl of Stars	Bowl of Stars	Ast	Cas	23h 55m 00s	56° 30' 00"	8	120'					wide field EP, binoculars
+Bowl of Stars	Bowl of Stars	Ast	Cas	23h 55m 00s	56° 30' 00"	8	120'					wide field EP, binoculars. NGC 7789 in the center.
 Broken Engagement Ring	Broken Engagement Ring	Ast	UMa	10h 51m 00s	56° 09' 00"	7.0	20'					About 10 stars visible. West of Beta Ursa Majoris.Stars form an incomplete circle.
 BU 1	BU 1	Double	Cas	00h 52m 49s	56° 37' 40"	A=8.5, B=9.3, C=8.8, D=9.6		AB=1.5, AC=3.9, AD=9, AE=15.8	AB=83, AC=134, AD=194, AB,E=42			In the Pacman Nebula, NGC 281
 BU 126	BU 126	Double	Oph	17h 19m 54s	-17° 45' 00"	A=6.3, B=7.6, C=11.2		AB=2.3, AC=12				
@@ -1556,8 +1556,7 @@ NGC 6886	NGC 6886	PN	Sge	20h 12m 43s	19° 59' 23"	12.5	4"			2+3		Central star ma
 IC 4997	IC 4997	PN	Sge	20h 20m 09s	16° 43' 54"	11.3	2"			1		Central star mag 12.2
 Sh 1-89	Sh 1-89/Sharpless 1-89/Moth Nebula	PN	Cyg	21h 14m 08s	47° 46' 22"	14.8	1.1'			3a		Central star mag 19.1
 Pease 1	Pease 1	PN	Peg	21h 30m 01s	12° 10' 11"	14.9	1"			1		In M 15. Central star mag 14.9
-Pease 1 attempt 1	Pease 1 attempt 1	PN	Peg	21h 30m 01s	12° 10' 11"	14.9	1"			1		In M 15. Central star mag 14.9
-Pease 1 attempt 2	Pease 1 attempt 2	PN	Peg	21h 30m 01s	12° 10' 11"	14.9	1"			1		In M 15. Central star mag 14.9
+Pease 1 attempt	Pease 1 attempt	PN	Peg	21h 30m 01s	12° 10' 11"	14.9	1"			1		In M 15. Central star mag 14.9
 IC 5117	IC 5117	PN	Cyg	21h 32m 31s	44° 35' 49"	13.3	2"			2		Central star mag 16.7
 Hu 1-2	Hu 1-2/Baby Dumbbell	PN	Cyg	21h 33m 08s	39° 38' 10"	12.7	32"			2		Central star mag 17.3
 NGC 7094	NGC 7094/K 1-19	PN	Peg	21h 36m 53s	12° 47' 19"	13.4	1.7'			4		Central star mag 13.8
