@@ -37,10 +37,23 @@ body {
 
 .formgroup input { display:inline-block; width: 110px; }
 
+.listquery input { width: 110px; }
 
 .sidebar {
   height: 100%;
   width: 180px; 
+  position: fixed;
+  z-index: 2; 
+  top: 50px;
+  left: 0;
+  background-color: #c2cad6;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar_objquery {
+  height: 100%;
+  width: 320px; 
   position: fixed;
   z-index: 2; 
   top: 50px;

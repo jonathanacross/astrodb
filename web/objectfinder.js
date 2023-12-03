@@ -1,11 +1,12 @@
 /* jshint esversion: 6 */
 
 import { tsvToJson, keyByColumn, keyByColumnAsLists } from './tsv_utils.js'
-import { ObjectFilter, getMatchingObjectIds } from './query.js'
+import { ObjectFilter } from './query.js'
+import { objectTypes, constellations } from './astrodata.js'
 
-var observations
-var objects
-var programs
+let observations
+let objects
+let programs
 
 function onlyUnique (value, index, self) {
   return self.indexOf(value) === index
@@ -130,102 +131,9 @@ function getSortFunction (sortMethod) {
       return x.obs_id.localeCompare(y.obs_id)
     }
   } else {
-    // RA is the average of the most eastward and most westward RA.
-    // From https://en.wikipedia.org/wiki/IAU_designated_constellations_by_area
     return function (x, y) {
       // First sort by constellation
-      const conToRa = {
-        And: '00 48.46',
-        Ant: '10 16.43',
-        Aps: '16 08.65',
-        Aql: '19 40.02',
-        Aqr: '22 17.38',
-        Ara: '17 22.49',
-        Ari: '02 38.16',
-        Aur: '06 04.42',
-        Boo: '14 42.64',
-        Cae: '04 42.27',
-        Cam: '08 51.37',
-        Cap: '21 02.93',
-        Car: '08 41.70',
-        Cas: '01 19.16',
-        Cen: '13 04.27',
-        Cep: '02 32.64',
-        Cet: '01 40.10',
-        Cha: '10 41.53',
-        Cir: '14 34.54',
-        CMa: '06 49.74',
-        CMi: '07 39.17',
-        Cnc: '08 38.96',
-        Col: '05 51.76',
-        Com: '12 47.27',
-        CrA: '18 38.79',
-        CrB: '15 50.59',
-        Crt: '11 23.75',
-        Cru: '12 26.99',
-        Crv: '12 26.52',
-        CVn: '13 06.96',
-        Cyg: '20 35.28',
-        Del: '20 41.61',
-        Dor: '05 14.51',
-        Dra: '15 08.64',
-        Equ: '21 11.26',
-        Eri: '03 18.02',
-        For: '02 47.88',
-        Gem: '07 04.24',
-        Gru: '22 27.39',
-        Her: '17 23.16',
-        Hor: '03 16.56',
-        Hya: '11 36.73',
-        Hyi: '02 20.65',
-        Ind: '21 58.33',
-        Lac: '22 27.68',
-        Leo: '10 40.03',
-        Lep: '05 33.95',
-        Lib: '15 11.96',
-        LMi: '10 14.72',
-        Lup: '15 13.21',
-        Lyn: '07 59.53',
-        Lyr: '18 51.17',
-        Men: '05 24.90',
-        Mic: '20 57.88',
-        Mon: '07 03.63',
-        Mus: '12 35.28',
-        Nor: '15 54.18',
-        Oct: '23 00.00',
-        Oph: '17 23.69',
-        Ori: '05 34.59',
-        Pav: '19 36.71',
-        Peg: '22 41.84',
-        Per: '03 10.50',
-        Phe: '00 55.91',
-        Pic: '05 42.46',
-        PsA: '22 17.07',
-        Psc: '00 28.97',
-        Pup: '07 15.48',
-        Pyx: '08 57.16',
-        Ret: '03 55.27',
-        Scl: '00 26.28',
-        Sco: '16 53.24',
-        Sct: '18 40.39',
-        Ser: '16 57.04',
-        Sex: '10 16.29',
-        Sge: '19 39.05',
-        Sgr: '19 05.94',
-        Tau: '04 42.13',
-        Tel: '19 19.54',
-        TrA: '16 04.95',
-        Tri: '02 11.07',
-        Tuc: '23 46.64',
-        UMa: '11 18.76',
-        UMi: '15 00.00',
-        Vel: '09 34.64',
-        Vir: '13 24.39',
-        Vol: '07 47.73',
-        Vul: '20 13.88',
-        // things with no constellation put last
-        '': '99 99.99'
-      }
+      const conToRa = Object.fromEntries(constellations.map(c => [c.shortName, c.ra]))
       if (x.obj_con !== y.obj_con) {
         return conToRa[x.obj_con].localeCompare(conToRa[y.obj_con])
       }
@@ -260,44 +168,27 @@ function raStringToFloat (raStr) {
 }
 
 function doObjectQuery () {
-  const namequery_element = document.getElementById('name')
-  const type_element = document.getElementById('type')
-  const constellation_element = document.getElementById('constellation')
-  const dateobs_element = document.getElementById('dateobs')
-  const sort_method = document.querySelector('input[name="sort"]:checked').value
+  // TODO: remove these intermediate variables
+  const nameElement = document.getElementById('name')
+  const typeElement = document.getElementById('type')
+  const constellationElement = document.getElementById('constellation')
 
-  let newquery = 'show=objects'
-  let newname = null
-  if (namequery_element.value !== '') {
-    newquery += '&name=' + encodeURIComponent(namequery_element.value)
-    newname = namequery_element.value
-  }
-  let newtype = null
-  if (type_element.value !== '') {
-    newquery += '&type=' + encodeURIComponent(type_element.value)
-    newtype = type_element.value
-  }
-  let newcon = null
-  if (constellation_element.value !== '') {
-    newquery += '&con=' + encodeURIComponent(constellation_element.value)
-    newcon = constellation_element.value
-  }
-  let newdate = null
-  if (dateobs_element.value !== '') {
-    newquery += '&date=' + encodeURIComponent(dateobs_element.value)
-    newdate = dateobs_element.value
-  }
-  newquery += '&sortby=' + encodeURIComponent(sort_method)
+  const sortMethod = document.querySelector('input[name="sort"]:checked').value
+
+  const filter = new ObjectFilter()
+  filter.setNameLike(nameElement.value)
+  filter.setTypeIs(typeElement.value)
+  filter.setConIs(constellationElement.value)
+
+  let newquery = 'show=objects' + filter.getUrlParameters()
+  newquery += '&sortby=' + encodeURIComponent(sortMethod)
 
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
-  const filter = new ObjectFilter();
-  filter.nameIs = '118 Tau';
-  const matchingObjectIds = getMatchingObjectIds(objects, filter)
-
+  const matchingObjectIds = filter.getMatchingObjectIds(objects)
 
   showObjectList(matchingObjectIds)
-  //showObjectList(Object.keys(matchingObjects))
+  // showObjectList(Object.keys(matchingObjects))
   // showObjectsForObjectQuery(newname, newtype, newcon, newdate, sort_method);
 }
 
@@ -413,7 +304,7 @@ function updateControlsFromSearchParams () {
     namequery_element.value = name_query
     type_element.value = type_query
     con_element.value = con_query
-    date_element.value = date_query
+    // date_element.value = date_query
     sort_method_element.checked = true
   }
 }
@@ -439,13 +330,25 @@ function setupControls () {
     }
   }
   cons = Array.from(cons).sort()
-  // let conpicker = document.getElementById("constellation_list");
-  // for (const c of cons) {
-  //    let option = document.createElement("option");
-  //    option.value = c;
-  //    option.text = c;
-  //    conpicker.appendChild(option);
-  // }
+  const conpicker = document.getElementById('constellation_list')
+  for (const c of cons) {
+    if (c !== '') {
+      const option = document.createElement('option')
+      option.value = c
+      option.text = c
+      conpicker.appendChild(option)
+    }
+  }
+
+  const objTypeList = document.getElementById('type_list')
+  for (const objType of objectTypes) {
+    if (objType.shortName !== '') {
+      const option = document.createElement('option')
+      option.value = objType.shortName
+      option.text = objType.fullName
+      objTypeList.appendChild(option)
+    }
+  }
 
   const objbutton = document.getElementById('objshow')
   objbutton.addEventListener('click', doObjectQuery)

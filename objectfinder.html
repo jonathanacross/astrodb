@@ -13,56 +13,57 @@
         <h1>Jonathan's Astronomical Sketches</h1>
     </div>
 
-    <div class="sidebar">
+    <div class="sidebar_objquery">
 
       <div class="query">
   
         <div class="listquery">
           <p class="queryheader">List Objects</p>
 
-          <div class="formgroup">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-          </div>
+          <table>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td>contains</td>
+              <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+              <td><label for="type">Type</label></td>
+              <td>is</td>
+              <td>
+                <input list="type_list" name="type" type="text" id="type" multiple>
+                <datalist id="type_list"></datalist>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="constellation">Con</label></td>
+              <td>is</td>
+              <td>
+                <input list="constellation_list" name="constellation" type="text" id="constellation" multiple>
+                <datalist id="constellation_list"></datalist>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" id="ra_min" name="ra_min"></td>
+              <td>&le; RA &le;</td>
+              <td><input type="text" id="ra_max" name="ra_max"></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="dec_min" name="dec_min"></td>
+              <td>&le; Dec &le;</td>
+              <td><input type="text" id="dec_max" name="dec_max"></td>
+            </tr>
+            <tr>
+              <td><label for="mag">Mag</label></td>
+              <td>&le;</td>
+              <td><input type="text" id="mag" name="mag"></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="size_min" name="size_min"></td>
+              <td>&le; Size &le;</td>
+              <td><input type="text" id="size_max" name="size_max"></td>
+            </tr>
+          </table>
   
-          <div class="formgroup">
-            <label for="type">Type:</label>
-            <input list="type_list" name="type" type="text" id="type" multiple>
-            <datalist id="type_list">
-              <option value="Ast">Asterism</option>
-              <option value="Asteroid">Asteroid</option>
-              <option value="Carbon">Carbon Star</option>
-              <option value="Comet">Comet</option>
-              <option value="Con">Constellation</option>
-              <option value="DN">Dark Nebula</option>
-              <option value="Double">Double/Multiple Star</option>
-              <option value="EN">Emission Nebula</option>
-              <option value="Gal">Galaxy</option>
-              <option value="GCl">Globular Cluster</option>
-              <option value="Moon">Moon / Lunar feature</option>
-              <option value="OCl">Open Cluster</option>
-              <option value="Planet">Planet</option>
-              <option value="PN">Planetary Nebula</option>
-              <option value="Q">Quasar</option>
-              <option value="RN">Reflection Nebula</option>
-              <option value="Star Cloud">Star Cloud</option>
-              <option value="Sun">Sun</option>
-              <option value="SNR">Supernova Remnant</option>
-              <option value="Variable">Variable Star</option>
-            </datalist>
-          </div>
-  
-          <div class="formgroup">
-            <label for="constellation">Con:</label>
-            <input list="constellation_list" name="constellation" type="text" id="constellation"  multiple>
-            <datalist id="constellation_list">
-            </datalist>
-          </div>
-
-          <div class="formgroup">
-            <label for="dateobs">Date:</label>
-            <input type="text" id="dateobs" name="dateobs" placeholder="YYYY-MM-DD">
-          </div>
   
           <div class=radiogroup>
             <legend>Sort by</legend>
