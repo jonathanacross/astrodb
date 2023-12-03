@@ -14,8 +14,16 @@ function onlyUnique (value, index, self) {
 
 function createObjectListingTable (objectIds, columns) {
   const objTable = document.createElement('table')
-  // let tableHeader = document.createElement("thead");
-  // let headerRow = document.createElement("tr");
+  const tableHeader = document.createElement('thead')
+  const headerRow = document.createElement('tr')
+  for (const col of columns) {
+    const cell = document.createElement('th')
+    const cellText = document.createTextNode(col)
+    cell.appendChild(cellText)
+    headerRow.appendChild(cell)
+  }
+  tableHeader.appendChild(headerRow)
+  objTable.appendChild(tableHeader)
 
   const tableBody = document.createElement('tbody')
 
@@ -48,7 +56,7 @@ function showObjectList (objectIds) {
   // resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
   resultsHeader.appendChild(resultCount)
 
-  const resultsArea = document.getElementById('results_list')
+  const resultsArea = document.getElementById('results_table')
 
   // clear old results
   while (resultsArea.hasChildNodes()) {

@@ -72,6 +72,31 @@ body {
     margin-top: 60px; /* same as header height*/
 }
 
+.results_objquery {
+    margin-left: 320px; /* must be same as width of .objquery */
+    margin-top: 60px; /* same as header height*/
+}
+
+.results_objquery table {
+  border-collapse: collapse;
+  background-color: #dae2ed;
+}
+
+.results_objquery table td {
+  border: 1px solid #bbb;
+  padding: 8px;
+}
+
+.results_objquery table th {
+  background-color: #91a4bb;
+  font-weight: bold;
+  border: 1px solid #bbb;
+  padding: 8px;
+}
+
+.results_objquery tr:nth-child(even){background-color: #e9eff7;}
+
+
 .error {
     color: red;
 }
