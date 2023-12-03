@@ -394,7 +394,16 @@ function setupControls () {
   showResults()
 }
 
-function handleErrors (responses) {
+function displayErrors (err) {
+  const errorMsg = document.createElement('p')
+  errorMsg.className = 'error'
+  errorMsg.innerText = err
+
+  const resultsArea = document.getElementById('error_messages')
+  resultsArea.appendChild(errorMsg)
+}
+
+function checkResponses (responses) {
   for (const response of responses) {
     if (!response.ok) {
       throw Error(response.url + ' ' + response.statusText)
@@ -415,10 +424,11 @@ function LoadDataAndSetupPage () {
     fetch('data/objects.tsv'),
     fetch('data/programs.tsv')
   ])
-    .then(handleErrors)
+    .then(checkResponses)
     .then(result => Promise.all(result.map(v => v.text())))
     .then(responses => ParseData(responses))
     .then(setupControls)
+    .catch(err => displayErrors(err))
 }
 
 window.onload = LoadDataAndSetupPage

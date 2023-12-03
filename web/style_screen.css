@@ -99,6 +99,8 @@ body {
 
 .error {
     color: red;
+    font-size: medium;
+    font-family: monospace;
 }
 
 #results_list {
