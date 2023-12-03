@@ -1,30 +1,56 @@
+function nullOrEmpty(str) {
+  return str !== null && str !== ''
+}
+
 export class ObjectFilter {
   #nameIs = null
   #nameLike = null
   #typeIs = null
   #conIs = null
+  #raMin = null
+  #raMax = null
+  #decMin = null
+  #decMax = null
 
   setNameIs (nameIs) {
-    if (nameIs !== null && nameIs !== '') {
-      this.#nameIs = nameIs
+    if (!nullOrEmpty(nameIs)) {
+      this.#nameIs = nameIs.toLowerCase()
     }
   }
 
   setNameLike (nameLike) {
-    if (nameLike !== null && nameLike !== '') {
-      this.#nameLike = nameLike
+    if (!nullOrEmpty(nameLike)) {
+      this.#nameLike = nameLike.toLowerCase()
     }
   }
 
   setTypeIs (typeIs) {
-    if (typeIs !== null && typeIs !== '') {
+    if (!nullOrEmpty(typeIs)) {
       this.#typeIs = typeIs
     }
   }
 
   setConIs (conIs) {
-    if (conIs !== null && conIs !== '') {
+    if (!nullOrEmpty(conIs)) {
       this.#conIs = conIs
+    }
+  }
+
+  setRaRange(raMin, raMax) {
+    if (!nullOrEmpty(raMin)) {
+        this.#raMin = raMin
+    }
+    if (!nullOrEmpty(raMax)) {
+        this.#raMax = raMax
+    }
+  }
+
+  setDecRange(decMin, decMax) {
+    if (!nullOrEmpty(decMin)) {
+        this.#decMin = decMin
+    }
+    if (!nullOrEmpty(decMax)) {
+        this.#decMax = decMax
     }
   }
 
@@ -46,12 +72,11 @@ export class ObjectFilter {
   }
 
   #objectMatches (object) {
-    const objectNames = object.Names.split('/')
+    const objectNames = object.Names.toLowerCase().split('/')
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
       return false
     }
-    // TODO: handle case insensitivity; also seems only to handle exact matches
-    if (this.#nameLike !== null && objectNames.every((name) => !this.#nameLike.includes(name))) {
+    if (this.#nameLike !== null && objectNames.every((name) => !name.includes(this.#nameLike))) {
       return false
     }
     if (this.#typeIs !== null && this.#typeIs !== object.Type) {

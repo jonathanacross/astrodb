@@ -90,17 +90,15 @@ function showObjectList (objectIds, showAsText) {
   const columns = ['#id', 'Names', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
 
   if (showAsText) {
-  const text = createObjectListingText(objectIds, columns)
-  resultsArea.appendChild(text)
+    const text = createObjectListingText(objectIds, columns)
+    resultsArea.appendChild(text)
   } else {
-  const table = createObjectListingTable(objectIds, columns)
-  resultsArea.appendChild(table)
+    const table = createObjectListingTable(objectIds, columns)
+    resultsArea.appendChild(table)
   }
-
 
   invert()
 }
-
 
 function doProgramQuery () {
   const programpicker = document.getElementById('program')
@@ -213,6 +211,8 @@ function doObjectQuery () {
   filter.setNameLike(document.getElementById('name').value)
   filter.setTypeIs(document.getElementById('type').value)
   filter.setConIs(document.getElementById('constellation').value)
+  filter.setRaRange(document.getElementById('ra_min').value,
+    document.getElementById('ra_max').value)
 
   let newquery = 'show=objects' + filter.getUrlParameters()
   newquery += '&sortby=' + encodeURIComponent(sortMethod)
