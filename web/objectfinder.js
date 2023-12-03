@@ -45,7 +45,31 @@ function createObjectListingTable (objectIds, columns) {
   return objTable
 }
 
-function showObjectList (objectIds) {
+function createObjectListingText (objectIds, columns) {
+  const preBlock = document.createElement('pre')
+  const codeBlock = document.createElement('code')
+  preBlock.appendChild(codeBlock)
+
+  let text = ''
+  // TODO: avoid trailing tab
+  for (const col of columns) {
+    text += col + '\t'
+  }
+  text += '\n'
+
+  for (const objId of objectIds) {
+    const obj = objects[objId]
+    for (const col of columns) {
+      text += obj[col] + '\t'
+    }
+    text += '\n'
+  }
+  codeBlock.innerText = text
+
+  return preBlock
+}
+
+function showObjectList (objectIds, showAsText) {
   // count of observations
   const resultsHeader = document.getElementById('results_header')
   // clear old header
@@ -65,11 +89,18 @@ function showObjectList (objectIds) {
 
   const columns = ['#id', 'Names', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
 
+  if (showAsText) {
+  const text = createObjectListingText(objectIds, columns)
+  resultsArea.appendChild(text)
+  } else {
   const table = createObjectListingTable(objectIds, columns)
   resultsArea.appendChild(table)
+  }
+
 
   invert()
 }
+
 
 function doProgramQuery () {
   const programpicker = document.getElementById('program')
@@ -176,17 +207,12 @@ function raStringToFloat (raStr) {
 }
 
 function doObjectQuery () {
-  // TODO: remove these intermediate variables
-  const nameElement = document.getElementById('name')
-  const typeElement = document.getElementById('type')
-  const constellationElement = document.getElementById('constellation')
-
   const sortMethod = document.querySelector('input[name="sort"]:checked').value
 
   const filter = new ObjectFilter()
-  filter.setNameLike(nameElement.value)
-  filter.setTypeIs(typeElement.value)
-  filter.setConIs(constellationElement.value)
+  filter.setNameLike(document.getElementById('name').value)
+  filter.setTypeIs(document.getElementById('type').value)
+  filter.setConIs(document.getElementById('constellation').value)
 
   let newquery = 'show=objects' + filter.getUrlParameters()
   newquery += '&sortby=' + encodeURIComponent(sortMethod)
@@ -195,9 +221,8 @@ function doObjectQuery () {
 
   const matchingObjectIds = filter.getMatchingObjectIds(objects)
 
-  showObjectList(matchingObjectIds)
-  // showObjectList(Object.keys(matchingObjects))
-  // showObjectsForObjectQuery(newname, newtype, newcon, newdate, sort_method);
+  const showAsText = document.getElementById('show_as_text').checked
+  showObjectList(matchingObjectIds, showAsText)
 }
 
 function showObjectsForObjectQuery (nameQuery, typeQuery, conQuery, dateQuery, sortMethod) {
