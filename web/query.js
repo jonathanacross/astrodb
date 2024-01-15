@@ -1,4 +1,4 @@
-function nullOrEmpty(str) {
+function nullOrEmpty (str) {
   return str !== null && str !== ''
 }
 
@@ -36,21 +36,21 @@ export class ObjectFilter {
     }
   }
 
-  setRaRange(raMin, raMax) {
+  setRaRange (raMin, raMax) {
     if (!nullOrEmpty(raMin)) {
-        this.#raMin = raMin
+      this.#raMin = raMin
     }
     if (!nullOrEmpty(raMax)) {
-        this.#raMax = raMax
+      this.#raMax = raMax
     }
   }
 
-  setDecRange(decMin, decMax) {
+  setDecRange (decMin, decMax) {
     if (!nullOrEmpty(decMin)) {
-        this.#decMin = decMin
+      this.#decMin = decMin
     }
     if (!nullOrEmpty(decMax)) {
-        this.#decMax = decMax
+      this.#decMax = decMax
     }
   }
 
@@ -68,7 +68,44 @@ export class ObjectFilter {
     if (this.#conIs !== null) {
       params += '&conIs=' + encodeURIComponent(this.#conIs)
     }
+    if (this.#raMin !== null) {
+      params += '&raMin=' + encodeURIComponent(this.#raMin)
+    }
+    if (this.#raMax !== null) {
+      params += '&raMax=' + encodeURIComponent(this.#raMin)
+    }
     return params
+  }
+
+  raIsInRange(ra) {
+    // no RA defined
+    if (nullOrEmpty(ra)) {
+        return true
+    }
+
+    // no RA filter defined
+    if (this.#raMin === null && this.#raMax === null) {
+        return true
+    }
+
+    // only max RA defined
+    if (this.#raMin === null) {
+        return this.#raMax >= ra
+    }
+
+    // only min RA defined
+    if (this.#raMax === null) {
+        return this.#raMin <= ra
+    }
+
+    // Both min and max RA defined.  If the min and max are reversed, then
+    // reverse the checks, to handle objects crossing the 24-0 RA line.
+    if (this.#raMin < this.#raMax) {
+        return this.#raMin <= ra && ra <= this.#raMax
+    } else {
+        return this.#raMin >= ra && ra >= this.#raMax
+    }
+
   }
 
   #objectMatches (object) {
@@ -84,6 +121,9 @@ export class ObjectFilter {
     }
     if (this.#conIs !== null && this.#conIs !== object.Con) {
       return false
+    }
+    if (!this.raIsInRange(object.Ra)) {
+        return false
     }
     return true
   }

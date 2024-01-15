@@ -96,8 +96,6 @@ function showObjectList (objectIds, showAsText) {
     const table = createObjectListingTable(objectIds, columns)
     resultsArea.appendChild(table)
   }
-
-  invert()
 }
 
 function doProgramQuery () {
@@ -205,7 +203,7 @@ function raStringToFloat (raStr) {
 }
 
 function doObjectQuery () {
-  const sortMethod = document.querySelector('input[name="sort"]:checked').value
+  const listType = document.querySelector('input[name="listtype"]:checked').value
 
   const filter = new ObjectFilter()
   filter.setNameLike(document.getElementById('name').value)
@@ -215,7 +213,7 @@ function doObjectQuery () {
     document.getElementById('ra_max').value)
 
   let newquery = 'show=objects' + filter.getUrlParameters()
-  newquery += '&sortby=' + encodeURIComponent(sortMethod)
+  newquery += '&mode=' + encodeURIComponent(listType)
 
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
@@ -280,18 +278,23 @@ function showObjectsForObjectQuery (nameQuery, typeQuery, conQuery, dateQuery, s
   showObservations(observation_ids, deduped_matching_obj_ids)
 }
 
-function invert () {
-  const invert = document.getElementById('invert').checked
-
-  // Can change this to use a class name if this is too generic.
-  const imgs = document.getElementsByTagName('img')
-  for (let i = 0; i < imgs.length; i++) {
-    if (invert) {
-      imgs[i].style.filter = 'invert(1)'
-    } else {
-      imgs[i].style.filter = null
-    }
+function showQuery(search_query_type) {
+  // Get all elements with class="tabcontent" and hide them
+  const tabcontent = document.getElementsByClassName("tabcontent");
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  const tablinks = document.getElementsByClassName("tablinks");
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  let query_tab_id = search_query_type + '_tab';
+  document.getElementById(search_query_type).style.display = "block";
+  document.getElementById(query_tab_id).className += " active";
 }
 
 function showResults () {
@@ -309,8 +312,8 @@ function showResults () {
   //    const type_query = urlParams.get("type");
   //    const con_query = urlParams.get("con");
   //    const date_query = urlParams.get("date");
-  //    const sort_method = urlParams.has("sortby") ? urlParams.get("sortby") : "name";
-  //    showObjectsForObjectQuery(name_query, type_query, con_query, date_query, sort_method);
+  //    const list_type = urlParams.has("sortby") ? urlParams.get("sortby") : "name";
+  //    showObjectsForObjectQuery(name_query, type_query, con_query, date_query, list_type);
   // }
 }
 
@@ -328,17 +331,17 @@ function updateControlsFromSearchParams () {
     const type_query = urlParams.get('type')
     const con_query = urlParams.get('con')
     const date_query = urlParams.get('date')
-    const sort_method = urlParams.has('sortby') ? urlParams.get('sortby') : 'name'
+    const list_type = urlParams.has('sortby') ? urlParams.get('sortby') : 'name'
     const namequery_element = document.getElementById('name')
     const type_element = document.getElementById('type')
     const con_element = document.getElementById('constellation')
     const date_element = document.getElementById('dateobs')
-    const sort_method_element = document.getElementById(sort_method + '_radio')
+    const list_type_element = document.getElementById(list_type + '_radio')
     namequery_element.value = name_query
     type_element.value = type_query
     con_element.value = con_query
     // date_element.value = date_query
-    sort_method_element.checked = true
+    list_type_element.checked = true
   }
 }
 
@@ -386,8 +389,12 @@ function setupControls () {
   const objbutton = document.getElementById('objshow')
   objbutton.addEventListener('click', doObjectQuery)
 
-  const invertcheck = document.getElementById('invert')
-  invertcheck.addEventListener('click', invert)
+  const view_program_tab_element = document.getElementById('view_program_tab');
+  view_program_tab_element.addEventListener('click', () => showQuery('view_program'));
+  const search_observations_tab_element = document.getElementById('search_observations_tab');
+  search_observations_tab_element.addEventListener('click', () => showQuery('search_observations'));
+  const search_objects_tab_element = document.getElementById('search_objects_tab');
+  search_objects_tab_element.addEventListener('click', () => showQuery('search_objects'));
 
   updateControlsFromSearchParams()
 
