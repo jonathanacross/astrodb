@@ -298,12 +298,12 @@ function showQuery(search_query_type) {
 
   // update the width of the results section
   const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
-  document.getElementById('results_objquery').style.marginLeft = sidebarWidth;
+  document.getElementById('results_objquery').style.marginLeft = sidebarWidth + "px";
 
   // make sure height of query/results are correct.
   const headerHeight = document.getElementById('header').offsetHeight;
-  document.getElementById('sidebar_objquery').style.marginTop = headerHeight;
-  document.getElementById('results_objquery').style.marginTop = +headerHeight + 30;
+  document.getElementById('sidebar_objquery').style.marginTop = +headerHeight + "px";
+  document.getElementById('results_objquery').style.marginTop = +headerHeight + "px";
 }
 
 function showResults () {
@@ -428,10 +428,55 @@ function checkResponses (responses) {
   return responses
 }
 
+// Convenience function for seeing if an object contains a key.
+function containsKey(obj, key) {
+  return Object.prototype.hasOwnProperty.call(obj, key);
+}
+
+function JoinObjects() {
+  for (const [_, observation] of Object.entries(observations)) {
+    const objIds = observation.ObjIds.split('|')
+    for (const objId of objIds) {
+      if (!containsKey(objects, objId)) {
+        throw Error('Observation ' + JSON.stringify(observation) + ' has objectId ' + objId + " that doesn't appear in any object");
+      }
+      let currObject = objects[objId];
+      if (!containsKey(currObject, 'observation_ids')) {
+        currObject['observation_ids'] = [];
+      }
+      currObject['observation_ids'].push(observation['#id']);
+    }
+  }
+
+  for (const [programName, programEntries] of Object.entries(programs)) {
+    for (const programEntry of programEntries) {
+      // Check consistency of observation ids (if any)
+      const obsId = programEntry.observationId;
+      if (obsId != null && obsId.length > 0 && !containsKey(observations, obsId)) {
+        throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad observationId');
+      }
+
+      // Check consistency of object ids
+      const objId = programEntry.objectId;
+      if (!containsKey(objects, objId)) {
+        throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad objectId');
+      }
+
+      // Link program ids back to the objects
+      const currObject = objects[objId];
+      if (!containsKey(currObject, 'program_ids')) {
+        currObject.program_ids = [];
+      }
+      currObject.program_ids.push(programEntry['#program']);
+    }
+  }
+}
+
 function ParseData (responses) {
   observations = keyByColumn(tsvToJson(responses[0]), '#id')
   objects = keyByColumn(tsvToJson(responses[1]), '#id')
   programs = keyByColumnAsLists(tsvToJson(responses[2]), '#program')
+  JoinObjects();
 }
 
 function LoadDataAndSetupPage () {

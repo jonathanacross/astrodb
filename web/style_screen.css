@@ -80,7 +80,7 @@ body {
   height: 100%;
   width: 180px; 
   position: fixed;
-  z-index: 2; 
+  z-index: 1; 
   top: 150px;
   left: 0;
   background-color: #c2cad6;
@@ -91,12 +91,12 @@ body {
 #sidebar_objquery {
   height: 100%;
   position: fixed;
-  z-index: 2; 
+  /*z-index: 1;*/
   top: 0;
   left: 0;
   background-color: #c2cad6;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 10px;
   display: table;
 }
 
@@ -110,8 +110,8 @@ body {
 }
 
 #results_objquery {
-    /*margin-left: 320px;*/ /* must be same as width of .objquery */
-    margin-top: 120px; /* same as header height*/
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 #results_objquery table {
