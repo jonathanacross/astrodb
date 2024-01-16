@@ -295,6 +295,15 @@ function showQuery(search_query_type) {
   let query_tab_id = search_query_type + '_tab';
   document.getElementById(search_query_type).style.display = "block";
   document.getElementById(query_tab_id).className += " active";
+
+  // update the width of the results section
+  const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
+  document.getElementById('results_objquery').style.marginLeft = sidebarWidth;
+
+  // make sure height of query/results are correct.
+  const headerHeight = document.getElementById('header').offsetHeight;
+  document.getElementById('sidebar_objquery').style.marginTop = headerHeight;
+  document.getElementById('results_objquery').style.marginTop = +headerHeight + 30;
 }
 
 function showResults () {
