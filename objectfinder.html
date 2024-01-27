@@ -23,161 +23,139 @@
 
   <div id="sidebar_objquery">
 
-    <div class="query">
-      <div class="tabcontent" id="view_program">
-        <p class="queryheader">See progress for a particular program:</p>
-        <select name="program" id="program">
-        </select>
-        <button id="programshow">Show</button>
+    <div class="tabcontent" id="view_program">
+      <p class="queryheader">See progress for a particular program:</p>
+      <select name="program" id="program">
+      </select>
+      <button id="programshow">Show</button>
+    </div>
+
+    <div class="tabcontent" id="search_observations">
+      <p class="queryheader">Observation Search</p>
+
+      <div class="formgroup">
+        <label for="obs_search_name">Name:</label>
+        <input type="text" id="obs_search_name" name="obs_search_name"><br>
       </div>
 
-      <div class="tabcontent" id="search_observations">
-        <p class="queryheader">Observation Search</p>
-
-        <div class="formgroup">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
-        </div>
-
-        <div class="formgroup">
-          <label for="type">Type:</label>
-          <input list="type_list" name="type" type="text" id="type" multiple>
-          <datalist id="type_list">
-            <option value="Ast">Asterism</option>
-            <option value="Asteroid">Asteroid</option>
-            <option value="Carbon">Carbon Star</option>
-            <option value="Comet">Comet</option>
-            <option value="Con">Constellation</option>
-            <option value="DN">Dark Nebula</option>
-            <option value="Double">Double/Multiple Star</option>
-            <option value="EN">Emission Nebula</option>
-            <option value="Gal">Galaxy</option>
-            <option value="GCl">Globular Cluster</option>
-            <option value="Moon">Moon / Lunar feature</option>
-            <option value="OCl">Open Cluster</option>
-            <option value="Planet">Planet</option>
-            <option value="PN">Planetary Nebula</option>
-            <option value="Q">Quasar</option>
-            <option value="RN">Reflection Nebula</option>
-            <option value="Star Cloud">Star Cloud</option>
-            <option value="Sun">Sun</option>
-            <option value="SNR">Supernova Remnant</option>
-            <option value="Variable">Variable Star</option>
-          </datalist>
-        </div>
-
-        <div class="formgroup">
-          <label for="constellation">Con:</label>
-          <input list="constellation_list" name="constellation" type="text" id="constellation" multiple>
-          <datalist id="constellation_list">
-          </datalist>
-        </div>
-
-        <div class="formgroup">
-          <label for="dateobs">Date:</label>
-          <input type="text" id="dateobs" name="dateobs" placeholder="YYYY-MM-DD">
-        </div>
-
-        <div class=radiogroup>
-          <legend>Sort by</legend>
-          <input type="radio" name="sort" value="date" id="date_radio">
-          <label for="date_radio">Date</label><br>
-          <input type="radio" name="sort" value="name" id="name_radio" checked>
-          <label for="name_radio">Name</label><br>
-          <input type="radio" name="sort" value="ra" id="ra_radio">
-          <label for="ra_radio">R.A.</label><br>
-          <input type="radio" name="sort" value="con" id="con_radio">
-          <label for="con_radio">Con</label>
-        </div>
-
-        <button id="objshow">Show</button>
+      <div class="formgroup">
+        <label for="obs_search_type">Type:</label>
+        <input list="type_list" name="obs_search_type" type="text" id="obs_search_type" multiple>
+        <datalist id="type_list">
+        </datalist>
       </div>
 
-      <div class="tabcontent" id="search_objects">
-        <p class="queryheader">List Objects</p>
-
-        <table>
-          <tr>
-            <td><label for="name">Name</label></td>
-            <td>contains</td>
-            <td><input type="text" id="name" name="name"></td>
-          </tr>
-          <tr>
-            <td><label for="type">Type</label></td>
-            <td>is</td>
-            <td>
-              <input list="type_list" name="type" type="text" id="type" multiple>
-              <datalist id="type_list"></datalist>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="constellation">Con</label></td>
-            <td>is</td>
-            <td>
-              <input list="constellation_list" name="constellation" type="text" id="constellation" multiple>
-              <datalist id="constellation_list"></datalist>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" id="ra_min" name="ra_min"></td>
-            <td>&le; RA &le;</td>
-            <td><input type="text" id="ra_max" name="ra_max"></td>
-          </tr>
-          <tr>
-            <td><input type="text" id="dec_min" name="dec_min"></td>
-            <td>&le; Dec &le;</td>
-            <td><input type="text" id="dec_max" name="dec_max"></td>
-          </tr>
-          <tr>
-            <td><label for="mag">Mag</label></td>
-            <td>&le;</td>
-            <td><input type="text" id="mag" name="mag"></td>
-          </tr>
-          <tr>
-            <td><input type="text" id="size_min" name="size_min"></td>
-            <td>&le; Size &le;</td>
-            <td><input type="text" id="size_max" name="size_max"></td>
-          </tr>
-          <tr>
-            <td>Program</td>
-            <td>is</td>
-            <td><input type="text" id="program_is" name="program_is"></td>
-          </tr>
-          <tr>
-            <td>Observed</td>
-            <td>status</td>
-            <td><input type="text" id="seen_in_program" name="seen_in_program"></td>
-          </tr>
-        </table>
-
-
-        <div class=radiogroup>
-          <legend>Show results as:</legend>
-          <input type="radio" name="listtype" value="observing" id="observing_radio">
-          <label for="observing_radio">Observing List</label><br>
-          <input type="radio" name="listtype" value="program" id="program_radio" checked>
-          <label for="program_radio">Program List</label><br>
-          <input type="radio" name="listtype" value="object" id="object_radio">
-          <label for="object_radio">Object List</label><br>
-          <input type="radio" name="listtype" value="meta" id="meta_radio">
-          <label for="meta_radio">Meta List</label>
-        </div>
-
-        <label for="show_as_text">Show As Text</label>
-        <input type="checkbox" name="show_as_text" id="show_as_text">
-
-        <button id="objshow">Show</button>
+      <div class="formgroup">
+        <label for="obs_search_constellation">Con:</label>
+        <!--note: may be able to dynamically autocomplete with multiple, 
+          see https://www.meziantou.net/html-multiple-selections-with-datalist.htm-->
+        <input list="constellation_list" name="obs_search_constellation" type="text" id="obs_search_constellation" multiple>
+        <datalist id="constellation_list">
+        </datalist>
       </div>
+
+      <div class="formgroup">
+        <label for="obs_search_dateobs">Date:</label>
+        <input type="text" id="obs_search_dateobs" name="obs_search_dateobs" placeholder="YYYY-MM-DD">
+      </div>
+
+      <div class=radiogroup>
+        <legend>Sort by</legend>
+        <input type="radio" name="sort" value="date" id="date_radio">
+        <label for="date_radio">Date</label><br>
+        <input type="radio" name="sort" value="name" id="name_radio" checked>
+        <label for="name_radio">Name</label><br>
+        <input type="radio" name="sort" value="ra" id="ra_radio">
+        <label for="ra_radio">R.A.</label><br>
+        <input type="radio" name="sort" value="con" id="con_radio">
+        <label for="con_radio">Con</label>
+      </div>
+
+      <button id="objshow">Show</button>
+    </div>
+
+    <div class="tabcontent" id="search_objects">
+      <p class="queryheader">List Objects</p>
+
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td>contains</td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="type">Type</label></td>
+          <td>is</td>
+          <td>
+            <input list="type_list" name="type" type="text" id="type" multiple>
+            <datalist id="type_list"></datalist>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="constellation">Con</label></td>
+          <td>is</td>
+          <td>
+            <input list="constellation_list" name="constellation" type="text" id="constellation" multiple>
+            <datalist id="constellation_list"></datalist>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" id="ra_min" name="ra_min"></td>
+          <td>&le; RA &le;</td>
+          <td><input type="text" id="ra_max" name="ra_max"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="dec_min" name="dec_min"></td>
+          <td>&le; Dec &le;</td>
+          <td><input type="text" id="dec_max" name="dec_max"></td>
+        </tr>
+        <tr>
+          <td><label for="mag">Mag</label></td>
+          <td>&le;</td>
+          <td><input type="text" id="mag" name="mag"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="size_min" name="size_min"></td>
+          <td>&le; Size &le;</td>
+          <td><input type="text" id="size_max" name="size_max"></td>
+        </tr>
+        <tr>
+          <td>Program</td>
+          <td>is</td>
+          <td><input type="text" id="program_is" name="program_is"></td>
+        </tr>
+        <tr>
+          <td>Observed</td>
+          <td>status</td>
+          <td><input type="text" id="seen_in_program" name="seen_in_program"></td>
+        </tr>
+      </table>
+
+
+      <div class=radiogroup>
+        <legend>Show results as:</legend>
+        <input type="radio" name="listtype" value="observing" id="observing_radio">
+        <label for="observing_radio">Observing List</label><br>
+        <input type="radio" name="listtype" value="program" id="program_radio" checked>
+        <label for="program_radio">Program List</label><br>
+        <input type="radio" name="listtype" value="object" id="object_radio">
+        <label for="object_radio">Object List</label><br>
+        <input type="radio" name="listtype" value="meta" id="meta_radio">
+        <label for="meta_radio">Meta List</label>
+      </div>
+
+      <label for="show_as_text">Show As Text</label>
+      <input type="checkbox" name="show_as_text" id="show_as_text">
+
+      <button id="objshow">Show</button>
     </div>
   </div>
 
   <div id="results_objquery">
-    <div id="error_messages">
-    </div>
-    <div id="results_header">
-    </div>
-    <div id="results_table">
-    </div>
+    <div id="error_messages"> </div>
+    <div id="results_header"> </div>
+    <div id="results_table"> </div>
+    <div id="results_list"> </div>
   </div>
 </body>
 
