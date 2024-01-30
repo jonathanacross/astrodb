@@ -91,7 +91,6 @@ body {
 #sidebar_objquery {
   height: 100%;
   position: fixed;
-  /*z-index: 1;*/
   top: 0;
   left: 0;
   background-color: #c2cad6;
@@ -140,7 +139,7 @@ body {
     font-family: monospace;
 }
 
-#results_list {
+#results {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fill, 350px);
@@ -177,8 +176,7 @@ ul {
 }
 
 .sketch {
-  vertical-align:top;
-  height: 250;
+  height: 250px;
   display: block;
   object-fit: scale-down;
 }

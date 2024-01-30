@@ -61,7 +61,6 @@ function createObjectListingText (objectIds, columns) {
     text += '\n'
   }
   codeBlock.innerText = text
-
   return preBlock
 }
 
