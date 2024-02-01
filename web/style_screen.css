@@ -103,34 +103,34 @@ body {
   padding: 10;
 }
 
-.results {
-    margin-left: 180px; /* must be same as width of .query */
-    margin-top: 60px; /* same as header height*/
-}
+/*.results {
+    margin-left: 180px; 
+    margin-top: 60px; 
+}*/
 
-#results_objquery {
+.results {
     padding-top: 10px;
     padding-left: 10px;
 }
 
-#results_objquery table {
+.results table {
   border-collapse: collapse;
   background-color: #dae2ed;
 }
 
-#results_objquery table td {
+.results table td {
   border: 1px solid #bbb;
   padding: 8px;
 }
 
-#results_objquery table th {
+.results table th {
   background-color: #91a4bb;
   font-weight: bold;
   border: 1px solid #bbb;
   padding: 8px;
 }
 
-#results_objquery tr:nth-child(even){background-color: #e9eff7;}
+.results tr:nth-child(even){background-color: #e9eff7;}
 
 
 .error {
@@ -139,7 +139,7 @@ body {
     font-family: monospace;
 }
 
-#results {
+.observation_result_grid {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fill, 350px);

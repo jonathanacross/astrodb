@@ -65,22 +65,22 @@ function createObjectListingText (objectIds, columns) {
 }
 
 function showObjectList (objectIds, showAsText) {
-  // count of observations
-  const resultsHeader = document.getElementById('results_header')
-  // clear old header
-  while (resultsHeader.hasChildNodes()) {
-    resultsHeader.removeChild(resultsHeader.lastChild)
-  }
-  const resultCount = document.createElement('p')
-  // resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
-  resultsHeader.appendChild(resultCount)
-
-  const resultsArea = document.getElementById('results')
+  const resultsArea = document.getElementById('search_objects_results')
 
   // clear old results
   while (resultsArea.hasChildNodes()) {
     resultsArea.removeChild(resultsArea.lastChild)
   }
+
+  // Add new results
+
+  // count of observations
+  const resultsHeader = document.createElement('div')
+  const resultCount = document.createElement('p')
+  // resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
+  resultsHeader.appendChild(resultCount)
+
+  resultsArea.appendChild(resultsHeader)
 
   const columns = ['#id', 'Names', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
 
@@ -93,19 +93,8 @@ function showObjectList (objectIds, showAsText) {
   }
 }
 
-function showObservations(observation_ids) {
-  // count of observations
-  let resultsHeader = document.getElementById("results_header");
-  // clear old header
-  while (resultsHeader.hasChildNodes()) {
-      resultsHeader.removeChild(resultsHeader.lastChild);
-  }
-  let resultCount = document.createElement("p");
-  //resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
-  resultCount.textContent = "Found " + observation_ids.length + " observations.";
-  resultsHeader.appendChild(resultCount);
-
-  let resultsArea = document.getElementById("results");
+function showObservations(resultElementIdName, observation_ids) {
+  let resultsArea = document.getElementById(resultElementIdName)
 
   // clear old results
   while (resultsArea.hasChildNodes()) {
@@ -113,57 +102,72 @@ function showObservations(observation_ids) {
   }
 
   // add new results
+
+  // count of observations
+  const resultsHeader = document.createElement('div');
+  const resultCount = document.createElement('p');
+  //resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
+  resultCount.textContent = 'Found ' + observation_ids.length + ' observations.';
+  resultsHeader.appendChild(resultCount);
+
+  // grid of observations
+  const resultsGrid = document.createElement('div');
+  resultsGrid.className = 'observation_result_grid';
+
+  resultsArea.appendChild(resultsHeader);
+  resultsArea.appendChild(resultsGrid);
+
   for (const observation_id of observation_ids) {
-      const obs = observations[observation_id];
-      const fragment = document.createDocumentFragment();
-      if (obs == null) {
-          let obsDiv = document.createElement("div");
-          obsDiv.className = "observation";
+    const obs = observations[observation_id];
+    const fragment = document.createDocumentFragment();
+    if (obs == null) {
+      let obsDiv = document.createElement("div");
+      obsDiv.className = "observation";
 
-          let errDiv = document.createElement("div");
-          errDiv.className = "error";
-          errDiv.textContent = "Error: can't find observation id '" + observation_id + "'";
+      let errDiv = document.createElement("div");
+      errDiv.className = "error";
+      errDiv.textContent = "Error: can't find observation id '" + observation_id + "'";
 
-          obsDiv.appendChild(errDiv);
-          fragment.appendChild(obsDiv);
-      } else {
-          const obsDiv = document.createElement("div");
-          obsDiv.className = "observation";
+      obsDiv.appendChild(errDiv);
+      fragment.appendChild(obsDiv);
+    } else {
+      const obsDiv = document.createElement("div");
+      obsDiv.className = "observation";
 
-          const notesDiv = document.createElement("div");
-          notesDiv.className = "notes";
-          const objinfo = document.createElement("div");
-          //setObjectInfo(obs, objinfo);
+      const notesDiv = document.createElement("div");
+      notesDiv.className = "notes";
+      const objinfo = document.createElement("div");
+      //setObjectInfo(obs, objinfo);
 
-          const notesList = document.createElement("ul");
-          const attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
-          for (const attr of attributes) {
-              if (obs[attr] !== "") {
-                  const li = document.createElement("li");
-                  li.textContent = attr + ": " + obs[attr];
-                  notesList.appendChild(li);
-              }
-          }
-          notesDiv.appendChild(objinfo);
-          notesDiv.appendChild(notesList);
-          if (obs.Notes != null) {
-              let description = document.createElement("p");
-              description.textContent = obs.Notes;
-              notesDiv.appendChild(description);
-          }
-
-          let sketchDiv = document.createElement("div");
-          sketchDiv.className = "sketch";
-          let sketch = document.createElement("img");
-          sketch.src = "data/sketches/" + obs["#id"] + ".jpg";
-          sketchDiv.appendChild(sketch);
-
-          obsDiv.appendChild(notesDiv);
-          obsDiv.appendChild(sketchDiv);
-          fragment.appendChild(obsDiv);
+      const notesList = document.createElement("ul");
+      const attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
+      for (const attr of attributes) {
+        if (obs[attr] !== "") {
+          const li = document.createElement("li");
+          li.textContent = attr + ": " + obs[attr];
+          notesList.appendChild(li);
+        }
+      }
+      notesDiv.appendChild(objinfo);
+      notesDiv.appendChild(notesList);
+      if (obs.Notes != null) {
+        let description = document.createElement("p");
+        description.textContent = obs.Notes;
+        notesDiv.appendChild(description);
       }
 
-      resultsArea.appendChild(fragment);
+      let sketchDiv = document.createElement("div");
+      sketchDiv.className = "sketch";
+      let sketch = document.createElement("img");
+      sketch.src = "data/sketches/" + obs["#id"] + ".jpg";
+      sketchDiv.appendChild(sketch);
+
+      obsDiv.appendChild(notesDiv);
+      obsDiv.appendChild(sketchDiv);
+      fragment.appendChild(obsDiv);
+    }
+
+    resultsGrid.appendChild(fragment);
   }
 }
 
@@ -176,7 +180,7 @@ function doProgramQuery () {
 
   const matchingObservationIds = filter.getMatchingObservationIds(programs)
 
-  showObservations(matchingObservationIds, objects);
+  showObservations('view_program_results', matchingObservationIds, objects);
 }
 
 function doObjectQuery () {
@@ -216,36 +220,44 @@ function doObservationQuery () {
 
   const matchingObservationIds = filter.getMatchingObservationIds(observations, objects)
 
-  showObservations(matchingObservationIds, objects);
+  showObservations('search_observations_results', matchingObservationIds, objects);
 }
 
 
 function showQuery(search_query_type) {
   // Get all elements with class="tabcontent" and hide them
-  const tabcontent = document.getElementsByClassName("tabcontent");
-  for (let i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  const tabContent = document.getElementsByClassName('tabcontent');
+  for (let i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = 'none';
+  }
+  // Hide results for everything
+  const resultsContent = document.getElementsByClassName('results');
+  for (let i = 0; i < resultsContent.length; i++) {
+    resultsContent[i].style.display = 'none';
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
-  const tablinks = document.getElementsByClassName("tablinks");
+  const tablinks = document.getElementsByClassName('tablinks');
   for (let i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(' active', '');
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   let query_tab_id = search_query_type + '_tab';
-  document.getElementById(search_query_type).style.display = "block";
-  document.getElementById(query_tab_id).className += " active";
+  document.getElementById(search_query_type).style.display = 'block';
+  document.getElementById(query_tab_id).className += ' active';
 
-  // update the width of the results section
-  const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
-  document.getElementById('results_objquery').style.marginLeft = sidebarWidth + "px";
+  let results_area_id = search_query_type + '_results';
+  document.getElementById(results_area_id).style.display = 'block';
 
   // make sure height of query/results are correct.
+  const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
   const headerHeight = document.getElementById('header').offsetHeight;
-  document.getElementById('sidebar_objquery').style.marginTop = +headerHeight + "px";
-  document.getElementById('results_objquery').style.marginTop = +headerHeight + "px";
+  document.getElementById('sidebar_objquery').style.marginTop = +headerHeight + 'px';
+  for (let i = 0; i < resultsContent.length; i++) {
+    resultsContent[i].style.marginLeft = sidebarWidth + 'px';
+    resultsContent[i].style.marginTop = +headerHeight + 'px';
+  }
 }
 
 function showResults () {
