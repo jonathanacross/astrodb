@@ -88,6 +88,12 @@ body {
   padding-top: 20px;
 }
 
+#results_objquery {
+  margin-top: 110px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #sidebar_objquery {
   height: 100%;
   position: fixed;

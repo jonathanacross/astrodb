@@ -120,52 +120,40 @@ function showObservations(resultElementIdName, observation_ids) {
   for (const observation_id of observation_ids) {
     const obs = observations[observation_id];
     const fragment = document.createDocumentFragment();
-    if (obs == null) {
-      let obsDiv = document.createElement("div");
-      obsDiv.className = "observation";
+    const obsDiv = document.createElement("div");
+    obsDiv.className = "observation";
 
-      let errDiv = document.createElement("div");
-      errDiv.className = "error";
-      errDiv.textContent = "Error: can't find observation id '" + observation_id + "'";
+    const notesDiv = document.createElement("div");
+    notesDiv.className = "notes";
+    const objinfo = document.createElement("div");
+    //setObjectInfo(obs, objinfo);
 
-      obsDiv.appendChild(errDiv);
-      fragment.appendChild(obsDiv);
-    } else {
-      const obsDiv = document.createElement("div");
-      obsDiv.className = "observation";
-
-      const notesDiv = document.createElement("div");
-      notesDiv.className = "notes";
-      const objinfo = document.createElement("div");
-      //setObjectInfo(obs, objinfo);
-
-      const notesList = document.createElement("ul");
-      const attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
-      for (const attr of attributes) {
-        if (obs[attr] !== "") {
-          const li = document.createElement("li");
-          li.textContent = attr + ": " + obs[attr];
-          notesList.appendChild(li);
-        }
+    const notesList = document.createElement("ul");
+    const attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
+    for (const attr of attributes) {
+      if (obs[attr] !== "") {
+        const li = document.createElement("li");
+        li.textContent = attr + ": " + obs[attr];
+        notesList.appendChild(li);
       }
-      notesDiv.appendChild(objinfo);
-      notesDiv.appendChild(notesList);
-      if (obs.Notes != null) {
-        let description = document.createElement("p");
-        description.textContent = obs.Notes;
-        notesDiv.appendChild(description);
-      }
-
-      let sketchDiv = document.createElement("div");
-      sketchDiv.className = "sketch";
-      let sketch = document.createElement("img");
-      sketch.src = "data/sketches/" + obs["#id"] + ".jpg";
-      sketchDiv.appendChild(sketch);
-
-      obsDiv.appendChild(notesDiv);
-      obsDiv.appendChild(sketchDiv);
-      fragment.appendChild(obsDiv);
     }
+    notesDiv.appendChild(objinfo);
+    notesDiv.appendChild(notesList);
+    if (obs.Notes != null) {
+      let description = document.createElement("p");
+      description.textContent = obs.Notes;
+      notesDiv.appendChild(description);
+    }
+
+    let sketchDiv = document.createElement("div");
+    sketchDiv.className = "sketch";
+    let sketch = document.createElement("img");
+    sketch.src = "data/sketches/" + obs["#id"] + ".jpg";
+    sketchDiv.appendChild(sketch);
+
+    obsDiv.appendChild(notesDiv);
+    obsDiv.appendChild(sketchDiv);
+    fragment.appendChild(obsDiv);
 
     resultsGrid.appendChild(fragment);
   }
