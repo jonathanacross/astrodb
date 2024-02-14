@@ -1,12 +1,11 @@
 /* jshint esversion: 6 */
 
-import { tsvToJson, keyByColumn, keyByColumnAsLists } from './tsv_utils.js'
+import { readObjects, readObservations, readPrograms } from './tsv_utils.js'
 import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js'
-import { objectTypes, constellations } from './astrodata.js'
+import { objectTypes, constellations } from './constants.js'
+import { AstroObject, Observation, ProgramEntry, Database } from './database.js'
 
-let observations
-let objects
-let programs
+let database;
 
 function createObjectListingTable (objectIds, columns) {
   const objTable = document.createElement('table')
@@ -24,7 +23,7 @@ function createObjectListingTable (objectIds, columns) {
   const tableBody = document.createElement('tbody')
 
   for (const objId of objectIds) {
-    const obj = objects[objId]
+    const obj = database.objects[objId]
     const row = document.createElement('tr')
 
     for (const col of columns) {
@@ -54,7 +53,7 @@ function createObjectListingText (objectIds, columns) {
   text += '\n'
 
   for (const objId of objectIds) {
-    const obj = objects[objId]
+    const obj = database.objects[objId]
     for (const col of columns) {
       text += obj[col] + '\t'
     }
@@ -82,7 +81,8 @@ function showObjectList (objectIds, showAsText) {
 
   resultsArea.appendChild(resultsHeader)
 
-  const columns = ['#id', 'Names', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
+  // TODO: fix casing of column names
+  const columns = ['id', 'names', 'type', 'con', 'ra', 'dec', 'mag', 'size', 'sep', 'pa', 'objectClass', 'distance', 'notes']
 
   if (showAsText) {
     const text = createObjectListingText(objectIds, columns)
@@ -118,7 +118,7 @@ function showObservations(resultElementIdName, observation_ids) {
   resultsArea.appendChild(resultsGrid);
 
   for (const observation_id of observation_ids) {
-    const obs = observations[observation_id];
+    const obs = database.observations[observation_id];
     const fragment = document.createDocumentFragment();
     const obsDiv = document.createElement("div");
     obsDiv.className = "observation";
@@ -148,7 +148,7 @@ function showObservations(resultElementIdName, observation_ids) {
     let sketchDiv = document.createElement("div");
     sketchDiv.className = "sketch";
     let sketch = document.createElement("img");
-    sketch.src = "data/sketches/" + obs["#id"] + ".jpg";
+    sketch.src = "data/sketches/" + obs.id + ".jpg";
     sketchDiv.appendChild(sketch);
 
     obsDiv.appendChild(notesDiv);
@@ -166,9 +166,9 @@ function doProgramQuery () {
   let newquery = 'show=program' + filter.getUrlParameters()
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
-  const matchingObservationIds = filter.getMatchingObservationIds(programs)
+  const matchingObservationIds = filter.getMatchingObservationIds(database.programs)
 
-  showObservations('view_program_results', matchingObservationIds, objects);
+  showObservations('view_program_results', matchingObservationIds, database.objects);
 }
 
 function doObjectQuery () {
@@ -186,7 +186,7 @@ function doObjectQuery () {
 
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
-  const matchingObjectIds = filter.getMatchingObjectIds(objects)
+  const matchingObjectIds = filter.getMatchingObjectIds(database.objects)
 
   const showAsText = document.getElementById('show_as_text').checked
   showObjectList(matchingObjectIds, showAsText)
@@ -206,9 +206,9 @@ function doObservationQuery () {
 
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
-  const matchingObservationIds = filter.getMatchingObservationIds(observations, objects)
+  const matchingObservationIds = filter.getMatchingObservationIds(database.observations, database.objects)
 
-  showObservations('search_observations_results', matchingObservationIds, objects);
+  showObservations('search_observations_results', matchingObservationIds, database.objects);
 }
 
 
@@ -252,52 +252,26 @@ function showResults () {
   const queryString = window.location.search
   const urlParams = new URLSearchParams(queryString)
 
-  showObjectList(Object.keys(objects))
+  showObjectList(Object.keys(database.objects))
 }
 
 function updateControlsFromSearchParams () {
   // TODO: implmement
-
-  // const queryString = window.location.search
-  // const urlParams = new URLSearchParams(queryString)
-
-  // const show_query = urlParams.get('show')
-  // if (show_query == 'program') {
-  //   const program_name = urlParams.get('name')
-  //   const programpicker = document.getElementById('program')
-  //   programpicker.value = program_name
-  // } else if (show_query == 'objects') {
-  //   const name_query = urlParams.get('name')
-  //   const type_query = urlParams.get('type')
-  //   const con_query = urlParams.get('con')
-  //   const date_query = urlParams.get('date')
-  //   const list_type = urlParams.has('sortby') ? urlParams.get('sortby') : 'name'
-  //   const namequery_element = document.getElementById('name')
-  //   const type_element = document.getElementById('type')
-  //   const con_element = document.getElementById('constellation')
-  //   const date_element = document.getElementById('dateobs')
-  //   const list_type_element = document.getElementById(list_type + '_radio')
-  //   namequery_element.value = name_query
-  //   type_element.value = type_query
-  //   con_element.value = con_query
-  //   // date_element.value = date_query
-  //   list_type_element.checked = true
-  // }
 }
 
 function setupControls () {
   const programpicker = document.getElementById('program_program_name')
-  for (const [program_name, _] of Object.entries(programs).sort()) {
+  for (const [program_name, _] of Object.entries(database.programs).sort()) {
     let option = document.createElement("option");
     option.text = program_name;
     programpicker.add(option);
   }
 
   let cons = new Set()
-  for (const [_, obs] of Object.entries(observations)) {
-    const objIds = obs.ObjIds.split('|')
+  for (const [_, obs] of Object.entries(database.observations)) {
+    const objIds = obs.objectIds.split('|')
     for (const objId of objIds) {
-      const c = objects[objId].Con
+      const c = database.objects[objId].Con
       if (c != null) {
         cons.add(c)
       }
@@ -333,12 +307,14 @@ function setupControls () {
   const observationShowButton = document.getElementById('observation_show')
   observationShowButton.addEventListener('click', doObservationQuery)
 
-  const view_program_tab_element = document.getElementById('view_program_tab');
-  view_program_tab_element.addEventListener('click', () => showQuery('view_program'));
-  const search_observations_tab_element = document.getElementById('search_observations_tab');
-  search_observations_tab_element.addEventListener('click', () => showQuery('search_observations'));
-  const search_objects_tab_element = document.getElementById('search_objects_tab');
-  search_objects_tab_element.addEventListener('click', () => showQuery('search_objects'));
+  const viewProgramTabElement = document.getElementById('view_program_tab');
+  viewProgramTabElement.addEventListener('click', () => showQuery('view_program'));
+
+  const searchObservationsTabElement = document.getElementById('search_observations_tab');
+  searchObservationsTabElement.addEventListener('click', () => showQuery('search_observations'));
+
+  const searchObjectsTabElement = document.getElementById('search_objects_tab');
+  searchObjectsTabElement.addEventListener('click', () => showQuery('search_objects'));
 
   updateControlsFromSearchParams()
 
@@ -368,50 +344,12 @@ function containsKey(obj, key) {
   return Object.prototype.hasOwnProperty.call(obj, key);
 }
 
-function JoinObjects() {
-  for (const [_, observation] of Object.entries(observations)) {
-    const objIds = observation.ObjIds.split('|')
-    for (const objId of objIds) {
-      if (!containsKey(objects, objId)) {
-        throw Error('Observation ' + JSON.stringify(observation) + ' has objectId ' + objId + " that doesn't appear in any object");
-      }
-      const currObject = objects[objId];
-      if (!containsKey(currObject, 'observation_ids')) {
-        currObject.observation_ids = [];
-      }
-      currObject.observation_ids.push(observation['#id']);
-    }
-  }
-
-  for (const [programName, programEntries] of Object.entries(programs)) {
-    for (const programEntry of programEntries) {
-      // Check consistency of observation ids (if any)
-      const obsId = programEntry.observationId;
-      if (obsId != null && obsId.length > 0 && !containsKey(observations, obsId)) {
-        throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad observationId');
-      }
-
-      // Check consistency of object ids
-      const objId = programEntry.objectId;
-      if (!containsKey(objects, objId)) {
-        throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad objectId');
-      }
-
-      // Link program ids back to the objects
-      const currObject = objects[objId];
-      if (!containsKey(currObject, 'program_ids')) {
-        currObject.program_ids = [];
-      }
-      currObject.program_ids.push(programEntry['#program']);
-    }
-  }
-}
-
 function ParseData (responses) {
-  observations = keyByColumn(tsvToJson(responses[0]), '#id')
-  objects = keyByColumn(tsvToJson(responses[1]), '#id')
-  programs = keyByColumnAsLists(tsvToJson(responses[2]), '#program')
-  JoinObjects();
+  const observationList = readObservations(responses[0]);
+  const objectList = readObjects(responses[1]);
+  const programList = readPrograms(responses[2]);
+
+  database = new Database(objectList, observationList, programList)
 }
 
 function LoadDataAndSetupPage () {
