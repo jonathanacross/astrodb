@@ -10,7 +10,7 @@ let database;
 function getObjectAttribute(displayName) {
   const lookupMap = {
     Id: 'id',
-    Name: 'name',
+    Name: 'names',
     Type: 'type',
     Con: 'con',
     RA: 'ra',
@@ -120,7 +120,7 @@ function showObjectList (objectIds, showAsText) {
 
   resultsArea.appendChild(resultsHeader)
 
-  const columns = ['Id', 'Names', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
+  const columns = ['Id', 'Name', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
 
   if (showAsText) {
     const text = createObjectListingText(objectIds, columns)
@@ -137,7 +137,7 @@ function setObjectInfo(observation, element) {
     const obj = database.objects[objectId];
     const title = document.createElement('div');
     title.className = 'objname';
-    title.textContent = obj.name;
+    title.textContent = obj.names;
     element.appendChild(title);
 
     // Only bother to show type, con etc. for
@@ -204,14 +204,14 @@ function showObservations(resultElementIdName, observationIds) {
     notesDiv.appendChild(objinfo);
     notesDiv.appendChild(notesList);
     if (obs.Notes != null) {
-      let description = document.createElement('p');
+      const description = document.createElement('p');
       description.textContent = obs.notes;
       notesDiv.appendChild(description);
     }
 
-    let sketchDiv = document.createElement('div');
+    const sketchDiv = document.createElement('div');
     sketchDiv.className = 'sketch';
-    let sketch = document.createElement('img');
+    const sketch = document.createElement('img');
     sketch.src = 'data/sketches/' + obs.id + '.jpg';
     sketchDiv.appendChild(sketch);
 
@@ -227,7 +227,7 @@ function doProgramQuery () {
   const filter = new ProgramFilter()
   filter.setProgramNameIs(document.getElementById('program_program_name').value)
 
-  let newquery = 'show=program' + filter.getUrlParameters()
+  const newquery = 'show=program' + filter.getUrlParameters()
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
   const matchingObservationIds = filter.getMatchingObservationIds(database.programs)
@@ -325,17 +325,17 @@ function updateControlsFromSearchParams () {
 
 function setupControls () {
   const programpicker = document.getElementById('program_program_name')
-  for (const [program_name, _] of Object.entries(database.programs).sort()) {
-    let option = document.createElement("option");
-    option.text = program_name;
+  for (const [programName, _] of Object.entries(database.programs).sort()) {
+    const option = document.createElement('option');
+    option.text = programName;
     programpicker.add(option);
   }
 
   let cons = new Set()
   for (const [_, obs] of Object.entries(database.observations)) {
-    const objIds = obs.objectIds.split('|')
-    for (const objId of objIds) {
-      const c = database.objects[objId].Con
+    const objectIds = obs.objectIds.split('|')
+    for (const objectId of objectIds) {
+      const c = database.objects[objectId].Con
       if (c != null) {
         cons.add(c)
       }
@@ -401,11 +401,6 @@ function checkResponses (responses) {
     }
   }
   return responses
-}
-
-// Convenience function for seeing if an object contains a key.
-function containsKey(obj, key) {
-  return Object.prototype.hasOwnProperty.call(obj, key);
 }
 
 function ParseData (responses) {

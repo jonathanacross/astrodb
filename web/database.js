@@ -1,10 +1,10 @@
 // Classes to hold astronomical-related database data
 
 export class AstroObject {
-  constructor(lineNumber, id, name, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
+  constructor(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
     this.lineNumber = lineNumber;  // used only for logging errors
     this.id = id;
-    this.name = name;
+    this.names = names;
     this.type = type;
     this.con = con;
     this.ra = ra;
