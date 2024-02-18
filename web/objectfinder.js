@@ -93,8 +93,34 @@ function showObjectList (objectIds, showAsText) {
   }
 }
 
-function showObservations(resultElementIdName, observation_ids) {
-  let resultsArea = document.getElementById(resultElementIdName)
+function setObjectInfo(observation, element) {
+  const objectIds = observation.objectIds.split('|');
+  for (const objectId of objectIds) {
+    const obj = database.objects[objectId];
+    const title = document.createElement('div');
+    title.className = 'objname';
+    title.textContent = obj.name;
+    element.appendChild(title);
+
+    // Only bother to show type, con etc. for
+    // objects that have a fixed position in the sky.
+    if (obj.con !== '') {
+      const attrslist = document.createElement('ul');
+      const attributes = ['type', 'con', 'ra', 'dec'];
+      for (const attr of attributes) {
+        if (obj[attr] !== '') {
+          const li = document.createElement('li');
+          li.textContent = attr + ': ' + obj[attr];
+          attrslist.appendChild(li);
+        }
+      }
+      element.appendChild(attrslist);
+    }
+  }
+}
+
+function showObservations(resultElementIdName, observationIds) {
+  const resultsArea = document.getElementById(resultElementIdName)
 
   // clear old results
   while (resultsArea.hasChildNodes()) {
@@ -107,7 +133,7 @@ function showObservations(resultElementIdName, observation_ids) {
   const resultsHeader = document.createElement('div');
   const resultCount = document.createElement('p');
   //resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
-  resultCount.textContent = 'Found ' + observation_ids.length + ' observations.';
+  resultCount.textContent = 'Found ' + observationIds.length + ' observations.';
   resultsHeader.appendChild(resultCount);
 
   // grid of observations
@@ -117,38 +143,38 @@ function showObservations(resultElementIdName, observation_ids) {
   resultsArea.appendChild(resultsHeader);
   resultsArea.appendChild(resultsGrid);
 
-  for (const observation_id of observation_ids) {
-    const obs = database.observations[observation_id];
+  for (const observationId of observationIds) {
+    const obs = database.observations[observationId];
     const fragment = document.createDocumentFragment();
-    const obsDiv = document.createElement("div");
-    obsDiv.className = "observation";
+    const obsDiv = document.createElement('div');
+    obsDiv.className = 'observation';
 
-    const notesDiv = document.createElement("div");
-    notesDiv.className = "notes";
-    const objinfo = document.createElement("div");
-    //setObjectInfo(obs, objinfo);
+    const notesDiv = document.createElement('div');
+    notesDiv.className = 'notes';
+    const objinfo = document.createElement('div');
+    setObjectInfo(obs, objinfo);
 
-    const notesList = document.createElement("ul");
-    const attributes = ["Date", "Location", "Scope", "Seeing", "Trans", "Time", "Eyepiece", "Mag", "Phase"];
+    const notesList = document.createElement('ul');
+    const attributes = ['date', 'location', 'scope', 'seeing', 'transparency', 'time', 'eyepiece', 'magnification', 'phase'];
     for (const attr of attributes) {
-      if (obs[attr] !== "") {
-        const li = document.createElement("li");
-        li.textContent = attr + ": " + obs[attr];
+      if (obs[attr] !== '') {
+        const li = document.createElement('li');
+        li.textContent = attr + ': ' + obs[attr];
         notesList.appendChild(li);
       }
     }
     notesDiv.appendChild(objinfo);
     notesDiv.appendChild(notesList);
     if (obs.Notes != null) {
-      let description = document.createElement("p");
-      description.textContent = obs.Notes;
+      let description = document.createElement('p');
+      description.textContent = obs.notes;
       notesDiv.appendChild(description);
     }
 
-    let sketchDiv = document.createElement("div");
-    sketchDiv.className = "sketch";
-    let sketch = document.createElement("img");
-    sketch.src = "data/sketches/" + obs.id + ".jpg";
+    let sketchDiv = document.createElement('div');
+    sketchDiv.className = 'sketch';
+    let sketch = document.createElement('img');
+    sketch.src = 'data/sketches/' + obs.id + '.jpg';
     sketchDiv.appendChild(sketch);
 
     obsDiv.appendChild(notesDiv);

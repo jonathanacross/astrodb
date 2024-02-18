@@ -112,20 +112,20 @@ export class ObjectFilter {
   }
 
   #objectMatches (object) {
-    const objectNames = object.Names.toLowerCase().split('/')
+    const objectNames = object.names.toLowerCase().split('/')
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
       return false
     }
     if (this.#nameLike !== null && objectNames.every((name) => !name.includes(this.#nameLike))) {
       return false
     }
-    if (this.#typeIs !== null && this.#typeIs !== object.Type) {
+    if (this.#typeIs !== null && this.#typeIs !== object.type) {
       return false
     }
-    if (this.#conIs !== null && this.#conIs !== object.Con) {
+    if (this.#conIs !== null && this.#conIs !== object.con) {
       return false
     }
-    if (!this.raIsInRange(object.Ra)) {
+    if (!this.raIsInRange(object.ra)) {
       return false
     }
     return true
@@ -133,9 +133,9 @@ export class ObjectFilter {
 
   getMatchingObjectIds (objects) {
     const results = []
-    for (const [objId, obj] of Object.entries(objects)) {
-      if (this.#objectMatches(obj)) {
-        results.push(objId)
+    for (const [objectId, object] of Object.entries(objects)) {
+      if (this.#objectMatches(object)) {
+        results.push(objectId)
       }
     }
     return results
@@ -213,7 +213,7 @@ export class ObservationFilter {
     // if (this.#conIs !== null && this.#conIs !== observation.Con) {
     //   return false
     // }
-    if (this.#dateLike !== null && !observation.Date.includes(this.#dateLike)) {
+    if (this.#dateLike !== null && !observation.date.includes(this.#dateLike)) {
       return false
     }
     return true
@@ -221,9 +221,9 @@ export class ObservationFilter {
 
   getMatchingObservationIds (observations) {
     const results = []
-    for (const [objId, obj] of Object.entries(observations)) {
-      if (this.#observationMatches(obj)) {
-        results.push(objId)
+    for (const [observationId, observation] of Object.entries(observations)) {
+      if (this.#observationMatches(observation)) {
+        results.push(observationId)
       }
     }
     return results
