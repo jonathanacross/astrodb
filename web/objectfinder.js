@@ -7,6 +7,45 @@ import { AstroObject, Observation, ProgramEntry, Database } from './database.js'
 
 let database;
 
+function getObjectAttribute(displayName) {
+  const lookupMap = {
+    Id: 'id',
+    Name: 'name',
+    Type: 'type',
+    Con: 'con',
+    RA: 'ra',
+    Dec: 'dec',
+    Mag: 'mag',
+    Size: 'size',
+    Sep: 'sep',
+    PA: 'pa',
+    Class: 'objectClass',
+    Distance: 'distance',
+    Notes: 'notes',
+    ObservationIds: 'observationIds',
+    ProgramIds: 'programIds'
+  };
+  return lookupMap[displayName]
+}
+
+function getOservationAttribute(displayName) {
+  const lookupMap = {
+    Id: 'id',
+    Date: 'date',
+    Loc: 'location',
+    Scope: 'scope',
+    Seeing: 'seeing',
+    Trans: 'transparency',
+    ObjectIds: 'objectIds',
+    Time: 'time',
+    Eyepiece: 'eyepiece',
+    Mag: 'magnification',
+    Phase: 'phase',
+    Notes: 'notes'
+  };
+  return lookupMap[displayName]
+}
+
 function createObjectListingTable (objectIds, columns) {
   const objTable = document.createElement('table')
   const tableHeader = document.createElement('thead')
@@ -28,7 +67,7 @@ function createObjectListingTable (objectIds, columns) {
 
     for (const col of columns) {
       const cell = document.createElement('td')
-      const cellText = document.createTextNode(obj[col])
+      const cellText = document.createTextNode(obj[getObjectAttribute(col)])
       cell.appendChild(cellText)
       row.appendChild(cell)
     }
@@ -55,7 +94,7 @@ function createObjectListingText (objectIds, columns) {
   for (const objId of objectIds) {
     const obj = database.objects[objId]
     for (const col of columns) {
-      text += obj[col] + '\t'
+      text += obj[getObjectAttribute(col)] + '\t'
     }
     text += '\n'
   }
@@ -81,8 +120,7 @@ function showObjectList (objectIds, showAsText) {
 
   resultsArea.appendChild(resultsHeader)
 
-  // TODO: fix casing of column names
-  const columns = ['id', 'names', 'type', 'con', 'ra', 'dec', 'mag', 'size', 'sep', 'pa', 'objectClass', 'distance', 'notes']
+  const columns = ['Id', 'Names', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
 
   if (showAsText) {
     const text = createObjectListingText(objectIds, columns)
@@ -106,11 +144,11 @@ function setObjectInfo(observation, element) {
     // objects that have a fixed position in the sky.
     if (obj.con !== '') {
       const attrslist = document.createElement('ul');
-      const attributes = ['type', 'con', 'ra', 'dec'];
+      const attributes = ['Type', 'Con', 'RA', 'Dec'];
       for (const attr of attributes) {
         if (obj[attr] !== '') {
           const li = document.createElement('li');
-          li.textContent = attr + ': ' + obj[attr];
+          li.textContent = attr + ': ' + obj[getObjectAttribute(attr)];
           attrslist.appendChild(li);
         }
       }
@@ -155,11 +193,11 @@ function showObservations(resultElementIdName, observationIds) {
     setObjectInfo(obs, objinfo);
 
     const notesList = document.createElement('ul');
-    const attributes = ['date', 'location', 'scope', 'seeing', 'transparency', 'time', 'eyepiece', 'magnification', 'phase'];
+    const attributes = ['Date', 'Loc', 'Scope', 'Seeing', 'Trans', 'Time', 'Eyepiece', 'Mag', 'Phase'];
     for (const attr of attributes) {
-      if (obs[attr] !== '') {
+      if (obs[getOservationAttribute(attr)] !== '') {
         const li = document.createElement('li');
-        li.textContent = attr + ': ' + obs[attr];
+        li.textContent = attr + ': ' + obs[getOservationAttribute(attr)];
         notesList.appendChild(li);
       }
     }
