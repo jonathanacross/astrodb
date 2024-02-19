@@ -116,6 +116,8 @@ function showObjectList (objectIds, showAsText) {
   const resultsHeader = document.createElement('div')
   const resultCount = document.createElement('p')
   // resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
+  resultCount.textContent = 'Found ' + objectIds.length + ' objects.';
+  resultCount.className = 'summary';
   resultsHeader.appendChild(resultCount)
 
   resultsArea.appendChild(resultsHeader)
@@ -172,6 +174,7 @@ function showObservations(resultElementIdName, observationIds) {
   const resultCount = document.createElement('p');
   //resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
   resultCount.textContent = 'Found ' + observationIds.length + ' observations.';
+  resultCount.className = 'summary';
   resultsHeader.appendChild(resultCount);
 
   // grid of observations
@@ -275,7 +278,6 @@ function doObservationQuery () {
   showObservations('search_observations_results', matchingObservationIds, database.objects);
 }
 
-
 function showQuery(search_query_type) {
   // Get all elements with class="tabcontent" and hide them
   const tabContent = document.getElementsByClassName('tabcontent');
@@ -305,11 +307,13 @@ function showQuery(search_query_type) {
   // make sure height of query/results are correct.
   const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
   const headerHeight = document.getElementById('header').offsetHeight;
-  document.getElementById('sidebar_objquery').style.marginTop = +headerHeight + 'px';
-  for (let i = 0; i < resultsContent.length; i++) {
-    resultsContent[i].style.marginLeft = sidebarWidth + 'px';
-    resultsContent[i].style.marginTop = +headerHeight + 'px';
-  }
+  const resultsArea = document.getElementById('results_objquery');
+  resultsArea.style.left = sidebarWidth + 'px';
+  resultsArea.style.top = headerHeight + 'px';
+  const queryArea = document.getElementById('sidebar_objquery');
+  queryArea.style.top = headerHeight + 'px';
+
+  document.getElementById('error_messages').style.display = 'none';
 }
 
 function showResults () {
