@@ -16,9 +16,10 @@ export class AstroObject {
     this.objectClass = objectClass;
     this.distance = distance;
     this.notes = notes;
+
     // populated after joining
-    this.observationIds = [];
-    this.programIds = [];
+    this.observationData = [];
+    this.programData = [];
   }
 }
 
@@ -37,6 +38,9 @@ export class Observation {
     this.magnification = magnifcation;
     this.phase = phase;
     this.notes = notes;
+
+    // populated after joining
+    this.objectData = [];
   }
 }
 
@@ -117,7 +121,10 @@ export class Database {
 
         // link observation ids back to the objects
         const currObject = this.objects[objectId];
-        currObject.observationIds.push(observation.id);
+        currObject.observationData.push(observation);
+
+        // link objects in the observations
+        observation.objectData.push(currObject);
       }
     }
   
@@ -130,14 +137,14 @@ export class Database {
         }
   
         // Check consistency of object ids
-        const objId = programEntry.objectId;
-        if (!containsKey(this.objects, objId)) {
+        const objectId = programEntry.objectId;
+        if (!containsKey(this.objects, objectId)) {
           throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad objectId');
         }
   
         // Link program ids back to the objects
-        const currObject = this.objects[objId];
-        currObject.programIds.push(programEntry.programName);
+        const currObject = this.objects[objectId];
+        currObject.programData.push(programEntry);
       }
     }
   }

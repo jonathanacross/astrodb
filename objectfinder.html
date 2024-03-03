@@ -24,6 +24,7 @@
 
   <div id="sidebar_objquery">
 
+    <!-- Program Query -->
     <div class="tabcontent" id="view_program">
       <p class="queryheader">See progress for a particular program:</p>
       <select name="program_program_name" id="program_program_name">
@@ -31,6 +32,7 @@
       <button id="program_show">Show</button>
     </div>
 
+    <!-- Observation Query -->
     <div class="tabcontent" id="search_observations">
       <p class="queryheader">Observation Search</p>
 
@@ -50,14 +52,27 @@
         <label for="observation_constellation">Con:</label>
         <!--note: may be able to dynamically autocomplete with multiple, 
           see https://www.meziantou.net/html-multiple-selections-with-datalist.htm-->
-        <input list="constellation_list" name="observation_constellation" type="text" id="observation_constellation" multiple>
-        <datalist id="constellation_list">
-        </datalist>
+        <input list="constellation_list" name="observation_constellation" type="text" id="observation_constellation"
+          multiple>
+        <datalist id="constellation_list"></datalist>
       </div>
 
       <div class="formgroup">
         <label for="observation_date">Date:</label>
         <input type="text" id="observation_date" name="observation_date" placeholder="YYYY-MM-DD">
+      </div>
+
+      <div class="formgroup">
+        <label for="observation_location">Location:</label>
+        <input list="observation_location_list" name="observation_location" type="text" id="observation_location"
+          multiple>
+        <datalist id="observation_location_list"></datalist>
+      </div>
+
+      <div class="formgroup">
+        <label for="observation_scope">Scope:</label>
+        <input list="observation_scope_list" name="observation_scope" type="text" id="observation_scope" multiple>
+        <datalist id="observation_scope_list"></datalist>
       </div>
 
       <div class=radiogroup>
@@ -75,6 +90,7 @@
       <button id="observation_show">Show</button>
     </div>
 
+    <!-- Object Query -->
     <div class="tabcontent" id="search_objects">
       <p class="queryheader">List Objects</p>
 
@@ -123,7 +139,7 @@
         <tr>
           <td>Program</td>
           <td>is</td>
-          <td><input type="text" id="object_program_is" name="object_program_is"></td>
+          <td><input type="text" id="object_program_name" name="object_program_name"></td>
         </tr>
         <tr>
           <td>Observed</td>

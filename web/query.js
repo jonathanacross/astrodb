@@ -15,6 +15,7 @@ export class ObjectFilter {
   #raMax = null
   #decMin = null
   #decMax = null
+  #programNameIs = null
 
   setNameIs (nameIs) {
     if (!nullOrEmpty(nameIs)) {
@@ -58,6 +59,12 @@ export class ObjectFilter {
     }
   }
 
+  setProgramNameIs (programNameIs) {
+    if (!nullOrEmpty(programNameIs)) {
+      this.#programNameIs = programNameIs.toLowerCase()
+    }
+  }
+
   getUrlParameters () {
     let params = ''
     if (this.#nameIs !== null) {
@@ -77,6 +84,9 @@ export class ObjectFilter {
     }
     if (this.#raMax !== null) {
       params += '&raMax=' + encodeURIComponent(this.#raMin)
+    }
+    if (this.#programNameIs !== null) {
+      params += '&programNameIs=' + encodeURIComponent(this.#programNameIs)
     }
     return params
   }
@@ -128,50 +138,29 @@ export class ObjectFilter {
     if (!this.raIsInRange(object.ra)) {
       return false
     }
+    const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
+    if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {
+      return false
+    }
     return true
   }
 
-  getMatchingObjectIds (objects) {
-    const results = []
+  getMatchingObjectIds(objects) {
+    const objectIds = []
     for (const [objectId, object] of Object.entries(objects)) {
       if (this.#objectMatches(object)) {
-        results.push(objectId)
+        objectIds.push(objectId)
       }
     }
-    return results
+    return objectIds;
   }
 }
 
 export class ObservationFilter {
-  #nameIs = null
-  #nameLike = null
-  #typeIs = null
-  #conIs = null
   #dateLike = null
-
-  setNameIs (nameIs) {
-    if (!nullOrEmpty(nameIs)) {
-      this.#nameIs = nameIs.toLowerCase()
-    }
-  }
-
-  setNameLike (nameLike) {
-    if (!nullOrEmpty(nameLike)) {
-      this.#nameLike = nameLike.toLowerCase()
-    }
-  }
-
-  setTypeIs (typeIs) {
-    if (!nullOrEmpty(typeIs)) {
-      this.#typeIs = typeIs
-    }
-  }
-
-  setConIs (conIs) {
-    if (!nullOrEmpty(conIs)) {
-      this.#conIs = conIs
-    }
-  }
+  #hasObjectType = null
+  #hasObjectCon = null
+  #hasObjectNameLike = null
 
   setDateLike (dateLike) {
     if (!nullOrEmpty(dateLike)) {
@@ -179,54 +168,76 @@ export class ObservationFilter {
     }
   }
 
+  setHasObjectType(hasObjectType) {
+    if (!nullOrEmpty(hasObjectType)) {
+      this.#hasObjectType = hasObjectType;
+    }
+  }
+
+  setHasObjectCon(hasObjectCon) {
+    if (!nullOrEmpty(hasObjectCon)) {
+      this.#hasObjectCon = hasObjectCon;
+    }
+  }
+
+  setHasObjectNameLike(hasObjectNameLike) {
+    if (!nullOrEmpty(hasObjectNameLike)) {
+      this.#hasObjectNameLike = hasObjectNameLike.toLowerCase();
+    }
+  }
+
   getUrlParameters () {
     let params = ''
-    if (this.#nameIs !== null) {
-      params += '&nameIs=' + encodeURIComponent(this.#nameIs)
-    }
-    if (this.#nameLike !== null) {
-      params += '&nameLike=' + encodeURIComponent(this.#nameLike)
-    }
-    if (this.#typeIs !== null) {
-      params += '&typeIs=' + encodeURIComponent(this.#typeIs)
-    }
-    if (this.#conIs !== null) {
-      params += '&conIs=' + encodeURIComponent(this.#conIs)
-    }
     if (this.#dateLike !== null) {
       params += '&dateLike=' + encodeURIComponent(this.#dateLike)
+    }
+    if (this.#hasObjectType !== null) {
+      params += '&hasObjectType=' + encodeURIComponent(this.#hasObjectType)
+    }
+    if (this.#hasObjectCon !== null) {
+      params += '&hasObjectCon=' + encodeURIComponent(this.#hasObjectCon)
+    }
+    if (this.#hasObjectNameLike !== null) {
+      params += '&hasObjectNameLike=' + encodeURIComponent(this.#hasObjectNameLike)
     }
     return params
   }
 
   #observationMatches (observation) {
-    //const objectNames = observation.Names.toLowerCase().split('/')
-    // if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
-    //   return false
-    // }
-    // if (this.#nameLike !== null && objectNames.every((name) => !name.includes(this.#nameLike))) {
-    //   return false
-    // }
-    // if (this.#typeIs !== null && this.#typeIs !== observation.Type) {
-    //   return false
-    // }
-    // if (this.#conIs !== null && this.#conIs !== observation.Con) {
-    //   return false
-    // }
     if (this.#dateLike !== null && !observation.date.includes(this.#dateLike)) {
       return false
     }
+
+    if (this.#hasObjectNameLike !== null &&
+      observation.objectData.every((object) => {
+        const objectNames = object.names.toLowerCase().split('/')
+        return objectNames.every((name) => !name.includes(this.#hasObjectNameLike))
+      })) {
+      return false;
+    }
+
+    if (this.#hasObjectCon !== null && 
+        observation.objectData.every((object) => this.#hasObjectCon !== object.con)) {
+      return false;
+    }
+
+    // TODO: handle objects having multiple types.
+    if (this.#hasObjectType !== null && 
+        observation.objectData.every((object) => this.#hasObjectType !== object.type)) {
+      return false;
+    }
+
     return true
   }
 
   getMatchingObservationIds (observations) {
-    const results = []
+    const observationIds = []
     for (const [observationId, observation] of Object.entries(observations)) {
       if (this.#observationMatches(observation)) {
-        results.push(observationId)
+        observationIds.push(observationId)
       }
     }
-    return results
+    return observationIds
   }
 }
 
@@ -249,13 +260,10 @@ export class ProgramFilter {
 
   getMatchingObservationIds (programs) {
     const entries = programs[this.#programNameIs];
-    const obsIds = entries
+    const observationIds = entries
       .filter(o => o.observationId !== '')
       .map(o => o.observationId)
       .filter(onlyUnique);
-
-    // TODO: extend to include matching objects, so we can show the count in the UI
-
-    return obsIds;
+    return observationIds;
   }
 }

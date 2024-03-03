@@ -247,13 +247,14 @@ function doObjectQuery () {
   filter.setConIs(document.getElementById('object_constellation').value)
   filter.setRaRange(document.getElementById('object_ra_min').value,
     document.getElementById('object_ra_max').value)
+  filter.setProgramNameIs(document.getElementById('object_program_name').value)
 
-  let newquery = 'show=objects' + filter.getUrlParameters()
-  newquery += '&mode=' + encodeURIComponent(listType)
+  // TODO: update url/history
+  // let newquery = 'show=objects' + filter.getUrlParameters()
+  // newquery += '&mode=' + encodeURIComponent(listType)
+  // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
-  history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
-
-  const matchingObjectIds = filter.getMatchingObjectIds(database.objects)
+  const matchingObjectIds = filter.getMatchingObjectIds(database.objects);
 
   const showAsText = document.getElementById('show_as_text').checked
   showObjectList(matchingObjectIds, showAsText)
@@ -263,17 +264,17 @@ function doObservationQuery () {
   const listType = document.querySelector('input[name="listtype"]:checked').value
 
   const filter = new ObservationFilter()
-  filter.setNameLike(document.getElementById('observation_object_name').value)
-  filter.setTypeIs(document.getElementById('observation_object_type').value)
-  filter.setConIs(document.getElementById('observation_constellation').value)
+  filter.setHasObjectNameLike(document.getElementById('observation_object_name').value)
+  filter.setHasObjectType(document.getElementById('observation_object_type').value)
+  filter.setHasObjectCon(document.getElementById('observation_constellation').value)
   filter.setDateLike(document.getElementById('observation_date').value)
 
-  let newquery = 'show=objects' + filter.getUrlParameters()
-  newquery += '&mode=' + encodeURIComponent(listType)
+  // TODO: update url/history
+  // let newquery = 'show=objects' + filter.getUrlParameters()
+  // newquery += '&mode=' + encodeURIComponent(listType)
+  // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
-  history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
-
-  const matchingObservationIds = filter.getMatchingObservationIds(database.observations, database.objects)
+  const matchingObservationIds = filter.getMatchingObservationIds(database.observations);
 
   showObservations('search_observations_results', matchingObservationIds, database.objects);
 }
@@ -327,6 +328,17 @@ function updateControlsFromSearchParams () {
   // TODO: implmement
 }
 
+function populateDropdown(dropdownElement, items) {
+  for (const item of items) {
+    if (item !== '') {
+      const option = document.createElement('option')
+      option.value = item
+      option.text = item
+      dropdownElement.appendChild(option)
+    }
+  }
+}
+
 function setupControls () {
   const programpicker = document.getElementById('program_program_name')
   for (const [programName, _] of Object.entries(database.programs).sort()) {
@@ -347,14 +359,27 @@ function setupControls () {
   }
   cons = Array.from(cons).sort()
   const conpicker = document.getElementById('constellation_list')
-  for (const c of cons) {
-    if (c !== '') {
-      const option = document.createElement('option')
-      option.value = c
-      option.text = c
-      conpicker.appendChild(option)
+  populateDropdown(conpicker, cons);
+
+  let scopes = new Set()
+  for (const [_, observation] of Object.entries(database.observations)) {
+    if (observation.scope != null) {
+      scopes.add(observation.scope);
     }
   }
+  scopes = Array.from(scopes).sort()
+  const scopePicker = document.getElementById('observation_scope_list')
+  populateDropdown(scopePicker, scopes);
+
+  let locations = new Set()
+  for (const [_, observation] of Object.entries(database.observations)) {
+    if (observation.location != null) {
+      locations.add(observation.location);
+    }
+  }
+  locations = Array.from(locations).sort()
+  const locationPicker = document.getElementById('observation_location_list')
+  populateDropdown(locationPicker, locations);
 
   const objTypeList = document.getElementById('type_list')
   for (const objType of objectTypes) {
