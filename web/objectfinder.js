@@ -206,7 +206,7 @@ function showObservations(resultElementIdName, observationIds) {
     }
     notesDiv.appendChild(objinfo);
     notesDiv.appendChild(notesList);
-    if (obs.Notes != null) {
+    if (obs.notes != null) {
       const description = document.createElement('p');
       description.textContent = obs.notes;
       notesDiv.appendChild(description);
@@ -268,6 +268,8 @@ function doObservationQuery () {
   filter.setHasObjectType(document.getElementById('observation_object_type').value)
   filter.setHasObjectCon(document.getElementById('observation_constellation').value)
   filter.setDateLike(document.getElementById('observation_date').value)
+  filter.setLocationIs(document.getElementById('observation_location').value)
+  filter.setScopeIs(document.getElementById('observation_scope').value)
 
   // TODO: update url/history
   // let newquery = 'show=objects' + filter.getUrlParameters()

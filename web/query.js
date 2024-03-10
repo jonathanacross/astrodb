@@ -161,6 +161,8 @@ export class ObservationFilter {
   #hasObjectType = null
   #hasObjectCon = null
   #hasObjectNameLike = null
+  #locationIs = null
+  #scopeIs = null
 
   setDateLike (dateLike) {
     if (!nullOrEmpty(dateLike)) {
@@ -186,6 +188,18 @@ export class ObservationFilter {
     }
   }
 
+  setLocationIs(locationIs) {
+    if (!nullOrEmpty(locationIs)) {
+      this.#locationIs = locationIs;
+    }
+  }
+
+  setScopeIs(scopeIs) {
+    if (!nullOrEmpty(scopeIs)) {
+      this.#scopeIs = scopeIs;
+    }
+  }
+
   getUrlParameters () {
     let params = ''
     if (this.#dateLike !== null) {
@@ -199,6 +213,12 @@ export class ObservationFilter {
     }
     if (this.#hasObjectNameLike !== null) {
       params += '&hasObjectNameLike=' + encodeURIComponent(this.#hasObjectNameLike)
+    }
+    if (this.#locationIs !== null) {
+      params += '&locationIs=' + encodeURIComponent(this.#locationIs)
+    }
+    if (this.#scopeIs !== null) {
+      params += '&scopeIs=' + encodeURIComponent(this.#scopeIs)
     }
     return params
   }
@@ -224,6 +244,14 @@ export class ObservationFilter {
     // TODO: handle objects having multiple types.
     if (this.#hasObjectType !== null && 
         observation.objectData.every((object) => this.#hasObjectType !== object.type)) {
+      return false;
+    }
+
+    if (this.#locationIs != null && observation.location !== this.#locationIs) {
+      return false;
+    }
+
+    if (this.#scopeIs != null && observation.scope !== this.#scopeIs) {
       return false;
     }
 
