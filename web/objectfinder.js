@@ -13,8 +13,8 @@ function getObjectAttribute(displayName) {
     Name: 'names',
     Type: 'type',
     Con: 'con',
-    RA: 'ra',
-    Dec: 'dec',
+    RA: 'raString',
+    Dec: 'decString',
     Mag: 'mag',
     Size: 'size',
     Sep: 'sep',
@@ -247,6 +247,8 @@ function doObjectQuery () {
   filter.setConIs(document.getElementById('object_constellation').value)
   filter.setRaRange(document.getElementById('object_ra_min').value,
     document.getElementById('object_ra_max').value)
+  filter.setDecRange(document.getElementById('object_dec_min').value,
+    document.getElementById('object_dec_max').value)
   filter.setProgramNameIs(document.getElementById('object_program_name').value)
 
   // TODO: update url/history

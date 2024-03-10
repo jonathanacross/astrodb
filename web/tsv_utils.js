@@ -1,5 +1,33 @@
 import { AstroObject, Observation, ProgramEntry } from './database.js'
 
+function nullOrEmpty (str) {
+  return str === null || str === ''
+}
+
+export function parseBase60(base60str) {
+  if (nullOrEmpty(base60str)) {
+    return null;
+  }
+
+  const regex = /[-.0-9]+/g;
+  const matches = base60str.match(regex);
+  if (matches !== null) {
+    const digitGroups = matches.map(m => parseFloat(m));
+
+    let value = 0.0
+    let scale = 1.0
+    const sign = (digitGroups[0] < 0) ? -1.0 : 1.0;
+
+    for (const number of digitGroups) {
+      value += Math.abs(number) * scale
+      scale /= 60.0
+    }
+    return value * sign;
+  } else {
+    throw Error("Can't parse RA/Dec value of '" + base60str);
+  }
+}
+
 // Parses a TSV line into an AstroObject
 function readObject(lineNumber, line) {
   const fields = line.split('\t');
@@ -10,8 +38,8 @@ function readObject(lineNumber, line) {
   const names = fields[1];
   const type = fields[2];
   const con = fields[3];
-  const ra = fields[4];
-  const dec = fields[5];
+  const ra = parseBase60(fields[4]);
+  const dec = parseBase60(fields[5]);
   const mag = fields[6];
   const size = fields[7];
   const sep = fields[8];

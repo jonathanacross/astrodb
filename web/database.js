@@ -1,5 +1,26 @@
 // Classes to hold astronomical-related database data
 
+function formatBase60(value, radixNames) {
+  if (value === null) {
+    return ''
+  }
+
+  const signStr = value < 0 ? '-' : ''
+  const totalSeconds = Math.round(Math.abs(value) * 3600)
+  const seconds = totalSeconds % 60
+  const totalMinutes = (totalSeconds - seconds) / 60
+  const minutes = totalMinutes % 60
+  const degrees = (totalMinutes - minutes) / 60
+
+  const degreesStr = String(degrees).padStart(2, '0')
+  const minutesStr = String(minutes).padStart(2, '0')
+  const secondsStr = String(seconds).padStart(2, '0')
+
+  return signStr + degreesStr + radixNames[0] + ' ' +
+      minutesStr + radixNames[1] + ' ' +
+      secondsStr + radixNames[2]
+}
+
 export class AstroObject {
   constructor(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
     this.lineNumber = lineNumber;  // used only for logging errors
@@ -8,7 +29,9 @@ export class AstroObject {
     this.type = type;
     this.con = con;
     this.ra = ra;
+    this.raString = formatBase60(ra, ['h', 'm', 's']);
     this.dec = dec;
+    this.decString = formatBase60(dec, ['°', '\'', '"']);
     this.mag = mag;
     this.size = size;
     this.sep = sep;

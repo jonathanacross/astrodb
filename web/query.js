@@ -1,3 +1,5 @@
+import { parseBase60 } from "./tsv_utils.js";
+
 function nullOrEmpty (str) {
   return str === null || str === ''
 }
@@ -43,19 +45,19 @@ export class ObjectFilter {
 
   setRaRange (raMin, raMax) {
     if (!nullOrEmpty(raMin)) {
-      this.#raMin = raMin
+      this.#raMin = parseBase60(raMin)
     }
     if (!nullOrEmpty(raMax)) {
-      this.#raMax = raMax
+      this.#raMax = parseBase60(raMax)
     }
   }
 
   setDecRange (decMin, decMax) {
     if (!nullOrEmpty(decMin)) {
-      this.#decMin = decMin
+      this.#decMin = parseBase60(decMin)
     }
     if (!nullOrEmpty(decMax)) {
-      this.#decMax = decMax
+      this.#decMax = parseBase60(decMax)
     }
   }
 
@@ -85,6 +87,12 @@ export class ObjectFilter {
     if (this.#raMax !== null) {
       params += '&raMax=' + encodeURIComponent(this.#raMin)
     }
+    if (this.#decMin !== null) {
+      params += '&decMin=' + encodeURIComponent(this.#decMin)
+    }
+    if (this.#decMax !== null) {
+      params += '&decMax=' + encodeURIComponent(this.#decMin)
+    }
     if (this.#programNameIs !== null) {
       params += '&programNameIs=' + encodeURIComponent(this.#programNameIs)
     }
@@ -113,12 +121,29 @@ export class ObjectFilter {
     }
 
     // Both min and max RA defined.  If the min and max are reversed, then
-    // reverse the checks, to handle objects crossing the 24-0 RA line.
+    // modify the checks to handle objects crossing the 24-0 RA line.
     if (this.#raMin < this.#raMax) {
       return this.#raMin <= ra && ra <= this.#raMax
     } else {
-      return this.#raMin >= ra && ra >= this.#raMax
+      return this.#raMin <= ra || ra <= this.#raMax
     }
+  }
+
+  decIsInRange(dec) {
+    // no dec defined (e.g., for planets, comets, etc.)
+    if (nullOrEmpty(dec)) {
+      return true;
+    }
+
+    if (this.#decMin !== null && dec < this.#decMin) {
+      return false;
+    }
+
+    if (this.#decMax !== null && dec > this.#decMax) {
+      return false;
+    }
+
+    return true;
   }
 
   #objectMatches (object) {
@@ -136,6 +161,9 @@ export class ObjectFilter {
       return false
     }
     if (!this.raIsInRange(object.ra)) {
+      return false
+    }
+    if (!this.decIsInRange(object.dec)) {
       return false
     }
     const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
