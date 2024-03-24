@@ -249,6 +249,7 @@ function doObjectQuery () {
     document.getElementById('object_ra_max').value)
   filter.setDecRange(document.getElementById('object_dec_min').value,
     document.getElementById('object_dec_max').value)
+  filter.setMagMax(document.getElementById('object_mag_max').value)
   filter.setProgramNameIs(document.getElementById('object_program_name').value)
 
 
@@ -282,7 +283,7 @@ function doObservationQuery () {
   // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
   const matchingObservationIds = filter.getMatchingObservationIds(database.observations);
-  let matchingObservations = matchingObservationIds.map(id => database.observations[id])
+  const matchingObservations = matchingObservationIds.map(id => database.observations[id])
   const sortFunction = getObservationSortFunction(sortMethod)
   matchingObservations.sort(sortFunction)
 

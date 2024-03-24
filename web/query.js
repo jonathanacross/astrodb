@@ -1,4 +1,4 @@
-import { parseBase60 } from "./tsv_utils.js";
+import { parseBase60 } from './tsv_utils.js';
 
 function nullOrEmpty (str) {
   return str === null || str === ''
@@ -17,6 +17,7 @@ export class ObjectFilter {
   #raMax = null
   #decMin = null
   #decMax = null
+  #magMax = null
   #programNameIs = null
 
   setNameIs (nameIs) {
@@ -61,6 +62,12 @@ export class ObjectFilter {
     }
   }
 
+  setMagMax (magMax) {
+    if (!nullOrEmpty(magMax)) {
+      this.#magMax = magMax
+    }
+  }
+
   setProgramNameIs (programNameIs) {
     if (!nullOrEmpty(programNameIs)) {
       this.#programNameIs = programNameIs.toLowerCase()
@@ -91,7 +98,10 @@ export class ObjectFilter {
       params += '&decMin=' + encodeURIComponent(this.#decMin)
     }
     if (this.#decMax !== null) {
-      params += '&decMax=' + encodeURIComponent(this.#decMin)
+      params += '&decMax=' + encodeURIComponent(this.#decMax)
+    }
+    if (this.#magMax !== null) {
+      params += '&magMax=' + encodeURIComponent(this.#magMax)
     }
     if (this.#programNameIs !== null) {
       params += '&programNameIs=' + encodeURIComponent(this.#programNameIs)
@@ -146,6 +156,18 @@ export class ObjectFilter {
     return true;
   }
 
+  magIsInRange(mag) {
+    if (nullOrEmpty(mag)) {
+      return true;
+    }
+
+    if (this.#magMax !== null && mag > this.#magMax) {
+      return false;
+    }
+
+    return true;
+  }
+
   #objectMatches (object) {
     const objectNames = object.names.toLowerCase().split('/')
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
@@ -165,6 +187,9 @@ export class ObjectFilter {
     }
     if (!this.decIsInRange(object.dec)) {
       return false
+    }
+    if (!this.magIsInRange(object.magValue)) {
+      return false;
     }
     const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
     if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {

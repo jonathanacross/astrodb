@@ -21,6 +21,22 @@ function formatBase60(value, radixNames) {
       secondsStr + radixNames[2]
 }
 
+// Converts a magnitude from string to a double value.
+// Note that the magnitude string may actually be a range
+// (e.g., variable stars) or a list in various formats
+// (for double/multiple stars).  If this is the case, we
+// just take the first value, which typically is the
+// brightest/smallest.
+function getMagnitudeAsNumber(magString) {
+  const regex = /-?[.0-9]+/g;
+  const matches = magString.match(regex);
+  if (matches !== null) {
+    return matches.map(m => parseFloat(m))[0];
+  } else {
+    return null;
+  }
+}
+
 export class AstroObject {
   constructor(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
     this.lineNumber = lineNumber;  // used only for logging errors
@@ -33,6 +49,7 @@ export class AstroObject {
     this.dec = dec;
     this.decString = formatBase60(dec, ['°', '\'', '"']);
     this.mag = mag;
+    this.magValue = getMagnitudeAsNumber(mag);
     this.size = size;
     this.sep = sep;
     this.pa = pa;
