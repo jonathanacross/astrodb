@@ -64,6 +64,7 @@ export class Observation {
 
     // populated after joining
     this.objectData = [];
+    this.names = '';  // names of the first object in the observation
   }
 }
 
@@ -136,6 +137,7 @@ export class Database {
   #addCrossIndex() {
     for (const [_, observation] of Object.entries(this.observations)) {
       const objectIds = observation.objectIds.split('|')
+      var firstObject = true;
       for (const objectId of objectIds) {
         // Check consistency of objectIds in observations
         if (!containsKey(this.objects, objectId)) {
@@ -148,23 +150,27 @@ export class Database {
 
         // link objects in the observations
         observation.objectData.push(currObject);
+        if (firstObject) {
+          observation.names = currObject.names;
+          firstObject = false;
+        }
       }
     }
-  
+
     for (const [_, programEntries] of Object.entries(this.programs)) {
       for (const programEntry of programEntries) {
         // Check consistency of observation ids (if any)
         const obsId = programEntry.observationId;
         if (obsId != null && obsId.length > 0 && !containsKey(this.observations, obsId)) {
-          throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad observationId');
+          throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown observationId');
         }
-  
+
         // Check consistency of object ids
         const objectId = programEntry.objectId;
         if (!containsKey(this.objects, objectId)) {
-          throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown/bad objectId');
+          throw Error('Program ' + JSON.stringify(programEntry) + ' has an unknown objectId');
         }
-  
+
         // Link program ids back to the objects
         const currObject = this.objects[objectId];
         currObject.programData.push(programEntry);

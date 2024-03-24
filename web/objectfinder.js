@@ -4,6 +4,7 @@ import { readObjects, readObservations, readPrograms } from './tsv_utils.js'
 import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js'
 import { objectTypes, constellations } from './constants.js'
 import { AstroObject, Observation, ProgramEntry, Database } from './database.js'
+import { getObservationSortFunction } from './sorting.js'
 
 let database;
 
@@ -28,7 +29,7 @@ function getObjectAttribute(displayName) {
   return lookupMap[displayName]
 }
 
-function getOservationAttribute(displayName) {
+function getObservationAttribute(displayName) {
   const lookupMap = {
     Id: 'id',
     Date: 'date',
@@ -159,7 +160,7 @@ function setObjectInfo(observation, element) {
   }
 }
 
-function showObservations(resultElementIdName, observationIds) {
+function showObservations(resultElementIdName, observations) {
   const resultsArea = document.getElementById(resultElementIdName)
 
   // clear old results
@@ -173,7 +174,7 @@ function showObservations(resultElementIdName, observationIds) {
   const resultsHeader = document.createElement('div');
   const resultCount = document.createElement('p');
   //resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
-  resultCount.textContent = 'Found ' + observationIds.length + ' observations.';
+  resultCount.textContent = 'Found ' + observations.length + ' observations.';
   resultCount.className = 'summary';
   resultsHeader.appendChild(resultCount);
 
@@ -184,8 +185,7 @@ function showObservations(resultElementIdName, observationIds) {
   resultsArea.appendChild(resultsHeader);
   resultsArea.appendChild(resultsGrid);
 
-  for (const observationId of observationIds) {
-    const obs = database.observations[observationId];
+  for (const obs of observations) {
     const fragment = document.createDocumentFragment();
     const obsDiv = document.createElement('div');
     obsDiv.className = 'observation';
@@ -198,9 +198,9 @@ function showObservations(resultElementIdName, observationIds) {
     const notesList = document.createElement('ul');
     const attributes = ['Date', 'Loc', 'Scope', 'Seeing', 'Trans', 'Time', 'Eyepiece', 'Mag', 'Phase'];
     for (const attr of attributes) {
-      if (obs[getOservationAttribute(attr)] !== '') {
+      if (obs[getObservationAttribute(attr)] !== '') {
         const li = document.createElement('li');
-        li.textContent = attr + ': ' + obs[getOservationAttribute(attr)];
+        li.textContent = attr + ': ' + obs[getObservationAttribute(attr)];
         notesList.appendChild(li);
       }
     }
@@ -251,6 +251,7 @@ function doObjectQuery () {
     document.getElementById('object_dec_max').value)
   filter.setProgramNameIs(document.getElementById('object_program_name').value)
 
+
   // TODO: update url/history
   // let newquery = 'show=objects' + filter.getUrlParameters()
   // newquery += '&mode=' + encodeURIComponent(listType)
@@ -273,14 +274,19 @@ function doObservationQuery () {
   filter.setLocationIs(document.getElementById('observation_location').value)
   filter.setScopeIs(document.getElementById('observation_scope').value)
 
+  const sortMethod = document.querySelector('input[name="observation_sort"]:checked').value;
+
   // TODO: update url/history
   // let newquery = 'show=objects' + filter.getUrlParameters()
   // newquery += '&mode=' + encodeURIComponent(listType)
   // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
   const matchingObservationIds = filter.getMatchingObservationIds(database.observations);
+  let matchingObservations = matchingObservationIds.map(id => database.observations[id])
+  const sortFunction = getObservationSortFunction(sortMethod)
+  matchingObservations.sort(sortFunction)
 
-  showObservations('search_observations_results', matchingObservationIds, database.objects);
+  showObservations('search_observations_results', matchingObservations);
 }
 
 function showQuery(search_query_type) {
