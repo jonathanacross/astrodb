@@ -1,6 +1,6 @@
 import { AstroObject, Observation, ProgramEntry } from './database.js'
 
-function nullOrEmpty (str) {
+export function nullOrEmpty (str) {
   return str === null || str === ''
 }
 
@@ -26,6 +26,57 @@ export function parseBase60(base60str) {
   } else {
     throw Error("Can't parse RA/Dec value of '" + base60str);
   }
+}
+
+// Extract the units from a size string.
+function parseSizeUnits(sizeString) {
+  const tLower = sizeString.toLowerCase().trim()
+  if (tLower.endsWith('"') || tLower.endsWith("''") || tLower.endsWith('s')) {
+    return 'ARC_SECONDS';
+  } else if (tLower.endsWith('\'') || tLower.endsWith('m')) {
+    return 'ARC_MINUTES';
+  } else if (tLower.endsWith('d') || tLower.endsWith('deg') || tLower.endsWith('°')) {
+    return 'DEGREES';
+  } else {
+    // default when no units specified
+    return 'ARC_MINUTES';
+  }
+}
+
+// parses a list of sizes, converts to arcminutes
+export function parseSizesArcminutes(sizeString) {
+  if (nullOrEmpty(sizeString)) {
+    return null
+  }
+
+  const units = parseSizeUnits(sizeString);
+  let scale = 1.0;
+  if (units === 'ARC_SECONDS') {
+    scale = 1.0 / 60;
+  } else if (units === 'DEGREES') {
+    scale = 60.0;
+  }
+
+  const regex = /[.0-9]+/g;
+  const matches = sizeString.match(regex);
+  if (matches !== null) {
+    const sizes = matches.map(m => parseFloat(m) * scale);
+    return sizes
+  } else {
+    throw Error('Could not parse object size ' + sizeString);
+  }
+}
+
+// Extracts the size of an object in arcminutes.  Some objects have
+// multiple dimensions for the major/minor axes.  We return the
+// min/max in all cases.
+export function getObjectSizesArcminutes(sizeString) {
+  if (nullOrEmpty(sizeString)) {
+    return [null, null]
+  }
+
+  const sizes = parseSizesArcminutes(sizeString);
+  return [Math.min(...sizes), Math.max(...sizes)];
 }
 
 // Parses a TSV line into an AstroObject

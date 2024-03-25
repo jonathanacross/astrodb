@@ -250,6 +250,8 @@ function doObjectQuery () {
   filter.setDecRange(document.getElementById('object_dec_min').value,
     document.getElementById('object_dec_max').value)
   filter.setMagMax(document.getElementById('object_mag_max').value)
+  filter.setSizeRange(document.getElementById('object_size_min').value,
+    document.getElementById('object_size_max').value)
   filter.setProgramNameIs(document.getElementById('object_program_name').value)
 
 

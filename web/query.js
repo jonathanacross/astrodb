@@ -1,4 +1,4 @@
-import { parseBase60 } from './tsv_utils.js';
+import { parseBase60, parseSizesArcminutes } from './tsv_utils.js';
 
 function nullOrEmpty (str) {
   return str === null || str === ''
@@ -18,6 +18,8 @@ export class ObjectFilter {
   #decMin = null
   #decMax = null
   #magMax = null
+  #sizeMin = null
+  #sizeMax = null
   #programNameIs = null
 
   setNameIs (nameIs) {
@@ -68,6 +70,15 @@ export class ObjectFilter {
     }
   }
 
+  setSizeRange (sizeMin, sizeMax) {
+    if (!nullOrEmpty(sizeMin)) {
+      this.#sizeMin = parseSizesArcminutes(sizeMin)[0];
+    }
+    if (!nullOrEmpty(sizeMax)) {
+      this.#sizeMax = parseSizesArcminutes(sizeMax)[0];
+    }
+  }
+
   setProgramNameIs (programNameIs) {
     if (!nullOrEmpty(programNameIs)) {
       this.#programNameIs = programNameIs.toLowerCase()
@@ -102,6 +113,12 @@ export class ObjectFilter {
     }
     if (this.#magMax !== null) {
       params += '&magMax=' + encodeURIComponent(this.#magMax)
+    }
+    if (this.#sizeMin !== null) {
+      params += '&sizeMin=' + encodeURIComponent(this.#sizeMin)
+    }
+    if (this.#sizeMax !== null) {
+      params += '&sizeMax=' + encodeURIComponent(this.#sizeMax)
     }
     if (this.#programNameIs !== null) {
       params += '&programNameIs=' + encodeURIComponent(this.#programNameIs)
@@ -168,6 +185,19 @@ export class ObjectFilter {
     return true;
   }
 
+  sizeIsInRange(minorSizeMinutes, majorSizeMinutes) {
+    if (minorSizeMinutes !== null && this.#sizeMin !== null && minorSizeMinutes < this.#sizeMin) {
+      return false;
+    }
+
+    if (majorSizeMinutes !== null && this.#sizeMax !== null && majorSizeMinutes > this.#sizeMax) {
+      return false;
+    }
+
+    return true;
+  }
+
+
   #objectMatches (object) {
     const objectNames = object.names.toLowerCase().split('/')
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
@@ -191,9 +221,12 @@ export class ObjectFilter {
     if (!this.magIsInRange(object.magValue)) {
       return false;
     }
+    if (!this.sizeIsInRange(object.minorSizeMinutes, object.majorSizeMinutes)) {
+      return false;
+    }
     const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
     if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {
-      return false
+      return false;
     }
     return true
   }

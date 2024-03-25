@@ -1,7 +1,8 @@
 // Classes to hold astronomical-related database data
+import { nullOrEmpty, getObjectSizesArcminutes } from './tsv_utils.js'
 
 function formatBase60(value, radixNames) {
-  if (value === null) {
+  if (nullOrEmpty(value)) {
     return ''
   }
 
@@ -22,10 +23,9 @@ function formatBase60(value, radixNames) {
 }
 
 // Converts a magnitude from string to a double value.
-// Note that the magnitude string may actually be a range
-// (e.g., variable stars) or a list in various formats
-// (for double/multiple stars).  If this is the case, we
-// just take the first value, which typically is the
+// Note that the magnitude string may actually be a range (e.g., variable
+// stars) or a list in various formats (for double/multiple stars). If
+// this is the case, we just take the first value, which typically is the
 // brightest/smallest.
 function getMagnitudeAsNumber(magString) {
   const regex = /-?[.0-9]+/g;
@@ -36,6 +36,7 @@ function getMagnitudeAsNumber(magString) {
     return null;
   }
 }
+
 
 export class AstroObject {
   constructor(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
@@ -51,6 +52,9 @@ export class AstroObject {
     this.mag = mag;
     this.magValue = getMagnitudeAsNumber(mag);
     this.size = size;
+    const [minor, major] = getObjectSizesArcminutes(size);
+    this.minorSizeMinutes = minor;
+    this.majorSizeMinutes = major;
     this.sep = sep;
     this.pa = pa;
     this.objectClass = objectClass;
@@ -154,7 +158,7 @@ export class Database {
   #addCrossIndex() {
     for (const [_, observation] of Object.entries(this.observations)) {
       const objectIds = observation.objectIds.split('|')
-      var firstObject = true;
+      let firstObject = true;
       for (const objectId of objectIds) {
         // Check consistency of objectIds in observations
         if (!containsKey(this.objects, objectId)) {
