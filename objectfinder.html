@@ -27,8 +27,7 @@
     <!-- Program Query -->
     <div class="tabcontent" id="view_program">
       <p class="queryheader">See progress for a particular program:</p>
-      <select name="program_program_name" id="program_program_name">
-      </select>
+      <select name="program_program_name" id="program_program_name"></select>
       <button id="program_show">Show</button>
     </div>
 
@@ -44,17 +43,13 @@
       <div class="formgroup">
         <label for="observation_object_type">Type:</label>
         <input list="type_list" name="observation_object_type" type="text" id="observation_object_type" multiple>
-        <datalist id="type_list">
-        </datalist>
+        <datalist id="type_list"></datalist>
       </div>
 
       <div class="formgroup">
         <label for="observation_constellation">Con:</label>
-        <!--note: may be able to dynamically autocomplete with multiple, 
-          see https://www.meziantou.net/html-multiple-selections-with-datalist.htm-->
-        <input list="constellation_list" name="observation_constellation" type="text" id="observation_constellation"
-          multiple>
-        <datalist id="constellation_list"></datalist>
+        <input list="observation_constellation_list" name="observation_constellation" type="text" id="observation_constellation" multiple>
+        <datalist id="observation_constellation_list"></datalist>
       </div>
 
       <div class="formgroup">
@@ -64,8 +59,7 @@
 
       <div class="formgroup">
         <label for="observation_location">Location:</label>
-        <input list="observation_location_list" name="observation_location" type="text" id="observation_location"
-          multiple>
+        <input list="observation_location_list" name="observation_location" type="text" id="observation_location" multiple>
         <datalist id="observation_location_list"></datalist>
       </div>
 
@@ -108,8 +102,8 @@
           <td><label for="object_constellation">Con</label></td>
           <td>is</td>
           <td>
-            <input list="constellation_list" name="object_constellation" type="text" id="object_constellation" multiple>
-            <datalist id="constellation_list"></datalist>
+            <input list="object_constellation_list" name="object_constellation" type="text" id="object_constellation" multiple>
+            <datalist id="object_constellation_list"></datalist>
           </td>
         </tr>
         <tr>
@@ -135,21 +129,25 @@
         <tr>
           <td>Program</td>
           <td>is</td>
-          <td><input type="text" id="object_program_name" name="object_program_name"></td>
+          <td>
+            <input list="object_program_name_list" type="text" id="object_program_name" name="object_program_name">
+            <datalist id="object_program_name_list"></datalist>
+          </td>
         </tr>
         <tr>
           <td>Observed</td>
           <td>status</td>
-          <td><input list="object_seen_status_list" type="text" id="object_seen_status" name="object_seen_status"></td>
-          <datalist id="object_seen_status_list">
-            <option value="Seen">Seen</option>
-            <option value="Not seen">Not seen</option>
-            <option value="Seen in program">Seen in program</option>
-            <option value="Not seen in program">Not seen in program</option>
-          </datalist>
+          <td>
+            <input list="object_seen_status_list" type="text" id="object_seen_status" name="object_seen_status">
+            <datalist id="object_seen_status_list">
+              <option value="Seen">Seen</option>
+              <option value="Not seen">Not seen</option>
+              <option value="Seen in program">Seen in program</option>
+              <option value="Not seen in program">Not seen in program</option>
+            </datalist>
+          </td>
         </tr>
       </table>
-
 
       <div class=radiogroup>
         <legend>Show results as:</legend>

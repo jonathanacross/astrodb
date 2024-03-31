@@ -352,26 +352,27 @@ function populateDropdown(dropdownElement, items) {
 }
 
 function setupControls () {
-  const programpicker = document.getElementById('program_program_name')
-  for (const [programName, _] of Object.entries(database.programs).sort()) {
-    const option = document.createElement('option');
-    option.text = programName;
-    programpicker.add(option);
-  }
+  const programProgramPicker = document.getElementById('program_program_name')
+  const objectProgramPicker = document.getElementById('object_program_name_list')
+  const programList = Array.from(Object.keys(database.programs)).sort()
+  populateDropdown(programProgramPicker, programList)
+  populateDropdown(objectProgramPicker, programList)
 
   let cons = new Set()
   for (const [_, obs] of Object.entries(database.observations)) {
     const objectIds = obs.objectIds.split('|')
     for (const objectId of objectIds) {
-      const c = database.objects[objectId].Con
+      const c = database.objects[objectId].con
       if (c != null) {
         cons.add(c)
       }
     }
   }
   cons = Array.from(cons).sort()
-  const conpicker = document.getElementById('constellation_list')
-  populateDropdown(conpicker, cons);
+  const observationConPicker = document.getElementById('observation_constellation_list')
+  populateDropdown(observationConPicker, cons);
+  const objectConPicker = document.getElementById('object_constellation_list')
+  populateDropdown(objectConPicker, cons);
 
   let scopes = new Set()
   for (const [_, observation] of Object.entries(database.observations)) {
