@@ -329,15 +329,11 @@ function showQuery(search_query_type) {
   document.getElementById('error_messages').style.display = 'none';
 }
 
-function showResults () {
-  const queryString = window.location.search
-  const urlParams = new URLSearchParams(queryString)
-
-  showObjectList(Object.keys(database.objects))
-}
-
 function updateControlsFromSearchParams () {
   // TODO: implmement
+
+  // Switch to the observations query by default on page load.
+  showQuery('search_observations')
 }
 
 function populateDropdown(dropdownElement, items) {
@@ -423,8 +419,6 @@ function setupControls () {
   searchObjectsTabElement.addEventListener('click', () => showQuery('search_objects'));
 
   updateControlsFromSearchParams()
-
-  showResults()
 }
 
 function displayErrors (err) {
