@@ -140,7 +140,13 @@
         <tr>
           <td>Observed</td>
           <td>status</td>
-          <td><input type="text" id="object_seen_in_program" name="object_seen_in_program"></td>
+          <td><input list="object_seen_status_list" type="text" id="object_seen_status" name="object_seen_status"></td>
+          <datalist id="object_seen_status_list">
+            <option value="Seen">Seen</option>
+            <option value="Not seen">Not seen</option>
+            <option value="Seen in program">Seen in program</option>
+            <option value="Not seen in program">Not seen in program</option>
+          </datalist>
         </tr>
       </table>
 

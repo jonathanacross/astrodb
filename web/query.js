@@ -21,6 +21,7 @@ export class ObjectFilter {
   #sizeMin = null
   #sizeMax = null
   #programNameIs = null
+  #seenStatus = null
 
   setNameIs (nameIs) {
     if (!nullOrEmpty(nameIs)) {
@@ -85,6 +86,12 @@ export class ObjectFilter {
     }
   }
 
+  setSeenStatus (seenStatus) {
+    if (!nullOrEmpty(seenStatus)) {
+      this.#seenStatus = seenStatus
+    }
+  }
+
   getUrlParameters () {
     let params = ''
     if (this.#nameIs !== null) {
@@ -122,6 +129,9 @@ export class ObjectFilter {
     }
     if (this.#programNameIs !== null) {
       params += '&programNameIs=' + encodeURIComponent(this.#programNameIs)
+    }
+    if (this.#seenStatus !== null) {
+      params += '&seenStatus=' + encodeURIComponent(this.#seenStatus)
     }
     return params
   }
@@ -197,6 +207,37 @@ export class ObjectFilter {
     return true;
   }
 
+  seenStatusMatches(object) {
+    // TODO: fix/finish this logic
+    // const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
+    // if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {
+    //   return false;
+    // }
+    const matchingProgramData = object.programData.filter(p => p.programName.toLowerCase() === this.#programNameIs)
+
+    switch (this.#seenStatus) {
+      case 'Seen':
+        return (object.observationData.length > 0);
+      case 'Not seen':
+        return (object.observationData.length === 0);
+      case 'Seen in program':
+        if (matchingProgramData.length >= 1) {
+          return !nullOrEmpty(matchingProgramData[0].observationId);
+        } else {
+          return false;
+        }
+      case 'Not seen in program':
+        if (matchingProgramData.length >= 1) {
+          return nullOrEmpty(matchingProgramData[0].observationId);
+        } else {
+          return false;
+        }
+      default:
+        // no (or invalid) filter
+        return true;
+    }
+  }
+
 
   #objectMatches (object) {
     const objectNames = object.names.toLowerCase().split('/')
@@ -226,6 +267,9 @@ export class ObjectFilter {
     }
     const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
     if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {
+      return false;
+    }
+    if (!this.seenStatusMatches(object)) {
       return false;
     }
     return true

@@ -239,8 +239,6 @@ function doProgramQuery () {
 }
 
 function doObjectQuery () {
-  const listType = document.querySelector('input[name="listtype"]:checked').value
-
   const filter = new ObjectFilter()
   filter.setNameLike(document.getElementById('object_object_name').value)
   filter.setTypeIs(document.getElementById('object_object_type').value)
@@ -253,9 +251,10 @@ function doObjectQuery () {
   filter.setSizeRange(document.getElementById('object_size_min').value,
     document.getElementById('object_size_max').value)
   filter.setProgramNameIs(document.getElementById('object_program_name').value)
-
+  filter.setSeenStatus(document.getElementById('object_seen_status').value)
 
   // TODO: update url/history
+  //const listType = document.querySelector('input[name="listtype"]:checked').value
   // let newquery = 'show=objects' + filter.getUrlParameters()
   // newquery += '&mode=' + encodeURIComponent(listType)
   // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
