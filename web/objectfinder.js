@@ -234,8 +234,9 @@ function doProgramQuery () {
   history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
   const matchingObservationIds = filter.getMatchingObservationIds(database.programs)
+  const matchingObservations = matchingObservationIds.map(id => database.observations[id])
 
-  showObservations('view_program_results', matchingObservationIds, database.objects);
+  showObservations('view_program_results', matchingObservations);
 }
 
 function doObjectQuery () {
