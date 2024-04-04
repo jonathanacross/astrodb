@@ -63,7 +63,12 @@ export class AstroObject {
 
     // populated after joining
     this.observationData = [];
+    this.observationIds = '';
+    this.numObservations = 0;
+
     this.programData = [];
+    this.programIds = '';
+    this.numPrograms = 0;
   }
 }
 
@@ -196,6 +201,14 @@ export class Database {
         const currObject = this.objects[objectId];
         currObject.programData.push(programEntry);
       }
+    }
+
+    // fill in derivative data for objects
+    for (const [_, object] of Object.entries(this.objects)) {
+      object.observationIds = object.observationData.map(o => o.id).join()
+      object.numObservations = object.observationData.length
+      object.programIds = object.programData.map(p => p.programName).join()
+      object.numPrograms = object.programData.length
     }
   }
 }

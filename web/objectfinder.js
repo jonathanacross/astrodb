@@ -23,8 +23,10 @@ function getObjectAttribute(displayName) {
     Class: 'objectClass',
     Distance: 'distance',
     Notes: 'notes',
-    ObservationIds: 'observationIds',
-    ProgramIds: 'programIds'
+    Observations: 'observationIds',
+    Programs: 'programIds',
+    'Num Obs': 'numObservations',
+    'Num Programs': 'numPrograms',
   };
   return lookupMap[displayName]
 }
@@ -103,7 +105,19 @@ function createObjectListingText (objectIds, columns) {
   return preBlock
 }
 
-function showObjectList (objectIds, showAsText) {
+function getColumns(objectListMode) {
+  if (objectListMode === 'observing') {
+    return ['Name', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Notes'];
+  } else if (objectListMode === 'program') {
+    return ['Id', 'Name', 'Type', 'Con', 'RA', 'Dec', 'Observations'];
+  } else if (objectListMode === 'object') {
+    return ['Id', 'Name', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes'];
+  } else { // objectListMode === 'meta'
+    return ['Name', 'Type', 'Con', 'RA', 'Dec', 'Distance', 'Num Obs', 'Num Programs', 'Observations', 'Programs'];
+  }
+}
+
+function showObjectList (objectIds, showAsText, objectListMode) {
   const resultsArea = document.getElementById('search_objects_results')
 
   // clear old results
@@ -123,7 +137,7 @@ function showObjectList (objectIds, showAsText) {
 
   resultsArea.appendChild(resultsHeader)
 
-  const columns = ['Id', 'Name', 'Type', 'Con', 'RA', 'Dec', 'Mag', 'Size', 'Sep', 'PA', 'Class', 'Distance', 'Notes']
+  const columns = getColumns(objectListMode)
 
   if (showAsText) {
     const text = createObjectListingText(objectIds, columns)
@@ -262,13 +276,13 @@ function doObjectQuery () {
 
   const matchingObjectIds = filter.getMatchingObjectIds(database.objects);
 
+  const objectListMode = document.querySelector('input[name="object_list_mode"]:checked').value;
+
   const showAsText = document.getElementById('show_as_text').checked
-  showObjectList(matchingObjectIds, showAsText)
+  showObjectList(matchingObjectIds, showAsText, objectListMode)
 }
 
 function doObservationQuery () {
-  const listType = document.querySelector('input[name="listtype"]:checked').value
-
   const filter = new ObservationFilter()
   filter.setHasObjectNameLike(document.getElementById('observation_object_name').value)
   filter.setHasObjectType(document.getElementById('observation_object_type').value)
