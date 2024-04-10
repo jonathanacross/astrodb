@@ -4,7 +4,6 @@ import { readObjects, readObservations, readPrograms } from './tsv_utils.js'
 import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js'
 import { objectTypes, constellations } from './constants.js'
 import { AstroObject, Observation, ProgramEntry, Database } from './database.js'
-import { getObservationSortFunction } from './sorting.js'
 
 let database;
 
@@ -171,6 +170,25 @@ function setObjectInfo(observation, element) {
       }
       element.appendChild(attrslist);
     }
+  }
+}
+
+export function getObservationSortFunction(sortMethod) {
+  if (sortMethod === 'name') {
+    return function (x, y) {
+      // first sort by name
+      if (x.names !== y.names) {
+        // locale compare should sort names in natural order, so that 'M 2' < 'M 10'
+        return x.names.localeCompare(y.names, undefined, { numeric: true, sensitivity: 'base' });
+      }
+      // fall back to observation date/number
+      return x.id.localeCompare(y.id);
+    };
+  } else if (sortMethod === 'date') {
+    return function (x, y) {
+      // id has date-obs#-name, so this includes date then observation number
+      return x.id.localeCompare(y.id);
+    };
   }
 }
 
