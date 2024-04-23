@@ -2,27 +2,63 @@ body {
   font-size:small;
   color: black;
   background-color: #dde3ea;
-  font-family: Baskerville, Times, serif;
+  /*font-family: Baskerville, Times, serif;*/
+  font-family:Optima, sans-serif;
 }
 
-.header {
+#header {
   position: fixed;
   z-index: 1;
   left:0;
   right:0;
   top:0;
-  height: 60px;
+  /*height: 100px;*/
+}
+
+#header h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin: 0;
   background-color: #dde3ea;
   overflow-x: hidden;
   background-image: url('header100.jpg');
-  background-size: auto 50px;
+  background-size: auto 80px;
   background-repeat: repeat no-repeat;
 }
 
-.header h1 {
-  padding-top: 10px;
-  padding-left: 20px;
-    margin: 0;
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
 .queryheader {
@@ -37,33 +73,61 @@ body {
 
 .formgroup input { display:inline-block; width: 110px; }
 
+.listquery input { width: 110px; }
 
-.sidebar {
+#results_objquery {
+  position:fixed;
+  top: 110px;
+  left: 250px;
+  right: 0;
+  bottom:0;
+  overflow-y:scroll;
+  overflow-x:scroll;
+  padding: 10px;
+}
+
+#sidebar_objquery {
   height: 100%;
-  width: 180px; 
   position: fixed;
-  z-index: 2; 
-  top: 50px;
+  top: 110px;
   left: 0;
   background-color: #c2cad6;
   overflow-x: hidden;
-  padding-top: 20px;
+  display: table;
+  padding: 10px;
 }
 
 .query {
-  padding: 10;
+  padding: 10px;
 }
 
-.results {
-    margin-left: 180px; /* must be same as width of .query */
-    margin-top: 60px; /* same as header height*/
+.results table {
+  border-collapse: collapse;
+  background-color: #dae2ed;
 }
+
+.results table td {
+  border: 1px solid #bbb;
+  padding: 8px;
+}
+
+.results table th {
+  background-color: #91a4bb;
+  font-weight: bold;
+  border: 1px solid #bbb;
+  padding: 8px;
+}
+
+.results tr:nth-child(even){background-color: #e9eff7;}
+
 
 .error {
     color: red;
+    font-size: medium;
+    font-family: monospace;
 }
 
-#results_list {
+.observation_result_grid {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fill, 350px);
@@ -73,7 +137,7 @@ body {
   background-color: white;
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 8;
+  padding: 8px;
   vertical-align: top;
 }
 
@@ -100,12 +164,15 @@ ul {
 }
 
 .sketch {
-  vertical-align:top;
-  height: 250;
+  height: 250px;
   display: block;
   object-fit: scale-down;
 }
 
 .objname {
     font-weight: bold;
+}
+
+.summary {
+  margin-block-start: 0em;
 }
