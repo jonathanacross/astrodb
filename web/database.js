@@ -167,7 +167,7 @@ export class Database {
       for (const objectId of objectIds) {
         // Check consistency of objectIds in observations
         if (!containsKey(this.objects, objectId)) {
-          throw Error('Observation ' + JSON.stringify(observation) + ' has objectId ' + objectId + " that doesn't appear in any object");
+          throw Error('Observation ' + observation.id + ' on line ' + observation.lineNumber + ' has objectId ' + objectId + " that doesn't appear in any object");
         }
 
         // link observation ids back to the objects
