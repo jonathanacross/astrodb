@@ -84,7 +84,7 @@ BL Ori	BL Ori/HIP 30564	Carbon	Ori	06h 25m 28s	14° 43' 19"	6.0 - 7.0				C6 (Nb,
 BM Gem	BM Gem/HIP 35617	Carbon	Gem	07h 20m 59s	24° 59' 58"	8.3 - 9.2				C5(Nb)		
 Boomerang	Boomerang	Ast	CMa	07h 05m 00s	-26° 00' 00"	4.0 - 6.0	2°					Semi-circle of 8 to 10 stars centered around Delta Canis Majoris.
 Bowl of Stars	Bowl of Stars	Ast	Cas	23h 55m 00s	56° 30' 00"	8	120'					wide field EP, binoculars. NGC 7789 in the center.
-Broken Engagement Ring	Broken Engagement Ring	Ast	UMa	10h 51m 00s	56° 09' 00"	7.0	20'					About 10 stars visible. West of Beta Ursa Majoris.Stars form an incomplete circle.
+Broken Engagement Ring	Broken Engagement Ring	Ast	UMa	10h 51m 00s	56° 09' 00"	7.0	20'					About 10 stars visible. West of Beta Ursa Majoris. Stars form an incomplete circle.
 BU 1	BU 1	Double	Cas	00h 52m 49s	56° 37' 40"	A=8.5, B=9.3, C=8.8, D=9.6		AB=1.5, AC=3.9, AD=9, AE=15.8	AB=83, AC=134, AD=194, AB,E=42			In the Pacman Nebula, NGC 281
 BU 126	BU 126	Double	Oph	17h 19m 54s	-17° 45' 00"	A=6.3, B=7.6, C=11.2		AB=2.3, AC=12				
 BU 193	BU 193	Double	Ori	06h 15m 30s	03° 57' 30"	A=6.9, B=12.0, C=10.0		AB=19.5, AC=57.8	AB=97, AC=232			
@@ -1392,6 +1392,7 @@ Mercury	Mercury	Planet
 Neptune	Neptune	Planet										
 Ceres	Ceres	Asteroid										
 Vesta	Vesta	Asteroid										
+12P Pons-Brooks	12P Pons-Brooks	Comet										
 46P Wirtanen	46P Wirtanen	Comet										
 C2023 E1 ATLAS	C2023 E1 ATLAS	Comet										
 C103P Hadley	C103P Hadley	Comet										
@@ -1401,17 +1402,19 @@ C2017 K2 PANSTARRS	C2017 K2 PANSTARRS	Comet
 Sunspots	Sunspots	Sun										
 Sun	Sun	Sun										
 Albategnius	Albategnius	Moon										
+Alphonsus	Alphonsus	Moon										
 Anaxagoras	Anaxagoras	Moon										
 Apollo 15 Site	Apollo 15 Site	Moon										
-Arago	Arago	Moon										
 Arago alpha & Arago beta	Arago alpha & Arago beta	Moon										
+Arago	Arago	Moon										
 Aristarchus Plateau	Aristarchus Plateau	Moon										
 Aristoteles	Aristoteles	Moon										
 Arzachel	Arzachel	Moon										
 Atlas	Atlas	Moon										
-Birmingham	Birmingham	Moon										
 Bailly	Bailly	Moon										
 Billy	Billy	Moon										
+Birmingham	Birmingham	Moon										
+Bompland	Bompland	Moon										
 Boscovich	Boscovich	Moon										
 Bullialdus	Bullialdus	Moon										
 Byrgius A	Byrgius A	Moon										
@@ -1420,6 +1423,7 @@ Catharina	Catharina	Moon
 Cauchy, Cauchy Omega, Cauchy Tau	Cauchy, Cauchy Omega, Cauchy Tau	Moon										
 Censorinus	Censorinus	Moon										
 Clavius	Clavius	Moon										
+Cow in the Moon	Cow in the Moon	Moon										
 Crescent Moon	Crescent Moon	Moon										
 Cruger	Cruger	Moon										
 Davy	Davy	Moon										
@@ -1431,13 +1435,16 @@ Eudoxus	Eudoxus	Moon
 Fabricus	Fabricus	Moon										
 First Quarter Moon	First Quarter Moon	Moon										
 Fracastorius	Fracastorius	Moon										
+Fra Munro	Fra Munro	Moon										
 Furnerius	Furnerius	Moon										
 Gassendi	Gassendi	Moon										
+Gemma Frisius	Gemma Frisius	Moon										
 Grimaldi	Grimaldi	Moon										
 Hainzel	Hainzel	Moon										
 Hansteen	Hansteen	Moon										
 Heraclides	Heraclides	Moon										
 Hercules	Hercules	Moon										
+Herschel	Herschel	Moon										
 Hesiodus A	Hesiodus A	Moon										
 Hippalus	Hippalus	Moon										
 Hipparchus	Hipparchus	Moon										
@@ -1450,8 +1457,9 @@ Langrenus	Langrenus	Moon
 Longomontanus	Longomontanus	Moon										
 Lunar Limb	Lunar Limb	Moon										
 Macrobius	Macrobius	Moon										
-Manilus	Manilus	Moon										
 Mairan	Mairan	Moon										
+Manilus	Manilus	Moon										
+Man in the Moon	Man in the Moon	Moon										
 Mare Crisium	Mare Crisium	Moon										
 Mare Imbrium	Mare Imbrium	Moon										
 Mare Vaporum	Mare Vaporum	Moon										
@@ -1467,23 +1475,27 @@ Mons Rumber	Mons Rumber	Moon
 Montes Apenninus	Montes Apenninus	Moon										
 Montes Foucault	Montes Foucault	Moon										
 Moon and major features	Moon and major features	Moon										
-Moon Occultation	Moon Occultation	Moon										
 Moon Conjunction	Moon Conjunction	Moon										
-New Moon	New Moon	Moon										
+Moon Occultation	Moon Occultation	Moon										
 New Moon in Old Moon's Arms	New Moon in Old Moon's Arms	Moon										
+New Moon	New Moon	Moon										
 Old moon in new moon's arms	Old moon in new moon's arms	Moon										
 Palus Epidemiarum	Palus Epidemiarum	Moon										
 Palus Putredinus	Palus Putredinus	Moon										
 Palus Somnii	Palus Somnii	Moon										
+Parry	Parry	Moon										
 Picard	Picard	Moon										
 Piccolomini	Piccolomini	Moon										
 Pitatus	Pitatus	Moon										
 Plato	Plato	Moon										
 Plinius	Plinius	Moon										
-Proclus	Proclus	Moon										
 Posidonius	Posidonius	Moon										
-Promontorium Agarum	Promontorium Agarum	Moon										
+Proclus	Proclus	Moon										
 Promontoria Lapace	Promontoria Lapace	Moon										
+Promontorium Agarum	Promontorium Agarum	Moon										
+Ptolemaeus	Ptolemaeus	Moon										
+Rabbi Levi	Rabbi Levi	Moon										
+Rabbit in the Moon	Rabbit in the Moon	Moon										
 Reiner Gamma	Reiner Gamma	Moon										
 Rima Hyginus	Rima Hyginus	Moon										
 Rupes Altai	Rupes Altai	Moon										
@@ -1503,6 +1515,8 @@ Tycho	Tycho	Moon
 Vendelinus	Vendelinus	Moon										
 Walter	Walter	Moon										
 Wargentin	Wargentin	Moon										
+Woman in the Moon	Woman in the Moon	Moon										
+Zagut	Zagut	Moon										
 Comet	Comet	Comet										any comet
 Conjunction	Conjunction	Planet										any conjunction
 Solar Eclipse	Solar Eclipse	Sun										solar
@@ -1586,3 +1600,4 @@ NGC 6980	NGC 6980	OCl	Aqr	20h 52m 48s	-05° 50' 12"
 NGC 7005	NGC 7005	OCl	Aqr	21h 01m 57s	-12° 52' 50"		30'					
 NGC 7134	NGC 7134	OCl	Cap	21h 48m 55s	-12° 58' 24"							
 SN2023ixf	SN2023ixf	Supernova	UMa	14h 04m 31s	54° 12' 22"							Bright supernova in M101 in May 2023. Extremely close to NGC 5461, a knot in M101.
+T CrB	T CrB/Blaze Star	Nova	CrB	15h 59m 30s	25° 55' 12"							The "Blaze Star".  This is a recurrinent nova, in 1855, 1946, and (hopefully) 2024

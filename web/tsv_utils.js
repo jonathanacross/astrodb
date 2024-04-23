@@ -1,3 +1,4 @@
+import { objectTypes } from './constants.js'
 import { AstroObject, Observation, ProgramEntry } from './database.js'
 
 export function nullOrEmpty (str) {
@@ -104,6 +105,12 @@ function readObject(lineNumber, line) {
   if (fields.length !== 13) {
     throw Error('Expected object line ' + lineNumber + ' to have 13 fields, but has ' + fields.length + '. Line = \n' + line + '\nParsed as: \n' + JSON.stringify(object));
   }
+
+  // TODO: uncomment this once objects support multiple types
+  // const knownObjectTypes = new Set(objectTypes.map(o => o.shortName));
+  // if (!knownObjectTypes.has(type)) {
+  //  throw Error('Object on line ' + lineNumber + ' has unknown type ' + type + '. Object = \n' + JSON.stringify(object));
+  //}
   return object;
 }
 
