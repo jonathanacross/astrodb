@@ -1407,10 +1407,14 @@ Anaxagoras	Anaxagoras	Moon
 Apollo 15 Site	Apollo 15 Site	Moon										
 Arago alpha & Arago beta	Arago alpha & Arago beta	Moon										
 Arago	Arago	Moon										
+Archimedes	Archimedes	Moon										
+Aristarchus	Aristarchus	Moon										
 Aristarchus Plateau	Aristarchus Plateau	Moon										
+Aristillus	Aristillus	Moon										
 Aristoteles	Aristoteles	Moon										
 Arzachel	Arzachel	Moon										
 Atlas	Atlas	Moon										
+Autolycus	Autolycus	Moon										
 Bailly	Bailly	Moon										
 Billy	Billy	Moon										
 Birmingham	Birmingham	Moon										
@@ -1418,31 +1422,38 @@ Bompland	Bompland	Moon
 Boscovich	Boscovich	Moon										
 Bullialdus	Bullialdus	Moon										
 Byrgius A	Byrgius A	Moon										
+Cassini A	Cassini A	Moon										
 Cassini	Cassini	Moon										
 Catharina	Catharina	Moon										
 Cauchy, Cauchy Omega, Cauchy Tau	Cauchy, Cauchy Omega, Cauchy Tau	Moon										
 Censorinus	Censorinus	Moon										
 Clavius	Clavius	Moon										
+Clavius craterlets	Clavius craterlets	Moon										
+Cleomedes	Cleomedes	Moon										
+Copernicus	Copernicus	Moon										
 Cow in the Moon	Cow in the Moon	Moon										
-Crescent Moon	Crescent Moon	Moon										
+Cow Jumping Over the Moon	Cow Jumping Over the Moon	Moon										
+Crescent Moon, Waning	Crescent Moon, Waning	Moon										
+Crescent Moon, Waxing	Crescent Moon, Waxing	Moon										
 Cruger	Cruger	Moon										
+Cyrillus	Cyrillus	Moon										
 Davy	Davy	Moon										
 Davy Y	Davy Y	Moon										
 Delaunay	Delaunay	Moon										
+Endymion	Endymion	Moon										
 Epigenes	Epigenes	Moon										
 Eratosthenes	Eratosthenes	Moon										
 Eudoxus	Eudoxus	Moon										
-Fabricus	Fabricus	Moon										
+Fabricius	Fabricius	Moon										
 First Quarter Moon	First Quarter Moon	Moon										
 Fracastorius	Fracastorius	Moon										
-Fra Munro	Fra Munro	Moon										
+Fra Mauro	Fra Mauro	Moon										
 Furnerius	Furnerius	Moon										
 Gassendi	Gassendi	Moon										
 Gemma Frisius	Gemma Frisius	Moon										
 Grimaldi	Grimaldi	Moon										
 Hainzel	Hainzel	Moon										
 Hansteen	Hansteen	Moon										
-Heraclides	Heraclides	Moon										
 Hercules	Hercules	Moon										
 Herschel	Herschel	Moon										
 Hesiodus A	Hesiodus A	Moon										
@@ -1456,34 +1467,48 @@ Lacus Mortis	Lacus Mortis	Moon
 Langrenus	Langrenus	Moon										
 Longomontanus	Longomontanus	Moon										
 Lunar Limb	Lunar Limb	Moon										
+Lunar Rays	Lunar Rays	Moon										
 Macrobius	Macrobius	Moon										
+Maginus	Maginus	Moon										
 Mairan	Mairan	Moon										
+Manilius	Manilius	Moon										
 Manilus	Manilus	Moon										
 Man in the Moon	Man in the Moon	Moon										
 Mare Crisium	Mare Crisium	Moon										
+Mare Fecunditatis	Mare Fecunditatis	Moon										
+Mare Frigoris	Mare Frigoris	Moon										
+Mare Humorum	Mare Humorum	Moon										
 Mare Imbrium	Mare Imbrium	Moon										
+Mare Nectaris	Mare Nectaris	Moon										
+Mare Nubium	Mare Nubium	Moon										
+Mare Serenitatis	Mare Serenitatis	Moon										
+Mare Tranquillitatis	Mare Tranquillitatis	Moon										
 Mare Vaporum	Mare Vaporum	Moon										
 Marius Hills	Marius Hills	Moon										
 Maurolycus	Maurolycus	Moon										
 Mersenius	Mersenius	Moon										
-Messier	Messier	Moon										
+Messier, Messier A	Messier, Messier A	Moon										
 Milichius Pi	Milichius Pi	Moon										
 Mitchell	Mitchell	Moon										
 Mons Hadley	Mons Hadley	Moon										
 Mons Pico	Mons Pico	Moon										
+Mons Piton	Mons Piton	Moon										
 Mons Rumber	Mons Rumber	Moon										
+Montes Alpes	Montes Alpes	Moon										
 Montes Apenninus	Montes Apenninus	Moon										
 Montes Foucault	Montes Foucault	Moon										
 Moon and major features	Moon and major features	Moon										
 Moon Conjunction	Moon Conjunction	Moon										
 Moon Occultation	Moon Occultation	Moon										
 New Moon in Old Moon's Arms	New Moon in Old Moon's Arms	Moon										
-New Moon	New Moon	Moon										
-Old moon in new moon's arms	Old moon in new moon's arms	Moon										
+Oceanus Procellarum	Oceanus Procellarum	Moon										
+Old Moon in New Moon's Arms	Old Moon in New Moon's Arms	Moon										
 Palus Epidemiarum	Palus Epidemiarum	Moon										
-Palus Putredinus	Palus Putredinus	Moon										
+Palus Putredinis	Palus Putredinis	Moon										
 Palus Somnii	Palus Somnii	Moon										
 Parry	Parry	Moon										
+Petavius	Petavius	Moon										
+Petavius Wall	Petavius Wall	Moon										
 Picard	Picard	Moon										
 Piccolomini	Piccolomini	Moon										
 Pitatus	Pitatus	Moon										
@@ -1491,8 +1516,9 @@ Plato	Plato	Moon
 Plinius	Plinius	Moon										
 Posidonius	Posidonius	Moon										
 Proclus	Proclus	Moon										
-Promontoria Lapace	Promontoria Lapace	Moon										
 Promontorium Agarum	Promontorium Agarum	Moon										
+Promontorium Heraclides	Promontorium Heraclides	Moon										
+Promontorium Laplace	Promontorium Laplace	Moon										
 Ptolemaeus	Ptolemaeus	Moon										
 Rabbi Levi	Rabbi Levi	Moon										
 Rabbit in the Moon	Rabbit in the Moon	Moon										
@@ -1506,12 +1532,15 @@ Sinus Asperitatis	Sinus Asperitatis	Moon
 Sinus Concordiae	Sinus Concordiae	Moon										
 Sinus Iridum	Sinus Iridum	Moon										
 Sinus Medii	Sinus Medii	Moon										
+Sinus Roris	Sinus Roris	Moon										
 Stadius Catanae	Stadius Catanae	Moon										
 Taruntius	Taruntius	Moon										
 Theophilus	Theophilus	Moon										
 Timocharis	Timocharis	Moon										
 Tranquility Base	Tranquility Base	Moon										
 Tycho	Tycho	Moon										
+Vallis Alpes	Vallis Alpes	Moon										
+Vallis Schroteri	Vallis Schroteri	Moon										
 Vendelinus	Vendelinus	Moon										
 Walter	Walter	Moon										
 Wargentin	Wargentin	Moon										

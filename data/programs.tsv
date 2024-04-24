@@ -2777,7 +2777,7 @@ Sketching OP	96	M 52	20231005-01-m52
 Sketching OP	97	NGC 7662	20231004-02-ngc7662
 Sketching OP	98	Bowl of Stars	20230913-01-bowlofstarsngc7789
 Sketching OP	99	NGC 7789	20231007-02-ngc7789
-Sketching OP	100	Crescent Moon	
+Sketching OP	100	Crescent Moon, Waxing	
 Sketching OP	101a	Atlas	20240413-01-atlashercules
 Sketching OP	101b	Hercules	20240413-01-atlashercules
 Sketching OP	102	Theophilus	20230525-01-theophilus
@@ -2793,3 +2793,103 @@ Sketching OP	111	Sunspots	20230520-01-sunspots
 Sketching OP	112	C2023 E1 ATLAS	20230717-01-c2023e1atlas
 Sketching OP	113	Solar Eclipse	20231014-01-solareclipse
 Sketching OP	114	Conjunction	
+Lunar I OP	1	Old Moon in New Moon's Arms	20190901-01-oldmooninnewmoonsarms
+Lunar I OP	2	New Moon in Old Moon's Arms	20200815-02-newmooninoldmoonsarms
+Lunar I OP	3	Crescent Moon, Waxing	20200721-01-newmoon
+Lunar I OP	4	Crescent Moon, Waning	
+Lunar I OP	5	Man in the Moon	20240422-01-maninthemoon
+Lunar I OP	6	Woman in the Moon	20240422-02-womaninthemoon
+Lunar I OP	7	Rabbit in the Moon	20240422-03-rabbitinthemoon
+Lunar I OP	8	Cow Jumping Over the Moon	
+Lunar I OP	9	Mare Crisium	20220113-01-marecrisium
+Lunar I OP	10	Mare Fecunditatis	20200407-01-fullmoon
+Lunar I OP	11	Mare Serenitatis	20200407-01-fullmoon
+Lunar I OP	12	Mare Tranquillitatis	20200407-01-fullmoon
+Lunar I OP	13	Mare Nectaris	20200407-01-fullmoon
+Lunar I OP	14	Mare Imbrium	20200628-01-mareimbrium
+Lunar I OP	15	Mare Frigoris	20200407-01-fullmoon
+Lunar I OP	16	Mare Nubium	20200407-01-fullmoon
+Lunar I OP	17	Mare Humorum	20200407-01-fullmoon
+Lunar I OP	18	Oceanus Procellarum	20200407-01-fullmoon
+Lunar I OP	19	Lunar Rays	20200407-01-fullmoon
+Lunar I OP	20	Sinus Iridum	20200502-01-sinusiridum
+Lunar I OP	21	Sinus Medii	20230527-01-apenninusaestuumvaporummedii
+Lunar I OP	22	Sinus Roris	20200407-01-fullmoon
+Lunar I OP	23	Palus Somnii	20210117-01-palussomnii
+Lunar I OP	24	Palus Epidemiarum	20220211-01-palusepidemiarum
+Lunar I OP	25	Mare Vaporum	20230527-01-apenninusaestuumvaporummedii
+Lunar I OP	26	Langrenus	20200408-01-langrenus
+Lunar I OP	27	Vendelinus	20210414-02-vendelinus
+Lunar I OP	28	Petavius	
+Lunar I OP	29	Cleomedes	
+Lunar I OP	30	Atlas	20240413-01-atlashercules
+Lunar I OP	31	Hercules	20240413-01-atlashercules
+Lunar I OP	32	Endymion	
+Lunar I OP	33	Macrobius	20210515-01-macrobius
+Lunar I OP	34	Piccolomini	20210118-01-piccolomini
+Lunar I OP	35	Theophilus	20200527-01-theophilus
+Lunar I OP	36	Cyrillus	20200527-01-theophilus
+Lunar I OP	37	Catharina	20220108-01-catharina
+Lunar I OP	38	Posidonius	20210118-02-posidonius
+Lunar I OP	39	Fracastorius	20200427-01-fracastorius
+Lunar I OP	40	Aristoteles	20210418-01-aristotelesmitchell
+Lunar I OP	41	Eudoxus	20220309-02-eudoxus
+Lunar I OP	42	Cassini	20200430-02-cassini
+Lunar I OP	43	Hipparchus	20230128-01-hipparchusalbategnius
+Lunar I OP	44	Albategnius	20230128-01-hipparchusalbategnius
+Lunar I OP	45	Aristillus	20200628-01-mareimbrium
+Lunar I OP	46	Autolycus	20200628-01-mareimbrium
+Lunar I OP	47	Maurolycus	20220109-01-maurolycus
+Lunar I OP	48	Plato	20210619-01-plato
+Lunar I OP	49	Archimedes	20200628-01-mareimbrium
+Lunar I OP	50	Ptolemaeus	20240317-01-herschelptolemaeusaphonsus
+Lunar I OP	51	Alphonsus	20240317-01-herschelptolemaeusaphonsus
+Lunar I OP	52	Arzachel	20230129-01-arzachel
+Lunar I OP	53	Walter	20220508-01-walter
+Lunar I OP	54	Maginus	
+Lunar I OP	55	Tycho	20180827-04-tycho
+Lunar I OP	56	Clavius	20181019-01-clavius
+Lunar I OP	57	Eratosthenes	20210122-02-eratosthenes
+Lunar I OP	58	Longomontanus	20210123-01-longomontanus
+Lunar I OP	59	Copernicus	20200407-01-fullmoon
+Lunar I OP	60	Bullialdus	20181019-02-bullialdus
+Lunar I OP	61	Aristarchus	20181119-02-aristarchusplateau
+Lunar I OP	62	Gassendi	20190712-02-gassendi
+Lunar I OP	63	Kepler	20231027-01-kepler
+Lunar I OP	64	Grimaldi	20180923-02-grimaldi
+Lunar I OP	65	Sinus Aestuum	20230527-01-apenninusaestuumvaporummedii
+Lunar I OP	66	Lacus Mortis	20200527-02-lacusmortis
+Lunar I OP	67	Palus Putredinis	20220415-01-palusputredinusmontesapennius
+Lunar I OP	68	Promontorium Laplace	20200502-01-sinusiridum
+Lunar I OP	69	Promontorium Heraclides	20200502-01-sinusiridum
+Lunar I OP	70	Promontorium Agarum	20210414-01-promontoriumagarum
+Lunar I OP	71	Montes Alpes	20200628-01-mareimbrium
+Lunar I OP	72	Montes Apenninus	20220415-01-palusputredinusmontesapennius
+Lunar I OP	73	Mons Hadley	20220508-02-monshadley
+Lunar I OP	74	Mons Piton	20200628-01-mareimbrium
+Lunar I OP	75	Mons Pico	20220806-01-monspico
+Lunar I OP	76	Rupes Altai	20220308-01-rupesaltai
+Lunar I OP	77	Rima Hyginus	20220606-01-manilus
+Lunar I OP	78	Vallis Schroteri	20181119-02-aristarchusplateau
+Lunar I OP	79	Vallis Alpes	20200628-01-mareimbrium
+Lunar I OP	80	Rupes Recta	20240416-02-rupesrecta
+Lunar I OP	81	Picard	20200408-02-picard
+Lunar I OP	82	Furnerius	20200903-01-furnerius
+Lunar I OP	83	Petavius Wall	
+Lunar I OP	84	Messier, Messier A	20180828-01-messier
+Lunar I OP	85	Proclus	20220414-01-proclus
+Lunar I OP	86	Fabricius	20200526-02-fabricus
+Lunar I OP	87	Plinius	20220206-02-plinius
+Lunar I OP	88	Mitchell	20210418-01-aristotelesmitchell
+Lunar I OP	89	Cassini A	20200430-02-cassini
+Lunar I OP	90	Manilius	20220606-01-manilus
+Lunar I OP	91	Gemma Frisius	20240316-01-gemmafrisius
+Lunar I OP	92	Davy	20230528-01-davydavyy
+Lunar I OP	93	Pitatus	20220311-01-pitatus
+Lunar I OP	94	Billy	20220114-01-billyhansteen
+Lunar I OP	95	Fra Mauro	20240417-01-framunroparrybompard
+Lunar I OP	96	Clavius craterlets	20181019-01-clavius
+Lunar I OP	97	Hippalus	20231122-01-hippalus
+Lunar I OP	98	J. Herschel	20211115-01-jherschel
+Lunar I OP	99	Schickard	20181119-03-schickard
+Lunar I OP	100	Reiner Gamma	20220316-01-reinergamma
