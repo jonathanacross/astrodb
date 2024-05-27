@@ -37,7 +37,7 @@ export class ObjectFilter {
 
   setTypeIs (typeIs) {
     if (!nullOrEmpty(typeIs)) {
-      this.#typeIs = typeIs
+      this.#typeIs = typeIs.toLowerCase()
     }
   }
 
@@ -208,12 +208,8 @@ export class ObjectFilter {
   }
 
   seenStatusMatches(object) {
-    // TODO: fix/finish this logic
-    // const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
-    // if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {
-    //   return false;
-    // }
-    const matchingProgramData = object.programData.filter(p => p.programName.toLowerCase() === this.#programNameIs)
+    const matchingProgramData =
+      object.programData.filter(p => p.programName.toLowerCase() === this.#programNameIs);
 
     switch (this.#seenStatus) {
       case 'Seen':
@@ -238,7 +234,6 @@ export class ObjectFilter {
     }
   }
 
-
   #objectMatches (object) {
     const objectNames = object.names.toLowerCase().split('/')
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
@@ -247,7 +242,8 @@ export class ObjectFilter {
     if (this.#nameLike !== null && objectNames.every((name) => !name.includes(this.#nameLike))) {
       return false
     }
-    if (this.#typeIs !== null && this.#typeIs !== object.type) {
+    const objectTypes = object.type.toLowerCase().split('+')
+    if (this.#typeIs !== null && objectTypes.every((type) => this.#typeIs !== type)) {
       return false
     }
     if (this.#conIs !== null && this.#conIs !== object.con) {
@@ -302,7 +298,7 @@ export class ObservationFilter {
 
   setHasObjectType(hasObjectType) {
     if (!nullOrEmpty(hasObjectType)) {
-      this.#hasObjectType = hasObjectType;
+      this.#hasObjectType = hasObjectType.toLowerCase();
     }
   }
 
@@ -366,14 +362,16 @@ export class ObservationFilter {
       return false;
     }
 
-    if (this.#hasObjectCon !== null && 
+    if (this.#hasObjectCon !== null &&
         observation.objectData.every((object) => this.#hasObjectCon !== object.con)) {
       return false;
     }
 
-    // TODO: handle objects having multiple types.
-    if (this.#hasObjectType !== null && 
-        observation.objectData.every((object) => this.#hasObjectType !== object.type)) {
+    if (this.#hasObjectType !== null &&
+        observation.objectData.every((object) => {
+          const objectTypes = object.type.toLowerCase().split('+')
+          return objectTypes.every((type) => !type.includes(this.#hasObjectType))
+        })) {
       return false;
     }
 
