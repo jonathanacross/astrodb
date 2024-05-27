@@ -1,4 +1,4 @@
-import { objectTypes } from './constants.js'
+import { objectTypes, constellations } from './constants.js'
 import { AstroObject, Observation, ProgramEntry } from './database.js'
 
 export function nullOrEmpty (str) {
@@ -80,12 +80,48 @@ export function getObjectSizesArcminutes(sizeString) {
   return [Math.min(...sizes), Math.max(...sizes)];
 }
 
+function validateObjectType(typeString, lineNumber, line) {
+  if (nullOrEmpty(typeString)) {
+    throw Error('Object on line ' + lineNumber + ' has no type set.  Line = \n' + line);
+  }
+  const knownObjectTypes = new Set(objectTypes.map(o => o.shortName));
+  const types = typeString.split('+');
+  types.forEach(t => {
+    if (!knownObjectTypes.has(t)) {
+      throw Error('Object on line ' + lineNumber + ' has unknown type ' + t + '. Line = \n' + line);
+    }
+  });
+}
+
+function validateObjectLocation(typeString, conString, raString, decString, lineNumber, line) {
+  const typeToLoc = new Map();
+  objectTypes.map((t) => {
+    typeToLoc.set(t.shortName, t.fixedPosition);
+  });
+
+  const shouldHaveLocation = typeToLoc.get(typeString);
+  if (shouldHaveLocation !== null && shouldHaveLocation === true) {
+    if (nullOrEmpty(conString)) {
+      throw Error('Object on line ' + lineNumber + ' has missing constellation ' + conString + '. Line = \n' + line);
+    }
+    if (nullOrEmpty(raString)) {
+      throw Error('Object on line ' + lineNumber + ' has missing R.A. ' + raString + '. Line = \n' + line);
+    }
+    if (nullOrEmpty(decString)) {
+      throw Error('Object on line ' + lineNumber + ' has missing Dec ' + decString + '. Line = \n' + line);
+    }
+
+    const knownConstellations = new Set(constellations.map(o => o.abbreviation));
+    if (!knownConstellations.has(conString)) {
+      throw Error('Object on line ' + lineNumber + ' has unknown constellation ' + conString + '. Line = \n' + line);
+    }
+  }
+}
+
 // Parses a TSV line into an AstroObject
 function readObject(lineNumber, line) {
   const fields = line.split('\t');
 
-  // TODO: add validation for some of these; e.g., id should be populated
-  // con and type should be known values.
   const id = fields[0];
   const names = fields[1];
   const type = fields[2];
@@ -100,17 +136,15 @@ function readObject(lineNumber, line) {
   const distance = fields[11];
   const notes = fields[12];
 
+  validateObjectType(type, lineNumber, line);
+  validateObjectLocation(type, con, ra, dec, lineNumber, line);
+
   const object = new AstroObject(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes);
 
   if (fields.length !== 13) {
     throw Error('Expected object line ' + lineNumber + ' to have 13 fields, but has ' + fields.length + '. Line = \n' + line + '\nParsed as: \n' + JSON.stringify(object));
   }
 
-  // TODO: uncomment this once objects support multiple types
-  // const knownObjectTypes = new Set(objectTypes.map(o => o.shortName));
-  // if (!knownObjectTypes.has(type)) {
-  //  throw Error('Object on line ' + lineNumber + ' has unknown type ' + type + '. Object = \n' + JSON.stringify(object));
-  //}
   return object;
 }
 
