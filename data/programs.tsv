@@ -658,7 +658,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	209	M 105	20190302-03-m105ngc3384
 500 Best DSOs	210	NGC 3384	20190302-03-m105ngc3384
 500 Best DSOs	211	NGC 3432	20210316-04-ngc3432
-500 Best DSOs	212	NGC 3507	
+500 Best DSOs	212	NGC 3507	20240430-03-ngc3507
 500 Best DSOs	213	NGC 3511	
 500 Best DSOs	214	NGC 3521	20200315-07-ngc3521
 500 Best DSOs	215	M 108	20190128-05-m108
@@ -2702,13 +2702,13 @@ Sketching OP	32	M 46	20240305-03-m46ngc2438
 Sketching OP	33	M 93	20240209-01-m93
 Sketching OP	34	NGC 2467	
 Sketching OP	35	Gamma Vel	
-Sketching OP	36a	M 81	
-Sketching OP	36b	M 82	
+Sketching OP	36a	M 81	20240430-01-m81m82
+Sketching OP	36b	M 82	20240430-01-m81m82
 Sketching OP	37	NGC 3079	
 Sketching OP	38	NGC 3115	
 Sketching OP	39	NGC 3372	
-Sketching OP	40a	M 95	
-Sketching OP	40b	M 96	
+Sketching OP	40a	M 95	20240430-02-m95m96
+Sketching OP	40b	M 96	20240430-02-m95m96
 Sketching OP	41a	M 65	20230513-01-m65m66ngc3628
 Sketching OP	41b	M 66	20230513-01-m65m66ngc3628
 Sketching OP	41c	NGC 3628	20230513-01-m65m66ngc3628
@@ -2790,7 +2790,7 @@ Sketching OP	108	Jupiter	20231027-02-jupiter
 Sketching OP	109	Saturn	20230812-03-saturn
 Sketching OP	110	Mars	
 Sketching OP	111	Sunspots	20230520-01-sunspots
-Sketching OP	112	C2023 E1 ATLAS	20230717-01-c2023e1atlas
+Sketching OP	112	12P Pons-Brooks	20240329-02-12pponsbrooks
 Sketching OP	113	Solar Eclipse	20231014-01-solareclipse
 Sketching OP	114	Conjunction	
 Lunar I OP	1	Old Moon in New Moon's Arms	20190901-01-oldmooninnewmoonsarms
@@ -2800,7 +2800,7 @@ Lunar I OP	4	Crescent Moon, Waning
 Lunar I OP	5	Man in the Moon	20240422-01-maninthemoon
 Lunar I OP	6	Woman in the Moon	20240422-02-womaninthemoon
 Lunar I OP	7	Rabbit in the Moon	20240422-03-rabbitinthemoon
-Lunar I OP	8	Cow Jumping Over the Moon	
+Lunar I OP	8	Cow Jumping Over the Moon	20240520-01-cowjumpingoverthemoon
 Lunar I OP	9	Mare Crisium	20220113-01-marecrisium
 Lunar I OP	10	Mare Fecunditatis	20200407-01-fullmoon
 Lunar I OP	11	Mare Serenitatis	20200407-01-fullmoon
@@ -2821,10 +2821,10 @@ Lunar I OP	25	Mare Vaporum	20230527-01-apenninusaestuumvaporummedii
 Lunar I OP	26	Langrenus	20200408-01-langrenus
 Lunar I OP	27	Vendelinus	20210414-02-vendelinus
 Lunar I OP	28	Petavius	
-Lunar I OP	29	Cleomedes	
+Lunar I OP	29	Cleomedes	20240511-02-cleomedes
 Lunar I OP	30	Atlas	20240413-01-atlashercules
 Lunar I OP	31	Hercules	20240413-01-atlashercules
-Lunar I OP	32	Endymion	
+Lunar I OP	32	Endymion	20240511-01-endymion
 Lunar I OP	33	Macrobius	20210515-01-macrobius
 Lunar I OP	34	Piccolomini	20210118-01-piccolomini
 Lunar I OP	35	Theophilus	20200527-01-theophilus
