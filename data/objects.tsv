@@ -1,6 +1,7 @@
 #id	Names	Type	Con	RA	Dec	Mag	Size	Sep	PA	Class	Distance	Notes
 1 Aqr	1 Aqr	Double	Aqr	20h 39m 24s	00° 29' 00"	A=5.1, B=11.3, C=11.5		AB=64.5, AC=66.6				
 1 Cam	1 Cam	Double	Cam	04h 32m 00s	53° 55' 00"	5.8, 6.8		10.6	308			
+Beta Com	Beta Com	Double	Com	13h 13m 01s	27° 44' 57"	4.3, 12.1		126	181			
 10 Aquarii	10 Aquarii	Ast	Aqr	21h 00m 00s	-05° 35' 00"	5.8	29' x 15'					Elongated group of stars, with 1 bright one near the top
 10 Mon	10 Mon/BUP 89	Double	Mon	06h 27m 58s	-04° 45' 44"	A=5.0, B=9.5, C=9.8		AB=77, AC=78	AB=257, AC=232			
 100 Her, STF 2280	100 Her, STF 2280	Double	Her	18h 07m 50s	26° 06' 04"	A=5.8, B=5.8, C=11.8		AB=14.4, AC=79.9	AB=288, AC=183			
@@ -57,6 +58,7 @@ Alpha Lib	Alpha Lib	Double	Lib	14h 50m 54s	-16° 02' 00"	2.7, 5.2		231.1	314
 Alpha Psc	Alpha Psc/Alrisha	Double	Psc	02h 02m 00s	02° 46' 00"	4.1, 5.2		1.7	266			
 Alpha Sco	Alpha Sco/Antares	Double	Sco	16h 29m 30s	-26° 25' 00"	0.9		2.6				red, greenish
 Alpha UMi	Alpha UMi/Polaris	Double	UMi	02h 31m 48s	89° 16' 00"	2.1, 9.1		18.1	233			
+Alpha Vir	Alpha Vir/Spica	Star	Vir	13h 26m 28s	28° 02' 21"	1.3, 7.5						Blue giant. High mass main sequence star; 11.4 solar masses.
 AQ And	AQ And/HIP 2180	Carbon	And	00h 27m 31s	35° 35' 14"	6.9 - 8.6				C5 (Nb)		
 AQ Sgr	AQ Sgr/HIP 96255	Carbon	Sgr	19h 34m 18s	-16° 22' 27"	6.6 - 8.5				C7 (N3)		
 AR Cas, STT 496	AR Cas, STT 496	Double	Cas	23h 30m 02s	58° 32' 56"	A=4.8, B=9.3, C=7.2, D=10.6, E=11.2, F=10.5		AB=0.8, AC=75.7, AE=117, AF=67.2, CD=1.3	AB=356, AC=269, AE=117, AF=338, BC=17			
@@ -1297,7 +1299,7 @@ Xi Cep	Xi Cep	Double	Cep	22h 03m 48s	64° 38' 00"	4.5, 6.4		8.1	268
 Xi Sco	Xi Sco	Double	Sco	16h 04m 24s	-11° 22' 00"	A=5.2, B=4.9, C=7.3		AB=1.1, AC=7.5	AB=10, AC=43			
 Xi UMa	Xi UMa	Double	UMa	11h 18m 12s	31° 32' 00"	4.3		1.8				B-m4.8, Alula Australis, 60 year binary
 XX Cam	XX Cam/HIP 19340	Carbon	Cam	04h 08m 38s	53° 21' 39"	7.1 - 10.0				C0-C2(G1)		
-Y CVn	Y CVn/HIP 62223	Carbon	CVn	12h 45m 07s	45° 26' 24"	4.8 - 6.4				C5(N3)		! N3 Carbon Star, 158 days
+Y CVn	Y CVn/La Superba/HIP 62223	Carbon	CVn	12h 45m 07s	45° 26' 24"	4.8 - 6.4				C5(N3)		! N3 Carbon Star, 158 days
 Y Hya	Y Hya/HIP 48327	Carbon	Hya	09h 51m 03s	-23° 01' 02"	6.5 - 9.0				C5(N3)		
 Y Per	Y Per/HIP 16126	Carbon	Per	03h 27m 42s	44° 10' 36"	8.1 - 11.3				C4(R4)		
 Y Tau	Y Tau/HIP 27181	Carbon	Tau	05h 45m 39s	20° 41' 42"	6.5 - 9.2				C6.5(N3		
@@ -1382,6 +1384,7 @@ King 18	King 18	OCl	Cep	22h 52m 08s	58° 18' 42"		5'			II2p		brightest star mag 
 King 19	King 19	OCl	Cep	23h 08m 18s	60° 31' 00"	9.2	5'			III2p		
 King 21	King 21	OCl	Cas	23h 49m 54s	62° 42' 00"	9.6	4'			I2p		
 King 12	King 12	OCl	Cas	23h 53m 00s	61° 57' 00"	9.0	3'			II1p		
+Lalande 21185	Lalande 21185/SAO 62377	Star	UMa	11h 04m 41s	35° 50' 22"	7.5						apparent brightest red dwarf in N hemisphere
 Delphinus	Delphinus	Con	Del	20h 40m 00s	15° 00' 00"	4.0	3° x 2°					
 Uranus	Uranus	Planet										
 Jupiter	Jupiter	Planet										
@@ -1392,6 +1395,7 @@ Mercury	Mercury	Planet
 Neptune	Neptune	Planet										
 Ceres	Ceres	Asteroid										
 Vesta	Vesta	Asteroid										
+(3) Juno	(3) Juno	Asteroid										
 12P Pons-Brooks	12P Pons-Brooks	Comet										
 46P Wirtanen	46P Wirtanen	Comet										
 C2023 E1 ATLAS	C2023 E1 ATLAS	Comet										
@@ -1431,7 +1435,6 @@ Clavius	Clavius	Moon
 Clavius craterlets	Clavius craterlets	Moon										
 Cleomedes	Cleomedes	Moon										
 Copernicus	Copernicus	Moon										
-Cow in the Moon	Cow in the Moon	Moon										
 Cow Jumping Over the Moon	Cow Jumping Over the Moon	Moon										
 Crescent Moon, Waning	Crescent Moon, Waning	Moon										
 Crescent Moon, Waxing	Crescent Moon, Waxing	Moon										
@@ -1479,9 +1482,11 @@ Mare Fecunditatis	Mare Fecunditatis	Moon
 Mare Frigoris	Mare Frigoris	Moon										
 Mare Humorum	Mare Humorum	Moon										
 Mare Imbrium	Mare Imbrium	Moon										
+Mare Marginis	Mare Marginis	Moon										
 Mare Nectaris	Mare Nectaris	Moon										
 Mare Nubium	Mare Nubium	Moon										
 Mare Serenitatis	Mare Serenitatis	Moon										
+Mare Smythii	Mare Smythii	Moon										
 Mare Tranquillitatis	Mare Tranquillitatis	Moon										
 Mare Vaporum	Mare Vaporum	Moon										
 Marius Hills	Marius Hills	Moon										
@@ -1547,6 +1552,7 @@ Wargentin	Wargentin	Moon
 Woman in the Moon	Woman in the Moon	Moon										
 Zagut	Zagut	Moon										
 Comet	Comet	Comet										any comet
+Aurora Borealis	Aurora Borealis	Aurora										
 Conjunction	Conjunction	Planet										any conjunction
 Solar Eclipse	Solar Eclipse	Sun										solar
 Vy 1-1	Vy 1-1/VV' 4/(Vyssotsky)	PN	Cas	00h 18m 42s	53° 52' 20"	12.5	6"					
