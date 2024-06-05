@@ -3,6 +3,7 @@ export const objectTypes = [
   // RA/Dec/constellation.
   { shortName: 'Ast', fullName: 'Asterism', fixedPosition: true },
   { shortName: 'Asteroid', fullName: 'Asteroid', fixedPosition: false },
+  { shortName: 'Aurora', fullName: 'Aurora', fixedPosition: false },
   { shortName: 'Carbon', fullName: 'Carbon Star', fixedPosition: true },
   { shortName: 'Comet', fullName: 'Comet', fixedPosition: false },
   { shortName: 'Con', fullName: 'Constellation', fixedPosition: true },
@@ -18,6 +19,7 @@ export const objectTypes = [
   { shortName: 'PN', fullName: 'Planetary Nebula', fixedPosition: true },
   { shortName: 'Q', fullName: 'Quasar', fixedPosition: true },
   { shortName: 'RN', fullName: 'Reflection Nebula', fixedPosition: true },
+  { shortName: 'Star', fullName: 'Star', fixedPosition: true },
   { shortName: 'Star Cloud', fullName: 'Star Cloud', fixedPosition: true },
   { shortName: 'Sun', fullName: 'Sun', fixedPosition: false },
   { shortName: 'Supernova', fullName: 'Supernova', fixedPosition: true },
