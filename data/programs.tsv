@@ -915,7 +915,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	466	NGC 1554,1555	
 500 Best DSOs	467	NGC 1973,1975	
 500 Best DSOs	468	NGC 1977	20230120-04-ngc1977
-500 Best DSOs	469	NGC 2237,2238,2239,2246	
+500 Best DSOs	469	NGC 2237	
 500 Best DSOs	470	NGC 2244	20190110-02-ngc2244
 500 Best DSOs	471a	NGC 2371	20200227-02-ngc2371ngc2372
 500 Best DSOs	471b	NGC 2372	20200227-02-ngc2371ngc2372
@@ -983,7 +983,7 @@ RASC Best of NGC	29	NGC 2194	20220222-05-ngc2194
 RASC Best of NGC	30a	NGC 2371	20200227-02-ngc2371ngc2372
 RASC Best of NGC	30b	NGC 2372	20200227-02-ngc2371ngc2372
 RASC Best of NGC	31	NGC 2392	20190113-01-ngc2392
-RASC Best of NGC	32	NGC 2237,2238,2239,2246	
+RASC Best of NGC	32	NGC 2237	
 RASC Best of NGC	33	NGC 2261	20200218-05-ngc2261
 RASC Best of NGC	34	NGC 2359	20230223-02-ngc2359
 RASC Best of NGC	35	NGC 2440	20200219-07-ngc2440
@@ -2899,7 +2899,7 @@ Stellar Evoluation OP	3	M 42
 Stellar Evoluation OP	4	M 78	
 Stellar Evoluation OP	5	NGC 2237	
 Stellar Evoluation OP	6	NGC 2264	
-Stellar Evoluation OP	7	Barnard 68	
+Stellar Evoluation OP	7	B 68	
 Stellar Evoluation OP	8	M 20	
 Stellar Evoluation OP	9	M 8	
 Stellar Evoluation OP	10	M 16	
@@ -2934,12 +2934,12 @@ Stellar Evoluation OP	38	Alpha Oph
 Stellar Evoluation OP	39	Barnard's Star	
 Stellar Evoluation OP	40	Alpha Lyr	
 Stellar Evoluation OP	41	Ross 154	
-Stellar Evoluation OP	42	Albireo A	
-Stellar Evoluation OP	43	Albireo B	
+Stellar Evoluation OP	42	Beta Cyg A	
+Stellar Evoluation OP	43	Beta Cyg B	
 Stellar Evoluation OP	44	Alpha Aql	
 Stellar Evoluation OP	45	Beta Cep	
 Stellar Evoluation OP	46	Iota Peg	
-Stellar Evoluation OP	47	Matar	
+Stellar Evoluation OP	47	Eta Peg	
 Stellar Evoluation OP	48	Omega Psc	
 Stellar Evoluation OP	49a	NGC 884	
 Stellar Evoluation OP	49b	NGC 869	
@@ -2979,10 +2979,10 @@ Stellar Evoluation OP	82	NGC 7293
 Stellar Evoluation OP	83	NGC 7662	
 Stellar Evoluation OP	84	Delta Cet	
 Stellar Evoluation OP	85	Gamma Ori	
-Stellar Evoluation OP	86	Theta1 Orionis C	
+Stellar Evoluation OP	86	Theta1 Ori C	
 Stellar Evoluation OP	87	Epsilon CMa	
 Stellar Evoluation OP	88	Alpha Vir	20240509-04-alphavir
-Stellar Evoluation OP	89	10 Lacertae	
+Stellar Evoluation OP	89	10 Lac	
 Stellar Evoluation OP	90	Alpha Ori	
 Stellar Evoluation OP	91	VY CMa	
 Stellar Evoluation OP	92	Alpha Sco	
