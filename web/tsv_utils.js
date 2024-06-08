@@ -149,9 +149,13 @@ function readObject(lineNumber, line) {
 }
 
 export function readObjects(tsv) {
-  const lines = tsv.split('\n').filter(line => line !== '' && !line.startsWith('#'));
+  const lines = tsv.split('\n');
   const objects = [];
   for (const [lineNumber, line] of lines.entries()) {
+    // skip blank/comment lines (don't filter beforehand to keep line numbers correct)
+    if (line === '' || line.startsWith('#')) {
+      continue;
+    }
     const object = readObject(lineNumber + 1, line);
     objects.push(object);
   }
@@ -184,9 +188,13 @@ function readObservation(lineNumber, line) {
 }
 
 export function readObservations(tsv) {
-  const lines = tsv.split('\n').filter(line => line !== '' && !line.startsWith('#'));
+  const lines = tsv.split('\n');
   const observations = [];
   for (const [lineNumber, line] of lines.entries()) {
+    // skip blank/comment lines (don't filter beforehand to keep line numbers correct)
+    if (line === '' || line.startsWith('#')) {
+      continue;
+    }
     const observation = readObservation(lineNumber + 1, line);
     observations.push(observation);
   }
@@ -211,9 +219,13 @@ function readProgramEntry(lineNumber, line) {
 }
 
 export function readPrograms(tsv) {
-  const lines = tsv.split('\n').filter(line => line !== '' && !line.startsWith('#'));
+  const lines = tsv.split('\n');
   const programs = [];
   for (const [lineNumber, line] of lines.entries()) {
+    // skip blank/comment lines (don't filter beforehand to keep line numbers correct)
+    if (line === '' || line.startsWith('#')) {
+      continue;
+    }
     const programEntry = readProgramEntry(lineNumber + 1, line);
     programs.push(programEntry);
   }
