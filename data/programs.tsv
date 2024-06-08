@@ -762,7 +762,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	313	NGC 5634	20210509-02-ngc5634
 500 Best DSOs	314	NGC 5676	20200518-02-ngc5676
 500 Best DSOs	315	NGC 5689	20200518-03-ngc5689
-500 Best DSOs	316	NGC 5746	20210509-04-ngc5746
+500 Best DSOs	316	NGC 5746	20240607-03-ngc5746
 500 Best DSOs	317	NGC 5846	20220423-10-ngc5846
 500 Best DSOs	318	M 102	20190403-01-m102
 500 Best DSOs	319	NGC 5897	20210509-05-ngc5897
@@ -1038,7 +1038,7 @@ RASC Best of NGC	82a	NGC 4567	20230513-04-ngc4567ngc4568ngc4564
 RASC Best of NGC	82b	NGC 4568	20230513-04-ngc4567ngc4568ngc4564
 RASC Best of NGC	83	NGC 4699	20210416-03-ngc4699
 RASC Best of NGC	84	NGC 4762	20200411-06-ngc4762ngc4754
-RASC Best of NGC	85	NGC 5746	20210509-04-ngc5746
+RASC Best of NGC	85	NGC 5746	20240607-03-ngc5746
 RASC Best of NGC	86	NGC 5466	20200518-04-ngc5466
 RASC Best of NGC	87	NGC 5907	20210504-02-ngc5907
 RASC Best of NGC	88	NGC 6503	20200716-02-ngc6503
@@ -2731,7 +2731,7 @@ Sketching OP	53	NGC 5139
 Sketching OP	54	M 51	20230513-08-m51ngc5195
 Sketching OP	55	17 and 21 Boo	20230821-01-1721boo
 Sketching OP	56	NGC 5694	
-Sketching OP	57	NGC 5746	
+Sketching OP	57	NGC 5746	20240607-03-ngc5746
 Sketching OP	58	M 5	20230710-01-m5
 Sketching OP	59	M 80	
 Sketching OP	60	M 4	20230721-01-m4
@@ -2924,11 +2924,11 @@ Stellar Evoluation OP	28	Delta CMa
 Stellar Evoluation OP	29	Alpha CMi	
 Stellar Evoluation OP	30	HD 93521	
 Stellar Evoluation OP	31	Lalande 21185	20240508-02-laland21185
-Stellar Evoluation OP	32	Theta Boo	
-Stellar Evoluation OP	33	Gliese 581	
-Stellar Evoluation OP	34	HD 139341	
+Stellar Evoluation OP	32	Theta Boo	20240606-03-thetaboo
+Stellar Evoluation OP	33	Gliese 581	20240607-04-gliese581
+Stellar Evoluation OP	34	HD 139341	20240606-04-hd139341
 Stellar Evoluation OP	35	14 Her	
-Stellar Evoluation OP	36	Zeta Oph	
+Stellar Evoluation OP	36	Zeta Oph	20240607-07-zetaoph
 Stellar Evoluation OP	37	Alpha Her	
 Stellar Evoluation OP	38	Alpha Oph	
 Stellar Evoluation OP	39	Barnard's Star	
@@ -2953,7 +2953,7 @@ Stellar Evoluation OP	56	Gliese 67
 Stellar Evoluation OP	57	Tau Cet	
 Stellar Evoluation OP	58	Eta Ari	
 Stellar Evoluation OP	59	Beta Com	20240509-03-betacom
-Stellar Evoluation OP	60	18 Sco	
+Stellar Evoluation OP	60	18 Sco	20240607-06-18sco
 Stellar Evoluation OP	61	Sigma Dra	
 Stellar Evoluation OP	62	61 Cyg A	
 Stellar Evoluation OP	63	51 Peg	
@@ -2961,7 +2961,7 @@ Stellar Evoluation OP	64	Beta And
 Stellar Evoluation OP	65	Alpha Tau	
 Stellar Evoluation OP	66	Alpha Aur	
 Stellar Evoluation OP	67	Beta Gem	
-Stellar Evoluation OP	68	Alpha Boo	
+Stellar Evoluation OP	68	Alpha Boo	20240606-01-alphaboo
 Stellar Evoluation OP	69	Beta Peg	
 Stellar Evoluation OP	70	R Lep	
 Stellar Evoluation OP	71	UU Aur	
@@ -2985,7 +2985,7 @@ Stellar Evoluation OP	88	Alpha Vir	20240509-04-alphavir
 Stellar Evoluation OP	89	10 Lac	
 Stellar Evoluation OP	90	Alpha Ori	
 Stellar Evoluation OP	91	VY CMa	
-Stellar Evoluation OP	92	Alpha Sco	
+Stellar Evoluation OP	92	Alpha Sco	20240607-05-alphasco
 Stellar Evoluation OP	93	VV Cep A	
 Stellar Evoluation OP	94	RW Cep	
 Stellar Evoluation OP	95	M 1	
