@@ -117,8 +117,8 @@ Urban OP	5	NGC 663	20180905-04-ngc663
 Urban OP	6	Cr 463	20180905-05-cr463
 Urban OP	7	NGC 752	20180903-06-ngc752
 Urban OP	8	Stock 2	20180817-04-stock2
-Urban OP	9	NGC 869	20180817-03-doublecluster
-Urban OP	10	NGC 884	20180817-03-doublecluster
+Urban OP	9	NGC 869	20180817-03-ngc869ngc884
+Urban OP	10	NGC 884	20180817-03-ngc869ngc884
 Urban OP	11	Tr 2	20180924-05-tr2
 Urban OP	12	M 77	20180113-01-m77
 Urban OP	13	Tr 3	20180928-04-tr3
@@ -252,8 +252,8 @@ Wimmer's List	40	NGC 2169	20180222-03-ngc2169
 Wimmer's List	41	NGC 6709	20180806-02-ngc6709
 Wimmer's List	42	M 104	20190329-11-m104
 Wimmer's List	43	M 15	20180902-05-m15
-Wimmer's List	44	NGC 869	20180817-03-doublecluster
-Wimmer's List	45	NGC 884	20180817-03-doublecluster
+Wimmer's List	44	NGC 869	20180817-03-ngc869ngc884
+Wimmer's List	45	NGC 884	20180817-03-ngc869ngc884
 Wimmer's List	46	M 34	20171210-01-m34
 Wimmer's List	47	NGC 1528	20190112-03-ngc1528
 Wimmer's List	48	NGC 1545	20201202-03-ngc1545
@@ -425,7 +425,7 @@ Asterism OP	87	Northern Fly	20191026-01-northernfly
 Asterism OP	88	M 45	20180113-03-m45
 Asterism OP	89	Kemble's Cascade	20181012-03-kemblescascade
 Asterism OP	90	Davis's Dog	20171220-03-davisdog
-Asterism OP	91	S in Orion's Belt	20200209-03-sinorinsbelt
+Asterism OP	91	S in Orion's Belt	20200209-03-sinorionsbelt
 Asterism OP	92	Boomerang	20200209-05-boomerang
 Asterism OP	93	Star Gun	20200209-06-stargun
 Asterism OP	94	Umbrella	20200219-06-umbrella
@@ -491,9 +491,9 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	42	NGC 772	20201106-04-ngc772
 500 Best DSOs	43	NGC 784	
 500 Best DSOs	44	NGC 864	
-500 Best DSOs	45	NGC 869	20180817-03-doublecluster
+500 Best DSOs	45	NGC 869	20180817-03-ngc869ngc884
 500 Best DSOs	46	NGC 877	
-500 Best DSOs	47	NGC 884	20180817-03-doublecluster
+500 Best DSOs	47	NGC 884	20180817-03-ngc869ngc884
 500 Best DSOs	48	NGC 891	20211008-09-ngc891
 500 Best DSOs	49	NGC 908	20211030-09-ngc908
 500 Best DSOs	50	NGC 925	
@@ -966,8 +966,8 @@ RASC Best of NGC	13	NGC 253	20211030-04-ngc253
 RASC Best of NGC	14	NGC 772	20201106-04-ngc772
 RASC Best of NGC	15	NGC 246	20201204-04-ngc246
 RASC Best of NGC	16	NGC 936	20211029-02-ngc936
-RASC Best of NGC	17a	NGC 869	20180817-03-doublecluster
-RASC Best of NGC	17b	NGC 884	20180817-03-doublecluster
+RASC Best of NGC	17a	NGC 869	20180817-03-ngc869ngc884
+RASC Best of NGC	17b	NGC 884	20180817-03-ngc869ngc884
 RASC Best of NGC	18	NGC 1023	20191028-04-uyandngc1023
 RASC Best of NGC	19	NGC 1491	20191129-02-ngc1491
 RASC Best of NGC	20	NGC 1501	20201107-05-ngc1501
@@ -1490,8 +1490,8 @@ Herschel 400	30	NGC 720	20211030-08-ngc720
 Herschel 400	31	NGC 752	20180903-06-ngc752
 Herschel 400	32	NGC 772	20201106-04-ngc772
 Herschel 400	33	NGC 779	20220925-07-ngc779
-Herschel 400	34	NGC 869	20180817-03-doublecluster
-Herschel 400	35	NGC 884	20180817-03-doublecluster
+Herschel 400	34	NGC 869	20180817-03-ngc869ngc884
+Herschel 400	35	NGC 884	20180817-03-ngc869ngc884
 Herschel 400	36	NGC 891	20211008-09-ngc891
 Herschel 400	37	NGC 908	20211030-09-ngc908
 Herschel 400	38	NGC 936	20211029-02-ngc936
@@ -2422,7 +2422,7 @@ Open Cluster OP	83	Berk 82	20210729-04-berk82
 Open Cluster OP	84	NGC 6774	20220726-03-ngc6774
 Open Cluster OP	85	NGC 6791	20200818-01-ngc6791
 Open Cluster OP	86	NGC 6793	20210811-05-ngc6793
-Open Cluster OP	87	King 25	20210804-05-k25
+Open Cluster OP	87	King 25	20210804-05-king25
 Open Cluster OP	88	NGC 6800	20210802-02-ngc6800
 Open Cluster OP	89	Berk 47	20210811-06-berk47
 Open Cluster OP	90	NGC 6811	20220719-02-ngc6811
@@ -2676,13 +2676,13 @@ Sketching OP	7	NGC 281	20231007-04-ngc281
 Sketching OP	8	NGC 404	20230913-02-ngc404
 Sketching OP	9	NGC 457	20231012-02-ngc457
 Sketching OP	10	NGC 752	
-Sketching OP	11a	NGC 869	20231117-01-doublecluster
-Sketching OP	11b	NGC 884	20231117-01-doublecluster
+Sketching OP	11a	NGC 869	20231117-01-ngc869ngc884
+Sketching OP	11b	NGC 884	20231117-01-ngc869ngc884
 Sketching OP	12	M 34	20231216-01-m34
 Sketching OP	13	NGC 1232	
 Sketching OP	14	NGC 1365	
 Sketching OP	15	M 45	20240112-01-m45
-Sketching OP	16	NGC 1502	20230129-02-ngc1502kemble
+Sketching OP	16	NGC 1502	20230129-02-ngc1502kemblescascade
 Sketching OP	17	R Lep	20230211-02-rlep
 Sketching OP	18	IC 405	20231007-05-ic405
 Sketching OP	19	IC 418	20230211-03-ic418
@@ -2813,11 +2813,11 @@ Lunar I OP	17	Mare Humorum	20200407-01-fullmoon
 Lunar I OP	18	Oceanus Procellarum	20200407-01-fullmoon
 Lunar I OP	19	Lunar Rays	20200407-01-fullmoon
 Lunar I OP	20	Sinus Iridum	20200502-01-sinusiridum
-Lunar I OP	21	Sinus Medii	20230527-01-apenninusaestuumvaporummedii
+Lunar I OP	21	Sinus Medii	20230527-01-montesapenninussinusaestuummarevaporumsinusmedii
 Lunar I OP	22	Sinus Roris	20200407-01-fullmoon
 Lunar I OP	23	Palus Somnii	20210117-01-palussomnii
 Lunar I OP	24	Palus Epidemiarum	20220211-01-palusepidemiarum
-Lunar I OP	25	Mare Vaporum	20230527-01-apenninusaestuumvaporummedii
+Lunar I OP	25	Mare Vaporum	20230527-01-montesapenninussinusaestuummarevaporumsinusmedii
 Lunar I OP	26	Langrenus	20200408-01-langrenus
 Lunar I OP	27	Vendelinus	20210414-02-vendelinus
 Lunar I OP	28	Petavius	
@@ -2842,8 +2842,8 @@ Lunar I OP	46	Autolycus	20200628-01-mareimbrium
 Lunar I OP	47	Maurolycus	20220109-01-maurolycus
 Lunar I OP	48	Plato	20210619-01-plato
 Lunar I OP	49	Archimedes	20200628-01-mareimbrium
-Lunar I OP	50	Ptolemaeus	20240317-01-herschelptolemaeusaphonsus
-Lunar I OP	51	Alphonsus	20240317-01-herschelptolemaeusaphonsus
+Lunar I OP	50	Ptolemaeus	20240317-01-herschelptolemaeusalphonsus
+Lunar I OP	51	Alphonsus	20240317-01-herschelptolemaeusalphonsus
 Lunar I OP	52	Arzachel	20230129-01-arzachel
 Lunar I OP	53	Walter	20220508-01-walter
 Lunar I OP	54	Maginus	
@@ -2857,14 +2857,14 @@ Lunar I OP	61	Aristarchus	20181119-02-aristarchusplateau
 Lunar I OP	62	Gassendi	20190712-02-gassendi
 Lunar I OP	63	Kepler	20231027-01-kepler
 Lunar I OP	64	Grimaldi	20180923-02-grimaldi
-Lunar I OP	65	Sinus Aestuum	20230527-01-apenninusaestuumvaporummedii
+Lunar I OP	65	Sinus Aestuum	20230527-01-montesapenninussinusaestuummarevaporumsinusmedii
 Lunar I OP	66	Lacus Mortis	20200527-02-lacusmortis
-Lunar I OP	67	Palus Putredinis	20220415-01-palusputredinusmontesapennius
+Lunar I OP	67	Palus Putredinis	20220415-01-palusputredinusmontesapenninus
 Lunar I OP	68	Promontorium Laplace	20200502-01-sinusiridum
 Lunar I OP	69	Promontorium Heraclides	20200502-01-sinusiridum
 Lunar I OP	70	Promontorium Agarum	20210414-01-promontoriumagarum
 Lunar I OP	71	Montes Alpes	20200628-01-mareimbrium
-Lunar I OP	72	Montes Apenninus	20220415-01-palusputredinusmontesapennius
+Lunar I OP	72	Montes Apenninus	20220415-01-palusputredinusmontesapenninus
 Lunar I OP	73	Mons Hadley	20220508-02-monshadley
 Lunar I OP	74	Mons Piton	20200628-01-mareimbrium
 Lunar I OP	75	Mons Pico	20220806-01-monspico
@@ -2878,7 +2878,7 @@ Lunar I OP	82	Furnerius	20200903-01-furnerius
 Lunar I OP	83	Petavius Wall	
 Lunar I OP	84	Messier, Messier A	20180828-01-messier
 Lunar I OP	85	Proclus	20220414-01-proclus
-Lunar I OP	86	Fabricius	20200526-02-fabricus
+Lunar I OP	86	Fabricius	20200526-02-fabricius
 Lunar I OP	87	Plinius	20220206-02-plinius
 Lunar I OP	88	Mitchell	20210418-01-aristotelesmitchell
 Lunar I OP	89	Cassini A	20200430-02-cassini
@@ -2887,7 +2887,7 @@ Lunar I OP	91	Gemma Frisius	20240316-01-gemmafrisius
 Lunar I OP	92	Davy	20230528-01-davydavyy
 Lunar I OP	93	Pitatus	20220311-01-pitatus
 Lunar I OP	94	Billy	20220114-01-billyhansteen
-Lunar I OP	95	Fra Mauro	20240417-01-framunroparrybompard
+Lunar I OP	95	Fra Mauro	20240417-01-framauroparrybompland
 Lunar I OP	96	Clavius craterlets	20181019-01-clavius
 Lunar I OP	97	Hippalus	20231122-01-hippalus
 Lunar I OP	98	J. Herschel	20211115-01-jherschel
@@ -2923,7 +2923,7 @@ Stellar Evoluation OP	27	Alpha CMa
 Stellar Evoluation OP	28	Delta CMa	
 Stellar Evoluation OP	29	Alpha CMi	
 Stellar Evoluation OP	30	HD 93521	
-Stellar Evoluation OP	31	Lalande 21185	20240508-02-laland21185
+Stellar Evoluation OP	31	Lalande 21185	20240508-02-lalande21185
 Stellar Evoluation OP	32	Theta Boo	20240606-03-thetaboo
 Stellar Evoluation OP	33	Gliese 581	20240607-04-gliese581
 Stellar Evoluation OP	34	HD 139341	20240606-04-hd139341
@@ -2952,7 +2952,7 @@ Stellar Evoluation OP	55	M 11
 Stellar Evoluation OP	56	Gliese 67	
 Stellar Evoluation OP	57	Tau Cet	
 Stellar Evoluation OP	58	Eta Ari	
-Stellar Evoluation OP	59	Beta Com	20240509-03-betacom
+Stellar Evoluation OP	59	Beta Com	20240508-03-betacom
 Stellar Evoluation OP	60	18 Sco	20240607-06-18sco
 Stellar Evoluation OP	61	Sigma Dra	
 Stellar Evoluation OP	62	61 Cyg A	
