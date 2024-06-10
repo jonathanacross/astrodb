@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
 
-import { readObjects, readObservations, readPrograms } from './tsv_utils.js'
+import { readObjects, readObservations, readPrograms, nullOrEmpty } from './tsv_utils.js'
 import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js'
 import { objectTypes, constellations } from './constants.js'
 import { AstroObject, Observation, ProgramEntry, Database } from './database.js'
@@ -48,7 +48,7 @@ function getObservationAttribute(displayName) {
   return lookupMap[displayName]
 }
 
-function createObjectListingTable (objectIds, columns) {
+function createObjectListingTable (objects, columns) {
   const objTable = document.createElement('table')
   const tableHeader = document.createElement('thead')
   const headerRow = document.createElement('tr')
@@ -63,8 +63,7 @@ function createObjectListingTable (objectIds, columns) {
 
   const tableBody = document.createElement('tbody')
 
-  for (const objId of objectIds) {
-    const obj = database.objects[objId]
+  for (const obj of objects) {
     const row = document.createElement('tr')
 
     for (const col of columns) {
@@ -81,7 +80,7 @@ function createObjectListingTable (objectIds, columns) {
   return objTable
 }
 
-function createObjectListingText (objectIds, columns) {
+function createObjectListingText (objects, columns) {
   const preBlock = document.createElement('pre')
   const codeBlock = document.createElement('code')
   preBlock.appendChild(codeBlock)
@@ -93,8 +92,7 @@ function createObjectListingText (objectIds, columns) {
   }
   text += '\n'
 
-  for (const objId of objectIds) {
-    const obj = database.objects[objId]
+  for (const obj of objects) {
     for (const col of columns) {
       text += obj[getObjectAttribute(col)] + '\t'
     }
@@ -116,7 +114,7 @@ function getColumns(objectListMode) {
   }
 }
 
-function showObjectList (objectIds, showAsText, objectListMode) {
+function showObjectList (objects, showAsText, objectListMode) {
   const resultsArea = document.getElementById('search_objects_results')
 
   // clear old results
@@ -130,7 +128,7 @@ function showObjectList (objectIds, showAsText, objectListMode) {
   const resultsHeader = document.createElement('div')
   const resultCount = document.createElement('p')
   // resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
-  resultCount.textContent = 'Found ' + objectIds.length + ' objects.';
+  resultCount.textContent = 'Found ' + objects.length + ' objects.';
   resultCount.className = 'summary';
   resultsHeader.appendChild(resultCount)
 
@@ -139,10 +137,10 @@ function showObjectList (objectIds, showAsText, objectListMode) {
   const columns = getColumns(objectListMode)
 
   if (showAsText) {
-    const text = createObjectListingText(objectIds, columns)
+    const text = createObjectListingText(objects, columns)
     resultsArea.appendChild(text)
   } else {
-    const table = createObjectListingTable(objectIds, columns)
+    const table = createObjectListingTable(objects, columns)
     resultsArea.appendChild(table)
   }
 }
@@ -173,7 +171,7 @@ function setObjectInfo(observation, element) {
   }
 }
 
-export function getObservationSortFunction(sortMethod) {
+function getObservationSortFunction(sortMethod) {
   if (sortMethod === 'name') {
     return function (x, y) {
       // first sort by name
@@ -191,6 +189,51 @@ export function getObservationSortFunction(sortMethod) {
     };
   }
 }
+
+function getObjectSortFunction(objectListMode) {
+  if (objectListMode === 'observing') {
+    // sort by ra, then name
+    return function (x, y) {
+      if (x.ra !== y.ra) {
+        return x.ra - y.ra;
+      }
+      return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
+    }
+  } else if (objectListMode === 'program') {
+    // sort by program name, then program number, then object id (e.g. for objects not in any program)
+    return function (x, y) {
+      const xProgramName = x.programData.length === 0 ? 'zzzzzzzzzz' : x.programData[0].programName;
+      const yProgramName = y.programData.length === 0 ? 'zzzzzzzzzz' : y.programData[0].programName;
+      const xNumber = x.programData.length === 0 ? '0' : x.programData[0].number;
+      const yNumber = y.programData.length === 0 ? '0' : y.programData[0].number;
+      if (xProgramName !== yProgramName) {
+        return xProgramName.localeCompare(yProgramName);
+      }
+      if (xNumber !== yNumber) {
+        return xNumber.localeCompare(yNumber, undefined, { numeric: true, sensitivity: 'base' });
+      }
+      return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
+    }
+  } else { // objectListMode === 'object' || objectListMode === 'meta'
+    // sort by type, then by id.  Id uses locale compare to sort in 
+    // natural order, so that 'M 2' < 'M 10'
+    // or no sorting...
+    return function (x, y) {
+      const xHasLocation = nullOrEmpty(x.ra)
+      const yHasLocation = nullOrEmpty(y.ra)
+      const xType = x.type.toLowerCase().split('+')[0]  // get the first type, for sorting
+      const yType = y.type.toLowerCase().split('+')[0]
+      if (xHasLocation !== yHasLocation) {
+        return xHasLocation - yHasLocation;
+      }
+      if (xType !== yType) {
+        return xType.localeCompare(yType);
+      }
+      return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
+    }
+  }
+}
+
 
 function showObservations(resultElementIdName, observations) {
   const resultsArea = document.getElementById(resultElementIdName)
@@ -286,6 +329,8 @@ function doObjectQuery () {
   filter.setProgramNameIs(document.getElementById('object_program_name').value)
   filter.setSeenStatus(document.getElementById('object_seen_status').value)
 
+  const objectListMode = document.querySelector('input[name="object_list_mode"]:checked').value;
+
   // TODO: update url/history
   //const listType = document.querySelector('input[name="listtype"]:checked').value
   // let newquery = 'show=objects' + filter.getUrlParameters()
@@ -293,11 +338,13 @@ function doObjectQuery () {
   // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
 
   const matchingObjectIds = filter.getMatchingObjectIds(database.objects);
+  const matchingObjects = matchingObjectIds.map(id => database.objects[id])
 
-  const objectListMode = document.querySelector('input[name="object_list_mode"]:checked').value;
+  const sortFunction = getObjectSortFunction(objectListMode)
+  matchingObjects.sort(sortFunction)
 
   const showAsText = document.getElementById('show_as_text').checked
-  showObjectList(matchingObjectIds, showAsText, objectListMode)
+  showObjectList(matchingObjects, showAsText, objectListMode)
 }
 
 function doObservationQuery () {
