@@ -2820,7 +2820,7 @@ Lunar I OP	24	Palus Epidemiarum	20220211-01-palusepidemiarum
 Lunar I OP	25	Mare Vaporum	20230527-01-montesapenninussinusaestuummarevaporumsinusmedii
 Lunar I OP	26	Langrenus	20200408-01-langrenus
 Lunar I OP	27	Vendelinus	20210414-02-vendelinus
-Lunar I OP	28	Petavius	
+Lunar I OP	28	Petavius	20240708-01-petavius
 Lunar I OP	29	Cleomedes	20240511-02-cleomedes
 Lunar I OP	30	Atlas	20240413-01-atlashercules
 Lunar I OP	31	Hercules	20240413-01-atlashercules
@@ -2875,7 +2875,7 @@ Lunar I OP	79	Vallis Alpes	20200628-01-mareimbrium
 Lunar I OP	80	Rupes Recta	20240416-02-rupesrecta
 Lunar I OP	81	Picard	20200408-02-picard
 Lunar I OP	82	Furnerius	20200903-01-furnerius
-Lunar I OP	83	Petavius Wall	
+Lunar I OP	83	Petavius Wall	20240708-01-petavius
 Lunar I OP	84	Messier, Messier A	20180828-01-messier
 Lunar I OP	85	Proclus	20220414-01-proclus
 Lunar I OP	86	Fabricius	20200526-02-fabricius
@@ -2899,8 +2899,8 @@ Stellar Evoluation OP	3	M 42
 Stellar Evoluation OP	4	M 78	
 Stellar Evoluation OP	5	NGC 2237	
 Stellar Evoluation OP	6	NGC 2264	
-Stellar Evoluation OP	7	B 68	
-Stellar Evoluation OP	8	M 20	
+Stellar Evoluation OP	7	B 68	20240706-04-b68
+Stellar Evoluation OP	8	M 20	20240706-02-m20
 Stellar Evoluation OP	9	M 8	
 Stellar Evoluation OP	10	M 16	
 Stellar Evoluation OP	11	M 17	
@@ -2929,9 +2929,9 @@ Stellar Evoluation OP	33	Gliese 581	20240607-04-gliese581
 Stellar Evoluation OP	34	HD 139341	20240606-04-hd139341
 Stellar Evoluation OP	35	14 Her	
 Stellar Evoluation OP	36	Zeta Oph	20240607-07-zetaoph
-Stellar Evoluation OP	37	Alpha Her	
-Stellar Evoluation OP	38	Alpha Oph	
-Stellar Evoluation OP	39	Barnard's Star	
+Stellar Evoluation OP	37	Alpha Her	20240704-01-alphaher
+Stellar Evoluation OP	38	Alpha Oph	20240704-02-alphaoph
+Stellar Evoluation OP	39	Barnard's Star	20240704-04-barnardsstar
 Stellar Evoluation OP	40	Alpha Lyr	
 Stellar Evoluation OP	41	Ross 154	
 Stellar Evoluation OP	42	Beta Cyg A	
@@ -2946,8 +2946,8 @@ Stellar Evoluation OP	49b	NGC 869
 Stellar Evoluation OP	50	M 45	
 Stellar Evoluation OP	51	M 37	
 Stellar Evoluation OP	52	M 44	
-Stellar Evoluation OP	53	M 6	
-Stellar Evoluation OP	54	NGC 6530	
+Stellar Evoluation OP	53	M 6	20240706-01-m6
+Stellar Evoluation OP	54	NGC 6530	20240706-03-m8ngc6530
 Stellar Evoluation OP	55	M 11	
 Stellar Evoluation OP	56	Gliese 67	
 Stellar Evoluation OP	57	Tau Cet	
@@ -2970,7 +2970,7 @@ Stellar Evoluation OP	73	Y CVn	20240509-03-ycvn
 Stellar Evoluation OP	74	Mu Cep	
 Stellar Evoluation OP	75	NGC 2392	
 Stellar Evoluation OP	76	NGC 6210	
-Stellar Evoluation OP	77	NGC 6543	
+Stellar Evoluation OP	77	NGC 6543	20240704-05-ngc6543
 Stellar Evoluation OP	78	M 57	
 Stellar Evoluation OP	79	NGC 6826	
 Stellar Evoluation OP	80	M 27	
