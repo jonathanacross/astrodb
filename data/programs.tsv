@@ -2796,7 +2796,7 @@ Sketching OP	114	Conjunction
 Lunar I OP	1	Old Moon in New Moon's Arms	20190901-01-oldmooninnewmoonsarms
 Lunar I OP	2	New Moon in Old Moon's Arms	20200815-02-newmooninoldmoonsarms
 Lunar I OP	3	Crescent Moon, Waxing	20200721-01-newmoon
-Lunar I OP	4	Crescent Moon, Waning	
+Lunar I OP	4	Crescent Moon, Waning	20240831-01-crescentmoonwaning
 Lunar I OP	5	Man in the Moon	20240422-01-maninthemoon
 Lunar I OP	6	Woman in the Moon	20240422-02-womaninthemoon
 Lunar I OP	7	Rabbit in the Moon	20240422-03-rabbitinthemoon
@@ -2932,11 +2932,11 @@ Stellar Evolution OP	36	Zeta Oph	20240607-07-zetaoph
 Stellar Evolution OP	37	Alpha Her	20240704-01-alphaher
 Stellar Evolution OP	38	Alpha Oph	20240704-02-alphaoph
 Stellar Evolution OP	39	Barnard's Star	20240704-04-barnardsstar
-Stellar Evolution OP	40	Alpha Lyr	
+Stellar Evolution OP	40	Alpha Lyr	20240828-01-alphalyr
 Stellar Evolution OP	41	Ross 154	20240712-01-ross154
-Stellar Evolution OP	42	Beta Cyg A	
-Stellar Evolution OP	43	Beta Cyg B	
-Stellar Evolution OP	44	Alpha Aql	
+Stellar Evolution OP	42	Beta Cyg A	20240828-05-betacyg
+Stellar Evolution OP	43	Beta Cyg B	20240828-05-betacyg
+Stellar Evolution OP	44	Alpha Aql	20240828-01-alphaaql
 Stellar Evolution OP	45	Beta Cep	
 Stellar Evolution OP	46	Iota Peg	
 Stellar Evolution OP	47	Eta Peg	
@@ -2954,7 +2954,7 @@ Stellar Evolution OP	57	Tau Cet
 Stellar Evolution OP	58	Eta Ari	
 Stellar Evolution OP	59	Beta Com	20240508-03-betacom
 Stellar Evolution OP	60	18 Sco	20240607-06-18sco
-Stellar Evolution OP	61	Sigma Dra	
+Stellar Evolution OP	61	Sigma Dra	20240828-04-sigmadra
 Stellar Evolution OP	62	61 Cyg A	
 Stellar Evolution OP	63	51 Peg	
 Stellar Evolution OP	64	Beta And	
@@ -2971,7 +2971,7 @@ Stellar Evolution OP	74	Mu Cep
 Stellar Evolution OP	75	NGC 2392	
 Stellar Evolution OP	76	NGC 6210	20240711-02-ngc6210
 Stellar Evolution OP	77	NGC 6543	20240704-05-ngc6543
-Stellar Evolution OP	78	M 57	
+Stellar Evolution OP	78	M 57	20240828-02-m57
 Stellar Evolution OP	79	NGC 6826	
 Stellar Evolution OP	80	M 27	
 Stellar Evolution OP	81	NGC 7009	
@@ -2990,7 +2990,7 @@ Stellar Evolution OP	93	VV Cep A
 Stellar Evolution OP	94	RW Cep	
 Stellar Evolution OP	95	M 1	
 Stellar Evolution OP	96	NGC 6960	
-Stellar Evolution OP	97	R Aql	
-Stellar Evolution OP	98	RR Lyr	
-Stellar Evolution OP	99	Eta Aql	
+Stellar Evolution OP	97	R Aql	20240828-02-raql
+Stellar Evolution OP	98	RR Lyr	20240828-03-rrlyr
+Stellar Evolution OP	99	Eta Aql	20240828-03-etaaql
 Stellar Evolution OP	100	Delta Cep	
