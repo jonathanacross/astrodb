@@ -305,12 +305,10 @@ function doProgramQuery () {
   const filter = new ProgramFilter()
   filter.setProgramNameIs(document.getElementById('program_program_name').value)
 
-  const newquery = 'show=program' + filter.getUrlParameters()
-  history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
-
   const matchingObservationIds = filter.getMatchingObservationIds(database.programs)
   const matchingObservations = matchingObservationIds.map(id => database.observations[id])
 
+  updateUrlFromControls('view_program')
   showObservations('view_program_results', matchingObservations);
 }
 
@@ -331,12 +329,6 @@ function doObjectQuery () {
 
   const objectListMode = document.querySelector('input[name="object_list_mode"]:checked').value;
 
-  // TODO: update url/history
-  //const listType = document.querySelector('input[name="listtype"]:checked').value
-  // let newquery = 'show=objects' + filter.getUrlParameters()
-  // newquery += '&mode=' + encodeURIComponent(listType)
-  // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
-
   const matchingObjectIds = filter.getMatchingObjectIds(database.objects);
   const matchingObjects = matchingObjectIds.map(id => database.objects[id])
 
@@ -344,6 +336,8 @@ function doObjectQuery () {
   matchingObjects.sort(sortFunction)
 
   const showAsText = document.getElementById('show_as_text').checked
+
+  updateUrlFromControls('search_objects')
   showObjectList(matchingObjects, showAsText, objectListMode)
 }
 
@@ -358,16 +352,12 @@ function doObservationQuery () {
 
   const sortMethod = document.querySelector('input[name="observation_sort"]:checked').value;
 
-  // TODO: update url/history
-  // let newquery = 'show=objects' + filter.getUrlParameters()
-  // newquery += '&mode=' + encodeURIComponent(listType)
-  // history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + newquery)
-
   const matchingObservationIds = filter.getMatchingObservationIds(database.observations);
   const matchingObservations = matchingObservationIds.map(id => database.observations[id])
   const sortFunction = getObservationSortFunction(sortMethod)
   matchingObservations.sort(sortFunction)
 
+  updateUrlFromControls('search_observations')
   showObservations('search_observations_results', matchingObservations);
 }
 
@@ -409,11 +399,140 @@ function showQuery(search_query_type) {
   document.getElementById('error_messages').style.display = 'none';
 }
 
-function updateControlsFromSearchParams () {
-  // TODO: implmement
+function getParamForField(field_id) {
+  const value = document.getElementById(field_id).value;
+  if (!nullOrEmpty(value)) {
+    return '&' + field_id + '=' + encodeURIComponent(value)
+  } else {
+    return ''
+  }
+}
 
-  // Switch to the observations query by default on page load.
-  showQuery('search_observations')
+function getParamForRadioGroup(group_id) {
+  const selector = 'input[name="' + group_id + '"]:checked';
+  const value = document.querySelector(selector).id;
+  return '&' + group_id + '=' + encodeURIComponent(value)
+}
+
+function getParamForCheckGox(checkbox_id) {
+  if (document.getElementById(checkbox_id).checked) {
+    return '&' + checkbox_id + '=true'
+  } else {
+    return ''
+  }
+}
+
+function setFieldFromParam(urlParams, field_id) {
+  const value = urlParams.get(field_id);
+  document.getElementById(field_id).value = value;
+}
+
+function setRadioFromParam(urlParams, group_id, default_value) {
+  const element_id = urlParams.has(group_id) ? urlParams.get(group_id) : default_value;
+  document.getElementById(element_id).checked = true; 
+}
+
+function setCheckboxFromParam(urlParams, element_id) {
+  if (urlParams.has(element_id)) {
+    document.getElementById(value).checked = true; 
+  }
+}
+
+function updateUrlFromControls(search_query_type) {
+  let params = 'mode=' + search_query_type;
+
+  switch (search_query_type) {
+    case 'view_program':
+      params += getParamForField('program_program_name')
+      break;
+
+    case 'search_observations':
+      params += getParamForField('observation_object_name')
+      params += getParamForField('observation_object_type')
+      params += getParamForField('observation_constellation')
+      params += getParamForField('observation_date')
+      params += getParamForField('observation_location')
+      params += getParamForField('observation_scope')
+      params += getParamForRadioGroup('observation_sort')
+      break;
+      
+    case 'search_objects':
+      params += getParamForField('object_object_name')
+      params += getParamForField('object_object_type')
+      params += getParamForField('object_constellation')
+      params += getParamForField('object_ra_min')
+      params += getParamForField('object_ra_max')
+      params += getParamForField('object_dec_min')
+      params += getParamForField('object_dec_max')
+      params += getParamForField('object_mag_max')
+      params += getParamForField('object_size_min')
+      params += getParamForField('object_size_max')
+      params += getParamForField('object_program_name')
+      params += getParamForField('object_seen_status')
+      params += getParamForRadioGroup('object_list_mode')
+      params += getParamForCheckGox('show_as_text')
+      break;
+  }
+
+  history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + params)
+}
+
+function updateControlsFromSearchParams() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const autoShowResults = urlParams.has('mode');
+    const mode = urlParams.has('mode') ? urlParams.get("mode") : 'search_observations';
+
+    switch (mode) {
+    case 'view_program':
+      setFieldFromParam(urlParams, 'program_program_name')
+      break;
+
+    case 'search_observations':
+      setFieldFromParam(urlParams, 'observation_object_name')
+      setFieldFromParam(urlParams, 'observation_object_type')
+      setFieldFromParam(urlParams, 'observation_constellation')
+      setFieldFromParam(urlParams, 'observation_date')
+      setFieldFromParam(urlParams, 'observation_location')
+      setFieldFromParam(urlParams, 'observation_scope')
+      setRadioFromParam(urlParams, 'observation_sort', 'observation_name_radio')
+      break;
+      
+    case 'search_objects':
+      setFieldFromParam(urlParams, 'object_object_name')
+      setFieldFromParam(urlParams, 'object_object_type')
+      setFieldFromParam(urlParams, 'object_constellation')
+      setFieldFromParam(urlParams, 'object_ra_min')
+      setFieldFromParam(urlParams, 'object_ra_max')
+      setFieldFromParam(urlParams, 'object_dec_min')
+      setFieldFromParam(urlParams, 'object_dec_max')
+      setFieldFromParam(urlParams, 'object_mag_max')
+      setFieldFromParam(urlParams, 'object_size_min')
+      setFieldFromParam(urlParams, 'object_size_max')
+      setFieldFromParam(urlParams, 'object_program_name')
+      setFieldFromParam(urlParams, 'object_seen_status')
+      setRadioFromParam(urlParams, 'object_list_mode', 'object_program_radio')
+      setCheckboxFromParam(urlParams, 'show_as_text')
+      break;
+  }
+
+  showQuery(mode)
+  if (autoShowResults) {
+    switch (mode) {
+      case 'view_program':
+        doProgramQuery();
+        break;
+
+      case 'search_observations':
+        doObservationQuery();
+        break;
+        
+      case 'search_objects':
+        doObjectQuery();
+        break;
+    }
+  }
 }
 
 function populateDropdown(dropdownElement, items) {

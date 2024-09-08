@@ -92,50 +92,6 @@ export class ObjectFilter {
     }
   }
 
-  getUrlParameters () {
-    let params = ''
-    if (this.#nameIs !== null) {
-      params += '&nameIs=' + encodeURIComponent(this.#nameIs)
-    }
-    if (this.#nameLike !== null) {
-      params += '&nameLike=' + encodeURIComponent(this.#nameLike)
-    }
-    if (this.#typeIs !== null) {
-      params += '&typeIs=' + encodeURIComponent(this.#typeIs)
-    }
-    if (this.#conIs !== null) {
-      params += '&conIs=' + encodeURIComponent(this.#conIs)
-    }
-    if (this.#raMin !== null) {
-      params += '&raMin=' + encodeURIComponent(this.#raMin)
-    }
-    if (this.#raMax !== null) {
-      params += '&raMax=' + encodeURIComponent(this.#raMin)
-    }
-    if (this.#decMin !== null) {
-      params += '&decMin=' + encodeURIComponent(this.#decMin)
-    }
-    if (this.#decMax !== null) {
-      params += '&decMax=' + encodeURIComponent(this.#decMax)
-    }
-    if (this.#magMax !== null) {
-      params += '&magMax=' + encodeURIComponent(this.#magMax)
-    }
-    if (this.#sizeMin !== null) {
-      params += '&sizeMin=' + encodeURIComponent(this.#sizeMin)
-    }
-    if (this.#sizeMax !== null) {
-      params += '&sizeMax=' + encodeURIComponent(this.#sizeMax)
-    }
-    if (this.#programNameIs !== null) {
-      params += '&programNameIs=' + encodeURIComponent(this.#programNameIs)
-    }
-    if (this.#seenStatus !== null) {
-      params += '&seenStatus=' + encodeURIComponent(this.#seenStatus)
-    }
-    return params
-  }
-
   raIsInRange(ra) {
     // no RA defined
     if (nullOrEmpty(ra)) {
@@ -326,29 +282,6 @@ export class ObservationFilter {
     }
   }
 
-  getUrlParameters () {
-    let params = ''
-    if (this.#dateLike !== null) {
-      params += '&dateLike=' + encodeURIComponent(this.#dateLike)
-    }
-    if (this.#hasObjectType !== null) {
-      params += '&hasObjectType=' + encodeURIComponent(this.#hasObjectType)
-    }
-    if (this.#hasObjectCon !== null) {
-      params += '&hasObjectCon=' + encodeURIComponent(this.#hasObjectCon)
-    }
-    if (this.#hasObjectNameLike !== null) {
-      params += '&hasObjectNameLike=' + encodeURIComponent(this.#hasObjectNameLike)
-    }
-    if (this.#locationIs !== null) {
-      params += '&locationIs=' + encodeURIComponent(this.#locationIs)
-    }
-    if (this.#scopeIs !== null) {
-      params += '&scopeIs=' + encodeURIComponent(this.#scopeIs)
-    }
-    return params
-  }
-
   #observationMatches (observation) {
     if (this.#dateLike !== null && !observation.date.includes(this.#dateLike)) {
       return false
@@ -404,14 +337,6 @@ export class ProgramFilter {
     if (!nullOrEmpty(programNameIs)) {
       this.#programNameIs = programNameIs
     }
-  }
-
-  getUrlParameters () {
-    let params = ''
-    if (this.#programNameIs !== null) {
-      params += '&programName=' + encodeURIComponent(this.#programNameIs)
-    }
-    return params
   }
 
   getMatchingObservationIds (programs) {
