@@ -2906,14 +2906,14 @@ Stellar Evolution OP	10	M 16	20240831-03-m16
 Stellar Evolution OP	11	M 17	20240831-02-m17
 Stellar Evolution OP	12	IC 5070	20240831-06-ic5070
 Stellar Evolution OP	13	NGC 7000	20240831-07-ncg7000
-Stellar Evolution OP	14	IC 1396	
+Stellar Evolution OP	14	IC 1396	20240927-02-ic1396
 Stellar Evolution OP	15	Sun	20240519-01-sun
-Stellar Evolution OP	16	Mu And	
-Stellar Evolution OP	17	107 Psc	
-Stellar Evolution OP	18	HD 14633	
-Stellar Evolution OP	19	Alpha UMa	
-Stellar Evolution OP	20	Beta Per	
-Stellar Evolution OP	21	Epsilon Eri	
+Stellar Evolution OP	16	Mu And	20241012-02-muand
+Stellar Evolution OP	17	107 Psc	20241022-02-107psc
+Stellar Evolution OP	18	HD 14633	20241012-05-hd14633
+Stellar Evolution OP	19	Alpha UMi	20240918-01-alphaumi
+Stellar Evolution OP	20	Beta Per	20241022-01-betaper
+Stellar Evolution OP	21	Epsilon Eri	20240927-08-epsiloneri
 Stellar Evolution OP	22	Omega Aur	
 Stellar Evolution OP	23	Beta Ori	
 Stellar Evolution OP	24	Zeta Ori	
@@ -2940,24 +2940,24 @@ Stellar Evolution OP	44	Alpha Aql	20240828-01-alphaaql
 Stellar Evolution OP	45	Beta Cep	20240904-01-betacep
 Stellar Evolution OP	46	Iota Peg	20240923-01-iotapeg
 Stellar Evolution OP	47	Eta Peg	20240923-02-etapeg
-Stellar Evolution OP	48	Omega Psc	
-Stellar Evolution OP	49a	NGC 884	
-Stellar Evolution OP	49b	NGC 869	
+Stellar Evolution OP	48	Omega Psc	20240927-04-omegapsc
+Stellar Evolution OP	49a	NGC 884	20241022-04-ngc869ngc884
+Stellar Evolution OP	49b	NGC 869	20241022-04-ngc869ngc884
 Stellar Evolution OP	50	M 45	
 Stellar Evolution OP	51	M 37	
 Stellar Evolution OP	52	M 44	
 Stellar Evolution OP	53	M 6	20240706-01-m6
 Stellar Evolution OP	54	NGC 6530	20240706-03-m8ngc6530
 Stellar Evolution OP	55	M 11	20240831-04-m11
-Stellar Evolution OP	56	Gliese 67	
-Stellar Evolution OP	57	Tau Cet	
-Stellar Evolution OP	58	Eta Ari	
+Stellar Evolution OP	56	Gliese 67	20241012-04-gliese67
+Stellar Evolution OP	57	Tau Cet	20240927-06-taucet
+Stellar Evolution OP	58	Eta Ari	20241022-03-etaari
 Stellar Evolution OP	59	Beta Com	20240508-03-betacom
 Stellar Evolution OP	60	18 Sco	20240607-06-18sco
 Stellar Evolution OP	61	Sigma Dra	20240828-04-sigmadra
 Stellar Evolution OP	62	61 Cyg A	20240915-02-61cyg
 Stellar Evolution OP	63	51 Peg	20240923-03-51peg
-Stellar Evolution OP	64	Beta And	
+Stellar Evolution OP	64	Beta And	20241012-03-betaand
 Stellar Evolution OP	65	Alpha Tau	
 Stellar Evolution OP	66	Alpha Aur	
 Stellar Evolution OP	67	Beta Gem	
@@ -2974,10 +2974,10 @@ Stellar Evolution OP	77	NGC 6543	20240704-05-ngc6543
 Stellar Evolution OP	78	M 57	20240828-02-m57
 Stellar Evolution OP	79	NGC 6826	20240915-03-ngc6826
 Stellar Evolution OP	80	M 27	20240918-02-m27
-Stellar Evolution OP	81	NGC 7009	
-Stellar Evolution OP	82	NGC 7293	
-Stellar Evolution OP	83	NGC 7662	
-Stellar Evolution OP	84	Delta Cet	
+Stellar Evolution OP	81	NGC 7009	20240927-01-ngc7009
+Stellar Evolution OP	82	NGC 7293	20240927-03-ngc7293
+Stellar Evolution OP	83	NGC 7662	20240927-05-ngc7662
+Stellar Evolution OP	84	Delta Cet	20240927-07-deltacet
 Stellar Evolution OP	85	Gamma Ori	
 Stellar Evolution OP	86	Theta1 Ori C	
 Stellar Evolution OP	87	Epsilon CMa	
