@@ -1556,8 +1556,7 @@ GL Vir	GL Vir	Star	Vir	12h 18m 59s	11° 07' 34"	13.9				M4.5e	21.07	Low mass sta
 Gliese 67	Gliese 67/HD 10307/HIP 7918	Star	And	01h 41m 48s	42° 36' 46"	5				G		.97 solar mass
 Gliese 229	Gliese 229/SAO 171334	Star	Lep	06h 10m 35s	-21° 52' 01"	8.2				M	18.8 ly	18.8 ly
 Gliese 581	Gliese 581/HO Lib/Wolf 562	Star	Lib	15h 19m 26s	-07° 43' 21"	10.6				M		Red dwarf, dim, close companion star 36" away
-GQ And	GQ And/HD 1326 B	Star	And	00h 18m 25s	44° 01' 38"	11.06				M3.5e	11.61	Low mass star
-GX And	GX And/HD 1326 A	Star	And	00h 18m 22s	44° 01' 23"	8.08				M1	11.61	Low mass star. Can use Binocs
+HD 1326	HD 1326/GX And,GQ And	Double	And	00h 18m 25s	44° 01' 38"	8.08, 11.06				M3.5e	11.61	Low mass stars. Primary is GX And; secondary is GQ And
 HD 4628	HD 4628	Star	Psc	00h 48m 22s	05° 16' 50"	5.74				K2.5	24.24	Can use naked eye
 HD 14633	HD 14633/SAO 37987	Star	And	02h 22m 54s	41° 28' 48"	7.5				O		Part of a multiple
 HD 32147	HD 32147	Star	Eri	05h 00m 48s	-05° 45' 13"	6.21				K3	28.83	Can use Binocs
