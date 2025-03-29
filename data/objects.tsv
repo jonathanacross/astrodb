@@ -1,4 +1,4 @@
-#id	Names	Type	Con	RA	Dec	Mag	Size	Sep	PA	Class	Distance	Notes
+#id	Name	Type	Con	RA	Dec	Mag	Size	Sep	PA	Class	Distance	Notes
 10 Aquarii	10 Aquarii	Ast	Aqr	21h 00m 00s	-05° 35' 00"	5.8	29' x 15'					Elongated group of stars, with 1 bright one near the top
 A	A/Weisman 1	Ast	Sex	10h 20m 00s	03° 07' 00"	9.0 - 11.0	11'					5 stars in the shape of a Chevron
 Airplane	Airplane/Party Balloon	Ast	Cas	23h 21m 00s	62° 20' 00"	9.5	75'					6 stars outlining double-convex lens, create wings. 5 stars that curve northward create fuselage and tail
@@ -48,7 +48,7 @@ Inchworm	Inchworm	Ast	Lyn	09h 05m 00s	38° 16' 00"	4.0	46'					11 stars total. 2
 Jaws	Jaws/Ty's Oil Can	Ast	Vir	12h 39m 00s	-11° 25' 00"	9.0 - 11.5	30'					3 brightest stars of this asterism form the jaws of the shark with 6 more that curve to make the body. Very close to M104.
 Job's Coffin	Job's Coffin	Ast	Del	20h 40m 00s	15° 00' 00"	4.0	3° x 2°					Formed by the stars Alpha, Beta, Gamma, and Delta Delphinus.
 Kangaroo	Kangaroo	Ast	Boo	15h 00m 00s	33° 00' 00"	7.0 - 11.0	113' x 53'					19 stars total.  8 stars make a slight 's' shape for the back and tail, 6 more make the body and head, 1 for the nose, 1 for the arm, and 3 for the leg.
-Kemble's Cascade	Kemble's Cascade	Ast	Cam	03h 57m 00s	63° 00' 00"	5.0 - 10.0	2°					a beautiful cascade of faint stars tumbling from the northwest down to the open cluster NGC 1502
+Kemble 1	Kemble 1/Kemble's Cascade	Ast	Cam	03h 57m 00s	63° 00' 00"	5.0 - 10.0	2°					a beautiful cascade of faint stars tumbling from the northwest down to the open cluster NGC 1502
 Kemble's Kite	Kemble's Kite/Measuring Scoop	Ast	Cas	03h 27m 00s	71° 50' 00"	8.5	75'					Diamond shaped kite with tail.
 Keystone	Keystone	Ast	Her	17h 00m 00s	33° 00' 00"	4.0	7° x 8°					Formed by the stars Epsilon, Zeta, Eta, and Pi Herculis.
 Lambda-Lambda	Lambda-Lambda	Ast	Ori	05h 35m 12s	09° 36' 48"	3.0	50' x 20'					Shape resembles the Greek letter lambda; central star is Lambda Orion (Meis).
@@ -61,6 +61,7 @@ Levy 384	Levy 384	Ast	Pup	08h 15m 00s	-13° 58' 00"		2'					Compact asterism. Ti
 Little Leo	Little Leo/Lovett 1	Ast	Gem	07h 50m 00s	28° 47' 00"	6.0 - 7.0	60' x 35'					Looks similar to constellation Leo. 8 stars in the shape of a '7', 2 stars in the middle for body, 2 more angled for the end.
 Little Orion	Little Orion/Leiter 9	Ast	Cyg	20h 56m 00s	43° 34' 00"	10.0 - 11.0	45'					Looks like the main body of the Orion constellation.
 Lucky 7	Lucky 7	Ast	Cas	23h 03m 00s	59° 30' 00"	5.0 - 7.0	195' x 70'					9 stars in the shape of a number '7'.
+Markarian 6	Markarian 6	OCl	Cas	02h 29m 36s	60° 39' 07"	7.1	4.5'					
 Markov 1	Markov 1	Ast	Her	17h 57m 00s	29° 29' 00"	7.0	15'					Teapot shape of 9 stars. Northwest of the yellow star Xi  Herculis.
 Meerschaum Pipe	Meerschaum Pipe	Ast	Cyg	19h 51m 00s	30° 07' 00"	9.0 - 12.0	22'					3/4° northwest of NGC 6834. 5 stars in line make the stem. 3 stars make up the bowl.
 Metronome	Metronome/Dolidze 17/Stratton 2	Ast	Ori	05h 22m 00s	07° 05' 00"	7.0 - 8.0	12' x 17'					Consists of 6 stars. 5 of which has the appearance of a capitol Sigma. The 6th star provides the top of the metronome.
@@ -239,7 +240,7 @@ IC 434	IC 434	DN	Ori	05h 41m 00s	-02° 24' 00"		3'					!? Horsehead Nebula (B33)
 31 Cyg	31 Cyg	Double	Cyg	20h 13m 36s	46° 44' 00"	A=3.9, C=7.0, D=4.8		AC=109, AD=337	AC=173, AD=322			
 32 Cam	32 Cam	Double	Cam	12h 49m 12s	83° 25' 00"	5.3, 5.7		20.9	324			
 32 Eri	32 Eri	Double	Eri	03h 54m 18s	-02° 57' 00"	4.8, 5.9		6.9	348			! yellow, blue
-36 Oph	36 Oph	Double	Oph	17h 15m 18s	-26° 36' 00"	5.1, 5.1		4.9	142			! orange pair
+36 Oph	36 Oph/Guniibuu/HD 155886	Double	Oph	17h 15m 20s	-26° 36' 06"	5.03, 5.08, 6.34				K2	19.39	Multiple star. Can see naked eye. Orange pair, C component is much farther away.
 36 UMa, LDS 2863	36 UMa, LDS 2863	Double	UMa	10h 30m 38s	55° 58' 50"	A=4.8, B=8.8, C=11.4		AB=122, AC=240	AB=303, AC=292			
 38 Lyn	38 Lyn	Double	Lyn	09h 18m 48s	36° 48' 00"	3.9, 6.1		2.6	224			
 40,41 Dra	40,41 Dra	Double	Dra	18h 00m 12s	80° 00' 00"	5.7, 6.0		18.7	231			
@@ -249,11 +250,11 @@ IC 434	IC 434	DN	Ori	05h 41m 00s	-02° 24' 00"		3'					!? Horsehead Nebula (B33)
 54 Leo	54 Leo	Double	Leo	10h 55m 36s	24° 45' 00"	4.5, 6.3		6.4	113			
 55 Eri	55 Eri	Double	Eri	04h 43m 36s	-08° 48' 00"	6.7, 6.8		9.3	318			
 57 Aql	57 Aql	Double	Aql	19h 54m 36s	-08° 14' 00"	5.7, 6.4		35.6	171			
-61 Cyg	61 Cyg	Double	Cyg	21h 06m 54s	38° 45' 00"	5.2, 6.1		31.5	152		11.2ly	
+61 Cyg	61 Cyg	Double	Cyg	21h 06m 54s	38° 45' 00"	5.2, 6.1		31.5	152	K5	11.2ly	Can see naked eye
 62 Eri, SHJ 48, GMC 11	62 Eri, SHJ 48, GMC 11	Double	Eri	04h 56m 24s	-05° 10' 17"	A=5.4, B=8.9, C=11.4		AB=66, AC=127	AB=76, AC=331, AE=186			
 65 Psc	65 Psc	Double	Psc	00h 49m 54s	27° 43' 00"	6.3, 6.3		4.3	115			
 66 Eri, STF 642, HUB 5	66 Eri, STF 642, HUB 5	Double	Eri	05h 06m 46s	-04° 39' 19"	A=5.1, B=9.3, C=10.8		AB=1.6, AC=52.2	AB=233, AC=10			
-70 Oph	70 Oph	Double	Oph	18h 05m 30s	02° 30' 00"	4.2, 6.2		5.9	130			! yellow, red
+70 Oph	70 Oph	Double	Oph	18h 05m 27s	02° 30' 01"	4.03, 6.07				K0	16.67	! yellow, red. Can see naked eye
 94 Aqr	94 Aqr	Double	Aqr	23h 19m 06s	-13° 28' 00"	5.3, 7.0		12.6	349			
 95 Her	95 Her	Double	Her	18h 01m 30s	21° 36' 00"	4.9, 5.2		6.2	257			! yellow, reddish
 100 Her, STF 2280	100 Her, STF 2280	Double	Her	18h 07m 50s	26° 06' 04"	A=5.8, B=5.8, C=11.8		AB=14.4, AC=79.9	AB=288, AC=183			
@@ -262,19 +263,27 @@ IC 434	IC 434	DN	Ori	05h 41m 00s	-02° 24' 00"		3'					!? Horsehead Nebula (B33)
 AG 38	AG 38	Double	Ari	02h 23m 19s	15° 25' 06"	A=8.9, B=9.4, C=12.0		AB=34.8, AC=149.2	AB=261, AC=186			
 Alpha Cap	Alpha Cap	Double	Cap	20h 18m 06s	-12° 33' 00"	A=3.7, E=4.3, D=10.5, BC=11.1, B=11.2, C=11.5		AE=381.2, AD=153.2, A,BC=6.6, BC=1.2	AE=290, AD=159, A,BC=196, BC=241			
 Alpha Cen	Alpha Cen/Rigel Kent	Double	Cen	14h 40m 00s	-60° 50' 00"	0.0		17.5				! Proxima 131' southwest
-Alpha CMa	Alpha CMa/Sirius	Double	CMa	06h 45m 12s	-16° 42' 00"	-1.5		5				separation widening. Brightest star in the sky
+Alpha CMa	Alpha CMa/Sirius	Double	CMa	06h 45m 12s	-16° 42' 00"	-1.5, 8.4		5		A1	8.6	separation widening. Brightest star in the sky
+Alpha CMi	Alpha CMi/HD 61421	Double	CMi	07h 39m 18s	05° 13' 30"	0.37, 10.92				F5	11.46	Can use naked eye
 Alpha CVn	Alpha CVn/Cor Caroli	Double	CVn	12h 56m 00s	38° 19' 00"	2.9, 5.5		19.2	228			! yellow, blue?
 Alpha Gem	Alpha Gem/Castor	Double	Gem	07h 34m 36s	31° 53' 00"	1.9, 3.0		4.6	55			!
 Alpha Her	Alpha Her/Rasalgethi	Double	Her	17h 14m 36s	14° 23' 00"	3.5, 5.4		4.8	103	M		! red, yellow
 Alpha Leo	Alpha Leo	Double	Leo	10h 08m 24s	11° 58' 00"	1.4, 8.2		175.2	307			
 Alpha Lib	Alpha Lib	Double	Lib	14h 50m 54s	-16° 02' 00"	2.7, 5.2		231.1	314			
+Alpha PsA	Alpha PsA/Fomalhaut/HD 216956	Double	PsA	22h 57m 39s	-29° 37' 20"	1.16, 12.62				A4	25.11	Triple star. Can use naked eye
 Alpha Psc	Alpha Psc/Alrisha	Double	Psc	02h 02m 00s	02° 46' 00"	4.1, 5.2		1.7	266			
 Alpha Sco	Alpha Sco/Antares	Double	Sco	16h 29m 30s	-26° 25' 00"	0.9		2.6				red, greenish. Is a Small amplitude variable star
 Alpha UMi	Alpha UMi/Polaris	Double	UMi	02h 31m 48s	89° 16' 00"	2.1, 9.1		18.1	233			
 AR Cas, STT 496	AR Cas, STT 496	Double	Cas	23h 30m 02s	58° 32' 56"	A=4.8, B=9.3, C=7.2, D=10.6, E=11.2, F=10.5		AB=0.8, AC=75.7, AE=117, AF=67.2, CD=1.3	AB=356, AC=269, AE=117, AF=338, BC=17			
+BD+16 2708	BD+16 2708/CE Boo	Double	Boo	14h 54m 29s	16° 06' 06"	9.60, 10.15				M1	32.43	Low mass star
+BD+44 2051	BD+44 2051/Lalande 21258, WX UMa	Double	UMa	11h 05m 28s	43° 31' 36"	8.77, 14.45				M1	15.99	Low mass star. Can use Binocs
+BD+59 1915	BD+59 1915/HD 173739	Double	Dra	18h 42m 46s	59° 37' 49"	8.9, 9.69				M3	11.49	Low mass star. Can use Binocs
+BD+61 195	BD+61 195/Wolf 46/HIP 4872	Double	Cas	01h 02m 38s	62° 20' 42"	9.6, 13.21				M1.5	32.14	Low mass star. Can use Binocs
+BD+66 34	BD+66 34/V547 Cas	Double	Cas	00h 32m 29s	67° 14' 09"	10.33, 12.19				M2	32.25	Low mass star
+BD-17 588	BD-17 588/HIP 14101	Double	Eri	03h 01m 51s	-16° 35' 36"	10.53, 11.78, 12.64				M3	22.38	Triple star. Low mass star.
 Beta Cap	Beta Cap	Double	Cap	20h 21m 00s	-14° 47' 00"	3.2, 6.1		205.4	267			
 Beta Cep	Beta Cep/Alfirk	Double	Cep	21h 28m 42s	70° 34' 00"	3.2, 8.6		14.1	248	B		
-Beta Com	Beta Com	Double	Com	13h 13m 01s	27° 44' 57"	4.3, 12.1		126	181			1.1 solar mass
+Beta Com	Beta Com	Double	Com	13h 13m 01s	27° 44' 57"	4.3, 12.1		126	181		29.98	1.1 solar mass. Can see naked eye
 Beta Cyg	Beta Cyg/Albireo	Double	Cyg	19h 30m 42s	27° 58' 00"	3.2, 4.7		34.7	55			!! yellow, blue
 Beta Lyr	Beta Lyr	Double	Lyr	18h 50m 06s	33° 22' 00"	3.6, 6.7		44.8	147			
 Beta Mon	Beta Mon/STF 919	Double	Mon	06h 28m 48s	-07° 02' 00"	A=4.6, B=5.0, C=5.4		AB=6.6, AC=9.9	AB=133, AC=125			!
@@ -289,6 +298,7 @@ BU 324	BU 324	Double	CMa	06h 49m 42s	-24° 05' 00"	A=6.6, B=7.9, C=8.3		AB=1.7, 
 BU 328	BU 328	Double	CMa	07h 06m 42s	-11° 18' 00"	A=5.7, B=6.9, C=9.0		AB=0.6, AC=19.5				
 BU 575	BU 575	Double	CMa	07h 14m 48s	-15° 29' 00"	A=7.9, B=8.3, C=9.9		AB=0.5, AC=15.8				
 Castor ABCD, STF 1110	Castor ABCD, STF 1110	Double	Gem	07h 34m 36s	31° 53' 18"	A=1.9, B=2.9, C=9.8, D=10.7		AB=5.3, AC=69.8, AD=179.8	AB=52, AC=163, AD=179			
+Chi Dra	Chi Dra/HD 170153	Double	Dra	18h 21m 03s	72° 43' 58"	3.58, 5.70				F7	26.27	Can use naked eye
 Chi Tau	Chi Tau	Double	Tau	04h 22m 36s	25° 38' 00"	5.4, 8.5		20.4	24			
 Delta Boo	Delta Boo	Double	Boo	15h 15m 30s	33° 19' 00"	3.6, 7.9		104.6	78			
 Delta Cep	Delta Cep	Double	Cep	22h 29m 12s	58° 25' 00"	4.2, 6.1		40.9	191			Cepheid variable star
@@ -309,19 +319,28 @@ Epsilon Equ	Epsilon Equ	Double	Equ	20h 59m 06s	04° 18' 00"	A=6.0, B=6.3, C=7.1	
 Epsilon Lyr	Epsilon Lyra/Double Double	Double	Lyr	18h 44m 18s	39° 40' 00"	A=5.2, B=6.1, C=5.3, D=5.4		AB,CD=209.5, AB=2.3, CD=2.4	AB,CD=172, AB=345, CD=74			!
 Epsilon Mon	Epsilon Mon	Double	Mon	06h 23m 48s	04° 36' 00"	4.4, 6.6		12.3	29			! gold, blue
 Epsilon Peg	Epsilon Peg	Double	Peg	21h 44m 12s	09° 52' 00"	2.5, 8.7		145.4	318			
-Eta Cas	Eta Cas/STF 60/Achird	Double	Cas	00h 49m 06s	57° 49' 00"	3.4, 7.5		12	323			!! yellow, blue
+EQ Peg	EQ Peg	Double	Peg	23h 31m 52s	19° 56' 14"	10.27, 12.21				M3.5e	20.42	Low mass star
+Eta Cas	Eta Cas/STF 60/Achird	Double	Cas	00h 49m 06s	57° 49' 00"	3.4, 7.5		12	323	F9	19.31	!! yellow, blue. Can see naked eye.
 Eta CMa	Eta CMa	Double	CMa	07h 24m 05s	-28° 18' 11"	2.4, 6.8		179	286			
 Eta Ori	Eta Ori	Double	Ori	05h 24m 30s	-02° 23' 00"	3.7		1.5				WSP Snowman
 Eta Per	Eta Per/Miram	Double	Per	02h 50m 42s	55° 54' 00"	3.8, 8.5		31.4	295			! yellow, blue
 Eta Sgr	Eta Sgr	Double	Sgr	18h 17m 42s	-36° 46' 00"	A=3.1, B=7.8, C=10.0		AB=3.6, AC=93.2				
+G 9-38	G 9-38/EI Cnc	Double	Cnc	08h 58m 15s	19° 45' 48"	13.75, 13.93				M7	16.79	Low mass star
+G 158-50	G 158-50/HIP 1242	Double	Cet	00h 15m 28s	-16° 08' 02"	11.6, 14.02				M4	19.57	Low mass star
+G 175-34	G 175-34/Stein 2051	Double	Cam	04h 31m 11s	58° 58' 38"	11.04, 12.43				M4e	17.99	
 Gamma And	Gamma And/Almach	Double	And	02h 03m 54s	42° 20' 00"	2.3, 5.0		9.4	63			!! yellow, blue
 Gamma Ari	Gamma Ari/Mesarthim	Double	Ari	01h 53m 30s	19° 17' 00"	4.6		7.8				!
 Gamma Cet	Gamma Cet	Double	Cet	02h 43m 18s	03° 14' 00"	3.5, 6.2		2.1	298			!
 Gamma Del	Gamma Del	Double	Del	20h 46m 42s	16° 07' 00"	4.4, 5.0		9	266			! yellow, blue
 Gamma Leo	Gamma Leo/Algieba	Double	Leo	10h 20m 00s	19° 51' 00"	2.4, 3.6		4.6	126			!!
-Gamma Lep	Gamma Lep	Double	Lep	05h 44m 30s	-22° 27' 00"	3.6, 6.3		95	350			
+Gamma Lep	Gamma Lep/AK Lep/HD 38393	Double	Lep	05h 44m 27s	-22° 27' 03"	3.6, 6.15				F6.5	29.03	Double. Can use naked eye
 Gamma Vel	Gamma Vel	Double	Vel	08h 09m 24s	-47° 20' 00"	1.8		41				! B-m4.3, C-mag8, 62"
 Gamma Vir	Gamma Vir/Porrima	Double	Vir	12h 41m 42s	-01° 27' 00"	3.5, 3.5		1.9	10			
+GJ 570	GJ 570/KX Lib/HD 131977	Double	Lib	14h 57m 28s	-21° 24' 56"	5.72, 8.07, 9.96				K4	19.19	Triple star. Can use naked eye
+GJ 745	GJ 745/Ross 730/HIP 93873	Double	Sge	19h 07m 05s	20° 53' 17"	10.77, 10.77				M2	28.79	Low mass star
+GJ 867	GJ 867/FK Aqr/HD 214479	Double	Aqr	22h 38m 45s	-20° 37' 16"	9.08, 11.49				M2e	29.01	Low mass star. Can use Binocs
+GJ 1245	GJ 1245/V1581 Cygni	Double	Cyg	19h 53m 54s	44° 24' 51"	13.13, 13.99				M5.5	15.3	Low mass star. Triple star
+Gliese 65	Gliese 65/BL Cet, UV Cet	Double	Cet	01h 39m 01s	-17° 57' 02"	12.7, 13.2				M5	8.87	A component is BL Cet; B component is UV Cet.
 H 3 80	H 3 80/AB Cet	Double	Cet	02h 26m 20s	-15° 20' 28"	A=5.9, B=9.1, C=10.5		AB=12.1, AC=109.6	AB=295, AC=31			
 H 119	H 119	Double	PsA	22h 39m 42s	-28° 20' 00"	A=6.4, B=7.5, C=8.6		AB=3.1, AC=86.5				
 H 1647	H 1647/NV Peg	Double	Peg	21h 29m 00s	22° 11' 00"	A=6.1, B=10.2, C=10.6		AB=40.3, AC=41.5				
@@ -331,6 +350,10 @@ H 4926	H 4926	Double	Sco	17h 14m 30s	-39° 46' 00"	A=6.7, B=10.1, C=11.4		AB=14.
 H 5082	H 5082	Double	Sgr	19h 03m 12s	-19° 15' 00"	A=6.2, B=9.0, C=10.8		AB=7.5, AC=19.9				
 H 5311	H 5311	Double	PsA	21h 59m 30s	-29° 03' 00"	A=7.1, B=10.6, C=10.9		AB=40.3, AC=44.8				
 H N 40	H N 40	Double	Sgr	18h 02m 24s	-23° 02' 00"	A=7.6, B=8.7, C=10.4		AB=6.1, AC=11				
+HD 16160	HD 16160/BX Cet	Double	Cet	02h 36m 04s	06° 53' 12"	5.83, 11.66				K3	23.57	Can use naked eye
+HD 32450	HD 32450	Double	Lep	05h 02m 28s	-21° 15' 24"	8.32, 10.60				M0	27.26	Low mass star. Can use Binocs
+HD 50281	HD 50281	Double	Mon	06h 52m 18s	-05° 10' 25"	6.57, 10.05, 11.10				K3.5	28.51	Triple Star. Can use binocs
+HD 239960	HD 239960/Kruger 60	Double	Cep	22h 27m 59s	57° 41' 42"	9.79, 11.41				M3	13.07	Low mass star. Can use Binocs
 HDO 198	HDO 198	Double	CMa	06h 58m 42s	-31° 00' 00"	A=6.4, B=10.2, C=11.4		AB=40.1, AC=70				
 HDO 204	HDO 204	Double	Pyx	08h 45m 57s	-32° 09' 50"	A=7.0, B=11.9, C=11.8		AB=15.8, AC=20.3	AB=326, AC=277			
 HJ 658	HJ 658	Double	Cet	02h 54m 25s	09° 46' 22"	A=9.7, BC=11.2, D=10.7		A,BC=18, AD=126.6	308			
@@ -363,21 +386,25 @@ Kappa Pup	Kappa Pup	Double	Pup	07h 38m 48s	-26° 47' 00"	4.5	9.8"					B-m4.6, Ma
 Lambda Ari	Lambda Ari	Double	Ari	01h 57m 54s	23° 36' 00"	4.8, 6.6		37.1	48			
 Lambda Ori	Lambda Ori/Meissa	Double	Ori	05h 35m 06s	09° 56' 00"	A=3.5, B=5.5, C=10.7, D=9.6, E=9.2		AB=4.3, AC=29.3, AD=78.5, AE=151	AB=44, AC=185, AD=272, AE=279			! yellowish, purple?
 M 40	M 40/WIN4	Double	UMa	12h 20m 00s	58° 22' 00"	9.0		49				
+MCC 541	MCC 541/HD 79210	Double	UMa	09h 14m 22s	52° 41' 12"	7.64, 7.7				M0	20.65	Low mass star. Can use Binocs
 Mu Boo	Mu Boo	Double	Boo	15h 24m 30s	37° 23' 00"	4.3, 7.1		109	171			
+Mu Cas	Mu Cas/Marfak/HD 6582	Double	Cas	01h 08m 16s	54° 55' 13"	5.17, 10.30				G5	25.02	Can use naked eye
 Mu Dra	Mu Dra	Double	Dra	17h 05m 18s	54° 28' 00"	5.7, 5.7		2.4	5			
-Mu Her	Mu Her	Double	Her	17h 46m 28s	27° 43' 01"	A=3.5, B=10.2, C=10.7		A,BC=35.5, BC=0.9				Primary is gold. This is quadruple star system A also has a faint, close pair.
+Mu Her	Mu Her	Double	Her	17h 46m 28s	27° 43' 01"	A=3.5, B=10.2, C=10.7		A,BC=35.5, BC=0.9		G5	27.18	Primary is gold. This is quadruple star system A also has a faint, close pair. Can see naked eye.
 Mu Per	Mu Per	Double	Per	04h 14m 54s	48° 25' 00"	A=4.2, B=10.3, C=10.4		AB=14.7, AC=83.3				
 N Hya	N Hya	Double	Hya	11h 32m 18s	-29° 16' 00"	5.6, 5.7		9.4	210			
 Nu Dra	Nu Dra	Double	Dra	17h 32m 12s	55° 11' 00"	4.9, 4.9		62	311			
 Nu Sco	Nu Sco/Southern Double Double	Double	Sco	16h 12m 00s	-19° 28' 00"	4.4, 6.6		41.4	336			! B-m5.6, C-m6.8, D-m7.8 CD-2.3", AC - 41.4" Southern Double Double
-Omicron 2 Eri	Omicron 2 Eri	Double	Eri	04h 15m 24s	-07° 36' 00"	9.5		8.5				C-m11.1, red dwarf and white dwarf, A component is m4.5, 82" distant, Beid
+Omicron 2 Eri	Omicron 2 Eri/Keid	Double	Eri	04h 15m 24s	-07° 36' 00"	9.5, 11.7		8.5		K0.5	16.33	Triple star, can see naked eye. red dwarf and white dwarf.
 Omicron Oph	Omicron Oph/39 Oph	Double	Oph	17h 18m 00s	-24° 17' 00"	5.2, 6.6		10	355			! yellow, blue
 Pi Ari	Pi Ari	Double	Ari	02h 49m 18s	17° 28' 00"	A=5.3, B=8.0, C=10.7		AB=3.3, AC=24.8				
 Pi Boo	Pi Boo	Double	Boo	14h 40m 42s	16° 25' 00"	4.9, 5.8		5.4	112			
 Psi 1 Psc	Psi 1 Psc	Double	Psc	01h 05m 36s	21° 28' 00"	5.3, 5.4		29.7	159			
 Psi Dra	Psi Dra	Double	Dra	17h 41m 54s	72° 09' 00"	4.6, 5.6		30	16			
+QY Aur	QY Aur	Double	Aur	07h 10m 01s	38° 31' 46"	12.05, 12.45				M5e	19.73	Low mass star
 Rho Her	Rho Her	Double	Her	17h 23m 42s	37° 09' 00"	4.5, 5.4		4.1	319			
 Rho Oph, H 2 19	Rho Oph, H 2 19	Double	Oph	16h 25m 35s	-23° 26' 47"	A=5.0, B=5.7, C=7.2, D=6.8		AB=2.9, AC=149.2, AD=156	AB=337, AC=0, AD=252			
+Ross 614	Ross 614/V577 Mon	Double	Mon	06h 29m 23s	-02° 48' 49"	11.07, 14.23				M4.5	13.42	Low mass star
 RS Sgr	RS Sgr	Double	Sgr	18h 17m 36s	-34° 06' 00"	A=6.0, B=8.7, C=9.5		AB=38.8, AC=94.1				
 S 516	S 516	Double	CMa	06h 19m 15s	-24° 58' 30"	A=7.3, B=8.3, C=7.0		AB=59.6, AC=300.4	AB=8, AC=243			
 S 571	S 571	Double	Cnc	08h 39m 56s	19° 33' 11"	AB=7.3, D=6.7, C=7.5, E=11.7		AC=45.4, DE=92.3	AB=157, AC=242			
@@ -489,6 +516,7 @@ STT 390	STT 390	Double	Cyg	19h 55m 06s	30° 12' 00"	A=6.6, B=9.5, C=11.2		AB=9.6
 STT 410	STT 410	Double	Cyg	20h 39m 36s	40° 35' 00"	A=6.7, B=6.8, C=8.7		AB=0.9, AC=68.1				
 STT 485	STT 485	Double	Cas	23h 02m 42s	55° 14' 00"	A=6.5, B=10.2, C=10.5		AB=18.8, AC=56.3				
 STT 525	STT 525/STT 525, SHJ 282 ABCD/Otto Struve 525	Double	Lyr	18h 54m 52s	33° 58' 06"	A=6.1, B=9.2, C=7.6, D=11.0		AB=1.8, AC=45.5, AD=295	AB=130, AC=350, AD=295			
+SZ UMa	SZ UMa	Double	UMa	11h 19m 53s	65° 50' 51"	9.3, 10.7				M1	29.57	Low mass star. Can use Binocs
 Tau4 Eri	Tau4 Eri	Double	Eri	03h 19m 30s	-21° 45' 00"	A=3.9, B=9.5, C=10.8		AB=5.9, AC=39.3				
 Tau CMa, HJ 3948	Tau CMa, HJ 3948	Double	CMa	07h 18m 42s	-24° 57' 16"	A=4.4, B=10.2, C=11.2, D=8.2		AB=8.3, AC=14.2, AD=84.8	AB=90, AC=87, AD=77			
 Theta 1 Ori	Theta 1 Ori/Trapezium/STF 748	Double	Ori	05h 35m 18s	-05° 23' 00"	A=6.5, B=7.5, C=5.1, D=6.4, E=11.1, F=11.5		AB=8.8, AC=12.8, AD=21.5, AE=4.6, CF=4.7	AB=32, AC=132, AD=97, AE=352, CF=120			
@@ -498,10 +526,11 @@ Theta Eri	Theta Eri	Double	Eri	02h 58m 18s	-40° 18' 00"	3.2		8.2				! B-m4.3, A
 Theta Lyr	Theta Lyr	Double	Lyr	19h 16m 24s	38° 08' 00"	A=4.5, B=10.1, C=11.1		AB=99, AC=100.6				
 Theta Ser	Theta Ser	Double	Ser	18h 56m 12s	04° 12' 00"	4.6, 4.9		22.3	104			
 Theta Sge	Theta Sge	Double	Sge	20h 09m 54s	20° 55' 00"	A=6.6, B=7.5, C=8.9		AB=12, AC=90				
-Xi Boo	Xi Boo	Double	Boo	14h 51m 24s	19° 06' 00"	4.8, 7.0		5.7	306			! orange, blue
+Wolf 424	Wolf 424/FL Vir	Double	Vir	12h 33m 17s	09° 01' 16"	13.24, 13.25				M5.5	14.11	Low mass star
+Xi Boo	Xi Boo	Double	Boo	14h 51m 24s	19° 06' 00"	4.8, 7.0		5.7	306		22.02	! orange, blue, can see naked eye
 Xi Cep	Xi Cep	Double	Cep	22h 03m 48s	64° 38' 00"	4.5, 6.4		8.1	268			
 Xi Sco	Xi Sco	Double	Sco	16h 04m 24s	-11° 22' 00"	A=5.2, B=4.9, C=7.3		AB=1.1, AC=7.5	AB=10, AC=43			
-Xi UMa	Xi UMa	Double	UMa	11h 18m 12s	31° 32' 00"	4.3		1.8				B-m4.8, Alula Australis, 60 year binary
+Xi UMa	Xi UMa/Alula Australis	Double	UMa	11h 18m 10s	31° 31' 45"	3.79, 4.77				F8.5	28.47	Can use naked eye. 60 year binary
 Zeta Aqr	Zeta Aqr	Double	Aqr	22h 28m 48s	00° 01' 00"	4.3, 4.5		2.3	165			yellowish, bluish
 Zeta Cnc	Zeta Cnc/STF 1196/Tegmeni	Double	Cnc	08h 12m 13s	17° 38' 51"	A=5.3, B=6.3, C=5.8, D=8.9		AB=1.1, AB,C=5.9, AB,D=276	AB=8, AB,C=64, AB,D=107			!
 Zeta CrB	Zeta CrB	Double	CrB	15h 39m 24s	36° 38' 00"	5.0, 5.9		6.4	306			
@@ -524,9 +553,10 @@ NGC 281	NGC 281/IC 11/Pacman Nebula	EN	Cas	00h 53m 00s	56° 37' 00"	7.4	4'			E+*
 NGC 896	NGC 896	EN+DN	Cas	02h 24m 48s	61° 54' 00"	8.0	20'					Use UHC, dark nebulae involved
 NGC 1491	NGC 1491/Fossil Footprint Nebula	EN	Per	04h 03m 12s	51° 19' 00"		6' x 9'			E	10.7kly	visually small and faint emission nebula. Use UHC, looks like a comet
 NGC 1579	NGC 1579/The Northern Trifid	EN	Per	04h 30m 12s	35° 17' 00"	8.5	3'			R	2.1kly	
+NGC 1582	NGC 1582	OCl	Per	04h 33m 34s	43° 50' 12"	7.0	7.8'					
 NGC 1931	NGC 1931/The Fly/Miniature Orion Nebula	EN+RN	Aur	05h 31m 24s	34° 15' 00"	10.1	6' x 3'			I 3 p n:b	7kly	haze surrounding 4 close stars. Contains young star cluster; trapeziumlike grouping.
 NGC 2024	NGC 2024/Lips Nebula/Flame Nebula/Maple Leaf Nebula/Tank Nebula	EN	Ori	05h 41m 42s	-01° 51' 00"		30' x 22'			E	1.5kly	! bright but masked by glow from Zeta Ori
-NGC 2174	NGC 2174/Monkey Head Nebula	EN	Ori	06h 09m 44s	20° 29' 59'	6.8	40'					
+NGC 2174	NGC 2174/Monkey Head Nebula	EN	Ori	06h 09m 44s	20° 29' 59"	6.8	40'					
 NGC 2185	NGC 2185	EN	Ori	06h 11m 06s	-06° 13' 00"	11.0	2' x 2'					brt fuzzy with NGC 2183 + 2184
 NGC 2237	NGC 2237/Rosette Nebula	EN	Mon	06h 31m 54s	04° 57' 00"	5.5	80' x 60'			E	5.5kly	!!Rosette Neb.; very large; use UHC. Contains cluster NGC 2244.
 NGC 2261	NGC 2261/Hubble's Variable Nebula	EN+RN	Mon	06h 39m 12s	08° 45' 00"	9.0	2' x 1'			E+R	3kly	! Hubble's Variable Nebula; comet-shaped
@@ -1111,6 +1141,7 @@ M 67	M 67/NGC 2682/King Cobra Cluster	OCl	Cnc	08h 51m 18s	11° 49' 00"	6.9	25'		
 M 73	M 73/NGC 6994	OCl+Ast	Aqr	20h 59m 00s	-12° 38' 00"	9.0	2.8'					4 stars in shape of triangle.
 M 93	M 93/NGC 2447	OCl	Pup	07h 44m 30s	-23° 51' 00"	6.2	10'			IV 1 p	3.385kly	80 stars
 M 103	M 103/NGC 581	OCl	Cas	01h 33m 24s	60° 39' 00"	7.4	6'			III 2 p	9.5kly	172 stars
+Mel 15	Mel 15	OCl	Cas	02h 32m 42s	61° 27' 00"	6.5	21'					
 Mel 20	Mel 20	OCl	Per	03h 22m 00s	49° 00' 00"	1.2	3.083°					
 Mel 25	Mel 25/Cr 50/Hyades	OCl	Tau	04h 27m 00s	15° 52' 00"	0.5	5.5°					
 Mel 71	Mel 71/Cr 155	OCl	Pup	07h 37m 30s	-12° 03' 00"	7.1	8'			II 1 m	10.3kly	216 stars
@@ -1454,6 +1485,7 @@ NGC 1554,1555	NGC 1554,1555/Hind's Variable Nebula/Struve's Lost Nebula	RN	Tau	0
 NGC 1788	NGC 1788	RN	Ori	05h 06m 54s	-03° 21' 00"	10.1	8' x 5'					fairly bright but diffuse reflection nebula
 NGC 1973,1975	NGC 1973,1975/Mermaid's Purse Nebula/Running Man Nebula	RN	Ori	05h 35m 06s	-04° 44' 00"	7.0	10'			E+R	1.63kly	NGC 1973-5-7 near M42 and M43; often neglected
 NGC 1999	NGC 1999/13th Pearl Nebula/Black Eye Nebula	RN	Ori	05h 36m 30s	-06° 42' 00"	9.2	2'			DP	1.5kly	
+NGC 2071	NGC 2071	RN	Ori	05h 47m 11s	00° 18' 00"	9.5	7' x 5'					Near M 78.
 NGC 2316	NGC 2316/NGC 2317	RN	Mon	06h 59m 42s	-07° 47' 00"		4'			R	3.6kly	
 NGC 6726	NGC 6726	RN	CrA	19h 01m 42s	-36° 53' 00"		2'			E	425ly	
 NGC 6729	NGC 6729	RN	CrA	19h 01m 45s	-36° 57' 39"		25' x 20'					also include NGC 6726 and double star HR 7169 in the view
@@ -1463,56 +1495,147 @@ NGC 6960	NGC 6960/West Veil Nebula/The Witch Broom/Bridal Veil	SNR	Cyg	20h 45m 4
 NGC 6979	NGC 6979/Fleming's Triangular Wisp/Veil Nebula	SNR	Cyg	20h 50m 28s	32° 01' 33"	7.0	7' x 3'			R	1.47kly	!! Veil Nebula: part of west half; use filter !
 NGC 6992,6995	NGC 6992,6995/East Veil Nebula	SNR	Cyg	20h 56m 24s	31° 43' 00"	7.0	78' x 8'			R	1.47kly	!! Veil Nebula: east half; use filter !
 10 Lac	10 Lac/SAO 72575	Star	Lac	22h 39m 16s	39° 03' 01"	4.9				O		16 solar masses
-14 Her	14 Her/SAO 45933	Star	Her	16h 10m 04s	43° 49’ 04”	6.6				K		
+12 Oph	12 Oph/HD 149661	Star	Oph	16h 36m 21s	-02° 19' 29"	5.77				K1	32.25	Can use naked eye
+14 Her	14 Her/SAO 45933	Star	Her	16h 10m 04s	43° 49' 04"	6.6				K		
 18 Sco	18 Sco/SAO 141066	Star	Sco	16h 15m 37s	-08° 22' 15"	5.5				G		1.0 solar mass
+20 Crt	20 Crt/HD 100623	Star	Crt	11h 34m 29s	-32° 49' 53"	5.98				K0	31.16	Can use naked eye
 51 Peg	51 Peg/SAO 90896	Star	Peg	22h 57m 28s	20° 46' 08"	5.5				G		1.1 solar mass. Hosts first extra-solar planet ever found
-61 Cyg A	HD201091/HIP104214/HR 8085	Star	Cyg	21h 06m 54s	38° 44' 58"	5.2				K		.63 solar mass. Brighter member of binary pair
-107 Psc	107 Psc/HIP 7981	Star	Psc	01h 42m 30s	20° 15’ 58”	5.2				K		
-Alpha Aql	Alpha Aql/Altair	Star	Aql	19h 50m 47s	08° 52' 10"	0.8				A		Altair, Vega, and Deneb form the summer triangle; all are 'A' stars
+61 UMa	61 UMa/HD 101501	Star	UMa	11h 41m 03s	34° 12' 06"	5.34				G8	31.22	Can use naked eye
+61 Vir	61 Vir/HD 115617	Star	Vir	13h 18m 24s	-18° 18' 40"	4.74				G7	27.82	Can use naked eye
+107 Psc	107 Psc/HD 10476	Star	Psc	01h 42m 29s	20° 16' 07"	5.24				K0	24.92	Can use naked eye
+Alpha Aql	Alpha Aql/Altair	Star	Aql	19h 50m 47s	08° 52' 10"	0.8				A	16.72	Altair, Vega, and Deneb form the summer triangle; all are 'A' stars. Can see naked eye
 Alpha Aur	Alpha Aur/Capella	Star	Aur	05h 16m 41s	45° 59' 48"	0.1						Multiple stars. Early in red giant branch
 Alpha Boo	Alpha Boo/Arcturus	Star	Boo	14h 15m 39s	19° 10' 36"	-0.1						
-Alpha CMi	Alpha CMi/Procyon	Star	CMi	07h 39m 18s	05° 13' 19"	0.4				F		
-Alpha Lyr	Alpha Lyr/Vega	Star	Lyr	18h 36m 56s	38° 47' 04"	0				A		
+Alpha Lyr	Alpha Lyr/Vega	Star	Lyr	18h 36m 56s	38° 47' 04"	0				A	25.03	Can see naked eye
 Alpha Oph	Alpha Oph/Rasalhague	Star	Oph	17h 34m 56s	12° 33' 34"	2.1				A		
 Alpha Ori	Alpha Ori/Betelgeuse	Star	Ori	05h 55m 10s	07° 24' 26"	0.5						Small amplitude variable
 Alpha Tau	Alpha Tau/Aldebaran	Star	Tau	04h 35m 55s	16° 30' 31"	0.9						Orange giant
 Alpha UMa	Alpha UMa/Polaris/North Star	Star	UMi	02h 31m 49s	89° 15' 51"	2				F		Always visible to northerners
 Alpha Vir	Alpha Vir/Spica	Star	Vir	13h 26m 28s	28° 02' 21"	1.3, 7.5						Blue giant. High mass main sequence star; 11.4 solar masses.
-Barnard's Star	Barnard's Star/HIP 87937	Star	Oph	17h 57m 48s	04° 43' 26"	9.5				M		Red dwarf, quite dim
+AN Sex	AN Sex	Star	Sex	10h 12m 17s	-03° 44' 45"	9.26				M1.5	25.12	Low mass star. Can use Binocs
+AT Mic	AT Mic/HD 196982	Star	Mic	20h 41m 51s	-32° 26' 07"	10.36				M4.5	32.34	Low mass star
+Barnard's Star	Barnard's Star/HIP 87937	Star	Oph	17h 57m 48s	04° 43' 26"	9.5				M	5.96	Red dwarf, quite dim, may see in binocs. one of closest stars to the sun
+BD+01 2447	BD+01 2447/Ross 446/HIP 51317	Star	Sex	10h 28m 55s	00° 50' 28"	9.65				M2	22.94	Low mass star. Can use Binocs
+BD+11 2576	BD+11 2576/Ross 490/HIP 65859	Star	Vir	13h 29m 59s	10° 22' 38"	9.03				M1e	24.87	Low mass star. Can use Binocs
+BD+18 3421	BD+18 3421/HIP 86287	Star	Her	17h 37m 53s	18° 35' 30"	9.58				M1.5e	26.6	Low mass star. Can use Binocs
+BD+20 2465	BD+20 2465/AD Leo	Star	Leo	10h 19m 36s	19° 52' 12"	9.52				M3	16.19	Low mass star. Can use Binocs
+BD+43 2796	BD+43 2796/HIP 86776	Star	Her	17h 43m 55s	43° 22' 29"	10.49				M2.5	31.07	Low mass star
+BD+68 946	BD+68 946	Star	Dra	17h 36m 25s	68° 20' 21"	9.17				M3	14.83	Low mass star. Can use Binocs
+BD-05 5715	BD-05 5715/HIP 109388	Star	Aqr	22h 09m 40s	-04° 38' 27"	10.37				M3.5	28.74	Low mass star
+BD-18 359	BD-18 359/HIP 9724	Star	Cet	02h 05m 06s	-17° 36' 57"	10.19				M3	30.38	Low mass star
 Beta And	Beta And/Mirach	Star	And	01h 09m 44s	35° 37' 13"	2.1						
+Beta CVn	Beta CVn/Chara/HD 109358	Star	CVn	12h 33m 44s	41° 21' 27"	4.25				G0	27.62	Can use naked eye
 Beta Cyg A	Beta Cyg A/Albireo A	Star	Cyg	19h 30m 43s	27° 57' 35"	3.1				K		the orange star
 Beta Cyg B	Beta Cyg B/Albireo B	Star	Cyg	19h 30m 43s	27° 57' 35"	3.1				B		the blue star
 Beta Gem	Beta Gem/Pollux	Star	Gem	07h 45m 18s	28° 01' 34"	1.1						Orange giant
 Beta Peg	Beta Peg/Scheat	Star	Peg	23h 03m 47s	28° 05' 00"	2.4						
+BR Psc	BR Psc	Star	Psc	23h 49m 12s	02° 24' 04"	8.99				M1	19.27	Low mass star. Can use Binocs
+CD-31 9113	CD-31 9113/HIP 56528	Star	Hya	11h 35m 26s	-32° 32' 43"	9.81				M2	29.59	Low mass star. Can use Binocs
+CF UMa	CF UMa/HD 103095	Star	UMa	11h 52m 58s	37° 43' 07"	6.45				K1	29.9	Can use Binocs
+Chi1 Ori	Chi1 Ori/HD 39587	Star	Ori	05h 54m 22s	20° 16' 34"	4.4				G0	28.36	Can use naked eye
 Delta Cet	Delta Cet/SAO 110665	Star	Cet	02h 39m 29s	00° 19' 43"	4.1				B		9.5 solar masses
 Delta CMa	Delta CMa/Wezen	Star	CMa	07h 08m 23s	-26° 23' 35"	1.8				F		
-Epsilon Eri	Epsilon Eri/18 Eri	Star	Eri	03h 32m 55s	-09° 27' 30"	3.7				K		
+Delta Eri	Delta Eri/Rana/HD 23249	Star	Eri	03h 43m 14s	-09° 45' 48"	3.54				K0	29.63	Can use naked eye
+Epsilon Eri	Epsilon Eri/18 Eri	Star	Eri	03h 32m 55s	-09° 27' 30"	3.7				K2	10.5	Can use naked eye
 Eta Aql	Eta Aql	Star	Aql	19h 52m 28s	01° 00' 20"	3.5-4.6						Cepheid variable star
 Eta Ari	Eta Ari/SAO 75204	Star	Ari	02h 12m 48s	21° 12' 40"	5.2				F		1.3 solar mass
 Eta Peg	Eta Peg/Matar	Star	Peg	22h 43m 00s	30° 13' 17"	2.9				G		Binary yellow G and whiter F
+EV Lac	EV Lac	Star	Lac	22h 46m 49s	44° 20' 02"	10.26				M4	16.47	Low mass star
+EZ Aqr	EZ Aqr	Star	Aqr	22h 38m 33s	-15° 18' 00"	12.38				M5	11.1	Low mass star
+FI Vir	FI Vir	Star	Vir	11h 47m 44s	00° 48' 17"	11.15				M4	11	Low mass star
+G 41-14	G 41-14/Del 2	Star	Cnc	08h 58m 56s	08° 28' 26"	10.98				M4e	22.08	Low mass star
+G 48-20	G 48-20/HIP 46655	Star	Hya	09h 30m 44s	00° 19' 22"	11.71				M3.5e	32.31	Low mass star
+G 113-20	G 113-20/HIP 40501	Star	Hya	08h 16m 07s	01° 18' 09"	10.09				M2	29.14	Low mass star
+G 202-45	G 202-45/HIP 80346	Star	Her	16h 24m 09s	48° 21' 11"	10.26				M3e	25.57	Low mass star
+G 202-48	G 202-48/HIP 80459	Star	Dra	16h 25m 24s	54° 18' 15"	10.07				M1.5	21.12	Low mass star
+G 203-47	G 203-47/HIP 83945	Star	Her	17h 09m 31s	43° 40' 53"	13.67				M3.5	24.77	Low mass star
+G 222-11	G 222-11/HIP 29277	Star	Cam	06h 10m 20s	82° 05' 54"	10.4				M2	30.84	Low mass star
+G 254-29	G 254-29/HIP 57544	Star	Cam	11h 47m 41s	78° 41' 28"	10.79				M4e	17.13	Low mass star
+G 262-15	G 262-15/HIP 101180	Star	Cep	20h 30m 32s	65° 26' 59"	10.07				M2.5	26.36	Low mass star
 Gamma Ori	Gamma Ori/Bellatrix	Star	Ori	05h 25m 08s	06° 20' 59"	1.6				B		10 solar masses
+GJ 748	GJ 748/HIP 94349	Star	Aql	19h 12m 17s	02° 52' 59"	11.14				M3.5e	30.67	Low mass star
+GJ 829	GJ 829/Ross 775 A/HIP 106106	Star	Peg	21h 29m 36s	17° 38' 36"	10.3				M3e	22.1	Low mass star
+GL Vir	GL Vir	Star	Vir	12h 18m 59s	11° 07' 34"	13.9				M4.5e	21.07	Low mass star
 Gliese 67	Gliese 67/HD 10307/HIP 7918	Star	And	01h 41m 48s	42° 36' 46"	5				G		.97 solar mass
 Gliese 229	Gliese 229/SAO 171334	Star	Lep	06h 10m 35s	-21° 52' 01"	8.2				M	18.8 ly	18.8 ly
 Gliese 581	Gliese 581/HO Lib/Wolf 562	Star	Lib	15h 19m 26s	-07° 43' 21"	10.6				M		Red dwarf, dim, close companion star 36" away
+HD 1326	HD 1326/GX And,GQ And	Double	And	00h 18m 25s	44° 01' 38"	8.08, 11.06				M3.5e	11.61	Low mass stars. Primary is GX And; secondary is GQ And
+HD 4628	HD 4628	Star	Psc	00h 48m 22s	05° 16' 50"	5.74				K2.5	24.24	Can use naked eye
 HD 14633	HD 14633/SAO 37987	Star	And	02h 22m 54s	41° 28' 48"	7.5				O		Part of a multiple
-HD 93521	HD 93521/HIP 52849	Star	LMi	10h 48m 23d	37° 30' 55"	7				O		
+HD 32147	HD 32147	Star	Eri	05h 00m 48s	-05° 45' 13"	6.21				K3	28.83	Can use Binocs
+HD 36395	HD 36395	Star	Ori	05h 31m 27s	-03° 40' 38"	7.97				M1.5	18.6	Low mass star. Can use Binocs
+HD 42581	HD 42581	Star	Lep	06h 10m 34s	-21° 51' 53"	8.13				M1	18.78	Low mass star. Can use Binocs
+HD 88230	HD 88230/Groombridge 1618	Star	UMa	10h 11m 22s	49° 27' 15"	6.61				K7.5e	15.88	Can use binocs
+HD 93521	HD 93521/HIP 52849	Star	LMi	10h 48m 23s	37° 30' 55"	7				O		
+HD 95735	HD 95735/Lalande 21185	Star	UMa	11h 03m 20s	35° 58' 12"	7.52				M1.5e	8.3	Low mass star. Can use Binocs
+HD 115953	HD 115953	Star	CVn	13h 19m 45s	47° 46' 41"	8.54				M2	29.64	Low mass star. Can use Binocs
+HD 119850	HD 119850/Wolf 498	Star	Boo	13h 45m 43s	14° 53' 29"	8.5				M1.5	17.72	Low mass star. Can use Binocs
 HD 139341	HD 139341/SAO 64800	Star	Boo	15h 36m 03s	39° 48' 08"	6.5				K		A double star, both K
+HD 151288	HD 151288	Star	Her	16h 45m 06s	33° 30' 33"	8.11				K5	32.1	Can use Binocs
+HD 152751	HD 152751/V1054 Oph	Star	Oph	16h 55m 25s	-08° 19' 21"	9.02				M3e	21.17	Triple Star. Can use binocs
+HD 155876	HD 155876/Furuhjelm 46	Star	Her	17h 12m 07s	45° 39' 57"	9.52				M3	19.49	Low mass star. Can use Binocs
+HD 157881	HD 157881	Star	Oph	17h 25m 45s	02° 06' 41"	7.56				K7	25.15	Can use Binocs
+HD 165222	HD 165222	Star	Ser	18h 05m 07s	-03° 01' 53"	9.36				M0	25.23	Low mass star. Can use Binocs
+HD 180617	HD 180617/V1428 Aql	Star	Aql	19h 16m 55s	05° 10' 08"	9.12				M3	19.28	Low mass star. Can use Binocs
+HD 192310	HD 192310	Star	Cap	20h 15m 17s	-27° 01' 59"	5.72				K2	28.73	Can use naked eye
+HD 199305	HD 199305	Star	Cep	20h 53m 19s	62° 09' 16"	8.6				M1e	22.95	Low mass star. Can use Binocs
+HD 216899	HD 216899/Ross 671	Star	Peg	22h 56m 34s	16° 33' 12"	8.64				M1.5e	22.39	Low mass star. Can use Binocs
+HD 217357	HD 217357	Star	Aqr	23h 00m 16s	-22° 31' 27"	7.87				K7	26.84	Can use Binocs
+HD 219134	HD 219134	Star	Cas	23h 13m 16s	57° 10' 06"	5.57				K3	21.33	Can use naked eye
+HD 232979	HD 232979	Star	Cam	04h 37m 40s	52° 53' 37"	8.65				M0	32.3	Low mass star. Can use Binocs
+HD 260655	HD 260655	Star	Gem	06h 37m 10s	17° 33' 53"	9.59				M0e	32.59	Low mass star. Can use Binocs
+HD 265866	HD 265866/Wolf 294	Star	Gem	06h 54m 48s	33° 16' 06"	10.02				M3	18.21	Low mass star
+HD 285968	HD 285968	Star	Tau	04h 42m 56s	18° 57' 04"	9.95				M2	30.92	Low mass star. Can use Binocs
+HH And	HH And	Star	And	23h 41m 55s	44° 10' 39"	12.29				M5	10.3	Low mass star
+HN Lib	HN Lib	Star	Lib	14h 34m 16s	-12° 31' 11"	11.32				M3.5	20.38	Low mass star
+HO Lib	HO Lib/Wolf 562	Star	Lib	15h 19m 26s	-07° 43' 20"	10.56				M3	20.54	Low mass star
+HU Del	HU Del/Gliese 791.2	Star	Del	20h 29m 48s	09° 41' 21"	13.04				M4.5	28.75	Low mass star
+IL Aqr	IL Aqr/Ross 780	Star	Aqr	22h 53m 16s	-14° 15' 49"	10.19				M4	15.23	Low mass star
 Iota Peg	Iota Peg/24 Peg	Star	Peg	22h 07m 01s	25° 20' 43"	3.8				F		
+Kappa1 Cet	Kappa1 Cet/HD 20630	Star	Cet	03h 19m 22s	03° 22' 15"	4.85				G5	30.24	Can use naked eye
+L 678-39	L 678-39/HIP 47103	Star	Hya	09h 36m 01s	-21° 40' 01"	10.91				M2.5	30.76	Low mass star
+L 737-9	L 737-9/HIP 23932	Star	Lep	05h 08m 35s	-18° 10' 51"	10.3				M3.5	30.09	Low mass star
+L 768-119	L 768-119/HIP 76901	Star	Lib	15h 42m 06s	-19° 28' 18"	11.86				M3	31.6	Low mass star
 Lalande 21185	Lalande 21185/SAO 62377	Star	UMa	11h 04m 41s	35° 50' 22"	7.5				M		apparent brightest red dwarf in N hemisphere
+LP 656-38	LP 656-38	Star	Eri	05h 01m 57s	-06° 56' 46"	12.2				M4e	17.52	Low mass star
+LP 776-46	LP 776-46/HIP 23512	Star	Lep	05h 03m 19s	-17° 22' 35"	11.74				M3	30.11	Low mass star
+LP 816-60	LP 816-60/HIP 103039	Star	Cap	20h 52m 33s	-16° 58' 29"	11.46				M4	18.32	Low mass star
+Luyten's Star	Luyten's Star	Star	CMi	07h 27m 24s	05° 13' 33"	9.87				M3.5	12.34	Low mass star. Can use Binocs
+MCC 135	MCC 135/HIP 57802	Star	UMa	11h 51m 07s	35° 16' 19"	9.8				M1.5	28.58	Low mass star. Can use Binocs
 Mu And	Mu And/SAO 54281	Star	And	00h 56m 45s	38° 29' 58"	3.9				A		
 Omega Aur	Omega Aur/4 Aur	Star	Aur	04h 59m 15s	37° 53' 24"	5.1				A		
 Omega Psc	Omega Psc/SAO 128513	Star	Psc	23h 59m 19s	06° 51' 48"	4				F		
-Plaskett’s Star	Plaskett's Star/SAO 114146	Star	Mon	06h 37m 24s	06° 08’ 07”	6				O		Steely-blue
+Pi3 Ori	Pi3 Ori/Tabit/HD 30652	Star	Ori	04h 49m 50s	06° 57' 41"	3.19				F6	26.16	Can use naked eye
+Plaskett’s Star	Plaskett's Star/SAO 114146	Star	Mon	06h 37m 24s	06° 08' 07"	6				O		Steely-blue
 R Aql	R Aql	Star	Aql	19h 06m 22s	08° 13' 48"	5.5–12						Mira variable star
+Ross 47	Ross 47/V1352 Ori	Star	Ori	05h 42m 09s	12° 29' 21"	11.51				M4	18.88	Low mass star
+Ross 104	Ross 104	Star	Leo	11h 00m 04s	22° 49' 59"	10.02				M2.5	22	Low mass star
 Ross 154	Ross 154/V1216 Sag	Star	Sgr	18h 49m 50s	-23° 50' 12"	10.4				M		Flare star – hydrogen burning
+Ross 318	Ross 318/HIP 4856	Star	Cas	01h 02m 32s	71° 40' 47"	10				M3e	26.84	Low mass star
+Ross 440	Ross 440/HIP 46706	Star	Hya	09h 31m 19s	-13° 29' 19"	10.07				M3	32.64	Low mass star
+Ross 695	Ross 695/HIP 60559	Star	Crv	12h 24m 52s	-18° 14' 32"	11.27				M2	28.93	Low mass star
+Ross 905	Ross 905/HIP 57087	Star	Leo	11h 42m 11s	26° 42' 24"	10.61				M2.5	31.87	Low mass star
+Ross 1015	Ross 1015/HIP 66906	Star	CVn	13h 42m 43s	33° 17' 24"	11.98				M3.5	29.97	Low mass star
 RR Lyr	RR Lyr	Star	Lyr	19h 25m 28s	42° 47' 04"	7.1-8.1						RR Lyra variable star
 RW Cep	RW Cep/SAO 34387	Star	Cep	22h 23m 07s	55° 57' 48"	6.0-7.3						Variable
-Sigma Dra	Sigma Dra/SAO 18396	Star	Dra	19h 32m 22s	69° 39' 21"	4.7				K		.82 solar mass
-Tau Cet	Tau Cet/HIP 8102	Star	Cet	01h 44m 03s	-15° 56' 06"	3.5				G		.81 solar mass
-Theta1 Ori C	Theta1 Ori C/SAO132314	Star	Ori	05h 35m 16s	-05° 23’ 23”	5.1				O		40 solar masses. Brightest in Trapezium
+Sigma Dra	Sigma Dra/Alsafi/SAO 18396	Star	Dra	19h 32m 22s	69° 39' 21"	4.7				K	18.79	.82 solar mass, can see naked eye
+Tau Cet	Tau Cet/HD 10700	Star	Cet	01h 44m 04s	-15° 56' 15"	3.5				G8.5	11.91	0.81 solar mass. Can use naked eye
+Theta1 Ori C	Theta1 Ori C/SAO132314	Star	Ori	05h 35m 16s	-05° 23' 23"	5.1				O		40 solar masses. Brightest in Trapezium
 Theta Boo	Theta Boo/23 Boo	Star	Boo	14h 25m 12s	51° 51' 02"	4.1				F		
+TYC 3980-1081-1	TYC 3980-1081-1	Star	Cep	21h 51m 38s	59° 17' 39"	10.64				M2?	26.49	Low mass star
+TZ Ari	TZ Ari	Star	Ari	02h 00m 12s	13° 03' 07"	12.3				M4.5	14.57	Low mass star
+V1216 Sgr	V1216 Sgr	Star	Sgr	18h 49m 49s	-23° 50' 10"	10.43				M3.5e	9.7	Low mass star
+V2306 Oph	V2306 Oph	Star	Oph	16h 30m 18s	-12° 39' 45"	10.07				M3	14.04	Low mass star
 VV Cep A	VV Cep A/HD 208816	Star	Cep	21h 56m 39s	63° 37' 32"	4.8						Variable
+VX Ari	VX Ari/Ross 556	Star	Ari	02h 44m 15s	25° 31' 24"	10.56				M3	25.04	Low mass star
 VY CMa	VY CMa/HD 58061	Star	CMa	07h 22m 58s	-25° 46' 03"	6.5						Variable
+Wolf 28	Wolf 28/van Maanen's Star/HIP 3829	Star	Psc	00h 49m 09s	05° 23' 19"	12.37				DZ	14.07	White dwarf
+Wolf 358	Wolf 358/EE Leo	Star	Leo	10h 50m 52s	06° 48' 29"	11.68				M4	22.71	Low mass star
+Wolf 359	Wolf 359/CN Leo	Star	Leo	10h 56m 28s	07° 00' 53"	13.51				M6	7.85	Low mass star
+Wolf 437	Wolf 437/HIP 62452	Star	Vir	12h 47m 56s	09° 45' 05"	11.4				M3.5e	26.34	Low mass star
+Wolf 922	Wolf 922/BB Cap	Star	Cap	21h 31m 18s	-09° 47' 26"	12.01				M4.5	26.02	Low mass star
+YZ Cet	YZ Cet	Star	Cet	01h 12m 30s	-16° 59' 56"	12.07				M4e	12.12	Low mass star
+YZ CMi	YZ CMi	Star	CMi	07h 44m 40s	03° 33' 09"	11.23				M4e	19.52	Low mass star
 Zeta Oph	Zeta Oph/SAO 160006	Star	Oph	16h 37m 10s	-10° 34' 02"	2.6				O		
 M 24	M 24/Small Sagittarius Star Cloud	Star Cloud	Sgr	18h 18m 00s	-18° 32' 29"	4.6	90' x 60'			STARCLOUD	10kly	
 NGC 206	NGC 206/Great Star Cloud in Andromeda Galaxy	Star Cloud	And	00h 40m 30s	40° 44' 00"	12.8	4.2'			STARCLOUD	2.52mly	
@@ -1529,6 +1652,7 @@ C103P Hadley	C103P Hadley	Comet
 C2017 K2 PANSTARRS	C2017 K2 PANSTARRS	Comet										
 C2020 F3 Neowise	C2020 F3 Neowise	Comet										
 C2022 E3 ZTF	C2022 E3 ZTF	Comet										
+C2023 A3 Tsuchinshan-Atlas	C2023 A3 Tsuchinshan-Atlas	Comet										
 C2023 E1 ATLAS	C2023 E1 ATLAS	Comet										
 Comet	Comet	Comet										any comet
 Albategnius	Albategnius	Moon										
@@ -1545,6 +1669,7 @@ Aristoteles	Aristoteles	Moon
 Arzachel	Arzachel	Moon										
 Atlas	Atlas	Moon										
 Autolycus	Autolycus	Moon										
+Baco	Baco	Moon										
 Bailly	Bailly	Moon										
 Billy	Billy	Moon										
 Birmingham	Birmingham	Moon										
@@ -1596,7 +1721,9 @@ Kepler	Kepler	Moon
 Kies Pi	Kies Pi	Moon										
 Lacus Mortis	Lacus Mortis	Moon										
 Langrenus	Langrenus	Moon										
+Linné	Linné	Moon										
 Longomontanus	Longomontanus	Moon										
+Lunar Eclipse	Lunar Eclipse	Moon										
 Lunar Limb	Lunar Limb	Moon										
 Lunar Rays	Lunar Rays	Moon										
 Macrobius	Macrobius	Moon										

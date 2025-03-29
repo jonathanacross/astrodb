@@ -315,7 +315,7 @@ Wimmer's List	103	Lambda-Lambda	20181118-01-lambdaori
 Wimmer's List	104	Jaws	20200427-02-jaws
 Wimmer's List	105	DNA	20220918-01-dna
 Wimmer's List	106	Napoleon's Hat	20180422-01-napoleonshat
-Wimmer's List	107	Kemble's Cascade	20181012-03-kemblescascade
+Wimmer's List	107	Kemble 1	20181012-03-kemblescascade
 Wimmer's List	108	Gamma And	20171220-04-almach
 Wimmer's List	109	Alpha Gem	20190329-03-castor
 Wimmer's List	110	Delta Cep	20180906-01-deltacep
@@ -423,7 +423,7 @@ Asterism OP	85	Golf Putter	20180903-06-ngc752
 Asterism OP	86	Question Mark	20191104-02-questionmark
 Asterism OP	87	Northern Fly	20191026-01-northernfly
 Asterism OP	88	M 45	20180113-03-m45
-Asterism OP	89	Kemble's Cascade	20181012-03-kemblescascade
+Asterism OP	89	Kemble 1	20181012-03-kemblescascade
 Asterism OP	90	Davis's Dog	20171220-03-davisdog
 Asterism OP	91	S in Orion's Belt	20200209-03-sinorionsbelt
 Asterism OP	92	Boomerang	20200209-05-boomerang
@@ -915,7 +915,7 @@ Asterism OP	112	Great Square of Pegasus	20190729-03-greatsquareofpegasus
 500 Best DSOs	466	NGC 1554,1555	
 500 Best DSOs	467	NGC 1973,1975	
 500 Best DSOs	468	NGC 1977	20230120-04-ngc1977
-500 Best DSOs	469	NGC 2237	
+500 Best DSOs	469	NGC 2237	20250125-04-ngc2237ngc2244
 500 Best DSOs	470	NGC 2244	20190110-02-ngc2244
 500 Best DSOs	471a	NGC 2371	20200227-02-ngc2371ngc2372
 500 Best DSOs	471b	NGC 2372	20200227-02-ngc2371ngc2372
@@ -983,7 +983,7 @@ RASC Best of NGC	29	NGC 2194	20220222-05-ngc2194
 RASC Best of NGC	30a	NGC 2371	20200227-02-ngc2371ngc2372
 RASC Best of NGC	30b	NGC 2372	20200227-02-ngc2371ngc2372
 RASC Best of NGC	31	NGC 2392	20190113-01-ngc2392
-RASC Best of NGC	32	NGC 2237	
+RASC Best of NGC	32	NGC 2237	20250125-04-ngc2237ngc2244
 RASC Best of NGC	33	NGC 2261	20200218-05-ngc2261
 RASC Best of NGC	34	NGC 2359	20230223-02-ngc2359
 RASC Best of NGC	35	NGC 2440	20200219-07-ngc2440
@@ -2893,12 +2893,12 @@ Lunar I OP	97	Hippalus	20231122-01-hippalus
 Lunar I OP	98	J. Herschel	20211115-01-jherschel
 Lunar I OP	99	Schickard	20181119-03-schickard
 Lunar I OP	100	Reiner Gamma	20220316-01-reinergamma
-Stellar Evolution OP	1	NGC 1435	
-Stellar Evolution OP	2	NGC 1931	
-Stellar Evolution OP	3	M 42	
-Stellar Evolution OP	4	M 78	
-Stellar Evolution OP	5	NGC 2237	
-Stellar Evolution OP	6	NGC 2264	
+Stellar Evolution OP	1	NGC 1435	20250125-01-m45ngc1435
+Stellar Evolution OP	2	NGC 1931	20250124-01-ngc1931
+Stellar Evolution OP	3	M 42	20250117-07-theta1oricm42
+Stellar Evolution OP	4	M 78	20250124-02-m78ngc2071
+Stellar Evolution OP	5	NGC 2237	20250125-04-ngc2237ngc2244
+Stellar Evolution OP	6	NGC 2264	20250125-03-ngc2264
 Stellar Evolution OP	7	B 68	20240706-04-b68
 Stellar Evolution OP	8	M 20	20240706-02-m20
 Stellar Evolution OP	9	M 8	20240706-03-m8ngc6530
@@ -2906,23 +2906,23 @@ Stellar Evolution OP	10	M 16	20240831-03-m16
 Stellar Evolution OP	11	M 17	20240831-02-m17
 Stellar Evolution OP	12	IC 5070	20240831-06-ic5070
 Stellar Evolution OP	13	NGC 7000	20240831-07-ncg7000
-Stellar Evolution OP	14	IC 1396	
+Stellar Evolution OP	14	IC 1396	20240927-02-ic1396
 Stellar Evolution OP	15	Sun	20240519-01-sun
-Stellar Evolution OP	16	Mu And	
-Stellar Evolution OP	17	107 Psc	
-Stellar Evolution OP	18	HD 14633	
-Stellar Evolution OP	19	Alpha UMa	
-Stellar Evolution OP	20	Beta Per	
-Stellar Evolution OP	21	Epsilon Eri	
-Stellar Evolution OP	22	Omega Aur	
-Stellar Evolution OP	23	Beta Ori	
-Stellar Evolution OP	24	Zeta Ori	
-Stellar Evolution OP	25	Gliese 229	
-Stellar Evolution OP	26	Plaskett’s Star	
-Stellar Evolution OP	27	Alpha CMa	
-Stellar Evolution OP	28	Delta CMa	
-Stellar Evolution OP	29	Alpha CMi	
-Stellar Evolution OP	30	HD 93521	
+Stellar Evolution OP	16	Mu And	20241012-02-muand
+Stellar Evolution OP	17	107 Psc	20241022-02-107psc
+Stellar Evolution OP	18	HD 14633	20241012-05-hd14633
+Stellar Evolution OP	19	Alpha UMi	20240918-01-alphaumi
+Stellar Evolution OP	20	Beta Per	20241022-01-betaper
+Stellar Evolution OP	21	Epsilon Eri	20240927-08-epsiloneri
+Stellar Evolution OP	22	Omega Aur	20250120-01-omegaaur
+Stellar Evolution OP	23	Beta Ori	20250117-04-betaori
+Stellar Evolution OP	24	Zeta Ori	20250117-06-zetaori
+Stellar Evolution OP	25	Gliese 229	20250125-02-gliese229
+Stellar Evolution OP	26	Plaskett’s Star	20250120-02-plaskettsstar
+Stellar Evolution OP	27	Alpha CMa	20250128-02-alphacma
+Stellar Evolution OP	28	Delta CMa	20250125-06-deltacma
+Stellar Evolution OP	29	Alpha CMi	20250212-01-alphacmi
+Stellar Evolution OP	30	HD 93521	20250227-03-hd93521
 Stellar Evolution OP	31	Lalande 21185	20240508-02-lalande21185
 Stellar Evolution OP	32	Theta Boo	20240606-03-thetaboo
 Stellar Evolution OP	33	Gliese 581	20240607-04-gliese581
@@ -2938,59 +2938,258 @@ Stellar Evolution OP	42	Beta Cyg A	20240828-05-betacyg
 Stellar Evolution OP	43	Beta Cyg B	20240828-05-betacyg
 Stellar Evolution OP	44	Alpha Aql	20240828-01-alphaaql
 Stellar Evolution OP	45	Beta Cep	20240904-01-betacep
-Stellar Evolution OP	46	Iota Peg	
-Stellar Evolution OP	47	Eta Peg	
-Stellar Evolution OP	48	Omega Psc	
-Stellar Evolution OP	49a	NGC 884	
-Stellar Evolution OP	49b	NGC 869	
-Stellar Evolution OP	50	M 45	
-Stellar Evolution OP	51	M 37	
-Stellar Evolution OP	52	M 44	
+Stellar Evolution OP	46	Iota Peg	20240923-01-iotapeg
+Stellar Evolution OP	47	Eta Peg	20240923-02-etapeg
+Stellar Evolution OP	48	Omega Psc	20240927-04-omegapsc
+Stellar Evolution OP	49a	NGC 884	20241022-04-ngc869ngc884
+Stellar Evolution OP	49b	NGC 869	20241022-04-ngc869ngc884
+Stellar Evolution OP	50	M 45	20250117-02-m45
+Stellar Evolution OP	51	M 37	20250119-03-m37
+Stellar Evolution OP	52	M 44	20250227-01-m44
 Stellar Evolution OP	53	M 6	20240706-01-m6
 Stellar Evolution OP	54	NGC 6530	20240706-03-m8ngc6530
 Stellar Evolution OP	55	M 11	20240831-04-m11
-Stellar Evolution OP	56	Gliese 67	
-Stellar Evolution OP	57	Tau Cet	
-Stellar Evolution OP	58	Eta Ari	
+Stellar Evolution OP	56	Gliese 67	20241012-04-gliese67
+Stellar Evolution OP	57	Tau Cet	20240927-06-taucet
+Stellar Evolution OP	58	Eta Ari	20241022-03-etaari
 Stellar Evolution OP	59	Beta Com	20240508-03-betacom
 Stellar Evolution OP	60	18 Sco	20240607-06-18sco
 Stellar Evolution OP	61	Sigma Dra	20240828-04-sigmadra
-Stellar Evolution OP	62	61 Cyg A	
-Stellar Evolution OP	63	51 Peg	
-Stellar Evolution OP	64	Beta And	
-Stellar Evolution OP	65	Alpha Tau	
-Stellar Evolution OP	66	Alpha Aur	
-Stellar Evolution OP	67	Beta Gem	
+Stellar Evolution OP	62	61 Cyg	20240915-02-61cyg
+Stellar Evolution OP	63	51 Peg	20240923-03-51peg
+Stellar Evolution OP	64	Beta And	20241012-03-betaand
+Stellar Evolution OP	65	Alpha Tau	20250117-01-alphataudoubletriangle
+Stellar Evolution OP	66	Alpha Aur	20250119-01-alphaaur
+Stellar Evolution OP	67	Beta Gem	20250212-02-betagem
 Stellar Evolution OP	68	Alpha Boo	20240606-01-alphaboo
-Stellar Evolution OP	69	Beta Peg	
-Stellar Evolution OP	70	R Lep	
-Stellar Evolution OP	71	UU Aur	
-Stellar Evolution OP	72	X Cnc	
+Stellar Evolution OP	69	Beta Peg	20240923-04-betapeg
+Stellar Evolution OP	70	R Lep	20250117-03-rlep
+Stellar Evolution OP	71	UU Aur	20250119-04-uuaur
+Stellar Evolution OP	72	X Cnc	20250227-02-xcnc
 Stellar Evolution OP	73	Y CVn	20240509-03-ycvn
 Stellar Evolution OP	74	Mu Cep	20240904-02-mucep
-Stellar Evolution OP	75	NGC 2392	
+Stellar Evolution OP	75	NGC 2392	20250128-01-ngc2392
 Stellar Evolution OP	76	NGC 6210	20240711-02-ngc6210
 Stellar Evolution OP	77	NGC 6543	20240704-05-ngc6543
 Stellar Evolution OP	78	M 57	20240828-02-m57
-Stellar Evolution OP	79	NGC 6826	
-Stellar Evolution OP	80	M 27	
-Stellar Evolution OP	81	NGC 7009	
-Stellar Evolution OP	82	NGC 7293	
-Stellar Evolution OP	83	NGC 7662	
-Stellar Evolution OP	84	Delta Cet	
-Stellar Evolution OP	85	Gamma Ori	
-Stellar Evolution OP	86	Theta1 Ori C	
-Stellar Evolution OP	87	Epsilon CMa	
+Stellar Evolution OP	79	NGC 6826	20240915-03-ngc6826
+Stellar Evolution OP	80	M 27	20240918-02-m27
+Stellar Evolution OP	81	NGC 7009	20240927-01-ngc7009
+Stellar Evolution OP	82	NGC 7293	20240927-03-ngc7293
+Stellar Evolution OP	83	NGC 7662	20240927-05-ngc7662
+Stellar Evolution OP	84	Delta Cet	20240927-07-deltacet
+Stellar Evolution OP	85	Gamma Ori	20250117-05-gammaori
+Stellar Evolution OP	86	Theta1 Ori C	20250117-07-theta1oricm42
+Stellar Evolution OP	87	Epsilon CMa	20250306-01-epsiloncma
 Stellar Evolution OP	88	Alpha Vir	20240509-04-alphavir
-Stellar Evolution OP	89	10 Lac	
-Stellar Evolution OP	90	Alpha Ori	
-Stellar Evolution OP	91	VY CMa	
+Stellar Evolution OP	89	10 Lac	20240923-05-10lac
+Stellar Evolution OP	90	Alpha Ori	20250119-05-alphaori
+Stellar Evolution OP	91	VY CMa	20250125-07-vycma
 Stellar Evolution OP	92	Alpha Sco	20240607-05-alphasco
 Stellar Evolution OP	93	VV Cep A	20240904-03-vvcep
 Stellar Evolution OP	94	RW Cep	20240904-05-rwcep
-Stellar Evolution OP	95	M 1	
-Stellar Evolution OP	96	NGC 6960	
+Stellar Evolution OP	95	M 1	20250119-02-m1
+Stellar Evolution OP	96	NGC 6960	20240831-05-ngc6960
 Stellar Evolution OP	97	R Aql	20240828-02-raql
 Stellar Evolution OP	98	RR Lyr	20240828-03-rrlyr
 Stellar Evolution OP	99	Eta Aql	20240828-03-etaaql
 Stellar Evolution OP	100	Delta Cep	20240904-04-deltacep
+Solar Neighborhood OP	4	Barnard's Star	
+Solar Neighborhood OP	5	Wolf 359	
+Solar Neighborhood OP	6	HD 95735	
+Solar Neighborhood OP	7	Alpha CMa	
+Solar Neighborhood OP	9	Gliese 65	
+Solar Neighborhood OP	11	V1216 Sgr	
+Solar Neighborhood OP	12	HH And	
+Solar Neighborhood OP	13	Epsilon Eri	20240927-08-epsiloneri
+Solar Neighborhood OP	15	FI Vir	
+Solar Neighborhood OP	16	EZ Aqr	
+Solar Neighborhood OP	17	61 Cyg	20240915-02-61cyg
+Solar Neighborhood OP	19	Alpha CMi	20250212-01-alphacmi
+Solar Neighborhood OP	21	BD+59 1915	
+Solar Neighborhood OP	23	HD 1326	
+Solar Neighborhood OP	27	Tau Cet	20240927-06-taucet
+Solar Neighborhood OP	29	YZ Cet	
+Solar Neighborhood OP	30	Luyten's Star	
+Solar Neighborhood OP	34	HD 239960	
+Solar Neighborhood OP	36	Ross 614	
+Solar Neighborhood OP	38	V2306 Oph	
+Solar Neighborhood OP	39	Wolf 28	
+Solar Neighborhood OP	40	Wolf 424	
+Solar Neighborhood OP	43	TZ Ari	
+Solar Neighborhood OP	44	BD+68 946	
+Solar Neighborhood OP	48	GJ 1245	
+Solar Neighborhood OP	51	IL Aqr	
+Solar Neighborhood OP	54	HD 88230	
+Solar Neighborhood OP	55	BD+44 2051	
+Solar Neighborhood OP	57	BD+20 2465	
+Solar Neighborhood OP	60	Omicron 2 Eri	
+Solar Neighborhood OP	63	EV Lac	
+Solar Neighborhood OP	64	G 9-38	
+Solar Neighborhood OP	66	70 Oph	20190530-07-70oph
+Solar Neighborhood OP	68	Alpha Aql	20240828-01-alphaaql
+Solar Neighborhood OP	70	G 254-29	
+Solar Neighborhood OP	71	LP 656-38	
+Solar Neighborhood OP	72	HD 119850	
+Solar Neighborhood OP	73	G 175-34	
+Solar Neighborhood OP	75	HD 265866	
+Solar Neighborhood OP	76	LP 816-60	
+Solar Neighborhood OP	77	HD 36395	
+Solar Neighborhood OP	78	HD 42581	
+Solar Neighborhood OP	79	Sigma Dra	20240828-04-sigmadra
+Solar Neighborhood OP	80	Ross 47	
+Solar Neighborhood OP	81	GJ 570	
+Solar Neighborhood OP	86	BR Psc	
+Solar Neighborhood OP	87	HD 180617	
+Solar Neighborhood OP	89	Eta Cas	20200806-03-etacas
+Solar Neighborhood OP	91	36 Oph	20190530-06-36oph
+Solar Neighborhood OP	94	HD 155876	
+Solar Neighborhood OP	95	YZ CMi	
+Solar Neighborhood OP	96	G 158-50	
+Solar Neighborhood OP	101	QY Aur	
+Solar Neighborhood OP	106	HN Lib	
+Solar Neighborhood OP	107	EQ Peg	
+Solar Neighborhood OP	109	HO Lib	
+Solar Neighborhood OP	110	MCC 541	
+Solar Neighborhood OP	114	GL Vir	
+Solar Neighborhood OP	115	G 202-48	
+Solar Neighborhood OP	116	HD 152751	
+Solar Neighborhood OP	121	HD 219134	
+Solar Neighborhood OP	123	Ross 104	
+Solar Neighborhood OP	124	Xi Boo	20190420-04-xiboo
+Solar Neighborhood OP	127	G 41-14	
+Solar Neighborhood OP	128	GJ 829	
+Solar Neighborhood OP	129	BD-17 588	
+Solar Neighborhood OP	132	HD 216899	
+Solar Neighborhood OP	133	Wolf 358	
+Solar Neighborhood OP	134	BD+01 2447	
+Solar Neighborhood OP	135	HD 199305	
+Solar Neighborhood OP	139	HD 16160	
+Solar Neighborhood OP	145	HD 4628	
+Solar Neighborhood OP	147	G 203-47	
+Solar Neighborhood OP	148	Alpha PsA	
+Solar Neighborhood OP	151	Mu Cas	
+Solar Neighborhood OP	153	VX Ari	
+Solar Neighborhood OP	155	BD+11 2576	
+Solar Neighborhood OP	157	107 Psc	20241022-02-107psc
+Solar Neighborhood OP	159	Alpha Lyr	20240828-01-alphalyr
+Solar Neighborhood OP	160	AN Sex	
+Solar Neighborhood OP	161	HD 157881	
+Solar Neighborhood OP	163	HD 165222	
+Solar Neighborhood OP	164	G 202-45	
+Solar Neighborhood OP	169	Wolf 922	
+Solar Neighborhood OP	170	Pi3 Ori	
+Solar Neighborhood OP	175	Chi Dra	
+Solar Neighborhood OP	177	Wolf 437	
+Solar Neighborhood OP	178	G 262-15	
+Solar Neighborhood OP	182	TYC 3980-1081-1	
+Solar Neighborhood OP	183	BD+18 3421	
+Solar Neighborhood OP	188	HD 217357	
+Solar Neighborhood OP	189	Ross 318	
+Solar Neighborhood OP	191	Mu Her	20220701-01-muher
+Solar Neighborhood OP	195	HD 32450	
+Solar Neighborhood OP	198	Beta CVn	
+Solar Neighborhood OP	203	61 Vir	
+Solar Neighborhood OP	214	Chi1 Ori	
+Solar Neighborhood OP	216	Xi UMa	
+Solar Neighborhood OP	218	HD 50281	
+Solar Neighborhood OP	221	MCC 135	
+Solar Neighborhood OP	224	HU Del	
+Solar Neighborhood OP	225	HD 192310	
+Solar Neighborhood OP	226	BD-05 5715	
+Solar Neighborhood OP	227	GJ 745	
+Solar Neighborhood OP	231	HD 32147	
+Solar Neighborhood OP	233	GJ 867	
+Solar Neighborhood OP	235	Ross 695	
+Solar Neighborhood OP	236	Gamma Lep	20190101-02-gammalep
+Solar Neighborhood OP	238	G 113-20	
+Solar Neighborhood OP	240	SZ UMa	
+Solar Neighborhood OP	242	CD-31 9113	
+Solar Neighborhood OP	243	Delta Eri	
+Solar Neighborhood OP	244	HD 115953	
+Solar Neighborhood OP	247	Kappa1 Cet	
+Solar Neighborhood OP	249	CF UMa	
+Solar Neighborhood OP	250	Ross 1015	
+Solar Neighborhood OP	251	Beta Com	20240508-03-betacom
+Solar Neighborhood OP	252	L 737-9	
+Solar Neighborhood OP	253	LP 776-46	
+Solar Neighborhood OP	258	BD-18 359	
+Solar Neighborhood OP	260	GJ 748	
+Solar Neighborhood OP	262	L 678-39	
+Solar Neighborhood OP	263	G 222-11	
+Solar Neighborhood OP	264	HD 285968	
+Solar Neighborhood OP	268	BD+43 2796	
+Solar Neighborhood OP	270	20 Crt	
+Solar Neighborhood OP	271	61 UMa	
+Solar Neighborhood OP	277	L 768-119	
+Solar Neighborhood OP	278	AT Mic	
+Solar Neighborhood OP	280	G 48-20	
+Solar Neighborhood OP	282	Ross 905	
+Solar Neighborhood OP	283	HD 151288	
+Solar Neighborhood OP	284	BD+61 195	
+Solar Neighborhood OP	286	BD+66 34	
+Solar Neighborhood OP	288	12 Oph	
+Solar Neighborhood OP	290	HD 232979	
+Solar Neighborhood OP	291	BD+16 2708	
+Solar Neighborhood OP	294	HD 260655	
+Solar Neighborhood OP	295	Ross 440	
+Deep Sky Binocular OP	1	NGC 129	
+Deep Sky Binocular OP	2	NGC 253	
+Deep Sky Binocular OP	3	NGC 457	
+Deep Sky Binocular OP	4	NGC 663	
+Deep Sky Binocular OP	5	Cr 463	
+Deep Sky Binocular OP	6	NGC 752	
+Deep Sky Binocular OP	7	Stock 2	
+Deep Sky Binocular OP	8	NGC 869	
+Deep Sky Binocular OP	9	NGC 884	
+Deep Sky Binocular OP	10	Markarian 6	
+Deep Sky Binocular OP	11	Mel 15	
+Deep Sky Binocular OP	12	Tr 2	
+Deep Sky Binocular OP	13	Tr 3	
+Deep Sky Binocular OP	14	Stock 23	
+Deep Sky Binocular OP	15	Mel 20	
+Deep Sky Binocular OP	16	NGC 1342	
+Deep Sky Binocular OP	17	Kemble 1	
+Deep Sky Binocular OP	18	NGC 1528	
+Deep Sky Binocular OP	19	Mel 25	
+Deep Sky Binocular OP	20	NGC 1582	
+Deep Sky Binocular OP	21	NGC 1647	
+Deep Sky Binocular OP	22	NGC 1662	
+Deep Sky Binocular OP	23	NGC 1746	
+Deep Sky Binocular OP	24	NGC 1807	
+Deep Sky Binocular OP	25	NGC 1817	
+Deep Sky Binocular OP	26	NGC 1893	
+Deep Sky Binocular OP	27	NGC 1907	
+Deep Sky Binocular OP	28	NGC 1981	
+Deep Sky Binocular OP	29	NGC 2169	
+Deep Sky Binocular OP	30	NGC 2232	
+Deep Sky Binocular OP	31	NGC 2244	
+Deep Sky Binocular OP	32	NGC 2251	
+Deep Sky Binocular OP	33	NGC 2264	
+Deep Sky Binocular OP	34	NGC 2281	
+Deep Sky Binocular OP	35	NGC 2301	
+Deep Sky Binocular OP	36	NGC 2343	
+Deep Sky Binocular OP	37	NGC 2360	
+Deep Sky Binocular OP	38	NGC 2403	
+Deep Sky Binocular OP	39	NGC 2527	
+Deep Sky Binocular OP	40	NGC 2539	
+Deep Sky Binocular OP	41	NGC 2571	
+Deep Sky Binocular OP	42	Mel 111	
+Deep Sky Binocular OP	43	IC 4665	
+Deep Sky Binocular OP	44	NGC 6520	
+Deep Sky Binocular OP	45	NGC 6633	
+Deep Sky Binocular OP	46	IC 4756	
+Deep Sky Binocular OP	47	NGC 6709	
+Deep Sky Binocular OP	48	NGC 6716	
+Deep Sky Binocular OP	49	Cr 399	
+Deep Sky Binocular OP	50	NGC 6819	
+Deep Sky Binocular OP	51	NGC 6823	
+Deep Sky Binocular OP	52	NGC 6910	
+Deep Sky Binocular OP	53	NGC 6934	
+Deep Sky Binocular OP	54	NGC 6940	
+Deep Sky Binocular OP	55	NGC 7063	
+Deep Sky Binocular OP	56	NGC 7160	
+Deep Sky Binocular OP	57	NGC 7209	
+Deep Sky Binocular OP	58	NGC 7235	
+Deep Sky Binocular OP	59	NGC 7243	
+Deep Sky Binocular OP	60	NGC 7789	
