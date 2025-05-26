@@ -37,10 +37,9 @@ function getMagnitudeAsNumber(magString) {
   }
 }
 
-
 export class AstroObject {
   constructor(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
-    this.lineNumber = lineNumber;  // used only for logging errors
+    this.lineNumber = lineNumber; // used only for logging errors
     this.id = id;
     this.names = names;
     this.type = type;
@@ -74,7 +73,7 @@ export class AstroObject {
 
 export class Observation {
   constructor(lineNumber, id, date, location, scope, seeing, transparency, objectIds, time, eyepiece, magnifcation, phase, notes) {
-    this.lineNumber = lineNumber;  // used only for logging errors
+    this.lineNumber = lineNumber; // used only for logging errors
     this.id = id;
     this.date = date;
     this.location = location;
@@ -90,13 +89,13 @@ export class Observation {
 
     // populated after joining
     this.objectData = [];
-    this.names = '';  // names of the first object in the observation
+    this.names = ''; // names of the first object in the observation
   }
 }
 
 export class ProgramEntry {
   constructor(lineNumber, programName, number, objectId, observationId) {
-    this.lineNumber = lineNumber;  // used only for logging errors
+    this.lineNumber = lineNumber; // used only for logging errors
     this.programName = programName;
     this.number = number;
     this.objectId = objectId;
@@ -121,7 +120,7 @@ export class Database {
     this.observations = this.#indexObservations(observationList);
     this.programs = this.#indexPrograms(programList);
     this.#addCrossIndex();
-  } 
+  }
 
   // Convert objectList to map of id --> AstroObject
   #indexObjects(objectList) {
@@ -134,7 +133,7 @@ export class Database {
     }
     return objects;
   }
-  
+
   // Convert observationList to map of id --> Observation
   #indexObservations(observationList) {
     const observations = {};

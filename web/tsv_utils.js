@@ -1,7 +1,7 @@
 import { objectTypes, constellations } from './constants.js';
 import { AstroObject, Observation, ProgramEntry } from './database.js';
 
-export function nullOrEmpty (str) {
+export function nullOrEmpty(str) {
   return str === null || str === '';
 }
 

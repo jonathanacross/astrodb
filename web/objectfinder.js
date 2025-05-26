@@ -213,13 +213,13 @@ function getObjectSortFunction(objectListMode) {
       return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
     };
   } else { // objectListMode === 'object' || objectListMode === 'meta'
-    // sort by type, then by id.  Id uses locale compare to sort in 
+    // sort by type, then by id.  Id uses locale compare to sort in
     // natural order, so that 'M 2' < 'M 10'
     // or no sorting...
     return function(x, y) {
       const xHasLocation = nullOrEmpty(x.ra);
       const yHasLocation = nullOrEmpty(y.ra);
-      const xType = x.type.toLowerCase().split('+')[0];  // get the first type, for sorting
+      const xType = x.type.toLowerCase().split('+')[0]; // get the first type, for sorting
       const yType = y.type.toLowerCase().split('+')[0];
       if (xHasLocation !== yHasLocation) {
         return xHasLocation - yHasLocation;
@@ -447,7 +447,7 @@ function setFieldFromParam(urlParams, field_id) {
 
 function setRadioFromParam(urlParams, group_id, default_value) {
   const element_id = urlParams.has(group_id) ? urlParams.get(group_id) : default_value;
-  document.getElementById(element_id).checked = true; 
+  document.getElementById(element_id).checked = true;
 }
 
 function setCheckBoxFromParam(urlParams, element_id) {
@@ -475,7 +475,7 @@ function updateUrlFromControls(search_query_type) {
       params += getParamForRadioGroup('observation_sort');
       params += getParamForCheckBox('observation_large_sketches');
       break;
-      
+
     case 'search_objects':
       params += getParamForField('object_object_name');
       params += getParamForField('object_object_type');
@@ -520,7 +520,7 @@ function updateControlsFromSearchParams() {
       setRadioFromParam(urlParams, 'observation_sort', 'observation_name_radio');
       setCheckBoxFromParam(urlParams, 'observation_large_sketches');
       break;
-      
+
     case 'search_objects':
       setFieldFromParam(urlParams, 'object_object_name');
       setFieldFromParam(urlParams, 'object_object_type');
@@ -549,7 +549,7 @@ function updateControlsFromSearchParams() {
       case 'search_observations':
         doObservationQuery();
         break;
-        
+
       case 'search_objects':
         doObjectQuery();
         break;
