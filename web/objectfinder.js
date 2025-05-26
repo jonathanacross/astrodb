@@ -232,9 +232,29 @@ function getObjectSortFunction(objectListMode) {
   }
 }
 
+function toggleLargeSketchesClass(checkboxId, resultsAreaId) {
+  const checkbox = document.getElementById(checkboxId);
+  const resultsArea = document.getElementById(resultsAreaId);
+  if (checkbox && resultsArea) {
+    if (checkbox.checked) {
+      resultsArea.classList.add('large-sketches');
+    } else {
+      resultsArea.classList.remove('large-sketches');
+    }
+  }
+}
 
 function showObservations(resultElementIdName, observations) {
   const resultsArea = document.getElementById(resultElementIdName)
+
+  // Apply large sketches class if checkbox is checked.
+  // This needs to be done before appending new elements
+  // so the grid and sketch sizes are correct from the start.
+  if (resultElementIdName === 'view_program_results') {
+    toggleLargeSketchesClass('program_large_sketches', 'view_program_results');
+  } else if (resultElementIdName === 'search_observations_results') {
+    toggleLargeSketchesClass('observation_large_sketches', 'search_observations_results');
+  }
 
   // clear old results
   while (resultsArea.hasChildNodes()) {
@@ -333,7 +353,7 @@ function doObjectQuery () {
   const sortFunction = getObjectSortFunction(objectListMode)
   matchingObjects.sort(sortFunction)
 
-  const showAsText = document.getElementById('show_as_text').checked
+  const showAsText = document.getElementById('object_show_as_text').checked
 
   updateUrlFromControls('search_objects')
   showObjectList(matchingObjects, showAsText, objectListMode)
@@ -412,7 +432,7 @@ function getParamForRadioGroup(group_id) {
   return '&' + group_id + '=' + encodeURIComponent(value)
 }
 
-function getParamForCheckGox(checkbox_id) {
+function getParamForCheckBox(checkbox_id) {
   if (document.getElementById(checkbox_id).checked) {
     return '&' + checkbox_id + '=true'
   } else {
@@ -430,7 +450,7 @@ function setRadioFromParam(urlParams, group_id, default_value) {
   document.getElementById(element_id).checked = true; 
 }
 
-function setCheckboxFromParam(urlParams, element_id) {
+function setCheckBoxFromParam(urlParams, element_id) {
   if (urlParams.has(element_id)) {
     document.getElementById(element_id).checked = true;
   }
@@ -442,6 +462,7 @@ function updateUrlFromControls(search_query_type) {
   switch (search_query_type) {
     case 'view_program':
       params += getParamForField('program_program_name')
+      params += getParamForCheckBox('program_large_sketches')
       break;
 
     case 'search_observations':
@@ -452,6 +473,7 @@ function updateUrlFromControls(search_query_type) {
       params += getParamForField('observation_location')
       params += getParamForField('observation_scope')
       params += getParamForRadioGroup('observation_sort')
+      params += getParamForCheckBox('observation_large_sketches')
       break;
       
     case 'search_objects':
@@ -468,7 +490,7 @@ function updateUrlFromControls(search_query_type) {
       params += getParamForField('object_program_name')
       params += getParamForField('object_seen_status')
       params += getParamForRadioGroup('object_list_mode')
-      params += getParamForCheckGox('show_as_text')
+      params += getParamForCheckBox('object_show_as_text')
       break;
   }
 
@@ -485,6 +507,7 @@ function updateControlsFromSearchParams() {
     switch (mode) {
     case 'view_program':
       setFieldFromParam(urlParams, 'program_program_name')
+      setCheckBoxFromParam(urlParams, 'program_large_sketches')
       break;
 
     case 'search_observations':
@@ -495,6 +518,7 @@ function updateControlsFromSearchParams() {
       setFieldFromParam(urlParams, 'observation_location')
       setFieldFromParam(urlParams, 'observation_scope')
       setRadioFromParam(urlParams, 'observation_sort', 'observation_name_radio')
+      setCheckBoxFromParam(urlParams, 'observation_large_sketches')
       break;
       
     case 'search_objects':
@@ -511,7 +535,7 @@ function updateControlsFromSearchParams() {
       setFieldFromParam(urlParams, 'object_program_name')
       setFieldFromParam(urlParams, 'object_seen_status')
       setRadioFromParam(urlParams, 'object_list_mode', 'object_program_radio')
-      setCheckboxFromParam(urlParams, 'show_as_text')
+      setCheckBoxFromParam(urlParams, 'object_show_as_text')
       break;
   }
 
