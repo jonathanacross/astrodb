@@ -1,6 +1,6 @@
 import { parseBase60, parseSizesArcminutes } from './tsv_utils.js';
 
-function nullOrEmpty (str) {
+function nullOrEmpty(str) {
   return str === null || str === '';
 }
 
@@ -23,31 +23,31 @@ export class ObjectFilter {
   #programNameIs = null;
   #seenStatus = null;
 
-  setNameIs (nameIs) {
+  setNameIs(nameIs) {
     if (!nullOrEmpty(nameIs)) {
       this.#nameIs = nameIs.toLowerCase();
     }
   }
 
-  setNameLike (nameLike) {
+  setNameLike(nameLike) {
     if (!nullOrEmpty(nameLike)) {
       this.#nameLike = nameLike.toLowerCase();
     }
   }
 
-  setTypeIs (typeIs) {
+  setTypeIs(typeIs) {
     if (!nullOrEmpty(typeIs)) {
       this.#typeIs = typeIs.toLowerCase();
     }
   }
 
-  setConIs (conIs) {
+  setConIs(conIs) {
     if (!nullOrEmpty(conIs)) {
       this.#conIs = conIs;
     }
   }
 
-  setRaRange (raMin, raMax) {
+  setRaRange(raMin, raMax) {
     if (!nullOrEmpty(raMin)) {
       this.#raMin = parseBase60(raMin);
     }
@@ -56,7 +56,7 @@ export class ObjectFilter {
     }
   }
 
-  setDecRange (decMin, decMax) {
+  setDecRange(decMin, decMax) {
     if (!nullOrEmpty(decMin)) {
       this.#decMin = parseBase60(decMin);
     }
@@ -65,13 +65,13 @@ export class ObjectFilter {
     }
   }
 
-  setMagMax (magMax) {
+  setMagMax(magMax) {
     if (!nullOrEmpty(magMax)) {
       this.#magMax = magMax;
     }
   }
 
-  setSizeRange (sizeMin, sizeMax) {
+  setSizeRange(sizeMin, sizeMax) {
     if (!nullOrEmpty(sizeMin)) {
       this.#sizeMin = parseSizesArcminutes(sizeMin)[0];
     }
@@ -80,13 +80,13 @@ export class ObjectFilter {
     }
   }
 
-  setProgramNameIs (programNameIs) {
+  setProgramNameIs(programNameIs) {
     if (!nullOrEmpty(programNameIs)) {
       this.#programNameIs = programNameIs.toLowerCase();
     }
   }
 
-  setSeenStatus (seenStatus) {
+  setSeenStatus(seenStatus) {
     if (!nullOrEmpty(seenStatus)) {
       this.#seenStatus = seenStatus;
     }
@@ -190,7 +190,7 @@ export class ObjectFilter {
     }
   }
 
-  #objectMatches (object) {
+  #objectMatches(object) {
     const objectNames = object.names.toLowerCase().split('/');
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
       return false;
@@ -246,7 +246,7 @@ export class ObservationFilter {
   #locationIs = null;
   #scopeIs = null;
 
-  setDateLike (dateLike) {
+  setDateLike(dateLike) {
     if (!nullOrEmpty(dateLike)) {
       this.#dateLike = dateLike.toLowerCase();
     }
@@ -282,7 +282,7 @@ export class ObservationFilter {
     }
   }
 
-  #observationMatches (observation) {
+  #observationMatches(observation) {
     if (this.#dateLike !== null && !observation.date.includes(this.#dateLike)) {
       return false;
     }
@@ -319,7 +319,7 @@ export class ObservationFilter {
     return true;
   }
 
-  getMatchingObservationIds (observations) {
+  getMatchingObservationIds(observations) {
     const observationIds = [];
     for (const [observationId, observation] of Object.entries(observations)) {
       if (this.#observationMatches(observation)) {
@@ -333,13 +333,13 @@ export class ObservationFilter {
 export class ProgramFilter {
   #programNameIs = null;
 
-  setProgramNameIs (programNameIs) {
+  setProgramNameIs(programNameIs) {
     if (!nullOrEmpty(programNameIs)) {
       this.#programNameIs = programNameIs;
     }
   }
 
-  getMatchingObservationIds (programs) {
+  getMatchingObservationIds(programs) {
     const entries = programs[this.#programNameIs];
     const observationIds = entries
       .filter(o => o.observationId !== '')

@@ -46,7 +46,7 @@ function getObservationAttribute(displayName) {
   return lookupMap[displayName];
 }
 
-function createObjectListingTable (objects, columns) {
+function createObjectListingTable(objects, columns) {
   const objTable = document.createElement('table');
   const tableHeader = document.createElement('thead');
   const headerRow = document.createElement('tr');
@@ -78,7 +78,7 @@ function createObjectListingTable (objects, columns) {
   return objTable;
 }
 
-function createObjectListingText (objects, columns) {
+function createObjectListingText(objects, columns) {
   const preBlock = document.createElement('pre');
   const codeBlock = document.createElement('code');
   preBlock.appendChild(codeBlock);
@@ -112,7 +112,7 @@ function getColumns(objectListMode) {
   }
 }
 
-function showObjectList (objects, showAsText, objectListMode) {
+function showObjectList(objects, showAsText, objectListMode) {
   const resultsArea = document.getElementById('search_objects_results');
 
   // clear old results
@@ -171,7 +171,7 @@ function setObjectInfo(observation, element) {
 
 function getObservationSortFunction(sortMethod) {
   if (sortMethod === 'name') {
-    return function (x, y) {
+    return function(x, y) {
       // first sort by name
       if (x.names !== y.names) {
         // locale compare should sort names in natural order, so that 'M 2' < 'M 10'
@@ -181,7 +181,7 @@ function getObservationSortFunction(sortMethod) {
       return x.id.localeCompare(y.id);
     };
   } else if (sortMethod === 'date') {
-    return function (x, y) {
+    return function(x, y) {
       // id has date-obs#-name, so this includes date then observation number
       return x.id.localeCompare(y.id);
     };
@@ -191,7 +191,7 @@ function getObservationSortFunction(sortMethod) {
 function getObjectSortFunction(objectListMode) {
   if (objectListMode === 'observing') {
     // sort by ra, then name
-    return function (x, y) {
+    return function(x, y) {
       if (x.ra !== y.ra) {
         return x.ra - y.ra;
       }
@@ -199,7 +199,7 @@ function getObjectSortFunction(objectListMode) {
     };
   } else if (objectListMode === 'program') {
     // sort by program name, then program number, then object id (e.g. for objects not in any program)
-    return function (x, y) {
+    return function(x, y) {
       const xProgramName = x.programData.length === 0 ? 'zzzzzzzzzz' : x.programData[0].programName;
       const yProgramName = y.programData.length === 0 ? 'zzzzzzzzzz' : y.programData[0].programName;
       const xNumber = x.programData.length === 0 ? '0' : x.programData[0].number;
@@ -216,7 +216,7 @@ function getObjectSortFunction(objectListMode) {
     // sort by type, then by id.  Id uses locale compare to sort in 
     // natural order, so that 'M 2' < 'M 10'
     // or no sorting...
-    return function (x, y) {
+    return function(x, y) {
       const xHasLocation = nullOrEmpty(x.ra);
       const yHasLocation = nullOrEmpty(y.ra);
       const xType = x.type.toLowerCase().split('+')[0];  // get the first type, for sorting
@@ -319,7 +319,7 @@ function showObservations(resultElementIdName, observations) {
   }
 }
 
-function doProgramQuery () {
+function doProgramQuery() {
   const filter = new ProgramFilter();
   filter.setProgramNameIs(document.getElementById('program_program_name').value);
 
@@ -330,7 +330,7 @@ function doProgramQuery () {
   showObservations('view_program_results', matchingObservations);
 }
 
-function doObjectQuery () {
+function doObjectQuery() {
   const filter = new ObjectFilter();
   filter.setNameLike(document.getElementById('object_object_name').value);
   filter.setTypeIs(document.getElementById('object_object_type').value);
@@ -359,7 +359,7 @@ function doObjectQuery () {
   showObjectList(matchingObjects, showAsText, objectListMode);
 }
 
-function doObservationQuery () {
+function doObservationQuery() {
   const filter = new ObservationFilter();
   filter.setHasObjectNameLike(document.getElementById('observation_object_name').value);
   filter.setHasObjectType(document.getElementById('observation_object_type').value);
@@ -568,7 +568,7 @@ function populateDropdown(dropdownElement, items) {
   }
 }
 
-function setupControls () {
+function setupControls() {
   const programProgramPicker = document.getElementById('program_program_name');
   const objectProgramPicker = document.getElementById('object_program_name_list');
   const programList = Array.from(Object.keys(database.programs)).sort();
@@ -642,7 +642,7 @@ function setupControls () {
   updateControlsFromSearchParams();
 }
 
-function displayErrors (err) {
+function displayErrors(err) {
   const errorMsg = document.createElement('p');
   errorMsg.className = 'error';
   errorMsg.innerText = err;
@@ -651,7 +651,7 @@ function displayErrors (err) {
   resultsArea.appendChild(errorMsg);
 }
 
-function checkResponses (responses) {
+function checkResponses(responses) {
   for (const response of responses) {
     if (!response.ok) {
       throw Error(response.url + ' ' + response.statusText);
@@ -660,7 +660,7 @@ function checkResponses (responses) {
   return responses;
 }
 
-function ParseData (responses) {
+function ParseData(responses) {
   const observationList = readObservations(responses[0]);
   const objectList = readObjects(responses[1]);
   const programList = readPrograms(responses[2]);
@@ -668,7 +668,7 @@ function ParseData (responses) {
   database = new Database(objectList, observationList, programList);
 }
 
-function LoadDataAndSetupPage () {
+function LoadDataAndSetupPage() {
   Promise.all([
     fetch('data/observations.tsv'),
     fetch('data/objects.tsv'),
