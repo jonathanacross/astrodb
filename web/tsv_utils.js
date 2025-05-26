@@ -95,7 +95,7 @@ function validateObjectType(typeString, lineNumber, line) {
 
 function validateObjectLocation(typeString, conString, raString, decString, lineNumber, line) {
   const typeToLoc = new Map();
-  objectTypes.map((t) => {
+  objectTypes.forEach((t) => {
     typeToLoc.set(t.shortName, t.fixedPosition);
   });
 

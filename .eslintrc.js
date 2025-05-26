@@ -24,5 +24,11 @@ module.exports = {
   rules: {
     'semi': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
+    'no-unused-vars': ['error', {
+      // Ignore things starting with an underscore.
+      'argsIgnorePattern': '^_',
+      'varsIgnorePattern': '^_',
+      'caughtErrorsIgnorePattern': '^_'
+    }],
   }
 }

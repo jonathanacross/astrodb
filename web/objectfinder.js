@@ -23,7 +23,7 @@ function getObjectAttribute(displayName) {
     Observations: 'observationIds',
     Programs: 'programIds',
     'Num Obs': 'numObservations',
-    'Num Programs': 'numPrograms',
+    'Num Programs': 'numPrograms'
   };
   return lookupMap[displayName];
 }
