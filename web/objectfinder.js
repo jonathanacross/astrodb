@@ -1,7 +1,7 @@
 import { readObjects, readObservations, readPrograms, nullOrEmpty } from './tsv_utils.js';
 import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js';
-import { objectTypes, constellations } from './constants.js';
-import { AstroObject, Observation, ProgramEntry, Database } from './database.js';
+import { objectTypes } from './constants.js';
+import { Database } from './database.js';
 
 let database;
 
@@ -266,7 +266,7 @@ function showObservations(resultElementIdName, observations) {
   // count of observations
   const resultsHeader = document.createElement('div');
   const resultCount = document.createElement('p');
-  //resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
+  // resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
   resultCount.textContent = 'Found ' + observations.length + ' observations.';
   resultCount.className = 'summary';
   resultsHeader.appendChild(resultCount);
@@ -379,7 +379,7 @@ function doObservationQuery() {
   showObservations('search_observations_results', matchingObservations);
 }
 
-function showQuery(search_query_type) {
+function showQuery(searchQueryType) {
   // Get all elements with class="tabcontent" and hide them
   const tabContent = document.getElementsByClassName('tabcontent');
   for (let i = 0; i < tabContent.length; i++) {
@@ -398,12 +398,12 @@ function showQuery(search_query_type) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  let query_tab_id = search_query_type + '_tab';
-  document.getElementById(search_query_type).style.display = 'block';
-  document.getElementById(query_tab_id).className += ' active';
+  const queryTabId = searchQueryType + '_tab';
+  document.getElementById(searchQueryType).style.display = 'block';
+  document.getElementById(queryTabId).className += ' active';
 
-  let results_area_id = search_query_type + '_results';
-  document.getElementById(results_area_id).style.display = 'block';
+  const resultsAreaId = searchQueryType + '_results';
+  document.getElementById(resultsAreaId).style.display = 'block';
 
   // make sure height of query/results are correct.
   const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
@@ -417,49 +417,49 @@ function showQuery(search_query_type) {
   document.getElementById('error_messages').style.display = 'none';
 }
 
-function getParamForField(field_id) {
-  const value = document.getElementById(field_id).value;
+function getParamForField(fieldId) {
+  const value = document.getElementById(fieldId).value;
   if (!nullOrEmpty(value)) {
-    return '&' + field_id + '=' + encodeURIComponent(value);
+    return '&' + fieldId + '=' + encodeURIComponent(value);
   } else {
     return '';
   }
 }
 
-function getParamForRadioGroup(group_id) {
-  const selector = 'input[name="' + group_id + '"]:checked';
+function getParamForRadioGroup(groupId) {
+  const selector = 'input[name="' + groupId + '"]:checked';
   const value = document.querySelector(selector).id;
-  return '&' + group_id + '=' + encodeURIComponent(value);
+  return '&' + groupId + '=' + encodeURIComponent(value);
 }
 
-function getParamForCheckBox(checkbox_id) {
-  if (document.getElementById(checkbox_id).checked) {
-    return '&' + checkbox_id + '=true';
+function getParamForCheckBox(checkboxId) {
+  if (document.getElementById(checkboxId).checked) {
+    return '&' + checkboxId + '=true';
   } else {
     return '';
   }
 }
 
-function setFieldFromParam(urlParams, field_id) {
-  const value = urlParams.get(field_id);
-  document.getElementById(field_id).value = value;
+function setFieldFromParam(urlParams, fieldId) {
+  const value = urlParams.get(fieldId);
+  document.getElementById(fieldId).value = value;
 }
 
-function setRadioFromParam(urlParams, group_id, default_value) {
-  const element_id = urlParams.has(group_id) ? urlParams.get(group_id) : default_value;
-  document.getElementById(element_id).checked = true;
+function setRadioFromParam(urlParams, groupId, defaultValue) {
+  const elementId = urlParams.has(groupId) ? urlParams.get(groupId) : defaultValue;
+  document.getElementById(elementId).checked = true;
 }
 
-function setCheckBoxFromParam(urlParams, element_id) {
-  if (urlParams.has(element_id)) {
-    document.getElementById(element_id).checked = true;
+function setCheckBoxFromParam(urlParams, elementId) {
+  if (urlParams.has(elementId)) {
+    document.getElementById(elementId).checked = true;
   }
 }
 
-function updateUrlFromControls(search_query_type) {
-  let params = 'mode=' + search_query_type;
+function updateUrlFromControls(searchQueryType) {
+  let params = 'mode=' + searchQueryType;
 
-  switch (search_query_type) {
+  switch (searchQueryType) {
     case 'view_program':
       params += getParamForField('program_program_name');
       params += getParamForCheckBox('program_large_sketches');
@@ -498,13 +498,13 @@ function updateUrlFromControls(search_query_type) {
 }
 
 function updateControlsFromSearchParams() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
 
-    const autoShowResults = urlParams.has('mode');
-    const mode = urlParams.has('mode') ? urlParams.get("mode") : 'search_observations';
+  const autoShowResults = urlParams.has('mode');
+  const mode = urlParams.has('mode') ? urlParams.get('mode') : 'search_observations';
 
-    switch (mode) {
+  switch (mode) {
     case 'view_program':
       setFieldFromParam(urlParams, 'program_program_name');
       setCheckBoxFromParam(urlParams, 'program_large_sketches');
