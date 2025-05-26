@@ -1,7 +1,7 @@
 import { parseBase60, parseSizesArcminutes } from './tsv_utils.js';
 
 function nullOrEmpty (str) {
-  return str === null || str === ''
+  return str === null || str === '';
 }
 
 function onlyUnique(value, index, self) {
@@ -9,65 +9,65 @@ function onlyUnique(value, index, self) {
 }
 
 export class ObjectFilter {
-  #nameIs = null
-  #nameLike = null
-  #typeIs = null
-  #conIs = null
-  #raMin = null
-  #raMax = null
-  #decMin = null
-  #decMax = null
-  #magMax = null
-  #sizeMin = null
-  #sizeMax = null
-  #programNameIs = null
-  #seenStatus = null
+  #nameIs = null;
+  #nameLike = null;
+  #typeIs = null;
+  #conIs = null;
+  #raMin = null;
+  #raMax = null;
+  #decMin = null;
+  #decMax = null;
+  #magMax = null;
+  #sizeMin = null;
+  #sizeMax = null;
+  #programNameIs = null;
+  #seenStatus = null;
 
   setNameIs (nameIs) {
     if (!nullOrEmpty(nameIs)) {
-      this.#nameIs = nameIs.toLowerCase()
+      this.#nameIs = nameIs.toLowerCase();
     }
   }
 
   setNameLike (nameLike) {
     if (!nullOrEmpty(nameLike)) {
-      this.#nameLike = nameLike.toLowerCase()
+      this.#nameLike = nameLike.toLowerCase();
     }
   }
 
   setTypeIs (typeIs) {
     if (!nullOrEmpty(typeIs)) {
-      this.#typeIs = typeIs.toLowerCase()
+      this.#typeIs = typeIs.toLowerCase();
     }
   }
 
   setConIs (conIs) {
     if (!nullOrEmpty(conIs)) {
-      this.#conIs = conIs
+      this.#conIs = conIs;
     }
   }
 
   setRaRange (raMin, raMax) {
     if (!nullOrEmpty(raMin)) {
-      this.#raMin = parseBase60(raMin)
+      this.#raMin = parseBase60(raMin);
     }
     if (!nullOrEmpty(raMax)) {
-      this.#raMax = parseBase60(raMax)
+      this.#raMax = parseBase60(raMax);
     }
   }
 
   setDecRange (decMin, decMax) {
     if (!nullOrEmpty(decMin)) {
-      this.#decMin = parseBase60(decMin)
+      this.#decMin = parseBase60(decMin);
     }
     if (!nullOrEmpty(decMax)) {
-      this.#decMax = parseBase60(decMax)
+      this.#decMax = parseBase60(decMax);
     }
   }
 
   setMagMax (magMax) {
     if (!nullOrEmpty(magMax)) {
-      this.#magMax = magMax
+      this.#magMax = magMax;
     }
   }
 
@@ -82,43 +82,43 @@ export class ObjectFilter {
 
   setProgramNameIs (programNameIs) {
     if (!nullOrEmpty(programNameIs)) {
-      this.#programNameIs = programNameIs.toLowerCase()
+      this.#programNameIs = programNameIs.toLowerCase();
     }
   }
 
   setSeenStatus (seenStatus) {
     if (!nullOrEmpty(seenStatus)) {
-      this.#seenStatus = seenStatus
+      this.#seenStatus = seenStatus;
     }
   }
 
   raIsInRange(ra) {
     // no RA defined
     if (nullOrEmpty(ra)) {
-      return true
+      return true;
     }
 
     // no RA filter defined
     if (this.#raMin === null && this.#raMax === null) {
-      return true
+      return true;
     }
 
     // only max RA defined
     if (this.#raMin === null) {
-      return this.#raMax >= ra
+      return this.#raMax >= ra;
     }
 
     // only min RA defined
     if (this.#raMax === null) {
-      return this.#raMin <= ra
+      return this.#raMin <= ra;
     }
 
     // Both min and max RA defined.  If the min and max are reversed, then
     // modify the checks to handle objects crossing the 24-0 RA line.
     if (this.#raMin < this.#raMax) {
-      return this.#raMin <= ra && ra <= this.#raMax
+      return this.#raMin <= ra && ra <= this.#raMax;
     } else {
-      return this.#raMin <= ra || ra <= this.#raMax
+      return this.#raMin <= ra || ra <= this.#raMax;
     }
   }
 
@@ -191,25 +191,25 @@ export class ObjectFilter {
   }
 
   #objectMatches (object) {
-    const objectNames = object.names.toLowerCase().split('/')
+    const objectNames = object.names.toLowerCase().split('/');
     if (this.#nameIs !== null && objectNames.every((name) => this.#nameIs !== name)) {
-      return false
+      return false;
     }
     if (this.#nameLike !== null && objectNames.every((name) => !name.includes(this.#nameLike))) {
-      return false
+      return false;
     }
-    const objectTypes = object.type.toLowerCase().split('+')
+    const objectTypes = object.type.toLowerCase().split('+');
     if (this.#typeIs !== null && objectTypes.every((type) => this.#typeIs !== type)) {
-      return false
+      return false;
     }
     if (this.#conIs !== null && this.#conIs !== object.con) {
-      return false
+      return false;
     }
     if (!this.raIsInRange(object.ra)) {
-      return false
+      return false;
     }
     if (!this.decIsInRange(object.dec)) {
-      return false
+      return false;
     }
     if (!this.magIsInRange(object.magValue)) {
       return false;
@@ -217,21 +217,21 @@ export class ObjectFilter {
     if (!this.sizeIsInRange(object.minorSizeMinutes, object.majorSizeMinutes)) {
       return false;
     }
-    const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase())
+    const programIds = object.programData.map(programEntry => programEntry.programName.toLowerCase());
     if (this.#programNameIs !== null && programIds.every((name) => this.#programNameIs !== name)) {
       return false;
     }
     if (!this.seenStatusMatches(object)) {
       return false;
     }
-    return true
+    return true;
   }
 
   getMatchingObjectIds(objects) {
-    const objectIds = []
+    const objectIds = [];
     for (const [objectId, object] of Object.entries(objects)) {
       if (this.#objectMatches(object)) {
-        objectIds.push(objectId)
+        objectIds.push(objectId);
       }
     }
     return objectIds;
@@ -239,16 +239,16 @@ export class ObjectFilter {
 }
 
 export class ObservationFilter {
-  #dateLike = null
-  #hasObjectType = null
-  #hasObjectCon = null
-  #hasObjectNameLike = null
-  #locationIs = null
-  #scopeIs = null
+  #dateLike = null;
+  #hasObjectType = null;
+  #hasObjectCon = null;
+  #hasObjectNameLike = null;
+  #locationIs = null;
+  #scopeIs = null;
 
   setDateLike (dateLike) {
     if (!nullOrEmpty(dateLike)) {
-      this.#dateLike = dateLike.toLowerCase()
+      this.#dateLike = dateLike.toLowerCase();
     }
   }
 
@@ -284,13 +284,13 @@ export class ObservationFilter {
 
   #observationMatches (observation) {
     if (this.#dateLike !== null && !observation.date.includes(this.#dateLike)) {
-      return false
+      return false;
     }
 
     if (this.#hasObjectNameLike !== null &&
       observation.objectData.every((object) => {
-        const objectNames = object.names.toLowerCase().split('/')
-        return objectNames.every((name) => !name.includes(this.#hasObjectNameLike))
+        const objectNames = object.names.toLowerCase().split('/');
+        return objectNames.every((name) => !name.includes(this.#hasObjectNameLike));
       })) {
       return false;
     }
@@ -302,8 +302,8 @@ export class ObservationFilter {
 
     if (this.#hasObjectType !== null &&
         observation.objectData.every((object) => {
-          const objectTypes = object.type.toLowerCase().split('+')
-          return objectTypes.every((type) => !type.includes(this.#hasObjectType))
+          const objectTypes = object.type.toLowerCase().split('+');
+          return objectTypes.every((type) => !type.includes(this.#hasObjectType));
         })) {
       return false;
     }
@@ -316,26 +316,26 @@ export class ObservationFilter {
       return false;
     }
 
-    return true
+    return true;
   }
 
   getMatchingObservationIds (observations) {
-    const observationIds = []
+    const observationIds = [];
     for (const [observationId, observation] of Object.entries(observations)) {
       if (this.#observationMatches(observation)) {
-        observationIds.push(observationId)
+        observationIds.push(observationId);
       }
     }
-    return observationIds
+    return observationIds;
   }
 }
 
 export class ProgramFilter {
-  #programNameIs = null
+  #programNameIs = null;
 
   setProgramNameIs (programNameIs) {
     if (!nullOrEmpty(programNameIs)) {
-      this.#programNameIs = programNameIs
+      this.#programNameIs = programNameIs;
     }
   }
 

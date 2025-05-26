@@ -1,25 +1,25 @@
 // Classes to hold astronomical-related database data
-import { nullOrEmpty, getObjectSizesArcminutes } from './tsv_utils.js'
+import { nullOrEmpty, getObjectSizesArcminutes } from './tsv_utils.js';
 
 function formatBase60(value, radixNames) {
   if (nullOrEmpty(value)) {
-    return ''
+    return '';
   }
 
-  const signStr = value < 0 ? '-' : ''
-  const totalSeconds = Math.round(Math.abs(value) * 3600)
-  const seconds = totalSeconds % 60
-  const totalMinutes = (totalSeconds - seconds) / 60
-  const minutes = totalMinutes % 60
-  const degrees = (totalMinutes - minutes) / 60
+  const signStr = value < 0 ? '-' : '';
+  const totalSeconds = Math.round(Math.abs(value) * 3600);
+  const seconds = totalSeconds % 60;
+  const totalMinutes = (totalSeconds - seconds) / 60;
+  const minutes = totalMinutes % 60;
+  const degrees = (totalMinutes - minutes) / 60;
 
-  const degreesStr = String(degrees).padStart(2, '0')
-  const minutesStr = String(minutes).padStart(2, '0')
-  const secondsStr = String(seconds).padStart(2, '0')
+  const degreesStr = String(degrees).padStart(2, '0');
+  const minutesStr = String(minutes).padStart(2, '0');
+  const secondsStr = String(seconds).padStart(2, '0');
 
   return signStr + degreesStr + radixNames[0] + ' ' +
       minutesStr + radixNames[1] + ' ' +
-      secondsStr + radixNames[2]
+      secondsStr + radixNames[2];
 }
 
 // Converts a magnitude from string to a double value.
@@ -162,7 +162,7 @@ export class Database {
   // Updates this.observations and this.programs with cross-reference ids
   #addCrossIndex() {
     for (const [_, observation] of Object.entries(this.observations)) {
-      const objectIds = observation.objectIds.split('|')
+      const objectIds = observation.objectIds.split('|');
       let firstObject = true;
       for (const objectId of objectIds) {
         // Check consistency of objectIds in observations
@@ -205,10 +205,10 @@ export class Database {
 
     // fill in derivative data for objects
     for (const [_, object] of Object.entries(this.objects)) {
-      object.observationIds = object.observationData.map(o => o.id).join()
-      object.numObservations = object.observationData.length
-      object.programIds = object.programData.map(p => p.programName).join()
-      object.numPrograms = object.programData.length
+      object.observationIds = object.observationData.map(o => o.id).join();
+      object.numObservations = object.observationData.length;
+      object.programIds = object.programData.map(p => p.programName).join();
+      object.numPrograms = object.programData.length;
     }
   }
 }
