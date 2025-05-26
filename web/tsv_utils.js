@@ -1,8 +1,8 @@
-import { objectTypes, constellations } from './constants.js'
-import { AstroObject, Observation, ProgramEntry } from './database.js'
+import { objectTypes, constellations } from './constants.js';
+import { AstroObject, Observation, ProgramEntry } from './database.js';
 
-export function nullOrEmpty (str) {
-  return str === null || str === ''
+export function nullOrEmpty(str) {
+  return str === null || str === '';
 }
 
 export function parseBase60(base60str) {
@@ -15,13 +15,13 @@ export function parseBase60(base60str) {
   if (matches !== null) {
     const digitGroups = matches.map(m => parseFloat(m));
 
-    let value = 0.0
-    let scale = 1.0
+    let value = 0.0;
+    let scale = 1.0;
     const sign = (digitGroups[0] < 0) ? -1.0 : 1.0;
 
     for (const number of digitGroups) {
-      value += Math.abs(number) * scale
-      scale /= 60.0
+      value += Math.abs(number) * scale;
+      scale /= 60.0;
     }
     return value * sign;
   } else {
@@ -31,7 +31,7 @@ export function parseBase60(base60str) {
 
 // Extract the units from a size string.
 function parseSizeUnits(sizeString) {
-  const tLower = sizeString.toLowerCase().trim()
+  const tLower = sizeString.toLowerCase().trim();
   if (tLower.endsWith('"') || tLower.endsWith("''") || tLower.endsWith('s')) {
     return 'ARC_SECONDS';
   } else if (tLower.endsWith('\'') || tLower.endsWith('m')) {
@@ -47,7 +47,7 @@ function parseSizeUnits(sizeString) {
 // parses a list of sizes, converts to arcminutes
 export function parseSizesArcminutes(sizeString) {
   if (nullOrEmpty(sizeString)) {
-    return null
+    return null;
   }
 
   const units = parseSizeUnits(sizeString);
@@ -62,7 +62,7 @@ export function parseSizesArcminutes(sizeString) {
   const matches = sizeString.match(regex);
   if (matches !== null) {
     const sizes = matches.map(m => parseFloat(m) * scale);
-    return sizes
+    return sizes;
   } else {
     throw Error('Could not parse object size ' + sizeString);
   }
@@ -73,7 +73,7 @@ export function parseSizesArcminutes(sizeString) {
 // min/max in all cases.
 export function getObjectSizesArcminutes(sizeString) {
   if (nullOrEmpty(sizeString)) {
-    return [null, null]
+    return [null, null];
   }
 
   const sizes = parseSizesArcminutes(sizeString);
@@ -95,7 +95,7 @@ function validateObjectType(typeString, lineNumber, line) {
 
 function validateObjectLocation(typeString, conString, raString, decString, lineNumber, line) {
   const typeToLoc = new Map();
-  objectTypes.map((t) => {
+  objectTypes.forEach((t) => {
     typeToLoc.set(t.shortName, t.fixedPosition);
   });
 

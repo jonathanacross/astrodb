@@ -1,9 +1,7 @@
-/* jshint esversion: 6 */
-
-import { readObjects, readObservations, readPrograms, nullOrEmpty } from './tsv_utils.js'
-import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js'
-import { objectTypes, constellations } from './constants.js'
-import { AstroObject, Observation, ProgramEntry, Database } from './database.js'
+import { readObjects, readObservations, readPrograms, nullOrEmpty } from './tsv_utils.js';
+import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js';
+import { objectTypes } from './constants.js';
+import { Database } from './database.js';
 
 let database;
 
@@ -25,9 +23,9 @@ function getObjectAttribute(displayName) {
     Observations: 'observationIds',
     Programs: 'programIds',
     'Num Obs': 'numObservations',
-    'Num Programs': 'numPrograms',
+    'Num Programs': 'numPrograms'
   };
-  return lookupMap[displayName]
+  return lookupMap[displayName];
 }
 
 function getObservationAttribute(displayName) {
@@ -45,61 +43,61 @@ function getObservationAttribute(displayName) {
     Phase: 'phase',
     Notes: 'notes'
   };
-  return lookupMap[displayName]
+  return lookupMap[displayName];
 }
 
-function createObjectListingTable (objects, columns) {
-  const objTable = document.createElement('table')
-  const tableHeader = document.createElement('thead')
-  const headerRow = document.createElement('tr')
+function createObjectListingTable(objects, columns) {
+  const objTable = document.createElement('table');
+  const tableHeader = document.createElement('thead');
+  const headerRow = document.createElement('tr');
   for (const col of columns) {
-    const cell = document.createElement('th')
-    const cellText = document.createTextNode(col)
-    cell.appendChild(cellText)
-    headerRow.appendChild(cell)
+    const cell = document.createElement('th');
+    const cellText = document.createTextNode(col);
+    cell.appendChild(cellText);
+    headerRow.appendChild(cell);
   }
-  tableHeader.appendChild(headerRow)
-  objTable.appendChild(tableHeader)
+  tableHeader.appendChild(headerRow);
+  objTable.appendChild(tableHeader);
 
-  const tableBody = document.createElement('tbody')
+  const tableBody = document.createElement('tbody');
 
   for (const obj of objects) {
-    const row = document.createElement('tr')
+    const row = document.createElement('tr');
 
     for (const col of columns) {
-      const cell = document.createElement('td')
-      const cellText = document.createTextNode(obj[getObjectAttribute(col)])
-      cell.appendChild(cellText)
-      row.appendChild(cell)
+      const cell = document.createElement('td');
+      const cellText = document.createTextNode(obj[getObjectAttribute(col)]);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
     }
 
-    tableBody.appendChild(row)
+    tableBody.appendChild(row);
   }
-  objTable.appendChild(tableBody)
+  objTable.appendChild(tableBody);
 
-  return objTable
+  return objTable;
 }
 
-function createObjectListingText (objects, columns) {
-  const preBlock = document.createElement('pre')
-  const codeBlock = document.createElement('code')
-  preBlock.appendChild(codeBlock)
+function createObjectListingText(objects, columns) {
+  const preBlock = document.createElement('pre');
+  const codeBlock = document.createElement('code');
+  preBlock.appendChild(codeBlock);
 
-  let text = ''
-  // TODO: avoid trailing tab
-  for (const col of columns) {
-    text += col + '\t'
-  }
-  text += '\n'
+  let text = '';
+  text = columns.join('\t');
+  text += '\n';
 
   for (const obj of objects) {
-    for (const col of columns) {
-      text += obj[getObjectAttribute(col)] + '\t'
+    for (let i = 0; i < columns.length; i++) {
+      text += obj[getObjectAttribute(columns[i])];
+      if (i < columns.length - 1) {
+        text += '\t';
+      }
     }
-    text += '\n'
+    text += '\n';
   }
-  codeBlock.innerText = text
-  return preBlock
+  codeBlock.innerText = text;
+  return preBlock;
 }
 
 function getColumns(objectListMode) {
@@ -114,34 +112,34 @@ function getColumns(objectListMode) {
   }
 }
 
-function showObjectList (objects, showAsText, objectListMode) {
-  const resultsArea = document.getElementById('search_objects_results')
+function showObjectList(objects, showAsText, objectListMode) {
+  const resultsArea = document.getElementById('search_objects_results');
 
   // clear old results
   while (resultsArea.hasChildNodes()) {
-    resultsArea.removeChild(resultsArea.lastChild)
+    resultsArea.removeChild(resultsArea.lastChild);
   }
 
   // Add new results
 
   // count of observations
-  const resultsHeader = document.createElement('div')
-  const resultCount = document.createElement('p')
+  const resultsHeader = document.createElement('div');
+  const resultCount = document.createElement('p');
   // resultCount.textContent = "Found " + object_ids.length + " matching objects in " + observation_ids.length + " observations.";
   resultCount.textContent = 'Found ' + objects.length + ' objects.';
   resultCount.className = 'summary';
-  resultsHeader.appendChild(resultCount)
+  resultsHeader.appendChild(resultCount);
 
-  resultsArea.appendChild(resultsHeader)
+  resultsArea.appendChild(resultsHeader);
 
-  const columns = getColumns(objectListMode)
+  const columns = getColumns(objectListMode);
 
   if (showAsText) {
-    const text = createObjectListingText(objects, columns)
-    resultsArea.appendChild(text)
+    const text = createObjectListingText(objects, columns);
+    resultsArea.appendChild(text);
   } else {
-    const table = createObjectListingTable(objects, columns)
-    resultsArea.appendChild(table)
+    const table = createObjectListingTable(objects, columns);
+    resultsArea.appendChild(table);
   }
 }
 
@@ -173,7 +171,7 @@ function setObjectInfo(observation, element) {
 
 function getObservationSortFunction(sortMethod) {
   if (sortMethod === 'name') {
-    return function (x, y) {
+    return function(x, y) {
       // first sort by name
       if (x.names !== y.names) {
         // locale compare should sort names in natural order, so that 'M 2' < 'M 10'
@@ -183,7 +181,7 @@ function getObservationSortFunction(sortMethod) {
       return x.id.localeCompare(y.id);
     };
   } else if (sortMethod === 'date') {
-    return function (x, y) {
+    return function(x, y) {
       // id has date-obs#-name, so this includes date then observation number
       return x.id.localeCompare(y.id);
     };
@@ -193,15 +191,15 @@ function getObservationSortFunction(sortMethod) {
 function getObjectSortFunction(objectListMode) {
   if (objectListMode === 'observing') {
     // sort by ra, then name
-    return function (x, y) {
+    return function(x, y) {
       if (x.ra !== y.ra) {
         return x.ra - y.ra;
       }
       return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
-    }
+    };
   } else if (objectListMode === 'program') {
     // sort by program name, then program number, then object id (e.g. for objects not in any program)
-    return function (x, y) {
+    return function(x, y) {
       const xProgramName = x.programData.length === 0 ? 'zzzzzzzzzz' : x.programData[0].programName;
       const yProgramName = y.programData.length === 0 ? 'zzzzzzzzzz' : y.programData[0].programName;
       const xNumber = x.programData.length === 0 ? '0' : x.programData[0].number;
@@ -213,16 +211,16 @@ function getObjectSortFunction(objectListMode) {
         return xNumber.localeCompare(yNumber, undefined, { numeric: true, sensitivity: 'base' });
       }
       return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
-    }
+    };
   } else { // objectListMode === 'object' || objectListMode === 'meta'
-    // sort by type, then by id.  Id uses locale compare to sort in 
+    // sort by type, then by id.  Id uses locale compare to sort in
     // natural order, so that 'M 2' < 'M 10'
     // or no sorting...
-    return function (x, y) {
-      const xHasLocation = nullOrEmpty(x.ra)
-      const yHasLocation = nullOrEmpty(y.ra)
-      const xType = x.type.toLowerCase().split('+')[0]  // get the first type, for sorting
-      const yType = y.type.toLowerCase().split('+')[0]
+    return function(x, y) {
+      const xHasLocation = nullOrEmpty(x.ra);
+      const yHasLocation = nullOrEmpty(y.ra);
+      const xType = x.type.toLowerCase().split('+')[0]; // get the first type, for sorting
+      const yType = y.type.toLowerCase().split('+')[0];
       if (xHasLocation !== yHasLocation) {
         return xHasLocation - yHasLocation;
       }
@@ -230,13 +228,33 @@ function getObjectSortFunction(objectListMode) {
         return xType.localeCompare(yType);
       }
       return x.id.localeCompare(y.id, undefined, { numeric: true, sensitivity: 'base' });
+    };
+  }
+}
+
+function toggleLargeSketchesClass(checkboxId, resultsAreaId) {
+  const checkbox = document.getElementById(checkboxId);
+  const resultsArea = document.getElementById(resultsAreaId);
+  if (checkbox && resultsArea) {
+    if (checkbox.checked) {
+      resultsArea.classList.add('large-sketches');
+    } else {
+      resultsArea.classList.remove('large-sketches');
     }
   }
 }
 
-
 function showObservations(resultElementIdName, observations) {
-  const resultsArea = document.getElementById(resultElementIdName)
+  const resultsArea = document.getElementById(resultElementIdName);
+
+  // Apply large sketches class if checkbox is checked.
+  // This needs to be done before appending new elements
+  // so the grid and sketch sizes are correct from the start.
+  if (resultElementIdName === 'view_program_results') {
+    toggleLargeSketchesClass('program_large_sketches', 'view_program_results');
+  } else if (resultElementIdName === 'search_observations_results') {
+    toggleLargeSketchesClass('observation_large_sketches', 'search_observations_results');
+  }
 
   // clear old results
   while (resultsArea.hasChildNodes()) {
@@ -248,7 +266,7 @@ function showObservations(resultElementIdName, observations) {
   // count of observations
   const resultsHeader = document.createElement('div');
   const resultCount = document.createElement('p');
-  //resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
+  // resultCount.textContent = 'Found ' + object_ids.length + ' matching objects in ' + observation_ids.length + ' observations.';
   resultCount.textContent = 'Found ' + observations.length + ' observations.';
   resultCount.className = 'summary';
   resultsHeader.appendChild(resultCount);
@@ -301,67 +319,67 @@ function showObservations(resultElementIdName, observations) {
   }
 }
 
-function doProgramQuery () {
-  const filter = new ProgramFilter()
-  filter.setProgramNameIs(document.getElementById('program_program_name').value)
+function doProgramQuery() {
+  const filter = new ProgramFilter();
+  filter.setProgramNameIs(document.getElementById('program_program_name').value);
 
-  const matchingObservationIds = filter.getMatchingObservationIds(database.programs)
-  const matchingObservations = matchingObservationIds.map(id => database.observations[id])
+  const matchingObservationIds = filter.getMatchingObservationIds(database.programs);
+  const matchingObservations = matchingObservationIds.map(id => database.observations[id]);
 
-  updateUrlFromControls('view_program')
+  updateUrlFromControls('view_program');
   showObservations('view_program_results', matchingObservations);
 }
 
-function doObjectQuery () {
-  const filter = new ObjectFilter()
-  filter.setNameLike(document.getElementById('object_object_name').value)
-  filter.setTypeIs(document.getElementById('object_object_type').value)
-  filter.setConIs(document.getElementById('object_constellation').value)
+function doObjectQuery() {
+  const filter = new ObjectFilter();
+  filter.setNameLike(document.getElementById('object_object_name').value);
+  filter.setTypeIs(document.getElementById('object_object_type').value);
+  filter.setConIs(document.getElementById('object_constellation').value);
   filter.setRaRange(document.getElementById('object_ra_min').value,
-    document.getElementById('object_ra_max').value)
+    document.getElementById('object_ra_max').value);
   filter.setDecRange(document.getElementById('object_dec_min').value,
-    document.getElementById('object_dec_max').value)
-  filter.setMagMax(document.getElementById('object_mag_max').value)
+    document.getElementById('object_dec_max').value);
+  filter.setMagMax(document.getElementById('object_mag_max').value);
   filter.setSizeRange(document.getElementById('object_size_min').value,
-    document.getElementById('object_size_max').value)
-  filter.setProgramNameIs(document.getElementById('object_program_name').value)
-  filter.setSeenStatus(document.getElementById('object_seen_status').value)
+    document.getElementById('object_size_max').value);
+  filter.setProgramNameIs(document.getElementById('object_program_name').value);
+  filter.setSeenStatus(document.getElementById('object_seen_status').value);
 
   const objectListMode = document.querySelector('input[name="object_list_mode"]:checked').value;
 
   const matchingObjectIds = filter.getMatchingObjectIds(database.objects);
-  const matchingObjects = matchingObjectIds.map(id => database.objects[id])
+  const matchingObjects = matchingObjectIds.map(id => database.objects[id]);
 
-  const sortFunction = getObjectSortFunction(objectListMode)
-  matchingObjects.sort(sortFunction)
+  const sortFunction = getObjectSortFunction(objectListMode);
+  matchingObjects.sort(sortFunction);
 
-  const showAsText = document.getElementById('show_as_text').checked
+  const showAsText = document.getElementById('object_show_as_text').checked;
 
-  updateUrlFromControls('search_objects')
-  showObjectList(matchingObjects, showAsText, objectListMode)
+  updateUrlFromControls('search_objects');
+  showObjectList(matchingObjects, showAsText, objectListMode);
 }
 
-function doObservationQuery () {
-  const filter = new ObservationFilter()
-  filter.setHasObjectNameLike(document.getElementById('observation_object_name').value)
-  filter.setHasObjectType(document.getElementById('observation_object_type').value)
-  filter.setHasObjectCon(document.getElementById('observation_constellation').value)
-  filter.setDateLike(document.getElementById('observation_date').value)
-  filter.setLocationIs(document.getElementById('observation_location').value)
-  filter.setScopeIs(document.getElementById('observation_scope').value)
+function doObservationQuery() {
+  const filter = new ObservationFilter();
+  filter.setHasObjectNameLike(document.getElementById('observation_object_name').value);
+  filter.setHasObjectType(document.getElementById('observation_object_type').value);
+  filter.setHasObjectCon(document.getElementById('observation_constellation').value);
+  filter.setDateLike(document.getElementById('observation_date').value);
+  filter.setLocationIs(document.getElementById('observation_location').value);
+  filter.setScopeIs(document.getElementById('observation_scope').value);
 
   const sortMethod = document.querySelector('input[name="observation_sort"]:checked').value;
 
   const matchingObservationIds = filter.getMatchingObservationIds(database.observations);
-  const matchingObservations = matchingObservationIds.map(id => database.observations[id])
-  const sortFunction = getObservationSortFunction(sortMethod)
-  matchingObservations.sort(sortFunction)
+  const matchingObservations = matchingObservationIds.map(id => database.observations[id]);
+  const sortFunction = getObservationSortFunction(sortMethod);
+  matchingObservations.sort(sortFunction);
 
-  updateUrlFromControls('search_observations')
+  updateUrlFromControls('search_observations');
   showObservations('search_observations_results', matchingObservations);
 }
 
-function showQuery(search_query_type) {
+function showQuery(searchQueryType) {
   // Get all elements with class="tabcontent" and hide them
   const tabContent = document.getElementsByClassName('tabcontent');
   for (let i = 0; i < tabContent.length; i++) {
@@ -380,12 +398,12 @@ function showQuery(search_query_type) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  let query_tab_id = search_query_type + '_tab';
-  document.getElementById(search_query_type).style.display = 'block';
-  document.getElementById(query_tab_id).className += ' active';
+  const queryTabId = searchQueryType + '_tab';
+  document.getElementById(searchQueryType).style.display = 'block';
+  document.getElementById(queryTabId).className += ' active';
 
-  let results_area_id = search_query_type + '_results';
-  document.getElementById(results_area_id).style.display = 'block';
+  const resultsAreaId = searchQueryType + '_results';
+  document.getElementById(resultsAreaId).style.display = 'block';
 
   // make sure height of query/results are correct.
   const sidebarWidth = document.getElementById('sidebar_objquery').offsetWidth;
@@ -399,125 +417,129 @@ function showQuery(search_query_type) {
   document.getElementById('error_messages').style.display = 'none';
 }
 
-function getParamForField(field_id) {
-  const value = document.getElementById(field_id).value;
+function getParamForField(fieldId) {
+  const value = document.getElementById(fieldId).value;
   if (!nullOrEmpty(value)) {
-    return '&' + field_id + '=' + encodeURIComponent(value)
+    return '&' + fieldId + '=' + encodeURIComponent(value);
   } else {
-    return ''
+    return '';
   }
 }
 
-function getParamForRadioGroup(group_id) {
-  const selector = 'input[name="' + group_id + '"]:checked';
+function getParamForRadioGroup(groupId) {
+  const selector = 'input[name="' + groupId + '"]:checked';
   const value = document.querySelector(selector).id;
-  return '&' + group_id + '=' + encodeURIComponent(value)
+  return '&' + groupId + '=' + encodeURIComponent(value);
 }
 
-function getParamForCheckGox(checkbox_id) {
-  if (document.getElementById(checkbox_id).checked) {
-    return '&' + checkbox_id + '=true'
+function getParamForCheckBox(checkboxId) {
+  if (document.getElementById(checkboxId).checked) {
+    return '&' + checkboxId + '=true';
   } else {
-    return ''
+    return '';
   }
 }
 
-function setFieldFromParam(urlParams, field_id) {
-  const value = urlParams.get(field_id);
-  document.getElementById(field_id).value = value;
+function setFieldFromParam(urlParams, fieldId) {
+  const value = urlParams.get(fieldId);
+  document.getElementById(fieldId).value = value;
 }
 
-function setRadioFromParam(urlParams, group_id, default_value) {
-  const element_id = urlParams.has(group_id) ? urlParams.get(group_id) : default_value;
-  document.getElementById(element_id).checked = true; 
+function setRadioFromParam(urlParams, groupId, defaultValue) {
+  const elementId = urlParams.has(groupId) ? urlParams.get(groupId) : defaultValue;
+  document.getElementById(elementId).checked = true;
 }
 
-function setCheckboxFromParam(urlParams, element_id) {
-  if (urlParams.has(element_id)) {
-    document.getElementById(value).checked = true; 
+function setCheckBoxFromParam(urlParams, elementId) {
+  if (urlParams.has(elementId)) {
+    document.getElementById(elementId).checked = true;
   }
 }
 
-function updateUrlFromControls(search_query_type) {
-  let params = 'mode=' + search_query_type;
+function updateUrlFromControls(searchQueryType) {
+  let params = 'mode=' + searchQueryType;
 
-  switch (search_query_type) {
+  switch (searchQueryType) {
     case 'view_program':
-      params += getParamForField('program_program_name')
+      params += getParamForField('program_program_name');
+      params += getParamForCheckBox('program_large_sketches');
       break;
 
     case 'search_observations':
-      params += getParamForField('observation_object_name')
-      params += getParamForField('observation_object_type')
-      params += getParamForField('observation_constellation')
-      params += getParamForField('observation_date')
-      params += getParamForField('observation_location')
-      params += getParamForField('observation_scope')
-      params += getParamForRadioGroup('observation_sort')
+      params += getParamForField('observation_object_name');
+      params += getParamForField('observation_object_type');
+      params += getParamForField('observation_constellation');
+      params += getParamForField('observation_date');
+      params += getParamForField('observation_location');
+      params += getParamForField('observation_scope');
+      params += getParamForRadioGroup('observation_sort');
+      params += getParamForCheckBox('observation_large_sketches');
       break;
-      
+
     case 'search_objects':
-      params += getParamForField('object_object_name')
-      params += getParamForField('object_object_type')
-      params += getParamForField('object_constellation')
-      params += getParamForField('object_ra_min')
-      params += getParamForField('object_ra_max')
-      params += getParamForField('object_dec_min')
-      params += getParamForField('object_dec_max')
-      params += getParamForField('object_mag_max')
-      params += getParamForField('object_size_min')
-      params += getParamForField('object_size_max')
-      params += getParamForField('object_program_name')
-      params += getParamForField('object_seen_status')
-      params += getParamForRadioGroup('object_list_mode')
-      params += getParamForCheckGox('show_as_text')
+      params += getParamForField('object_object_name');
+      params += getParamForField('object_object_type');
+      params += getParamForField('object_constellation');
+      params += getParamForField('object_ra_min');
+      params += getParamForField('object_ra_max');
+      params += getParamForField('object_dec_min');
+      params += getParamForField('object_dec_max');
+      params += getParamForField('object_mag_max');
+      params += getParamForField('object_size_min');
+      params += getParamForField('object_size_max');
+      params += getParamForField('object_program_name');
+      params += getParamForField('object_seen_status');
+      params += getParamForRadioGroup('object_list_mode');
+      params += getParamForCheckBox('object_show_as_text');
       break;
   }
 
-  history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + params)
+  history.replaceState(null, '', window.location.origin + window.location.pathname + '?' + params);
 }
 
 function updateControlsFromSearchParams() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
 
-    const autoShowResults = urlParams.has('mode');
-    const mode = urlParams.has('mode') ? urlParams.get("mode") : 'search_observations';
+  const autoShowResults = urlParams.has('mode');
+  const mode = urlParams.has('mode') ? urlParams.get('mode') : 'search_observations';
 
-    switch (mode) {
+  switch (mode) {
     case 'view_program':
-      setFieldFromParam(urlParams, 'program_program_name')
+      setFieldFromParam(urlParams, 'program_program_name');
+      setCheckBoxFromParam(urlParams, 'program_large_sketches');
       break;
 
     case 'search_observations':
-      setFieldFromParam(urlParams, 'observation_object_name')
-      setFieldFromParam(urlParams, 'observation_object_type')
-      setFieldFromParam(urlParams, 'observation_constellation')
-      setFieldFromParam(urlParams, 'observation_date')
-      setFieldFromParam(urlParams, 'observation_location')
-      setFieldFromParam(urlParams, 'observation_scope')
-      setRadioFromParam(urlParams, 'observation_sort', 'observation_name_radio')
+      setFieldFromParam(urlParams, 'observation_object_name');
+      setFieldFromParam(urlParams, 'observation_object_type');
+      setFieldFromParam(urlParams, 'observation_constellation');
+      setFieldFromParam(urlParams, 'observation_date');
+      setFieldFromParam(urlParams, 'observation_location');
+      setFieldFromParam(urlParams, 'observation_scope');
+      setRadioFromParam(urlParams, 'observation_sort', 'observation_name_radio');
+      setCheckBoxFromParam(urlParams, 'observation_large_sketches');
       break;
-      
+
     case 'search_objects':
-      setFieldFromParam(urlParams, 'object_object_name')
-      setFieldFromParam(urlParams, 'object_object_type')
-      setFieldFromParam(urlParams, 'object_constellation')
-      setFieldFromParam(urlParams, 'object_ra_min')
-      setFieldFromParam(urlParams, 'object_ra_max')
-      setFieldFromParam(urlParams, 'object_dec_min')
-      setFieldFromParam(urlParams, 'object_dec_max')
-      setFieldFromParam(urlParams, 'object_mag_max')
-      setFieldFromParam(urlParams, 'object_size_min')
-      setFieldFromParam(urlParams, 'object_size_max')
-      setFieldFromParam(urlParams, 'object_program_name')
-      setFieldFromParam(urlParams, 'object_seen_status')
-      setRadioFromParam(urlParams, 'object_list_mode', 'object_program_radio')
-      setCheckboxFromParam(urlParams, 'show_as_text')
+      setFieldFromParam(urlParams, 'object_object_name');
+      setFieldFromParam(urlParams, 'object_object_type');
+      setFieldFromParam(urlParams, 'object_constellation');
+      setFieldFromParam(urlParams, 'object_ra_min');
+      setFieldFromParam(urlParams, 'object_ra_max');
+      setFieldFromParam(urlParams, 'object_dec_min');
+      setFieldFromParam(urlParams, 'object_dec_max');
+      setFieldFromParam(urlParams, 'object_mag_max');
+      setFieldFromParam(urlParams, 'object_size_min');
+      setFieldFromParam(urlParams, 'object_size_max');
+      setFieldFromParam(urlParams, 'object_program_name');
+      setFieldFromParam(urlParams, 'object_seen_status');
+      setRadioFromParam(urlParams, 'object_list_mode', 'object_program_radio');
+      setCheckBoxFromParam(urlParams, 'object_show_as_text');
       break;
   }
 
-  showQuery(mode)
+  showQuery(mode);
   if (autoShowResults) {
     switch (mode) {
       case 'view_program':
@@ -527,7 +549,7 @@ function updateControlsFromSearchParams() {
       case 'search_observations':
         doObservationQuery();
         break;
-        
+
       case 'search_objects':
         doObjectQuery();
         break;
@@ -538,75 +560,75 @@ function updateControlsFromSearchParams() {
 function populateDropdown(dropdownElement, items) {
   for (const item of items) {
     if (item !== '') {
-      const option = document.createElement('option')
-      option.value = item
-      option.text = item
-      dropdownElement.appendChild(option)
+      const option = document.createElement('option');
+      option.value = item;
+      option.text = item;
+      dropdownElement.appendChild(option);
     }
   }
 }
 
-function setupControls () {
-  const programProgramPicker = document.getElementById('program_program_name')
-  const objectProgramPicker = document.getElementById('object_program_name_list')
-  const programList = Array.from(Object.keys(database.programs)).sort()
-  populateDropdown(programProgramPicker, programList)
-  populateDropdown(objectProgramPicker, programList)
+function setupControls() {
+  const programProgramPicker = document.getElementById('program_program_name');
+  const objectProgramPicker = document.getElementById('object_program_name_list');
+  const programList = Array.from(Object.keys(database.programs)).sort();
+  populateDropdown(programProgramPicker, programList);
+  populateDropdown(objectProgramPicker, programList);
 
-  let cons = new Set()
+  let cons = new Set();
   for (const [_, obs] of Object.entries(database.observations)) {
-    const objectIds = obs.objectIds.split('|')
+    const objectIds = obs.objectIds.split('|');
     for (const objectId of objectIds) {
-      const c = database.objects[objectId].con
+      const c = database.objects[objectId].con;
       if (c != null) {
-        cons.add(c)
+        cons.add(c);
       }
     }
   }
-  cons = Array.from(cons).sort()
-  const observationConPicker = document.getElementById('observation_constellation_list')
+  cons = Array.from(cons).sort();
+  const observationConPicker = document.getElementById('observation_constellation_list');
   populateDropdown(observationConPicker, cons);
-  const objectConPicker = document.getElementById('object_constellation_list')
+  const objectConPicker = document.getElementById('object_constellation_list');
   populateDropdown(objectConPicker, cons);
 
-  let scopes = new Set()
+  let scopes = new Set();
   for (const [_, observation] of Object.entries(database.observations)) {
     if (observation.scope != null) {
       scopes.add(observation.scope);
     }
   }
-  scopes = Array.from(scopes).sort()
-  const scopePicker = document.getElementById('observation_scope_list')
+  scopes = Array.from(scopes).sort();
+  const scopePicker = document.getElementById('observation_scope_list');
   populateDropdown(scopePicker, scopes);
 
-  let locations = new Set()
+  let locations = new Set();
   for (const [_, observation] of Object.entries(database.observations)) {
     if (observation.location != null) {
       locations.add(observation.location);
     }
   }
-  locations = Array.from(locations).sort()
-  const locationPicker = document.getElementById('observation_location_list')
+  locations = Array.from(locations).sort();
+  const locationPicker = document.getElementById('observation_location_list');
   populateDropdown(locationPicker, locations);
 
-  const objTypeList = document.getElementById('type_list')
+  const objTypeList = document.getElementById('type_list');
   for (const objType of objectTypes) {
     if (objType.shortName !== '') {
-      const option = document.createElement('option')
-      option.value = objType.shortName
-      option.text = objType.fullName
-      objTypeList.appendChild(option)
+      const option = document.createElement('option');
+      option.value = objType.shortName;
+      option.text = objType.fullName;
+      objTypeList.appendChild(option);
     }
   }
 
-  const objectShowButton = document.getElementById('object_show')
-  objectShowButton.addEventListener('click', doObjectQuery)
+  const objectShowButton = document.getElementById('object_show');
+  objectShowButton.addEventListener('click', doObjectQuery);
 
-  const programShowButton = document.getElementById('program_show')
-  programShowButton.addEventListener('click', doProgramQuery)
+  const programShowButton = document.getElementById('program_show');
+  programShowButton.addEventListener('click', doProgramQuery);
 
-  const observationShowButton = document.getElementById('observation_show')
-  observationShowButton.addEventListener('click', doObservationQuery)
+  const observationShowButton = document.getElementById('observation_show');
+  observationShowButton.addEventListener('click', doObservationQuery);
 
   const viewProgramTabElement = document.getElementById('view_program_tab');
   viewProgramTabElement.addEventListener('click', () => showQuery('view_program'));
@@ -617,36 +639,36 @@ function setupControls () {
   const searchObjectsTabElement = document.getElementById('search_objects_tab');
   searchObjectsTabElement.addEventListener('click', () => showQuery('search_objects'));
 
-  updateControlsFromSearchParams()
+  updateControlsFromSearchParams();
 }
 
-function displayErrors (err) {
-  const errorMsg = document.createElement('p')
-  errorMsg.className = 'error'
-  errorMsg.innerText = err
+function displayErrors(err) {
+  const errorMsg = document.createElement('p');
+  errorMsg.className = 'error';
+  errorMsg.innerText = err;
 
-  const resultsArea = document.getElementById('error_messages')
-  resultsArea.appendChild(errorMsg)
+  const resultsArea = document.getElementById('error_messages');
+  resultsArea.appendChild(errorMsg);
 }
 
-function checkResponses (responses) {
+function checkResponses(responses) {
   for (const response of responses) {
     if (!response.ok) {
-      throw Error(response.url + ' ' + response.statusText)
+      throw Error(response.url + ' ' + response.statusText);
     }
   }
-  return responses
+  return responses;
 }
 
-function ParseData (responses) {
+function ParseData(responses) {
   const observationList = readObservations(responses[0]);
   const objectList = readObjects(responses[1]);
   const programList = readPrograms(responses[2]);
 
-  database = new Database(objectList, observationList, programList)
+  database = new Database(objectList, observationList, programList);
 }
 
-function LoadDataAndSetupPage () {
+function LoadDataAndSetupPage() {
   Promise.all([
     fetch('data/observations.tsv'),
     fetch('data/objects.tsv'),
@@ -656,7 +678,7 @@ function LoadDataAndSetupPage () {
     .then(result => Promise.all(result.map(v => v.text())))
     .then(responses => ParseData(responses))
     .then(setupControls)
-    .catch(err => displayErrors(err))
+    .catch(err => displayErrors(err));
 }
 
-window.onload = LoadDataAndSetupPage
+window.onload = LoadDataAndSetupPage;

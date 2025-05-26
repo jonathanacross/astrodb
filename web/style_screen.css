@@ -133,6 +133,11 @@ body {
     grid-template-columns: repeat(auto-fill, 350px);
 }
 
+.large-sketches .observation_result_grid {
+    grid-template-columns: repeat(auto-fill, 500px);
+}
+
+
 .observation {
   background-color: white;
   border: 1px solid gray;
@@ -167,6 +172,10 @@ ul {
   height: 250px;
   display: block;
   object-fit: scale-down;
+}
+
+.large-sketches .sketch {
+    height: 450px;
 }
 
 .objname {

@@ -24,14 +24,18 @@
 
   <div id="sidebar_objquery">
 
-    <!-- Program Query -->
     <div class="tabcontent" id="view_program">
       <p class="queryheader">See progress for a particular program:</p>
       <select name="program_program_name" id="program_program_name"></select>
+
+      <div class="formgroup">
+        <label for="program_large_sketches">Large sketches</label>
+        <input type="checkbox" name="program_large_sketches" id="program_large_sketches">
+      </div>
+
       <button id="program_show">Show</button>
     </div>
 
-    <!-- Observation Query -->
     <div class="tabcontent" id="search_observations">
       <p class="queryheader">Observation Search</p>
 
@@ -77,10 +81,14 @@
         <label for="observation_name_radio">Name</label><br>
       </div>
 
+      <div class="formgroup">
+        <label for="observation_large_sketches">Large sketches</label>
+        <input type="checkbox" name="observation_large_sketches" id="observation_large_sketches">
+      </div>
+
       <button id="observation_show">Show</button>
     </div>
 
-    <!-- Object Query -->
     <div class="tabcontent" id="search_objects">
       <p class="queryheader">List Objects</p>
 
@@ -161,7 +169,7 @@
         <label for="object_meta_radio">Meta List</label>
       </div>
 
-      <label for="show_as_text">Show As Text</label>
+      <label for="object_show_as_text">Show As Text</label>
       <input type="checkbox" name="show_as_text" id="show_as_text">
 
       <button id="object_show">Show</button>

@@ -25,7 +25,7 @@ export const objectTypes = [
   { shortName: 'Supernova', fullName: 'Supernova', fixedPosition: true },
   { shortName: 'SNR', fullName: 'Supernova Remnant', fixedPosition: true },
   { shortName: 'Variable', fullName: 'Variable Star', fixedPosition: true }
-]
+];
 
 export const constellations = [
   // RA is the average of the most eastward and most westward RA.
@@ -120,4 +120,4 @@ export const constellations = [
   { abbreviation: 'Vol', ra: 7.80, dec: -69.8, fullName: 'Volans' },
   { abbreviation: 'Vul', ra: 20.23, dec: 24.4, fullName: 'Vulpecula' },
   { abbreviation: '', ra: 99.99, dec: 100.0, fullName: 'None' }
-]
+];

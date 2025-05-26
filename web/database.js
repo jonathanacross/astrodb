@@ -1,25 +1,25 @@
 // Classes to hold astronomical-related database data
-import { nullOrEmpty, getObjectSizesArcminutes } from './tsv_utils.js'
+import { nullOrEmpty, getObjectSizesArcminutes } from './tsv_utils.js';
 
 function formatBase60(value, radixNames) {
   if (nullOrEmpty(value)) {
-    return ''
+    return '';
   }
 
-  const signStr = value < 0 ? '-' : ''
-  const totalSeconds = Math.round(Math.abs(value) * 3600)
-  const seconds = totalSeconds % 60
-  const totalMinutes = (totalSeconds - seconds) / 60
-  const minutes = totalMinutes % 60
-  const degrees = (totalMinutes - minutes) / 60
+  const signStr = value < 0 ? '-' : '';
+  const totalSeconds = Math.round(Math.abs(value) * 3600);
+  const seconds = totalSeconds % 60;
+  const totalMinutes = (totalSeconds - seconds) / 60;
+  const minutes = totalMinutes % 60;
+  const degrees = (totalMinutes - minutes) / 60;
 
-  const degreesStr = String(degrees).padStart(2, '0')
-  const minutesStr = String(minutes).padStart(2, '0')
-  const secondsStr = String(seconds).padStart(2, '0')
+  const degreesStr = String(degrees).padStart(2, '0');
+  const minutesStr = String(minutes).padStart(2, '0');
+  const secondsStr = String(seconds).padStart(2, '0');
 
   return signStr + degreesStr + radixNames[0] + ' ' +
       minutesStr + radixNames[1] + ' ' +
-      secondsStr + radixNames[2]
+      secondsStr + radixNames[2];
 }
 
 // Converts a magnitude from string to a double value.
@@ -37,10 +37,9 @@ function getMagnitudeAsNumber(magString) {
   }
 }
 
-
 export class AstroObject {
   constructor(lineNumber, id, names, type, con, ra, dec, mag, size, sep, pa, objectClass, distance, notes) {
-    this.lineNumber = lineNumber;  // used only for logging errors
+    this.lineNumber = lineNumber; // used only for logging errors
     this.id = id;
     this.names = names;
     this.type = type;
@@ -74,7 +73,7 @@ export class AstroObject {
 
 export class Observation {
   constructor(lineNumber, id, date, location, scope, seeing, transparency, objectIds, time, eyepiece, magnifcation, phase, notes) {
-    this.lineNumber = lineNumber;  // used only for logging errors
+    this.lineNumber = lineNumber; // used only for logging errors
     this.id = id;
     this.date = date;
     this.location = location;
@@ -90,13 +89,13 @@ export class Observation {
 
     // populated after joining
     this.objectData = [];
-    this.names = '';  // names of the first object in the observation
+    this.names = ''; // names of the first object in the observation
   }
 }
 
 export class ProgramEntry {
   constructor(lineNumber, programName, number, objectId, observationId) {
-    this.lineNumber = lineNumber;  // used only for logging errors
+    this.lineNumber = lineNumber; // used only for logging errors
     this.programName = programName;
     this.number = number;
     this.objectId = objectId;
@@ -121,7 +120,7 @@ export class Database {
     this.observations = this.#indexObservations(observationList);
     this.programs = this.#indexPrograms(programList);
     this.#addCrossIndex();
-  } 
+  }
 
   // Convert objectList to map of id --> AstroObject
   #indexObjects(objectList) {
@@ -134,7 +133,7 @@ export class Database {
     }
     return objects;
   }
-  
+
   // Convert observationList to map of id --> Observation
   #indexObservations(observationList) {
     const observations = {};
@@ -162,7 +161,7 @@ export class Database {
   // Updates this.observations and this.programs with cross-reference ids
   #addCrossIndex() {
     for (const [_, observation] of Object.entries(this.observations)) {
-      const objectIds = observation.objectIds.split('|')
+      const objectIds = observation.objectIds.split('|');
       let firstObject = true;
       for (const objectId of objectIds) {
         // Check consistency of objectIds in observations
@@ -205,10 +204,10 @@ export class Database {
 
     // fill in derivative data for objects
     for (const [_, object] of Object.entries(this.objects)) {
-      object.observationIds = object.observationData.map(o => o.id).join()
-      object.numObservations = object.observationData.length
-      object.programIds = object.programData.map(p => p.programName).join()
-      object.numPrograms = object.programData.length
+      object.observationIds = object.observationData.map(o => o.id).join();
+      object.numObservations = object.observationData.length;
+      object.programIds = object.programData.map(p => p.programName).join();
+      object.numPrograms = object.programData.length;
     }
   }
 }
