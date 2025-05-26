@@ -86,15 +86,15 @@ function createObjectListingText (objects, columns) {
   preBlock.appendChild(codeBlock)
 
   let text = ''
-  // TODO: avoid trailing tab
-  for (const col of columns) {
-    text += col + '\t'
-  }
+  text = columns.join('\t')
   text += '\n'
 
   for (const obj of objects) {
-    for (const col of columns) {
-      text += obj[getObjectAttribute(col)] + '\t'
+    for (let i = 0; i < columns.length; i++) {
+      text += obj[getObjectAttribute(columns[i])]
+      if (i < columns.length - 1) {
+        text += '\t'
+      }
     }
     text += '\n'
   }
