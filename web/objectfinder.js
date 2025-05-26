@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 import { readObjects, readObservations, readPrograms, nullOrEmpty } from './tsv_utils.js'
 import { ObjectFilter, ObservationFilter, ProgramFilter } from './query.js'
 import { objectTypes, constellations } from './constants.js'
@@ -434,7 +432,7 @@ function setRadioFromParam(urlParams, group_id, default_value) {
 
 function setCheckboxFromParam(urlParams, element_id) {
   if (urlParams.has(element_id)) {
-    document.getElementById(value).checked = true; 
+    document.getElementById(element_id).checked = true;
   }
 }
 
