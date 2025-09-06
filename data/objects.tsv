@@ -1655,7 +1655,9 @@ C2022 E3 ZTF	C2022 E3 ZTF	Comet
 C2023 A3 Tsuchinshan-Atlas	C2023 A3 Tsuchinshan-Atlas	Comet										
 C2023 E1 ATLAS	C2023 E1 ATLAS	Comet										
 Comet	Comet	Comet										any comet
+Agrippa	Agrippa	Moon										
 Albategnius	Albategnius	Moon										
+Alpetragius	Alpetragius	Moon										
 Alphonsus	Alphonsus	Moon										
 Anaxagoras	Anaxagoras	Moon										
 Apollo 15 Site	Apollo 15 Site	Moon										
@@ -1671,6 +1673,8 @@ Atlas	Atlas	Moon
 Autolycus	Autolycus	Moon										
 Baco	Baco	Moon										
 Bailly	Bailly	Moon										
+Beer	Beer	Moon										
+Beer Catena	Beer Catena	Moon										
 Billy	Billy	Moon										
 Birmingham	Birmingham	Moon										
 Bompland	Bompland	Moon										
@@ -1705,6 +1709,7 @@ First Quarter Moon	First Quarter Moon	Moon
 Fra Mauro	Fra Mauro	Moon										
 Fracastorius	Fracastorius	Moon										
 Furnerius	Furnerius	Moon										
+Feuilee	Feuilee	Moon										
 Gassendi	Gassendi	Moon										
 Gemma Frisius	Gemma Frisius	Moon										
 Grimaldi	Grimaldi	Moon										
@@ -1742,6 +1747,7 @@ Mare Nectaris	Mare Nectaris	Moon
 Mare Nubium	Mare Nubium	Moon										
 Mare Serenitatis	Mare Serenitatis	Moon										
 Mare Smythii	Mare Smythii	Moon										
+Mare Spumans	Mare Spumans	Moon										
 Mare Tranquillitatis	Mare Tranquillitatis	Moon										
 Mare Vaporum	Mare Vaporum	Moon										
 Marius Hills	Marius Hills	Moon										
@@ -1781,6 +1787,7 @@ Promontorium Heraclides	Promontorium Heraclides	Moon
 Promontorium Laplace	Promontorium Laplace	Moon										
 Ptolemaeus	Ptolemaeus	Moon										
 Rabbi Levi	Rabbi Levi	Moon										
+Regiomontanus	Regiomontanus	Moon										
 Rabbit in the Moon	Rabbit in the Moon	Moon										
 Reiner Gamma	Reiner Gamma	Moon										
 Rima Hyginus	Rima Hyginus	Moon										
@@ -1799,11 +1806,14 @@ Theophilus	Theophilus	Moon
 Timocharis	Timocharis	Moon										
 Tranquility Base	Tranquility Base	Moon										
 Tycho	Tycho	Moon										
+Ukert	Ukert	Moon										
 Vallis Alpes	Vallis Alpes	Moon										
+Vallis Rheita	Vallis Rheita	Moon										
 Vallis Schroteri	Vallis Schroteri	Moon										
 Vendelinus	Vendelinus	Moon										
 Walter	Walter	Moon										
 Wargentin	Wargentin	Moon										
+Wolf	Wolf	Moon										
 Woman in the Moon	Woman in the Moon	Moon										
 Zagut	Zagut	Moon										
 Conjunction	Conjunction	Planet										any conjunction
